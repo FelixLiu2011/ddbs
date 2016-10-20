@@ -1,0 +1,9 @@
+var blogContent={};
+blogContent.messageContentRequired="Message content is required!";
+blogContent.tags="Tags";
+blogContent.privilege="Privileges";
+blogContent.comments="comments";
+blogContent.comment="comment";
+blogContent.reads="read";
+blogContent.public="public";
+blogContent.private="private";

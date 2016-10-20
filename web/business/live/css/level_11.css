@@ -1,0 +1,7909 @@
+i {
+    font-style: normal;
+    vertical-align: middle;
+    display: inline-block;
+    *zoom: 1;
+    *display: inline
+}
+
+.gift-small {
+    width: 22px;
+    height: 22px
+}
+
+.gift-big {
+    width: 35px;
+    height: 35px
+}
+
+i.gift_1, i.gift_3, i.gift_6, i.gift_7, i.gift_8, i.gift_10, i.gift_11, i.gift_12, i.gift_13, i.gift_15, i.gift_16, i.gift_17, i.gift_18, i.gift_19, i.gift_20, i.gift_21, i.gift_22, i.gift_24, i.gift_23, i.gift_25, i.gift_27, i.gift_29, i.gift_30, i.gift_31, i.gift_32, i.gift_35, i.gift_36, i.gift_37, i.gift_38, i.gift_39, i.gift_40, i.gift_41, i.gift_48, i.gift_49, i.gift_50, i.gift_51, i.gift_68, i.gift_71, i.gift_75, i.gift_76, i.gift_77, i.gift_78, i.gift_79, i.gift_80, i.gift_81, i.gift_82, i.gift_83, i.gift_84, i.gift_85, i.gift_86, i.gift_87, i.gift_88, i.gift_98, i.gift_99, i.gift_109, i.gift_144, i.gift_153, i.gift_169, i.gift_175, i.gift_188, i.gift_189, i.gift_206, i.gift_207, i.gift_214, i.gift_215, i.gift_216, i.gift_217, i.gift_257, i.gift_285, i.gift_286, i.gift_296, i.gift_297, i.gift_305, i.gift_306, i.gift_307, i.gift_308, i.gift_309, i.gift_310, i.gift_311, i.gift_312, i.gift_316, i.gift_317, i.gift_318, i.gift_319, i.gift_320, i.gift_321, i.gift_322, i.gift_323, i.gift_324, i.gift_325, i.gift_330, i.gift_337, i.gift_338, i.gift_339, i.gift_340, i.gift_341, i.gift_342, i.gift_346, i.gift_349, i.gift_350, i.gift_362, i.gift_363, i.gift_380, i.gift_389, i.gift_395, i.gift_525, i.gift_527, i.gift_529, i.gift_534, i.gift_537, i.gift_430, i.gift_5006, i.gift_10001, i.gift_10002, i.gift_10003, i.gift_10004, i.gift_10005, i.gift_10006, i.gift_465, i.gift_466, i.gift_536, i.gift_539, i.gift_540, i.gift_544, i.gift_545, i.gift_546, i.gift_547, i.gift_548, i.gift_552, i.gift_553, i.gift_554, i.gift_555, i.gift_571, i.gift_586, i.gift_8101, i.gift_599, i.gift_653, i.gift_654, i.gift_655, i.gift_656 {
+    margin-top: -1px;
+    width: 22px;
+    height: 22px;
+    background: url(http://vr3.6rooms.com/imges/level/gift/all_small_v32.png) no-repeat 0 0;
+    _background-image: url(http://vr3.6rooms.com/imges/level/gift/all_small_8bit_v32.png)
+}
+
+.giftSmall {
+    width: 22px;
+    height: 22px;
+    background: url(http://vr3.6rooms.com/imges/level/gift/all_small_v32.png) no-repeat 0 -10000px;
+    _background-image: url(http://vr3.6rooms.com/imges/level/gift/all_small_8bit_v32.png)
+}
+
+.preStar img {
+    background-image: url(http://vr3.6rooms.com/imges/level/gift/all_small_v32.png)
+}
+
+i.gift_big_1, i.gift_big_3, i.gift_big_6, i.gift_big_7, i.gift_big_8, i.gift_big_10, i.gift_big_11, i.gift_big_12, i.gift_big_13, i.gift_big_15, i.gift_big_16, i.gift_big_17, i.gift_big_18, i.gift_big_19, i.gift_big_20, i.gift_big_21, i.gift_big_22, i.gift_big_24, i.gift_big_23, i.gift_big_25, i.gift_big_27, i.gift_big_29, i.gift_big_30, i.gift_big_31, i.gift_big_32, i.gift_big_35, i.gift_big_36, i.gift_big_37, i.gift_big_38, i.gift_big_39, i.gift_big_40, i.gift_big_41, i.gift_big_48, i.gift_big_49, i.gift_big_50, i.gift_big_51, i.gift_big_68, i.gift_big_71, i.gift_big_75, i.gift_big_76, i.gift_big_77, i.gift_big_78, i.gift_big_79, i.gift_big_80, i.gift_big_81, i.gift_big_82, i.gift_big_83, i.gift_big_84, i.gift_big_85, i.gift_big_86, i.gift_big_87, i.gift_big_88, i.gift_big_98, i.gift_big_99, i.gift_big_109, i.gift_big_144, i.gift_big_153, i.gift_big_169, i.gift_big_175, i.gift_big_188, i.gift_big_189, i.gift_big_206, i.gift_big_207, i.gift_big_214, i.gift_big_215, i.gift_big_216, i.gift_big_217, i.gift_big_257, i.gift_big_285, i.gift_big_286, i.gift_big_296, i.gift_big_297, i.gift_big_305, i.gift_big_306, i.gift_big_307, i.gift_big_308, i.gift_big_309, i.gift_big_310, i.gift_big_311, i.gift_big_312, i.gift_big_316, i.gift_big_317, i.gift_big_318, i.gift_big_319, i.gift_big_320, i.gift_big_321, i.gift_big_322, i.gift_big_323, i.gift_big_324, i.gift_big_325, i.gift_big_330, i.gift_big_337, i.gift_big_338, i.gift_big_339, i.gift_big_340, i.gift_big_341, i.gift_big_342, i.gift_big_346, i.gift_big_349, i.gift_big_350, i.gift_big_362, i.gift_big_363, i.gift_big_380, i.gift_big_389, i.gift_big_395, i.gift_big_525, i.gift_big_527, i.gift_big_529, i.gift_big_534, i.gift_big_537, i.gift_big_430, i.gift_big_5006, i.gift_big_10001, i.gift_big_10002, i.gift_big_10003, i.gift_big_10004, i.gift_big_10005, i.gift_big_10006, i.gift_big_465, i.gift_big_466, i.gift_big_100, i.gift_big_536, i.gift_big_539, i.gift_big_540, i.gift_big_544, i.gift_big_545, i.gift_big_546, i.gift_big_547, i.gift_big_548, i.gift_big_552, i.gift_big_553, i.gift_big_554, i.gift_big_555, i.gift_big_571, i.gift_big_586, i.gift_big_8101, i.gift_big_599, i.gift_big_653, i.gift_big_654, i.gift_big_655, i.gift_big_656 {
+    background: url(http://vr3.6rooms.com/imges/level/gift/all_big_v32.png) no-repeat 0 0;
+    _background-image: url(http://vr3.6rooms.com/imges/level/gift/all_big_8bit_v32.png)
+}
+
+i.gift_10 {
+    background-position: -50px 0
+}
+
+i.gift_11 {
+    background-position: -100px 0
+}
+
+i.gift_12 {
+    background-position: -150px 0
+}
+
+i.gift_16 {
+    background-position: -200px 0
+}
+
+i.gift_75 {
+    background-position: -250px 0
+}
+
+i.gift_76 {
+    background-position: -300px 0
+}
+
+i.gift_88 {
+    background-position: -350px 0
+}
+
+i.gift_1 {
+    background-position: -400px 0
+}
+
+i.gift_13 {
+    background-position: -450px 0
+}
+
+i.gift_15 {
+    background-position: -500px 0
+}
+
+i.gift_3 {
+    background-position: -550px 0
+}
+
+i.gift_17 {
+    background-position: -600px 0
+}
+
+i.gift_18 {
+    background-position: -650px 0
+}
+
+i.gift_465 {
+    background-position: -700px 0
+}
+
+i.gift_466 {
+    background-position: -750px 0
+}
+
+i.gift_653 {
+    background-position: -800px 0
+}
+
+i.gift_654 {
+    background-position: -850px 0
+}
+
+i.gift_655 {
+    background-position: -900px 0
+}
+
+i.gift_20 {
+    background-position: -50px -50px
+}
+
+i.gift_21 {
+    background-position: -100px -50px
+}
+
+i.gift_22 {
+    background-position: -150px -50px
+}
+
+i.gift_77 {
+    background-position: -200px -50px
+}
+
+i.gift_217 {
+    background-position: -250px -50px
+}
+
+i.gift_68 {
+    background-position: -300px -50px
+}
+
+i.gift_23 {
+    background-position: -350px -50px
+}
+
+i.gift_25 {
+    background-position: -400px -50px
+}
+
+i.gift_27 {
+    background-position: -450px -50px
+}
+
+i.gift_29 {
+    background-position: -500px -50px
+}
+
+i.gift_30 {
+    background-position: -550px -50px
+}
+
+i.gift_19 {
+    background-position: -600px -50px
+}
+
+i.gift_5006 {
+    background-position: -650px -50px
+}
+
+i.gift_24 {
+    background-position: -700px -50px
+}
+
+i.gift_71 {
+    background-position: -750px -50px
+}
+
+i.gift_656 {
+    background-position: -800px -50px
+}
+
+i.gift_32 {
+    background-position: -50px -100px
+}
+
+i.gift_35 {
+    background-position: -100px -100px
+}
+
+i.gift_6 {
+    background-position: -150px -100px
+}
+
+i.gift_36 {
+    background-position: -200px -100px
+}
+
+i.gift_37 {
+    background-position: -250px -100px
+}
+
+i.gift_79 {
+    background-position: -300px -100px
+}
+
+i.gift_38 {
+    background-position: -350px -100px
+}
+
+i.gift_80 {
+    background-position: -400px -100px
+}
+
+i.gift_31 {
+    background-position: -450px -100px
+}
+
+i.gift_78 {
+    background-position: -500px -100px
+}
+
+i.gift_175 {
+    background-position: -550px -100px
+}
+
+i.gift_39 {
+    background-position: -600px -100px
+}
+
+i.gift_81 {
+    background-position: -650px -100px
+}
+
+i.gift_84 {
+    background-position: -50px -150px
+}
+
+i.gift_85 {
+    background-position: -100px -150px
+}
+
+i.gift_86 {
+    background-position: -150px -150px
+}
+
+i.gift_82 {
+    background-position: -200px -150px
+}
+
+i.gift_83 {
+    background-position: -250px -150px
+}
+
+i.gift_87 {
+    background-position: -300px -150px
+}
+
+i.gift_599 {
+    background-position: -350px -150px
+}
+
+i.gift_323 {
+    background-position: -50px -200px
+}
+
+i.gift_322 {
+    background-position: -100px -200px
+}
+
+i.gift_316 {
+    background-position: -150px -200px
+}
+
+i.gift_321 {
+    background-position: -200px -200px
+}
+
+i.gift_318 {
+    background-position: -250px -200px
+}
+
+i.gift_317 {
+    background-position: -300px -200px
+}
+
+i.gift_319 {
+    background-position: -350px -200px
+}
+
+i.gift_320 {
+    background-position: -400px -200px
+}
+
+i.gift_285 {
+    background-position: -450px -200px
+}
+
+i.gift_286 {
+    background-position: -500px -200px
+}
+
+i.gift_296 {
+    background-position: -550px -200px
+}
+
+i.gift_297 {
+    background-position: -600px -200px
+}
+
+i.gift_324 {
+    background-position: -50px -250px
+}
+
+i.gift_380 {
+    background-position: -100px -250px
+}
+
+i.gift_389 {
+    background-position: -150px -250px
+}
+
+i.gift_257 {
+    background-position: -200px -250px
+}
+
+i.gift_305 {
+    background-position: -250px -250px
+}
+
+i.gift_306 {
+    background-position: -300px -250px
+}
+
+i.gift_307 {
+    background-position: -350px -250px
+}
+
+i.gift_308 {
+    background-position: -400px -250px
+}
+
+i.gift_309 {
+    background-position: -450px -250px
+}
+
+i.gift_310 {
+    background-position: -500px -250px
+}
+
+i.gift_311 {
+    background-position: -550px -250px
+}
+
+i.gift_312 {
+    background-position: -600px -250px
+}
+
+i.gift_325 {
+    background-position: -650px -250px
+}
+
+i.gift_169 {
+    background-position: -700px -250px
+}
+
+i.gift_330 {
+    background-position: -750px -250px
+}
+
+i.gift_540 {
+    background-position: -800px -250px
+}
+
+i.gift_544 {
+    background-position: -850px -250px
+}
+
+i.gift_545 {
+    background-position: -900px -250px
+}
+
+i.gift_546 {
+    background-position: -950px -250px
+}
+
+i.gift_547 {
+    background-position: -1000px -250px
+}
+
+i.gift_548 {
+    background-position: -1050px -250px
+}
+
+i.gift_553 {
+    background-position: -1100px -250px
+}
+
+i.gift_552 {
+    background-position: -1150px -250px
+}
+
+i.gift_554 {
+    background-position: -1200px -250px
+}
+
+i.gift_555 {
+    background-position: -1250px -250px
+}
+
+i.gift_586 {
+    background-position: -1300px -250px
+}
+
+i.gift_337 {
+    background-position: -50px -300px
+}
+
+i.gift_338 {
+    background-position: -100px -300px
+}
+
+i.gift_339 {
+    background-position: -150px -300px
+}
+
+i.gift_340 {
+    background-position: -200px -300px
+}
+
+i.gift_341 {
+    background-position: -250px -300px
+}
+
+i.gift_342 {
+    background-position: -300px -300px
+}
+
+i.gift_346 {
+    background-position: -350px -300px
+}
+
+i.gift_349 {
+    background-position: -400px -300px
+}
+
+i.gift_350 {
+    background-position: -450px -300px
+}
+
+i.gift_537 {
+    background-position: -500px -300px
+}
+
+i.gift_7 {
+    background-position: -50px -350px
+}
+
+i.gift_40 {
+    background-position: -100px -350px
+}
+
+i.gift_8 {
+    background-position: -150px -350px
+}
+
+i.gift_41 {
+    background-position: -200px -350px
+}
+
+i.gift_49 {
+    background-position: -250px -350px
+}
+
+i.gift_50 {
+    background-position: -300px -350px
+}
+
+i.gift_48 {
+    background-position: -350px -350px
+}
+
+i.gift_51 {
+    background-position: -400px -350px
+}
+
+i.gift_109 {
+    background-position: -450px -350px
+}
+
+i.gift_144 {
+    background-position: -500px -350px
+}
+
+i.gift_362 {
+    background-position: -550px -350px
+}
+
+i.gift_363 {
+    background-position: -600px -350px
+}
+
+i.gift_529 {
+    background-position: -650px -350px
+}
+
+i.gift_534 {
+    background-position: -700px -350px
+}
+
+i.gift_153 {
+    background-position: -50px -400px
+}
+
+i.gift_188 {
+    background-position: -100px -400px
+}
+
+i.gift_214 {
+    background-position: -150px -400px
+}
+
+i.gift_215 {
+    background-position: -200px -400px
+}
+
+i.gift_216 {
+    background-position: -250px -400px
+}
+
+i.gift_189 {
+    background-position: -300px -400px
+}
+
+i.gift_207 {
+    background-position: -350px -400px
+}
+
+i.gift_206 {
+    background-position: -400px -400px
+}
+
+i.gift_395 {
+    background-position: -450px -400px
+}
+
+i.gift_525 {
+    background-position: -500px -400px
+}
+
+i.gift_527 {
+    background-position: -550px -400px
+}
+
+i.gift_7333 {
+    background: url(http://vr3.6rooms.com/imges/level/gift/gift_7333_v2.png) no-repeat
+}
+
+i.gift_10001 {
+    background-position: -50px -450px
+}
+
+i.gift_10002 {
+    background-position: -100px -450px
+}
+
+i.gift_10003 {
+    background-position: -150px -450px
+}
+
+i.gift_10004 {
+    background-position: -200px -450px
+}
+
+i.gift_10005 {
+    background-position: -250px -450px
+}
+
+i.gift_10006 {
+    background-position: -300px -450px
+}
+
+i.gift_98 {
+    background-position: -50px -500px
+}
+
+i.gift_99 {
+    background-position: -100px -500px
+}
+
+i.gift_430 {
+    background-position: -150px -500px
+}
+
+i.gift_536 {
+    background-position: -200px -500px
+}
+
+i.gift_539 {
+    background-position: -250px -500px
+}
+
+i.gift_571 {
+    background-position: -300px -500px
+}
+
+i.gift_8101 {
+    background-position: -350px -500px
+}
+
+i.gift_big_10 {
+    background-position: -50px 0
+}
+
+i.gift_big_11 {
+    background-position: -100px 0
+}
+
+i.gift_big_12 {
+    background-position: -150px 0
+}
+
+i.gift_big_16 {
+    background-position: -200px 0
+}
+
+i.gift_big_75 {
+    background-position: -250px 0
+}
+
+i.gift_big_76 {
+    background-position: -300px 0
+}
+
+i.gift_big_88 {
+    background-position: -350px 0
+}
+
+i.gift_big_1 {
+    background-position: -400px 0
+}
+
+i.gift_big_13 {
+    background-position: -450px 0
+}
+
+i.gift_big_15 {
+    background-position: -500px 0
+}
+
+i.gift_big_3 {
+    background-position: -550px 0
+}
+
+i.gift_big_17 {
+    background-position: -600px 0
+}
+
+i.gift_big_18 {
+    background-position: -650px 0
+}
+
+i.gift_big_465 {
+    background-position: -700px 0
+}
+
+i.gift_big_466 {
+    background-position: -750px 0
+}
+
+i.gift_big_653 {
+    background-position: -800px 0
+}
+
+i.gift_big_654 {
+    background-position: -850px 0
+}
+
+i.gift_big_655 {
+    background-position: -900px 0
+}
+
+i.gift_big_20 {
+    background-position: -50px -50px
+}
+
+i.gift_big_21 {
+    background-position: -100px -50px
+}
+
+i.gift_big_22 {
+    background-position: -150px -50px
+}
+
+i.gift_big_77 {
+    background-position: -200px -50px
+}
+
+i.gift_big_217 {
+    background-position: -250px -50px
+}
+
+i.gift_big_68 {
+    background-position: -300px -50px
+}
+
+i.gift_big_23 {
+    background-position: -350px -50px
+}
+
+i.gift_big_25 {
+    background-position: -400px -50px
+}
+
+i.gift_big_27 {
+    background-position: -450px -50px
+}
+
+i.gift_big_29 {
+    background-position: -500px -50px
+}
+
+i.gift_big_30 {
+    background-position: -550px -50px
+}
+
+i.gift_big_19 {
+    background-position: -600px -50px
+}
+
+i.gift_big_5006 {
+    background-position: -650px -50px
+}
+
+i.gift_big_24 {
+    background-position: -700px -50px
+}
+
+i.gift_big_71 {
+    background-position: -750px -50px
+}
+
+i.gift_big_656 {
+    background-position: -800px -50px
+}
+
+i.gift_big_32 {
+    background-position: -50px -100px
+}
+
+i.gift_big_35 {
+    background-position: -100px -100px
+}
+
+i.gift_big_6 {
+    background-position: -150px -100px
+}
+
+i.gift_big_36 {
+    background-position: -200px -100px
+}
+
+i.gift_big_37 {
+    background-position: -250px -100px
+}
+
+i.gift_big_79 {
+    background-position: -300px -100px
+}
+
+i.gift_big_38 {
+    background-position: -350px -100px
+}
+
+i.gift_big_80 {
+    background-position: -400px -100px
+}
+
+i.gift_big_31 {
+    background-position: -450px -100px
+}
+
+i.gift_big_78 {
+    background-position: -500px -100px
+}
+
+i.gift_big_175 {
+    background-position: -550px -100px
+}
+
+i.gift_big_39 {
+    background-position: -600px -100px
+}
+
+i.gift_big_81 {
+    background-position: -650px -100px
+}
+
+i.gift_big_84 {
+    background-position: -50px -150px
+}
+
+i.gift_big_85 {
+    background-position: -100px -150px
+}
+
+i.gift_big_86 {
+    background-position: -150px -150px
+}
+
+i.gift_big_82 {
+    background-position: -200px -150px
+}
+
+i.gift_big_83 {
+    background-position: -250px -150px
+}
+
+i.gift_big_87 {
+    background-position: -300px -150px
+}
+
+i.gift_big_599 {
+    background-position: -350px -150px
+}
+
+i.gift_big_323 {
+    background-position: -50px -200px
+}
+
+i.gift_big_322 {
+    background-position: -100px -200px
+}
+
+i.gift_big_316 {
+    background-position: -150px -200px
+}
+
+i.gift_big_321 {
+    background-position: -200px -200px
+}
+
+i.gift_big_318 {
+    background-position: -250px -200px
+}
+
+i.gift_big_317 {
+    background-position: -300px -200px
+}
+
+i.gift_big_319 {
+    background-position: -350px -200px
+}
+
+i.gift_big_320 {
+    background-position: -400px -200px
+}
+
+i.gift_big_285 {
+    background-position: -450px -200px
+}
+
+i.gift_big_286 {
+    background-position: -500px -200px
+}
+
+i.gift_big_296 {
+    background-position: -550px -200px
+}
+
+i.gift_big_297 {
+    background-position: -600px -200px
+}
+
+i.gift_big_324 {
+    background-position: -50px -250px
+}
+
+i.gift_big_380 {
+    background-position: -100px -250px
+}
+
+i.gift_big_389 {
+    background-position: -150px -250px
+}
+
+i.gift_big_257 {
+    background-position: -200px -250px
+}
+
+i.gift_big_305 {
+    background-position: -250px -250px
+}
+
+i.gift_big_306 {
+    background-position: -300px -250px
+}
+
+i.gift_big_307 {
+    background-position: -350px -250px
+}
+
+i.gift_big_308 {
+    background-position: -400px -250px
+}
+
+i.gift_big_309 {
+    background-position: -450px -250px
+}
+
+i.gift_big_310 {
+    background-position: -500px -250px
+}
+
+i.gift_big_311 {
+    background-position: -550px -250px
+}
+
+i.gift_big_312 {
+    background-position: -600px -250px
+}
+
+i.gift_big_325 {
+    background-position: -650px -250px
+}
+
+i.gift_big_169 {
+    background-position: -700px -250px
+}
+
+i.gift_big_330 {
+    background-position: -750px -250px
+}
+
+i.gift_big_540 {
+    background-position: -800px -250px
+}
+
+i.gift_big_544 {
+    background-position: -850px -250px
+}
+
+i.gift_big_545 {
+    background-position: -900px -250px
+}
+
+i.gift_big_546 {
+    background-position: -950px -250px
+}
+
+i.gift_big_547 {
+    background-position: -1000px -250px
+}
+
+i.gift_big_548 {
+    background-position: -1050px -250px
+}
+
+i.gift_big_337 {
+    background-position: -50px -300px
+}
+
+i.gift_big_338 {
+    background-position: -100px -300px
+}
+
+i.gift_big_339 {
+    background-position: -150px -300px
+}
+
+i.gift_big_340 {
+    background-position: -200px -300px
+}
+
+i.gift_big_341 {
+    background-position: -250px -300px
+}
+
+i.gift_big_342 {
+    background-position: -300px -300px
+}
+
+i.gift_big_346 {
+    background-position: -350px -300px
+}
+
+i.gift_big_349 {
+    background-position: -400px -300px
+}
+
+i.gift_big_350 {
+    background-position: -450px -300px
+}
+
+i.gift_big_537 {
+    background-position: -500px -300px
+}
+
+i.gift_big_7 {
+    background-position: -50px -350px
+}
+
+i.gift_big_40 {
+    background-position: -100px -350px
+}
+
+i.gift_big_8 {
+    background-position: -150px -350px
+}
+
+i.gift_big_41 {
+    background-position: -200px -350px
+}
+
+i.gift_big_49 {
+    background-position: -250px -350px
+}
+
+i.gift_big_50 {
+    background-position: -300px -350px
+}
+
+i.gift_big_48 {
+    background-position: -350px -350px
+}
+
+i.gift_big_51 {
+    background-position: -400px -350px
+}
+
+i.gift_big_109 {
+    background-position: -450px -350px
+}
+
+i.gift_big_144 {
+    background-position: -500px -350px
+}
+
+i.gift_big_362 {
+    background-position: -550px -350px
+}
+
+i.gift_big_363 {
+    background-position: -600px -350px
+}
+
+i.gift_big_529 {
+    background-position: -650px -350px
+}
+
+i.gift_big_534 {
+    background-position: -700px -350px
+}
+
+i.gift_big_153 {
+    background-position: -50px -400px
+}
+
+i.gift_big_188 {
+    background-position: -100px -400px
+}
+
+i.gift_big_214 {
+    background-position: -150px -400px
+}
+
+i.gift_big_215 {
+    background-position: -200px -400px
+}
+
+i.gift_big_216 {
+    background-position: -250px -400px
+}
+
+i.gift_big_189 {
+    background-position: -300px -400px
+}
+
+i.gift_big_207 {
+    background-position: -350px -400px
+}
+
+i.gift_big_206 {
+    background-position: -400px -400px
+}
+
+i.gift_big_395 {
+    background-position: -450px -400px
+}
+
+i.gift_big_525 {
+    background-position: -500px -400px
+}
+
+i.gift_big_527 {
+    background-position: -550px -400px
+}
+
+i.gift_big_10001 {
+    background-position: -50px -450px
+}
+
+i.gift_big_10002 {
+    background-position: -100px -450px
+}
+
+i.gift_big_10003 {
+    background-position: -150px -450px
+}
+
+i.gift_big_10004 {
+    background-position: -200px -450px
+}
+
+i.gift_big_10005 {
+    background-position: -250px -450px
+}
+
+i.gift_big_10006 {
+    background-position: -300px -450px
+}
+
+i.gift_big_98 {
+    background-position: -50px -500px
+}
+
+i.gift_big_99 {
+    background-position: -100px -500px
+}
+
+i.gift_big_430 {
+    background-position: -150px -500px
+}
+
+i.gift_big_536 {
+    background-position: -200px -500px
+}
+
+i.gift_big_539 {
+    background-position: -250px -500px
+}
+
+i.gift_big_553 {
+    background-position: -1100px -250px
+}
+
+i.gift_big_552 {
+    background-position: -1150px -250px
+}
+
+i.gift_big_554 {
+    background-position: -1200px -250px
+}
+
+i.gift_big_555 {
+    background-position: -1250px -250px
+}
+
+i.gift_big_571 {
+    background-position: -300px -500px
+}
+
+i.gift_big_586 {
+    background-position: -1300px -250px
+}
+
+i.gift_big_8101 {
+    background-position: -350px -500px
+}
+
+i.gift_7821, i.gift_7822, i.gift_7823, i.gift_big_7821, i.gift_big_7822, i.gift_big_7823 {
+    background: url(http://vr2.6rooms.com/imges/level/gift/games_v2.png) no-repeat 0 0
+}
+
+i.gift_7821 {
+    background-position: -50px -50px
+}
+
+i.gift_7822 {
+    background-position: -100px -50px
+}
+
+i.gift_7823 {
+    background-position: -150px -50px
+}
+
+i.gift_big_7822 {
+    background-position: -100px 0
+}
+
+i.gift_big_7821 {
+    background-position: -50px 0
+}
+
+i.gift_big_7823 {
+    background-position: -150px 0
+}
+
+i.gift_560, i.gift_big_560, i.gift_561, i.gift_big_561 {
+    background: url(http://vr2.6rooms.com/imges/level/gift/army-v2.png) no-repeat 0 0
+}
+
+i.gift_560 {
+    background-position: -50px -50px
+}
+
+i.gift_big_560 {
+    background-position: -50px 0
+}
+
+i.gift_561 {
+    background-position: -100px -50px
+}
+
+i.gift_big_561 {
+    background-position: -100px 0
+}
+
+i.gift_600 {
+    background: url(http://vr2.6rooms.com/imges/level/gift/event/gift_600_v1.png) no-repeat 0 0
+}
+
+i.gift_483, i.gift_516, i.gift_531, i.gift_532, i.gift_533, i.gift_7032, i.gift_7033, i.gift_7034, i.gift_7035, i.gift_7036, i.gift_7031, i.gift_big_483, i.gift_big_516, i.gift_big_531, i.gift_big_532, i.gift_big_533, i.gift_big_7032, i.gift_big_7033, i.gift_big_7034, i.gift_big_7035, i.gift_big_7036, i.gift_big_7031 {
+    background: url(http://vr5.6rooms.com/imges/level/gift/love_v5.png) no-repeat 0 0
+}
+
+i.gift_483 {
+    background-position: -50px -50px
+}
+
+i.gift_516 {
+    background-position: -100px -50px
+}
+
+i.gift_531 {
+    background-position: -150px -50px
+}
+
+i.gift_532 {
+    background-position: -200px -50px
+}
+
+i.gift_533 {
+    background-position: -250px -50px
+}
+
+i.gift_7032 {
+    background-position: -50px -150px
+}
+
+i.gift_7033 {
+    background-position: -100px -150px
+}
+
+i.gift_7034 {
+    background-position: -150px -150px
+}
+
+i.gift_7035 {
+    background-position: -200px -150px
+}
+
+i.gift_7036 {
+    background-position: -250px -150px
+}
+
+i.gift_7031 {
+    background-position: -300px -150px
+}
+
+i.gift_big_483 {
+    background-position: -100px 0
+}
+
+i.gift_big_516 {
+    background-position: -50px 0
+}
+
+i.gift_big_531 {
+    background-position: -150px 0
+}
+
+i.gift_big_532 {
+    background-position: -200px 0
+}
+
+i.gift_big_533 {
+    background-position: -250px 0
+}
+
+i.gift_big_7032 {
+    background-position: -50px -100px
+}
+
+i.gift_big_7033 {
+    background-position: -100px -100px
+}
+
+i.gift_big_7034 {
+    background-position: -150px -100px
+}
+
+i.gift_big_7035 {
+    background-position: -200px -100px
+}
+
+i.gift_big_7036 {
+    background-position: -250px -100px
+}
+
+i.gift_big_7031 {
+    background-position: -300px -100px
+}
+
+.gift-icon {
+    width: 35px;
+    height: 35px
+}
+
+.gift-icon-s {
+    width: 22px;
+    height: 22px
+}
+
+.gift_100, .gift_7606, .gift_7300, .gift_7318 {
+    background: url(http://vr4.6rooms.com/imges/level/gift/gift-def.png) no-repeat 0 0
+}
+
+i.gift_347 {
+    background: url(//vi1.6rooms.com/55/54/l829361371202969.png) no-repeat 0 0
+}
+
+i.gift_5009 {
+    background: url(http://vr2.6rooms.com/imges/live/CSSIMG/gift/event/gift_5009_small32_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_5009_small_v1.png)
+}
+
+i.gift_5010, i.gift_5011 {
+    background: url(http://vr3.6rooms.com/imges/live/CSSIMG/gift/army_weektop.png) no-repeat 0 -40px
+}
+
+i.gift_big_5010, i.gift_big_5011 {
+    background: url(http://vr3.6rooms.com/imges/live/CSSIMG/gift/army_weektop.png) no-repeat 0 0
+}
+
+i.gift_5011 {
+    background-position: -40px -40px
+}
+
+i.gift_big_5011 {
+    background-position: -40px 0
+}
+
+i.gift_125, i.gift_126, i.gift_127, i.gift_52, i.gift_53, i.gift_55, i.gift_89, i.gift_90, i.gift_91, i.gift_60, i.gift_61, i.gift_62, i.gift_63, i.gift_74, i.gift_42, i.gift_108, i.gift_45, i.gift_92, i.gift_93, i.gift_94, i.gift_95, i.gift_97, i.gift_120, i.gift_121, i.gift_122, i.gift_123, i.gift_130, i.gift_131, i.gift_132, i.gift_110, i.gift_56, i.gift_107, i.gift_57, i.gift_59, i.gift_106, i.gift_114 {
+    background: url(http://vr2.6rooms.com/imges/live/CSSIMG/gift/event/festivalGift_small32_v5.png) no-repeat 0 0;
+    _background-image: url(http://vr2.6rooms.com/imges/live/CSSIMG/gift/event/festivalGift_small32_ie6_v4.png)
+}
+
+i.gift_big_125, i.gift_big_126, i.gift_big_127, i.gift_big_52, i.gift_big_53, i.gift_big_55, i.gift_big_89, i.gift_big_90, i.gift_big_91, i.gift_big_60, i.gift_big_61, i.gift_big_62, i.gift_big_63, i.gift_big_74, i.gift_big_42, i.gift_big_108, i.gift_big_45, i.gift_big_92, i.gift_big_93, i.gift_big_94, i.gift_big_95, i.gift_big_97, i.gift_big_120, i.gift_big_121, i.gift_big_122, i.gift_big_123, i.gift_big_130, i.gift_big_131, i.gift_big_132, i.gift_big_110, i.gift_big_56, i.gift_big_107, i.gift_big_57, i.gift_big_59, i.gift_big_106, i.gift_big_114 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/festivalGift_big_v5.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/festivalGift_big_ie6_v4.png)
+}
+
+i.gift_125 {
+    background-position: -50px 0
+}
+
+i.gift_126 {
+    background-position: -100px 0
+}
+
+i.gift_127 {
+    background-position: -150px 0
+}
+
+i.gift_big_125 {
+    background-position: -50px 0
+}
+
+i.gift_big_126 {
+    background-position: -100px 0
+}
+
+i.gift_big_127 {
+    background-position: -150px 0
+}
+
+i.gift_52 {
+    background-position: -50px -50px
+}
+
+i.gift_53 {
+    background-position: -100px -50px
+}
+
+i.gift_55 {
+    background-position: -150px -50px
+}
+
+i.gift_big_52 {
+    background-position: -50px -50px
+}
+
+i.gift_big_53 {
+    background-position: -100px -50px
+}
+
+i.gift_big_55 {
+    background-position: -150px -50px
+}
+
+i.gift_89 {
+    background-position: -50px -100px
+}
+
+i.gift_90 {
+    background-position: -100px -100px
+}
+
+i.gift_91 {
+    background-position: -150px -100px
+}
+
+i.gift_big_89 {
+    background-position: -50px -100px
+}
+
+i.gift_big_90 {
+    background-position: -100px -100px
+}
+
+i.gift_big_91 {
+    background-position: -150px -100px
+}
+
+i.gift_110 {
+    background-position: -50px -500px
+}
+
+i.gift_56 {
+    background-position: -100px -500px
+}
+
+i.gift_107 {
+    background-position: -150px -500px
+}
+
+i.gift_57 {
+    background-position: -200px -500px
+}
+
+i.gift_58 {
+    background-position: -250px -500px
+}
+
+i.gift_59 {
+    background-position: -300px -500px
+}
+
+i.gift_big_110 {
+    background-position: -50px -500px
+}
+
+i.gift_big_56 {
+    background-position: -100px -500px
+}
+
+i.gift_big_107 {
+    background-position: -150px -500px
+}
+
+i.gift_big_57 {
+    background-position: -200px -500px
+}
+
+i.gift_big_58 {
+    background-position: -250px -500px
+}
+
+i.gift_big_59 {
+    background-position: -300px -500px
+}
+
+i.gift_60 {
+    background-position: -50px -150px
+}
+
+i.gift_61 {
+    background-position: -100px -150px
+}
+
+i.gift_62 {
+    background-position: -150px -150px
+}
+
+i.gift_63 {
+    background-position: -200px -150px
+}
+
+i.gift_big_60 {
+    background-position: -50px -150px
+}
+
+i.gift_big_61 {
+    background-position: -100px -150px
+}
+
+i.gift_big_62 {
+    background-position: -150px -150px
+}
+
+i.gift_big_63 {
+    background-position: -200px -150px
+}
+
+i.gift_74 {
+    background-position: -50px -200px
+}
+
+i.gift_42 {
+    background-position: -100px -200px
+}
+
+i.gift_108 {
+    background-position: -150px -200px
+}
+
+i.gift_45 {
+    background-position: -200px -200px
+}
+
+i.gift_big_74 {
+    background-position: -50px -200px
+}
+
+i.gift_big_42 {
+    background-position: -100px -200px
+}
+
+i.gift_big_108 {
+    background-position: -150px -200px
+}
+
+i.gift_big_45 {
+    background-position: -200px -200px
+}
+
+i.gift_92 {
+    background-position: -50px -250px
+}
+
+i.gift_93 {
+    background-position: -100px -250px
+}
+
+i.gift_94 {
+    background-position: -150px -250px
+}
+
+i.gift_95 {
+    background-position: -200px -250px
+}
+
+i.gift_big_92 {
+    background-position: -50px -250px
+}
+
+i.gift_big_93 {
+    background-position: -100px -250px
+}
+
+i.gift_big_94 {
+    background-position: -150px -250px
+}
+
+i.gift_big_95 {
+    background-position: -200px -250px
+}
+
+i.gift_97 {
+    background-position: -50px -300px
+}
+
+i.gift_big_97 {
+    background-position: -50px -300px
+}
+
+i.gift_120 {
+    background-position: -50px -350px
+}
+
+i.gift_121 {
+    background-position: -100px -350px
+}
+
+i.gift_122 {
+    background-position: -150px -350px
+}
+
+i.gift_big_120 {
+    background-position: -50px -350px
+}
+
+i.gift_big_121 {
+    background-position: -100px -350px
+}
+
+i.gift_big_122 {
+    background-position: -150px -350px
+}
+
+i.gift_123 {
+    background-position: -50px -400px
+}
+
+i.gift_big_123 {
+    background-position: -50px -400px
+}
+
+i.gift_130 {
+    background-position: -50px -450px
+}
+
+i.gift_131 {
+    background-position: -100px -450px
+}
+
+i.gift_132 {
+    background-position: -150px -450px
+}
+
+i.gift_big_130 {
+    background-position: -50px -450px
+}
+
+i.gift_big_131 {
+    background-position: -100px -450px
+}
+
+i.gift_big_132 {
+    background-position: -150px -450px
+}
+
+i.gift_106 {
+    background-position: -50px -550px
+}
+
+i.gift_big_106 {
+    background-position: -50px -550px
+}
+
+i.gift_114 {
+    background-position: -100px -550px
+}
+
+i.gift_big_114 {
+    background-position: -100px -550px
+}
+
+i.gift_463 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/moblie_star_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/moblie_star_small_ie6.png)
+}
+
+i.gift_big_463 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/moblie_star.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/moblie_star_ie6.png)
+}
+
+i.gift_543 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift543_small.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift543_small_8bit.png)
+}
+
+i.gift_big_543 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift543_big.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift543_big_8bit.png)
+}
+
+i.gift_662 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_445_small.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_445_small_8bit.png)
+}
+
+i.gift_big_662 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_445_big.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_445_big_8bit.png)
+}
+
+i.gift_663 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_663_small.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_663_small_8bit.png)
+}
+
+i.gift_big_663 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_663_big.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_663_big_8bit.png)
+}
+
+i.gift_652 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift652_small_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift652_small_8bit_v1.png)
+}
+
+i.gift_big_652 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift652_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift652_big_8bit_v1.png)
+}
+
+i.gift_538, i.gift_637, i.gift_638, i.gift_639 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/dw2016_small.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/dw2016_small_8bit.png)
+}
+
+i.gift_big_538, i.gift_big_637, i.gift_big_638, i.gift_big_639 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/dw2016_big.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/dw2016_big_8bit.png)
+}
+
+i.gift_637 {
+    background-position: -50px 0
+}
+
+i.gift_638 {
+    background-position: -100px 0
+}
+
+i.gift_639 {
+    background-position: -150px 0
+}
+
+i.gift_big_637 {
+    background-position: -50px 0
+}
+
+i.gift_big_638 {
+    background-position: -100px 0
+}
+
+i.gift_big_639 {
+    background-position: -150px 0
+}
+
+i.gift_635 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift635_small.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift635_small_8bit.png)
+}
+
+i.gift_big_635 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift635_big.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift635_big_8bit.png)
+}
+
+i.gift_628 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift628_small.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift628_small_8bit.png)
+}
+
+i.gift_big_628 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift628_big.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift628_big_8bit.png)
+}
+
+i.gift_626 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift626_small.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift626_small_8bit.png)
+}
+
+i.gift_big_626 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift626_big.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift626_big_8bit.png)
+}
+
+i.gift_624 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_624_small.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_624_small_8bit.png)
+}
+
+i.gift_big_624 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_624_big.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_624_big_8bit.png)
+}
+
+i.gift_621 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_621_small.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_621_small_8bit.png)
+}
+
+i.gift_big_621 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_621_big.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_621_big_8bit.png)
+}
+
+i.gift_renqi {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_renqi_small.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_renqi_small_8bit.png)
+}
+
+i.gift_big_renqi {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_renqi_big.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_renqi_big_8bit.png)
+}
+
+i.gift_605, i.gift_606, i.gift_607 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/luck_fight_small.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/luck_fight_small_8bit.png)
+}
+
+i.gift_big_605, i.gift_big_606, i.gift_big_607 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/luck_fight_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/luck_fight_big_8bit_v1.png)
+}
+
+i.gift_606 {
+    background-position: -50px 0
+}
+
+i.gift_607 {
+    background-position: -100px 0
+}
+
+i.gift_big_606 {
+    background-position: -50px 0
+}
+
+i.gift_big_607 {
+    background-position: -100px 0
+}
+
+i.gift_504 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_504_small_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_504_small_8bit_v1.png)
+}
+
+i.gift_big_504 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_504_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_504_big_8bit_v1.png)
+}
+
+i.gift_499 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_499_small_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_499_8bit_v1.png)
+}
+
+i.gift_big_499 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_499_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_499_big_8bit_v1.png)
+}
+
+i.gift_500 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_500_small_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_500_8bit_v1.png)
+}
+
+i.gift_big_500 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_500_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_500_big_8bit_v1.png)
+}
+
+i.gift_603, i.gift_604 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/spring2016_small.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/spring2016_small_8bit.png)
+}
+
+i.gift_big_603, i.gift_big_604 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/spring2016_big.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/spring2016_big_8bit.png)
+}
+
+i.gift_604 {
+    background-position: -50px 0
+}
+
+i.gift_big_604 {
+    background-position: -50px 0
+}
+
+i.gift_609 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift609_small_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift609_small_8bit_v1.png)
+}
+
+i.gift_big_609 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift609_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift609_big_8bit_v1.png)
+}
+
+i.gift_592 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift592_small.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift592_small_8bit.png)
+}
+
+i.gift_big_592 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift592_big.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift592_big_8bit.png)
+}
+
+i.gift_593 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift593_small.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift593_small_8bit.png)
+}
+
+i.gift_big_593 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift593_big.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift593_big_8bit.png)
+}
+
+i.gift_594 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift594_small.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift594_small_8bit.png)
+}
+
+i.gift_big_594 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift594_big.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift594_big_8bit.png)
+}
+
+i.gift_595 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift595_small.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift595_small_8bit.png)
+}
+
+i.gift_big_595 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift595_big.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift595_big_8bit.png)
+}
+
+i.gift_596 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift596_small.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift596_small_8bit.png)
+}
+
+i.gift_big_596 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift596_big.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift596_big_8bit.png)
+}
+
+i.gift_590 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift590_small.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift590_small_8bit.png)
+}
+
+i.gift_big_590 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift590_big.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift590_big_8bit.png)
+}
+
+i.gift_589 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift589_small.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift589_small_8bit.png)
+}
+
+i.gift_big_589 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift589_big.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift589_big_8bit.png)
+}
+
+i.gift_580 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift580_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift580_small_8bit.png)
+}
+
+i.gift_big_580 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift580_big.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift580_big_8bit.png)
+}
+
+i.gift_577 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift577_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift577_small_8bit.png)
+}
+
+i.gift_big_577 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift577_big.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift577_big_8bit.png)
+}
+
+i.gift_573 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_573_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_573_small_8bit.png)
+}
+
+i.gift_big_573 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_573_big.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_573_big_8bit.png)
+}
+
+i.gift_566 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/redFlag32_small_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/redFlag32_small_ie6_v1.png)
+}
+
+i.gift_big_566 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/redFlag_big_v2.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/redFlag_big_ie6_v2.png)
+}
+
+i.gift_562, i.gift_563 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/midautumn2015_small.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/midautumn2015_small_8bit.png)
+}
+
+i.gift_big_562, i.gift_big_563 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/midautumn2015_big.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/midautumn2015_big_8bit.png)
+}
+
+i.gift_563 {
+    background-position: -50px 0
+}
+
+i.gift_big_563 {
+    background-position: -50px 0
+}
+
+i.gift_541, i.gift_542 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/father2015_small.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/father2015_small_8bit.png)
+}
+
+i.gift_big_541, i.gift_big_542 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/father2015_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/father2015_big_8bit_v1.png)
+}
+
+i.gift_542 {
+    background-position: -50px 0
+}
+
+i.gift_big_542 {
+    background-position: -50px 0
+}
+
+i.gift_530 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift530_small_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift530_small_8bit_v1.png)
+}
+
+i.gift_big_530 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift530_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift530_big_8bit_v1.png)
+}
+
+i.gift_524 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_524_small.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_524_small_8bit.png)
+}
+
+i.gift_big_524 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_524_big.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_524_big_8bit.png)
+}
+
+i.gift_520 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift520_small.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift520_small_8bit.png)
+}
+
+i.gift_big_520 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift520_big.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift520_big_8bit.png)
+}
+
+i.gift_517 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_517_small.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_517_small_8bit.png)
+}
+
+i.gift_big_517 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_517_big.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_517_big_8bit.png)
+}
+
+i.gift_514, i.gift_515 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_goddess_small_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_goddess_small_8bit_v1.png)
+}
+
+i.gift_big_514, i.gift_big_515 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_goddess_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_goddess_big_8bit_v1.png)
+}
+
+i.gift_515 {
+    background-position: -50px 0
+}
+
+i.gift_big_515 {
+    background-position: -50px 0
+}
+
+i.gift_557 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_557_small.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_557_small_8bit.png)
+}
+
+i.gift_big_557 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_557_big.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_557_big_8bit.png)
+}
+
+i.gift_445 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_445_small.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_445_small_8bit.png)
+}
+
+i.gift_big_445 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_445_big.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_445_big_8bit.png)
+}
+
+i.gift_511 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_511_small_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_511_small_8bit_v1.png)
+}
+
+i.gift_big_511 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_511_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_511_big_8bit_v1.png)
+}
+
+i.gift_510 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_510_small_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_510_small_8bit_v1.png)
+}
+
+i.gift_big_510 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_510_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_510_big_8bit_v1.png)
+}
+
+i.gift_501 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_501_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_501_8bit.png)
+}
+
+i.gift_big_501 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_501_big.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_501_big_8bit.png)
+}
+
+i.gift_495, i.gift_496, i.gift_497, i.gift_498, i.gift_502, i.gift_503 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/year2015_small_v3.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/year2015_small_8bit_v3.png)
+}
+
+i.gift_big_495, i.gift_big_496, i.gift_big_497, i.gift_big_498, i.gift_big_502, i.gift_big_503 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/year2015_big_v3.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/year2015_big_8bit_v3.png)
+}
+
+i.gift_496 {
+    background-position: -50px 0
+}
+
+i.gift_497 {
+    background-position: -100px 0
+}
+
+i.gift_498 {
+    background-position: -150px 0
+}
+
+http:
+
+/
+/
+vr1
+
+.6
+rooms.com /imges/ live /CSSIMG/ gift /event/ yuan2015_small.png i.gift_502 {
+    background-position: -200px 0
+}
+
+i.gift_503 {
+    background-position: -250px 0
+}
+
+i.gift_big_496 {
+    background-position: -50px 0
+}
+
+i.gift_big_497 {
+    background-position: -100px 0
+}
+
+i.gift_big_498 {
+    background-position: -150px 0
+}
+
+i.gift_big_502 {
+    background-position: -200px 0
+}
+
+i.gift_big_503 {
+    background-position: -250px 0
+}
+
+i.gift_493, i.gift_494 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/newyear2015_small.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/newyear2015_small_8bit.png)
+}
+
+i.gift_big_493, i.gift_big_494 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/newyear2015_big.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/newyear2015_big_8bit.png)
+}
+
+i.gift_494 {
+    background-position: -50px 0
+}
+
+i.gift_big_494 {
+    background-position: -50px 0
+}
+
+i.gift_492 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_492_small_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_492_8bit_v1.png)
+}
+
+i.gift_big_492 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_492_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/gift_492_big_8bit_v1.png)
+}
+
+i.gift_485, i.gift_486, i.gift_487, i.gift_488, i.gift_489 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/yuandan2015_small.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/yuandan2015_small_ie6.png)
+}
+
+i.gift_big_485, i.gift_big_486, i.gift_big_487, i.gift_big_488, i.gift_big_489 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/yuandan2015_big.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/yuandan2015_big_ie6.png)
+}
+
+i.gift_485 {
+    background-position: -25px 0
+}
+
+i.gift_487 {
+    background-position: -75px 0
+}
+
+i.gift_488 {
+    background-position: -100px 0
+}
+
+i.gift_489 {
+    background-position: -50px 0
+}
+
+i.gift_big_485 {
+    background-position: -35px 0
+}
+
+i.gift_big_487 {
+    background-position: -105px 0
+}
+
+i.gift_big_488 {
+    background-position: -140px 0
+}
+
+i.gift_big_489 {
+    background-position: -70px 0
+}
+
+i.gift_480, i.gift_481, i.gift_482 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/christmas2014_small.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/christmas2014_small_8bit.png)
+}
+
+i.gift_big_480, i.gift_big_481, i.gift_big_482 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/christmas2014_big.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/christmas2014_big.png)
+}
+
+i.gift_481 {
+    background-position: -50px 0
+}
+
+i.gift_482 {
+    background-position: -100px 0
+}
+
+i.gift_big_481 {
+    background-position: -50px 0
+}
+
+i.gift_big_482 {
+    background-position: -100px 0
+}
+
+i.gift_471, i.gift_472, i.gift_473, i.gift_474, i.gift_475, i.gift_476 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/halloween2014_smail.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/halloween2014_smail_8bit.png)
+}
+
+i.gift_big_471, i.gift_big_472, i.gift_big_473, i.gift_big_474, i.gift_big_475, i.gift_big_476 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/halloween2014_big.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/halloween2014_big_8bit.png)
+}
+
+i.gift_472 {
+    background-position: -50px 0
+}
+
+i.gift_473 {
+    background-position: -100px 0
+}
+
+i.gift_474 {
+    background-position: -150px 0
+}
+
+i.gift_475 {
+    background-position: -200px 0
+}
+
+i.gift_476 {
+    background-position: -250px 0
+}
+
+i.gift_big_472 {
+    background-position: -50px 0
+}
+
+i.gift_big_473 {
+    background-position: -100px 0
+}
+
+i.gift_big_474 {
+    background-position: -150px 0
+}
+
+i.gift_big_475 {
+    background-position: -200px 0
+}
+
+i.gift_big_476 {
+    background-position: -250px 0
+}
+
+i.gift_467, i.gift_468, i.gift_469, i.gift_470 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/chihuo2014_smail.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/chihuo2014_smail_8bit.png)
+}
+
+i.gift_big_467, i.gift_big_468, i.gift_big_469, i.gift_big_470 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/chihuo2014_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/chihuo2014_big_8bit_v1.png)
+}
+
+i.gift_468 {
+    background-position: -50px 0
+}
+
+i.gift_469 {
+    background-position: -100px 0
+}
+
+i.gift_470 {
+    background-position: -150px 0
+}
+
+i.gift_big_468 {
+    background-position: -50px 0
+}
+
+i.gift_big_469 {
+    background-position: -100px 0
+}
+
+i.gift_big_470 {
+    background-position: -150px 2px
+}
+
+i.gift_454, i.gift_455, i.gift_456 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/teacher_class_small02.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/teacher_class_small02_ie6.png)
+}
+
+i.gift_big_454, i.gift_big_455, i.gift_big_456 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/teacher_class02.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/teacher_class02_ie6.png)
+}
+
+i.gift_455 {
+    background-position: 0 -50px
+}
+
+i.gift_456 {
+    background-position: 0 -25px
+}
+
+i.gift_big_455 {
+    background-position: 0 -80px
+}
+
+i.gift_big_456 {
+    background-position: 0 -40px
+}
+
+i.gift_452, i.gift_453 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/midAutumn2014_small_v2.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/midAutumn2014_small_8bit_v2.png)
+}
+
+i.gift_big_452, i.gift_big_453 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/midAutumn2014_big_v2.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/midAutumn2014_big_8bit_v2.png)
+}
+
+i.gift_453 {
+    background-position: -50px 0
+}
+
+i.gift_big_453 {
+    background-position: -50px 0
+}
+
+i.gift_446, i.gift_447, i.gift_448, i.gift_449, i.gift_450 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/chineselove2014_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/chineselove2014_small_8bit.png)
+}
+
+i.gift_big_446, i.gift_big_447, i.gift_big_448, i.gift_big_449, i.gift_big_450 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/chineselove2014_big.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/chineselove2014_big_8bit.png)
+}
+
+i.gift_446 {
+    background-position: -50px 0
+}
+
+i.gift_447 {
+    background-position: -100px 0
+}
+
+i.gift_448 {
+    background-position: -150px 0
+}
+
+i.gift_449 {
+    background-position: -200px 0
+}
+
+i.gift_450 {
+    background-position: -250px 0
+}
+
+i.gift_big_446 {
+    background-position: -50px 0
+}
+
+i.gift_big_447 {
+    background-position: -100px 0
+}
+
+i.gift_big_448 {
+    background-position: -150px 0
+}
+
+i.gift_big_449 {
+    background-position: -200px 0
+}
+
+i.gift_big_450 {
+    background-position: -250px 0
+}
+
+i.gift_442 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/armyGrabFlag_small_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/armyGrabFlag_small_8bit_v1.png)
+}
+
+i.gift_big_442 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/armyGrabFlag_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/_big_8bit_v1.png)
+}
+
+i.gift_479 {
+    background: url(http://vr2.6rooms.com/imges/live/CSSIMG/gift/event/gift_479_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_479_small_ie6.png)
+}
+
+i.gift_big_479 {
+    background: url(http://vr2.6rooms.com/imges/live/CSSIMG/gift/event/gift_479.png) no-repeat 0 0;
+    _background-image: url(http://vr2.6rooms.com/imges/live/CSSIMG/gift/event/gift_479_ie6.png)
+}
+
+i.gift_441 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/worldcup2014_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/worldcup2014_small_8bit.png)
+}
+
+i.gift_big_441 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/worldcup2014_big.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/worldcup2014_big_8bit.png)
+}
+
+i.gift_431, i.gift_432, i.gift_433, i.gift_434, i.gift_435, i.gift_436 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/baihua_small_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/baihua_small_8bit_v1.png)
+}
+
+i.gift_big_431, i.gift_big_432, i.gift_big_433, i.gift_big_434, i.gift_big_435, i.gift_big_436 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/baihua_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/baihua_big_8bit_v1.png)
+}
+
+i.gift_432 {
+    background-position: -50px 0
+}
+
+i.gift_433 {
+    background-position: -100px 0
+}
+
+i.gift_434 {
+    background-position: -150px 0
+}
+
+i.gift_435 {
+    background-position: -200px 0
+}
+
+i.gift_436 {
+    background-position: -250px 0
+}
+
+i.gift_big_432 {
+    background-position: -50px 0
+}
+
+i.gift_big_433 {
+    background-position: -100px 0
+}
+
+i.gift_big_434 {
+    background-position: -150px 0
+}
+
+i.gift_big_435 {
+    background-position: -200px 0
+}
+
+i.gift_big_436 {
+    background-position: -250px 0
+}
+
+i.gift_427, i.gift_428, i.gift_429 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/qingming2014_small_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/qingming2014_small_8bit_v1.png)
+}
+
+i.gift_big_427, i.gift_big_428, i.gift_big_429 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/qingming2014_big.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/qingming2014_big_8bit.png)
+}
+
+i.gift_428 {
+    background-position: -50px 0
+}
+
+i.gift_429 {
+    background-position: -100px 0
+}
+
+i.gift_big_428 {
+    background-position: -50px 0
+}
+
+i.gift_big_429 {
+    background-position: -100px 0
+}
+
+i.gift_424, i.gift_425, i.gift_426 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/foolday2016_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/foolday2016_small_8bit.png)
+}
+
+i.gift_big_424, i.gift_big_425, i.gift_big_426 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/foolday2016_big.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/foolday2016_big_8bit.png)
+}
+
+i.gift_425 {
+    background-position: -50px 0
+}
+
+i.gift_426 {
+    background-position: -100px 0
+}
+
+i.gift_big_425 {
+    background-position: -50px 0
+}
+
+i.gift_big_426 {
+    background-position: -100px 0
+}
+
+i.gift_422 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/zhishu2014_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/zhishu2014_small_8bit.png)
+}
+
+i.gift_big_422 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/zhishu2014_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/zhishu2014_big_8bit_v1.png)
+}
+
+i.gift_438 {
+    background: url(http://vr7.6rooms.com/imges/live/events/love2014520/gift_438_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/events/love2014520/gift_438_ie6_small.png)
+}
+
+i.gift_big_438 {
+    background: url(http://vr2.6rooms.com/imges/live/CSSIMG/gift_float/gift_438_v2.png) no-repeat 0 0;
+    _background-image: url(http://vr2.6rooms.com/imges/live/CSSIMG/gift_float/gift_438_ie6_v2.png)
+}
+
+i.gift_417 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/qrj2014_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/qrj2014_small_8bit.png)
+}
+
+i.gift_big_417 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/qrj2014_big.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/qrj2014_big_8bit.png)
+}
+
+i.gift_415, i.gift_416 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/luckyred_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/luckyred_small_8bit.png)
+}
+
+i.gift_big_415, i.gift_big_416 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/luckyred_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/luckyred_big_8bit_v1.png)
+}
+
+i.gift_416 {
+    background-position: -50px 0
+}
+
+i.gift_big_416 {
+    background-position: -50px 0
+}
+
+i.gift_414 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/qtx2014_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/qtx2014_small_8bit.png)
+}
+
+i.gift_big_414 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/qtx2014_big.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/qtx2014_big_8bit.png)
+}
+
+i.gift_412 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_412_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_412_small_8bit.png)
+}
+
+i.gift_big_412 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_412_big.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_412_big_8bit.png)
+}
+
+i.gift_413 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_413_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_413_small_8bit.png)
+}
+
+i.gift_big_413 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_413_big.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_413_big_8bit.png)
+}
+
+i.gift_405, i.gift_406, i.gift_407, i.gift_408, i.gift_409, i.gift_410, i.gift_411 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/zaowangye_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/zaowangye_small_8bit.png)
+}
+
+i.gift_big_405, i.gift_big_406, i.gift_big_407, i.gift_big_408, i.gift_big_409, i.gift_big_410, i.gift_big_411 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/zaowangye_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/zaowangye_big_8bit_v1.png)
+}
+
+i.gift_406 {
+    background-position: -50px 0
+}
+
+i.gift_407 {
+    background-position: -100px 0
+}
+
+i.gift_408 {
+    background-position: -150px 0
+}
+
+i.gift_409 {
+    background-position: -200px 0
+}
+
+i.gift_410 {
+    background-position: -250px 0
+}
+
+i.gift_411 {
+    background-position: -300px 0
+}
+
+i.gift_big_406 {
+    background-position: -50px 0
+}
+
+i.gift_big_407 {
+    background-position: -100px 0
+}
+
+i.gift_big_408 {
+    background-position: -150px 0
+}
+
+i.gift_big_409 {
+    background-position: -200px 0
+}
+
+i.gift_big_410 {
+    background-position: -250px 0
+}
+
+i.gift_big_411 {
+    background-position: -300px 0
+}
+
+i.gift_403, i.gift_404 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/newyear2014_small_v2.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/newyear2014_small_8bit_v2.png)
+}
+
+i.gift_big_403, i.gift_big_404 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/newyear2014_big_v2.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/newyear2014_big_8bit_v2.png)
+}
+
+i.gift_404 {
+    background-position: -50px 0
+}
+
+i.gift_big_404 {
+    background-position: -50px 0
+}
+
+i.gift_397, i.gift_398, i.gift_399, i.gift_400, i.gift_401, i.gift_402 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/christmas2013_small_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/christmas2013_small_8bit_v1.png)
+}
+
+i.gift_big_397, i.gift_big_398, i.gift_big_399, i.gift_big_400, i.gift_big_401, i.gift_big_402 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/christmas2013_big_v2.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/christmas2013_big_8bit_v2.png)
+}
+
+i.gift_398 {
+    background-position: -50px 0
+}
+
+i.gift_399 {
+    background-position: -100px 0
+}
+
+i.gift_400 {
+    background-position: -150px 0
+}
+
+i.gift_401 {
+    background-position: -200px 0
+}
+
+i.gift_402 {
+    background-position: -250px 0
+}
+
+i.gift_big_398 {
+    background-position: -50px 0
+}
+
+i.gift_big_399 {
+    background-position: -100px 0
+}
+
+i.gift_big_400 {
+    background-position: -150px 0
+}
+
+i.gift_big_401 {
+    background-position: -200px 0
+}
+
+i.gift_big_402 {
+    background-position: -250px 0
+}
+
+i.gift_396 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/winter201332_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/winter2013_small.png)
+}
+
+i.gift_big_396 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/winter2013_big.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/winter2013_big_8bit.png)
+}
+
+i.gift_394 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/ganen201332_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/ganen2013_small.png)
+}
+
+i.gift_big_394 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/ganen2013_big.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/ganen2013_big_8bit.png)
+}
+
+i.gift_391, i.gift_392, i.gift_393 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/sll32_small_v2.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/sll_small_v2.png)
+}
+
+i.gift_big_391, i.gift_big_392, i.gift_big_393 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/sll_big_v2.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/sll_big_8bit.png)
+}
+
+i.gift_392 {
+    background-position: -50px 0
+}
+
+i.gift_393 {
+    background-position: -100px 0
+}
+
+i.gift_big_392 {
+    background-position: -50px 0
+}
+
+i.gift_big_393 {
+    background-position: -100px 0
+}
+
+i.gift_384, i.gift_385, i.gift_386, i.gift_387, i.gift_388 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/halloween32_small_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/halloween_small_v1.png)
+}
+
+i.gift_big_384, i.gift_big_385, i.gift_big_386, i.gift_big_387, i.gift_big_388 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/halloween_big_v2.png) no-repeat 0 0;
+    _background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/halloween_big_8bit_v2.png)
+}
+
+i.gift_385 {
+    background-position: -40px 0
+}
+
+i.gift_386 {
+    background-position: -80px 0
+}
+
+i.gift_387 {
+    background-position: -120px 0
+}
+
+i.gift_388 {
+    background-position: -160px 0
+}
+
+i.gift_big_385 {
+    background-position: -40px 0
+}
+
+i.gift_big_386 {
+    background-position: -80px 0
+}
+
+i.gift_big_387 {
+    background-position: -120px 0
+}
+
+i.gift_big_388 {
+    background-position: -160px 0
+}
+
+i.gift_372, i.gift_373, i.gift_374, i.gift_375, i.gift_376, i.gift_377, i.gift_378 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/ampark32_small_v2.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/ampark_small_v2.png)
+}
+
+i.gift_big_372, i.gift_big_373, i.gift_big_374, i.gift_big_375, i.gift_big_376, i.gift_big_377, i.gift_big_378 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/ampark_big_v3.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/ampark_big_8bit.png)
+}
+
+i.gift_373 {
+    background-position: -40px 0
+}
+
+i.gift_374 {
+    background-position: -80px 0
+}
+
+i.gift_375 {
+    background-position: -120px 0
+}
+
+i.gift_376 {
+    background-position: -160px 0
+}
+
+i.gift_377 {
+    background-position: -200px 0
+}
+
+i.gift_378 {
+    background-position: -240px 0
+}
+
+i.gift_big_373 {
+    background-position: -40px 0
+}
+
+i.gift_big_374 {
+    background-position: -80px 0
+}
+
+i.gift_big_375 {
+    background-position: -120px 0
+}
+
+i.gift_big_376 {
+    background-position: -160px 0
+}
+
+i.gift_big_377 {
+    background-position: -200px 0
+}
+
+i.gift_big_378 {
+    background-position: -240px 0
+}
+
+i.gift_7204, i.gift_7205, i.gift_7206, i.gift_7207, i.gift_7208, i.gift_7209, i.gift_7210 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/ampark32_small_v2.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/ampark_small_v2.png)
+}
+
+i.gift_big_7204, i.gift_big_7205, i.gift_big_7206, i.gift_big_7207, i.gift_big_7208, i.gift_big_7209, i.gift_big_7210 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/ampark_big_v3.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/ampark_big_8bit.png)
+}
+
+i.gift_7205 {
+    background-position: -40px 0
+}
+
+i.gift_7206 {
+    background-position: -80px 0
+}
+
+i.gift_7207 {
+    background-position: -120px 0
+}
+
+i.gift_7208 {
+    background-position: -160px 0
+}
+
+i.gift_7209 {
+    background-position: -200px 0
+}
+
+i.gift_7210 {
+    background-position: -240px 0
+}
+
+i.gift_big_7205 {
+    background-position: -40px 0
+}
+
+i.gift_big_7206 {
+    background-position: -80px 0
+}
+
+i.gift_big_7207 {
+    background-position: -120px 0
+}
+
+i.gift_big_7208 {
+    background-position: -160px 0
+}
+
+i.gift_big_7209 {
+    background-position: -200px 0
+}
+
+i.gift_big_7210 {
+    background-position: -240px 0
+}
+
+i.gift_333, i.gift_334, i.gift_335, i.gift_336 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/child32_small_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/child_small_v1.png)
+}
+
+i.gift_big_333, i.gift_big_334, i.gift_big_335, i.gift_big_336 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/child_big_v2.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/child_big_8bit.png)
+}
+
+i.gift_334 {
+    background-position: -40px 0
+}
+
+i.gift_335 {
+    background-position: -80px 0
+}
+
+i.gift_336 {
+    background-position: -120px 0
+}
+
+i.gift_big_334 {
+    background-position: -40px 0
+}
+
+i.gift_big_335 {
+    background-position: -80px 0
+}
+
+i.gift_big_336 {
+    background-position: -120px 0
+}
+
+i.gift_332 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/yd32_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/yd_small.png)
+}
+
+i.gift_big_332 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/yd_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/yd_big_8bit.png)
+}
+
+i.gift_313, i.gift_314, i.gift_315 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/lady32_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/lady_small.png)
+}
+
+i.gift_big_313, i.gift_big_314, i.gift_big_315 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/lady_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/lady_big_8bit.png)
+}
+
+i.gift_314 {
+    background-position: -40px 0
+}
+
+i.gift_315 {
+    background-position: -80px 0
+}
+
+i.gift_big_314 {
+    background-position: -40px 0
+}
+
+i.gift_big_315 {
+    background-position: -80px 0
+}
+
+i.gift_299, i.gift_300, i.gift_301, i.gift_302, i.gift_360 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/football32_small_v3.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/football_small_v3.png)
+}
+
+i.gift_big_299, i.gift_big_300, i.gift_big_301, i.gift_big_302, i.gift_big_360 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/football_big_v4.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/football_big_8bit.png)
+}
+
+i.gift_300 {
+    background-position: -40px 0
+}
+
+i.gift_301 {
+    background-position: -80px 0
+}
+
+i.gift_302 {
+    background-position: -120px 0
+}
+
+i.gift_360 {
+    background-position: -160px 0
+}
+
+i.gift_big_300 {
+    background-position: -40px 0
+}
+
+i.gift_big_301 {
+    background-position: -80px 0
+}
+
+i.gift_big_302 {
+    background-position: -120px 0
+}
+
+i.gift_big_360 {
+    background-position: -160px 0
+}
+
+i.gift_298 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_298_32_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_298_small.png)
+}
+
+i.gift_big_298 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_298_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_298_big_8bit.png)
+}
+
+i.gift_287, i.gift_288, i.gift_289, i.gift_290, i.gift_291, i.gift_292, i.gift_293 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/festival32_small_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/festival_small_v1.png)
+}
+
+i.gift_big_287, i.gift_big_288, i.gift_big_289, i.gift_big_290, i.gift_big_291, i.gift_big_292, i.gift_big_293 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/festival_big_v3.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/festival_big_8bit.png)
+}
+
+i.gift_288 {
+    background-position: -40px 0
+}
+
+i.gift_289 {
+    background-position: -80px 0
+}
+
+i.gift_290 {
+    background-position: -120px 0
+}
+
+i.gift_291 {
+    background-position: -160px 0
+}
+
+i.gift_292 {
+    background-position: -200px 0
+}
+
+i.gift_293 {
+    background-position: -240px 0
+}
+
+i.gift_big_288 {
+    background-position: -40px 0
+}
+
+i.gift_big_289 {
+    background-position: -80px 0
+}
+
+i.gift_big_290 {
+    background-position: -120px 0
+}
+
+i.gift_big_291 {
+    background-position: -160px 0
+}
+
+i.gift_big_292 {
+    background-position: -200px 0
+}
+
+i.gift_big_293 {
+    background-position: -240px 0
+}
+
+i.gift_282 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/newyear32_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/newyear_small.png)
+}
+
+i.gift_big_282 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/newyear_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/newyear_big_8bit.png)
+}
+
+i.gift_281 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/saylove32_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/saylove_small.png)
+}
+
+i.gift_big_281 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/saylove_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/saylove_big_8bit.png)
+}
+
+i.gift_276, i.gift_277, i.gift_278, i.gift_279 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/christmas32_small_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/christmas_small_v1.png)
+}
+
+i.gift_big_276, i.gift_big_277, i.gift_big_278, i.gift_big_279 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/christmas_big_v2.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/christmas_big_8bit.png)
+}
+
+i.gift_277 {
+    background-position: -50px 0
+}
+
+i.gift_278 {
+    background-position: -100px 0
+}
+
+i.gift_279 {
+    background-position: -150px 0
+}
+
+i.gift_big_277 {
+    background-position: -50px 0
+}
+
+i.gift_big_278 {
+    background-position: -100px 0
+}
+
+i.gift_big_279 {
+    background-position: -150px 0
+}
+
+i.gift_280 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/ipad32_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/ipad_small.png)
+}
+
+i.gift_big_280 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/ipad_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/ipad_big_8bit.png)
+}
+
+i.gift_272, i.gift_273, i.gift_274 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/doomsday32_small_v2.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/doomsday_small_v2.png)
+}
+
+i.gift_big_272, i.gift_big_273, i.gift_big_274 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/doomsday_big_v2.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/doomsday_big_8bit.png)
+}
+
+i.gift_273 {
+    background-position: -40px 0
+}
+
+i.gift_274 {
+    background-position: -80px 0
+}
+
+i.gift_big_273 {
+    background-position: -40px 0
+}
+
+i.gift_big_274 {
+    background-position: -80px 0
+}
+
+i.gift_267, i.gift_268, i.gift_269, i.gift_270 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/ganen32_small_v2.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/ganen_small_v2.png)
+}
+
+i.gift_big_267, i.gift_big_268, i.gift_big_269, i.gift_big_270 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/ganen_big_v3.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/ganen_big_8bit.png)
+}
+
+i.gift_268 {
+    background-position: -40px 0
+}
+
+i.gift_269 {
+    background-position: -80px 0
+}
+
+i.gift_270 {
+    background-position: -120px 0
+}
+
+i.gift_big_268 {
+    background-position: -40px 0
+}
+
+i.gift_big_269 {
+    background-position: -80px 0
+}
+
+i.gift_big_270 {
+    background-position: -120px 0
+}
+
+i.gift_264, i.gift_265, i.gift_266, i.gift_576 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/ggun2015_small_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/ggun2015_small_8bit_v1.png)
+}
+
+i.gift_big_264, i.gift_big_265, i.gift_big_266, i.gift_big_576 {
+    background: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/ggun2015_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr1.6rooms.com/imges/live/CSSIMG/gift/event/ggun2015_big_8bit_v1.png)
+}
+
+i.gift_265 {
+    background-position: -50px 0
+}
+
+i.gift_266 {
+    background-position: -100px 0
+}
+
+i.gift_576 {
+    background-position: -150px 0
+}
+
+i.gift_big_265 {
+    background-position: -50px 0
+}
+
+i.gift_big_266 {
+    background-position: -100px 0
+}
+
+i.gift_big_576 {
+    background-position: -150px 0
+}
+
+i.gift_256 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/redFlag32_small_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/redFlag32_small_ie6_v1.png)
+}
+
+i.gift_big_256 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/redFlag_big_v2.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/redFlag_big_ie6_v2.png)
+}
+
+i.gift_7312 {
+    background: url(http://vr7.6rooms.com/imges/live/IMGSRC/gold_v6_8bit.png) no-repeat 3px 3px
+}
+
+i.gift_5015 {
+    background: url(http://vr7.6rooms.com/imges/live/IMGSRC/gold_v6_8bit.png) no-repeat 3px 3px
+}
+
+i.gift_259 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/paperCrane32_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/paperCrane_small_v1.png)
+}
+
+i.gift_big_259 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/paperCrane_big_v2.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/paperCrane_big_8bit.png)
+}
+
+i.gift_329 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift329_small.png) no-repeat 0 0
+}
+
+i.gift_big_329 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift329_big.png) no-repeat 0 0
+}
+
+i.badge_7817 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7817.png) no-repeat center 0
+}
+
+i.badge_7825, i.badge_7826 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_footballRoom_v3.png) no-repeat center 0
+}
+
+i.badge_7826 {
+    background-position: center -150px
+}
+
+i.gift_258, i.gift_260, i.gift_262, i.gift_263, i.gift_271, i.gift_275, i.gift_283, i.gift_284, i.gift_303, i.gift_304, i.gift_326, i.gift_348, i.gift_351, i.gift_352, i.gift_353, i.gift_357, i.gift_361, i.gift_418, i.gift_420, i.gift_421, i.gift_423, i.gift_439, i.gift_440, i.gift_443, i.gift_444, i.gift_464, i.gift_477, i.gift_478, i.gift_490, i.gift_491, i.gift_505, i.gift_506, i.gift_507, i.gift_508, i.gift_509, i.gift_512, i.gift_513, i.gift_518, i.gift_519, i.gift_521, i.gift_522, i.gift_523, i.gift_526, i.gift_528, i.gift_535, i.gift_549, i.gift_550, i.gift_551, i.gift_556, i.gift_558, i.gift_559, i.gift_564, i.gift_565, i.gift_569, i.gift_570, i.gift_572, i.gift_574, i.gift_575, i.gift_578, i.gift_579, i.gift_581, i.gift_582, i.gift_583, i.gift_585, i.gift_587, i.gift_588, i.gift_591, i.gift_597, i.gift_598, i.gift_601, i.gift_602, i.gift_608, i.gift_610, i.gift_611, i.gift_612, i.gift_614, i.gift_615, i.gift_617, i.gift_618, i.gift_620, i.gift_622, i.gift_623, i.gift_625, i.gift_632, i.gift_634, i.gift_636, i.gift_650, i.gift_651, i.gift_657, i.gift_658, i.gift_659, i.gift_664, i.gift_665, i.gift_666, i.gift_667, i.gift_668, i.gift_669, i.gift_670 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_258_small_v1.png) no-repeat 0 0
+}
+
+i.gift_big_258, i.gift_big_260, i.gift_big_262, i.gift_big_263, i.gift_big_271, i.gift_big_275, i.gift_big_283, i.gift_big_284, i.gift_big_303, i.gift_big_304, i.gift_big_326, i.gift_big_348, i.gift_big_351, i.gift_big_352, i.gift_big_353, i.gift_big_357, i.gift_big_361, i.gift_big_418, i.gift_big_420, i.gift_big_421, i.gift_big_423, i.gift_big_439, i.gift_big_440, i.gift_big_443, i.gift_big_444, i.gift_big_464, i.gift_big_477, i.gift_big_478, i.gift_big_490, i.gift_big_491, i.gift_big_505, i.gift_big_506, i.gift_big_507, i.gift_big_508, i.gift_big_509, i.gift_big_512, i.gift_big_513, i.gift_big_518, i.gift_big_519, i.gift_big_521, i.gift_big_522, i.gift_big_523, i.gift_big_526, i.gift_big_528, i.gift_big_535, i.gift_big_549, i.gift_big_550, i.gift_big_551, i.gift_big_556, i.gift_big_558, i.gift_big_559, i.gift_big_564, i.gift_big_565, i.gift_big_569, i.gift_big_570, i.gift_big_572, i.gift_big_574, i.gift_big_575, i.gift_big_578, i.gift_big_579, i.gift_big_581, i.gift_big_582, i.gift_big_583, i.gift_big_585, i.gift_big_587, i.gift_big_588, i.gift_big_591, i.gift_big_597, i.gift_big_598, i.gift_big_601, i.gift_big_602, i.gift_big_608, i.gift_big_610, i.gift_big_611, i.gift_big_612, i.gift_big_614, i.gift_big_615, i.gift_big_617, i.gift_big_618, i.gift_big_620, i.gift_big_622, i.gift_big_623, i.gift_big_625, i.gift_big_632, i.gift_big_634, i.gift_big_636, i.gift_big_650, i.gift_big_651, i.gift_big_657, i.gift_big_658, i.gift_big_659, i.gift_big_664, i.gift_big_665, i.gift_big_666, i.gift_big_667, i.gift_big_668, i.gift_big_669, i.gift_big_670 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_258_big_v1.png) no-repeat 0 0
+}
+
+i.gift_567, i.gift_568, i.gift_613, i.gift_619, i.gift_627, i.gift_633, i.gift_660, i.gift_661 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_568_small_v2.png) no-repeat 0 0
+}
+
+i.gift_big_567, i.gift_big_568, i.gift_big_613, i.gift_big_619, i.gift_big_627, i.gift_big_633, i.gift_big_660, i.gift_big_661 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_568_big_v2.png) no-repeat 0 0
+}
+
+i.gift_629, i.gift_630, i.gift_631, i.gift_big_629, i.gift_big_630, i.gift_big_631 {
+    background: url(http://vr7.6rooms.com/imges/level/gift/event/gift-629-v1.png) no-repeat 0 0
+}
+
+i.gift_big_630 {
+    background-position: -50px 0
+}
+
+i.gift_big_631 {
+    background-position: -100px 0
+}
+
+i.gift_629 {
+    background-position: 0 -50px
+}
+
+i.gift_630 {
+    background-position: -50px -50px
+}
+
+i.gift_631 {
+    background-position: -100px -50px
+}
+
+i.gift_381, i.gift_382, i.gift_383 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/chongyang2013_32_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/chongyang2013_small.png)
+}
+
+i.gift_big_381, i.gift_big_382, i.gift_big_383 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/chongyang2013_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/chongyang2013_big_8bit.png)
+}
+
+i.gift_381 {
+    background-position: 0 0
+}
+
+i.gift_382 {
+    background-position: -40px 0
+}
+
+i.gift_383 {
+    background-position: -80px 0
+}
+
+i.gift_big_381 {
+    background-position: 0 0
+}
+
+i.gift_big_382 {
+    background-position: -40px 0
+}
+
+i.gift_big_383 {
+    background-position: -80px 0
+}
+
+i.gift_367, i.gift_368, i.gift_369, i.gift_370, i.gift_371 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/midAutumn2013_32_small_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/midAutumn2013_small_v1.png)
+}
+
+i.gift_big_367, i.gift_big_368, i.gift_big_369, i.gift_big_370, i.gift_big_371 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/midAutumn2013_big_v2.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/midAutumn2013_big_8bit_v1.png)
+}
+
+i.gift_367 {
+    background-position: 0 0
+}
+
+i.gift_368 {
+    background-position: -40px 0
+}
+
+i.gift_369 {
+    background-position: -80px 0
+}
+
+i.gift_370 {
+    background-position: -120px 0
+}
+
+i.gift_371 {
+    background-position: -160px 0
+}
+
+i.gift_big_367 {
+    background-position: 0 0
+}
+
+i.gift_big_368 {
+    background-position: -40px 0
+}
+
+i.gift_big_369 {
+    background-position: -80px 0
+}
+
+i.gift_big_370 {
+    background-position: -120px 0
+}
+
+i.gift_big_371 {
+    background-position: -160px 0
+}
+
+i.gift_364, i.gift_365, i.gift_366 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/teacher201332_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/teacher2013_small.png)
+}
+
+i.gift_big_364, i.gift_big_365, i.gift_big_366 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/teacher2013_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/teacher2013_big_8bit.png)
+}
+
+i.gift_364 {
+    background-position: 0 0
+}
+
+i.gift_365 {
+    background-position: -40px 0
+}
+
+i.gift_366 {
+    background-position: -80px 0
+}
+
+i.gift_big_364 {
+    background-position: 0 0
+}
+
+i.gift_big_365 {
+    background-position: -40px 0
+}
+
+i.gift_big_366 {
+    background-position: -80px 0
+}
+
+i.gift_294, i.gift_295, i.gift_296, i.gift_297 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/love2013_small.png) no-repeat 0 0
+}
+
+i.gift_big_294, i.gift_big_295, i.gift_big_296, i.gift_big_297 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/love2013_big.png) no-repeat 0 0
+}
+
+i.gift_294 {
+    background-position: 0 0
+}
+
+i.gift_295 {
+    background-position: -40px 0
+}
+
+i.gift_296 {
+    background-position: -80px 0
+}
+
+i.gift_297 {
+    background-position: -120px 0
+}
+
+i.gift_big_294 {
+    background-position: 0 0
+}
+
+i.gift_big_295 {
+    background-position: -40px 0
+}
+
+i.gift_big_296 {
+    background-position: -80px 0
+}
+
+i.gift_big_297 {
+    background-position: -120px 0
+}
+
+i.gift_253, i.gift_254, i.gift_255 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/chineselove32_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/chineselove_small.png)
+}
+
+i.gift_big_253, i.gift_big_254, i.gift_big_255 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/chineselove_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/chineselove_big_8bit.png)
+}
+
+i.gift_254 {
+    background-position: -40px 0
+}
+
+i.gift_255 {
+    background-position: -80px 0
+}
+
+i.gift_big_254 {
+    background-position: -40px 0
+}
+
+i.gift_big_255 {
+    background-position: -80px 0
+}
+
+i.gift_244, i.gift_245, i.gift_246, i.gift_247, i.gift_248, i.gift_249, i.gift_250, i.gift_251, i.gift_252 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/Olym32_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/Olym_small.png)
+}
+
+i.gift_big_244, i.gift_big_245, i.gift_big_246, i.gift_big_247, i.gift_big_248, i.gift_big_249, i.gift_big_250, i.gift_big_251, i.gift_big_252 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/Olym_big.png) no-repeat 0 0
+}
+
+i.gift_245 {
+    background-position: -40px 0
+}
+
+i.gift_246 {
+    background-position: -80px 0
+}
+
+i.gift_247 {
+    background-position: -120px 0
+}
+
+i.gift_248 {
+    background-position: -160px 0
+}
+
+i.gift_249 {
+    background-position: -200px 0
+}
+
+i.gift_250 {
+    background-position: -240px 0
+}
+
+i.gift_251 {
+    background-position: -280px 0
+}
+
+i.gift_252 {
+    background-position: -320px 0
+}
+
+i.gift_big_245 {
+    background-position: -40px 0
+}
+
+i.gift_big_246 {
+    background-position: -80px 0
+}
+
+i.gift_big_247 {
+    background-position: -120px 0
+}
+
+i.gift_big_248 {
+    background-position: -160px 0
+}
+
+i.gift_big_249 {
+    background-position: -200px 0
+}
+
+i.gift_big_250 {
+    background-position: -240px 0
+}
+
+i.gift_big_251 {
+    background-position: -280px 0
+}
+
+i.gift_big_252 {
+    background-position: -320px 0
+}
+
+i.gift_239, i.gift_240, i.gift_241, i.gift_242, i.gift_243, i.gift_345 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/duanwu32_small_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/duanwu_small_v1.png)
+}
+
+i.gift_big_239, i.gift_big_240, i.gift_big_241, i.gift_big_242, i.gift_big_243, i.gift_big_345 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/duanwu_big_v2.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/duanwu_big_8bit.png)
+}
+
+i.gift_240 {
+    background-position: -40px 0
+}
+
+i.gift_241 {
+    background-position: -80px 0
+}
+
+i.gift_242 {
+    background-position: -120px 0
+}
+
+i.gift_243 {
+    background-position: -160px 0
+}
+
+i.gift_345 {
+    background-position: -200px 0
+}
+
+i.gift_big_240 {
+    background-position: -40px 0
+}
+
+i.gift_big_241 {
+    background-position: -80px 0
+}
+
+i.gift_big_242 {
+    background-position: -120px 0
+}
+
+i.gift_big_243 {
+    background-position: -160px 0
+}
+
+i.gift_big_345 {
+    background-position: -200px 0
+}
+
+i.gift_70 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/duanwu32_small_v1.png) no-repeat -40px 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/duanwu_small_v1.png) no-repeat -40px 0
+}
+
+i.gift_big_70 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/duanwu_big_v2.png) no-repeat -40px 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/duanwu_big_8bit.png) no-repeat -40px 0
+}
+
+i.gift_234 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/qingcheng32_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/qingcheng_small.png)
+}
+
+i.gift_big_234 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/qingcheng_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/qingcheng_big_8bit.png)
+}
+
+i.gift_235, i.gift_236, i.gift_237, i.gift_238 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/child32_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/child_small.png)
+}
+
+i.gift_big_235, i.gift_big_236, i.gift_big_237, i.gift_big_238 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/child_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/child_big_8bit.png)
+}
+
+i.gift_236 {
+    background-position: -40px 0
+}
+
+i.gift_237 {
+    background-position: -80px 0
+}
+
+i.gift_238 {
+    background-position: -120px 0
+}
+
+i.gift_big_236 {
+    background-position: -40px 0
+}
+
+i.gift_big_237 {
+    background-position: -80px 0
+}
+
+i.gift_big_238 {
+    background-position: -120px 0
+}
+
+i.gift_230, i.gift_231, i.gift_232, i.gift_233 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/nurse32_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/nurse_small.png)
+}
+
+i.gift_big_230, i.gift_big_231, i.gift_big_232, i.gift_big_233 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/nurse_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/nurse_big_8bit.png)
+}
+
+i.gift_231 {
+    background-position: -40px 0
+}
+
+i.gift_232 {
+    background-position: -80px 0
+}
+
+i.gift_233 {
+    background-position: -120px 0
+}
+
+i.gift_big_231 {
+    background-position: -40px 0
+}
+
+i.gift_big_232 {
+    background-position: -80px 0
+}
+
+i.gift_big_233 {
+    background-position: -120px 0
+}
+
+i.gift_228, i.gift_229 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/fcwx32_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/fcwx_small.png)
+}
+
+i.gift_big_228, i.gift_big_229 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/fcwx_big.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/fcwx_big_8bit.png)
+}
+
+i.gift_229 {
+    background-position: -40px 0
+}
+
+i.gift_big_229 {
+    background-position: -40px 0
+}
+
+i.gift_224, i.gift_225, i.gift_226, i.gift_227 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/wusi32_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/wusi_small.png)
+}
+
+i.gift_big_224, i.gift_big_225, i.gift_big_226, i.gift_big_227 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/wusi_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/wusi_big_8bit.png)
+}
+
+i.gift_225 {
+    background-position: -40px 0
+}
+
+i.gift_226 {
+    background-position: -80px 0
+}
+
+i.gift_227 {
+    background-position: -120px 0
+}
+
+i.gift_big_225 {
+    background-position: -40px 0
+}
+
+i.gift_big_226 {
+    background-position: -80px 0
+}
+
+i.gift_big_227 {
+    background-position: -120px 0
+}
+
+i.gift_218, i.gift_219, i.gift_220, i.gift_221, i.gift_222, i.gift_223 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/wuyi32_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/wuyi_small.png)
+}
+
+i.gift_big_218, i.gift_big_219, i.gift_big_220, i.gift_big_221, i.gift_big_222, i.gift_big_223 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/wuyi_big_v2.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/wuyi_big_8bit.png)
+}
+
+i.gift_219 {
+    background-position: -40px 0
+}
+
+i.gift_220 {
+    background-position: -80px 0
+}
+
+i.gift_221 {
+    background-position: -120px 0
+}
+
+i.gift_222 {
+    background-position: -160px 0
+}
+
+i.gift_223 {
+    background-position: -200px 0
+}
+
+i.gift_big_219 {
+    background-position: -40px 0
+}
+
+i.gift_big_220 {
+    background-position: -80px 0
+}
+
+i.gift_big_221 {
+    background-position: -120px 0
+}
+
+i.gift_big_222 {
+    background-position: -160px 0
+}
+
+i.gift_big_223 {
+    background-position: -200px 0
+}
+
+i.gift_210, i.gift_211, i.gift_212, i.gift_213 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/foolDay32_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/foolDay_small.png)
+}
+
+i.gift_big_210, i.gift_big_211, i.gift_big_212, i.gift_big_213 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/foolDay_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/foolDay_big_8bit.png)
+}
+
+i.gift_211 {
+    background-position: -40px 0
+}
+
+i.gift_212 {
+    background-position: -80px 0
+}
+
+i.gift_213 {
+    background-position: -120px 0
+}
+
+i.gift_big_211 {
+    background-position: -40px 0
+}
+
+i.gift_big_212 {
+    background-position: -80px 0
+}
+
+i.gift_big_213 {
+    background-position: -120px 0
+}
+
+i.gift_208, i.gift_209 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/gift_whiteDay32_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/gift_whiteDay_small.png)
+}
+
+i.gift_big_208, i.gift_big_209 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/gift_whiteDay_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/gift_whiteDay_big_8bit.png)
+}
+
+i.gift_208 {
+    background-position: -40px 0
+}
+
+i.gift_big_208 {
+    background-position: -40px 0
+}
+
+i.gift_201, i.gift_202, i.gift_203, i.gift_204 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/gift_springDay32_small_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/gift_springDay_small_v1.png)
+}
+
+i.gift_big_201, i.gift_big_202, i.gift_big_203, i.gift_big_204 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/gift_springDay_big_v2.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/gift_springDay_big_8bit.png)
+}
+
+i.gift_202 {
+    background-position: -40px 0
+}
+
+i.gift_203 {
+    background-position: -80px 0
+}
+
+i.gift_204 {
+    background-position: -120px 0
+}
+
+i.gift_big_202 {
+    background-position: -40px 0
+}
+
+i.gift_big_203 {
+    background-position: -80px 0
+}
+
+i.gift_big_204 {
+    background-position: -120px 0
+}
+
+i.gift_197, i.gift_198, i.gift_199, i.gift_200 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/gift_newyear32_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/IMGSRC/event/gift_newyear_small.png)
+}
+
+i.gift_big_197, i.gift_big_198, i.gift_big_199, i.gift_big_200 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/gift_newyear_big.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/gift_newyear_big_8bit.png)
+}
+
+i.gift_198 {
+    background-position: -40px 0
+}
+
+i.gift_199 {
+    background-position: -80px 0
+}
+
+i.gift_200 {
+    background-position: -120px 0
+}
+
+i.gift_big_198 {
+    background-position: -40px 0
+}
+
+i.gift_big_199 {
+    background-position: -80px 0
+}
+
+i.gift_big_200 {
+    background-position: -120px 0
+}
+
+i.gift_196 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_196_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_196_small_8bit.png)
+}
+
+i.gift_big_196 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_196_big.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_196_big_8bit.png)
+}
+
+i.gift_54, i.gift_190, i.gift_191, i.gift_192, i.gift_193, i.gift_194, i.gift_195 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/gift_christmas32_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/IMGSRC/event/gift_christmas_small.png)
+}
+
+i.gift_big_54, i.gift_big_190, i.gift_big_191, i.gift_big_192, i.gift_big_193, i.gift_big_194, i.gift_big_195 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/gift_christmas_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/gift_christmas_big_8bit.png)
+}
+
+i.gift_190 {
+    background-position: -40px 0
+}
+
+i.gift_191 {
+    background-position: -80px 0
+}
+
+i.gift_192 {
+    background-position: -120px 0
+}
+
+i.gift_193 {
+    background-position: -160px 0
+}
+
+i.gift_194 {
+    background-position: -200px 0
+}
+
+i.gift_195 {
+    background-position: -240px 0
+}
+
+i.gift_big_190 {
+    background-position: -40px 0
+}
+
+i.gift_big_191 {
+    background-position: -80px 0
+}
+
+i.gift_big_192 {
+    background-position: -120px 0
+}
+
+i.gift_big_193 {
+    background-position: -160px 0
+}
+
+i.gift_big_194 {
+    background-position: -200px 0
+}
+
+i.gift_big_195 {
+    background-position: -240px 0
+}
+
+i.gift_184, i.gift_185, i.gift_186, i.gift_187 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/gift_ganen32_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/IMGSRC/event/gift_ganen_small.png)
+}
+
+i.gift_big_184, i.gift_big_185, i.gift_big_186, i.gift_big_187 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/gift_ganen_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/gift_ganen_big_8bit.png)
+}
+
+i.gift_185 {
+    background-position: -40px 0
+}
+
+i.gift_186 {
+    background-position: -80px 0
+}
+
+i.gift_187 {
+    background-position: -120px 0
+}
+
+i.gift_big_185 {
+    background-position: -40px 0
+}
+
+i.gift_big_186 {
+    background-position: -80px 0
+}
+
+i.gift_big_187 {
+    background-position: -120px 0
+}
+
+i.gift_178, i.gift_179, i.gift_180, i.gift_181, i.gift_182 {
+    background: url(http://vr7.6rooms.com/imges/live/IMGSRC/event/gift_singleDay32_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/IMGSRC/event/gift_singleDay_small.png)
+}
+
+i.gift_big_178, i.gift_big_179, i.gift_big_180, i.gift_big_181, i.gift_big_182 {
+    background: url(http://vr7.6rooms.com/imges/live/IMGSRC/event/gift_singleDay_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/IMGSRC/event/gift_singleDay_big_8bit.png)
+}
+
+i.gift_179 {
+    background-position: -40px 0
+}
+
+i.gift_180 {
+    background-position: -80px 0
+}
+
+i.gift_181 {
+    background-position: -120px 0
+}
+
+i.gift_182 {
+    background-position: -160px 0
+}
+
+i.gift_big_179 {
+    background-position: -40px 0
+}
+
+i.gift_big_180 {
+    background-position: -80px 0
+}
+
+i.gift_big_181 {
+    background-position: -120px 0
+}
+
+i.gift_big_182 {
+    background-position: -160px 0
+}
+
+i.gift_170, i.gift_171, i.gift_172, i.gift_173, i.gift_174 {
+    background: url(http://vr7.6rooms.com/imges/live/IMGSRC/event/gift_wansheng32_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/IMGSRC/event/gift_wansheng_small.png)
+}
+
+i.gift_big_170, i.gift_big_171, i.gift_big_172, i.gift_big_173, i.gift_big_174 {
+    background: url(http://vr7.6rooms.com/imges/live/IMGSRC/event/gift_wansheng_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/IMGSRC/event/gift_wansheng_big_8bit.png)
+}
+
+i.gift_171 {
+    background-position: -40px 0
+}
+
+i.gift_172 {
+    background-position: -80px 0
+}
+
+i.gift_173 {
+    background-position: -120px 0
+}
+
+i.gift_174 {
+    background-position: -160px 0
+}
+
+i.gift_big_171 {
+    background-position: -40px 0
+}
+
+i.gift_big_172 {
+    background-position: -80px 0
+}
+
+i.gift_big_173 {
+    background-position: -120px 0
+}
+
+i.gift_big_174 {
+    background-position: -160px 0
+}
+
+i.gift_164, i.gift_165, i.gift_166, i.gift_167, i.gift_168 {
+    background: url(http://vr7.6rooms.com/imges/live/IMGSRC/event/gift_guoqing_small.png) no-repeat 0 0
+}
+
+i.gift_big_164, i.gift_big_165, i.gift_big_166, i.gift_big_167, i.gift_big_168 {
+    background: url(http://vr7.6rooms.com/imges/live/IMGSRC/event/gift_guoqing_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/IMGSRC/event/gift_guoqing_big_8bit.png)
+}
+
+i.gift_165 {
+    background-position: -40px 0
+}
+
+i.gift_166 {
+    background-position: -80px 0
+}
+
+i.gift_167 {
+    background-position: -120px 0
+}
+
+i.gift_168 {
+    background-position: -160px 0
+}
+
+i.gift_big_165 {
+    background-position: -40px 0
+}
+
+i.gift_big_166 {
+    background-position: -80px 0
+}
+
+i.gift_big_167 {
+    background-position: -120px 0
+}
+
+i.gift_big_168 {
+    background-position: -160px 0
+}
+
+i.gift_159, i.gift_160, i.gift_161, i.gift_162, i.gift_163 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_midautumn32_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_midautumn_small.png)
+}
+
+i.gift_big_159, i.gift_big_160, i.gift_big_161, i.gift_big_162, i.gift_big_163 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_midautumn_big.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_midautumn_big_8bit.png)
+}
+
+i.gift_160 {
+    background-position: -40px 0
+}
+
+i.gift_161 {
+    background-position: -80px 0
+}
+
+i.gift_162 {
+    background-position: -120px 0
+}
+
+i.gift_163 {
+    background-position: -160px 0
+}
+
+i.gift_big_160 {
+    background-position: -40px 0
+}
+
+i.gift_big_161 {
+    background-position: -80px 0
+}
+
+i.gift_big_162 {
+    background-position: -120px 0
+}
+
+i.gift_big_163 {
+    background-position: -160px 0
+}
+
+i.gift_154, i.gift_155, i.gift_156, i.gift_157, i.gift_158 {
+    background: url(http://vr7.6rooms.com/imges/live/IMGSRC/event/gift_teacher_small.png) no-repeat 0 0
+}
+
+i.gift_big_154, i.gift_big_155, i.gift_big_156, i.gift_big_157, i.gift_big_158 {
+    background: url(http://vr7.6rooms.com/imges/live/IMGSRC/event/gift_teacher_big_v1.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/IMGSRC/event/gift_teacher_big_8bit.png)
+}
+
+i.gift_155 {
+    background-position: -40px 0
+}
+
+i.gift_156 {
+    background-position: -80px 0
+}
+
+i.gift_157 {
+    background-position: -120px 0
+}
+
+i.gift_158 {
+    background-position: -160px 0
+}
+
+i.gift_big_155 {
+    background-position: -40px 0
+}
+
+i.gift_big_156 {
+    background-position: -80px 0
+}
+
+i.gift_big_157 {
+    background-position: -120px 0
+}
+
+i.gift_big_158 {
+    background-position: -160px 0
+}
+
+i.gift_150, i.gift_151, i.gift_152, i.gift_358, i.gift_359 {
+    background: url(http://vr7.6rooms.com/imges/live/IMGSRC/event/gift_loveDay_small_2013.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/IMGSRC/event/gift_loveDay_big_2013_8bit.png)
+}
+
+i.gift_big_150, i.gift_big_151, i.gift_big_152, i.gift_big_358, i.gift_big_359 {
+    background: url(http://vr7.6rooms.com/imges/live/IMGSRC/event/gift_loveDay_big_2013_v3.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/IMGSRC/event/gift_loveDay_big_2013_8bit_v1.png)
+}
+
+i.gift_151 {
+    background-position: -40px 0
+}
+
+i.gift_152 {
+    background-position: -80px 0
+}
+
+i.gift_358 {
+    background-position: -120px 0
+}
+
+i.gift_359 {
+    background-position: -160px 0
+}
+
+i.gift_big_151 {
+    background-position: -40px 0
+}
+
+i.gift_big_152 {
+    background-position: -80px 0
+}
+
+i.gift_big_358 {
+    background-position: -120px 0
+}
+
+i.gift_big_359 {
+    background-position: -160px 0
+}
+
+i.gift_137, i.gift_138, i.gift_139, i.gift_140, i.gift_145, i.gift_147, i.gift_148, i.gift_149, i.gift_176, i.gift_177, i.gift_183, i.gift_58 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_special_small_v7.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_special_small_8ibt_v7.png)
+}
+
+i.gift_big_137, i.gift_big_138, i.gift_big_139, i.gift_big_140, i.gift_big_145, i.gift_big_147, i.gift_big_148, i.gift_big_149, i.gift_big_176, i.gift_big_177, i.gift_big_183, i.gift_big_58 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_special_big_v7.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/gift_special_big_8ibt_v7.png)
+}
+
+i.gift_139 {
+    background-position: -50px 0
+}
+
+i.gift_140 {
+    background-position: -100px 0
+}
+
+i.gift_145 {
+    background-position: -150px 0
+}
+
+i.gift_147 {
+    background-position: -200px 0
+}
+
+i.gift_148 {
+    background-position: -250px 0
+}
+
+i.gift_149 {
+    background-position: -300px 0
+}
+
+i.gift_176 {
+    background-position: -350px 0
+}
+
+i.gift_177 {
+    background-position: -400px 0
+}
+
+i.gift_183 {
+    background-position: -450px 0
+}
+
+i.gift_58 {
+    background-position: -450px 0
+}
+
+i.gift_137 {
+    background-position: -500px 0
+}
+
+i.gift_big_139 {
+    background-position: -50px 0
+}
+
+i.gift_big_140 {
+    background-position: -100px 0
+}
+
+i.gift_big_145 {
+    background-position: -150px 0
+}
+
+i.gift_big_147 {
+    background-position: -200px 0
+}
+
+i.gift_big_148 {
+    background-position: -250px 0
+}
+
+i.gift_big_149 {
+    background-position: -300px 0
+}
+
+i.gift_big_176 {
+    background-position: -350px 0
+}
+
+i.gift_big_177 {
+    background-position: -400px 0
+}
+
+i.gift_big_183 {
+    background-position: -450px 0
+}
+
+i.gift_big_58 {
+    background-position: -450px 0
+}
+
+i.gift_big_137 {
+    background-position: -500px 0
+}
+
+i.gift_390 {
+    background: url(http://vr7.6rooms.com/imges/live/IMGSRC/event/gift_clothes_32.png) no-repeat 0 0;
+    _background: url(http://vr7.6rooms.com/imges/live/IMGSRC/event/gift_clothes_8.png) no-repeat 0 0
+}
+
+;
+i.gift_143, i.gift_141, i.gift_142 {
+    background: url(http://vr7.6rooms.com/imges/live/IMGSRC/event/gift_spe01_small.png) no-repeat 0 0
+}
+
+i.gift_big_143, i.gift_big_141, i.gift_big_142 {
+    background: url(http://vr7.6rooms.com/imges/live/IMGSRC/event/gift_spe01_big_v1.png) no-repeat 0 0
+}
+
+i.gift_142 {
+    background-position: -35px 0
+}
+
+i.gift_143 {
+    background-position: -70px 0
+}
+
+i.gift_big_142 {
+    background-position: -35px 0
+}
+
+i.gift_big_143 {
+    background-position: -70px 0
+}
+
+* i.flowerBasket {
+    background: url(http://vr7.6rooms.com/imges/live/IMGSRC/event/flowerBasket_s.png) no-repeat -40px 0
+}
+
+.giftBox i.flowerBasket {
+    background-position: 0 0
+}
+
+i.gift_135, i.gift_134, i.gift_136 {
+    background: url(http://vr7.6rooms.com/imges/live/IMGSRC/event/dumplingsday_small.png) no-repeat 0 0
+}
+
+i.gift_big_135, i.gift_big_134, i.gift_big_136 {
+    background: url(http://vr7.6rooms.com/imges/live/IMGSRC/event/dumplingsday_big.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/IMGSRC/event/dumplingsday_big_8ibt.png)
+}
+
+i.gift_135 {
+    background-position: -38px 0
+}
+
+i.gift_134 {
+    background-position: -77px 0
+}
+
+i.gift_big_135 {
+    background-position: -38px 0
+}
+
+i.gift_big_134 {
+    background-position: -77px 0
+}
+
+i.gift_379 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/ticket32_small_v2.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/ticket_small_8bit_v2.png)
+}
+
+i.gift_big_379 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/ticket_big_v2.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/ticket_big_8bit_v2.png)
+}
+
+i.gift_437 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/f_match_ticket32_small.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/f_match_ticket_small.png)
+}
+
+i.gift_big_437 {
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/f_match_ticket_big.png) no-repeat 0 0;
+    _background-image: url(http://vr7.6rooms.com/imges/live/CSSIMG/gift/event/f_match_ticket_big_8bit.png)
+}
+
+i.mmTie, i.mmShuo, i.mmJin, i.mmFu {
+    width: 18px;
+    height: 17px;
+    background: url(http://vr7.6rooms.com/imges/level/badge/all_icon_v1.png) no-repeat
+}
+
+i.mmTie {
+    background-position: 1px 0
+}
+
+i.mmShuo {
+    background-position: -21px -2px
+}
+
+i.mmJin {
+    background-position: -46px -1px
+}
+
+i.mmFu {
+    background-position: -65px 0
+}
+
+.userManager p.icon {
+    padding: 0 0 0 29px;
+    zoom: 1;
+    display: none;
+    overflow: hidden
+}
+
+.userManager p.iconVis {
+    display: block
+}
+
+i.uIco {
+    margin: 10px 0;
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    vertical-align: middle
+}
+
+.userManager p.icon i {
+    width: 43px;
+    height: 43px;
+    margin: 3px 0 5px 4px;
+    display: inline-block
+}
+
+.stream i.uIco {
+    width: 29px;
+    height: 29px;
+    margin: -1px 3px 0 0;
+    vertical-align: middle;
+    display: inline-block
+}
+
+i.badge_7506, i.badge_7507, i.badge_7510, i.badge_7512, i.badge_7524, i.badge_7530, i.badge_7531, i.badge_7532, i.badge_7533, i.badge_7542 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badgeIco_v9.png) no-repeat center 0
+}
+
+i.badge_7507 {
+    background-position: center -50px
+}
+
+i.badge_7510 {
+    background-position: center -100px
+}
+
+i.badge_7512 {
+    background-position: center -150px
+}
+
+i.badge_7524 {
+    background-position: center -200px
+}
+
+i.badge_7530 {
+    background-position: center -250px
+}
+
+i.badge_7531 {
+    background-position: center -300px
+}
+
+i.badge_7532 {
+    background-position: center -350px
+}
+
+i.badge_7533 {
+    background-position: center -400px
+}
+
+i.badge_7542 {
+    background-position: center -450px
+}
+
+i.badge_7534, i.badge_7535, i.badge_7536, i.badge_7537, i.badge_7538, i.badge_7539, i.badge_7540, i.badge_7541 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/loveDay2012_v6.png) no-repeat center 0
+}
+
+i.badge_7535 {
+    background-position: center -50px
+}
+
+i.badge_7536 {
+    background-position: center -100px
+}
+
+i.badge_7537 {
+    background-position: center -150px
+}
+
+i.badge_7538 {
+    background-position: center -200px
+}
+
+i.badge_7539 {
+    background-position: center -250px
+}
+
+i.badge_7540 {
+    background-position: center -300px
+}
+
+i.badge_7541 {
+    background-position: center -350px
+}
+
+i.badge_100144, i.badge_100109, i.badge_100051, i.badge_100099, i.badge_100297, i.badge_100206, i.badge_100048, i.badge_100098, i.badge_100008, i.badge_100207, i.badge_100189, i.badge_100041, i.badge_100296, i.badge_100286, i.badge_100049, i.badge_100050, i.badge_100007, i.badge_100040, i.badge_100087, i.badge_100216, i.badge_100039, i.badge_100038, i.badge_100080, i.badge_100081, i.badge_100037, i.badge_100214, i.badge_100006, i.badge_100188, i.badge_100036, i.badge_100153, i.badge_100035, i.badge_100086, i.badge_100079, i.badge_100215, i.badge_100106, i.badge_100085, i.badge_100078, i.badge_100031, i.badge_100032, i.badge_100175, i.badge_100083, i.badge_105006, i.badge_100027, i.badge_100084, i.badge_100030, i.badge_100029, i.badge_100068, i.badge_100071, i.badge_100025, i.badge_100024, i.badge_100023, i.badge_100217, i.badge_100285, i.badge_100077, i.badge_100019, i.badge_100020, i.badge_100021, i.badge_100022, i.badge_100017, i.badge_100018, i.badge_100003, i.badge_100016, i.badge_100015, i.badge_100257, i.badge_100088, i.badge_100013, i.badge_100012, i.badge_100011, i.badge_100010, i.badge_100280, i.badge_100082, i.badge_100076, i.badge_100001, i.badge_100075, i.badge_100259, i.badge_100324, i.badge_100329, i.badge_100330, i.badge_100362, i.badge_100363, i.badge_100380, i.badge_100389, i.badge_100395, i.badge_100430, i.badge_100127, i.badge_100187, i.badge_100197, i.badge_100212, i.badge_100228, i.badge_100229, i.badge_100465, i.badge_100466, i.badge_100514, i.badge_100515, i.badge_100182, i.badge_100525, i.badge_100527, i.badge_100529, i.badge_100534, i.badge_100537, i.badge_100536, i.badge_100571, i.badge_100567, i.badge_100653, i.badge_100654, i.badge_100655, i.badge_100656 {
+    background: url(http://vr1.6rooms.com/imges/level/badge/zbWeekStar_v34.png) no-repeat center 0
+}
+
+i.badge_100144 {
+    background-position: center 0
+}
+
+i.badge_100109 {
+    background-position: center -50px
+}
+
+i.badge_100051 {
+    background-position: center -100px
+}
+
+i.badge_100099 {
+    background-position: center -150px
+}
+
+i.badge_100297 {
+    background-position: center -200px
+}
+
+i.badge_100206 {
+    background-position: center -250px
+}
+
+i.badge_100048 {
+    background-position: center -300px
+}
+
+i.badge_100098 {
+    background-position: center -350px
+}
+
+i.badge_100008 {
+    background-position: center -400px
+}
+
+i.badge_100207 {
+    background-position: center -450px
+}
+
+i.badge_100189 {
+    background-position: center -500px
+}
+
+i.badge_100041 {
+    background-position: center -550px
+}
+
+i.badge_100296 {
+    background-position: center -600px
+}
+
+i.badge_100286 {
+    background-position: center -650px
+}
+
+i.badge_100049 {
+    background-position: center -700px
+}
+
+i.badge_100050 {
+    background-position: center -750px
+}
+
+i.badge_100007 {
+    background-position: center -800px
+}
+
+i.badge_100040 {
+    background-position: center -850px
+}
+
+i.badge_100087 {
+    background-position: center -900px
+}
+
+i.badge_100216 {
+    background-position: center -950px
+}
+
+i.badge_100039 {
+    background-position: center -1000px
+}
+
+i.badge_100038 {
+    background-position: center -1050px
+}
+
+i.badge_100080 {
+    background-position: center -1100px
+}
+
+i.badge_100081 {
+    background-position: center -1150px
+}
+
+i.badge_100037 {
+    background-position: center -1200px
+}
+
+i.badge_100214 {
+    background-position: center -1250px
+}
+
+i.badge_100006 {
+    background-position: center -1300px
+}
+
+i.badge_100188 {
+    background-position: center -1350px
+}
+
+i.badge_100036 {
+    background-position: center -1400px
+}
+
+i.badge_100153 {
+    background-position: center -1450px
+}
+
+i.badge_100035 {
+    background-position: center -1500px
+}
+
+i.badge_100086 {
+    background-position: center -1550px
+}
+
+i.badge_100079 {
+    background-position: center -1600px
+}
+
+i.badge_100215 {
+    background-position: center -1650px
+}
+
+i.badge_100106 {
+    background-position: center -1700px
+}
+
+i.badge_100085 {
+    background-position: center -1750px
+}
+
+i.badge_100078 {
+    background-position: center -1800px
+}
+
+i.badge_100031 {
+    background-position: center -1850px
+}
+
+i.badge_100032 {
+    background-position: center -1900px
+}
+
+i.badge_100175 {
+    background-position: center -1950px
+}
+
+i.badge_100083 {
+    background-position: center -2000px
+}
+
+i.badge_105006 {
+    background-position: center -2050px
+}
+
+i.badge_100027 {
+    background-position: center -2100px
+}
+
+i.badge_100084 {
+    background-position: center -2150px
+}
+
+i.badge_100030 {
+    background-position: center -2200px
+}
+
+i.badge_100029 {
+    background-position: center -2250px
+}
+
+i.badge_100068 {
+    background-position: center -2300px
+}
+
+i.badge_100071 {
+    background-position: center -2350px
+}
+
+i.badge_100025 {
+    background-position: center -2400px
+}
+
+i.badge_100024 {
+    background-position: center -2450px
+}
+
+i.badge_100023 {
+    background-position: center -2500px
+}
+
+i.badge_100217 {
+    background-position: center -2550px
+}
+
+i.badge_100285 {
+    background-position: center -2600px
+}
+
+i.badge_100077 {
+    background-position: center -2650px
+}
+
+i.badge_100019 {
+    background-position: center -2700px
+}
+
+i.badge_100020 {
+    background-position: center -2750px
+}
+
+i.badge_100021 {
+    background-position: center -2800px
+}
+
+i.badge_100022 {
+    background-position: center -2850px
+}
+
+i.badge_100017 {
+    background-position: center -2900px
+}
+
+i.badge_100018 {
+    background-position: center -2950px
+}
+
+i.badge_100003 {
+    background-position: center -3000px
+}
+
+i.badge_100016 {
+    background-position: center -3050px
+}
+
+i.badge_100015 {
+    background-position: center -3100px
+}
+
+i.badge_100257 {
+    background-position: center -3150px
+}
+
+i.badge_100088 {
+    background-position: center -3200px
+}
+
+i.badge_100013 {
+    background-position: center -3250px
+}
+
+i.badge_100012 {
+    background-position: center -3300px
+}
+
+i.badge_100011 {
+    background-position: center -3350px
+}
+
+i.badge_100010 {
+    background-position: center -3400px
+}
+
+i.badge_100280 {
+    background-position: center -3450px
+}
+
+i.badge_100082 {
+    background-position: center -3500px
+}
+
+i.badge_100076 {
+    background-position: center -3550px
+}
+
+i.badge_100001 {
+    background-position: center -3600px
+}
+
+i.badge_100075 {
+    background-position: center -3650px
+}
+
+i.badge_100259 {
+    background-position: center -3700px
+}
+
+i.badge_100324 {
+    background-position: center -3750px
+}
+
+i.badge_100329 {
+    background-position: center -3800px
+}
+
+i.badge_100330 {
+    background-position: center -3850px
+}
+
+i.badge_100362 {
+    background-position: center -3900px
+}
+
+i.badge_100363 {
+    background-position: center -3950px
+}
+
+i.badge_100380 {
+    background-position: center -4000px
+}
+
+i.badge_100389 {
+    background-position: center -4050px
+}
+
+i.badge_100395 {
+    background-position: center -4100px
+}
+
+i.badge_100430 {
+    background-position: center -4150px
+}
+
+i.badge_100127 {
+    background-position: center -4200px
+}
+
+i.badge_100187 {
+    background-position: center -4250px
+}
+
+i.badge_100197 {
+    background-position: center -4300px
+}
+
+i.badge_100212 {
+    background-position: center -4350px
+}
+
+i.badge_100228 {
+    background-position: center -4400px
+}
+
+i.badge_100229 {
+    background-position: center -4450px
+}
+
+i.badge_100465 {
+    background-position: center -4500px
+}
+
+i.badge_100466 {
+    background-position: center -4550px
+}
+
+i.badge_100514 {
+    background-position: center -4600px
+}
+
+i.badge_100515 {
+    background-position: center -4650px
+}
+
+i.badge_100182 {
+    background-position: center -4700px
+}
+
+i.badge_100525 {
+    background-position: center -4750px
+}
+
+i.badge_100527 {
+    background-position: center -4800px
+}
+
+i.badge_100529 {
+    background-position: center -4850px
+}
+
+i.badge_100534 {
+    background-position: center -4900px
+}
+
+i.badge_100537 {
+    background-position: center -4950px
+}
+
+i.badge_100536 {
+    background-position: center -5000px
+}
+
+i.badge_100571 {
+    background-position: center -5050px
+}
+
+i.badge_100567 {
+    background-position: center -5100px
+}
+
+i.badge_100653 {
+    background-position: center -5150px
+}
+
+i.badge_100654 {
+    background-position: center -5200px
+}
+
+i.badge_100655 {
+    background-position: center -5250px
+}
+
+i.badge_100656 {
+    background-position: center -5300px
+}
+
+i.badge_200144, i.badge_200109, i.badge_200051, i.badge_200099, i.badge_200297, i.badge_200206, i.badge_200048, i.badge_200098, i.badge_200008, i.badge_200207, i.badge_200189, i.badge_200041, i.badge_200296, i.badge_200286, i.badge_200049, i.badge_200050, i.badge_200007, i.badge_200040, i.badge_200087, i.badge_200216, i.badge_200039, i.badge_200038, i.badge_200080, i.badge_200081, i.badge_200037, i.badge_200214, i.badge_200006, i.badge_200188, i.badge_200036, i.badge_200153, i.badge_200035, i.badge_200086, i.badge_200079, i.badge_200215, i.badge_200106, i.badge_200085, i.badge_200078, i.badge_200031, i.badge_200032, i.badge_200175, i.badge_200083, i.badge_205006, i.badge_200027, i.badge_200084, i.badge_200030, i.badge_200029, i.badge_200068, i.badge_200071, i.badge_200025, i.badge_200024, i.badge_200023, i.badge_200217, i.badge_200285, i.badge_200077, i.badge_200019, i.badge_200020, i.badge_200021, i.badge_200022, i.badge_200017, i.badge_200018, i.badge_200003, i.badge_200016, i.badge_200015, i.badge_200257, i.badge_200088, i.badge_200013, i.badge_200012, i.badge_200011, i.badge_200010, i.badge_200280, i.badge_200082, i.badge_200076, i.badge_200001, i.badge_200075, i.badge_200259, i.badge_200324, i.badge_200329, i.badge_200330, i.badge_200362, i.badge_200363, i.badge_200380, i.badge_200389, i.badge_200395, i.badge_200430, i.badge_200127, i.badge_200187, i.badge_200197, i.badge_200212, i.badge_200228, i.badge_200229, i.badge_200465, i.badge_200466, i.badge_200514, i.badge_200515, i.badge_200182, i.badge_200525, i.badge_200527, i.badge_200529, i.badge_200534, i.badge_200537, i.badge_200536, i.badge_200571, i.badge_200567, i.badge_200653, i.badge_200654, i.badge_200655, i.badge_200656 {
+    background: url(http://vr1.6rooms.com/imges/level/badge/fhWeekStar_v33.png) no-repeat center 0
+}
+
+i.badge_200144 {
+    background-position: center 0
+}
+
+i.badge_200109 {
+    background-position: center -50px
+}
+
+i.badge_200051 {
+    background-position: center -100px
+}
+
+i.badge_200099 {
+    background-position: center -150px
+}
+
+i.badge_200297 {
+    background-position: center -200px
+}
+
+i.badge_200206 {
+    background-position: center -250px
+}
+
+i.badge_200048 {
+    background-position: center -300px
+}
+
+i.badge_200098 {
+    background-position: center -350px
+}
+
+i.badge_200008 {
+    background-position: center -400px
+}
+
+i.badge_200207 {
+    background-position: center -450px
+}
+
+i.badge_200189 {
+    background-position: center -500px
+}
+
+i.badge_200041 {
+    background-position: center -550px
+}
+
+i.badge_200296 {
+    background-position: center -600px
+}
+
+i.badge_200286 {
+    background-position: center -650px
+}
+
+i.badge_200049 {
+    background-position: center -700px
+}
+
+i.badge_200050 {
+    background-position: center -750px
+}
+
+i.badge_200007 {
+    background-position: center -800px
+}
+
+i.badge_200040 {
+    background-position: center -850px
+}
+
+i.badge_200087 {
+    background-position: center -900px
+}
+
+i.badge_200216 {
+    background-position: center -950px
+}
+
+i.badge_200039 {
+    background-position: center -1000px
+}
+
+i.badge_200038 {
+    background-position: center -1050px
+}
+
+i.badge_200080 {
+    background-position: center -1100px
+}
+
+i.badge_200081 {
+    background-position: center -1150px
+}
+
+i.badge_200037 {
+    background-position: center -1200px
+}
+
+i.badge_200214 {
+    background-position: center -1250px
+}
+
+i.badge_200006 {
+    background-position: center -1300px
+}
+
+i.badge_200188 {
+    background-position: center -1350px
+}
+
+i.badge_200036 {
+    background-position: center -1400px
+}
+
+i.badge_200153 {
+    background-position: center -1450px
+}
+
+i.badge_200035 {
+    background-position: center -1500px
+}
+
+i.badge_200086 {
+    background-position: center -1550px
+}
+
+i.badge_200079 {
+    background-position: center -1600px
+}
+
+i.badge_200215 {
+    background-position: center -1650px
+}
+
+i.badge_200106 {
+    background-position: center -1700px
+}
+
+i.badge_200085 {
+    background-position: center -1750px
+}
+
+i.badge_200078 {
+    background-position: center -1800px
+}
+
+i.badge_200031 {
+    background-position: center -1850px
+}
+
+i.badge_200032 {
+    background-position: center -1900px
+}
+
+i.badge_200175 {
+    background-position: center -1950px
+}
+
+i.badge_200083 {
+    background-position: center -2000px
+}
+
+i.badge_205006 {
+    background-position: center -2050px
+}
+
+i.badge_200027 {
+    background-position: center -2100px
+}
+
+i.badge_200084 {
+    background-position: center -2150px
+}
+
+i.badge_200030 {
+    background-position: center -2200px
+}
+
+i.badge_200029 {
+    background-position: center -2250px
+}
+
+i.badge_200068 {
+    background-position: center -2300px
+}
+
+i.badge_200071 {
+    background-position: center -2350px
+}
+
+i.badge_200025 {
+    background-position: center -2400px
+}
+
+i.badge_200024 {
+    background-position: center -2450px
+}
+
+i.badge_200023 {
+    background-position: center -2500px
+}
+
+i.badge_200217 {
+    background-position: center -2550px
+}
+
+i.badge_200285 {
+    background-position: center -2600px
+}
+
+i.badge_200077 {
+    background-position: center -2650px
+}
+
+i.badge_200019 {
+    background-position: center -2700px
+}
+
+i.badge_200020 {
+    background-position: center -2750px
+}
+
+i.badge_200021 {
+    background-position: center -2800px
+}
+
+i.badge_200022 {
+    background-position: center -2850px
+}
+
+i.badge_200017 {
+    background-position: center -2900px
+}
+
+i.badge_200018 {
+    background-position: center -2950px
+}
+
+i.badge_200003 {
+    background-position: center -3000px
+}
+
+i.badge_200016 {
+    background-position: center -3050px
+}
+
+i.badge_200015 {
+    background-position: center -3100px
+}
+
+i.badge_200257 {
+    background-position: center -3150px
+}
+
+i.badge_200088 {
+    background-position: center -3200px
+}
+
+i.badge_200013 {
+    background-position: center -3250px
+}
+
+i.badge_200012 {
+    background-position: center -3300px
+}
+
+i.badge_200011 {
+    background-position: center -3350px
+}
+
+i.badge_200010 {
+    background-position: center -3400px
+}
+
+i.badge_200280 {
+    background-position: center -3450px
+}
+
+i.badge_200082 {
+    background-position: center -3500px
+}
+
+i.badge_200076 {
+    background-position: center -3550px
+}
+
+i.badge_200001 {
+    background-position: center -3600px
+}
+
+i.badge_200075 {
+    background-position: center -3650px
+}
+
+i.badge_200259 {
+    background-position: center -3700px
+}
+
+i.badge_200324 {
+    background-position: center -3750px
+}
+
+i.badge_200329 {
+    background-position: center -3800px
+}
+
+i.badge_200330 {
+    background-position: center -3850px
+}
+
+i.badge_200362 {
+    background-position: center -3900px
+}
+
+i.badge_200363 {
+    background-position: center -3950px
+}
+
+i.badge_200380 {
+    background-position: center -4000px
+}
+
+i.badge_200389 {
+    background-position: center -4050px
+}
+
+i.badge_200395 {
+    background-position: center -4100px
+}
+
+i.badge_200430 {
+    background-position: center -4150px
+}
+
+i.badge_200127 {
+    background-position: center -4200px
+}
+
+i.badge_200187 {
+    background-position: center -4250px
+}
+
+i.badge_200197 {
+    background-position: center -4300px
+}
+
+i.badge_200212 {
+    background-position: center -4350px
+}
+
+i.badge_200228 {
+    background-position: center -4400px
+}
+
+i.badge_200229 {
+    background-position: center -4450px
+}
+
+i.badge_200465 {
+    background-position: center -4500px
+}
+
+i.badge_200466 {
+    background-position: center -4550px
+}
+
+i.badge_200514 {
+    background-position: center -4600px
+}
+
+i.badge_200515 {
+    background-position: center -4650px
+}
+
+i.badge_200182 {
+    background-position: center -4700px
+}
+
+i.badge_200525 {
+    background-position: center -4750px
+}
+
+i.badge_200527 {
+    background-position: center -4800px
+}
+
+i.badge_200529 {
+    background-position: center -4850px
+}
+
+i.badge_200534 {
+    background-position: center -4900px
+}
+
+i.badge_200537 {
+    background-position: center -4950px
+}
+
+i.badge_200536 {
+    background-position: center -5000px
+}
+
+i.badge_200571 {
+    background-position: center -5050px
+}
+
+i.badge_200567 {
+    background-position: center -5100px
+}
+
+i.badge_200653 {
+    background-position: center -5150px
+}
+
+i.badge_200654 {
+    background-position: center -5200px
+}
+
+i.badge_200655 {
+    background-position: center -5250px
+}
+
+i.badge_200656 {
+    background-position: center -5300px
+}
+
+i.badge_100560, i.badge_200560, i.badge_100561, i.badge_200561 {
+    background: url(http://vr1.6rooms.com/imges/level/badge/army-v3.png) no-repeat center 0
+}
+
+i.badge_100560 {
+    background-position: center 0
+}
+
+i.badge_200560 {
+    background-position: center -50px
+}
+
+i.badge_100561 {
+    background-position: center -100px
+}
+
+i.badge_200561 {
+    background-position: center -150px
+}
+
+i.badge_7597, i.badge_7595, i.badge_7599, i.badge_7598, i.badge_7596, i.badge_7592, i.badge_7590, i.badge_7594, i.badge_7593, i.badge_7591, i.badge_7600, i.badge_7819, i.badge_7820 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/allStar_v8.png) no-repeat center 0
+}
+
+i.badge_7597 {
+    background-position: center 0
+}
+
+i.badge_7595 {
+    background-position: center -50px
+}
+
+i.badge_7599 {
+    background-position: center -100px
+}
+
+i.badge_7598 {
+    background-position: center -150px
+}
+
+i.badge_7596 {
+    background-position: center -200px
+}
+
+i.badge_7592 {
+    background-position: center -250px
+}
+
+i.badge_7590 {
+    background-position: center -300px
+}
+
+i.badge_7594 {
+    background-position: center -350px
+}
+
+i.badge_7593 {
+    background-position: center -400px
+}
+
+i.badge_7591 {
+    background-position: center -450px
+}
+
+i.badge_7600 {
+    background-position: center -600px
+}
+
+i.badge_7819 {
+    background-position: center -650px
+}
+
+i.badge_7820 {
+    background-position: center -700px
+}
+
+i.badge_7589 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/all_rich_v3.gif) no-repeat center 0
+}
+
+i.badge_7588 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/all_star_v4.gif) no-repeat center 0
+}
+
+i.badge_100316, i.badge_100317, i.badge_100318, i.badge_100319, i.badge_100320, i.badge_100321, i.badge_100322, i.badge_100323, i.badge_100303, i.badge_200316, i.badge_200317, i.badge_200318, i.badge_200319, i.badge_200320, i.badge_200321, i.badge_200322, i.badge_200323, i.badge_200303 {
+    background: url(http://vr1.6rooms.com/imges/level/badge/defend_v9.png) no-repeat center 0
+}
+
+i.badge_200320 {
+    background-position: center 0
+}
+
+i.badge_100320 {
+    background-position: center -50px
+}
+
+i.badge_200323 {
+    background-position: center -100px
+}
+
+i.badge_100323 {
+    background-position: center -150px
+}
+
+i.badge_200322 {
+    background-position: center -200px
+}
+
+i.badge_100322 {
+    background-position: center -250px
+}
+
+i.badge_200316 {
+    background-position: center -300px
+}
+
+i.badge_100316 {
+    background-position: center -350px
+}
+
+i.badge_200321 {
+    background-position: center -400px
+}
+
+i.badge_100321 {
+    background-position: center -450px
+}
+
+i.badge_200318 {
+    background-position: center -500px
+}
+
+i.badge_100318 {
+    background-position: center -550px
+}
+
+i.badge_200317 {
+    background-position: center -600px
+}
+
+i.badge_100317 {
+    background-position: center -650px
+}
+
+i.badge_200319 {
+    background-position: center -700px
+}
+
+i.badge_100319 {
+    background-position: center -750px
+}
+
+i.badge_200303 {
+    background-position: center -800px
+}
+
+i.badge_100303 {
+    background-position: center -850px
+}
+
+i.badge_100337, i.badge_100338, i.badge_100339, i.badge_100340, i.badge_100341, i.badge_100342, i.badge_100346, i.badge_100349, i.badge_100350, i.badge_200337, i.badge_200338, i.badge_200339, i.badge_200340, i.badge_200341, i.badge_200342, i.badge_200346, i.badge_200349, i.badge_200350 {
+    background: url(http://vr1.6rooms.com/imges/level/badge/dance_v5.png) no-repeat center 0
+}
+
+i.badge_200337 {
+    background-position: center 0
+}
+
+i.badge_100337 {
+    background-position: center -50px
+}
+
+i.badge_200338 {
+    background-position: center -100px
+}
+
+i.badge_100338 {
+    background-position: center -150px
+}
+
+i.badge_200339 {
+    background-position: center -200px
+}
+
+i.badge_100339 {
+    background-position: center -250px
+}
+
+i.badge_200340 {
+    background-position: center -300px
+}
+
+i.badge_100340 {
+    background-position: center -350px
+}
+
+i.badge_200341 {
+    background-position: center -400px
+}
+
+i.badge_100341 {
+    background-position: center -450px
+}
+
+i.badge_200342 {
+    background-position: center -500px
+}
+
+i.badge_100342 {
+    background-position: center -550px
+}
+
+i.badge_200346 {
+    background-position: center -600px
+}
+
+i.badge_100346 {
+    background-position: center -650px
+}
+
+i.badge_200349 {
+    background-position: center -700px
+}
+
+i.badge_100349 {
+    background-position: center -750px
+}
+
+i.badge_200350 {
+    background-position: center -800px
+}
+
+i.badge_100350 {
+    background-position: center -850px
+}
+
+i.badge_110001, i.badge_110002, i.badge_110003, i.badge_110004, i.badge_110005, i.badge_110006, i.badge_210001, i.badge_210002, i.badge_210003, i.badge_210004, i.badge_210005, i.badge_210006 {
+    background: url(http://vr1.6rooms.com/imges/level/badge/taoli_v2.png) no-repeat center 0
+}
+
+i.badge_110001 {
+    background-position: center 0
+}
+
+i.badge_110002 {
+    background-position: center -50px
+}
+
+i.badge_110003 {
+    background-position: center -100px
+}
+
+i.badge_110004 {
+    background-position: center -150px
+}
+
+i.badge_110005 {
+    background-position: center -200px
+}
+
+i.badge_110006 {
+    background-position: center -250px
+}
+
+i.badge_210001 {
+    background-position: center -300px
+}
+
+i.badge_210002 {
+    background-position: center -350px
+}
+
+i.badge_210003 {
+    background-position: center -400px
+}
+
+i.badge_210004 {
+    background-position: center -450px
+}
+
+i.badge_210005 {
+    background-position: center -500px
+}
+
+i.badge_210006 {
+    background-position: center -550px
+}
+
+i.badge_100372, i.badge_100373, i.badge_100374, i.badge_100375, i.badge_100376, i.badge_100377, i.badge_100378, i.badge_200372, i.badge_200373, i.badge_200374, i.badge_200375, i.badge_200376, i.badge_200377, i.badge_200378, i.badge_7601 {
+    background: url(http://vr1.6rooms.com/imges/level/badge/ampark_v8.png) no-repeat center 0
+}
+
+i.badge_200372 {
+    background-position: center 0
+}
+
+i.badge_100372 {
+    background-position: center -50px
+}
+
+i.badge_200373 {
+    background-position: center -100px
+}
+
+i.badge_100373 {
+    background-position: center -150px
+}
+
+i.badge_200374 {
+    background-position: center -200px
+}
+
+i.badge_100374 {
+    background-position: center -250px
+}
+
+i.badge_200375 {
+    background-position: center -300px
+}
+
+i.badge_100375 {
+    background-position: center -350px
+}
+
+i.badge_200376 {
+    background-position: center -400px
+}
+
+i.badge_100376 {
+    background-position: center -450px
+}
+
+i.badge_200377 {
+    background-position: center -500px
+}
+
+i.badge_100377 {
+    background-position: center -550px
+}
+
+i.badge_200378 {
+    background-position: center -600px
+}
+
+i.badge_100378 {
+    background-position: center -650px
+}
+
+i.badge_7601 {
+    background-position: center -700px
+}
+
+i.badge_7905 {
+    background: url(http://vr1.6rooms.com/imges/level/badge/zhiduoxing.png) no-repeat center 0
+}
+
+i.badge_7906 {
+    background: url(http://vr1.6rooms.com/imges/level/badge/toutiao_v1.png) no-repeat center 0
+}
+
+i.badge_7915 {
+    background: url(http://vr1.6rooms.com/imges/level/badge/badge_7915.png) no-repeat center 0
+}
+
+i.badge_7923, i.badge_100599, i.badge_200599 {
+    background: url(http://vr4.6rooms.com/imges/level/badge/wedding-v2.png) no-repeat center 0
+}
+
+i.badge_7923 {
+    background-position: center 0
+}
+
+i.badge_100599 {
+    background-position: center -50px
+}
+
+i.badge_200599 {
+    background-position: center -100px
+}
+
+i.badge_7947, i.badge_7948, i.badge_7949 {
+    background: url(http://vr1.6rooms.com/imges/level/badge/seventeen.png) no-repeat center 0
+}
+
+i.badge_7948 {
+    background-position: center -50px
+}
+
+i.badge_7949 {
+    background-position: center -100px
+}
+
+i.badge_7941 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7941.png) no-repeat center 0
+}
+
+i.badge_7942 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7942.png) no-repeat center 0
+}
+
+i.badge_7940 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7940.png) no-repeat center 0
+}
+
+i.badge_7938 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7938.png) no-repeat center 0
+}
+
+i.badge_7936 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7936.png) no-repeat center 0
+}
+
+i.badge_7937 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7937.png) no-repeat center 0
+}
+
+i.badge_7933 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7933.gif) no-repeat center 0
+}
+
+i.badge_7934 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7934.gif) no-repeat center 0
+}
+
+i.badge_7931 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7931_v1.png) no-repeat center 0
+}
+
+i.badge_7924 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7924_v1.png) no-repeat center 0
+}
+
+i.badge_7891 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7891.png) no-repeat center 0
+}
+
+i.badge_7882 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7882_v1.gif) no-repeat center 0
+}
+
+i.badge_7883 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7883.png) no-repeat center 0
+}
+
+i.badge_7543, i.badge_7544 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/wuyisi_v7.png) no-repeat center 0
+}
+
+i.badge_7544 {
+    background-position: center -50px
+}
+
+i.badge_7548 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7548.gif) no-repeat center 0
+}
+
+i.badge_7549 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7549.gif) no-repeat center 0
+}
+
+i.badge_7550 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7550.gif) no-repeat center 0
+}
+
+i.badge_7553 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/showsing_v5.png) no-repeat center 0
+}
+
+i.badge_7556, i.badge_7557, i.badge_7558 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/chineselove2012_v7.png) no-repeat center 0
+}
+
+i.badge_7557 {
+    background-position: center -50px
+}
+
+i.badge_7558 {
+    background-position: center -100px
+}
+
+i.badge_7562, i.badge_7563 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/wanglaowu_v6.png) no-repeat center 0
+}
+
+i.badge_7563 {
+    background-position: center -50px
+}
+
+i.badge_7564 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7564_v5.png) no-repeat center 0
+}
+
+i.badge_7568 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7568_v4.png) no-repeat center 0
+}
+
+i.badge_7571 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7571_v5.png) no-repeat center 0
+}
+
+i.badge_7572, i.badge_7573, i.badge_7574 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_spring_v1.png) no-repeat center 0
+}
+
+i.badge_7573 {
+    background-position: center -50px
+}
+
+i.badge_7574 {
+    background-position: center -100px
+}
+
+i.badge_7575 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7575_v8.gif) no-repeat center 0
+}
+
+i.badge_7830 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7830_v5.png) no-repeat center 0
+}
+
+i.badge_7832 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7832_v5.png) no-repeat center 0
+}
+
+i.badge_7833 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7833_v5.png) no-repeat center 0
+}
+
+i.badge_7834 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7834_v7.png) no-repeat center 0
+}
+
+i.badge_7835 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7835_v5.png) no-repeat center 0
+}
+
+i.badge_7836 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7836_v1.png) no-repeat center 0
+}
+
+i.badge_7838 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7838_v5.png) no-repeat center 0
+}
+
+i.badge_7839 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7839_v6.gif) no-repeat center 0
+}
+
+i.badge_7840 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7840_v7.gif) no-repeat center 0
+}
+
+i.badge_7841 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7841_v7.gif) no-repeat center 0
+}
+
+i.badge_7861 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7861_v7.gif) no-repeat center 0
+}
+
+i.badge_7862 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7862_v7.gif) no-repeat center 0
+}
+
+i.badge_7846, i.badge_7847, i.badge_7848, i.badge_7849, i.badge_7850, i.badge_7851, i.badge_7852, i.badge_7853 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/baihua_v5.png) no-repeat center 0
+}
+
+i.badge_7847 {
+    background-position: center -50px
+}
+
+i.badge_7848 {
+    background-position: center -100px
+}
+
+i.badge_7849 {
+    background-position: center -150px
+}
+
+i.badge_7850 {
+    background-position: center -200px
+}
+
+i.badge_7851 {
+    background-position: center -250px
+}
+
+i.badge_7852 {
+    background-position: center -300px
+}
+
+i.badge_7853 {
+    background-position: center -350px
+}
+
+i.badge_7858 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7858.png) no-repeat center 0
+}
+
+i.badge_7867 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7867_v5.png) no-repeat center 0
+}
+
+i.badge_7870, i.badge_7871 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_chineselove2014_v6.png) no-repeat center 0
+}
+
+i.badge_7871 {
+    background-position: center -50px
+}
+
+i.badge_7873 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7873_v4.png) no-repeat center 0
+}
+
+i.badge_7874 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7874_v4.png) no-repeat center 0
+}
+
+i.badge_7877 {
+    background: url(http://vr1.6rooms.com/imges/level/badge/badge_7877.png) no-repeat center 0
+}
+
+i.badge_7878, i.badge_7879, i.badge_7880 {
+    background: url(http://vr1.6rooms.com/imges/level/badge/badge_halloween2014_v1.png) no-repeat center 0
+}
+
+i.badge_7879 {
+    background-position: center -50px
+}
+
+i.badge_7880 {
+    background-position: center -100px
+}
+
+i.badge_7887 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7887_v2.png) no-repeat center 0
+}
+
+i.badge_7888 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7888.png) no-repeat center 0
+}
+
+i.badge_7893 {
+    background: url(http://vr1.6rooms.com/imges/level/badge/badge_7893_v3.gif) no-repeat center 0
+}
+
+i.badge_7895, i.badge_7896, i.badge_7897, i.badge_7898 {
+    background: url(http://vr1.6rooms.com/imges/level/badge/cxmd2015.png) no-repeat center 0
+}
+
+i.badge_7896 {
+    background-position: center -50px
+}
+
+i.badge_7897 {
+    background-position: center -100px
+}
+
+i.badge_7898 {
+    background-position: center -150px
+}
+
+i.badge_7561 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7561_v5.png) no-repeat center 0
+}
+
+i.safe_7569, i.safe_7570, i.badge_7569, i.badge_7570, i.badge_7122 {
+    margin: 0 3px 0 0;
+    width: 29px;
+    height: 29px;
+    background: url(http://vr6.6rooms.com/imges/level/badge/safe-angel-v2.png) no-repeat
+}
+
+i.safe_7569, i.badge_7569 {
+    background-position: -40px 0
+}
+
+i.badge_7122 {
+    width: 14px !important;
+    height: 14px !important;
+    background-position: -80px -15px
+}
+
+i.gift_7946, i.badge_7946 {
+    width: 44px;
+    height: 15px;
+    background: url(http://vr4.6rooms.com/imges/level/badge/badge_7946.png) no-repeat 0 0
+}
+
+i.badge_7554 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7554.png) no-repeat center 0
+}
+
+i.badge_7560 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7560.png) no-repeat center 0
+}
+
+i.badge_7565, i.badge_7567 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/doomsday_v1.png) no-repeat center 0
+}
+
+i.badge_7567 {
+    background-position: center -50px
+}
+
+i.badge_7823 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7823.png) no-repeat center 0
+}
+
+i.badge_7831 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7831.png) no-repeat center 0
+}
+
+i.badge_7844, i.badge_7845 {
+    background: url(http://vr7.6rooms.com/imges/level/badge/foolday2014_v2.png) no-repeat center 0
+}
+
+i.badge_7845 {
+    background-position: center -50px
+}
+
+.army_flag {
+    position: relative;
+    width: 32px;
+    height: 36px;
+    line-height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(http://vr7.6rooms.com/imges/army/army_flag_v3.png) no-repeat -200px 0
+}
+
+.army_flag .name {
+    color: #fc6;
+    text-shadow: 0 0 1px #000;
+    width: 18px;
+    text-align: center;
+    padding: 3px 7px 0;
+    line-height: 14px
+}
+
+.army_flag .num {
+    position: absolute;
+    right: -2px;
+    bottom: -2px;
+    width: 16px;
+    height: 12px;
+    color: #990006;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 2px 0;
+    text-align: center;
+    background: url(http://vr7.6rooms.com/imges/army/army_flag_v3.png) no-repeat -201px -91px
+}
+
+.army_flag_big {
+    position: relative;
+    width: 184px;
+    height: 188px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(http://vr7.6rooms.com/imges/army/army_flag_v3.png) no-repeat 0 0
+}
+
+.army_flag_big .name {
+    white-space: nowrap;
+    font-size: 70px;
+    color: #fc6;
+    text-shadow: 0 0 1px #000;
+    line-height: 80px;
+    height: 80px;
+    margin: 18px 0 0 16px;
+    width: 140px;
+    text-align: center
+}
+
+.army_flag_big .num {
+    position: absolute;
+    right: 0;
+    top: -10px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #990006;
+    font-size: 24px;
+    background: url(http://vr7.6rooms.com/imges/army/army_flag_v3.png) no-repeat -201px -45px
+}
+
+.army_level {
+    width: 35px;
+    height: 14px;
+    display: inline-block;
+    position: relative;
+    margin: -2px 4px 0 0;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: 0 0
+}
+
+.army_level b {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    background: url(http://vr7.6rooms.com/imges/level/army-rank-v2.png) no-repeat
+}
+
+.army-rank1, .army-rank2, .army-rank3, .army-rank4 {
+    width: 52px;
+    z-index: 0
+}
+
+.army-rank1 b {
+    display: block;
+    background-position: 0 0
+}
+
+.army-rank2 b {
+    display: block;
+    background-position: -30px 0
+}
+
+.army-rank3 b {
+    display: block;
+    background-position: -60px 0
+}
+
+.army-rank4 b {
+    display: block;
+    background-position: -90px 0
+}
+
+.army_level i {
+    width: 13px;
+    height: 7px;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    bottom: -4px;
+    left: 22px;
+    background: url(http://vr7.6rooms.com/imges/army/army_level_v1.png) no-repeat
+}
+
+.army_level i.army1 {
+    background-position: 8px 0
+}
+
+.army_level i.army2 {
+    background-position: -14px 0
+}
+
+.army_level i.army3 {
+    background-position: -34px 0
+}
+
+.army_level i.army4 {
+    background-position: -54px 0
+}
+
+.army_level i.army5 {
+    background-position: -74px 0
+}
+
+.army_level i.army6 {
+    background-position: -94px 0
+}
+
+.army_level i.army7 {
+    background-position: -114px 0
+}
+
+.army_level i.army8 {
+    background-position: -134px 0
+}
+
+.army_level i.army9 {
+    background-position: -154px 0
+}
+
+.army_level i.army10 {
+    background-position: -178px 0
+}
+
+.army_level i.army11 {
+    background-position: 4px -10px
+}
+
+.army_level i.army12 {
+    background-position: -18px -10px
+}
+
+.army_level i.army13 {
+    background-position: -38px -10px
+}
+
+.army_level i.army14 {
+    background-position: -58px -10px
+}
+
+.army_level i.army15 {
+    background-position: -78px -10px
+}
+
+.army_level i.army16 {
+    background-position: -98px -10px
+}
+
+.army_level i.army17 {
+    background-position: -118px -10px
+}
+
+.army_level i.army18 {
+    background-position: -138px -10px
+}
+
+.army_level i.army19 {
+    background-position: -158px -10px
+}
+
+.army_level i.army20 {
+    background-position: -180px -10px
+}
+
+.army_level i.army21 {
+    background-position: 2px -20px
+}
+
+.army_level i.army22 {
+    background-position: -20px -20px
+}
+
+.army_level i.army23 {
+    background-position: -40px -20px
+}
+
+.army_level i.army24 {
+    background-position: -60px -20px
+}
+
+.army_level i.army25 {
+    background-position: -80px -20px
+}
+
+.army_level i.army26 {
+    background-position: -100px -20px
+}
+
+.army_level i.army27 {
+    background-position: -120px -20px
+}
+
+.army_level i.army28 {
+    background-position: -140px -20px
+}
+
+.army_level i.army29 {
+    background-position: -160px -20px
+}
+
+.army_level i.army30 {
+    background-position: -180px -20px
+}
+
+.army_level i.army31 {
+    background-position: 2px -30px
+}
+
+.army_level i.army32 {
+    background-position: -20px -30px
+}
+
+.army_level i.army33 {
+    background-position: -40px -30px
+}
+
+.army_level i.army34 {
+    background-position: -60px -30px
+}
+
+.army_level i.army35 {
+    background-position: -80px -30px
+}
+
+.army_level i.army36 {
+    background-position: -100px -30px
+}
+
+.army_level i.army37 {
+    background-position: -120px -30px
+}
+
+.army_level i.army38 {
+    background-position: -140px -30px
+}
+
+.army_level i.army39 {
+    background-position: -160px -30px
+}
+
+.army_level i.army40 {
+    background-position: -180px -30px
+}
+
+.army_level i.army41 {
+    background-position: 2px -40px
+}
+
+.army_level i.army42 {
+    background-position: -20px -40px
+}
+
+.army_level i.army43 {
+    background-position: -40px -40px
+}
+
+.army_level i.army44 {
+    background-position: -60px -40px
+}
+
+.army_level i.army45 {
+    background-position: -80px -40px
+}
+
+.army_level i.army46 {
+    background-position: -100px -40px
+}
+
+.army_level i.army47 {
+    background-position: -120px -40px
+}
+
+.army_level i.army48 {
+    background-position: -140px -40px
+}
+
+.army_level i.army49 {
+    background-position: -160px -40px
+}
+
+.army_level i.army50 {
+    background-position: -180px -40px
+}
+
+.army_level i.army51 {
+    background-position: 2px -50px
+}
+
+.army_level i.army52 {
+    background-position: -20px -50px
+}
+
+.army_level i.army53 {
+    background-position: -40px -50px
+}
+
+.army_level i.army54 {
+    background-position: -60px -50px
+}
+
+.army_level i.army55 {
+    background-position: -80px -50px
+}
+
+.army_level i.army56 {
+    background-position: -100px -50px
+}
+
+.army_level i.army57 {
+    background-position: -120px -50px
+}
+
+.army_level i.army58 {
+    background-position: -140px -50px
+}
+
+.army_level i.army59 {
+    background-position: -160px -50px
+}
+
+.army_level i.army60 {
+    background-position: -180px -50px
+}
+
+.army_level i.army61 {
+    background-position: 2px -60px
+}
+
+.army_level i.army62 {
+    background-position: -20px -60px
+}
+
+.army_level i.army63 {
+    background-position: -40px -60px
+}
+
+.army_level i.army64 {
+    background-position: -60px -60px
+}
+
+.army_level i.army65 {
+    background-position: -80px -60px
+}
+
+.army_level i.army66 {
+    background-position: -100px -60px
+}
+
+.army_level i.army67 {
+    background-position: -120px -60px
+}
+
+.army_level i.army68 {
+    background-position: -140px -60px
+}
+
+.army_level i.army69 {
+    background-position: -160px -60px
+}
+
+.army_level i.army70 {
+    background-position: -180px -60px
+}
+
+.army_level i.army71 {
+    background-position: 2px -70px
+}
+
+.army_level i.army72 {
+    background-position: -20px -70px
+}
+
+.army_level i.army73 {
+    background-position: -40px -70px
+}
+
+.army_level i.army74 {
+    background-position: -60px -70px
+}
+
+.army_level i.army75 {
+    background-position: -80px -70px
+}
+
+.army_level i.army76 {
+    background-position: -100px -70px
+}
+
+.army_level i.army77 {
+    background-position: -120px -70px
+}
+
+.army_level i.army78 {
+    background-position: -140px -70px
+}
+
+.army_level i.army79 {
+    background-position: -160px -70px
+}
+
+.army_level i.army80 {
+    background-position: -180px -70px
+}
+
+.army_level i.army81 {
+    background-position: 2px -80px
+}
+
+.army_level i.army82 {
+    background-position: -20px -80px
+}
+
+.army_level i.army83 {
+    background-position: -40px -80px
+}
+
+.army_level i.army84 {
+    background-position: -60px -80px
+}
+
+.army_level i.army85 {
+    background-position: -80px -80px
+}
+
+.army_level i.army86 {
+    background-position: -100px -80px
+}
+
+.army_level i.army87 {
+    background-position: -120px -80px
+}
+
+.army_level i.army88 {
+    background-position: -140px -80px
+}
+
+.army_level i.army89 {
+    background-position: -160px -80px
+}
+
+.army_level i.army90 {
+    background-position: -180px -80px
+}
+
+.army_level i.army91 {
+    background-position: 2px -90px
+}
+
+.army_level i.army92 {
+    background-position: -20px -90px
+}
+
+.army_level i.army93 {
+    background-position: -40px -90px
+}
+
+.army_level i.army94 {
+    background-position: -60px -90px
+}
+
+.army_level i.army95 {
+    background-position: -80px -90px
+}
+
+.army_level i.army96 {
+    background-position: -100px -90px
+}
+
+.army_level i.army97 {
+    background-position: -120px -90px
+}
+
+.army_level i.army98 {
+    background-position: -140px -90px
+}
+
+.army_level i.army99 {
+    background-position: -160px -90px
+}
+
+.popGiftMod {
+    padding: 0 12px 4px
+}
+
+.popGiftMod p {
+    font-size: 14px;
+    padding-bottom: 4px
+}
+
+.popGiftMod p span {
+    font-size: 12px;
+    color: #999
+}
+
+.popGiftMod textarea {
+    width: 302px;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #e3e3e3;
+    background: 0;
+    resize: none
+}
+
+.seat_7576, .seat_7577, .seat_7578, .seat_7579, .seat_7580, .seat_7581, .seat_7582, .seat_7583, .seat_7584, .seat_7585, .seat_7586, .seat_7587, .seat_7843, .seat_7854, .seat_7855, .seat_7856, .seat_7857, .seat_7860, .seat_7863, .seat_7864 {
+    display: inline-block;
+    width: 40px;
+    height: 26px;
+    vertical-align: middle;
+    background: url(http://vr5.6rooms.com/imges/level/seat/carLogo_v10.png) no-repeat
+}
+
+.seat_7577 {
+    background-position: -50px 0
+}
+
+.seat_7578 {
+    background-position: -100px 0
+}
+
+.seat_7579 {
+    background-position: -150px 0
+}
+
+.seat_7580 {
+    background-position: 0 -50px
+}
+
+.seat_7581 {
+    background-position: -50px -50px
+}
+
+.seat_7582 {
+    background-position: -100px -50px
+}
+
+.seat_7583 {
+    background-position: -150px -50px
+}
+
+.seat_7584 {
+    background-position: 0 -100px
+}
+
+.seat_7585 {
+    background-position: -50px -100px
+}
+
+.seat_7586 {
+    background-position: -100px -100px
+}
+
+.seat_7587 {
+    background-position: -150px -100px
+}
+
+.seat_7863 {
+    background-position: -200px 0
+}
+
+.seat_7864 {
+    background-position: -200px -50px
+}
+
+.seat_7843 {
+    background-position: -250px 0
+}
+
+.seat_7854 {
+    background-position: -300px 0
+}
+
+.seat_7855 {
+    background-position: -350px 0
+}
+
+.seat_7856 {
+    background-position: -250px -50px
+}
+
+.seat_7857 {
+    background-position: -300px -50px
+}
+
+.seat_7860 {
+    background-position: -350px -50px
+}
+
+.seatBig_7576, .seatBig_7577, .seatBig_7578, .seatBig_7579, .seatBig_7580, .seatBig_7581, .seatBig_7582, .seatBig_7583, .seatBig_7584, .seatBig_7585, .seatBig_7586, .seatBig_7587, .seatBig_7843, .seatBig_7854, .seatBig_7855, .seatBig_7856, .seatBig_7857, .seatBig_7860, .seatBig_7863, .seatBig_7864 {
+    display: inline-block;
+    width: 130px;
+    height: 85px;
+    vertical-align: middle;
+    background: url(http://vr7.6rooms.com/imges/level/seat/seatCar_v4.png) no-repeat 0 15px;
+    _background: url(http://vr7.6rooms.com/imges/level/seat/seatCar_8bit_v4.png) no-repeat 0 15px
+}
+
+.seatBig_7577 {
+    background-position: -150px 15px
+}
+
+.seatBig_7578 {
+    background-position: -300px 15px
+}
+
+.seatBig_7579 {
+    background-position: -450px 15px
+}
+
+.seatBig_7580 {
+    background-position: 0 -85px
+}
+
+.seatBig_7581 {
+    background-position: -150px -85px
+}
+
+.seatBig_7582 {
+    background-position: -300px -85px
+}
+
+.seatBig_7583 {
+    background-position: -450px -85px
+}
+
+.seatBig_7584 {
+    background-position: 0 -185px
+}
+
+.seatBig_7585 {
+    background-position: -150px -185px
+}
+
+.seatBig_7586 {
+    background-position: -300px -185px
+}
+
+.seatBig_7587 {
+    background-position: -450px -185px
+}
+
+.seatBig_7863 {
+    background-position: -600px 15px
+}
+
+.seatBig_7864 {
+    width: 133px;
+    background-position: -600px -85px
+}
+
+.seatBig_7843 {
+    background: url(http://vr7.6rooms.com/imges/level/seat/seatBig_7843_v4.gif) no-repeat 0 15px
+}
+
+.seatBig_7854 {
+    background: url(http://vr7.6rooms.com/imges/level/seat/seatBig_7854_v3.gif) no-repeat 0 15px
+}
+
+.seatBig_7855 {
+    background: url(http://vr7.6rooms.com/imges/level/seat/seatBig_7855_v2.gif) no-repeat 0 15px
+}
+
+.seatBig_7856 {
+    background: url(http://vr7.6rooms.com/imges/level/seat/seatBig_7856_v1.gif) no-repeat 0 15px
+}
+
+.seatBig_7857 {
+    background: url(http://vr7.6rooms.com/imges/level/seat/seatBig_7857_v1.gif) no-repeat 0 15px
+}
+
+.seatBig_7860 {
+    background: url(http://vr7.6rooms.com/imges/level/seat/seatBig_7860_v3.gif) no-repeat 0 15px
+}
+
+.seat_7932 {
+    display: inline-block;
+    width: 40px;
+    height: 26px;
+    vertical-align: middle;
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/seat/seat_7932_v1.png) no-repeat 0 0;
+    _background: url(http://vr7.6rooms.com/imges/live/CSSIMG/seat/seat_7932_8bit_v1.png) no-repeat 0 0
+}
+
+.seatBig_7932 {
+    display: inline-block;
+    width: 130px;
+    height: 85px;
+    vertical-align: middle;
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/seat/seatBig_7932_v2.png) no-repeat 0 15px
+}
+
+.seat_7868 {
+    display: inline-block;
+    width: 40px;
+    height: 26px;
+    vertical-align: middle;
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/seat/seat_7868_v1.png) no-repeat 0 0;
+    _background: url(http://vr7.6rooms.com/imges/live/CSSIMG/seat/seat_7868_8bit_v1.png) no-repeat 0 0
+}
+
+.seatBig_7868 {
+    display: inline-block;
+    width: 130px;
+    height: 85px;
+    vertical-align: middle;
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/seat/seatBig_7868_v2.gif) no-repeat 0 15px
+}
+
+.seat_7824 {
+    display: inline-block;
+    width: 40px;
+    height: 26px;
+    vertical-align: middle;
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/seat/hcar_v1.png) no-repeat 6px 0;
+    _background: url(http://vr7.6rooms.com/imges/live/CSSIMG/seat/hcar_8bit_v1.png) no-repeat 6px 0
+}
+
+.seatBig_7824 {
+    display: inline-block;
+    width: 130px;
+    height: 85px;
+    vertical-align: middle;
+    background: url(http://vr7.6rooms.com/imges/live/CSSIMG/seat/hseatcar_v2.png) no-repeat 0 15px;
+    _background: url(http://vr7.6rooms.com/imges/live/CSSIMG/seat/hseatcar_8bit_v2.png) no-repeat 0 15px
+}
+
+.seat_7875 {
+    display: inline-block;
+    width: 40px;
+    height: 26px;
+    vertical-align: middle;
+    background: url(http://vr3.6rooms.com/imges/live/CSSIMG/seat/seat_7875_v1.png) no-repeat 0 0;
+    _background: url(http://vr3.6rooms.com/imges/live/CSSIMG/seat/seat_ie6_7875_v1.png) no-repeat 0 0
+}
+
+.seatBig_7875 {
+    display: inline-block;
+    width: 130px;
+    height: 85px;
+    vertical-align: middle;
+    background: url(http://vr3.6rooms.com/imges/live/CSSIMG/seat/seatBig_7875.png) no-repeat 0 0;
+    _background: url(http://vr3.6rooms.com/imges/live/CSSIMG/seat/seatBig_ie6_7875.png) no-repeat 0 0
+}
+
+.seat_7876 {
+    display: inline-block;
+    width: 40px;
+    height: 26px;
+    vertical-align: middle;
+    background: url(http://vr3.6rooms.com/imges/live/CSSIMG/seat/seat_7876.png) no-repeat 0 0;
+    _background: url(http://vr3.6rooms.com/imges/live/CSSIMG/seat/seat_ie6_7876.png) no-repeat 0 0
+}
+
+.seatBig_7876 {
+    display: inline-block;
+    width: 130px;
+    height: 85px;
+    vertical-align: middle;
+    background: url(http://vr3.6rooms.com/imges/live/CSSIMG/seat/seatBig_7876.png) no-repeat 0 15px;
+    _background: url(http://vr3.6rooms.com/imges/live/CSSIMG/seat/seatBig_ie6_7876.png) no-repeat 0 15px
+}
+
+.seat_7884 {
+    display: inline-block;
+    width: 40px;
+    height: 26px;
+    vertical-align: middle;
+    background: url(http://vr3.6rooms.com/imges/live/CSSIMG/seat/seat_7884.png) no-repeat center center;
+    _background: url(http://vr3.6rooms.com/imges/live/CSSIMG/seat/seat_7884_ie6.png) no-repeat 0 0
+}
+
+.seatBig_7884 {
+    display: inline-block;
+    width: 130px;
+    height: 85px;
+    vertical-align: middle;
+    background: url(http://vr3.6rooms.com/imges/live/CSSIMG/seat/seatBig_7884.png) no-repeat 0 15px;
+    _background: url(http://vr3.6rooms.com/imges/live/CSSIMG/seat/seatBig_7784_ie6.png) no-repeat 0 0
+}
+
+.seat_7885 {
+    display: inline-block;
+    width: 40px;
+    height: 26px;
+    vertical-align: middle;
+    background: url(http://vr3.6rooms.com/imges/live/CSSIMG/seat/seat_7884.png) no-repeat center center;
+    _background: url(http://vr3.6rooms.com/imges/live/CSSIMG/seat/seat_7884_ie6.png) no-repeat 0 0
+}
+
+.seatBig_7885 {
+    display: inline-block;
+    width: 130px;
+    height: 85px;
+    vertical-align: middle;
+    background: url(http://vr3.6rooms.com/imges/live/CSSIMG/seat/seatBig_7885.png) no-repeat 0 15px;
+    _background: url(http://vr3.6rooms.com/imges/live/CSSIMG/seat/seatBig_7785_ie6.png) no-repeat 0 15px
+}
+
+.seat_7900, .seat_7901, .seat_7902 {
+    display: inline-block;
+    width: 40px;
+    height: 26px;
+    vertical-align: middle;
+    background: url(http://vr3.6rooms.com/imges/level/seat/game_seat.png) no-repeat
+}
+
+.seatBig_7900, .seatBig_7901, .seatBig_7902 {
+    display: inline-block;
+    width: 130px;
+    height: 85px;
+    vertical-align: middle;
+    background: url(http://vr3.6rooms.com/imges/level/seat/game_seatbig.png) no-repeat
+}
+
+.seat_7900 {
+    background-position: 0 -50px
+}
+
+.seat_7901 {
+    background-position: 0 -100px
+}
+
+.seatBig_7900 {
+    background-position: 0 -100px
+}
+
+.seatBig_7901 {
+    background-position: 0 -200px
+}
+
+.seat_7918, .seat_7919, .seat_7920 {
+    display: inline-block;
+    width: 40px;
+    height: 26px;
+    vertical-align: middle;
+    background: url(http://vr5.6rooms.com/imges/level/seat/bus_small.png) no-repeat 0 0;
+    _background: url(http://vr5.6rooms.com/imges/level/seat/bus_small_8bit.png) no-repeat 0 0
+}
+
+.seat_7919 {
+    background-position: -50px 0
+}
+
+.seat_7920 {
+    background-position: -100px 0
+}
+
+.seatBig_7918, .seatBig_7919, .seatBig_7920 {
+    display: inline-block;
+    width: 130px;
+    height: 85px;
+    vertical-align: middle;
+    background: url(http://vr5.6rooms.com/imges/level/seat/bus_big.png) no-repeat 0 0;
+    _background: url(http://vr5.6rooms.com/imges/level/seat/bus_big_8bit.png) no-repeat 0 0
+}
+
+.seatBig_7919 {
+    background-position: -150px 0
+}
+
+.seatBig_7920 {
+    background-position: -300px 0
+}
+
+i.user-hidico {
+    width: 15px;
+    height: 15px;
+    margin-right: 4px;
+    background: url(http://vr4.6rooms.com/imges/live/CSSIMG/room/mystery.png) no-repeat
+}
+
+i.star0, i.star1, i.star2, i.star3, i.star4, i.star5, i.star6, i.star7, i.star8, i.star9, i.star10, i.star11, i.star12, i.star13, i.star14, i.star15, i.star16, i.star17, i.star18, i.star19, i.star20, i.star21, i.star22, i.star23, i.star24, i.star25, i.star26, i.star27, i.star28, i.star29, i.star30, i.star31, i.star32, i.star33, i.star34, i.star35, i.star36, i.star37, i.star38, i.star39, i.star40, i.star41, i.star42, i.star43, i.star44, i.star45, i.star46, i.star47, i.star48, i.star49, i.star50, i.star51, i.star52, i.star53, i.star54, i.star55, i.star56, i.star57, i.star58, i.star59, i.rich0, i.rich1, i.rich2, i.rich3, i.rich4, i.rich5, i.rich6, i.rich7, i.rich8, i.rich9, i.rich10, i.rich11, i.rich12, i.rich13, i.rich14, i.rich15, i.rich16, i.rich17, i.rich18, i.rich19, i.rich20, i.rich21, i.rich22, i.rich23, i.rich24, i.rich25, i.rich26, i.rich27, i.vip, i.vip_m, i.ladder, i.badge_7559, i.gift_7569, i.gift_7570, i.gift_7122, i.isShou1, i.isShou2, i.gift_7827, i.gift_7828, i.gift_7829, i.phone, i.badge_7859, i.manage, i.gold-sign {
+    margin-right: 4px;
+    margin-top: -2px;
+    _margin-top: 0;
+    width: 35px;
+    height: 16px;
+    background: url(http://vr1.6rooms.com/imges/level/rich/all_v7.png) no-repeat 0 0
+}
+
+i.vip, i.vip_m, i.badge_7559, i.gift_7122, i.isShou1, i.phone, i.badge_7859, i.manage {
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+    vertical-align: middle
+}
+
+i.gold-sign {
+    width: 23px;
+    height: 10px;
+    margin-left: 4px;
+    margin-top: 0
+}
+
+i.star1 {
+    width: 22px
+}
+
+i.star0, i.star2, i.star3, i.star4, i.star5 {
+    width: 26px
+}
+
+i.star6 {
+    width: 23px
+}
+
+i.star7, i.star8, i.star9, i.star10 {
+    width: 27px
+}
+
+i.star11 {
+    width: 24px
+}
+
+i.star12, i.star13, i.star14, i.star15, i.star16, i.star17, i.star18, i.star19 {
+    width: 26px
+}
+
+i.phone {
+    width: 9px;
+    margin-top: 0
+}
+
+i.star0 {
+    background-position: -1000px 0
+}
+
+i.star2 {
+    background-position: -50px 0
+}
+
+i.star3 {
+    background-position: -100px 0
+}
+
+i.star4 {
+    background-position: -150px 0
+}
+
+i.star5 {
+    background-position: -200px 0
+}
+
+i.star6 {
+    background-position: -250px 0
+}
+
+i.star7 {
+    background-position: -300px 0
+}
+
+i.star8 {
+    background-position: -350px 0
+}
+
+i.star9 {
+    background-position: -400px 0
+}
+
+i.star10 {
+    background-position: -450px 0
+}
+
+i.star11 {
+    background-position: -500px 0
+}
+
+i.star12 {
+    background-position: -550px 0
+}
+
+i.star13 {
+    background-position: -600px 0
+}
+
+i.star14 {
+    background-position: -650px 0
+}
+
+i.star15 {
+    background-position: -700px 0
+}
+
+i.star16 {
+    background-position: -750px 0
+}
+
+i.star17 {
+    background-position: -800px 0
+}
+
+i.star18 {
+    background-position: -850px 0
+}
+
+i.star19 {
+    background-position: -900px 0
+}
+
+i.star20 {
+    width: 36px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/10.gif) no-repeat 0 center
+}
+
+i.star21 {
+    width: 36px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/11.gif) no-repeat 0 center
+}
+
+i.star22 {
+    width: 36px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/12.gif) no-repeat 0 center
+}
+
+i.star23 {
+    width: 36px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/13.gif) no-repeat 0 center
+}
+
+i.star24 {
+    width: 36px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/14.gif) no-repeat 0 center
+}
+
+i.star25 {
+    width: 36px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/15.gif) no-repeat 0 center
+}
+
+i.star26 {
+    width: 36px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/16.gif) no-repeat 0 center
+}
+
+i.star27 {
+    width: 36px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/17.gif) no-repeat 0 center
+}
+
+i.star28 {
+    width: 36px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/18.gif) no-repeat 0 center
+}
+
+i.star29 {
+    width: 36px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/19.gif) no-repeat 0 center
+}
+
+i.star30 {
+    width: 36px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/20.gif) no-repeat 0 center
+}
+
+i.star31 {
+    width: 36px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/21.gif) no-repeat 0 center
+}
+
+i.star32 {
+    width: 36px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/22.gif) no-repeat 0 center
+}
+
+i.star33 {
+    width: 36px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/23.gif) no-repeat 0 center
+}
+
+i.star34 {
+    width: 36px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/24.gif) no-repeat 0 center
+}
+
+i.star35 {
+    width: 36px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/25.gif) no-repeat 0 center
+}
+
+i.star36 {
+    width: 36px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/26.gif) no-repeat 0 center
+}
+
+i.star37 {
+    width: 36px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/27.gif) no-repeat 0 center
+}
+
+i.star38 {
+    width: 36px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/28.gif) no-repeat 0 center
+}
+
+i.star39 {
+    width: 36px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/29.gif) no-repeat 0 center
+}
+
+i.star40 {
+    width: 42px;
+    height: 18px;
+    margin-right: 2px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/30.gif) no-repeat 0 center
+}
+
+i.star41 {
+    width: 42px;
+    height: 18px;
+    margin-right: 2px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/31.gif) no-repeat 0 center
+}
+
+i.star42 {
+    width: 42px;
+    height: 18px;
+    margin-right: 2px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/32.gif) no-repeat 0 center
+}
+
+i.star43 {
+    width: 42px;
+    height: 18px;
+    margin-right: 2px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/33.gif) no-repeat 0 center
+}
+
+i.star44 {
+    width: 42px;
+    height: 18px;
+    margin-right: 2px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/34.gif) no-repeat 0 center
+}
+
+i.star45 {
+    width: 42px;
+    height: 18px;
+    margin-right: 2px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/35.gif) no-repeat 0 center
+}
+
+i.star46 {
+    width: 42px;
+    height: 18px;
+    margin-right: 2px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/36.gif) no-repeat 0 center
+}
+
+i.star47 {
+    width: 42px;
+    height: 18px;
+    margin-right: 2px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/37.gif) no-repeat 0 center
+}
+
+i.star48 {
+    width: 42px;
+    height: 18px;
+    margin-right: 2px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/38.gif) no-repeat 0 center
+}
+
+i.star49 {
+    width: 42px;
+    height: 18px;
+    margin-right: 2px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/39.gif) no-repeat 0 center
+}
+
+i.star50 {
+    width: 55px;
+    height: 22px;
+    margin-right: 2px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/40.gif) no-repeat 0 center
+}
+
+i.star51 {
+    width: 55px;
+    height: 22px;
+    margin-right: 2px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/41.gif) no-repeat 0 center
+}
+
+i.star52 {
+    width: 55px;
+    height: 22px;
+    margin-right: 2px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/42.gif) no-repeat 0 center
+}
+
+i.star53 {
+    width: 55px;
+    height: 22px;
+    margin-right: 2px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/43.gif) no-repeat 0 center
+}
+
+i.star54 {
+    width: 55px;
+    height: 22px;
+    margin-right: 2px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/44.gif) no-repeat 0 center
+}
+
+i.star55 {
+    width: 55px;
+    height: 22px;
+    margin-right: 2px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/45.gif) no-repeat 0 center
+}
+
+i.star56 {
+    width: 55px;
+    height: 22px;
+    margin-right: 2px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/46.gif) no-repeat 0 center
+}
+
+i.star57 {
+    width: 55px;
+    height: 22px;
+    margin-right: 2px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/47.gif) no-repeat 0 center
+}
+
+i.star58 {
+    width: 55px;
+    height: 22px;
+    margin-right: 2px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/48.gif) no-repeat 0 center
+}
+
+i.star59 {
+    width: 55px;
+    height: 22px;
+    margin-right: 2px;
+    background: url(http://vr5.6rooms.com/imges/level/star/v2/49.gif) no-repeat 0 center
+}
+
+i.rich0 {
+    background-position: -1050px -1px
+}
+
+i.rich1 {
+    background-position: 0 -25px
+}
+
+i.rich2 {
+    background-position: -50px -25px
+}
+
+i.rich3 {
+    background-position: -100px -25px
+}
+
+i.rich4 {
+    background-position: -150px -25px
+}
+
+i.rich5 {
+    background-position: -200px -25px
+}
+
+i.rich6 {
+    background-position: -250px -25px
+}
+
+i.rich7 {
+    background-position: -300px -25px
+}
+
+i.rich8 {
+    background-position: -350px -25px
+}
+
+i.rich9 {
+    background-position: -400px -25px
+}
+
+i.rich10 {
+    background-position: -450px -25px
+}
+
+i.rich11 {
+    background-position: -500px -25px
+}
+
+i.rich12 {
+    background-position: -550px -25px
+}
+
+i.rich13 {
+    background-position: -600px -25px
+}
+
+i.rich14 {
+    background-position: -650px -25px
+}
+
+i.rich15 {
+    background-position: -700px -25px
+}
+
+i.rich16 {
+    background-position: -750px -25px
+}
+
+i.rich17 {
+    background-position: -800px -25px
+}
+
+i.rich18 {
+    background-position: -850px -25px
+}
+
+i.rich19 {
+    background-position: -900px -25px
+}
+
+i.rich20 {
+    background-position: -950px -25px
+}
+
+i.rich21 {
+    background-position: -1000px -25px
+}
+
+i.rich22 {
+    background-position: -1050px -25px
+}
+
+i.rich23 {
+    background-position: -1100px -25px
+}
+
+i.rich24 {
+    background-position: -1150px -25px
+}
+
+i.rich25 {
+    width: 50px;
+    height: 18px;
+    margin-right: 2px;
+    background-position: -1200px -21px
+}
+
+i.rich26 {
+    width: 50px;
+    height: 18px;
+    margin-right: 2px;
+    background: url(http://vr7.6rooms.com/imges/level/rich/v1/26.gif) no-repeat 0 0
+}
+
+i.rich27 {
+    width: 50px;
+    height: 18px;
+    margin-right: 2px;
+    background: url(http://vr7.6rooms.com/imges/level/rich/v1/27.gif) no-repeat center 0
+}
+
+i.rich-27016708 {
+    width: 54px;
+    height: 18px;
+    background-image: url(http://v.6.cn/api/godUserRankImg.php?uid=27016708&rand=1)
+}
+
+i.rich-49688111 {
+    width: 54px;
+    height: 18px;
+    background-image: url(http://v.6.cn/api/godUserRankImg.php?uid=49688111&rand=1)
+}
+
+i.rich-57511357 {
+    width: 54px;
+    height: 18px;
+    background-image: url(http://v.6.cn/api/godUserRankImg.php?uid=57511357&rand=1)
+}
+
+i.rich-49077323 {
+    width: 54px;
+    height: 18px;
+    background-image: url(http://v.6.cn/api/godUserRankImg.php?uid=49077323&rand=1)
+}
+
+i.rich-56607162 {
+    width: 54px;
+    height: 18px;
+    background-image: url(http://v.6.cn/api/godUserRankImg.php?uid=56607162&rand=1)
+}
+
+i.isShou1 {
+    background-position: -450px -45px
+}
+
+i.vip {
+    background-position: -50px -45px
+}
+
+i.vip_m {
+    background-position: -100px -45px
+}
+
+i.ladder {
+    width: 12px;
+    height: 15px;
+    background-position: 0 -44px
+}
+
+i.badge_7559 {
+    background-position: -150px -45px
+}
+
+i.phone {
+    background-position: -650px -45px
+}
+
+i.badge_7859 {
+    background-position: -700px -45px
+}
+
+i.manage {
+    background-position: -750px -45px
+}
+
+i.gold-sign {
+    background-position: -800px -45px
+}
+
+i.gift_7570 {
+    width: 17px;
+    height: 19px;
+    background-position: -200px -41px
+}
+
+i.gift_7569 {
+    width: 17px;
+    height: 19px;
+    background-position: -250px -41px
+}
+
+i.gift_7827 {
+    width: 14px;
+    height: 14px;
+    background-position: -500px -45px
+}
+
+i.gift_7828 {
+    width: 14px;
+    height: 14px;
+    background-position: -550px -45px
+}
+
+i.gift_7829 {
+    width: 14px;
+    height: 14px;
+    background-position: -600px -45px
+}
+
+.badge_7827, .badge_7828, .badge_7829 {
+    width: 14px !important;
+    height: 14px !important;
+    margin-right: 3px;
+    vertical-align: middle;
+    background: url(http://vr3.6rooms.com/imges/level/badge/robstar-v1.png) no-repeat 0 0
+}
+
+.badge_7828 {
+    background-position: -50px 0
+}
+
+.badge_7829 {
+    background-position: -100px 0
+}
+
+i.gift_7839 {
+    width: 18px;
+    height: 18px;
+    background: url(http://vr7.6rooms.com/imges/level/badge/badge_7839_v6.gif) no-repeat
+}
+
+i.rich0 img, i.rich1 img, i.rich2 img, i.rich3 img, i.rich4 img, i.rich5 img, i.rich6 img, i.rich7 img, i.rich8 img, i.rich9 img, i.rich10 img, i.rich11 img, i.rich12 img, i.rich13 img, i.rich14 img, i.rich15 img, i.rich16 img, i.rich17 img, i.rich18 img, i.rich19 img, i.rich20 img, i.rich21 img, i.rich22 img, i.rich23 img, i.rich24 img {
+    width: 35px;
+    height: 16px;
+    vertical-align: top
+}
+
+i.rich25 img, i.rich26 img, i.rich27 img {
+    width: 50px;
+    height: 18px;
+    vertical-align: top
+}
+
+.userList li i.gift_7570, .userList li i.gift_7569 {
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+    vertical-align: middle;
+    background-position: -300px -45px
+}
+
+.userList li i.gift_7569 {
+    background-position: -350px -45px
+}
+
+i.gift_7122 {
+    background-position: -400px -45px
+}
+
+#watchSpectator i.vip_super, i.vip_super {
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+    vertical-align: middle;
+    background: url(http://vr7.6rooms.com/imges/live/level/vip_super.gif) no-repeat 0 0
+}
+
+.stream i.rich18 {
+    width: 43px;
+    height: 22px;
+    background: url(http://vr7.6rooms.com/imges/live/crichs/rich18.gif) no-repeat
+}
+
+.stream i.rich19 {
+    width: 43px;
+    height: 22px;
+    background: url(http://vr7.6rooms.com/imges/live/crichs/rich19.gif) no-repeat
+}
+
+.stream i.rich20 {
+    width: 43px;
+    height: 22px;
+    background: url(http://vr7.6rooms.com/imges/live/crichs/rich20.gif) no-repeat
+}
+
+.stream i.rich21 {
+    width: 43px;
+    height: 22px;
+    background: url(http://vr7.6rooms.com/imges/live/crichs/rich21.gif) no-repeat
+}
+
+.stream i.rich22 {
+    width: 43px;
+    height: 22px;
+    background: url(http://vr7.6rooms.com/imges/live/crichs/rich22.gif) no-repeat
+}
+
+.stream i.rich23 {
+    width: 43px;
+    height: 22px;
+    background: url(http://vr7.6rooms.com/imges/live/crichs/rich23.gif) no-repeat
+}
+
+.stream i.rich24 {
+    width: 43px;
+    height: 22px;
+    background: url(http://vr7.6rooms.com/imges/live/crichs/rich24.gif) no-repeat
+}
+
+.stream i.rich25 {
+    width: 66px;
+    height: 28px;
+    background: url(http://vr7.6rooms.com/imges/live/crichs/rich25.gif) no-repeat
+}
+
+.redBagIco {
+    display: inline-block;
+    height: 21px;
+    width: 14px;
+    background: url(http://vr3.6rooms.com/imges/live/CSSIMG/gift/redBag.png) no-repeat 0 0;
+    vertical-align: middle
+}

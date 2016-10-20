@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd"
+       default-autowire="byName">
+
+
+    <!--文件上传-->
+    <bean id="multipartResolver"
+          class="org.springframework.web.multipart.commons.CommonsMultipartResolver" >
+        <property name="defaultEncoding" value="UTF-8"/>
+        <!-- 指定所上传文件的总大小不能超过200KB。注意maxUploadSize属性的限制不是针对单个文件，而是所有文件的容量之和 -->
+       <!-- <property name="maxUploadSize" value="200000"/>-->
+    </bean>
+    <!-- SpringMVC在超出上传文件限制时，会抛出org.springframework.web.multipart.MaxUploadSizeExceededException -->
+    <!-- 该异常是SpringMVC在检查上传的文件信息时抛出来的，而且此时还没有进入到Controller方法中 -->
+    <bean id="exceptionResolver" class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        <property name="exceptionMappings">
+            <props>
+                <!-- 遇到MaxUploadSizeExceededException异常时，自动跳转到/WEB-INF/jsp/error_fileupload.jsp页面 -->
+                <prop key="org.springframework.web.multipart.MaxUploadSizeExceededException">error_fileupload</prop>
+            </props>
+        </property>
+    </bean>
+
+    <mvc:annotation-driven/>
+    <context:component-scan base-package="com.ddas.sns.*.control"/>
+    <!--静态资源不处理-->
+    <mvc:default-servlet-handler/>
+
+
+    <!--国际化配置-->
+    <bean id="localeResolver"
+          class="org.springframework.web.servlet.i18n.SessionLocaleResolver">
+        <property name="defaultLocale" value="zh_CN"/>
+    </bean>
+
+
+    <mvc:interceptors>
+
+       <mvc:interceptor>
+           <mvc:mapping path="/**"/>
+           <mvc:exclude-mapping path="/common/**"/>
+           <mvc:exclude-mapping path="/business/**"/>
+           <mvc:exclude-mapping path="/upload/**"/>
+           <!--登录限制-->
+           <mvc:exclude-mapping path="/login/gotoLogin"/>
+           <mvc:exclude-mapping path="/login/gotoLoginPage"/>
+           <mvc:exclude-mapping path="/login/in"/>
+           <!--注册限制-->
+           <mvc:exclude-mapping path="/login/gotoRegister"/>
+           <mvc:exclude-mapping path="/login/register"/>
+           <mvc:exclude-mapping path="/login/identifyUserName"/>
+           <mvc:exclude-mapping path="/login/resetpwd"/>
+           <mvc:exclude-mapping path="/login/fetchEmailByUserName"/>
+           <mvc:exclude-mapping path="/login/gotoResetPwdPage"/>
+           <mvc:exclude-mapping path="/login/doResetPwd"/>
+
+           <!--admin一些action-->
+           <mvc:exclude-mapping path="/admin/**"/>
+           <bean id="loginInterceptor" class="com.ddas.common.interceptor.LoginRequiredInterceptor"/>
+       </mvc:interceptor>
+
+        <!--admin 登录拦截器-->
+        <mvc:interceptor>
+            <mvc:mapping path="/admin/**"/>
+            <!--登录限制-->
+            <mvc:exclude-mapping path="/admin/gotoLogin"/>
+            <mvc:exclude-mapping path="/admin/in"/>
+            <bean class="com.ddas.common.interceptor.AdminLoginRequiredInterceptor"/>
+        </mvc:interceptor>
+
+        <bean id="localeChangeInterceptor" class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
+            <property name="paramName" value="language"/>
+        </bean>
+
+    </mvc:interceptors>
+
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+          p:prefix="/WEB-INF/views/"
+          p:suffix=".jsp">
+        <property name="servletContext" ref="servletContext"/>
+    </bean>
+
+
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+     <!--   <mvc:interceptors>
+            <bean class="com.ddas.common.interceptor.LoginRequiredInterceptor"/>
+        </mvc:interceptors>-->
+        <property name="messageConverters">
+            <util:list id="beanList">
+                <ref bean="stringHttpMessageConverter"/>
+                <ref bean="jsonHttpMessageConverter"/>
+            </util:list>
+        </property>
+        <property name="servletContext" ref="servletContext"/>
+    </bean>
+    <bean id="stringHttpMessageConverter"
+          class="org.springframework.http.converter.StringHttpMessageConverter"/>
+    <bean id="jsonHttpMessageConverter"
+          class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+    </bean>
+
+</beans>

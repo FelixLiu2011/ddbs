@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>sHover|感应鼠标进出方向悬浮效果</title>
+	<link rel="stylesheet" href="business/login/css/example.css">
+	<script src="business/login/js/sHover.min.js"></script>
+	<script>
+		window.onload=function(){
+			var a=new sHover("sHoverItem","sIntro");
+			a.set({
+				slideSpeed:5,
+				opacityChange:true,
+				opacity:80
+			});
+		}
+		function scrollToBottom(a){
+			if(windowHeight()){
+				clearInterval(a.scrollTimer);
+				var scrollSpeed=100;
+				a.scrollTimer=setInterval(function(){
+					document.documentElement.scrollTop+=scrollSpeed;
+					document.body.scrollTop+=scrollSpeed;
+					if((document.documentElement.scrollTop>=(document.documentElement.scrollHeight-windowHeight()))||(document.body.scrollTop>=(document.documentElement.scrollHeight-windowHeight()))){
+						clearInterval(a.scrollTimer);
+					}
+				},13);
+			}else{
+				//a.setAttribute('href', 'http://www.baidu.com');
+			}
+		}
+		function windowHeight(){
+			if(document.documentElement){
+				return document.documentElement.clientHeight;
+			}else{
+				return document.body.clientHeight;
+			}
+		}
+	</script>
+</head>
+<body id="body">
+
+<div id="part3" class="part">
+	<h2>sHover的炫酷使用实例</h2>
+	<div class="container">
+		<div id="item1" class="sHoverItem">
+			<img id="img1" src="business/login/images/1.jpg">
+				<span id="intro1" class="sIntro">
+					<h2>Flowers</h2>
+					<p>Flowers are so inconsistent! But I was too young to know how to love her</p>
+				</span>
+		</div>
+		<div id="item2" class="sHoverItem">
+			<img src="business/login/images/2.jpg">
+				<span class="sIntro">
+					<h2>You know</h2>
+					<p>one loves the sunset, when one is so sad</p>
+				</span>
+		</div>
+		<div class="sHoverItem">
+			<img src="business/login/images/3.jpg">
+				<span class="sIntro">
+					<h2>For</h2>
+					<p>For she did not want him to see her crying. She was such a proud flower</p>
+				</span>
+		</div>
+		<div class="sHoverItem">
+			<img src="business/login/images/4.jpg">
+				<span class="sIntro">
+					<h2>Volcanoes</h2>
+					<p>It is of some use to my volcanoes, and it is of some use to my flower, that I own them. But you are of no </p>
+				</span>
+		</div>
+		<div class="sHoverItem">
+			<img src="business/login/images/5.jpg">
+				<span class="sIntro">
+					<h2>I thought</h2>
+					<p>I thought that I was rich, with a flower that was unique in all the world; and all I had was a common</p>
+				</span>
+		</div>
+		<div class="sHoverItem">
+			<img src="business/login/images/6.jpg">
+				<span class="sIntro">
+					<h2>For she</h2>
+					<p>For she did not want him to see her crying. She was such a proud flower</p>
+				</span>
+		</div>
+		<div class="sHoverItem">
+			<img src="business/login/images/7.jpg">
+				<span class="sIntro">
+					<h2>Thorns</h2>
+					<p>She has only four thorns to defend herself against the world. And I have left on my planet, all alone!</p>
+				</span>
+		</div>
+		<div class="sHoverItem">
+			<img src="business/login/images/8.jpg">
+				<span class="sIntro">
+					<h2>A little boy</h2>
+					<p>To me, you are still nothing more than a little boy who is just like a hundred thousand other little boys.</p>
+				</span>
+		</div>
+		<div class="sHoverItem">
+			<img src="business/login/images/9.jpg">
+				<span class="sIntro">
+					<h2>And I</h2>
+					<p>And I have no need of you. And you, on your part, have no need of me.</p>
+				</span>
+		</div>
+		<div class="sHoverItem">
+			<img src="business/login/images/10.jpg">
+				<span class="sIntro">
+					<h2>Foxes</h2>
+					<p>I am nothing more than a fox like a hundred thousand other foxes.</p>
+				</span>
+		</div>
+		<div class="sHoverItem">
+			<img src="business/login/images/11.jpg">
+				<span class="sIntro">
+					<h2>Tame</h2>
+					<p>But if you tame me, then we shall need each other.</p>
+				</span>
+		</div>
+		<div class="sHoverItem">
+			<img src="business/login/images/12.jpg">
+				<span class="sIntro">
+					<h2>Unique</h2>
+					<p>To me,you will be unique in all the world. To you, I shall be unique in all the world. </p>
+				</span>
+		</div>
+	</div><!-- /container -->
+</div><!-- /part3 -->
+</body>
+</html>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ddas.sns.userfriendphotogroup.mapper.UserFriendPhotoGroupMapper">
+  <resultMap id="UserFriendPhotoGroupMap" type="com.ddas.sns.userfriendphotogroup.dto.UserFriendPhotoGroupDto">
+    <result column="uf_user_id" property="userId" jdbcType="VARCHAR" />
+    <result column="friend_id" jdbcType="VARCHAR" property="friendId" />
+    <result column="friend_name" jdbcType="VARCHAR" property="friendName" />
+    <result column="upg_group_id" property="groupId" jdbcType="VARCHAR" />
+    <result column="group_name" property="groupName" jdbcType="VARCHAR" />
+    <result column="cover" property="cover" jdbcType="VARCHAR" />
+    <result column="upg_created_time" property="createdTime" jdbcType="VARCHAR" />
+    <result column="upg_updated_time" property="updatedTime" jdbcType="VARCHAR" />
+    <result column="description" property="description" jdbcType="VARCHAR"/>
+    <result column="tags" property="tags" jdbcType="VARCHAR"/>
+  </resultMap>
+
+  <sql id="Base_Column_List">
+      uf.user_id AS uf_user_id,friend_id,friend_name,upg.group_id AS upg_group_id,cover,upg.created_time AS upg_created_time,upg.updated_time AS upg_updated_time,group_name,
+      upg.description as description,upg.tags as tags
+  </sql>
+
+  <select id="queryByPage" parameterType="com.ddas.common.page.Page" resultMap="UserFriendPhotoGroupMap">
+      SELECT
+        <include refid="Base_Column_List" />
+      FROM user_friend uf
+      INNER JOIN user_photo_group upg
+      ON uf.friend_id = upg.user_id
+      AND uf.user_id = #{condition.userId}
+      AND upg.privilege='2'
+      ORDER BY upg.updated_time
+      DESC LIMIT ${condition.start},${condition.end};
+  </select>
+  <select id="getCount" parameterType="com.ddas.common.page.Page" resultType="java.lang.Integer">
+    SELECT count(*)
+    FROM user_friend uf
+    INNER JOIN user_photo_group upg
+    ON uf.friend_id = upg.user_id
+    AND uf.user_id = #{condition.userId}
+  </select>
+
+    <select id="queryPhotoFaceAndCount" resultType="java.util.Map" parameterType="string">
+      <![CDATA[
+        SELECT num,cover FROM (SELECT count(1) num,group_id
+        FROM user_photo WHERE group_id = #{groupId}
+        )a JOIN ( SELECT cover ,group_id FROM user_photo_group where group_id=#{groupId})
+         b ON a.group_id=b.group_id
+        ]]>
+    </select>
+</mapper>

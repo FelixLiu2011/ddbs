@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+    
+    <!-- Uncomment and add your base-package here:  -->
+
+    <!--强制使用CGLIB-->
+    <aop:config proxy-target-class="true"/>
+
+    <!--加载包扫描-->
+	<context:component-scan base-package="com.ddas.common"/>
+	<context:component-scan base-package="com.ddas.sns.*.impl" />
+	<context:component-scan base-package="com.ddas.sns.*.service" />
+
+	<context:property-placeholder location="classpath:resources/spring/property.properties"/>
+
+    <!--配置Mysql数据源-->
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" >
+		<property name="driverClassName" value="${jdbc.driver}" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+		<property name="initialSize" value="${jdbc.initSize}" />
+        <property name="maxIdle" value="${jdbc.maxIdle}"/>
+        <property name="testOnBorrow" value="${jdbc.testOnBorrow}"/>
+        <property name="testOnReturn" value="${jdbc.testOnReturn}"/>
+        <property name="validationQuery" value="${jdbc.validationQuery}"/>
+		<property name="maxActive" value="${jdbc.maxActive}" />
+
+	</bean>
+    <!--配置JDBC Template-->
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<constructor-arg ref="dataSource" />
+	</bean>	
+
+    <!--配置Named JDBC Template-->
+	<bean id="namedParaJdbcTemplate" class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate">
+		<constructor-arg ref="dataSource"/>
+	</bean>
+	
+	<!--<bean id="jedisConnFactory"
+	    class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory"
+	    p:usePool="true"
+	    p:hostName="${redis.host}"
+	    p:port="${redis.port}"
+	    p:password="${redis.password}"/>
+	
+	&lt;!&ndash; redis template definition &ndash;&gt;
+	<bean id="redisTemplate" 
+	    class="org.springframework.data.redis.core.RedisTemplate">
+        <property name="connectionFactory" ref="jedisConnFactory"/>
+	    <property name="keySerializer">  
+           <bean class="org.springframework.data.redis.serializer.StringRedisSerializer" />  
+        </property>  
+        <property name="hashKeySerializer">  
+           <bean class="org.springframework.data.redis.serializer.StringRedisSerializer" />  
+        </property>  
+	</bean>	-->
+
+    <!--配置事务-->
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager" 
+		p:dataSource-ref="dataSource"/>
+    <!--配置可以使用注解-->
+	<tx:annotation-driven transaction-manager="transactionManager" />
+
+    <tx:advice id="transactionInterceptor" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="login*" propagation="REQUIRED" isolation="READ_COMMITTED" />
+            <tx:method name="add*" propagation="REQUIRED" isolation="READ_COMMITTED" />
+            <tx:method name="insert*" propagation="REQUIRED" isolation="READ_COMMITTED" />
+            <tx:method name="update*" propagation="REQUIRED" isolation="READ_COMMITTED" />
+            <tx:method name="modify*" propagation="REQUIRED" isolation="READ_COMMITTED" />
+            <tx:method name="change*" propagation="REQUIRED" isolation="READ_COMMITTED" />
+            <tx:method name="save*" propagation="REQUIRED" isolation="READ_COMMITTED" />
+            <tx:method name="delete*" propagation="REQUIRED" isolation="READ_COMMITTED" />
+            <tx:method name="remove*" propagation="REQUIRED" isolation="READ_COMMITTED" />
+            <tx:method name="count*" propagation="REQUIRED" isolation="READ_COMMITTED" />
+            <tx:method name="*ToUpdate" propagation="REQUIRED" isolation="READ_COMMITTED" />
+            <tx:method name="get*" propagation="SUPPORTS" read-only="true" />
+            <tx:method name="find*" propagation="SUPPORTS"  read-only="true"/>
+            <tx:method name="check*" propagation="SUPPORTS"  read-only="true"/>
+            <tx:method name="query*" propagation="SUPPORTS" read-only="true" />
+            <tx:method name="create*" propagation="SUPPORTS"  read-only="true"/>
+            <tx:method name="load*" propagation="SUPPORTS" read-only="true" />
+            <tx:method name="fetch*" propagation="SUPPORTS" read-only="true" />
+            <tx:method name="del*" propagation="REQUIRED" isolation="READ_COMMITTED" />
+        </tx:attributes>
+    </tx:advice>
+
+    <!--权限Interceptor-->
+    <bean id="privilegeInterceptor" class="com.ddas.sns.interceptor.VipPrivilegeInterceptor" ></bean>
+    <!--配置切面-->
+    <aop:config proxy-target-class="true">
+        <aop:pointcut id="transactionPointcut" expression="execution(* com.ddas.sns.*.service.*.*(..))"/>
+        <aop:advisor advice-ref="transactionInterceptor" pointcut-ref="transactionPointcut"/>
+        <!--配置MethodInterceptor-->
+        <!--pointcut使用相应的transactionPointcut-->
+       <aop:advisor advice-ref="privilegeInterceptor" pointcut-ref="transactionPointcut"></aop:advisor>
+    </aop:config>
+	
+
+    <!--邮件-->
+	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="smtp.aliyun.com" />
+		<property name="username" value="${mail.from}" />
+		<property name="password" value="${mail.password}" />
+		<property name="javaMailProperties">
+	        <!-- additional properties specific to JavaMail -->
+			<props>
+                <prop key="mail.smtp.auth">true</prop>
+                <prop key="mail.smtp.timeout">25000</prop>
+                <prop key="mail.transport.protocol">smtp</prop>
+                <prop key="mail.smtp.auth">true</prop>
+                <prop key="mail.smtp.starttls.enable">true</prop>
+                <prop key="mail.debug">false</prop>
+            </props>
+
+	    </property>
+	</bean>
+	
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver" p:maxUploadSize="500000" />
+
+    <!--Mybatis配置-->
+    <!-- spring和MyBatis完美整合，不需要mybatis的配置映射文件 -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <!-- 自动扫描mapping.xml文件 -->
+        <!--<property name="mapperLocations" value="classpath:com/ddas/sns/*/mapper/*.xml"/>-->
+    </bean>
+
+    <!-- DAO接口所在包名，Spring会自动查找其下的类 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.ddas.sns.*.mapper" />
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+    </bean>
+
+    <!--注册 spring context util-->
+    <bean name="springContextUtil" class="com.ddas.common.util.springutil.SpringContextUtil"/>
+
+    <!--加载国际化文件-->
+    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+        <!-- 国际化信息所在的文件名 -->
+        <property name="basename" value="resources.i18n" />
+        <!-- 如果在国际化资源文件中找不到对应代码的信息，就用这个代码作为名称  -->
+        <!--   <property name="useCodeAsDefaultMessage" value="true" />-->
+        <property name="defaultEncoding" value="UTF-8"/>
+    </bean>
+</beans>

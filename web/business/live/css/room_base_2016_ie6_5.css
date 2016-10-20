@@ -1,0 +1,74 @@
+.head-con,
+.main-body{
+    width: 1250px !important;
+}
+.menubar-box{
+    height: 600px;
+}
+.anchor-record{
+    height: 600px;
+}
+.watchtop-fans,
+.watchtop-star,
+.watchtop-gift{
+    height: 600px;
+}
+.main-body-area{
+    position: relative;
+}
+.anchor-area{
+    overflow: hidden;
+}
+.synopsis .progress{
+    width: 170px;
+}
+.live-area{
+    position: relative;
+    width: 100%;
+    zoom: 1;
+}
+.column1,
+.column2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    zoom: 1;
+}
+.column1{
+    width: 530px !important;
+}
+.column2{
+    left: auto;
+    right: 0;
+    width: 190px !important;
+}
+.column3{
+    zoom: 1;
+    margin-left: 530px銆€!important;
+    margin-right: 196px !important;
+}
+#player{
+    width: 530px !important;
+    height: 398px !important;
+}
+
+.side-spread{
+    display: none !important;
+}
+.room-chat-panel{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.room-chat-tab li.n6{
+    width: 16%;
+}
+
+.watch-chat-act .act-btn{
+    right: 46px;
+}
+.watch-chat-act .act-btn-aly{
+    right: 102px;
+}

@@ -1,0 +1,431 @@
+body {
+    background-color:#444
+}
+.header-room {
+    background:#111;
+    background:url(/business/live/images/header-room-bg.png) repeat 0 0
+}
+.header-room .logo a {
+    background:url(/business/live/images/logoskin.png) no-repeat 0 0
+}
+.menubar-box,.menubar .logo-box .auto {
+    background:url(/business/live/images/menubar-bg-v2.png) repeat 0 0
+}
+.menubar .menu-list li,.menubar .logo-box .logo a {
+    border-color:#333;
+    border-color:rgba(255,255,255,0.1)
+}
+.anchor-area-con,.anchor-area .bg-left,.anchor-area .bg-right {
+    background:url(/business/live/images/anchor-area-v1.png) repeat-x 0 0
+}
+.anchor-area .bg-left {
+    background-position:0 -100px
+}
+.anchor-area .bg-right {
+    background-position:right -200px
+}
+.synopsis .user-name {
+    color:#999;
+    color:rgba(255,255,255,0.5)
+}
+.synopsis .user-name em {
+    color:#fff
+}
+.synopsis .user-level .state {
+    color:#ccc;
+    color:rgba(255,255,255,0.6)
+}
+.synopsis .progress .bar {
+    background:#666;
+    background:rgba(204,204,204,0.5)
+}
+.synopsis .progress .cur {
+    background:#ff4234
+}
+.synopsis .handle-info {
+    color:#ccc;
+    color:rgba(255,255,255,0.6)
+}
+.synopsis .time i {
+    background:url(/business/live/images/synopsis-v6.png) no-repeat 0 1px
+}
+.synopsis .local i {
+    background:url(/business/live/images/synopsis-v6.png) no-repeat -30px 1px
+}
+.synopsis .family-has .arrow {
+    background:url(/business/live/images/synopsis-v6.png) no-repeat -60px 1px
+}
+.synopsis .favorite i {
+    background:url(/business/live/images/synopsis-v6.png) no-repeat -90px 3px
+}
+.share-room .btn i {
+    background:url(/business/live/images/synopsis-v6.png) no-repeat -120px 0
+}
+.share-room .btn:hover i {
+    background-position:-120px -30px
+}
+.share-room .btn {
+    color:#ccc;
+    color:rgba(255,255,255,0.7);
+    border-color:#777;
+    border-color:rgba(255,255,255,0.25)
+}
+.share-room .btn:hover,.share-room-show .btn {
+    color:#fff;
+    border-color:#ccc;
+    border-color:rgba(255,255,255,0.6)
+}
+.synopsis .favorite a {
+    background-color:#ee433d
+}
+.synopsis .favorite a:hover {
+    background-color:#fd5049
+}
+.synopsis .favorite_ok a,.synopsis .favorite_ok a:hover {
+    color:#ccc;
+    background-color:#777;
+    background-color:rgba(255,255,255,0.15)
+}
+.synopsis .favorite_ok a:hover {
+    color:#fff
+}
+.army-hold-btn .holder {
+    background:url(/business/live/images/army-hold-btn-v1.png) no-repeat 0 0
+}
+.room-notic-gift a {
+    color:#ccc
+}
+.room-notic-gift .user {
+    color:#fa9692
+}
+.room-notic-gift .time {
+    color:#999;
+    color:rgba(255,255,255,0.5)
+}
+.room-notic-gift .time i {
+    background:#fff;
+    opacity:.2;
+    filter:alpha(opacity=20)
+}
+.room-gift-panel {
+    background:url(/business/live/images/bg-column1.png) repeat-y 0 0
+}
+.headlines .headlines-num {
+    background:url(/business/live/images/headlines-v4.png) no-repeat 0 0
+}
+.headlines .headlines-num:hover {
+    background-position:-110px 0
+}
+.headlines-on .headlines-num {
+    background-position:-220px 0
+}
+.headlines-on .headlines-num:hover {
+    background-position:-330px 0
+}
+.headlines .headlines-num span.num {
+    background:url(/business/live/images/headlines-v4.png) no-repeat 2px -100px
+}
+.page-w1400 .headlines .headlines-num,.page-w1400 .headlines .headlines-num span.num {
+    background-image:url(/business/live/images/headlines-1400-v2.png)
+}
+/*.present-box {
+    background:url(http://vr4.6rooms.com/imges/room2016/sk2/present-box-bg.png) no-repeat 0 0
+}
+.page-w1400 .present-box {
+    background:url(http://vr4.6rooms.com/imges/room2016/sk2/present-box-bg1400-v1.png) no-repeat 0 0
+}
+.present-box .g-redbag em {
+    background:url(http://vr4.6rooms.com/imges/room2016/sk2/present-box-v4.png) no-repeat 0 8px
+}
+.present-box .g-redbag .num {
+    background:url(http://vr4.6rooms.com/imges/room2016/sk2/present-box-v4.png) no-repeat -25px 0
+}
+.present-box .g-name .name {
+    color:#fff
+}
+.present-box .g-name em:hover .name {
+    color:#fd5049
+}
+.present-box .g-name .ico {
+    background:url(http://vr4.6rooms.com/imges/room2016/sk2/present-box-v4.png) no-repeat -50px 0
+}
+.present-box .g-name em:hover .ico {
+    background-position:-50px -31px
+}
+.present-box .g-name .arrows {
+    background:url(http://vr4.6rooms.com/imges/room2016/sk2/present-box-v4.png) no-repeat -88px 10px
+}
+.present-box .g-name em:hover .arrows {
+    background-position:-88px -20px
+}
+.present-box .g-num,.present-box .g-person {
+    color:#999;
+    background:rgba(255,255,255,0.05);
+    border-color:#2a2a2a;
+    border-color:rgba(255,255,255,0.08)
+}
+.present-box .g-num:hover,.present-box .g-person:hover {
+    background:rgba(255,255,255,0.1)
+}
+.present-box .g-num input.txt,.present-box .g-person input.txt {
+    color:#ccc
+}
+.present-box .g-num .shape,.present-box .g-person .select {
+    background:url(http://vr4.6rooms.com/imges/room2016/sk2/present-box-v4.png) no-repeat -87px 6px
+}
+.present-box .g-num .shape:hover,.present-box .g-person .select:hover {
+    background-position:-87px -24px
+}
+.present-box .g-send .send {
+    color:#fff;
+    background:#ee433d;
+    border-color:#c30
+}
+.present-box .g-send .send:hover {
+    background:#fd5049
+}
+.present-box .g-send .send .is-anonym {
+    background:url(http://vr4.6rooms.com/imges/room2016/sk2/present-box-v4.png) no-repeat -150px 0
+}
+.present-box .g-send .anonym {
+    background:#ee433d;
+    border-color:#ef4e48
+}
+.present-box .g-send .anonym:hover {
+    background:#fd5049
+}
+.present-box .g-send .anonym i {
+    background:url(http://vr4.6rooms.com/imges/room2016/sk2/present-box-v4.png) no-repeat -120px 0
+}
+.present-box .g-pay a {
+    color:#fff;
+    background:#0d9cc9
+}
+.present-box .g-pay a:hover {
+    background:#00afe6
+}
+.room-ranking {
+    background:url(http://vr4.6rooms.com/imges/room2016/sk2/bg-column3.png) repeat-y 0 0
+}
+.room-ranking-expand {
+    background-position:-1000px 0
+}
+.room-ranking .ranking-btn em {
+    color:#fa9692
+}
+.room-ranking .ranking-btn i {
+    background:url(http://vr4.6rooms.com/imges/room2016/sk2/room-ranking-v2.png) no-repeat -59px 0
+}
+.room-ranking-expand .ranking-btn i {
+    background-position:-79px 0
+}
+.room-ranking .ranking-list td {
+    border-color:#555;
+    border-color:rgba(255,255,255,0.1)
+}
+.room-ranking .ranking-list .name a {
+    color:#ccc
+}
+.room-ranking .ranking-list .name a:hover {
+    color:#fff
+}
+.room-ranking .ranking-list .rank {
+    color:#666
+}
+.room-ranking .ranking-list .rank .t1 {
+    color:#fff;
+    background:url(http://vr4.6rooms.com/imges/room2016/sk2/room-ranking-v2.png) no-repeat 3px 0
+}
+.room-ranking .ranking-list .cash {
+    color:#ccc
+}
+.room-ranking .ranking-list .cash i {
+    background:url(http://vr4.6rooms.com/imges/room2016/sk2/room-ranking-v2.png) no-repeat -29px 1px
+}
+.room-chat-tab li a {
+    margin-right:1px;
+    color:#ddd;
+    height:36px;
+    line-height:36px;
+    background:url(http://vr4.6rooms.com/imges/room2016/sk2/bg-column3.png) repeat-y -2000px 0
+}
+.room-chat-tab li.n6 a {
+    margin-right:0
+}
+.room-chat-tab li a:hover {
+    color:#fff
+}
+.room-chat-tab li a.on {
+    color:#333;
+    background:#fafafa
+}
+.room-chat-tab li .icar {
+    background:url(http://vr5.6rooms.com/imges/room2016/sk2/room-chat-tab-v6.png) no-repeat 0 0
+}
+.room-chat-tab li a.on .icar {
+    background-position:-40px 0
+}
+.room-chat-tab li .car span {
+    background:url(http://vr5.6rooms.com/imges/room2016/sk2/room-chat-tab-v6.png) no-repeat -90px 0
+}
+.room-chat-tab li .car i {
+    background:url(http://vr5.6rooms.com/imges/room2016/sk2/room-chat-tab-v6.png) no-repeat -35px 0
+}
+.room-chat-tab li .car i.il {
+    background-position:-80px 0
+}
+.room-chat-tab li .car i.ir {
+    background-position:-128px 0
+}
+.room-chat-tab li i.new {
+    background:url(http://vr5.6rooms.com/imges/room2016/sk2/room-chat-tab-v6.png) no-repeat -148px 2px
+}
+.column2 {
+    background:url(http://vr6.6rooms.com/imges/room2016/sk2/bg-column2-v2.png) repeat-y 0 0
+}
+.safe-user .safe-empty {
+    color:#666
+}
+.safe-user .safe-head {
+    background:url(http://vr6.6rooms.com/imges/room2016/sk2/bg-column2-v2.png) repeat-y -400px 0
+}
+.safe-user .safe-head .btn {
+    color:#fff;
+    background:#ee433d
+}
+.safe-user .safe-head .btn:hover {
+    background:#fd5049
+}
+.safe-user .safe-head .online {
+    color:#999
+}
+.safe-user .safe-head .online strong {
+    color:#fff
+}
+.safe-user .safe-head .online em {
+    color:#ff7f7a
+}
+.safe-user .safe-head .online i {
+    color:#999
+}
+.safe-user .safe-list a {
+    color:#ddd
+}
+.safe-user .safe-list a:hover {
+    color:#fff
+}
+.side-spread i {
+    background:url(http://vr4.6rooms.com/imges/room2016/sk2/side-spread-v2.png) no-repeat 0 0
+}
+.side-spread:hover i {
+    background-position:-20px 0
+}
+.side-spread-hide i {
+    background-position:-40px 0
+}
+.side-spread-hide:hover i {
+    background-position:-60px 0
+}
+.room-viewer-tab {
+    background:url(http://vr6.6rooms.com/imges/room2016/sk2/bg-column2-v2.png) repeat-y -400px 0
+}
+.room-viewer-tab li {
+    max-width:70px
+}
+ul.userList li {
+    border-color:#3a3a3a;
+    border-color:rgba(255,255,255,0.05)
+}
+ul.userList li:hover,ul.userList li.on {
+    background:url(http://vr6.6rooms.com/imges/room2016/sk2/bg-column2-v2.png) repeat-y -800px 0
+}*/
+ul.userList a,ul.userList a:hover {
+    color:#999
+}
+ul.userList span.youke {
+    color:#ccc
+}
+ul.userList .honor .rid-def {
+    color:#999
+}
+ul.userList .user .name-def {
+    color:#fff
+}
+ul.userList .user .name-25 {
+    color:#ff9000
+}
+ul.userList .user .name-26 {
+    color:#f00
+}
+.userList-more em {
+    background:#fff;
+    filter:alpha(opacity=10);
+    opacity:.1
+}
+.userList-more:hover em {
+    filter:alpha(opacity=15);
+    opacity:.15
+}
+.lianmai-box {
+    border-color:#3a3a3a;
+    border-color:rgba(255,255,255,0.08)
+}
+.lianmai-box .guest-box .pmai,.lianmai-box .anchor-box .launch {
+    background:#ee433d
+}
+.lianmai-box .guest-box .pmai:hover,.lianmai-box .anchor-box .launch:hover {
+    background:#fd5049
+}
+.lianmai-box .setmai .s {
+    color:#ccc;
+    background:rgba(255,255,255,0.05);
+    border-color:rgba(255,255,255,0.08)
+}
+.lianmai-box .setmai:hover .s {
+    color:#666;
+    background:#fff;
+    border-color:#fff
+}
+/*.lianmai-box .setmai .s i {
+    background:url(http://vr4.6rooms.com/imges/room2016/sk2/lianmai-box-v2.png) no-repeat -151px 0
+}
+.lianmai-box .setmai em.m-inp {
+    background:url(http://vr4.6rooms.com/imges/room2016/sk2/lianmai-box-v2.png) no-repeat -180px 0
+}
+.lianmai-box .setmai em.checked {
+    background-position:-180px -40px
+}
+.lianmai-box a.help {
+    background:url(http://vr4.6rooms.com/imges/room2016/sk2/lianmai-box-v2.png) no-repeat 2px 2px
+}*/
+.lianmai-list li {
+    border-color:#3a3a3a;
+    border-color:rgba(255,255,255,0.08)
+}
+/*.lianmai-list li:hover,.lianmai-list li.on {
+    background:url(http://vr6.6rooms.com/imges/room2016/sk2/bg-column2-v2.png) repeat-y -800px 0
+}
+.lianmai-list li .state {
+    background:url(http://vr4.6rooms.com/imges/room2016/sk2/lianmai-box-v2.png) no-repeat -30px 0
+}*/
+.lianmai-list li.online .state {
+    background-position:-58px 2px
+}
+.lianmai-list .name {
+    color:#fff
+}
+/*.lianmai-list .act em {
+    background:url(http://vr4.6rooms.com/imges/room2016/sk2/lianmai-box-v2.png) no-repeat
+}*/
+.lianmai-list .act .up {
+    background-position:-91px -1px
+}
+.lianmai-list .act .up:hover {
+    background-position:-91px -41px
+}
+.lianmai-list .act .del {
+    background-position:-122px -1px
+}
+.lianmai-list .act .del:hover {
+    background-position:-121px -41px
+}

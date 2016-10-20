@@ -1,0 +1,15 @@
+var friendContent={};
+friendContent.groupNameRequired="分组名称不能为空!";
+friendContent.createGroupSuccess="创建好友分组成功!";
+friendContent.all="全部";
+friendContent.edit="编辑";
+friendContent.delete="删除";
+friendContent.editGroupNameSuccess="修改好友分组成功!";
+friendContent.deleteFriendSuccess="删除好友成功!";
+friendContent.accept="同意";
+friendContent.refuse="拒绝";
+friendContent.refuseFriendTip="确定拒绝添加该好友么?";
+friendContent.refused="已拒绝!";
+friendContent.defaultGroup="默认分组";
+friendContent.confirmDeleteFriend="确认删除好友吗？";
+friendContent.sendEmailSuccess="邮件发送成功！";

@@ -1,0 +1,41 @@
+/* Propriedades Especificas - Google Chrome  */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+}
+
+/* Propriedades Especificas - Mozilla Firefox  */
+@-moz-document url-prefix() { 
+}
+
+.card:hover{cursor:pointer;}
+
+/* Flip Frente - Verso */
+.card__front,
+.card__back {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card__front,
+.card__back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.6s;
+          transition: transform 0.6s;
+}
+
+.card__back {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+/* click effect */
+.card.effect__click.flipped .card__front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card.effect__click.flipped .card__back {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}

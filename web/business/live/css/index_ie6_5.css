@@ -1,0 +1,51 @@
+.header{
+    position: absolute;
+}
+.menubar{
+    position: absolute;
+    width: 160px;
+    height: 1400px;
+}
+.menubar .user-count .num{
+    font-size: 16px;
+}
+.head-nav li a.link{
+    border-color: #fff;
+}
+.header-area,
+.footer-area,
+.page-home{
+    padding-left: 157px !important;
+}
+.totop,
+.vim{
+    display: none !important;
+}
+
+.video-focus .video-item li{
+    display: inline;
+}
+
+.user-log .to-live a.to-play{
+    width: 95px;
+}
+
+.mm-mod-list{
+    position: relative;
+    zoom: 1;
+}
+
+.home-news{
+    padding-top: 50px;
+}
+
+.home-toplist{
+    display: inline;
+    margin-left: 15px;
+}
+
+.mmlist .i-play,
+.mmlist-zone .i-play,
+.mmlist-pic .i-play{
+    display: none;
+}

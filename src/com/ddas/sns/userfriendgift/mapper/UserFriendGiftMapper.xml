@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ddas.sns.userfriendgift.mapper.UserFriendGiftMapper">
+  <resultMap id="UserFriendGiftMap" type="com.ddas.sns.userfriendgift.dto.UserFriendGiftDto">
+    <result column="ug_id" property="ugId" jdbcType="VARCHAR" />
+    <result column="gift_sender" jdbcType="VARCHAR" property="giftSender" />
+    <result column="gift_receiver" jdbcType="VARCHAR" property="giftReceiver" />
+    <result column="gift_count" property="giftCount" jdbcType="VARCHAR" />
+    <result column="gift_id" property="giftId" jdbcType="VARCHAR" />
+    <result column="created_time" property="createdTime" jdbcType="VARCHAR" />
+    <result column="gift_url" property="giftUrl" jdbcType="VARCHAR" />
+    <result column="gift_property" property="giftProperty" jdbcType="VARCHAR" />
+    <result column="gift_name" property="giftName" jdbcType="VARCHAR" />
+  </resultMap>
+
+  <sql id="Base_Column_List">
+      ug_id,gift_sender,gift_receiver,gift_count,ug.gift_id AS gift_id,ug.created_time AS created_time,gift_url,gift_property,gift_name
+  </sql>
+
+  <select id="queryByPage" parameterType="com.ddas.common.page.Page" resultMap="UserFriendGiftMap">
+      SELECT
+        <include refid="Base_Column_List" />
+      FROM user_gift ug
+      INNER JOIN gift g
+      ON ug.gift_id = g.gift_id
+
+      <if test="condition.giftReceiver != null">
+          AND
+          ug.gift_receiver = #{condition.giftReceiver}
+      </if>
+      <if test="condition.giftSender != null">
+          AND
+          ug.gift_sender = #{condition.giftSender}
+      </if>
+      ORDER BY ug.created_time DESC
+      LIMIT ${condition.start},${condition.end}
+  </select>
+  <select id="getCount" parameterType="com.ddas.common.page.Page" resultType="java.lang.Integer">
+      SELECT
+      COUNT(*)
+      FROM user_gift ug
+      INNER JOIN gift g
+      ON ug.gift_id = g.gift_id
+      <if test="condition.giftReceiver != null">
+          AND
+          ug.gift_receiver = #{condition.giftReceiver}
+      </if>
+      <if test="condition.giftSender != null">
+          AND
+          ug.gift_sender = #{condition.giftSender}
+      </if>
+  </select>
+</mapper>

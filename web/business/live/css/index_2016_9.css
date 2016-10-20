@@ -1,0 +1,4575 @@
+.jscroll-c {
+    z-index: 2;
+    position: relative;
+    zoom: 1;
+    top: 0
+}
+
+.scrollbar {
+    display: none;
+    z-index: 3;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 10px;
+    height: 100%
+}
+
+.scrollbar .slider {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 7px;
+    height: 50px;
+    background: #eee;
+    border-radius: 4px
+}
+
+.scrollbar .slider:hover, .scrollbar .slider_down {
+    width: 10px;
+    background: #ddd;
+    border-radius: 6px
+}
+
+body, input, textarea, button {
+    font-family: Arial, 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif
+}
+
+body {
+    background: #f2f3f4
+}
+
+a:hover {
+    text-decoration: none
+}
+
+.page-home {
+    padding: 85px 0 0 230px
+}
+
+.header-area, .footer-area {
+    padding-left: 230px
+}
+
+.head-inner, .foot-inner, .home-body {
+    margin: 0 auto;
+    width: 1300px
+}
+
+.head-inner-area, .foot-inner-area, .home-body-area {
+    padding: 0 17px
+}
+
+.page-w1320 .header-area, .page-w1320 .footer-area, .page-w1320 .page-home {
+    padding-left: 157px
+}
+
+.page-w1320 .head-inner, .page-w1320 .foot-inner, .page-w1320 .home-body, .page-w1560 .head-inner, .page-w1560 .foot-inner, .page-w1560 .home-body {
+    margin: 0 auto;
+    width: 1086px
+}
+
+.page-w1750 .home-body-follow, .page-w1750 .home-body-zone {
+    width: 1514px
+}
+
+.header {
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.98);
+    border-bottom: 1px solid #e6e6e6
+}
+
+.header-con {
+    position: relative;
+    width: 100%
+}
+
+.header-logo {
+    position: absolute;
+    left: 20px;
+    top: 13px
+}
+
+.header-logo a {
+    display: block;
+    width: 192px;
+    height: 40px;
+    text-indent: -999em;
+    background: url(http://vr4.6rooms.com/imges/home2016/logo-v2.png) no-repeat 0 0;
+    overflow: hidden
+}
+
+.head-nav li a.link {
+    margin-right: 40px
+}
+
+.page-default .head-nav li a.link {
+    margin-right: 45px
+}
+
+.page-default .head-search {
+    margin-left: 25px
+}
+
+.userPanel li.my-pay {
+    display: none
+}
+
+.notice-push {
+    display: none;
+    position: absolute;
+    top: 66px;
+    right: 0;
+    padding: 6px 24px 6px 12px;
+    border: 1px solid #eee;
+    background: #ffffc5;
+    color: #333;
+    border-radius: 3px
+}
+
+.notice-push p {
+    display: none;
+    padding: 1px 0;
+    color: #630
+}
+
+.notice-push p a {
+    color: #fd3000
+}
+
+.notice-push a.close {
+    width: 15px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    cursor: pointer;
+    font-size: 0;
+    background: url(http://vr2.6rooms.com/imges/live2014/notice-close.png) no-repeat 0 0
+}
+
+.notice-push a.close:hover {
+    background-position: -15px 0
+}
+
+.menubar {
+    z-index: 15;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 229px;
+    height: 100%;
+    min-height: 400px;
+    background: #fff;
+    border-right: 1px solid #e6e6e6
+}
+
+.menubar .nav-logo {
+    width: 100%;
+    height: 65px;
+    font-size: 0
+}
+
+.menu-scroll {
+    position: absolute;
+    left: 0;
+    top: 65px;
+    bottom: 45px;
+    width: 100%;
+    overflow: hidden
+}
+
+.menubar .line-box {
+    z-index: 1;
+    position: absolute;
+    left: 22px;
+    bottom: 0;
+    width: 185px;
+    height: 1px;
+    overflow: hidden;
+    font-size: 0;
+    background: #efefef
+}
+
+.menubar .user-count {
+    position: relative;
+    padding: 22px 0 22px 25px;
+    line-height: 20px;
+    color: #999;
+    font-size: 16px
+}
+
+.menubar .user-count .num {
+    margin-right: 5px;
+    font-size: 20px;
+    color: #fb483b;
+    font-family: Georgia, "Times New Roman"
+}
+
+.menubar dl {
+    position: relative
+}
+
+.menubar .nav-event {
+    padding-bottom: 30px
+}
+
+.menubar dt {
+    z-index: 2;
+    position: relative;
+    padding: 10px 24px;
+    height: 22px;
+    line-height: 22px;
+    cursor: pointer;
+    transition: color .25s
+}
+
+.menubar dt a {
+    color: #333;
+    text-decoration: none
+}
+
+.menubar dt:hover, .menubar dt a:hover {
+    color: #ff4e00
+}
+
+.menubar dt.on {
+    background: #fb483b;
+    color: #fff
+}
+
+.menubar .nav-menu dt:hover {
+    color: #333;
+    cursor: default
+}
+
+.menubar dt em {
+    font-weight: bold
+}
+
+.menubar dt .new {
+    display: none;
+    position: relative;
+    margin: -1px 0 0 14px;
+    padding-right: 7px;
+    height: 14px;
+    line-height: 14px;
+    vertical-align: middle;
+    color: #fe4537;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-left: 0;
+    border-radius: 0 4px 4px 0
+}
+
+.menubar dt .new b {
+    font-weight: normal
+}
+
+.menubar dt .new b.arrow {
+    display: inline-block;
+    position: absolute;
+    top: -1px;
+    left: -10px;
+    width: 10px;
+    height: 16px;
+    background: url(http://vr4.6rooms.com/imges/home2016/menubar-v8.png) no-repeat -60px -120px
+}
+
+.menubar dt.on .new {
+    border-color: #fff
+}
+
+.menubar dt.on .new b.arrow {
+    background-position: -90px -120px
+}
+
+.menubar dt i {
+    margin: -1px 4px 0 0;
+    width: 20px;
+    height: 20px;
+    background: url(http://vr4.6rooms.com/imges/home2016/menubar-v8.png) no-repeat 0 0
+}
+
+.menubar .nav-index dt i {
+    background-position: 0 0;
+    position: relative
+}
+
+.menubar .nav-index dt i b {
+    width: 20px;
+    height: 8px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(http://vr4.6rooms.com/imges/home2016/menubar-v8.png) no-repeat -101px -158px
+}
+
+.menubar .nav-index dt:hover i b {
+    background-position: -101px -158px;
+    animation: box-move .8s ease-in-out 0s
+}
+
+.menubar .nav-index dt.on i {
+    background-position: 0 -30px
+}
+
+.menubar .nav-index dt.on i b {
+    background-position: -68px -158px
+}
+
+.menubar .nav-index dt.on:hover i b {
+    animation: none
+}
+
+.menubar .nav-feed dt i {
+    background-position: -30px 0;
+    position: relative
+}
+
+.menubar .nav-feed dt i b {
+    display: block;
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    left: 5px;
+    top: 5px;
+    background: url(http://vr4.6rooms.com/imges/home2016/menubar-v8.png) no-repeat 0 -176px;
+    transition: transform .5s ease-in-out 0s
+}
+
+.menubar .nav-feed dt:hover i b {
+    transform: rotate(315deg)
+}
+
+.menubar .nav-feed dt.on i {
+    background-position: -30px -30px
+}
+
+.menubar .nav-feed dt.on i b {
+    background-position: -23px -176px
+}
+
+.menubar .nav-feed dt.on:hover i b {
+    transform: none
+}
+
+.menubar .nav-follow dt i {
+    background-position: -59px 0
+}
+
+.menubar .nav-follow dt:hover i {
+    animation: head-shake .8s ease-in-out 0s
+}
+
+.menubar .nav-follow dt.on i {
+    background-position: -59px -30px
+}
+
+.menubar .nav-follow dt.on:hover i {
+    animation: none
+}
+
+.menubar .nav-all dt i {
+    background-position: -88px 1px;
+    transition: all .5s ease-in-out 0s
+}
+
+.menubar .nav-all dt:hover i {
+    background-position: -118px 1px;
+    background-position: -88px 1px \0
+}
+
+.menubar .nav-all dt.on i, .menubar .nav-all dt.on:hover i {
+    background-position: -88px -28px;
+    transition: none
+}
+
+.menubar .nav-all dt.on:hover i {
+    transform: none
+}
+
+.menubar .nav-level dt i {
+    background-position: 1px -59px;
+    transition: transform .5s ease-in-out 0s
+}
+
+.menubar .nav-level dt:hover i {
+    transform: rotate(180deg)
+}
+
+.menubar .nav-style dt i {
+    background-position: -29px -60px;
+    position: relative
+}
+
+.menubar .nav-style dt i b {
+    width: 1px;
+    height: 1px;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: url(http://vr4.6rooms.com/imges/home2016/menubar-v8.png) no-repeat 0 -158px;
+    transition: all .35s ease-in-out 0s
+}
+
+.menubar .nav-style dt:hover i b {
+    width: 5px;
+    height: 6px;
+    left: 9px;
+    bottom: 10px
+}
+
+.menubar .nav-fmstar dt i {
+    background-position: -58px -59px;
+    position: relative
+}
+
+.menubar .nav-fmstar dt i b {
+    position: absolute;
+    top: 5px;
+    width: 1px;
+    height: 1px;
+    background: url(http://vr4.6rooms.com/imges/home2016/menubar-v8.png) no-repeat -52px -158px;
+    transition: all .25s ease-in-out 0s
+}
+
+.menubar .nav-fmstar dt i b.left {
+    left: 9px
+}
+
+.menubar .nav-fmstar dt i b.right {
+    right: 8px
+}
+
+.menubar .nav-fmstar dt:hover i b.left {
+    width: 3px;
+    height: 3px;
+    top: 7px;
+    left: 4px
+}
+
+.menubar .nav-fmstar dt:hover i b.right {
+    width: 3px;
+    height: 3px;
+    top: 7px;
+    right: 4px
+}
+
+.menubar .nav-special dt i {
+    background-position: -89px -59px
+}
+
+.menubar .nav-special dt:hover i {
+    animation: swing1 .8s ease-in-out 0s
+}
+
+.menubar .nav-public dt i {
+    background-position: -118px -58px;
+    position: relative
+}
+
+.menubar .nav-public dt i b {
+    display: block;
+    position: absolute;
+    left: 6px;
+    top: 11px;
+    width: 9px;
+    height: 4px;
+    background: url(http://vr4.6rooms.com/imges/home2016/menubar-v8.png) no-repeat -140px -158px;
+    transition: all .5s ease-in-out 0s
+}
+
+.menubar .nav-public dt:hover i b {
+    background-position: -170px -158px
+}
+
+.menubar .nav-game dt i {
+    background-position: -151px -57px;
+    position: relative
+}
+
+.menubar .nav-game dt i b {
+    display: block;
+    position: absolute;
+    left: 3px;
+    top: 7px;
+    width: 5px;
+    height: 5px;
+    background: url(http://vr4.6rooms.com/imges/home2016/menubar-v8.png) no-repeat -28px -158px;
+    transition: transform .35s ease-in-out 0s
+}
+
+.menubar .nav-game dt:hover i b {
+    transform: rotate(180deg)
+}
+
+.menubar .nav-event dt i {
+    background-position: -179px -61px
+}
+
+.menubar .nav-event dt:hover i {
+    animation: swing2 .8s ease-in-out 0s
+}
+
+.menubar .nav-mobile dt i {
+    background-position: -150px 1px
+}
+
+.menubar .nav-mobile dt:hover i {
+    animation: head-shake .8s ease-in-out 0s
+}
+
+.menubar .nav-mobile dt.on i, .menubar .nav-mobile dt.on:hover i {
+    background-position: -121px -30px;
+    animation: none
+}
+
+@keyframes box-move {
+    0% {
+        transform: rotate(0deg);
+        transform-origin: right bottom;
+        margin-top: 0
+    }
+    39% {
+        transform: rotate(5deg);
+        transform-origin: right bottom;
+        margin-top: 0
+    }
+    40% {
+        transform: rotate(5deg);
+        transform-origin: left bottom;
+        margin-top: -1px
+    }
+    75% {
+        transform: rotate(-10deg);
+        transform-origin: left bottom;
+        margin-top: -1px
+    }
+    100% {
+        transform: rotate(0deg);
+        transform-origin: left bottom;
+        margin-top: 0
+    }
+}
+
+@keyframes head-shake {
+    0% {
+        transform: rotate(-5deg);
+        transform-origin: center bottom
+    }
+    20% {
+        transform: rotate(5deg);
+        transform-origin: center bottom
+    }
+    40% {
+        transform: rotate(5deg);
+        transform-origin: center bottom
+    }
+    60% {
+        transform: rotate(-5deg);
+        transform-origin: center bottom
+    }
+    80% {
+        transform: rotate(-5deg);
+        transform-origin: center bottom
+    }
+    100% {
+        transform: rotate(5deg);
+        transform-origin: center bottom
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes swing1 {
+    20% {
+        transform: rotate(15deg);
+        transfrom-origin: right top
+    }
+    40% {
+        transform: rotate(-10deg);
+        transfrom-origin: right top
+    }
+    60% {
+        transform: rotate(5deg);
+        transfrom-origin: right top
+    }
+    80% {
+        transform: rotate(-5deg);
+        transfrom-origin: right top
+    }
+    100% {
+        transform: rotate(0deg);
+        transfrom-origin: right top
+    }
+}
+
+@keyframes swing2 {
+    20% {
+        transform: rotate(15deg);
+        transfrom-origin: center bottom
+    }
+    40% {
+        transform: rotate(-10deg);
+        transfrom-origin: center bottom
+    }
+    60% {
+        transform: rotate(5deg);
+        transfrom-origin: center bottom
+    }
+    80% {
+        transform: rotate(-5deg);
+        transfrom-origin: center bottom
+    }
+    100% {
+        transform: rotate(0deg);
+        transfrom-origin: center bottom
+    }
+}
+
+.menubar .list {
+    padding: 0 16px 12px;
+    font-size: 0
+}
+
+.menubar .list a {
+    display: inline-block;
+    margin: 0 0 5px 9px;
+    width: 53px;
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 12px;
+    color: #555;
+    background: #f8f8f8;
+    transition: all .25s ease-in-out
+}
+
+.menubar .list a:hover, .menubar .list a.on {
+    color: #fff;
+    background: #fb483b
+}
+
+.menubar .nav-game .list a, .menubar .nav-event .list a {
+    width: 84px
+}
+
+.contact-us {
+    z-index: 5;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    background: #fafafa
+}
+
+.contact-us a {
+    position: relative;
+    display: inline-block;
+    padding: 12px;
+    height: 21px;
+    line-height: 21px;
+    color: #333
+}
+
+.contact-us a:hover {
+    color: #ff4e00;
+    text-decoration: none
+}
+
+.contact-us a i {
+    margin-right: 2px;
+    width: 18px;
+    height: 21px;
+    background: url(http://vr4.6rooms.com/imges/home2016/menubar-v8.png) no-repeat 0 0
+}
+
+.contact-us .phone a i {
+    background-position: 1px -119px
+}
+
+.contact-us .qq a i {
+    background-position: -30px -119px
+}
+
+.contact-us .phone-num {
+    cursor: default;
+    position: absolute;
+    top: -74px;
+    left: 32px;
+    height: 90px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(0, -15px);
+    transition: all .2s ease-in-out
+}
+
+.contact-us .phone:hover .phone-num {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, 0)
+}
+
+.contact-us .phone-num .phone-box {
+    position: relative;
+    padding: 15px 0;
+    width: 170px;
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid #e8e8e8;
+    border: 0 solid rgba(0, 0, 0, 0);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15)
+}
+
+.contact-us .phone-num .arrow {
+    position: absolute;
+    bottom: 9px;
+    left: 38px
+}
+
+.contact-us .phone-num .arrow i {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-family: Simsun;
+    font-size: 12px;
+    color: #eee
+}
+
+.contact-us .phone-num .arrow .i2 {
+    top: 0;
+    color: #fff
+}
+
+.contact-us .phone-num .num {
+    font-size: 20px;
+    color: #ff5043
+}
+
+.contact-us .phone-num .txt {
+    color: #999
+}
+
+.page-w1320 .header-logo a {
+    width: 90px
+}
+
+.page-w1320 .menubar {
+    width: 156px
+}
+
+.page-w1320 .menubar .user-count {
+    font-size: 15px
+}
+
+.page-w1320 .menubar .user-count .num {
+    font-size: 18px
+}
+
+.page-w1320 .menubar dt {
+    padding: 10px
+}
+
+.page-w1320 .menubar .list {
+    padding: 0 6px 12px
+}
+
+.page-w1320 .menubar .list a, .page-w1320 .menubar .nav-game .list a, .page-w1320 .menubar .nav-event .list a {
+    margin-left: 7px;
+    width: 61px
+}
+
+.page-w1320 .menubar .line-box {
+    left: 10px;
+    width: 136px
+}
+
+.page-w1320 .menubar .user-count {
+    padding-left: 10px
+}
+
+.page-w1320 .menubar dt .new b.txt {
+    display: none
+}
+
+.page-w1320 .contact-us a em {
+    display: none
+}
+
+.page-w1320 .contact-us .phone-num {
+    left: 6px
+}
+
+.body-follow, .body-zone, .body-feed {
+    display: none
+}
+
+.home-body-follow .body-follow, .home-body-zone .body-zone, .home-body-feed .body-feed {
+    display: block
+}
+
+.body-main {
+    position: absolute;
+    left: -9999px;
+    top: -9999px
+}
+
+.home-body-main .body-main {
+    position: static;
+    left: 0;
+    top: 0
+}
+
+.home-body-feed {
+    width: 980px !important
+}
+
+.video-focus {
+    margin-bottom: 35px
+}
+
+.video-focus .video-box {
+    float: left;
+    width: 784px;
+    height: 441px;
+    background: #333
+}
+
+.video-focus .video-item {
+    float: right;
+    width: 471px;
+    height: 441px;
+    overflow: hidden
+}
+
+.video-focus .video-item li {
+    position: relative;
+    float: left;
+    margin: 0 0 2px 2px;
+    width: 155px;
+    height: 146px;
+    cursor: pointer
+}
+
+.video-focus .video-item .pic {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+.video-focus .video-item img {
+    height: 146px;
+    margin-left: -20px
+}
+
+.video-focus .video-item .i-shade {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .2;
+    filter: alpha(opacity=20);
+    transition: all .3s
+}
+
+.video-focus .video-item li:hover .i-shade, .video-focus .video-item li.on .i-shade {
+    filter: alpha(opacity=10);
+    opacity: .1
+}
+
+.video-focus .video-item .text {
+    z-index: 3;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: 5px;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transition: all .3s
+}
+
+.video-focus .video-item li.over .text, .video-focus .video-item li.on .text {
+    margin-top: -10px;
+    opacity: 1;
+    filter: alpha(opacity=100)
+}
+
+.video-focus .video-item .text-bg {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #fb483b;
+    transition: all .3s;
+    opacity: 0;
+    filter: alpha(opacity=0)
+}
+
+.video-focus .video-item li.on .text-bg {
+    opacity: .8;
+    filter: alpha(opacity=80)
+}
+
+.page-w1320 .video-focus .video-box, .page-w1560 .video-focus .video-box {
+    width: 656px;
+    height: 369px
+}
+
+.page-w1320 .video-focus .video-item, .page-w1560 .video-focus .video-item {
+    width: 387px;
+    height: 369px
+}
+
+.page-w1320 .video-focus .video-item li, .page-w1560 .video-focus .video-item li {
+    width: 127px;
+    height: 122px
+}
+
+.page-w1320 .video-focus .video-item img, .page-w1560 .video-focus .video-item img {
+    margin-left: -18px;
+    height: 122px
+}
+
+.focus-banner {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    background: #000
+}
+
+.focus-banner .list a {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-position: center top
+}
+
+.focus-banner .num-box {
+    padding: 0 8px;
+    position: absolute;
+    height: 25px;
+    text-align: center;
+    font-size: 0;
+    right: 0;
+    bottom: 1px;
+    z-index: 10
+}
+
+.focus-banner .num-box a {
+    float: left;
+    margin: 9px 2px 0;
+    width: 11px;
+    height: 11px;
+    line-height: 99em;
+    background: url(http://vr3.6rooms.com/imges/home2016/index_slide_cur03.png) no-repeat 1px -89px
+}
+
+.focus-banner .num-box a:hover {
+    filter: alpha(opacity=90);
+    opacity: .9
+}
+
+.focus-banner .num-box a.cur {
+    background-position: right -90px
+}
+
+.focus-banner .pagechange {
+    display: none
+}
+
+.focus-banner .pagechange .prev, .focus-banner .pagechange .next {
+    background: url(http://vr3.6rooms.com/imges/home2016/index_slide_cur03.png) no-repeat;
+    position: absolute;
+    width: 32px;
+    height: 42px;
+    top: 29px;
+    filter: alpha(opacity=00);
+    opacity: 0;
+    transition: opacity .3s ease-out;
+    z-index: 10
+}
+
+.focus-banner .pagechange .prev {
+    left: 0
+}
+
+.focus-banner .pagechange .next {
+    right: 0;
+    background-position: 0 -45px
+}
+
+.focus-banner .pagechange .prev:hover {
+    background-position: right 0
+}
+
+.focus-banner .pagechange .next:hover {
+    background-position: right -45px
+}
+
+.focus-slide-show .pagechange .prev, .focus-slide-show .pagechange .next {
+    filter: alpha(opacity=100);
+    opacity: 1
+}
+
+.mmlist-pic {
+    width: 103%;
+    overflow: hidden
+}
+
+.mmlist-pic li {
+    position: relative;
+    float: left;
+    margin: 0 18px 16px 0;
+    width: 196px
+}
+
+.mmlist-pic a.pic {
+    display: block;
+    position: relative;
+    width: 196px;
+    height: 168px;
+    overflow: hidden;
+    color: #fff
+}
+
+.mmlist-pic .img-box {
+    margin-left: -50px;
+    width: 296px;
+    height: 168px;
+    text-align: center;
+    background: #efefef url(http://vr2.6rooms.com/imges/home2016/img-default.jpg) no-repeat center center
+}
+
+.mmlist-pic .pic img {
+    height: 100%;
+    transition: transform .2s ease-in-out
+}
+
+.mmlist-pic .i-bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.25) 50%, rgba(0, 0, 0, 0.6) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.25) 50%, rgba(0, 0, 0, 0.6) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#00000000, endcolorstr=#cc000000)
+}
+
+.mmlist-pic .i-shade {
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    filter: alpha(opacity=00);
+    opacity: 0;
+    transition: all .1s ease-in-out
+}
+
+.mmlist-pic a.pic:hover .i-shade {
+    filter: alpha(opacity=30);
+    opacity: .3
+}
+
+.mmlist-pic .i-play {
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    width: 50px;
+    height: 50px;
+    background: url(http://vr4.6rooms.com/imges/home2016/mmlist-v10.png) no-repeat -66px -54px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .25s linear
+}
+
+.mmlist-pic a.pic:hover .i-play {
+    visibility: visible;
+    opacity: 1
+}
+
+.mmlist-pic .i-live, .mmlist-pic .i-video, .mmlist-pic .i-focus {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 28px;
+    height: 12px;
+    background: url(http://vr4.6rooms.com/imges/home2016/mmlist-v10.png) no-repeat 1px 0
+}
+
+.mmlist-pic .i-video {
+    height: 14px;
+    background-position: -80px 0
+}
+
+.mmlist-pic .i-focus {
+    top: 1px;
+    right: 24px;
+    background-position: -120px 0
+}
+
+.mmlist-pic .anchor {
+    display: block;
+    position: absolute;
+    left: 7px;
+    bottom: 2px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden
+}
+
+.mmlist-pic .viewer {
+    display: block;
+    position: absolute;
+    right: 6px;
+    bottom: 2px;
+    height: 19px;
+    line-height: 20px
+}
+
+.mmlist-pic .viewer i {
+    width: 12px;
+    height: 14px;
+    background: url(http://vr4.6rooms.com/imges/home2016/mmlist-v10.png) no-repeat 0 -20px
+}
+
+.mmlist .icon- {
+    display: none
+}
+
+.mmlist .icon-changzhan, .mmlist .icon-jinpai, .mmlist .icon-daren, .mmlist .icon-renqi, .mmlist .icon-remen {
+    display: block;
+    z-index: 3;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    width: 36px;
+    height: 36px;
+    background: url(http://vr2.6rooms.com/imges/home2016/icon_changzhan_3.png) no-repeat 0 0
+}
+
+.mmlist .icon-jinpai {
+    background-image: url(http://vr2.6rooms.com/imges/home2016/icon_jinpai_v3.png)
+}
+
+.mmlist .icon-daren {
+    background-image: url(http://vr2.6rooms.com/imges/home2016/icon_daren_v2.png)
+}
+
+.mmlist .icon-renqi {
+    background-image: url(http://vr2.6rooms.com/imges/home2016/icon_renqi.png)
+}
+
+.mmlist .icon-remen {
+    background-image: url(http://vr2.6rooms.com/imges/home2016/icon_remen.png)
+}
+
+.mmlist {
+    width: 103%;
+    overflow: hidden
+}
+
+.mmlist li {
+    position: relative;
+    float: left;
+    margin: 0 18px 20px 0;
+    width: 196px
+}
+
+.mmlist .pic {
+    display: block;
+    position: relative;
+    width: 196px;
+    height: 168px;
+    overflow: hidden;
+    color: #fff;
+    text-decoration: none
+}
+
+.mmlist .img-box {
+    margin-left: -50px;
+    width: 296px;
+    height: 168px;
+    text-align: center;
+    background: #efefef url(http://vr2.6rooms.com/imges/home2016/img-default.jpg) no-repeat center center
+}
+
+.mmlist .pic img {
+    height: 100%;
+    transition: transform .2s ease-in-out
+}
+
+.mmlist .i-shade {
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    transition: all .1s ease-in-out
+}
+
+.mmlist a:hover .i-shade {
+    filter: alpha(opacity=30);
+    opacity: .3
+}
+
+.mmlist .i-play {
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    width: 50px;
+    height: 50px;
+    background: url(http://vr4.6rooms.com/imges/home2016/mmlist-v10.png) no-repeat -66px -54px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .25s linear
+}
+
+.mmlist a:hover .i-play {
+    visibility: visible;
+    opacity: 1
+}
+
+.mmlist .i-live, .mmlist .i-video, .mmlist .i-focus {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 28px;
+    height: 12px;
+    background: url(http://vr4.6rooms.com/imges/home2016/mmlist-v10.png) no-repeat 1px 0
+}
+
+.mmlist .i-video {
+    height: 14px;
+    background-position: -80px 0
+}
+
+.mmlist .i-focus {
+    top: 1px;
+    right: 24px;
+    background-position: -120px 0
+}
+
+.mmlist .info {
+    position: relative;
+    padding: 0 8px;
+    height: 34px;
+    line-height: 20px;
+    background: #fff
+}
+
+.mmlist .info a {
+    color: #222
+}
+
+.mmlist .info a:hover {
+    color: #ff4e00;
+    text-decoration: none
+}
+
+.mmlist .info .anchor {
+    float: left;
+    padding-top: 7px;
+    width: 114px;
+    height: 20px;
+    overflow: hidden
+}
+
+.mmlist .info .viewer {
+    float: right;
+    padding-top: 7px;
+    color: #999
+}
+
+.mmlist .info .viewer i {
+    width: 12px;
+    height: 14px;
+    background: url(http://vr4.6rooms.com/imges/home2016/mmlist-v10.png) no-repeat -20px -20px
+}
+
+.mmlist-family .i-party {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 62px;
+    height: 50px;
+    background: url(http://vr4.6rooms.com/imges/home2016/mmlist-family.png)
+}
+
+.mmlist-family .pic-name {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -15px;
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: #fff
+}
+
+.mmlist-family .info {
+    position: relative;
+    height: 34px;
+    line-height: 20px;
+    background: #fff
+}
+
+.mmlist-family .f-name {
+    padding: 7px 8px 0
+}
+
+.mmlist-family .f-name a {
+    color: #333;
+    margin-right: 8px
+}
+
+.mmlist-family .f-name a:hover {
+    color: #ff4e00
+}
+
+.mmlist-family .f-name img {
+    margin: -2px 3px 0 0
+}
+
+.mmlist-family .f-name span {
+    color: #ccc
+}
+
+.mmlist-family a.p-name {
+    display: inline-block;
+    height: 20px;
+    overflow: hidden
+}
+
+.mmlist-family a.p-btn {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+    width: 62px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    color: #fff;
+    background: #ff5043
+}
+
+.mmlist-family a.p-btn:hover {
+    color: #fff;
+    background: #fd0000
+}
+
+.mm-mobile .mmlist .pic, .mm-mobile .mmlist .img-box {
+    height: 238px
+}
+
+.mmlist-zone {
+    width: 103%
+}
+
+.mmlist-zone li {
+    position: relative;
+    float: left;
+    margin: 0 18px 25px 0;
+    width: 196px;
+    transition: all .25s ease-in-out;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.01)
+}
+
+.mmlist-zone li:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.16)
+}
+
+.mmlist-zone .pic {
+    display: block;
+    position: relative;
+    width: 196px;
+    height: 168px;
+    overflow: hidden;
+    color: #fff;
+    text-decoration: none
+}
+
+.mmlist-zone .img-box {
+    margin: -12px 0 0 -50px;
+    width: 296px;
+    height: 192px;
+    text-align: center;
+    background: #efefef url(http://vr2.6rooms.com/imges/home2016/img-default.jpg) no-repeat center center
+}
+
+.mmlist-zone .pic img {
+    height: 100%;
+    transition: transform .2s ease-in-out
+}
+
+.mmlist-zone .i-bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.25) 50%, rgba(0, 0, 0, 0.6) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.25) 50%, rgba(0, 0, 0, 0.6) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#00000000, endcolorstr=#cc000000)
+}
+
+.mmlist-zone .i-shade {
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    filter: alpha(opacity=00);
+    opacity: 0;
+    transition: all .1s ease-in-out
+}
+
+.mmlist-zone a:hover .i-shade {
+    filter: alpha(opacity=30);
+    opacity: .3
+}
+
+.mmlist-zone .i-play {
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    width: 50px;
+    height: 50px;
+    background: url(http://vr4.6rooms.com/imges/home2016/mmlist-v10.png) no-repeat -66px -54px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .25s linear
+}
+
+.mmlist-zone a:hover .i-play {
+    visibility: visible;
+    opacity: 1
+}
+
+.mmlist-zone .i-live, .mmlist-zone .i-video, .mmlist-zone .i-focus {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 28px;
+    height: 12px;
+    background: url(http://vr4.6rooms.com/imges/home2016/mmlist-v10.png) no-repeat 0 0
+}
+
+.mmlist-zone .i-live {
+    width: 27px
+}
+
+.mmlist-zone .i-video {
+    height: 14px;
+    background-position: -80px 0
+}
+
+.mmlist-zone .i-focus {
+    top: 1px;
+    right: 24px;
+    background-position: -120px 0
+}
+
+.mmlist-zone .viewer {
+    display: block;
+    position: absolute;
+    right: 6px;
+    bottom: 2px;
+    height: 19px;
+    line-height: 20px
+}
+
+.mmlist-zone .viewer i {
+    width: 12px;
+    height: 14px;
+    background: url(http://vr4.6rooms.com/imges/home2016/mmlist-v10.png) no-repeat 0 -20px
+}
+
+.mmlist-zone .info {
+    position: relative;
+    padding: 0 8px;
+    height: 34px;
+    line-height: 20px;
+    background: #fff
+}
+
+.mmlist-zone .info a {
+    color: #333
+}
+
+.mmlist-zone .info a:hover {
+    color: #ff4e00;
+    text-decoration: none
+}
+
+.mmlist-zone .info .anchor {
+    position: relative;
+    padding-top: 7px;
+    height: 20px;
+    overflow: hidden
+}
+
+.mmlist-zone .info .level {
+    position: absolute;
+    top: 6px;
+    right: 5px
+}
+
+.mmlist-zone .score {
+    z-index: 10;
+    position: absolute;
+    left: 5px;
+    bottom: 36px;
+    color: #fff
+}
+
+.mmlist-zone .score a {
+    margin-left: 4px
+}
+
+.mmlist-zone .score-on, .mmlist-zone .score-on a {
+    color: #ff4e00
+}
+
+.mmlist-zone .pic i.ico-mobile {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 44px;
+    height: 15px;
+    background: url(http://vr3.6rooms.com/imges/home2016/mmlist-icons-v2.png) no-repeat -80px 0
+}
+
+.mmlist-zone .pic .icons {
+    z-index: 5;
+    display: block;
+    position: absolute;
+    right: 3px;
+    top: 3px
+}
+
+.mmlist-zone .icons i {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 1px;
+    background: url(http://vr3.6rooms.com/imges/home2016/mmlist-icons-v2.png) no-repeat 0 0
+}
+
+.mmlist-zone .icons i.ico1 {
+    background-position: 0 0;
+    width: 41px;
+    height: 21px
+}
+
+.mmlist-zone .icons i.ico3 {
+    background-position: 0 -40px;
+    width: 41px;
+    height: 21px
+}
+
+.mmlist-zone .icons i.ico4 {
+    background-position: 0 -320px;
+    width: 18px;
+    height: 20px
+}
+
+.mmlist-zone .icons i.icoMcChampion {
+    background-position: 0 -80px;
+    width: 17px;
+    height: 25px
+}
+
+.mmlist-zone .icons i.icoShow {
+    background-position: 0 -120px;
+    width: 18px;
+    height: 25px
+}
+
+.mmlist-zone .icons i.icoChangzhan {
+    background-position: 0 -160px;
+    width: 17px;
+    height: 25px
+}
+
+.mmlist-zone .icons i.icoDanceGold {
+    background-position: 0 -200px;
+    width: 17px;
+    height: 24px
+}
+
+.mmlist-zone .icons i.icoDanceAreaGold {
+    background-position: 0 -200px;
+    width: 17px;
+    height: 24px
+}
+
+.mmlist-zone .icons i.icoOlyTorch {
+    background-position: 0 -240px;
+    width: 12px;
+    height: 19px
+}
+
+.mmlist-zone .icons i.icoPhone {
+    background-position: 0 -280px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 60px;
+    right: 0
+}
+
+.mmlist-zone .icons i.icoAmuse {
+    background-position: 0 -360px;
+    width: 16px;
+    height: 22px
+}
+
+.mmlist-zone .icons i.ico-anchor-tag {
+    margin: -2px -2px 0 0;
+    height: 18px;
+    padding: 0 5px;
+    line-height: 18px;
+    background: #00b4b6;
+    color: #fff
+}
+
+.mm-mod-list {
+    width: 100%;
+    overflow: hidden;
+    *position: relative;
+    *zoom: 1
+}
+
+.mm-mod-tab {
+    position: relative;
+    float: left;
+    margin: 3px 0 0 84px;
+    line-height: 20px
+}
+
+.mm-mod-tab a {
+    float: left;
+    margin-right: 18px;
+    font-size: 14px;
+    color: #333
+}
+
+.mm-mod-tab a:hover {
+    color: #ff5e52;
+    text-decoration: none
+}
+
+.mm-mod-tab a.on {
+    color: #fe4537
+}
+
+.mm-mod-tab .line-on {
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: #fe4537;
+    font-size: 0
+}
+
+.mm-mod-hd {
+    margin-top: 55px;
+    padding-bottom: 6px;
+    height: 32px
+}
+
+.mm-mod-hd .btn-change {
+    float: left;
+    margin: 9px 0 0 20px;
+    color: #999
+}
+
+.mm-mod-hd .btn-change:hover {
+    color: #ff3c00
+}
+
+.mm-mod-hd .btn-change i {
+    width: 18px;
+    height: 20px;
+    background: url(http://vr4.6rooms.com/imges/home2016/btn-change.png) no-repeat 0 0
+}
+
+.mm-mod-hd .btn-change:hover i {
+    background-position: 0 -30px
+}
+
+.mm-mod-hd h4 {
+    float: left;
+    line-height: 32px;
+    font-size: 24px;
+    font-weight: normal
+}
+
+.mm-mod-hd h4 i {
+    margin-right: 3px;
+    width: 30px;
+    height: 32px;
+    background: url(http://vr4.6rooms.com/imges/home2016/mm-mod-hd.png) no-repeat 0 0
+}
+
+.mm-recomd .mm-mod-hd h4 i {
+    background-position: 0 2px
+}
+
+.headlines .mm-mod-hd h4 i {
+    margin-top: -1px;
+    background-position: -40px 0
+}
+
+.mylist .mm-mod-hd h4 i {
+    margin-top: -3px;
+    background-position: -80px 1px
+}
+
+.family-push .mm-mod-hd h4 i {
+    margin-top: -3px;
+    background-position: -120px 2px
+}
+
+.mm-taglist .mm-mod-hd h4 i {
+    margin-top: -3px;
+    background-position: -160px 2px
+}
+
+.mm-hotmore .mm-mod-hd h4 i {
+    margin-top: -3px;
+    background-position: -81px -40px
+}
+
+.mm-voice .mm-mod-hd h4 i {
+    margin-top: -2px;
+    background-position: 1px -36px
+}
+
+.mm-funny .mm-mod-hd h4 i {
+    margin-top: -2px;
+    margin-right: 5px;
+    background-position: -40px -39px
+}
+
+.mm-mobile .mm-mod-hd h4 i {
+    margin-top: -2px;
+    margin-right: 5px;
+    background-position: -120px -40px
+}
+
+.user-log {
+    position: absolute;
+    top: 38px;
+    *top: 90px;
+    right: 0;
+    width: 196px
+}
+
+.user-log .to-live {
+    height: 82px;
+    font-size: 0
+}
+
+.user-log .to-live a {
+    display: inline-block;
+    width: 98px;
+    height: 79px;
+    color: #333;
+    background: #fff;
+    text-align: center
+}
+
+.user-log .to-live a.to-play {
+    width: 97px;
+    margin-right: 1px
+}
+
+.user-log .to-live a:hover {
+    color: #ff4e00;
+    text-decoration: none
+}
+
+.user-log .to-live span {
+    display: block;
+    font-size: 12px
+}
+
+.user-log .to-live i {
+    margin: 15px 0 3px;
+    width: 28px;
+    height: 28px;
+    background: url(http://vr4.6rooms.com/imges/home2016/user-log-v2.png) no-repeat 0 0
+}
+
+.user-log .to-play i {
+    background-position: 0 2px
+}
+
+.user-log .to-join i {
+    background-position: -51px 0
+}
+
+.user-log .to-gift {
+    margin-top: 1px;
+    padding: 10px 0;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background: #fff
+}
+
+.user-log .to-gift a {
+    color: #333
+}
+
+.user-log .to-gift a:hover {
+    color: #ff4e00
+}
+
+.user-log .to-gift i {
+    margin: -3px 5px 0 0;
+    width: 18px;
+    height: 20px;
+    background: url(http://vr4.6rooms.com/imges/home2016/user-log-v2.png) no-repeat -102px 0
+}
+
+.log-form {
+    height: 79px;
+    background: #fff
+}
+
+.log-form .log-join {
+    display: none;
+    padding-top: 16px;
+    text-align: center
+}
+
+.log-form .log-join a {
+    display: inline-block;
+    padding-right: 8px;
+    color: #999
+}
+
+.log-form .log-join a:hover {
+    color: #ff4e00
+}
+
+.log-form .log-join span {
+    display: inline-block;
+    margin-right: 8px;
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+    background: url(http://vr4.6rooms.com/imges/home2016/user-log-v2.png) no-repeat -100px -100px
+}
+
+.log-form .log-info {
+    padding: 11px 0 0 28px
+}
+
+.log-form .log-info .ava {
+    float: left;
+    margin-top: 5px
+}
+
+.log-form .log-info .ava img {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%
+}
+
+.log-form .log-info .ava:hover img {
+    filter: alpha(opacity=80);
+    opacity: .8
+}
+
+.log-form .log-info .name {
+    display: none;
+    margin-left: 80px
+}
+
+.log-form .log-info .name a {
+    display: inline-block;
+    width: 90px;
+    line-height: 18px;
+    color: #333;
+    font-size: 14px
+}
+
+.log-form .log-info .name a:hover {
+    color: #ff4e00
+}
+
+.log-form .log-info .level {
+    margin-left: 58px
+}
+
+.log-form .log-info .level span {
+    display: block;
+    padding-top: 7px;
+    color: #999
+}
+
+.headlines-area {
+    position: relative;
+    width: 100%
+}
+
+.headlines {
+    margin-right: 200px
+}
+
+.headlines .mm-mod-list {
+    height: 202px
+}
+
+.headlines .mmlist .i-top {
+    background: url(http://vr2.6rooms.com/imges/home2016/headlines_v3.png) no-repeat -60px 0
+}
+
+.headlines .mmlist li .i-top {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    width: 27px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    font-family: Impact
+}
+
+.headlines .mmlist li.dr .i-top {
+    z-index: 5;
+    top: 4px;
+    right: 4px;
+    width: 36px;
+    height: 36px;
+    background-position: 0 0
+}
+
+.headlines .mmlist li.hottest-girl .i-top {
+    background-position: 0 -60px;
+    cursor: default
+}
+
+.six-scene {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 196px
+}
+
+.six-scene .mm-mod-hd {
+    margin-top: 0;
+    *margin-top: 50px
+}
+
+.six-scene .mm-mod-hd h4 {
+    font-size: 20px
+}
+
+.six-scene-list {
+    padding: 4px 8px 7px;
+    height: 386px;
+    background: #fff
+}
+
+.six-scene-list .list-box {
+    position: relative;
+    width: 100%;
+    height: 386px;
+    overflow: hidden
+}
+
+.six-scene-list ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%
+}
+
+.six-scene-list li {
+    padding: 15px 0 16px 4px;
+    height: 65px;
+    border-bottom: 1px solid #f2f3f4
+}
+
+.six-scene-list .pic {
+    float: left
+}
+
+.six-scene-list .pic img {
+    width: 86px;
+    height: 65px
+}
+
+.six-scene-list .pic:hover img {
+    filter: alpha(opacity=80);
+    opacity: .8
+}
+
+.six-scene-list .info {
+    margin-left: 95px;
+    padding-top: 2px
+}
+
+.six-scene-list .info-notice {
+    padding-top: 14px
+}
+
+.six-scene-list .info .title {
+    display: inline-block;
+    margin-bottom: -4px;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    color: #333
+}
+
+.six-scene-list .info .title:hover {
+    color: #ff4e00
+}
+
+.six-scene-list .info .num {
+    padding: 0 0 3px;
+    color: #999
+}
+
+.six-scene-list .info .num i {
+    width: 13px;
+    height: 16px;
+    background: url(http://vr6.6rooms.com/imges/home2016/six-scene-v2.png) no-repeat 0 0
+}
+
+.six-scene-list .info .btn {
+    display: inline-block;
+    width: 42px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #fb483b;
+    background: #fff;
+    border: 1px solid #e2e2e2;
+    border-radius: 2px;
+    transition: all .3s
+}
+
+.six-scene-list .info .btn:hover {
+    color: #fff;
+    background: #fb483b;
+    border-color: #fb483b
+}
+
+.six-scene-list .info .time {
+    padding-top: 2px;
+    color: #999
+}
+
+.six-scene-list .info .time i {
+    width: 13px;
+    height: 14px;
+    background: url(http://vr6.6rooms.com/imges/home2016/six-scene-v2.png) no-repeat -30px 0
+}
+
+.six-scene-act {
+    margin-top: 1px;
+    font-size: 0
+}
+
+.six-scene-act a {
+    display: inline-block;
+    width: 98px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    background: #fff;
+    transition: all .2s
+}
+
+.six-scene-act a.next {
+    margin-left: 1px;
+    width: 97px
+}
+
+.six-scene-act a i {
+    width: 19px;
+    height: 11px;
+    background: url(http://vr6.6rooms.com/imges/home2016/six-scene-v2.png) no-repeat 0 -30px;
+    *vertical-align: -18px
+}
+
+.six-scene-act a.next i {
+    background-position: -30px -30px
+}
+
+.six-scene-act a:hover {
+    background: #fb483b
+}
+
+.six-scene-act a.disabled, .six-scene-act a.disabled:hover {
+    background: #fafafa;
+    cursor: default
+}
+
+.six-scene-act a:hover i {
+    background-position: -60px -30px
+}
+
+.six-scene-act a.next:hover i {
+    background-position: -90px -30px
+}
+
+.six-scene-act a.disabled:hover i.i1 {
+    background-position: 0 -30px
+}
+
+.six-scene-act a.disabled:hover i.i2 {
+    background-position: -30px -30px
+}
+
+.mm-recomd-area {
+    position: relative;
+    width: 100%
+}
+
+.mm-recomd {
+    margin-right: 200px
+}
+
+.mm-recomd .mm-mod-list {
+    height: 424px
+}
+
+.high-sing {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 196px
+}
+
+.high-sing .mm-mod-hd {
+    margin-top: 0;
+    *margin-top: 50px
+}
+
+.high-sing .mm-mod-hd h4 {
+    font-size: 20px
+}
+
+.high-sing-list li {
+    margin-bottom: 1px;
+    padding: 15px 12px 0;
+    height: 66px;
+    background: #fff
+}
+
+.high-sing-list .pic {
+    float: left
+}
+
+.high-sing-list .pic img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%
+}
+
+.high-sing-list .pic:hover img {
+    filter: alpha(opacity=80);
+    opacity: .8
+}
+
+.high-sing-list .info {
+    margin-left: 62px;
+    padding-top: 4px
+}
+
+.high-sing-list .info .title {
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    color: #333
+}
+
+.high-sing-list .info .title img {
+    margin: -2px 4px 0 0
+}
+
+.high-sing-list .info .title:hover {
+    color: #ff4e00
+}
+
+.high-sing-list .info .time {
+    color: #999
+}
+
+.high-sing-list .info .time i {
+    width: 13px;
+    height: 14px;
+    background: url(http://vr6.6rooms.com/imges/home2016/high-sing.png) no-repeat -60px 0
+}
+
+.high-sing-list .info .state {
+    display: none;
+    color: #bbb
+}
+
+.high-sing-list .info .time-state-end {
+    display: none
+}
+
+.high-sing-list .info .state-end {
+    display: block
+}
+
+.high-sing-act a {
+    display: block;
+    padding: 9px 0;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    color: #fb483b;
+    background: #fff;
+    transition: all .2s
+}
+
+.high-sing-act a i {
+    width: 19px;
+    height: 19px;
+    background: url(http://vr6.6rooms.com/imges/home2016/high-sing.png) no-repeat 0 0
+}
+
+.high-sing-act a:hover {
+    background: #fb483b;
+    color: #fff
+}
+
+.high-sing-act a:hover i {
+    background-position: -30px 0
+}
+
+.family-push-area {
+    position: relative
+}
+
+.family-push {
+    margin-right: 200px
+}
+
+.family-push .mm-mod-list {
+    height: 202px
+}
+
+.home-news {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 196px
+}
+
+.home-news .mm-mod-hd {
+    margin-top: 0;
+    *margin-top: 50px
+}
+
+.home-news .mm-mod-hd h4 {
+    font-size: 20px
+}
+
+.news-list {
+    position: relative;
+    background: #fff;
+    height: 202px
+}
+
+.news-list li {
+    padding-left: 12px;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    border-bottom: 1px solid #f4f5f7
+}
+
+.news-list li a {
+    color: #333
+}
+
+.news-list li a:hover {
+    color: #ff4e00;
+    text-decoration: none
+}
+
+.news-list a.more {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 1px;
+    padding: 11px 0 0;
+    width: 64px;
+    height: 26px;
+    text-align: center;
+    color: #999;
+    background: #fff;
+    border-left: 1px solid #f4f5f7
+}
+
+.news-list a.more i {
+    margin-left: 2px;
+    width: 16px;
+    height: 18px;
+    background: url(http://vr4.6rooms.com/imges/home2016/user-log-v2.png) no-repeat -150px -1px
+}
+
+.news-list a.more:hover {
+    color: #ff4e00
+}
+
+.news-list a.more:hover i {
+    background-position: -150px -31px
+}
+
+.mm-taglist-area {
+    position: relative
+}
+
+.mm-taglist-def .home-news {
+    display: block
+}
+
+.mm-taglist-def .mm-taglist {
+    margin-right: 200px
+}
+
+.mm-taglist {
+    margin-bottom: -16px
+}
+
+.mm-taglist .mmlist {
+    display: none
+}
+
+.mm-taglist .j-taglist0 {
+    display: block;
+    height: 222px
+}
+
+.mm-voice .mm-mod-list {
+    height: 424px
+}
+
+.mm-funny .mm-mod-list {
+    height: 424px
+}
+
+.mylist {
+    display: none;
+    margin-bottom: -16px
+}
+
+.follow-more {
+    display: none;
+    padding-bottom: 10px;
+    text-align: center
+}
+
+.follow-more a {
+    display: inline-block;
+    width: 168px;
+    height: 52px;
+    line-height: 52px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 4px;
+    color: #fff;
+    background: #ff5043
+}
+
+.follow-more a:hover {
+    background: #fd0000
+}
+
+.follow-focus-pop {
+    z-index: 5;
+    position: absolute;
+    left: -999px;
+    top: -999px
+}
+
+.follow-focus-pop .focus-on {
+    display: none;
+    width: 76px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 2px;
+    color: #fff;
+    background: #ff5043
+}
+
+.follow-focus-pop .focus-on:hover {
+    background: #fd0000
+}
+
+.follow-focus-pop .focus-on i {
+    margin-right: 2px;
+    width: 12px;
+    height: 12px;
+    background: url(http://vr4.6rooms.com/imges/home2016/follow-focus-pop.png) no-repeat 0 0
+}
+
+.follow-focus-pop .focus-off, .follow-focus-pop .manage-off {
+    display: none;
+    width: 88px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #888;
+    background: #f0f0f0;
+    border: 1px solid #dcdcdc;
+    border-radius: 2px
+}
+
+.follow-focus-pop .manage-off {
+    width: 66px
+}
+
+.follow-focus-pop .focus-off:hover, .follow-focus-pop .manage-off:hover {
+    background: #e7e7e7;
+    border-color: #c3c3c3
+}
+
+.not-my-data {
+    padding: 20px 0;
+    text-align: center;
+    color: #666
+}
+
+.safe-list {
+    width: 103%;
+    overflow: hidden
+}
+
+.safe-list li {
+    float: left;
+    margin: 0 18px 16px 0;
+    width: 196px;
+    height: 46px;
+    background: #fff
+}
+
+.safe-list .pic {
+    float: left;
+    position: relative;
+    width: 46px;
+    height: 46px;
+    overflow: hidden
+}
+
+.safe-list .pic img {
+    width: 100%;
+    min-height: 100%
+}
+
+.safe-list .pic:hover {
+    filter: alpha(opacity=80);
+    opacity: .8
+}
+
+.safe-list .pic .i-live, .safe-list .pic .i-video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 28px;
+    height: 12px;
+    background: url(http://vr4.6rooms.com/imges/home2016/mmlist-v10.png) no-repeat 0 0
+}
+
+.safe-list .pic .i-video {
+    height: 14px;
+    background-position: -80px 0
+}
+
+.safe-list .info {
+    margin-left: 54px;
+    padding-top: 6px;
+    line-height: 18px
+}
+
+.safe-list .info .name {
+    color: #333
+}
+
+.safe-list .info .name:hover {
+    color: #fe4537
+}
+
+.safe-list .info .viewer {
+    color: #999
+}
+
+.safe-list .info .viewer i {
+    width: 14px;
+    height: 18px;
+    background: url(http://vr4.6rooms.com/imges/home2016/mmlist-v10.png) no-repeat -21px -20px
+}
+
+.safe-list li.nolive .info {
+    padding-top: 14px
+}
+
+.safe-list li.nolive .info .viewer {
+    display: none
+}
+
+.safe-list li.nolive .pic .i-live, .safe-list li.nolive .pic .i-video {
+    display: none
+}
+
+.home-rank {
+    margin-top: 50px
+}
+
+.home-rank .hd {
+    position: relative;
+    padding: 0 0 8px 15px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: normal
+}
+
+.home-rank .hd i {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 20px;
+    width: 6px;
+    background: #ff6a5f;
+    border-radius: 2px
+}
+
+.home-game, .home-toplist {
+    float: left;
+    width: 410px;
+    margin-left: 18px
+}
+
+.page-w1320 .home-game, .page-w1320 .home-toplist, .page-w1560 .home-game, .page-w1560 .home-toplist {
+    width: 338px
+}
+
+.page-w1320 .home-game, .page-w1560 .home-game {
+    width: 340px
+}
+
+.home-game {
+    margin: 0
+}
+
+.gamelist-box {
+    padding: 0 10px;
+    height: 400px;
+    background: #fff
+}
+
+.gamelist-box .i-line {
+    margin: 0 0 -12px;
+    width: 100%;
+    height: 1px;
+    background: #f3f3f3;
+    overflow: hidden;
+    font-size: 0
+}
+
+.gamelist {
+    overflow: hidden;
+    padding: 18px 5px
+}
+
+.gamelist li {
+    float: left;
+    padding-top: 16px;
+    width: 25%;
+    text-align: center
+}
+
+.gamelist li a {
+    display: inline-block;
+    color: #333
+}
+
+.gamelist li a:hover {
+    color: #fd3000;
+    text-decoration: none
+}
+
+.gamelist li .ico {
+    display: block
+}
+
+.gamelist li .name {
+    display: block;
+    padding-top: 5px
+}
+
+.gamelist li a:hover i {
+    filter: alpha(opacity=80);
+    opacity: .8
+}
+
+.gamelist li i {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background: url(http://vr4.6rooms.com/imges/home2016/gamelist-v9.png) no-repeat 0 0
+}
+
+.gamelist li.g1 i {
+    background-position: 0 0
+}
+
+.gamelist li.g2 i {
+    background-position: -50px 0
+}
+
+.gamelist li.g3 i {
+    background-position: -100px 0
+}
+
+.gamelist li.g4 i {
+    background-position: -150px 0
+}
+
+.gamelist li.g5 i {
+    background-position: 0 -50px
+}
+
+.gamelist li.g6 i {
+    background-position: -50px -50px
+}
+
+.gamelist li.g7 i {
+    background-position: -100px -50px
+}
+
+.gamelist li.g8 i {
+    background-position: 0 -100px
+}
+
+.gamelist li.g9 i {
+    background-position: -50px -100px
+}
+
+.gamelist li.g10 i {
+    background-position: -100px -100px
+}
+
+.gamelist li.g11 i {
+    background-position: -150px -100px
+}
+
+.gamelist li.g12 i {
+    background-position: 0 -150px
+}
+
+.gamelist li.g13 i {
+    background-position: -50px -150px
+}
+
+.gamelist li.g14 i {
+    background-position: -100px -150px
+}
+
+.gamelist li.g15 i {
+    background-position: -150px -150px
+}
+
+.gamelist li.g16 i {
+    background-position: 0 -200px
+}
+
+.gamelist li.g17 i {
+    background-position: -50px -200px
+}
+
+.gamelist li.g18 i {
+    background-position: -100px -200px
+}
+
+.gamelist li.g19 i {
+    background-position: -150px -200px
+}
+
+.gamelist li.g20 i {
+    background-position: 0 -250px
+}
+
+.gamelist li.g21 i {
+    background-position: -50px -250px
+}
+
+.gamelist li.g22 i {
+    background-position: -100px -250px
+}
+
+.toplist-box {
+    height: 400px;
+    background: #fff
+}
+
+.toplist-tab {
+    position: relative;
+    padding-top: 12px;
+    height: 30px;
+    border-bottom: 1px solid #f3f3f3
+}
+
+.toplist-tab li {
+    float: left;
+    width: 25%;
+    *width: 24%
+}
+
+.toplist-tab li a {
+    display: block;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    color: #666;
+    text-align: center
+}
+
+.toplist-tab li a:hover {
+    color: #ff4537;
+    text-decoration: none
+}
+
+.toplist-tab li a.on {
+    color: #ff4537
+}
+
+.toplist-tab .line-on {
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 80px;
+    height: 1px;
+    background: #ff4537;
+    font-size: 0
+}
+
+.toplist li {
+    padding: 8px 15px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    border-bottom: 1px solid #f4f5f7
+}
+
+.toplist li .l {
+    float: left;
+    height: 20px;
+    overflow: hidden
+}
+
+.toplist li .r {
+    float: right
+}
+
+.toplist li .rank {
+    float: left;
+    width: 25px;
+    color: #999;
+    font-size: 13px;
+    text-align: center;
+    font-family: helvetica
+}
+
+.toplist li .ava {
+    float: left
+}
+
+.toplist li .name {
+    display: inline-block;
+    margin-left: 3px;
+    color: #333;
+    font-size: 13px;
+    vertical-align: middle
+}
+
+.toplist li .name:hover {
+    color: #fd3000;
+    text-decoration: none
+}
+
+.toplist li .i-live {
+    display: none;
+    margin-left: 5px;
+    width: 25px;
+    height: 14px;
+    vertical-align: middle;
+    background: url(http://vr2.6rooms.com/imges/home2016/toplist-ico.png) no-repeat 0 0
+}
+
+.toplist li .i-live-on {
+    display: inline-block
+}
+
+.toplist li.r1 {
+    padding-top: 20px;
+    height: 26px;
+    line-height: 26px
+}
+
+.toplist li.r1 .l {
+    height: 26px
+}
+
+.toplist li.r1 .rank {
+    font-size: 15px;
+    font-weight: bold
+}
+
+.toplist li.r1 .ava img {
+    margin: -2px 2px 0 0;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%
+}
+
+.toplist li.r1 .ava:hover img {
+    filter: alpha(opacity=80);
+    opacity: .8
+}
+
+.toplist li.r9 {
+    border-bottom-width: 0
+}
+
+.mm-event {
+    margin-top: 35px
+}
+
+.mm-event .event-bd {
+    height: 112px;
+    padding-top: 28px;
+    overflow: hidden
+}
+
+.mm-event a {
+    position: relative;
+    float: left;
+    margin-bottom: 100px;
+    height: 112px;
+    width: 33.3%;
+    *width: 33%;
+    background-color: #ccc;
+    background-repeat: repeat-x;
+    background-position: 0 0
+}
+
+.mm-event a.first {
+    width: 33.4%
+}
+
+.mm-event a img {
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 140px;
+    height: 130px;
+    transition: all .4s ease-in-out
+}
+
+.mm-event a:hover img {
+    bottom: 0
+}
+
+.mm-banner {
+    margin-top: 55px
+}
+
+.mm-banner a {
+    display: block;
+    width: 100%;
+    height: 100px;
+    font-size: 0;
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-position: center top
+}
+
+.to-more-live {
+    margin: 10px auto 0;
+    width: 100%;
+    font-family: 'microsoft Yahei'
+}
+
+.to-more-live a {
+    display: block;
+    height: 46px;
+    border-radius: 3px;
+    color: #fd3000;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #e8e8e8;
+    background: #fff;
+    text-decoration: none
+}
+
+.to-more-live span {
+    display: block;
+    margin: 0 auto;
+    width: 340px;
+    padding: 13px 0;
+    height: 20px;
+    line-height: 20px;
+    text-align: center
+}
+
+.to-more-live em {
+    position: relative;
+    left: 12px;
+    transition: all .2s ease-out
+}
+
+.to-more-live i {
+    position: relative;
+    left: 0;
+    height: 20px;
+    width: 24px;
+    opacity: 0;
+    visibility: hidden;
+    vertical-align: top;
+    background: url(http://vr5.6rooms.com/imges/index/to-more-live-v2.png) no-repeat 0 -60px;
+    transition: all .4s ease-out
+}
+
+.to-more-live a:hover em {
+    left: -6px
+}
+
+.to-more-live a:hover i {
+    left: 6px;
+    opacity: 1;
+    visibility: visible
+}
+
+.zone-rank {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    width: 196px
+}
+
+.zone-rank .rank-hd {
+    height: 36px;
+    font-size: 20px
+}
+
+.zone-rank .toplist-box {
+    margin-bottom: 30px;
+    height: 420px
+}
+
+.zone-rank .toplist-tab li {
+    width: 33.3%;
+    *width: 33%
+}
+
+.zone-rank .toplist-tab a {
+    color: #999
+}
+
+.zone-rank .toplist-tab a.on {
+    font-weight: bold
+}
+
+.zone-rank .toplist li {
+    padding: 8px 10px
+}
+
+.zone-rank .toplist li .l {
+    width: 116px
+}
+
+.zone-rank .toplist li .rank {
+    color: #ccc
+}
+
+.zone-rank .toplist li .name {
+    display: inline-block;
+    width: 88px;
+    font-size: 12px;
+    overflow: hidden
+}
+
+.zone-rank .toplist li.r1 .name {
+    width: 60px
+}
+
+.zone-rank .toplist li.r9 {
+    border-bottom-width: 1px
+}
+
+.zone-rank .toplist li.r10 {
+    border-bottom-width: 0
+}
+
+.body-zone {
+    position: relative
+}
+
+.zone-con {
+    min-height: 300px
+}
+
+.zone-list {
+    width: 100%;
+    *overflow: hidden
+}
+
+.zone-hd {
+    padding-top: 15px;
+    height: 36px
+}
+
+.zone-hd .zone-title {
+    float: left;
+    line-height: 28px;
+    font-size: 24px
+}
+
+.zone-order {
+    float: right;
+    margin-top: 3px;
+    font-size: 0
+}
+
+.zone-order a {
+    display: inline-block;
+    margin-left: 2px;
+    width: 50px;
+    height: 23px;
+    line-height: 23px;
+    color: #333;
+    background: #fff;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 2px;
+    transition: all .25s ease-in-out
+}
+
+.zone-order a:hover {
+    color: #ff4e00
+}
+
+.zone-order a.on {
+    color: #fff;
+    background: #fb483b
+}
+
+.body-zone-rank .zone-con {
+    min-height: 990px;
+    margin-right: 200px
+}
+
+.body-zone-rank .zone-rank {
+    display: block
+}
+
+.body-zone-rank .zone-order {
+    margin-right: 18px
+}
+
+.body-follow {
+    min-height: 300px
+}
+
+.body-follow .mm-mod-hd {
+    margin-top: 15px
+}
+
+.body-follow .mm-mod-tab {
+    margin-left: 117px
+}
+
+.body-feed {
+    padding-top: 15px
+}
+
+.wb-user {
+    float: right;
+    width: 196px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.06)
+}
+
+.wb-user .log-info {
+    padding: 35px 0 0 18px;
+    height: 106px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 3px 3px 0 0
+}
+
+.wb-user .log-info .ava {
+    float: left;
+    margin-top: 3px
+}
+
+.wb-user .log-info .ava img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%
+}
+
+.wb-user .log-info .ava:hover img {
+    filter: alpha(opacity=80);
+    opacity: .8
+}
+
+.wb-user .log-info .name {
+    margin-left: 80px
+}
+
+.wb-user .log-info .name a {
+    display: inline-block;
+    width: 90px;
+    line-height: 18px;
+    color: #333;
+    font-size: 14px
+}
+
+.wb-user .log-info .name a:hover {
+    color: #ff4e00
+}
+
+.wb-user .log-info .level {
+    margin-left: 80px
+}
+
+.wb-user .log-info .level span {
+    display: block;
+    padding-top: 7px;
+    color: #999
+}
+
+.wb-user .to-gift {
+    margin-top: 1px;
+    padding: 12px 0;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 0 0 3px 3px
+}
+
+.wb-user .to-gift a {
+    color: #333
+}
+
+.wb-user .to-gift a:hover {
+    color: #ff4e00
+}
+
+.wb-user .to-gift i {
+    margin: -3px 5px 0 0;
+    width: 18px;
+    height: 20px;
+    background: url(http://vr4.6rooms.com/imges/home2016/user-log-v2.png) no-repeat -102px 0
+}
+
+.wb-con {
+    margin-right: 214px
+}
+
+.wb-form {
+    z-index: 16;
+    position: relative;
+    background: #fff;
+    border: 1px solid #e9e9eb;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.06)
+}
+
+.wb-form .wb-text {
+    padding: 10px
+}
+
+.wb-form .wb-text textarea {
+    padding: 0;
+    width: 100%;
+    height: 68px;
+    border: 0;
+    font-size: 14px;
+    color: #999
+}
+
+.wb-form .wb-text textarea.focus {
+    color: #333
+}
+
+.wb-form .wb-tool {
+    position: relative;
+    height: 34px;
+    background: #fbfbfb;
+    border-top: 1px solid #ececec;
+    border-radius: 0 0 3px 3px
+}
+
+.wb-form .wb-btn {
+    position: absolute;
+    right: -1px;
+    top: -1px
+}
+
+.wb-form .wb-btn .send {
+    display: block;
+    width: 75px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    background: #ff5043;
+    border: 0;
+    border-radius: 0 0 3px 0
+}
+
+.wb-form .wb-btn .send:hover {
+    background: #fd0000
+}
+
+.wb-form .wb-btn .send-load, .wb-form .wb-btn .send-load:hover {
+    background: #ddd;
+    cursor: default
+}
+
+.wb-form .wb-media {
+    margin: 4px 0 0 10px;
+    font-size: 0
+}
+
+.wb-form .wb-media a {
+    display: inline-block;
+    margin-right: 6px;
+    padding: 5px
+}
+
+.wb-form .wb-media i {
+    width: 18px;
+    height: 16px;
+    background: url(http://vr6.6rooms.com/imges/home2016/wb-feed-v4.png) no-repeat
+}
+
+.wb-form .wb-media a.face i {
+    width: 16px;
+    background-position: 0 0
+}
+
+.wb-form .wb-media a.photo i {
+    background-position: -25px 1px
+}
+
+.wb-form .wb-media a.mp3 i {
+    width: 12px;
+    background-position: -50px 0
+}
+
+.weiboUpload {
+    display: none;
+    position: absolute;
+    z-index: 0;
+    top: 19px;
+    left: 150px;
+    padding-top: 15px;
+    font-size: 12px
+}
+
+.weiboUpload .weiboBox {
+    position: relative;
+    padding: 10px;
+    width: 300px;
+    height: 138px;
+    background: #fff;
+    border: 1px solid #dfdfdf;
+    border-radius: 4px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1)
+}
+
+.weiboUpload .arrowIcon {
+    position: absolute;
+    top: -1px;
+    left: 152px
+}
+
+.weiboUpload .arrowIcon .ico {
+    display: block;
+    background: 0;
+    font-family: Simsun;
+    font-size: 14px;
+    font-style: normal;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    color: #dfdfdf;
+    overflow: hidden
+}
+
+.weiboUpload .arrowIcon .ico2 {
+    color: #fff;
+    top: -8px;
+    _top: -7px
+}
+
+.weiboUpload .close {
+    position: absolute;
+    right: 5px;
+    top: 5px
+}
+
+.weiboUpload .photoBox div, .weiboUpload .mp3Box div {
+    display: none
+}
+
+.weiboUpload .upload p {
+    text-align: center;
+    color: #999
+}
+
+.weiboUpload .upload p.tips {
+    margin-top: 6px
+}
+
+.weiboUpload .upload p.tips em {
+    color: #fd3000
+}
+
+.weiboUpload .upload {
+    padding-top: 30px
+}
+
+.weiboUpload .upload .inputFile {
+    position: relative;
+    margin: 0 0 10px 70px;
+    height: 54px;
+    width: 172px;
+    overflow: hidden
+}
+
+.weiboUpload .upload .inputFile a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: #333;
+    font-weight: bold;
+    width: 158px;
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    font-size: 14px
+}
+
+.weiboUpload .upload .inputFile:hover a {
+    text-decoration: none;
+    border-color: #c7c7c7
+}
+
+.weiboUpload .upload .inputFile span {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    margin-left: -900px;
+    opacity: 0;
+    filter: alpha(opacity=0)
+}
+
+.weiboUpload .upload .inputFile input {
+    font-size: 78px;
+    cursor: pointer
+}
+
+.weiboUpload .uploading {
+    height: 16px;
+    line-height: 16px;
+    vertical-align: middle;
+    text-align: center;
+    color: #666;
+    padding-top: 54px
+}
+
+.wb-tool .weiboUpload .uploading i {
+    float: none;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background: url(http://vr0.6rooms.com/imges/live/IMGSRC/loading_wb.gif) no-repeat
+}
+
+.weiboUpload .uploadinfo .pic {
+    text-align: center;
+    padding: 6px 0 8px
+}
+
+.weiboUpload .uploadinfo .pic img {
+    height: 98px
+}
+
+.weiboUpload .uploadinfo .dec {
+    color: #666;
+    text-align: center
+}
+
+.weiboUpload .uploadinfo .dec a {
+    color: #fd3000
+}
+
+.weiboUpload .uploadinfo .mp3 {
+    text-align: center;
+    color: #333;
+    padding-top: 38px;
+    margin-bottom: 10px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    font-weight: bold
+}
+
+.photoBox_vis {
+    left: -102px
+}
+
+.mp3Box_vis {
+    left: -98px
+}
+
+.mp3Box_vis .weiboBox {
+    width: 360px;
+    height: 164px
+}
+
+.mp3Box_vis .upload .inputFile {
+    margin: 0 0 10px 100px
+}
+
+.mp3Box_vis .arrowIcon {
+    left: 180px
+}
+
+.weiboUpload .mp3Box .upload {
+    padding-top: 10px
+}
+
+.weiboUpload .mp3Box .upload .radioLine {
+    height: 40px;
+    line-height: 40px
+}
+
+.weiboUpload .mp3Box .upload .radioLine label {
+    margin: 0 10px
+}
+
+.weiboUpload .mp3Box .upload .radioLine label input {
+    margin-right: 5px;
+    vertical-align: -2px
+}
+
+.mp3Box_vis .photoBox, .photoBox_vis .mp3Box {
+    display: none
+}
+
+.photoBox_vis, .mp3Box_vis, .photoBox_vis .photoBox, .mp3Box_vis .mp3Box, .weiboUpload .is_form .upload, .weiboUpload .is_loading .uploading, .weiboUpload .is_info .uploadinfo {
+    display: block
+}
+
+.wb-tab {
+    position: relative;
+    margin: 10px 0 3px;
+    height: 44px;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border: 0 solid rgba(0, 0, 0, 0.0);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.06);
+    border-radius: 3px
+}
+
+.wb-tab a {
+    float: left;
+    padding: 0 20px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 14px;
+    color: #999
+}
+
+.wb-tab a.feed-list {
+    padding: 0 23px;
+    border-right: 1px solid #f4f5f7
+}
+
+.wb-tab a:hover, .wb-tab a.on {
+    color: #333
+}
+
+.wb-tab a i.new {
+    visibility: hidden;
+    position: absolute;
+    right: 14px;
+    top: 12px;
+    width: 5px;
+    height: 5px;
+    font-size: 0;
+    border-radius: 50%;
+    background: #ff5043
+}
+
+.wb-tab .line-on {
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 3px;
+    width: 75px;
+    background: #ff5043;
+    font-size: 0
+}
+
+.wb-feed {
+    padding-bottom: 20px
+}
+
+.wb-feed .fpage {
+    margin-top: 30px
+}
+
+.wb-feed .wb-cmt-list .fpage {
+    margin-top: 5px
+}
+
+.wb-feed-list {
+    min-height: 300px
+}
+
+.wb-feed dl {
+    position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
+    clear: both;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border: 0 solid rgba(0, 0, 0, 0.0);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.06);
+    border-radius: 3px
+}
+
+.wb-feed dt {
+    position: absolute;
+    left: 20px;
+    top: 16px
+}
+
+.wb-feed dt img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: all .3s
+}
+
+.wb-feed dt a:hover img {
+    opacity: .8;
+    filter: alpha(opacity=80)
+}
+
+.wb-feed dd {
+    margin-bottom: -2px;
+    padding: 20px 20px 0 76px;
+    border-bottom: 1px solid #f4f5f7
+}
+
+.wb-feed .fbody {
+    padding-top: 8px;
+    font-size: 14px;
+    line-height: 170%;
+    overflow: hidden;
+    word-wrap: break-word
+}
+
+.wb-feed .fbody a {
+    color: #ff5043
+}
+
+.wb-feed .fbody a:hover {
+    text-decoration: underline
+}
+
+.wb-feed .fbody .aPic {
+    float: left;
+    display: block;
+    padding-top: 6px;
+    clear: both
+}
+
+.wb-feed .fbody .aPic img {
+    width: auto;
+    max-width: 500px;
+    height: auto
+}
+
+.wb-feed .fbody .aPic-waiting {
+    background: url(http://vr7.6rooms.com/imges/live/IMGSRC/loading_wb.gif) no-repeat center center
+}
+
+.wb-feed .fbody .aPic-waiting img {
+    filter: alpha(opacity=20);
+    opacity: .2
+}
+
+.wb-feed .fbody a.aFlv {
+    display: block;
+    position: relative;
+    padding-top: 6px;
+    width: 160px;
+    height: 100px;
+    clear: both
+}
+
+.wb-feed .fbody a.aFlv:hover {
+    filter: alpha(opacity=80);
+    opacity: .8
+}
+
+.wb-feed .fbody .aFlv img {
+    width: 160px;
+    height: 100px
+}
+
+.wb-feed .fbody a.aFlv sup {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -21px 0 0 -21px;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    background: url(http://vr6.6rooms.com/imges/home2016/wb-feed-v4.png) no-repeat scroll -151px 0
+}
+
+.wb-feed .fbody a.aMp3 i {
+    display: inline-block;
+    margin: 0 4px;
+    height: 22px;
+    width: 12px;
+    background: url(http://vr6.6rooms.com/imges/home2016/wb-feed-v4.png) no-repeat 0 -27px
+}
+
+.wb-feed .fbody span.fMp3 {
+    display: none
+}
+
+.wb-feed .fbody a.fnewMsg {
+    position: absolute;
+    right: 5px;
+    top: 0
+}
+
+.wb-feed .fbody a.fdel {
+    display: block;
+    float: right
+}
+
+.wb-feed .fuser a.name {
+    color: #333;
+    font-size: 14px;
+    font-weight: 700
+}
+
+.wb-feed .fuser a.name:hover {
+    color: #ff5043
+}
+
+.wb-feed .foot {
+    clear: both;
+    padding-top: 10px;
+    height: 34px
+}
+
+.wb-feed .foot .date {
+    float: left;
+    color: #aaa
+}
+
+.wb-feed .foot .act {
+    float: right
+}
+
+.wb-feed .foot .act a {
+    color: #999
+}
+
+.wb-feed .foot .act a:hover, .wb-feed .foot .act a em {
+    color: #ff5043
+}
+
+.wb-feed .foot .act i {
+    margin: -2px 5px 0;
+    color: #e2e2e2
+}
+
+.wb-feed a.from-mobile-client {
+    padding-left: 0;
+    color: #aaa !important;
+    background: transparent !important
+}
+
+.wb-feed a.from-mobile-client:hover {
+    color: #ff5043 !important;
+    text-decoration: none
+}
+
+.wb-feed a.from-mobile-client i {
+    margin-right: 3px;
+    width: 10px;
+    height: 16px;
+    background: url(http://vr6.6rooms.com/imges/home2016/wb-feed-v4.png) no-repeat -25px -30px
+}
+
+.wb-feed .media-expend {
+    position: relative;
+    margin-top: 10px;
+    padding: 15px 20px 20px;
+    background: #f6f6f6;
+    border-radius: 4px;
+    *zoom: 1
+}
+
+.wb-feed .media-expend .arrow-icon .ico {
+    color: #f6f6f6
+}
+
+.wb-feed .feed-media-action-wrap {
+    padding-bottom: 12px;
+    height: 14px;
+    line-height: 14px
+}
+
+.wb-feed .feed-media-action-wrap a {
+    color: #888
+}
+
+.wb-feed .feed-media-action-wrap .vline {
+    padding: 0 5px;
+    color: #ccc
+}
+
+.wb-feed .feed-media-action-wrap i {
+    display: inline-block;
+    margin-top: -1px;
+    margin-right: 2px;
+    height: 14px;
+    width: 14px;
+    vertical-align: middle;
+    background: url(http://vr6.6rooms.com/imges/home2016/wb-feed-v4.png) no-repeat 0 -80px
+}
+
+.feed-media-action-wrap a.feed-media-action-collapse i {
+    margin-right: 0;
+    background-position: 0 -61px
+}
+
+.feed-media-action-wrap a.feed-media-action-collapse:hover i {
+    background-position: -80px -61px
+}
+
+.feed-media-action-wrap a.originalImg i {
+    background-position: -20px -61px
+}
+
+.feed-media-action-wrap a.originalImg:hover i {
+    background-position: -100px -61px
+}
+
+.feed-media-action-wrap a.feed-media-action-rotateLeft i {
+    background-position: -40px -60px
+}
+
+.feed-media-action-wrap a.feed-media-action-rotateLeft:hover i {
+    background-position: -120px -60px
+}
+
+.feed-media-action-wrap a.feed-media-action-rotateRigth i {
+    background-position: -60px -61px
+}
+
+.feed-media-action-wrap a.feed-media-action-rotateRigth:hover i {
+    background-position: -140px -61px
+}
+
+.feed-media-bigImg {
+    text-align: center;
+    zoom: 1
+}
+
+.feed-meida-audioPlayer .player {
+    display: block;
+    height: 50px;
+    background: url(http://i1.6rooms.com/netbargame/d3/49/m277401319885852.gif) no-repeat center center
+}
+
+.wb-feed .bigCursor {
+    cursor: url(http://vr1.6rooms.com/imges/live/CSSIMG/profile/big.cur), default
+}
+
+.wb-feed .smallCursor {
+    cursor: url(http://vr1.6rooms.com/imges/live/CSSIMG/profile/small.cur), default
+}
+
+.wb-feed .arrow-icon {
+    position: absolute;
+    left: 30px;
+    top: -9px;
+    font-size: 0
+}
+
+.wb-feed .arrow-icon .ico2 {
+    display: none
+}
+
+.wb-feed .arrow-icon .ico {
+    font-family: Simsun;
+    font-size: 14px;
+    font-style: normal;
+    color: #f6f6f6
+}
+
+.wb-feed .frelay {
+    position: relative;
+    margin-top: 10px;
+    padding: 12px 15px;
+    border-radius: 5px;
+    background: #f6f6f6
+}
+
+.wb-feed .frelay .fuser {
+    display: inline;
+    margin-right: 4px
+}
+
+.wb-feed .frelay .fuser a {
+    color: #ff5043;
+    font-size: 12px;
+    font-weight: normal
+}
+
+.wb-feed .frelay .fuser a:hover {
+    text-decoration: underline
+}
+
+.wb-feed .frelay .fbody {
+    display: inline;
+    padding-top: 0;
+    font-size: 12px
+}
+
+.wb-feed .frelay .foot {
+    height: 20px
+}
+
+.wb-repeat {
+    position: relative;
+    width: 100%;
+    margin-left: -76px;
+    padding: 10px 20px 10px 76px;
+    background: #f8f8f8;
+    border-radius: 0 0 3px 3px
+}
+
+.wb-repeat .arrow-icon {
+    left: auto;
+    right: 42px
+}
+
+.wb-repeat .arrow-icon .ico {
+    color: #f8f8f8
+}
+
+.wb-repeat .my-avatar {
+    position: absolute;
+    top: 12px;
+    left: 33px
+}
+
+.wb-repeat .my-avatar img {
+    width: 32px;
+    height: 32px;
+    border-radius: 3px;
+    transition: all .3s
+}
+
+.wb-repeat .my-avatar a:hover img {
+    filter: alpha(opacity=80);
+    opacity: .8
+}
+
+.wb-repeat .inputWrap {
+    padding: 10px;
+    border: 1px solid #ececec;
+    background: #fff;
+    border-radius: 3px
+}
+
+.wb-repeat .inputWrap textarea {
+    padding: 0;
+    width: 100%;
+    height: 80px;
+    font-size: 14px;
+    border: 0;
+    color: #999
+}
+
+.wb-repeat .inputWrap textarea.focus {
+    height: 80px;
+    color: #333
+}
+
+.wb-repeat .tools {
+    position: relative;
+    height: 18px;
+    line-height: 18px;
+    padding: 8px 12px;
+    border: 1px solid #ececec;
+    border-top: 0;
+    background: #fbfbfb;
+    border-radius: 0 0 3px 3px
+}
+
+.wb-repeat .fbtn {
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    height: 36px;
+    width: 74px;
+    background: #ff5043;
+    border: 1px solid #ff5043;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    transition: all .25s;
+    border-radius: 0 0 3px 0
+}
+
+.wb-repeat .fbtn:hover {
+    background: #fd0000;
+    border-color: #fd0000
+}
+
+.wb-repeat .fbtnLoad {
+    background: #f3f3f3;
+    border-color: #dbdbdb;
+    color: #ccc
+}
+
+.wb-repeat .face i, .wb-repeat .uploadButton i {
+    float: left;
+    height: 18px;
+    width: 18px;
+    background: url(http://vr6.6rooms.com/imges/home2016/wb-feed-v4.png) no-repeat
+}
+
+.wb-repeat .face i {
+    width: 16px;
+    background-position: 0 0
+}
+
+.wb-repeat .face:hover i {
+    background-position: -75px 0
+}
+
+.wb-repeat .uploadButton i {
+    background-position: -25px 1px
+}
+
+.wb-repeat .uploadButton:hover i {
+    background-position: -100px 1px
+}
+
+.wb-repeat .face {
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    margin-right: 14px;
+    color: #999
+}
+
+.wb-repeat .uploadButton {
+    color: #999;
+    height: 18px;
+    _width: 56px;
+    margin-right: 12px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    display: block
+}
+
+.wb-repeat .uploadButton em {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    margin-left: -1000px;
+    filter: alpha(opacity=0);
+    opacity: 0
+}
+
+.wb-repeat .uploadButton em input {
+    font-size: 78px;
+    cursor: pointer
+}
+
+.wb-repeat .toMy {
+    float: left;
+    margin-right: 6px;
+    color: #999
+}
+
+.wb-repeat .toRoot {
+    float: left;
+    color: #999
+}
+
+.wb-repeat .toRoot em {
+    display: none
+}
+
+.wb-repeat button.fbtn span {
+    display: block;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    padding: 0
+}
+
+.wb-repeat button.fbtnLoad {
+    cursor: pointer
+}
+
+.wb-repeat button.fbtnLoad span {
+    text-indent: -1000px;
+    overflow: hidden;
+    background: url(http://vr7.6rooms.com/imges/live/IMGSRC/loading_wb.gif) no-repeat center center
+}
+
+.wb-repeat .previewImage {
+    display: none;
+    position: relative;
+    width: 137px;
+    padding: 2px;
+    margin: 10px auto 0;
+    border: 1px solid #eee
+}
+
+.wb-repeat .previewImage img {
+    width: 137px
+}
+
+.wb-repeat .previewImage .previewImageClose {
+    right: 2px;
+    top: 2px
+}
+
+.wb-repeat .previewImage-loading {
+    display: block;
+    height: 137px;
+    margin: 0 auto;
+    background: url("http://i0.6rooms.com/3a/3a/j184991302160507.gif") no-repeat center center
+}
+
+.wb-repeat.previewImage-loading .previewImageClose {
+    display: none
+}
+
+.wb-repeat .previewImage-loading img {
+    display: none
+}
+
+.wb-cmt-list {
+    overflow: hidden
+}
+
+.wb-cmt-list ul {
+    margin-top: -1px
+}
+
+.wb-cmt-list li {
+    position: relative;
+    padding: 13px 0 13px 42px;
+    border-top: 1px solid #e7e7e7
+}
+
+.wb-cmt-list .fuser {
+    display: inline;
+    margin-right: 6px
+}
+
+.wb-cmt-list .fbody {
+    display: inline;
+    font-size: 12px
+}
+
+.wb-cmt-list .foot {
+    padding-top: 4px;
+    height: 20px
+}
+
+.wb-cmt-list .fava {
+    position: absolute;
+    left: 0;
+    top: 15px
+}
+
+.wb-cmt-list .fava img {
+    width: 32px;
+    height: 32px;
+    border-radius: 3px;
+    transition: all .3s
+}
+
+.wb-cmt-list .fava a:hover img {
+    opacity: .8;
+    filter: alpha(opacity=80)
+}
+
+.wb-cmt-list .fuser a.name {
+    font-size: 12px;
+    font-weight: normal;
+    color: #ff5043
+}
+
+.wb-cmt-list .fuser a.name:hover {
+    text-decoration: underline
+}
+
+.wb-feed-new {
+    display: none;
+    min-height: 300px
+}
+
+.wb-feed-new .empty {
+    padding-top: 50px;
+    text-align: center;
+    color: #666
+}
+
+.wb-feed-new .foot a.fcmt {
+    color: #ff5043
+}
+
+.wb-feed-new .foot a.fcmt:hover {
+    text-decoration: underline
+}
+
+.wb-feed-new .foot a.fcmt-readed, .wb-feed-new .foot a.fcmt-readed:hover {
+    color: #888;
+    text-decoration: none
+}
+
+.totop {
+    z-index: 100;
+    position: fixed;
+    width: 40px;
+    bottom: 12px;
+    right: 10px;
+    transition: bottom .2s
+}
+
+.totop .btn a {
+    display: block;
+    position: relative;
+    margin-top: 8px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: #fff
+}
+
+.totop .btn span {
+    position: relative;
+    z-index: 2
+}
+
+.totop .btn span.bg {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    border-radius: 4px;
+    filter: alpha(opacity=15);
+    opacity: .15;
+    transition: all .3s
+}
+
+.totop .btn a:hover span.bg {
+    filter: alpha(opacity=50);
+    opacity: .5
+}
+
+.totop .btn span.img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(http://vr0.6rooms.com/imges/home2016/totop-v1.png) no-repeat 0 0
+}
+
+.totop .btn .wechat span.img {
+    background-position: 10px 11px
+}
+
+.totop .btn .app span.img {
+    background-position: -37px 9px
+}
+
+.totop .btn .top span.img {
+    background-position: -89px 14px
+}
+
+.totop .btn span.text {
+    display: none;
+    line-height: 30px;
+    padding: 5px 0
+}
+
+.totop .btn a.wechat-hover span.img, .totop .btn a.app-hover span.img, .totop .btn a:hover span.img {
+    display: none
+}
+
+.totop .btn a.wechat-hover span.text, .totop .btn a.app-hover span.text, .totop .btn a:hover span.text {
+    display: block
+}
+
+.totop .btn-hide {
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: height .3s
+}
+
+.totop-expand .btn-hide {
+    height: 50px;
+    visibility: visible
+}
+
+.totop .pop-code a {
+    position: absolute;
+    display: block;
+    padding-right: 8px;
+    top: -86px;
+    left: -220px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-15px, 0);
+    transition: all .25s ease-in-out
+}
+
+.totop .pop-code .app-code {
+    top: -136px
+}
+
+.totop .pop-code .show-code {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0, 0)
+}
+
+.totop .pop-code span {
+    display: block;
+    width: 218px;
+    height: 214px;
+    background: url(http://vr0.6rooms.com/imges/home2016/totop-v1.png) no-repeat 0 0
+}
+
+.totop .pop-code .app-code span {
+    background-position: 0 -60px
+}
+
+.totop .pop-code .wechat-code span {
+    background-position: 0 -300px
+}
+
+.loading {
+    width: 300px;
+    margin: 0 auto;
+    clear: both;
+    height: 50px;
+    line-height: 50px;
+    text-indent: 20px;
+    text-align: center;
+    color: #999;
+    background: url(http://vr0.6rooms.com/imges/live/IMGSRC/loading_wb.gif) no-repeat 115px center
+}
+
+.list-area {
+    overflow: hidden
+}
+
+.area-box {
+    z-index: 2;
+    display: none;
+    position: relative;
+    margin-top: 28px;
+    padding: 20px 38px;
+    border: 1px solid #e4e4e4;
+    background: #fff
+}
+
+.list_area .area-box {
+    display: block
+}
+
+.list_area .area-box h4 {
+    border-bottom: 1px solid #ececec;
+    padding: 0 0 12px;
+    font-family: 'Microsoft yahei';
+    font-weight: normal;
+    font-size: 18px
+}
+
+.list_area .area-box li {
+    float: left;
+    width: 12.5%
+}
+
+.list_area .area-box li h5 {
+    margin: 20px 0 12px 0;
+    width: 60px;
+    padding-left: 8px;
+    border-left: 2px solid #ff8019;
+    background: #f8f8f8;
+    font-size: 12px
+}
+
+.list_area .area-box li.a1 h5 {
+    border-color: #ff8019
+}
+
+.list_area .area-box li.a2 h5 {
+    border-color: #5ad271
+}
+
+.list_area .area-box li.a3 h5 {
+    border-color: #18bbff
+}
+
+.list_area .area-box li.a4 h5 {
+    border-color: #cb4ef4
+}
+
+.list_area .area-box li.a5 h5 {
+    border-color: #ff30be
+}
+
+.list_area .area-box li.a6 h5 {
+    border-color: #ffa60a
+}
+
+.list_area .area-box li.a7 h5 {
+    border-color: #8d47ff
+}
+
+.list_area .area-box li.a8 h5 {
+    border-color: #ff3759;
+    width: 88px
+}
+
+.list_area .area-box li a {
+    margin: 0 10px 4px 0;
+    display: inline-block;
+    height: 21px;
+    line-height: 20px;
+    padding: 0 7px;
+    border: 1px solid #fff;
+    color: #888;
+    border-radius: 2px;
+    transition: color .25s, border-color .25s, background-color .25s
+}
+
+.list_area .area-box li a span {
+    color: #999;
+    margin-left: 4px
+}
+
+.list_area .area-box li a:hover {
+    border-color: #fd3000;
+    color: #fd3000;
+    text-decoration: none
+}
+
+.list_area .area-box li a:hover span {
+    color: #fd3000
+}
+
+.list_area .area-box li a.on, .list_area .area-box li a.on:hover {
+    border: 0;
+    background: #fd3000;
+    padding: 1px 8px;
+    color: #fff
+}
+
+.list_area .area-box li a.on span {
+    color: #fff
+}
+
+.foot-index {
+    margin-top: 60px
+}
+
+.foot-index .foot-main {
+    padding: 30px 0 20px;
+    height: 140px;
+    border-top: 2px solid #e8e8e8
+}
+
+.foot-index .foot-logo {
+    float: left;
+    padding: 25px 0 0 40px;
+    width: 140px
+}
+
+.foot-index .foot-mod {
+    float: left;
+    padding-left: 100px;
+    width: 100px;
+    line-height: 25px
+}
+
+.foot-index .foot-mod a {
+    color: #666
+}
+
+.foot-index .foot-mod .hd a {
+    color: #333;
+    font-size: 15px;
+    margin-bottom: 4px
+}
+
+.foot-index .foot-mod a:hover, .foot-index .foot-mod .hd a:hover {
+    color: #ff5043
+}
+
+.foot-index .foot-link {
+    padding: 12px 0 30px;
+    border-top: 1px solid #e8e8e8
+}
+
+.foot-index .foot-link ul {
+    padding-left: 45px;
+    width: 1000px;
+    overflow: hidden
+}
+
+.foot-index .foot-link li {
+    float: left;
+    width: 140px;
+    padding: 4px 0;
+    line-height: 20px
+}
+
+.foot-index .foot-link a {
+    color: #aaa;
+    *float: left
+}
+
+.foot-index .foot-link a:hover {
+    color: #ff5043
+}
+
+.foot-index .foot-link span {
+    float: right;
+    margin-right: 25px;
+    color: #ddd
+}
+
+.foot-index .foot-link li.l1 {
+    width: 150px
+}
+
+.foot-index .foot-link li.l2 {
+    width: 210px
+}
+
+.foot-index .foot-link li.l3 {
+    width: 260px
+}
+
+.foot-index .foot-link li.l4 {
+    width: 240px
+}

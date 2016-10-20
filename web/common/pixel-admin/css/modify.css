@@ -1,0 +1,9 @@
+/* Hack aplicado para Google Chrome - Campo de Pesquisa - Módulos do Projeto*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.panel-heading-controls.chrhack  { 
+		width:22%;
+	}
+}
+/* Define altura base dos Módulos */
+.btn.btn-sm{height:36px;}
+
