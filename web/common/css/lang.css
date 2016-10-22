@@ -1,0 +1,619 @@
+.en-us body,.en-us div,.en-us dl,.en-us dt,.en-us dd,.en-us ul,.en-us ol,.en-us button,.en-us li,.en-us h1,.en-us h2,.en-us h3,.en-us h4,.en-us h5,.en-us h6,.en-us pre,.en-us form,.en-us fieldset,.en-us input,.en-us textarea,.en-us p,.en-us blockquote,.en-us th,.en-us td {font-family: Arial,'lucida grande',tahoma, verdana,sans-serif;}
+.en-us .photo-all-top a{width: 175px;}
+.en-us .photo-control button{width: 180px;}
+.en-us .gj{width: 180px;}
+.en-us .gj span{background:url("../images/xld.png") no-repeat scroll 158px 16px;width: 153px;}
+.en-us .number{line-height:28px; width:294px;}
+.en-us .number img {width:110px;}
+.en-us .number .fr{line-height:28px; width:176px;word-wrap: break-word; }
+.en-us .all{width:118px;}
+.en-us .all span{width:97px;background:url("../images/xld.png") no-repeat scroll 97px 13px;color:#333; padding-left: 15px;}
+.en-us .no-zone-msg{ margin:74px auto; text-align:center;}
+.en-us .enjz{width:59%; margin:0 auto 50px; line-height:32px;}
+.en-us .shengji button{width:186px;}
+.en-us .btn{font-size:16px;}
+.en-us .my-daller a.dis:hover .tx-tip{line-height:24px;}
+.en-us .notWordbreak .table li{word-break:normal}
+.en-us .table li.en-notes {line-height:24px; word-break: break-all; word-wrap: break-word; }
+.en-us .recharge-up-btn{width:146px;line-height:39px;}
+.en-us .nr1{width:150px;}
+.en-us .jj1{right:13px;}
+.en-us .head div.sz:hover .xlsz{left: -109px; width: 160px; }
+.en-us .head div.sz:hover .xlsz ul li a { max-width:160px; }
+.en-us .yq button {font-size:14px;color:#333;}
+.en-us .yq button:hover {color:#FFF;}
+.en-us .head a.vip { background-color: #ff8a00; width: 98px;  }
+.en-us .head a.vip:hover { background-color: #e57e04; }
+.en-us .vip-gj-rh span{width:100%;}
+.en-us .vip-gj-rh{width:46%;}
+.en-us .agree_bt{width: 86px;}
+.en-us .statement-nr-title{ margin: 8px 7px 0 158px;}
+.en-us .statement-nr-text{margin: 0 7px 0 158px; line-height: 22px;}
+.en-us .like-topr span.friending1:hover .friend-tip1{width:332px;left:-192px;}
+.en-us .gt{width:680px;font-family:Arial;}
+.en-us .oyl{width:462px;}
+.en-us .demo-buy .layui-layer-title{line-height:30px;text-indent:0;}
+.en-us .searchTip div.step1{right:45px;}
+.en-us .zf a.kuaijie { padding-top: 7px; height: 43px; position: relative; top: 2px; }
+.en-us .head a.fhlb { width: 128px; }
+.en-us .topz-icon { background-position: 0 -14px; }
+.en-us .jqssn3 { padding-left: 26px; margin-top: 20px; }
+.en-us .jqssn3 p { width: 50%; text-align: left; }
+.en-us .lxlb span{color: #333;font-weight: bold;}
+.en-us .xld-select li {margin-top: 5px; line-height: 22px;}
+.en-us .ReportPopup{width: 480px;/* height: 320px; */background-color: #fff;}
+.en-us .ReportPopup .layui-layer-btn{clear:both;}
+.en-us .ReportPopup .ReportPopupUl{margin-top: 15px;}
+.en-us .ReportPopup .ReportPopupUl li{float: left;margin-left: 30px;margin-bottom: 25px;}
+.en-us .ReportPopup .ReportPopupUl li label{cursor: pointer;    width: 180px;display: inline-block;}
+.en-us .ReportPopup .ReportPopupUl li i{display: inline-block;width: 17px;height: 17px;margin-right: 5px;vertical-align: middle; }
+.en-us .ReportPopup .layui-layer-content{    padding-bottom: 7px;}
+.en-us .functionMore{min-width:105px;left:-65px;}
+.en-us .noTitleTips .textCenter{text-align: left;line-height: 20px;color: #000;}
+.en-us .noTitleTips .textCenter .deductMoneyTXT{margin-bottom: 10px;}
+.en-us .paymentLayer input{margin-top:10px;width:360px;}
+.en-us .LetterchatContainer .chatCon .tips .TipsCon{width: 455px;line-height: 20px;}
+.en-us .LetterchatContainer .chatCon .tips .TipsCon p{margin-top:5px}
+.en-us #fiftyStateDiv .fiftyStateTXT{line-height: 95px; }
+.en-us #fiftyStateDiv .fiftyStateING {top: 55px;}
+.en-us #fiftyStateDiv .fiftyStateOver { top: 60px;}
+.en-us .RedEnvelopeTC .RedExplain .RemindContent{ left: 144px;}
+.en-us .set-content-title,.en-us .creditcon-tile{width: 35%;}
+.en-us .set-content-con,.en-us .creditcon-con,.en-us .set-email{ display:inline-block; width:64%;line-height:25px; position: relative;}
+.en-us .img-upload #uploader .placeholder .webuploader-pick{width: 150px;}
+.en-us .img-upload #uploader  .statusBar .btns .uploadBtn{width:140px;}
+.en-us .paymentLayer input{margin-top:10px;width:330px;}
+.en-us .paymentLayer .resetPassword-con{text-align: left;}
+.en-us .Password-en{margin-top:32px}
+/*.en-us .other-operationl .upgradeforhim{width: 170px}*/
+.en-us .layui-layer.demo-tc .layui-layer-content { line-height: 24px; }
+.en-us .back-old-btn { bottom: 60px; }
+.en-us #chatTop .LetterfunctionMore{width:100px;}
+
+/*jp*/
+.ja-jp body,.ja-jp div,.ja-jp dl,.ja-jp dt,.ja-jp dd,.ja-jp ul,.ja-jp ol,.ja-jp button,.ja-jp li,.ja-jp h1,.ja-jp h2,.ja-jp h3,.ja-jp h4,.ja-jp h5,.ja-jp h6,.ja-jp pre,.ja-jp form,.ja-jp fieldset,.ja-jp input,.ja-jp textarea,.ja-jp p,.ja-jp blockquote,.ja-jp th,.ja-jp td {font-family: Arial,'lucida grande',tahoma, verdana,sans-serif;}
+.ja-jp .photo-all-top a{width: 175px;}
+.ja-jp  .photo-control button{width: 180px;}
+.ja-jp  .gj{width: 180px;}
+.ja-jp  .gj span{background:url("../images/xld.png") no-repeat scroll 158px 16px;width: 153px;}
+.ja-jp  .number{line-height:28px; width:294px;}
+.ja-jp  .number img {width:110px;}
+.ja-jp  .number .fr{line-height:28px; width:176px;word-break:break-all; }
+.ja-jp  .all{width:118px;}
+.ja-jp  .all span{width:97px;background:url("../images/xld.png") no-repeat scroll 97px 13px;color:#333; padding-left: 15px;}
+.ja-jp  .no-zone-msg{ margin:74px auto; text-align:center;}
+.ja-jp  .enjz{width:59%; margin:0 auto 50px; line-height:32px;}
+.ja-jp  .shengji button{width:186px;}
+.ja-jp  .btn{font-size:16px;}
+.ja-jp  .my-daller a.dis:hover .tx-tip{line-height:24px;}
+.ja-jp  .notWordbreak .table li{word-break:normal}
+.ja-jp  .table li.en-notes {line-height:24px; word-break: break-all; word-wrap: break-word; }
+.ja-jp  .recharge-up-btn{width:146px;line-height:39px;}
+.ja-jp  .nr1{width:150px;}
+.ja-jp  .jj1{right:13px;}
+.ja-jp  .head div.sz:hover .xlsz{left: -109px; width: 160px; }
+.ja-jp  .head div.sz:hover .xlsz ul li a { max-width:160px; }
+.ja-jp  .yq button{font-size:14px;color:#333;}
+.ja-jp .yq button:hover {color:#FFF;}
+.ja-jp .head a.vip { background-color: #ff8a00; width: 75px;  }
+.ja-jp .head a.vip:hover { background-color: #e57e04; }
+.ja-jp .vip-gj-rh span{width:100%;}
+.ja-jp .vip-gj-rh{width:46%;}
+.ja-jp .agree_bt{width: 86px;}
+.ja-jp .statement-nr-title{ margin: 8px 7px 0 158px;}
+.ja-jp .statement-nr-text{margin: 0 7px 0 158px; line-height: 22px;}
+.ja-jp .like-topr span.friending1:hover .friend-tip1{width:332px;left:-192px;}
+.ja-jp .gt{width:680px;font-family:Arial;}
+.ja-jp .oyl{width:462px;}
+.ja-jp .demo-buy .layui-layer-title{line-height:30px;text-indent:0;}
+.ja-jp .searchTip div.step1{right:45px;}
+.ja-jp .zf a.kuaijie { padding-top: 7px; height: 43px; position: relative; top: 2px; }
+.ja-jp .head a.fhlb { width: 128px; }
+.ja-jp .topz-icon { background-position: 0 -14px; }
+.ja-jp .jqssn3 { padding-left: 26px; margin-top: 20px; }
+.ja-jp .jqssn3 p { width: 50%; text-align: left; }
+.ja-jp .lxlb span{color: #333;font-weight: bold;}
+.ja-jp .xld-select li {margin-top: 5px; line-height: 22px;}
+.ja-jp .ReportPopup{width: 480px;/* height: 320px; */background-color: #fff;}
+.ja-jp .ReportPopup .layui-layer-btn{clear:both;}
+.ja-jp .ReportPopup .ReportPopupUl{margin-top: 15px;}
+.ja-jp .ReportPopup .ReportPopupUl li{float: left;margin-left: 30px;margin-bottom: 25px;}
+.ja-jp .ReportPopup .ReportPopupUl li label{cursor: pointer;    width: 180px; height:24px; display: inline-block;}
+/* .ja-jp .ReportPopup .ReportPopupUl li i{display: inline-block;width: 17px;height: 17px;margin-right: 5px;vertical-align: middle; } */
+.ja-jp .ReportPopup .layui-layer-content{    padding-bottom: 7px;}
+.ja-jp .functionMore{min-width:125px;left:-85px;}
+.ja-jp .noTitleTips .textCenter{text-align: left;line-height: 20px;color: #000;}
+.ja-jp .noTitleTips .textCenter .deductMoneyTXT{margin-bottom: 10px;}
+.ja-jp .paymentLayer input{margin-top:10px;width:360px;}
+.ja-jp .LetterchatContainer .chatCon .tips .TipsCon{width: 435px;line-height: 20px;}
+.ja-jp .LetterchatContainer .chatCon .tips .TipsCon p{margin-top:5px}
+.ja-jp #fiftyStateDiv .fiftyStateTXT{line-height: 95px; }
+.ja-jp #fiftyStateDiv .fiftyStateING {top: 55px;}
+.ja-jp #fiftyStateDiv .fiftyStateOver { top: 60px;}
+.ja-jp .RedEnvelopeTC .RedExplain .RemindContent{ left: 173px;}
+.ja-jp .set-content-title,.ja-jp .creditcon-tile{width: 35%;}
+.ja-jp .set-content-con,.ja-jp .creditcon-con,.ja-jp .set-email{ display:inline-block; width:64%;line-height:25px; position: relative;}
+.ja-jp .img-upload #uploader .placeholder .webuploader-pick{width: 150px;}
+.ja-jp  .img-upload #uploader  .statusBar .btns .uploadBtn{width:140px;}
+.ja-jp .paymentLayer input{margin-top:10px;width:330px;}
+.ja-jp .paymentLayer .resetPassword-con{text-align: left;}
+.ja-jp .Password-en{margin-top:32px}
+.ja-jp #hiddenIM .newsArrive{width:124px;}
+/*.ja-jp .other-operationl .upgradeforhim{width: 170px}*/
+.ja-jp .head a.vip { background-color: #ff8a00; width: 106px;  }
+.ja-jp .head a.vip:hover { background-color: #e57e04; }
+.ja-jp .nr1{width:130px;}
+.ja-jp .jj1{right:13px;}
+.ja-jp .head div.sz:hover .xlsz{left: -89px; width: 140px; }
+.ja-jp .head div.sz:hover .xlsz ul li a { max-width:140px; }
+.ja-jp .common-zone-detail .layui-layer-content .detail_box .detail_more { margin-left: 180px; }
+.ja-jp .jqssn3 { padding-left: 26px;  margin-top: 20px; }
+.ja-jp .jqssn3 p { width: 50%;  text-align: left; }
+.ja-jp .head a.xbsm {     width: 121px;  }
+.ja-jp .lowerRightBottom .upgradeTipsCon {margin-top: 15px;padding:0 20px;}
+.ja-jp .RedEnvelopeTC .tips{    line-height: 12px;font-size: 12px;}
+.ja-jp .ihome-buy-first { margin-left: 16px; margin-right: 16px; }
+.ja-jp .recharge-adv .recharge-coins{margin:0 25px;}
+.ja-jp .recharge-adv div{margin:0;width:182px;padding:20px;}
+.ja-jp .vip-Credit-con .vip-Credit{width:690px;}
+.ja-jp .vip-Credit-con .vip-Credit span{ width:593px; background-position: 599px 13px; text-align: center; }
+.ja-jp .vip-Credit-con .vip-add{padding-left:0px ;}
+.ja-jp .credit-detail .credit-detail-title{    width: 250px;}
+.ja-jp .th-bg li.w135 { line-height: 25px; }
+
+/*ru-ru*/
+.ru-ru body,.ru-ru div,.ru-ru dl,.ru-ru dt,.ru-ru dd,.ru-ru ul,.ru-ru ol,.ru-ru button,.ru-ru li,.ru-ru h1,.ru-ru h2,.ru-ru h3,.ru-ru h4,.ru-ru h5,.ru-ru h6,.ru-ru pre,.ru-ru form,.ru-ru fieldset,.ru-ru input,.ru-ru textarea,.ru-ru p,.ru-ru blockquote,.ru-ru th,.ru-ru td {font-family: Arial,'lucida grande',tahoma, verdana,sans-serif;}
+.ru-ru .photo-all-top a{width: 175px;}
+.ru-ru .photo-control button{width: 180px;}
+.ru-ru .gj{width: 241px;}
+.ru-ru .gj span{background:url("../images/xld.png") no-repeat scroll 209px 16px;width: 196px;}
+.ru-ru .sxan .bnt-lan { width: 124px; }
+.ru-ru  .number{line-height:28px; width:294px;}
+.ru-ru  .number img {width:110px;}
+.ru-ru  .number .fr{line-height:28px; width:176px;word-break:break-all; }
+.ru-ru  .all{width:118px;}
+.ru-ru  .all span{width:111px;background:url("../images/xld.png") no-repeat scroll 105px 13px;color:#333; padding-left: 5px;}
+.ru-ru  .no-zone-msg{ margin:74px auto; text-align:center;}
+.ru-ru  .enjz{width:59%; margin:0 auto 50px; line-height:32px;}
+.ru-ru  .shengji button{width:186px;}
+.ru-ru  .btn{font-size:16px;}
+.ru-ru  .my-daller a.dis:hover .tx-tip{line-height:24px;}
+.ru-ru  .notWordbreak .table li{word-break:normal}
+.ru-ru  .table li.en-notes {line-height:24px; /* word-break: break-all; word-wrap: break-word;  */}
+.ru-ru  .recharge-up-btn{width:146px;line-height:39px;}
+.ru-ru  .nr1{width:190px;}
+.ru-ru  .jj1{right:13px;}
+.ru-ru  .head div.sz:hover .xlsz{left: -149px; width: 200px; }
+.ru-ru  .head div.sz:hover .xlsz ul li a { max-width:200px; }
+.ru-ru  .yq button{font-size:14px;color:#333;width: 137px;}
+.ru-ru .yq button:hover {color:#FFF;}
+.ru-ru .head a.vip { background-color: #ff8a00; width: 112px;  }
+.ru-ru .head a.vip:hover { background-color: #e57e04; }
+.ru-ru .vip-gj-rh span{width:100%;}
+.ru-ru .vip-gj-rh{width:46%;}
+.ru-ru .nr ul li p button { width: 92px; margin-left: 6px;  }
+.ru-ru .nr ul li p button.agree_bt{width: 108px;}
+.ru-ru .statement-nr-title{ margin: 8px 7px 0 158px;}
+.ru-ru .statement-nr-text{margin: 0 7px 0 158px; line-height: 22px;}
+.ru-ru .like-topr span.friending1:hover .friend-tip1{width:332px;left:-192px;}
+.ru-ru .gt{width:680px;font-family:Arial;}
+.ru-ru .oyl{width:462px;}
+.ru-ru .demo-buy .layui-layer-title{line-height:30px;text-indent:0;}
+.ru-ru .searchTip div.step1{right:45px;}
+.ru-ru .zf a.kuaijie { padding-top: 7px; height: 43px; position: relative; top: 2px; }
+.ru-ru .head a.fhlb { width: 142px; }
+.ru-ru .head a.xbsm { width: 128px; }
+.ru-ru .topz-icon { background-position: 0 -14px; }
+.ru-ru .jqssn3 { padding-left: 26px; margin-top: 20px; }
+.ru-ru .jqssn3 p { width: 50%; text-align: left; }
+.ru-ru .lxlb span{color: #333;font-weight: bold;}
+.ru-ru .xld-select li {margin-top: 5px; line-height: 22px;}
+.ru-ru .ReportPopup{width: 480px;/* height: 320px; */background-color: #fff;}
+.ru-ru .ReportPopup .layui-layer-btn{clear:both;}
+.ru-ru .ReportPopup .ReportPopupUl{margin-top: 15px;}
+.ru-ru .ReportPopup .ReportPopupUl li{float: left;margin-left: 10px;margin-bottom: 25px;}
+.ru-ru .ReportPopup .ReportPopupUl li label{cursor: pointer;    width: 180px;display: inline-block;}
+.ru-ru .ReportPopup .ReportPopupUl li:nth-child(4) label {width:227px;}
+.ru-ru .ReportPopup .layui-layer-content{    padding-bottom: 7px;}
+.ru-ru .functionMore{min-width:180px;left:-135px;}
+.ru-ru .functionMore li{    width: 170px;}
+.ru-ru .noTitleTips .textCenter{text-align: left;line-height: 20px;color: #000;}
+.ru-ru .noTitleTips .textCenter .deductMoneyTXT{margin-bottom: 10px;}
+.ru-ru .paymentLayer input{margin-top:10px;width:360px;}
+.ru-ru .LetterchatContainer .chatCon .tips .TipsCon{width: 500px;line-height: 20px;}
+.ru-ru .LetterchatContainer .chatCon .tips .TipsCon p{margin-top:5px}
+.ru-ru #fiftyStateDiv .fiftyStateTXT{padding-top:30px;  line-height: 22px; }
+.ru-ru #fiftyStateDiv .fiftyStateING {top: 55px;}
+.ru-ru #fiftyStateDiv .fiftyStateOver { top: 60px;}
+.ru-ru .RedEnvelopeTC .RedExplain .RemindContent{ left: 200px;}
+.ru-ru .RedEnvelopeTC .RedExplain .RemindContent{width:210px;}
+.ru-ru .set-content-title,.ru-ru .creditcon-tile{width: 35%;}
+.ru-ru .set-content-con,.ru-ru .creditcon-con,.ru-ru .set-email{ display:inline-block; width:64%;line-height:25px; position: relative;}
+.ru-ru .img-upload #uploader .placeholder .webuploader-pick{width: 150px;}
+.ru-ru  .img-upload #uploader  .statusBar .btns .uploadBtn{width:140px;}
+.ru-ru .paymentLayer input{margin-top:10px;width:330px;}
+.ru-ru .paymentLayer .resetPassword-con{text-align: left;}
+.ru-ru .Password-en{margin-top:32px}
+.ru-ru #hiddenIM .newsArrive{width:130px;}
+.ru-ru #showIM{width:222px;}
+.ru-ru .safetyTips p{    overflow: hidden; white-space: nowrap;text-overflow: ellipsis;}
+/*.ru-ru .other-operationl .upgradeforhim{width: 170px}*/
+.ru-ru .ss { width: 194px; }
+.ru-ru .ss input { width: 143px; }
+.ru-ru .lowerRightBottom .upgradeTipsCon {margin-top: 20px;padding:0 20px;}
+.ru-ru .lowerRightBottom .FunBtnUl .sendBtn{width:80px;}
+.ru-ru #chatTop .LetterfunctionMore{width:180px;}
+.ru-ru .popPLetterWrapLable{width: 100px;}
+.ru-ru .popPLetterTo {width: 410px;}
+.ru-ru .giftCon1 .sendContent{width: 400px !important;}
+.ru-ru .RedEnvelopeTC .tips{    line-height: 12px;font-size: 12px;}
+.ru-ru .RedEnvelopeTC .RedEnvelopeTCLeft {    width: 105px}
+.ru-ru .RedEnvelopeTC .RedEnvelopeTCRight {width: 315px}
+.ru-ru .consignee-wrap .serBtn{width: 120px;}
+.ru-ru .myOrder .mid-line{    width: 403px;}
+.ru-ru .myOrder .downIconWrap {width:165px;}
+.ru-ru .myOrder .table-head .w310{width:275px;}
+.ru-ru .dsf .kk { width: 103px; }
+.ru-ru .likeme-pop-name1 { position: relative; left: -9px; }
+.ru-ru .likeme-pop-name2 { position: relative; left: -20px; }
+.ru-ru .ilike-pop-top .popPLetterWrapLable { position: relative; left: -8px; }
+.ru-ru .ilike-pop-bottom .popPLetterWrapLable { position: relative; left: -19px; }
+.ru-ru .mutuallike-btn { width: 160px !important; }
+.ru-ru .forget-loginbox a { width: 92px; }
+.ru-ru .forget-loginbox a.mr { width: 70px; }
+.ru-ru .forWhoInput{width:375px;}
+.ru-ru .recharge-top { padding-bottom: 12px; }
+.ru-ru .table .firstUl1 li.w115{line-height: 20px;}
+.ru-ru .th-bg li.w135{line-height: 18px;}
+.ru-ru .recharge-diy p{text-align:center;}
+.ru-ru .recharge-diy .recharge-sr{margin:5px;}
+.ru-ru .vip-Credit-con .vip-Credit{width:690px;}
+.ru-ru .vip-Credit-con .vip-Credit span{ width: 593px; background-position:599px 13px; text-align: center;}
+.ru-ru .vip-Credit-con .vip-add{padding-left:0px ;}
+.ru-ru .credit-detail .credit-detail-title{    width: 250px;}
+.ru-ru .gift-operation .gift-Rebate { position: relative; top: -7px; }
+.ru-ru .meminfo-send-email { width: 132px;}
+.ru-ru .diy-upload { width: 188px; }
+.ru-ru .meminfo-fnayi-num { position: relative; top: 24px; }
+.ru-ru #fiftyMale {line-height: 25px; }
+.ru-ru .invitation-upload { height: 80px; line-height: 22px; padding-top: 40px; }
+.ru-ru .vip-gj-lf span.ml10 { margin-left: 5px; }
+.ru-ru .vip-gj-lf span.mr10 { margin-right: 5px;  }
+.ru-ru .bdra15.ban { width: 100px; }
+.ru-ru .photowall-control .dels, .ru-ru .photowall-control .cancel-wall { width: 92px; }
+.ru-ru .balance .hui { display: block;}
+
+
+
+/*es-es*/
+.es-es body,.es-es div,.es-es dl,.es-es dt,.es-es dd,.es-es ul,.es-es ol,.es-es button,.es-es li,.es-es h1,.es-es h2,.es-es h3,.es-es h4,.es-es h5,.es-es h6,.es-es pre,.es-es form,.es-es fieldset,.es-es input,.es-es textarea,.es-es p,.es-es blockquote,.es-es th,.es-es td {font-family: Arial,'lucida grande',tahoma, verdana,sans-serif;}
+.es-es .photo-all-top a{width: 175px;}
+.es-es  .photo-control button {width: 180px;}
+.es-es  .photo-control button.img-up {width: 122px;}
+.es-es  .photo-control button.photo-control-all { width: 197px; }
+.es-es  .photo-control button.photo-control-delete { width: 122px; }
+.es-es  .photo-control button.photo-control-first { width: 232px; }
+.es-es  .gj{width: 180px;}
+.es-es  .gj span{background:url("../images/xld.png") no-repeat scroll 158px 16px;width: 153px;}
+.es-es  .number{line-height:28px; width:307px;}
+.es-es  .number img {width:110px;}
+.es-es  .number .fr{line-height:28px; width:192px; word-break:break-word; }
+.es-es  .ss { width: 182px; }
+.es-es  .ss input { width: 131px; }
+.es-es  .all{width:118px;}
+.es-es  .all span{width:97px;background:url("../images/xld.png") no-repeat scroll 97px 13px;color:#333; padding-left: 15px;}
+.es-es  .no-zone-msg{ margin:74px auto; text-align:center;}
+.es-es  .enjz{width:59%; margin:0 auto 50px; line-height:32px;}
+.es-es  .shengji button{width:210px;}
+.es-es  .btn{font-size:16px;}
+.es-es  .my-daller a.dis:hover .tx-tip{line-height:24px;}
+.es-es  .notWordbreak .table li{word-break:normal}
+.es-es  .notWordbreak .table .firstUl li{line-height: 33px;}
+.es-es  .table li.w108{line-height: 19px;}
+.es-es  .table li.en-notes {line-height:24px; /* word-break: break-all; word-wrap: break-word;  */}
+.es-es  .recharge-up-btn{width:146px;line-height:39px;}
+.es-es  .nr1{width:150px;}
+.es-es  .jj1{right:13px;}
+.es-es  .head div.sz:hover .xlsz{left: -109px; width: 160px; }
+.es-es  .head div.sz:hover .xlsz ul li a { max-width:160px; }
+.es-es  .yq button{font-size:14px; color:#333; width: 137px;}
+.es-es .yq button:hover {color:#FFF;}
+.es-es .head a.vip { background-color: #ff8a00; width: 96px;  }
+.es-es .head a.vip:hover { background-color: #e57e04; }
+.es-es .vip-gj-rh span{width:100%;}
+.es-es .vip-gj-rh{width:46%;}
+.es-es .nr ul li p button { width: 66px; margin-left: 6px; word-break: break-all;    overflow: hidden; padding: 0 1px;  }
+.es-es .nr ul li p button.agree_bt{width: 106px;}
+.es-es .statement-nr-title{ margin: 8px 7px 0 158px;}
+.es-es .statement-nr-text{margin: 0 7px 0 158px; line-height: 22px;}
+.es-es .like-topr span.friending1:hover .friend-tip1{width:332px;left:-192px;}
+.es-es .gt{width:680px;font-family:Arial;}
+.es-es .oyl{width:462px;}
+.es-es .demo-buy .layui-layer-title{line-height:30px;text-indent:0;}
+.es-es .searchTip div.step1{right:45px;}
+.es-es .zf a.kuaijie { padding-top: 7px; height: 43px; position: relative; top: 2px; }
+.es-es .head a.fhlb { width: 150px; }
+.es-es .head a.xbsm {  width: 220px;  line-height: 39px;  padding-top: 7px; height: 43px; }
+.es-es .topz-icon { background-position: 0 -14px; }
+.es-es .jqssn3 { padding-left: 26px; margin-top: 20px; }
+.es-es .jqssn3 p { width: 50%; text-align: left; }
+.es-es .lxlb span{color: #333;font-weight: bold;}
+.es-es .xld-select li {margin-top: 5px; line-height: 22px;}
+.es-es .ReportPopup{width: 480px;/* height: 320px; */background-color: #fff;}
+.es-es .ReportPopup .layui-layer-btn{clear:both;}
+.es-es .ReportPopup .ReportPopupUl{margin-top: 15px;}
+.es-es .ReportPopup .ReportPopupUl li{float: left;margin-left: 30px;margin-bottom: 25px;}
+.es-es .ReportPopup .ReportPopupUl li label{cursor: pointer;    width: 180px;display: inline-block;}
+.es-es .ReportPopup .layui-layer-content{    padding-bottom: 7px;}
+.es-es .functionMore{min-width:125px;left:-78px;}
+.es-es .noTitleTips .textCenter{text-align: left;line-height: 20px;color: #000;}
+.es-es .noTitleTips .textCenter .deductMoneyTXT{margin-bottom: 10px;}
+.es-es .paymentLayer input{margin-top:10px;width:360px;}
+.es-es .LetterchatContainer .chatCon .tips .TipsCon{width: 455px;line-height: 20px;}
+.es-es .LetterchatContainer .chatCon .tips .TipsCon p{margin-top:5px}
+.es-es #fiftyStateDiv .fiftyStateTXT{padding-top:30px;  line-height: 22px; }
+.es-es #fiftyStateDiv .fiftyStateING {top: 55px;}
+.es-es #fiftyStateDiv .fiftyStateOver { top: 60px;}
+.es-es .RedEnvelopeTC .RedExplain .RemindContent{ left: 95px;}
+.es-es .set-content-title,.es-es .creditcon-tile{width: 35%;}
+.es-es .set-content-con,.es-es .creditcon-con,.es-es .set-email{ display:inline-block; width:64%;line-height:25px; position: relative;}
+.es-es .img-upload #uploader .placeholder .webuploader-pick{width: 150px;}
+.es-es  .img-upload #uploader  .statusBar .btns .uploadBtn{width:140px;}
+.es-es .paymentLayer input{margin-top:10px;width:330px;}
+.es-es .paymentLayer .resetPassword-con{text-align: left;}
+.es-es .Password-en{margin-top:32px}
+.es-es #hiddenIM .newsArrive{width:124px;}
+.es-es #showIM{width:220px;}
+/*.es-es .other-operationl .upgradeforhim{width: 170px}*/
+.es-es #chatTop .LetterfunctionMore {width:115px;}
+.es-es .popPLetterWrapLable{width: 80px;}
+.es-es .popPLetterTo {width: 430px;}
+.es-es .giftCon1 .sendContent{width: 420px !important;}
+.es-es .RedEnvelopeTCLeft .marT100{margin-top:120px; line-height:15px}
+.es-es .RedEnvelopeTC .RedEnvelopeTCRight{    width: 320px;}
+.es-es .myOrder .order-table .inblok{padding:2px;}
+.es-es .consignee-wrap .serBtn{width: 120px;}
+.es-es .myOrder .mid-line{    width: 380px;}
+.es-es .myOrder .downIconWrap {width:200px;}
+.es-es .myOrder .table-head .w310{width:245px;}
+.es-es .dsf .kk { margin: 0; width: 115px; }
+.es-es .bdra15.ban { width: 104px; }
+.es-es .likeme-pop-name2 {position: relative; left: -14px;}
+.es-es .ilike-pop-bottom .popPLetterWrapLable { position: relative; left: -14px; }
+.es-es .Cancel-like-pop { width: 245px !important; }
+.es-es .Cancel-like-mutual { width: 260px !important; }
+.es-es .visitor-btn { width: 235px !important; }
+.es-es .forget-loginbox a { width: 82px; }
+.es-es #showIMmini{width:195px;}
+.es-es .forWhoInput{width:380px;}
+.es-es .recharge-top { padding-bottom: 12px; }
+.es-es .ihome-buy-first { margin-left: 16px; margin-right: 16px; }
+.es-es .table .firstUl1 li.w115{line-height: 20px;}
+/* .es-es .th-bg li.w135{line-height: 18px;} */
+.es-es .recharge-adv div{height: 160px;}
+.es-es .vip-Credit-con .vip-Credit{width:690px;}
+.es-es .vip-Credit-con .vip-Credit span{width:591px;background-position:598px 13px;text-align: center;}
+.es-es .vip-Credit-con .vip-add{padding-left:0px ;}
+.es-es .credit-detail .credit-detail-title{    width: 250px;}
+.es-es .gift-operation .gift-Rebate { width: 103px; }
+.es-es .gift-operation .gift-delete { width: 65px; }
+.es-es #fiftyMale {line-height: 25px; }
+.es-es .th-bg li.w135{line-height: 18px;}
+.es-es .recharge-top span.rec-2, .es-es .recharge-top span.rec-3 { position: relative; top: -5px; }
+.es-es .recharge-mid h3.rec-title { position: relative;  top: -1px;  left: -55px; }
+.es-es .recharge-mid h3.rec-title span { position: relative;    top: -16px;  right: -98px;  width: 270px; }
+.es-es .diy-upload { width: 134px; }
+.es-es .photowall-control .dels, .es-es .photowall-control .cancel-wall { width: 104px; white-space: nowrap; }
+.es-es .meminfo-fnayi-num { position: relative; top: 24px; }
+.es-es .lf-mutual {   width: 210px;    height: 20px; }
+.es-es .inblok.h300.w450 .common-btn { width: 180px; }
+.es-es .forSelfInput { width: 600px; }
+
+/*ko-kr*/
+.ko-kr body,.ko-kr div,.ko-kr dl,.ko-kr dt,.ko-kr dd,.ko-kr ul,.ko-kr ol,.ko-kr button,.ko-kr li,.ko-kr h1,.ko-kr h2,.ko-kr h3,.ko-kr h4,.ko-kr h5,.ko-kr h6,.ko-kr pre,.ko-kr form,.ko-kr fieldset,.ko-kr input,.ko-kr textarea,.ko-kr p,.ko-kr blockquote,.ko-kr th,.ko-kr td {font-family: Arial,'lucida grande',tahoma, verdana,sans-serif;}
+.ko-kr .photo-all-top a{width: 175px;}
+.ko-kr  .photo-control button{width: 180px;}
+.ko-kr  .gj{width: 180px;}
+.ko-kr  .gj span{background:url("../images/xld.png") no-repeat scroll 158px 16px;width: 153px;}
+.ko-kr  .number{line-height:28px; width:294px;}
+.ko-kr  .number img {width:110px;}
+.ko-kr  .number .fr{line-height:28px; width:176px;word-break:break-all; }
+.ko-kr  .all{width:118px;}
+.ko-kr  .all span{width:97px;background:url("../images/xld.png") no-repeat scroll 97px 13px;color:#333; padding-left: 15px;}
+.ko-kr  .no-zone-msg{ margin:74px auto; text-align:center;}
+.ko-kr  .enjz{width:59%; margin:0 auto 50px; line-height:32px;}
+.ko-kr  .shengji button{width:186px;}
+.ko-kr  .btn{font-size:16px;}
+.ko-kr  .my-daller a.dis:hover .tx-tip{line-height:24px;}
+.ko-kr  .notWordbreak .table li{word-break:normal}
+.ko-kr  .table li.en-notes {line-height:24px; word-break: break-all; word-wrap: break-word; }
+.ko-kr  .recharge-up-btn{width:146px;line-height:39px;}
+.ko-kr  .nr1{width:110px;}
+.ko-kr  .jj1{right:13px;}
+.ko-kr  .head div.sz:hover .xlsz{left: -69px; width: 120px; }
+.ko-kr  .head div.sz:hover .xlsz ul li a { max-width:120px; }
+.ko-kr  .yq button{font-size:14px;color:#333;}
+.ko-kr .yq button:hover {color:#FFF;}
+.ko-kr .head a.vip { background-color: #ff8a00; width: 92px;  }
+.ko-kr .head a.vip:hover { background-color: #e57e04; }
+.ko-kr .vip-gj-rh span{width:100%;}
+.ko-kr .vip-gj-rh{width:46%;}
+.ko-kr .agree_bt{width: 86px;}
+.ko-kr .statement-nr-title{ margin: 8px 7px 0 158px;}
+.ko-kr .statement-nr-text{margin: 0 7px 0 158px; line-height: 22px;}
+.ko-kr .like-topr span.friending1:hover .friend-tip1{width:332px;left:-192px;}
+.ko-kr .gt{width:680px;font-family:Arial;}
+.ko-kr .oyl{width:462px;}
+.ko-kr .demo-buy .layui-layer-title{line-height:30px;text-indent:0;}
+.ko-kr .searchTip div.step1{right:45px;}
+.ko-kr .zf a.kuaijie { padding-top: 7px; height: 43px; position: relative; top: 2px; }
+.ko-kr .head a.fhlb { width: 138px; }
+.ko-kr .head a.xbsm {width: 118px;}
+.ko-kr .topz-icon { background-position: 0 -14px; }
+.ko-kr .jqssn3 { padding-left: 26px; margin-top: 20px; }
+.ko-kr .jqssn3 p { width: 50%; text-align: left; }
+.ko-kr .lxlb span{color: #333;font-weight: bold;}
+.ko-kr .xld-select li {margin-top: 5px; line-height: 22px;}
+.ko-kr .ReportPopup{width: 480px;/* height: 320px; */background-color: #fff;}
+.ko-kr .ReportPopup .layui-layer-btn{clear:both;}
+.ko-kr .ReportPopup .ReportPopupUl{margin-top: 15px;}
+.ko-kr .ReportPopup .ReportPopupUl li{float: left;margin-left: 30px;margin-bottom: 25px;}
+.ko-kr .ReportPopup .ReportPopupUl li label{cursor: pointer;    width: 180px;display: inline-block;}
+.ko-kr .ReportPopup .layui-layer-content{    padding-bottom: 7px;}
+.ko-kr .functionMore{min-width:105px;left:-65px;}
+.ko-kr .noTitleTips .textCenter{text-align: left;line-height: 20px;color: #000;}
+.ko-kr .noTitleTips .textCenter .deductMoneyTXT{margin-bottom: 10px;}
+.ko-kr .paymentLayer input{margin-top:10px;width:360px;}
+.ko-kr .LetterchatContainer .chatCon .tips .TipsCon{width: 455px;line-height: 20px;}
+.ko-kr .LetterchatContainer .chatCon .tips .TipsCon p{margin-top:5px}
+.ko-kr #fiftyStateDiv .fiftyStateTXT{line-height: 95px; }
+.ko-kr #fiftyStateDiv .fiftyStateING {top: 55px;}
+.ko-kr #fiftyStateDiv .fiftyStateOver { top: 60px;}
+.ko-kr .RedEnvelopeTC .RedExplain .RemindContent{ left: 110px;}
+.ko-kr .set-content-title,.ko-kr .creditcon-tile{width: 35%;}
+.ko-kr .set-content-con,.ko-kr .creditcon-con,.ko-kr .set-email{ display:inline-block; width:64%;line-height:25px; position: relative;}
+.ko-kr .img-upload #uploader .placeholder .webuploader-pick{width: 150px;}
+.ko-kr  .img-upload #uploader  .statusBar .btns .uploadBtn{width:140px;}
+.ko-kr .paymentLayer input{margin-top:10px;width:330px;}
+.ko-kr .paymentLayer .resetPassword-con{text-align: left;}
+.ko-kr .Password-en{margin-top:32px}
+/*.ko-kr .other-operationl .upgradeforhim{width: 170px}*/
+.ko-kr .lowerRightBottom .upgradeTipsCon {margin-top: 20px;padding:0 20px;}
+.ko-kr .popPLetterWrapLable{width: 110px;}
+.ko-kr .popPLetterTo {width: 400px;}
+.ko-kr .giftCon1 .sendContent{width: 390px !important;}
+.ko-kr .consignee-wrap .serBtn{width: 120px;}
+.ko-kr .myOrder .mid-line{width: 400px;}
+.ko-kr .myOrder .downIconWrap {width:200px;}
+.ko-kr .myOrder .table-head .w310{width:245px;}
+.ko-kr .forSelfInput{width:630px;}
+.ko-kr .dsf .kk { margin: 0; width: 115px; }
+.ko-kr .likeme-pop-top .popPLetterWrapLable, .ko-kr .likeme-pop-bottom .popPLetterWrapLable,
+.ko-kr .ilike-pop-top .popPLetterWrapLable, .ko-kr .ilike-pop-bottom .popPLetterWrapLable { width: 102px; }
+.ko-kr .likeme-pop-top .popPLetterTo, .ko-kr .ilike-pop-top .popPLetterTo { width: 422px; }
+.ko-kr .likeme-pop-bottom .popPLetterWrap, .ko-kr .ilike-pop-bottom .popPLetterWrap { width: 436px;  }
+.ko-kr .likeme-pop-bottom #chatConBottom .sendContent, .ko-kr .ilike-pop-bottom #chatConBottom .sendContent { width: 411px !important; }
+.ko-kr .ihome-buy-first { margin-left: 16px; margin-right: 16px; }
+.ko-kr .gift-operation .gift-Rebate { position: relative; top: -7px; line-height: 14px; }
+.ko-kr #fiftyMale {line-height: 25px; }
+.ko-kr .photowall-control .dels, .ko-kr .photowall-control .cancel-wall { width: 102px; }
+.ko-kr .invitation-upload { height: 80px; line-height: 22px; padding-top: 40px; }
+.ko-kr .diy-upload { width: 148px; }
+.ko-kr .recharge-adv div { height: 152px; padding: 20px 12px 20px 12px; width: 184px; }
+
+/*de-de*/
+.de-de body,.de-de div,.de-de dl,.de-de dt,.de-de dd,.de-de ul,.de-de ol,.de-de button,.de-de li,.de-de h1,.de-de h2,.de-de h3,.de-de h4,.de-de h5,.de-de h6,.de-de pre,.de-de form,.de-de fieldset,.de-de input,.de-de textarea,.de-de p,.de-de blockquote,.de-de th,.de-de td {font-family: Arial,'lucida grande',tahoma, verdana,sans-serif;}
+.de-de .photo-all-top a{width: 175px;}
+.de-de  .photo-control button{width: 180px;}
+.de-de  .photo-control button.photo-control-all{width: 208px;}
+.de-de  .gj{width: 180px;}
+.de-de  .gj span{background:url("../images/xld.png") no-repeat scroll 158px 16px;width: 153px;}
+.de-de  .number{line-height:28px; width:307px;}
+.de-de  .number img {width:110px;}
+.de-de  .number .fr{line-height:28px; width:192px;word-break:break-all; }
+.de-de  .all{width:118px;}
+.de-de  .all span{width:97px;background:url("../images/xld.png") no-repeat scroll 97px 13px;color:#333; padding-left: 15px;}
+.de-de  .no-zone-msg{ margin:74px auto; text-align:center;}
+.de-de  .enjz{width:59%; margin:0 auto 50px; line-height:32px;}
+.de-de  .shengji button{width:186px;}
+.de-de  .btn{font-size:16px;}
+.de-de  .my-daller a.dis:hover .tx-tip{line-height:24px;}
+.de-de  .notWordbreak .table li{word-break:normal}
+.de-de  .table li.en-notes {line-height:24px; word-break: break-word; word-wrap: break-word; }
+.de-de  .recharge-up-btn{width:146px;line-height:39px;}
+.de-de  .nr1{width:150px;}
+.de-de  .jj1{right:13px;}
+.de-de  .head div.sz:hover .xlsz{left: -109px; width: 160px; }
+.de-de  .head div.sz:hover .xlsz ul li a { max-width:160px; }
+.de-de  .yq button{font-size:14px;color:#333;width: 130px;}
+.de-de  .yq button:hover { color: #FFF; }
+.de-de .head a.vip { background-color: #ff8a00; width: 94px;  }
+.de-de .head a.vip:hover { background-color: #e57e04; }
+.de-de .vip-gj-rh span{width:100%;}
+.de-de .vip-gj-rh{width:46%;}
+.de-de .nr ul li p button { overflow: hidden; white-space: nowrap; width: 75px; }
+.de-de .nr ul li p button.agree_bt{width: 108px;}
+.de-de .statement-nr-title{ margin: 8px 7px 0 158px;}
+.de-de .statement-nr-text{margin: 0 7px 0 158px; line-height: 22px;}
+.de-de .like-topr span.friending1:hover .friend-tip1{width:332px;left:-192px;}
+.de-de .gt{width:680px;font-family:Arial;}
+.de-de .oyl{width:462px;}
+.de-de .demo-buy .layui-layer-title{line-height:30px;text-indent:0;}
+.de-de .searchTip div.step1{right:45px;}
+.de-de .zf a.kuaijie { padding-top: 7px; height: 43px; position: relative; top: 2px; }
+.de-de .head a.fhlb { width: 151px; }
+.de-de .head a.xbsm {  width: 220px;  line-height: 39px;  padding-top: 7px; height: 43px;}
+.de-de .topz-icon { background-position: 0 -14px; }
+.de-de .jqssn3 { padding-left: 26px; margin-top: 20px; }
+.de-de .jqssn3 p { width: 50%; text-align: left; }
+.de-de .lxlb span{color: #333;font-weight: bold;}
+.de-de .xld-select li {margin-top: 5px; line-height: 22px;}
+.de-de .ReportPopup{width: 480px;/* height: 320px; */background-color: #fff;}
+.de-de .ReportPopup .layui-layer-btn{clear:both;}
+.de-de .ReportPopup .ReportPopupUl{margin-top: 15px;}
+.de-de .ReportPopup .ReportPopupUl li{float: left;margin-left: 30px;margin-bottom: 25px;}
+.de-de .ReportPopup .ReportPopupUl li label{cursor: pointer;    width: 180px;display: inline-block;}
+.de-de .ReportPopup .layui-layer-content{    padding-bottom: 7px;}
+.de-de .functionMore{min-width:130px;left:-85px;}
+.de-de .functionMore li{width:120px;}
+.de-de .noTitleTips .textCenter{text-align: left;line-height: 20px;color: #000;}
+.de-de .noTitleTips .textCenter .deductMoneyTXT{margin-bottom: 10px;}
+.de-de .paymentLayer input{margin-top:10px;width:360px;}
+.de-de .LetterchatContainer .chatCon .tips .TipsCon{width: 455px;line-height: 20px;}
+.de-de .LetterchatContainer .chatCon .tips .TipsCon p{margin-top:5px}
+.de-de #fiftyStateDiv .fiftyStateTXT{padding-top:30px; line-height: 22px; }
+.de-de #fiftyStateDiv .fiftyStateING {top: 55px;}
+.de-de #fiftyStateDiv .fiftyStateOver { top: 60px;}
+.de-de .RedEnvelopeTC .RedExplain .RemindContent{ left: 145px;}
+.de-de .set-content-title,.de-de .creditcon-tile{width: 35%;}
+.de-de .set-content-con,.de-de .creditcon-con,.de-de .set-email{ display:inline-block; width:64%;line-height:25px; position: relative;}
+.de-de .img-upload #uploader .placeholder .webuploader-pick{width: 150px;}
+.de-de .img-upload #uploader  .statusBar .btns .uploadBtn{width:140px;}
+.de-de .paymentLayer input{margin-top:10px;width:330px;}
+.de-de .paymentLayer .resetPassword-con{text-align: left;}
+.de-de .Password-en{margin-top:32px}
+.de-de #hiddenIM .newsArrive{width:127px;}
+/*.de-de .other-operationl .upgradeforhim{width: 170px}*/
+.de-de .lowerRightBottom .upgradeTipsCon {margin-top: 20px;padding:0 20px;}
+.de-de #chatTop .LetterfunctionMore {width:120px;}
+/*.de-de .other-operationl .upgradeforhim{width: 170px}margin-right: 5px;*/
+.de-de .dsf .kk { margin: 0; width: 115px; }
+.de-de .ss { width: 188px; }
+.de-de .ss input { width: 137px; }
+.de-de .lf-mutual { width: 210px; height: 20px; }
+.de-de .sxan .bnt-lan {width: 120px;  }
+.de-de .likeme-pop-name2, .de-de .ilike-pop-bottom .popPLetterWrapLable { position: relative; left: -14px; }
+.de-de .Cancel-like-pop { width: 240px !important; }
+.de-de .Cancel-like-mutual { width: 245px !important; }
+.de-de .visitor-novir { width: 691px; margin: 0 auto; }
+.de-de .visitor-novir { width: 691px; margin: 0 auto; }
+.de-de .forget-loginbox a { width: 82px; }
+.de-de .common-btn{    width: 180px;}
+.de-de .govip { width: 250px; }
+.de-de .table .firstUl1 li.w115{line-height: 20px;}
+.de-de .recharge-adv .recharge-coins{margin:0 25px;}
+.de-de .recharge-adv div{margin:0;width:210px;padding:20px 10px;height: 158px;}
+.de-de .vip-Credit-con .vip-Credit{width:690px;}
+.de-de .vip-Credit-con .vip-Credit span{width:593px;background-position:599px 13px;text-align: center;}
+.de-de .vip-Credit-con .vip-add{padding-left:0px ;}
+.de-de .credit-detail .credit-detail-title{    width: 250px;}
+.de-de .credit-detail a.vm{width: 450px; display: inline-block;}
+.de-de .consignee-wrap .serBtn {width: 120px;}
+.de-de .gift-operation .gift-Rebate { width: 112px; position: relative; top: -7px; line-height: 14px; margin-right: 6px; }
+.de-de .gift-operation .gift-delete { width: 65px; }
+.de-de #fiftyMale {line-height: 25px; }
+.de-de .th-bg li.w135{line-height: 22px;}
+.de-de .th-bg li.w108 {line-height: 22px;}
+.de-de .forSelfInput {width: 600px;}
+.de-de .mid-line { width: 403px; }
+.de-de .downIconWrap { width: 194px;  }
+.de-de .orderlist-head-1 { width: 259px; padding-left: 44px; }
+.de-de .invitation-upload { height: 80px; line-height: 22px; padding-top: 40px; }
+.de-de .notWordbreak .table .firstUl li { line-height: 33px; }
+.de-de .photowall-control .dels, .de-de .photowall-control .cancel-wall { width: 104px; white-space: nowrap; }
+.de-de .meminfo-fnayi-num { position: relative; top: 24px; }
+.de-de #showIM{width:200px;}
+.de-de .vip-g-lf-sp1 { width: 61px !important; }
+.de-de #minifriendGroup .separator, .de-de #minifriendGroup .friendNumTotal { margin-left: 2px; }
+.de-de .forWhoInput { width: 385px; }
+.de-de .bdra15.ban.f12 { width: 100px; }

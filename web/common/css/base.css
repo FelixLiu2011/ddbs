@@ -1,0 +1,175 @@
+/*格式化样式*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,button,fieldset,input,textarea,p,blockquote,th,td {margin:0;padding:0; font-family: "Microsoft YaHei", '微软雅黑', arial,'HanHei SC', 'PingFang SC', 'lucida grande', tahoma, verdana, sans-serif; font-size: 14px;}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0}
+address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:normal}
+ol,ul,li {list-style:none}
+caption,th {text-align:left}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal}
+q:before,q:after {content:''}
+abbr,acronym { border:0}
+img { border: none;}
+.box-align-center {margin-right: auto; margin-left: auto;}
+button{ border:none; background:none; outline: none;}
+a{text-decoration:none; color: #333;}
+a,button,input,textarea{-webkit-tap-highlight-color:rgba(0,0,0,0);}  a:focus,button:focus,input:focus,textarea:focus{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+input[type='button'],input[type='button']:focus { -webkit-appearance : none ;}
+*:focus {outline: none;}
+.hide { display: none !important; }
+/*文字排版、颜色*/
+.hui{ color:#999;}
+.c-999{ color:#999;}
+.ari{ font-family:Arial;}
+.jz{ margin:0 auto;}
+.f12{font-size:12px}
+.f13{font-size:13px}
+.f14{font-size:14px}
+.f16{font-size:16px}
+.f18{font-size:18px}
+.f20{font-size:20px}
+.f25{font-size:25px}
+.f24{font-size:24px}
+.fb{font-weight:bold}
+.fn{font-weight:normal}
+.t2{text-indent:2em}
+.red,a.red{color:#cc0031}
+.darkblue,a.darkblue{color:#039}
+.gray,a.gray{color:#878787}
+.lh150{line-height:150%}
+.lh180{line-height:180%}
+.lh200{line-height:200%}
+.unl{text-decoration:underline;}
+.no_unl{text-decoration:none;}
+/*定位*/
+.tl{text-align:left}
+.tc{text-align:center}
+.tr{text-align:right}
+.fl{float:left;}
+.fr{float:right;}
+.vm{vertical-align:middle}
+.pr{position:relative}
+.pa{position:absolute}
+.abs-right{position:absolute;right:0}
+.zoom{zoom:1}
+.hidden{visibility:hidden}
+.none{display:none}
+/*长度高度*/
+.w10{width:10px}
+.w20{width:20px}
+.w50{width:50px}
+.w80{width:80px}
+.w90{width:90px}
+.w100{width:100px}
+.w180{width:180px}
+.w181{width:181px}
+.w190{width:190px}
+.w200{width:200px}
+.w250{width:250px}
+.w500{width:500px}
+.w800{width:800px}
+.w915{width:915px}
+.w1024{width:1024px;}
+.w1100{width:1100px;}
+.w995{ width:945px;}
+.w{width:100%}
+.h30{height:30px}
+.h32{height:32px}
+.h36{height:36px}
+.h50{height:50px}
+.h80{height:80px}
+.h90{height:90px}
+.h100{height:100px}
+.h200{height:200px}
+.h{height:100%}
+/*边距*/
+.m_auto{ margin: 0px auto;}
+.m10{margin:10px}
+.m15{margin:15px}
+.m30{margin:30px}
+.mt5{margin-top:5px}
+.mt10{margin-top:10px}
+.mt15{margin-top:15px}
+.mt20{margin-top:20px}
+.mt50{margin-top:50px}
+.mt100{margin-top:100px}
+.mb5{margin-bottom:5px}
+.mb10{margin-bottom:10px}
+.mb15{margin-bottom:15px}
+.mb20{margin-bottom:20px}
+.mb45{margin-bottom:45px}
+.mb100{margin-bottom:100px}
+.ml5{margin-left:5px}
+.ml10{margin-left:10px}
+.ml15{margin-left:15px}
+.ml20{margin-left:20px}
+.ml30{margin-left:30px}
+.ml50{margin-left:50px}
+.ml100{margin-left:100px}
+.mr5{margin-right:5px}
+.ml73{ margin-left:73px;}
+.mr10{margin-right:10px}
+.mr15{margin-right:15px}
+.mr50{margin-right:50px}
+.mr100{margin-right:100px}
+.p10{padding:10px;}
+.p15{padding:15px;}
+.p30{padding:30px;}
+.pt5{padding-top:5px}
+.pt10{padding-top:10px}
+.pt15{padding-top:15px}
+.pt20{padding-top:20px}
+.pt30{padding-top:30px}
+.pt50{padding-top:50px}
+.pb5{padding-bottom:5px}
+.pb100{padding-bottom:100px}
+.pl5{padding-left:5px}
+.pl10{padding-left:15px}
+.pl15{padding-left:15px}
+.pl50{padding-left:50px}
+.pl100{padding-left:100px}
+.pr5{padding-right:5px}
+.pr10{padding-right:10px}
+.pr15{padding-right:15px}
+.pr100{padding-right:100px}
+.valign {
+    display:table-cell;
+    *display: inline;
+    zoom:1;
+    vertical-align:middle;
+}
+.partialLoader{text-align: center;z-index: 999;background-color: #ffffff;position: absolute;top:0}
+.partialLoader img{margin-top: 50%;height: 100px;}
+/*高亮*/
+.highlight{color: #ff8a00;}
+/*鼠标手型*/
+.curPor{cursor: pointer;}
+/*强制换行*/
+.text{word-wrap:break-word;overflow:hidden;word-break:break-all;}
+/*======万能Float闭合======*/
+.clear:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/*======万能Float闭合3======*/
+.clear
+{
+    height:0px;
+    clear:both;
+    font-size:0px;
+    line-height:0px;
+    zoom: 1;
+}
+/*======圆角兼容各个浏览器版本======*/
+.bdra15{ border-radius:15px;-webkit-border-radius: 15px; -webkit-appearance : none ;  /*解决iphone safari上的圆角问题*/
+-moz-border-radius: 15px; position:relative; z-index:1;}
+.bdra5{ border-radius:5px;-webkit-border-radius: 5px;
+-moz-border-radius: 5px; position:relative; z-index:1;}
+.bdra30{ border-radius:30px;-webkit-border-radius: 30px;
+-moz-border-radius: 30px; position:relative; z-index:1;}
+
+/*边框*/
+.border-all{border:1px solid #dcdcdc;}
