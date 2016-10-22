@@ -1,0 +1,403 @@
+body,div,p,h1,h2,h3,h4,h5,h6,ol,ul,dl,li{margin:0;padding:0;}
+body{font-size:14px;font-family:"Microsoft YaHei"; color: #333;}
+img{border:none;}
+ol,ul,dl{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%;}
+table{border-collapse:collapse;border-spacing:0;}
+.clear{clear: both;}
+.fl{float: left;}
+.fr{float: right;}
+.c-D24040{color: #D24040;}
+.c-FF8A00{color: #FF8A00;}
+.c-DCDCDC{color: #dcdcdc;}
+.marT5{margin-top: 5px;}
+.textCenter{text-align: center;}
+.textCenter a{color: #2D57A1;font-size: 12px;}
+.noTitleTips .layui-layer-btn a{height: 24px;line-height: 24px;padding: 0 13px;}
+.relative{position: relative}
+.overVisible{overflow: visible}
+
+
+
+#IM{position:fixed;z-index:1001;right: 0px;margin-top:-16px;background-color: #fff;top:66px;}
+#IMgagaService{display: none;position: fixed;bottom: 113px;min-width: 150px;height: 119px;overflow: hidden; text-align: center;cursor: move;}
+#IMgagaService img{display: block;margin: 0 auto; height: 100%; width: auto; cursor: pointer;}
+#IMgagaService .gagaServiceTXT{position: relative;top:-30px;display: inline-block;background: #fff;border-radius: 45px;padding: 5px 20px;font-size: 13px;color:#666;border: 1px solid #DCDCDC;}  
+#IMgagaService .close-gagaservice { position: absolute; top: 0; right: 22px; width: 20px; height: 20px; background: url(../../images/icon-closed.png) no-repeat -100px 0;cursor: pointer; }
+#IMgagaService .close-gagaservice:hover { background-position: -100px -40px; }
+    
+    
+    
+/*//折叠按钮*/
+{display: inline-block;width: 0;height: 0;border-left: 7px solid transparent;border-right: 7px solid transparent; border-top: 8px solid #666;position: absolute;top:12px;right: 12px;}
+/*折叠IM*/
+#hiddenIM{display:block; float: right;width: 55px; position: relative;}
+#hiddenLeftline{width: 54px; border-left: 1px solid #dcdcdc;border-top: 1px solid #DCDCDC;border-bottom: 1px solid #DCDCDC; position: absolute;z-index: -20}
+.hiddenTop,.content{border-left:1px solid #DCDCDC; }
+.hiddenTop{height: 32px; width:65px;padding: 4px;position: relative; left: -10px; border:none;}
+.showHideBtn{display: block; width: 65px;height: 40px;cursor: pointer; position: absolute;  top: 0; left: 0px;  border-radius: 10px 0 0 10px;    z-index: 1;}
+.showBtn{background: url(../img/IM_header.png) 8px 7px no-repeat #5779b4;}
+#hiddenIM .newsArrive{display: none; width: 63px;height: 40px;line-height: 40px;color: #fff; font-size: 12px; text-indent: 7px; background-color: #D24040;border-top-left-radius: 45px;border-bottom-left-radius: 45px;position: absolute; top: 0px;right: 55px;cursor: pointer;}
+
+.singleNum{background: #fff;}
+.bothNum{background: #F6F6F7;}
+.hiddenScrollContainer{ position: relative;}
+.content{height: 60px;position: relative;z-index: 0;cursor: pointer;}
+.headDiv{width: 30px;height: 30px;margin-left: 10px; padding-top: 15px;position: relative;}
+.headImg,.chatBoxLower .receiveHeadImg,.chatBoxLower .sendHeadImg,.showHeadImg,.CreateGroupHeadImg{width: 30px; border-radius: 45px;/* -webkit-border-radius: 45px;
+-moz-border-radius: 45px; position:relative; z-index:1; behavior:url(http://172.17.5.74:8008/gagahipc/im/css/PIE.htc)*/}
+.headLine{position: absolute;right: 0; top: 31px;}
+.headExplain{display: block;width: 130px;height: 60px;background-color: #FFF3D9;position: absolute;right: -9px; top: 0px;z-index: -1;border-top-left-radius: 45px;border-bottom-left-radius: 45px;}
+.RemarkName{display: block; height: 60px;line-height: 60px;padding-left: 20px; color: #ff8a00;width: 60px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+
+/*展开IM*/
+#showIM{display: none;float: right;width: 180px;height: 800px;border: 1px solid #DCDCDC;}
+.showTop{height: 41px; width: 190px;background-color: #5779b4; position: relative; left: -10px; top:-1px;  border-radius: 10px 0 0 10px; }
+.hideBtn{height: 40px;background: url(../img/IM_header.png) 8px -27px no-repeat;}
+.searchDiv{position:relative;top: -1px;}
+.searchInput{border: 1px solid #DCDCDC;outline:none; height: 33px;width: 100%;font-size: 12px;padding-left: 10px;color: #999; box-sizing: border-box;}
+.searchBtn{display: block;width: 30px;height: 30px;background: url(../img/IMicon.png) -400px -45px no-repeat;position: absolute;right: 2px;top: 3px;cursor: pointer;}
+.searchCloseBtn{display: none;width: 30px;height: 30px;background: url(../img/IMicon.png) -271px -75px no-repeat;position: absolute;right: 2px;top: 3px;cursor: pointer;}
+.showTab {position:relative;top: -1px;  }
+.searchResultsGroup{display: none;}
+.searchResultsGroup .searchResultNothing,#CreateGroupSearchResults .searchResultNothing{display: block;height: 44px;line-height: 44px;text-align: center}
+.searchResultsGroup .searchResultNothingImg,#CreateGroupSearchResults .searchResultNothingImg{display: inline-block;width: 17px;height: 17px;background: url(../img/IMicon.png) -339px -81px no-repeat;vertical-align: middle;}
+.searchResultsGroup .searchResultNothingTXT{color: #999;margin-left: 2px;vertical-align: middle;}
+
+.contacts,.group{display: block;float: left;width: 50%;height: 45px;line-height: 45px; font-size: 14px; background-color: #F6F6F7;text-align: center;color: #333;cursor: pointer;}
+.contacts{border-bottom: 2px solid #2D57A1;}
+.group{display:block;border-bottom: 2px solid #F6F6F7;}
+.showTitle,.specialFocusTitle,.FoldTitle,.groupTitle{height: 30px;line-height: 30px;padding: 0 8px;cursor: pointer;}
+.foldingBtn{display: block;float: left;margin: 10px 8px 0 0 ; width: 10px;height: 10px;background: url(../img/IMicon.png) -308px -50px no-repeat;}
+.showTitle p{float: left;}
+.recentlyNum,.specialFocusNum,.friendNum,.friendNumTotal,.groupNum,.separator,.onLineTitle .onLineNum{font-size: 12px;font-family:"Arial";margin-left: 5px;}
+
+.showContent{cursor: pointer;/*width: 100%;*/height: 50px;padding: 0 8px;position: relative;}
+.showContent:hover {background-color: #FFF3D9;}
+.showHead{width: 30px;height: 30px;padding-top: 10px;position: relative;float: left;}
+.showHeadLine{position: absolute;right: 0; top: 30px;}
+.showContent .newsNum{right: 20px;}
+.modifyDiv{float: left;margin: 15px 0 0 10px;width: 124px; position: relative;}
+
+.showRemarkName{display:block;float: left; width: 80px;  height: 50px; line-height: 50px; margin-left: 10px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+
+/*----群-----*/
+#groupGroup{display: none;}
+.createGroup{height: 40px;line-height: 40px;color: #FF8A00;font-size: 12px;text-align: center; background-color: #FFF3D9;cursor: pointer;}
+
+
+/*---------对话框-------*/
+#chatBox{display: none;height: 600px;width: 1110px; /*width: 730px;width:850px; width: 1230px; */border: 1px solid #DCDCDC;position: fixed;z-index:1000; overflow:hidden;box-shadow:0px 0px 5px #dfdfdf;background-color: #fff;}
+
+/*-----------对话框顶部---------*/
+.chatBoxUpper{height: 65px;}
+.upperLeft{float: left;text-align: center;color: #fff; width: 118px;height: 65px;line-height: 65px; background-color: #4D7CD1;border-bottom: 1px solid #7196DA;border-left: 2px solid #4D7CD1;}
+.upperRight{float: left;width: 990px; /*width: 608px;width:728px;width: 1108px ;*/ border-bottom: 1px solid #dcdcdc;}
+.chatHeadimgIng{float: left;display:inline-block; width: 47px;height: 47px;margin: 9px 10px;}
+.chatHeadimgIng .chatHeadHeadIng{width: 45px;border-radius: 45px;}
+.chatRemarkNameIng{display: inline-block;max-width: 370px;height: 61px; line-height: 61px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.chatUpperBtn{position: absolute;right: 0px;}
+.inviteFriends,.createGroupBtn{display: inline-block;height: 30px;color: #2D57A1;vertical-align: bottom;cursor: pointer;}
+.functionBtn{display: inline-block;width: 15px;height: 17px;margin-left: 5px; background:url(../img/IMicon.png) -240px -51px no-repeat;cursor: pointer;position: relative;}
+.functionBtn:hover .functionI{display: inline-block;}
+.functionBtn:hover .functionMore{display: inline-block;}
+.closedChatBox{display: inline-block;width: 30px;height: 30px;background:url(../img/IMicon.png) -199px -41px no-repeat;cursor: pointer;}
+.closedChatBox:hover{background-color: #d24040; background-position: -199px -103px;}
+.functionI{display: none;width: 13px;height: 20px;position: absolute; top: 6px;z-index: 3; background: url(../img/IMicon.png) 0px -75px repeat;}
+.functionMore{display: none;position: absolute;top: 18px;left: -35px;z-index: 1; padding: 10px 0;width: 70px;text-align: center;border: 1px solid #DCDCDC;border-radius: 5px;background-color: #fff;}
+.functionMore li{height: 25px;line-height: 25px;padding: 0 5px}
+.functionMore li:hover{background-color: #dcdcdc}
+
+
+.modifyContent{display: block;}
+.chatRemarkNameIng{float:left;}
+.modifyBtn{float:left; display: inline-block; width: 25px;height: 43px;margin-top: 15px; background: url(../img/IMicon.png) -525px 1px no-repeat;cursor: pointer;}
+.modifyContainer{/*display:inline-block;*/ display: none; width: 120px;    height: 62px;line-height: 62px;position: relative;}
+.modifyRemarkName{width: 130px;height: 22px;border-top-left-radius:45px;border-bottom-left-radius: 45px;  outline:none;border: 1px solid #DCDCDC;padding-left: 10px;color: #999;font-size: 14px;}
+.modifyOK{display: block;position: absolute;right: -46px;top: 18px;width: 25px;height: 24px;    border: 1px solid #dcdcdc;border-left: none; border-top-right-radius: 45px;border-bottom-right-radius: 45px;background: url(../img/IMicon.png) -490px 7px no-repeat; background-color: #4D7CD1;cursor: pointer;}
+.im-lel { margin: 19px 0 0 20px; }
+
+/*-----对话框下部分--左侧-联系人---*/
+.chatBoxLower{border-left: 2px solid #4D7CD1;}
+.lowerLeft{float: left; height:  535px; width: 118px;background-color: #4D7CD1;}
+
+.chatPeopleContent{height: 50px;position: relative;}
+.chatPeopleContent:hover{background-color: #2D57A1;}
+.chatHeadDiv{ float: left; margin-left: 10px;   width: 30px;height: 30px; padding-top: 10px;position: relative;}
+.chatRemarkName{display: block;float: left;height: 50px;line-height: 50px;padding-left: 10px;font-size: 12px; color: #fff;width: 45px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.chatDelete{display: none;float: right;     margin: 20px 9px 0 0;width: 10px;height: 10px;background: url(../img/IMicon.png) -30px -80px no-repeat;cursor: pointer;}
+
+#IM .newsNum,#chatBox .newsNum{display: inline-block;height:18px;line-height: 18px;color: #fff;font-family: "Arial";font-size: 10px;text-align: center;  background-color: #D24040;position: absolute;top:17px;}
+#IM .newsNumSingle,#chatBox .newsNumSingle{width: 18px;border-radius: 45px;}
+#IM .newsNumDouble,#chatBox .newsNumDouble{padding: 0 4px;border-radius: 5px;}
+#chatBox .newsNumSingle,#chatBox .newsNumDouble{right: 1px;}
+
+.chatPeopleContent:hover .chatDelete{display: block;}
+.chatPeopleChoiced{height: 50px;background-color: #fff;position: relative;}
+.chatPeopleChoiced:hover .chatDelete{background: url(../img/IMicon.png) -58px -80px no-repeat;}
+.chatPeopleChoiced .chatRemarkName{color: #000;}
+.chatPeopleChoiced .chatDelete{display: block;float: right;     margin: 20px 9px 0 0;width: 10px;height: 10px;background: url(../img/IMicon.png) -30px -80px no-repeat;cursor: pointer;}
+/*-----对话框下部分--聊天内容----*/
+.lowerRight{float: left;width: 610px;}
+.chatContainer{position: relative;height: 370px;}
+.chatContent{height: 340px;overflow-y: auto;z-index: 5}
+.chatContent .chatCon{padding-bottom:95px;/*61*/}
+.chatContent .moreNews{margin: 10px 0; font-size: 12px;color: #2d57a1;text-align: center;cursor: pointer;}
+.chatContent .chatTime{margin: 10px 0; text-align: center;font-size: 12px;color: #999;font-family: "Arial";}
+.chatContent .monthDay{margin-right: 5px;}
+.chatContent .likeEachOther{margin: 10px auto;text-align: center;}
+.chatContent .likeEachOtherSpan{display: inline-block;padding: 5px 35px;border-radius: 45px;font-size: 12px; color: #999;background-color: #F8F8F8;}
+         /*-----------聊天----安全提示-------*/
+.safetyTips{display: block;font-size: 12px;background-color: #F9F9F9;padding-left: 10px;width: 600px; height: 30px;line-height: 35px; overflow: hidden;white-space: nowrap;text-overflow: ellipsis;position: absolute;bottom: 0px;}
+.safetyTips p{font-size:12px}
+.safetyTips a{color: #2d57a1; text-decoration: none;}
+         /*----------上传图片-----------*/
+/* .upLoadImgContainer{ position: absolute;bottom: 0px;z-index: 1;}
+.upLoadImgContainer .upLoadContnet{display: inline-block;width: 140px;height: 140px;line-height: 140px; text-align: center; border: 1px solid #dcdcdc;background-color: #fff;border-radius: 5px;box-shadow: 0px 0px 3px #dcdcdc;position: absolute;left:5px;bottom: 40px;}
+.upLoadImgContainer .upLoadImgHorn{display: block;width: 15px;height: 10px;background:url(../img/IMicon.png) -207px -81px no-repeat;position: absolute;bottom: -10px; left: 20%}
+.upLoadImgContainer .upLoadImg{margin: 5px; max-width: 140px;max-height: 140px;vertical-align: middle; border-radius: 5px;}
+.upLoadImgContainer .upLoadExplain{width: 610px; height: 30px;line-height: 30px;background-color: #DFEBFF;font-size: 12px;}
+.upLoadImgContainer .upLoadImgName{margin-left: 15px;}
+
+.upLoadImgContainer .upLoadImging{display: block;float:right; width: 16px;height: 20px;background: url(../img/upLoadImging.gif) no-repeat;margin-top:7px; }
+.upLoadImgContainer .upLoadImgState{display:block;float:right;margin-left:5px;margin-right: 10px;}
+.upLoadImgContainer .upLoadImgDelete{display:block; float:right; width:15px;height:15px;margin:8px 10px 0 5px;color:#4D7CD1;background: url(../img/IMicon.png) -374px -48px no-repeat;cursor:pointer; }
+.upLoadImgContainer .upLoadImgDelete:hover {background-position: -525px -78px;}
+ */
+
+
+.upLoadImgContainer{display:none; position: absolute;bottom: 0px;z-index: 1;}
+.upLoadImgContainer .upLoadContnet{display: inline-block;/*width: 140px;height: 140px;line-height: 140px;*/ text-align: center; border: 1px solid #dcdcdc;background-color: #fff;border-radius: 5px;box-shadow: 0px 0px 3px #dcdcdc;position: absolute;left:5px;/*top:-152px;*/    bottom: 40px;}
+.upLoadImgContainer .upLoadImgHorn{display: block;width: 15px;height: 10px;background:url(../img/IMicon.png) -207px -81px no-repeat;position: absolute;bottom: -10px; left: 20% }
+.upLoadImgContainer .upLoadImg{margin: 5px; max-width: 140px;max-height: 140px;vertical-align: middle; border-radius: 5px;}
+.upLoadImgContainer .upLoadExplain{width: 610px; height: 30px;line-height: 30px;background-color: #DFEBFF;font-size: 12px;}
+.upLoadImgContainer .upLoadImgName{margin-left: 15px;float:left;}
+.upLoadImgContainer .upLoadImging{display: block;float:right; width: 16px;height: 20px;background: url(../img/upLoadImging.gif) no-repeat;margin-top:7px; }
+.upLoadImgContainer .upLoadImgState{display:block;float:right;margin-left:5px;margin-right: 10px;}
+.upLoadImgContainer .upLoadImgDelete{display:block; float:right; width:15px;height:15px;margin:8px 10px 0 5px;color:#4D7CD1;background: url(../img/IMicon.png) -374px -48px no-repeat;cursor:pointer; }
+    .upLoadImgContainer .upLoadImgDelete:hover {
+        background-position: -525px -78px;
+    }
+
+/*-----对话框下部分--右侧-----输入框----*/
+.lowerRightBottom{ background-color: #FFF; border-top: 1px solid #dcdcdc;position: relative;}
+.sendContentCon{height: 115px;    overflow: hidden;}
+.lowerRightBottom .inputBox{padding: 10px 5px 10px 10px; height: 90px;width: 595px;font-family: "Microsoft YaHei";font-size: 14px;color: #999;border: none;overflow: auto;}
+
+.sendContent{height: 115px; overflow: hidden;}
+
+
+   /*----------升级提醒-----------*/
+.lowerRightBottom .upgradeTips{display: none;position: absolute;/* background-color: #f9f9f9; */width: 610px;text-align: center; z-index: 3;}
+.lowerRightBottom .upgradeTipsCon{text-align: center;margin-top: 35px;margin-bottom: 15px;}
+.lowerRightBottom .upgradeTipsTXT{color: #2d57a1;}
+.lowerRightBottom .upgradeTipsBtn{color: #fff;background-color: #2D57A1;padding: 5px 25px;border-radius: 45px;cursor: pointer;}
+.lowerRightBottom .upgradeTipsBG{position: absolute;top: 0px; z-index: -1; width: 610px; height: 115px;  background-color: #fff;}
+/*-----对话框下部分--右侧-----功能按钮----*/
+.lowerRightBottom .FunBtncontainer{background-color:#F9F9F9;}
+.lowerRightBottom .languageOptions,.languagePoint{float: left;position: relative;}
+.lowerRightBottom .languageSpan{margin-left: 13px;}
+.lowerRightBottom .languageSpan .txt{display:inline-block;border:1px solid #dcdcdc;border-radius:45px;padding: 2px 5px 2px 13px;background-color:#fff;cursor: pointer;}
+.lowerRightBottom .translateTXT{height: 50px;line-height: 50px;display:inline-block;}
+
+.lowerRightBottom .languagePoint{display: block; width: 25px;height: 17px;background: url(../img/IMicon.png) -445px 0px no-repeat;margin: 17px 20px 0 20px;}
+.lowerRightBottom .Triangle{display: inline-block; width: 15px;height: 8px;background: url(../img/IMicon.png) -240px -50px no-repeat;}
+.lowerRightBottom .languageUl{display: none; position: absolute;right:0px; bottom: 39px;padding: 10px 0px; background-color: #fff;border: 1px solid #E5E5E5;    border-radius:10px; z-index:3;}
+.lowerRightBottom .languageUl .langLi{padding:0 15px;min-width: 50px;font-size: 12px;color: #696969;cursor:pointer;height: 22px;line-height: 22px;font-family:"Arial"}
+.lowerRightBottom .languageUl .langLi:hover{color: #2D57A1;background-color: #f6f6f6;}
+.lowerRightBottom .FunBtnUl li{float: left;width: 20px;height: 20px;margin: 15px 8px;cursor: pointer;}
+.lowerRightBottom .FunBtnUl .qqFaceBtn{background: url(../img/IMicon.png) -48px 0px no-repeat;}
+.lowerRightBottom .FunBtnUl .imgBtn{background: url(../img/IMicon.png) -81px 1px no-repeat;}
+.lowerRightBottom .FunBtnUl .giftBtn{background: url(../img/IMicon.png) -115px 0px no-repeat;}
+.lowerRightBottom .FunBtnUl .redBtn{background:url(../img/IMicon.png) -54px -163px no-repeat; height: 31px; margin-top: 2px;}
+
+.lowerRightBottom .FunBtnUl .HistoricalRecords{ position:relative ;width: 30px;background: url(../img/IMicon.png) -172px 0px no-repeat;}
+.lowerRightBottom .FunBtnUl .HistoricalRecordsClosed{display: none; position: relative;top:-6px; width: 30px;height: 30px;background: url(../img/IMicon.png) -356px -1px no-repeat;}
+
+.lowerRightBottom .FunBtnUl .sendBtn{width: 60px;height: 28px;line-height: 28px;text-align: center; margin-top: 11px;border-radius: 45px;color: #696969;background-color: #fff;}
+/*.FunBtnUl .sendBtn:hover{color: #fff; background-color: #2D57A1;}*/
+.lowerRightBottom .normal.gp .giftBtn, .lowerRightBottom .normal.gp .redBtn { display: none  }
+
+
+/*--------------正在聊天组-成员--------*/
+.chatBoxLower .chatGroupMembers{display: none;float: left;  width: 119px; height: 535px; border-left: 1px solid #dcdcdc;}
+.chatBoxLower .chatGroupTitle {padding-left: 10px;height: 30px;line-height: 30px;font-size: 12px; background-color: #f9f9f9;}
+#GroupMembScrollBar{height:500px;}
+.chatBoxLower .GroupMembContainer{padding-top: 5px;}
+.chatGroupMembers .GroupMembContent{height: 30px;padding-left: 10px; background-color: #fff; cursor: pointer;}
+.chatGroupMembers .GroupMembContent:hover{background-color: #FFF3D9;}
+.chatGroupMembers .GroupMembHead{float: left;margin-top: 5px; width: 25px;height: 25px;position: relative;}
+.chatGroupMembers .GroupMembHeadImg{border-radius: 45px;}
+.chatGroupMembers .GroupMembHeadLine{position: absolute;right: 3px;top: 12px;}
+.chatGroupMembers .GroupMembRemarkName{display: block;float: left;height: 30px;line-height: 30px;padding-left: 0px; font-size: 12px;max-width: 75px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.chatGroupMembers .GroupMembHeadImg{width: 20px;}
+
+/*----------聊天内容----接收到的消息---*/
+.chatBoxLower .receiveMessage{margin:30px 0 30px 20px;}
+.chatBoxLower .chatConHead{display: inline-block; width: 30px;height: 30px; }
+.chatBoxLower .receiveMessage .msgContent{margin-left: 20px; max-width: 470px;border: 1px solid #dcdcdc;border-radius: 10px;background-color: #fff;position: relative;}
+.chatBoxLower .receiveHorn{display: inline-block;width: 10px;height: 10px;background: url(../img/IMicon.png) -71px -50px no-repeat;position: absolute; top: 10px;left: -10px;}
+.chatBoxLower .receiveOriginal,.receiveTranslation{line-height: 24px;padding: 7px 20px 7px 10px;    word-break: break-all;word-wrap: break-word;}
+.chatBoxLower .receiveTranslationContainer{border-top: 1px dashed #dcdcdc;}
+.chatBoxLower .receiveImg{margin-left: 5px; max-width: 360px;max-height: 260px;border-radius: 5px;}
+.chatBoxLower  .translateBtn{display: inline-block;width: 24px;height: 24px;background:url(../img/IMicon.png) -3px -2px no-repeat;position: absolute;bottom: -5px;cursor: pointer;}
+.chatBoxLower .receiveTranslateBtn{right: -8px;}
+.chatBoxLower .lanChoice{display: none;position: absolute;bottom:0px; z-index:1;}
+.chatBoxLower .receivelanChoice {right: 0px;}
+.chatBoxLower .lanChoice .lanI{width: 12px;height: 20px;position: absolute;right: -4px; z-index: 2; background: url(../img/IMicon.png) 0px -75px repeat; }
+.chatBoxLower .lanUl {border: 1px solid #e9e9e9;width: 230px; position: absolute;top: 12px;right: -7px; border-radius:5px; background-color: #fff; padding: 10px 5px;font-size: 13px; }
+/* .chatBoxLower .receivelanChoice .lanUl {right: -7px;} */
+.chatBoxLower .lanUl li { padding: 0 3px;height: 30px;line-height: 30px; float: left; cursor: pointer;}
+.chatBoxLower .lanChoice li:hover{background-color: #F5F5F5;color: #2D57A1}
+
+/*----------聊天内容----发送的消息---*/
+.chatBoxLower .sendMessage{margin:30px 20px 30px 0px;}
+.chatBoxLower .sendMessage .msgContent{ margin-right: 20px; max-width: 470px;border: 1px solid #dcdcdc;border-radius: 10px;background-color: #fff;position: relative;}
+.chatBoxLower .sendHorn{display: inline-block;width: 10px;height: 10px;background: url(../img/IMicon.png) -99px -50px no-repeat;position: absolute; top: 10px;right: -10px;}
+.chatBoxLower .sendOriginal,.sendTranslation{line-height: 24px;padding: 7px 10px 7px 20px;    word-break: break-all;word-wrap: break-word;}
+.chatBoxLower .sendTranslationContainer{border-top: 1px dashed #dcdcdc;}
+.chatBoxLower .sendMessage .bigImgBtn{float: right;margin-right: 5px;}
+.chatBoxLower .sendImg{  max-width: 360px;max-height: 260px;border-radius: 5px;}
+.chatBoxLower .sendTranslateBtn{left: -8px;}
+.chatBoxLower .readContainer{display: none; float: right;margin-right: 10px;margin-top: 4%;}
+.chatBoxLower .readImg{display: inline-block;width: 12px;height: 10px;background: url(../img/IMicon.png) -144px -80px no-repeat;}
+.chatBoxLower .read{color: #2D57A1; }
+.chatBoxLower .noRead{color: #999;}
+.sendFailTip{float: right;margin-right: 10px;margin-top: 4%;width: 21px;height: 20px;background: url(../img/upLoadImging.gif) no-repeat; }
+.chatBoxLower .sendlanChoice {left: 0px;}
+/* .chatBoxLower .sendlanChoice .lanUl {left: -7px; } */
+.chatBoxLower .redPacket-box .msgContent { border: none; margin-left: 10px; }
+.chatBoxLower .redPacket-box .sendContainer.msgContent { margin-right: 10px; }
+.chatBoxLower .redPacket-box .msgContent .redPacket-main { border: none; background-color: #fa9d3b; min-width: 150px;  height: 65px; cursor: pointer; padding: 25px 25px 0 25px;  position: relative; border-radius: 5px;  }
+.chatBoxLower .redPacket-box .readContainer { margin-top: 70px; }
+.chatBoxLower .redPacket-box .RedEnvelopeImg { display: inline-block; width: 33px;  height: 45px; background: url(../img/RedEnvelope-1.png) no-repeat; vertical-align: middle;}
+.chatBoxLower .redPacket-box .RedEnvelopeWord {  display: inline-block;  font-size: 16px;  margin-left: 5px;  color: #fff;}
+.chatBoxLower .redPacket-box .translationContainer {border-top:none;}
+.chatBoxLower .redPacket-box .translationContainer .receiveTranslationContainerHorn { background: url(../img/IMicon.png) -170px -79px no-repeat; display: block;  width: 18px; height: 10px;    position: relative;   z-index: 1;   top: 1px;}
+.chatBoxLower .redPacket-box .translationContainer .translationLan {  font-size: 13px;  color: #333; padding: 5px;  border: 1px dashed #dcdcdc;  border-radius: 5px;  word-break: break-all;  word-wrap: break-word; }
+
+
+/*-----聊天历史纪录--------*/
+.chatHistorical{float: left; width: 379px;height: 535px; border-left: 1px solid #dcdcdc;background-color: #f6f6f6;}
+.chatHistorical h6{padding-left: 17px; height: 35px;line-height: 35px;border-bottom: 1px solid #dcdcdc;}
+.historicalClosed{display: inline-block; width: 12px;height: 12px;background: url(../img/IMicon.png) -376px -50px no-repeat;float: right;margin-top: 13px;margin-right: 12px;cursor: pointer;}
+.historicalContainer{height: 465px;}
+
+.historicalContent{margin: 20px 20px 0 10px;}
+.chatHistorical .historicalTitle{overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.chatHistorical .historicalReceive{color: #2D57A1;}
+.chatHistorical .historicalSend{color: #ff8a00;}
+.chatHistorical .historicalTime{margin-left: 5px;font-size: 12px;}
+.chatHistorical .historicalOriginal,.historicalTranslation{line-height: 24px;    word-break: break-all;word-wrap: break-word;}
+.historicalTranslation{margin-bottom: 10px;}
+.chatHistorical .historicalTranslationCon{margin: 5px 0; padding: 5px 10px; border-radius: 5px;border: 1px dashed #dcdcdc;background-color: #fff;position: relative;}
+.historicalTranslationHorn{display: block; width: 20px;height: 10px;background: url(../img/IMicon.png) -170px -79px no-repeat;position: absolute;top:-10px;}
+.chatHistorical .historicalImg{margin:5px;max-width: 140px;max-height: 100px; border-radius: 5px;}
+.chatHistorical .systemTips{display: inline-block;margin:5px auto 0; padding: 4px 25px;font-size: 12px;background-color: #D4D4D4;color: #fff;border-radius: 45px;}
+
+.historicalRedPocket { display:inline-block; border: none; background-color: #fa9d3b; min-width: 150px;  height: 65px; cursor: pointer; padding: 25px 25px 0 25px;  position: relative; border-radius: 5px;  }
+.historicalRedPocket .RedEnvelopeImg { display: inline-block; width: 33px;  height: 45px; background: url(../img/RedEnvelope-1.png) no-repeat; vertical-align: middle;}
+.historicalRedPocket .RedEnvelopeWord {  display: inline-block;  font-size: 16px;  margin-left: 5px;  color: #fff;}
+
+.historicalBottom{height: 35px;line-height: 35px;background-color: #f9f9f9;border-top: 1px solid #d4d4d4;}
+.historicalDelete{display: inline-block;float: left; width: 21px;height: 20px;margin-top: 6px;margin-left: 10px; background:url(../img/IMicon.png) -218px 0px no-repeat;cursor: pointer;}
+.historicalFun{float: right;margin-top: 6px;}
+.historicalFun li{float: left;width: 15px;height: 20px;margin-right: 10px;background: url(../img/IMicon.png) no-repeat;}
+.historicalFun .firstPage{background-position: -255px 0px;}
+.historicalFun .previousPage{background-position: -280px 0px;}
+.historicalFun .nextPage{background-position: -305px 0px;}
+.historicalFun .lastPage{background-position: -327px 0px;}
+
+/*---创建群--弹窗-----*/
+#PopupCreateGroup{display: none; width: 450px;height: 430px;background-color: #fff;border: 1px solid #dcdcdc;position: fixed;z-index:1001;box-shadow:0px 0px 5px #DCDCDC;}
+
+.CreateGroupTitle{color: #fff; height: 35px;line-height: 35px;padding-left:15px;background-color: #4D7CD1;}
+.CreateGroupLeft{width: 200px;height: 355px; float: left;border-right: 1px solid #dcdcdc;}
+.CreateGroupLeft .searchInput{border-left: none;border-right: none;}
+.CreateGroupLeft .CreateGroupLeftScrollBar{background-color:#F6F6F7 }
+.CreateGroupRecentlyTitle,.CreateGroupFriendTitle{margin-left: 5px; margin-bottom: 5px;}
+.CreateGroupFoldingBtn{display: block;float: left; margin: 9px 8px 0 0; width: 10px;height: 10px;background: url(../img/IMicon.png) -308px -50px no-repeat;}
+
+
+.CreateGroupLeftScrollBar,.CreateGroupSearchResults{height: 322px;}
+.CreateGroupContent{height: 40px;line-height: 40px;padding-left: 10px; cursor: pointer;}
+.CreateGroupContent:hover{background-color: #FFF3D9;}
+.CreateGroupHead{ width: 30px;height: 30px;padding-top: 5px;position: relative;float: left;}
+/*.CreateGroupHeadImg{border-radius: 45px;width: 30px;}*/
+.CreateGroupHeadLine{position: absolute;right: 0; top: 26px;}
+.CreateGroupLeft .CreateGroupRemarkName{width: 150px;}
+.CreateGroupRemarkName{display: block;float: left; height: 40px;line-height: 40px;margin-left: 10px; overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+
+#PopupCreateGroup .CreateGroupRightScrollBar{height:319px;background-color:#F6F6F7}
+.CreateGroupRight .SelectedPeople{padding-top: 5px;}
+.CreateGroupRight{float: right;width: 200px;height: 355px;border-left: 1px solid #dcdcdc;}
+.CreateGroupRight h6{height: 35px;line-height: 35px;font-size: 12px; border-bottom: 1px solid #dcdcdc;padding-left: 10px;}
+.CreateGroupRight .CreateGroupRemarkName{max-width:100px; }
+.CreateGroupRight .SelectedPeopleDelete{display: none;float: right;margin: 15px 15px 0 0;width: 10px;height: 10px;background: url(../img/IMicon.png) -81px -80px no-repeat;}
+.CreateGroupRight .CreateGroupContent:hover .SelectedPeopleDelete{display: block;}
+.CreateGroupCenter{float: left;margin-top: 175px;margin-left: 10px; width: 20px;height: 30px;background: url(../img/IMicon.png)  -105px -80px no-repeat;}
+.CreateGroupButtom{border-top: 1px solid #dcdcdc;text-align: center;background-color: #fff;}
+.CreateGroupButtom .CreateGroupOK,.CreateGroupButtom .CreateGroupCncel{display: inline-block;margin-top: 6px; padding: 0 13px; height: 24px;line-height: 24px;text-align: center;border-radius: 45px;border: 1px solid #ddd; cursor: pointer;}
+.CreateGroupButtom .CreateGroupOK{margin-right: 20px;}
+.CreateGroupButtom .CreateGroupOK:hover,.CreateGroupButtom .CreateGroupCncel:hover{;color: #fff;background-color: #2D57A1;border-color:#2D57A1;}
+
+#CreateGroupSearchResults{display: none;}
+/*-------大图预览------*/
+.bigImgBtn{display: inline-block; cursor: pointer;}
+.bigImgBtn img{cursor: -webkit-zoom-in;cursor: zoom-in;}
+
+.bigImgClosed-class .layui-layer-setwin .layui-layer-close2{width: 40px;height: 40px; background: url(../img/IMicon.png) -397px 0 no-repeat;}
+.bigImgClosed-class .layui-layer-setwin .layui-layer-close2:hover{width: 40px;height: 40px; background: url(../img/IMicon.png) -397px 0 no-repeat;}
+
+/*------底部图标---鼠标滑过显示说明-----------*/
+.txtTips{position: fixed;z-index:99999}
+.txtTips .triangle-top{width: 0;height: 0;border-left: 5px solid transparent;border-right: 5px solid transparent;border-bottom: 7px solid #fff; position: absolute;}
+.txtTips .triangle-bg{height: 0;border-left: 5px solid transparent;border-right: 5px solid transparent;border-bottom: 7px solid #DCDCDC;position: absolute;top:-1px;z-index: -1;}
+.txtTips .explainTXT{border: 1px solid #dcdcdc;background-color: #fff;padding: 2px 10px;border-radius: 5px;margin-top: 5px;margin-left: -20px;color: #696969;font-size: 12px;}
+
+/*------------缓存----------*/
+#cacheDiv{display: none;}
+.c-FF8A00{color: #FF8A00;}
+
+/*----------举报---------------*/
+.ReportPopup{width: 480px;/* height: 320px; */background-color: #fff;}
+.ReportPopup .layui-layer-btn{clear:both;}
+.ReportPopup .ReportPopupUl{margin-top: 50px;}
+.ReportPopup .ReportPopupUl li{float: left;margin-left: 45px;margin-bottom: 45px;}
+.ReportPopup .ReportPopupUl li label{cursor: pointer;}
+.ReportPopup .ReportPopupUl li i{display: inline-block;width: 17px;height: 17px;background: url(../img/IMicon.png) -407px -81px no-repeat;margin-right: 5px;vertical-align: middle; }
+#chatBox .qqFace { bottom: 52px; right: 61px; }
+
+.marT25 { margin-top: 25px; }
+.marT100 {  margin-top: 100px; }
+.cleard {  clear: both;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

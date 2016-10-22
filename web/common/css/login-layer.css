@@ -1,0 +1,28 @@
+button{ cursor:pointer}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+color: #666;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+color: #666;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+color: #666;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+color: #666;
+} 
+.creditcon {background: #000; filter:alpha(opacity=30);  -moz-opacity:0.3;  -khtml-opacity: 0.3;  opacity: 0.3;  ;height: 100%;left: 0;overflow: hidden;position: fixed;top: 0;width: 100%;
+ z-index: 1000; display:none;}
+ .logn-con{ position: fixed; top:170px;; z-index:1001; display:none;border-radius:15px; width:380px; background:#fff;}
+ .diy-layer-top{ height:50px; position:relative; background:#2d57a1; padding:0 20px; border-top-left-radius:15px;border-top-right-radius:15px; color:#fff; line-height:50px; font-size:18px;}
+ .diy-close2{height: 38px;position: absolute; right:-8px; top:-8px;width: 38px; display:inline-block;background: url(../js/layer/skin/default/icon-closed.png) no-repeat 0 -39px;cursor: pointer;}
+ .logn-con-bottom{ padding:30px 46px;}
+ .form-control {color: #888; height: 36px;margin-bottom: 20px;position: relative;width: 100%;}
+.ts { bottom: -18px;color: #ff8a00;left: 5px; position: absolute;}
+.inp {border: 1px solid #ccc;height: 34px;line-height: 36px; padding: 0 4px; text-indent: 13px; width: 96%;}
+.btn {background: #2d57a1 none repeat scroll 0 0;border: medium none;border-radius: 18px;color: #fff; height: 36px;cursor:pointer;position: relative; text-align: center; width: 100%;z-index: 1;}
+.btn:hover{background:#285ebf}
+.btn6{width:230px;display:block;line-height:36px;}
+.btn7{width:230px;display:block;line-height:34px;background:none;color:#999999;border:1px solid #ccc;height:34px;}
+.btn7:hover{border:1px solid #4070c3;color:#4070c3;background:none;}
+body .demo-tc .layui-layer-content{padding:60px;}

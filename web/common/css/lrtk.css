@@ -1,0 +1,29 @@
+/* 懒人图库 搜集整理 www.lanrentuku.com */
+
+/*焦点图*/
+.xbtc{width:800px;height:480px;background:#fff;position:absolute;top:315px;border-radius:10px;}
+.focus{ position:relative; width:800px; height:480px;border-radius:10px;}  
+.focus img{ width: 800px; height: 480px;border-radius:10px;} 
+.focus .shadow .title{width: 260px; height: 65px;padding-left: 30px;padding-top: 20px;}
+.focus .shadow .title a{ text-decoration:none; color:#fff; font-size:14px; font-weight:bolder; overflow:hidden; }
+.focus .btn{ position:absolute; bottom:34px; left:510px; overflow:hidden; zoom:1;} 
+.focus .btn a{position:relative; display:inline; width:13px; height:13px; border-radius:7px; margin:0 5px;color:#B0B0B0;font:12px/15px "\5B8B\4F53"; text-decoration:none; text-align:center; outline:0; float:left; background:#D9D9D9; }  
+.focus .btn a:hover,.focus .btn a.current{  cursor:pointer;background:#fc114a;}  
+.focus .fPic{ position:absolute; left:0px; top:0px; }  
+.focus .D1fBt{ overflow:hidden; zoom:1;  height:16px; z-index:10;  }  
+.focus .shadow{ width:100%; position:absolute; top:18px; left:0px; z-index:10; height:80px; color:#333; font-size:20px; overflow:hidden;line-height: 80px;display:block;  text-align:center; }   
+.focus .fcon{ position:relative; width:100%; float:left;  display:none;border-radius:10px; }  
+.focus .fcon img{ display:block; }  
+.focus .fbg{top:100px; right:350px; position:absolute; height:21px; text-align:center; z-index: 200; }  
+.focus .fbg div{margin:4px auto 0;overflow:hidden;zoom:1;height:14px}    
+.focus .D1fBt a{position:relative; display:inline; width:6px; height:6px; border-radius:100%; margin:0 5px; float:left;border:1px solid #2873c1; }    
+.focus .D1fBt .current,.focus .D1fBt a:hover{background:#2873c1;}    
+.focus .D1fBt img{display:none}    
+.focus .D1fBt i{display:none; font-style:normal; }    
+.focus .prev,.focus .next{position:absolute;width:40px;height:74px;background: url(../images/focus_btn.png) no-repeat;}
+.focus .prev{top: 50%;margin-top: -37px; left: -80px;background-position:4px -88px; cursor:pointer; }  
+.focus .next{top: 50%;margin-top: -37px; right: -80px;  background-position:-31px -88px;  cursor:pointer;}  
+.focus .prev:hover{  background-position:-1px 5px; }  
+.focus .next:hover{  background-position:-36px 5px;}  
+.xbtc .close{background:url("../images/icon-closed.png") -51px 1px no-repeat ;height: 30px;margin-left: 0;position: absolute;right: -8px;top: -8px; width: 30px;z-index: 2;cursor:pointer}
+.xbtc .close:hover{background-position: -51px -38px;}

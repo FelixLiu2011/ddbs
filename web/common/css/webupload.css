@@ -1,0 +1,67 @@
+.webuploader-element-invisible{ visibility: hidden; position: absolute;}
+#uploader .queueList { }
+#uploader .queueList.filled { padding: 0; margin: 0; }
+#uploader .queueList.webuploader-dnd-over { border: 3px dashed #999999; }
+#uploader p { margin: 0; }
+.element-invisible { position: absolute !important; clip: rect(1px 1px 1px 1px); /* IE6, IE7 */ clip: rect(1px,1px,1px,1px); }
+#uploader .placeholder {  text-align: center; color: #cccccc; font-size: 18px; position: relative; }
+#uploader .placeholder .webuploader-pick { float: left; padding: 0; margin:0; font-size: 0; border: none; background: url(../images/icons.png) no-repeat -84px 0; width: 78px; height: 78px; cursor: pointer; }
+#uploader .placeholder .webuploader-pick-hover { background: url(../images/icons.png) no-repeat 0 0; width: 78px; height: 78px;}
+#uploader .placeholder .flashTip { color: #666666; font-size: 12px; position: absolute; width: 100%; text-align: center; bottom: 20px; }
+#uploader .placeholder .flashTip a { color: #0785d1; text-decoration: none; }
+#uploader .placeholder .flashTip a:hover { text-decoration: underline; }
+#uploader .filelist { list-style: none; margin: 0; padding: 0; }
+#uploader .filelist:after { content: ''; display: block; width: 0; height: 0; overflow: hidden; clear: both; }
+#uploader .filelist li { width: 78px; height: 78px; text-align: center; margin: 0 5px 5px 0; position: relative; display: inline; float: left; overflow: hidden; font-size: 12px; }
+#uploader .filelist li p.log { position: relative; top: -45px; }
+#uploader .filelist li p.title { position: absolute; top: 0; left: 0; width: 100%; overflow: hidden; white-space: nowrap; text-overflow : ellipsis; top: 5px; text-indent: 5px; text-align: left; }
+#uploader .filelist li p.progress { position: absolute; width: 100%; bottom: 0; left: 0; height: 8px; overflow: hidden; z-index: 50; margin: 0; border-radius: 0; background: none; -webkit-box-shadow: 0 0 0; }
+#uploader .filelist li p.progress span { display: none; overflow: hidden; width: 0; height: 100%; background: #1483d8 url(../images/progress.png) repeat-x; -webit-transition: width 200ms linear; -moz-transition: width 200ms linear; -o-transition: width 200ms linear; -ms-transition: width 200ms linear; transition: width 200ms linear; -webkit-animation: progressmove 2s linear infinite; -moz-animation: progressmove 2s linear infinite; -o-animation: progressmove 2s linear infinite; -ms-animation: progressmove 2s linear infinite; animation: progressmove 2s linear infinite; -webkit-transform: translateZ(0); }
+ @-webkit-keyframes progressmove {  0% {
+ background-position: 0 0;
+}
+ 100% {
+ background-position: 17px 0;
+}
+}
+@-moz-keyframes progressmove {  0% {
+ background-position: 0 0;
+}
+ 100% {
+ background-position: 17px 0;
+}
+}
+@keyframes progressmove {  0% {
+ background-position: 0 0;
+}
+ 100% {
+ background-position: 17px 0;
+}
+}
+#uploader .filelist li p.imgWrap { position: relative; z-index: 2; vertical-align: middle; overflow: hidden; width: 87px; height: 87px; -webkit-transform-origin: 50% 50%; -moz-transform-origin: 50% 50%; -o-transform-origin: 50% 50%; -ms-transform-origin: 50% 50%; transform-origin: 50% 50%; -webit-transition: 200ms ease-out; -moz-transition: 200ms ease-out; -o-transition: 200ms ease-out; -ms-transition: 200ms ease-out; transition: 200ms ease-out; }
+#uploader .filelist li img { width: 100%; }
+#uploader .filelist li p.error { background: #f43838; color: #fff; position: absolute; bottom: 0; left: 0; height: 28px; line-height: 28px; width: 100%; z-index: 100; }
+#uploader .filelist li .success { display: block; position: absolute; left: 0; bottom: 0; height: 40px; width: 100%; z-index: 200;}
+#uploader .filelist div.file-panel { position: absolute; height: 0;  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#80000000', endColorstr='#80000000')\0;
+background: rgba( 0, 0, 0, 0.5 ); width: 100%; top: 0; left: 0; overflow: hidden; z-index: 300; }
+#uploader .filelist div.file-panel span { width: 20px; height: 20px; display: inline; float: right; text-indent: -9999px; overflow: hidden; background: url(../images/icons.png) no-repeat; cursor: pointer; }
+
+#uploader .filelist div.file-panel span.cancel { background-position: -185px -5px; }
+#uploader .filelist div.file-panel span.cancel:hover { background-position: -185px -42px; }
+#uploader .statusBar { height: 63px; border-top: 1px solid #dadada; line-height: 63px; vertical-align: middle; position: relative; }
+#uploader .statusBar .progress { border: 1px solid #1483d8; width: 198px; background: #fff; height: 18px; position: relative; display: inline-block; text-align: center; line-height: 20px; color: #6dbfff; position: relative; margin: 0 10px 0 0; }
+#uploader .statusBar .progress span.percentage { width: 0; height: 100%; left: 0; top: 0; background: #1483d8; position: absolute; }
+#uploader .statusBar .progress span.text { position: relative; z-index: 10; }
+/*#uploader .statusBar */
+.info { display: inline-block; font-size: 12px; color: #666666; }
+
+#uploader .statusBar .btn1s { position: absolute; top: 10px; right: 20px; line-height: 40px; }
+/*#filePicker2 { display: inline-block; float: left; }*/
+#filePicker2 { float: left; margin: 0 5px 5px 0; display: none; font-size: 0; background: url(../images/icons.png) no-repeat -84px 0; width: 78px; height: 78px; cursor: pointer; }
+#filePicker2:hover { background: url(../images/icons.png) no-repeat 0 0; width: 78px; height: 78px;}
+#filePicker2 .webuploader-pick{ width:78px; height: 78px; visibility: hidden;}
+#uploader .webuploader-pick, #uploader .uploadBtn, #uploader .uploadBtn.state-uploading, #uploader .uploadBtn.state-paused { background: #ffffff; border: 1px solid #cfcfcf; color: #565656; padding: 0 18px; display: inline-block; border-radius: 3px; margin-left: 10px; cursor: pointer; font-size: 14px; float: left; }
+#uploader .webuploader-pick-hover, #uploader .uploadBtn:hover, #uploader .uploadBtn.state-uploading:hover, #uploader .uploadBtn.state-paused:hover { background: #f0f0f0; }
+#uploader .uploadBtn { position: absolute; left: -1000px; background: #00b7ee; color: #fff; border-color: transparent; }
+#uploader .uploadBtn:hover { background: #00a2d4; }
+#uploader .uploadBtn.disabled { pointer-events: none; opacity: 0.6; }
