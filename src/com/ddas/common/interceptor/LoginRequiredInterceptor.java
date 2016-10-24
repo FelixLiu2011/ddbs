@@ -35,7 +35,7 @@ public class LoginRequiredInterceptor implements HandlerInterceptor {
         }
         if (userInfo == null) {
             try {
-                req.getRequestDispatcher("/WEB-INF/views/login/login.jsp").forward(req,response);
+                req.getRequestDispatcher("/WEB-INF/views/login/login1.jsp").forward(req,response);
                 //retry login in with cookie
                 //response.getWriter().write("<script type='text/javascript'>window.top.location.href='" + req.getContextPath() + "/login/gotoLogin" + "';</script>");
             } catch (IOException e) {
