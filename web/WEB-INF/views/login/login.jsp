@@ -520,7 +520,7 @@
                         <!---->  <a href="#" href="javascript:void(0)" class="fcbk" onclick="loginfFaceBook()"></a>
                         <a href="#" onclick="QQLogin()" class="qq"></a>
                         <a href="#" class="xinlang" href="javascript:void(0)" onclick="loginfWeiBo()"></a>
-                        <a href="http://www.gagahi.com:80/Platform/experience?source=&inviter=&inviteEmail=&sysid=" class="kk w90">先看看<!-- 先看看 --></a>
+                        <a href="<%=path%>/platform/experience?source=&inviter=&inviteEmail=&sysid=" class="kk w90">先看看<!-- 先看看 --></a>
                     </div>
                 </div>
             </div>

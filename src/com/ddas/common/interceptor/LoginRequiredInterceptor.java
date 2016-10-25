@@ -33,7 +33,7 @@ public class LoginRequiredInterceptor implements HandlerInterceptor {
         if (requestURL.contains("Process")) {
             return true;
         }
-        if (userInfo == null) {
+/*        if (userInfo == null) {
             try {
                 req.getRequestDispatcher("/WEB-INF/views/login/login.jsp").forward(req,response);
                 //retry login in with cookie
@@ -42,7 +42,7 @@ public class LoginRequiredInterceptor implements HandlerInterceptor {
                 e.printStackTrace();
             }
             return false;
-        }
+        }*/
         return true;
     }
 }
