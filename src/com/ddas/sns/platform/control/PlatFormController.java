@@ -19,7 +19,7 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * ClassName:	FriendsControl
+ * ClassName:	PlatFormController
  * Function: 	朋友模块Controller
  *
  * @author shaojunxiang
@@ -74,6 +74,20 @@ public class PlatFormController extends BaseController {
         msg.setSuccessful(true);
 
         return msg;
+    }
+
+    /**
+     * 跳转我的私信页面
+     *
+     * @return java.lang.String
+     * @Author shaojunxiang
+     * @Date 2016/7/8 16:34
+     * @since JDK1.6
+     */
+    @RequestMapping("/privateLetter")
+    public ModelAndView gotoPrivateLetter(HttpServletRequest request) {
+        ModelAndView modelAndView = withLocal(request, "index/privateLetter");
+        return modelAndView;
     }
 
 }

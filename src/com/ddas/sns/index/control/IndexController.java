@@ -55,4 +55,18 @@ public class IndexController extends BaseController{
  //       setLoginUserToSession(getLoginUser(httpServletRequest), httpServletRequest);
         return mav;
     }
+
+    /**
+     *跳转到首页
+     *@param
+     *@Author shaojunxiang
+     *@Date 2016/6/28 16:23
+     *@return java.lang.String
+     *@since JDK1.6
+     */
+    @RequestMapping("/iHome")
+    public ModelAndView gotoIHome(HttpServletRequest httpServletRequest){
+        ModelAndView mav = withLocal(httpServletRequest, "index/iHome");
+        return mav;
+    }
 }

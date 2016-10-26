@@ -35,7 +35,7 @@
     <link href="<%=path%>/common/css/jquery.range.css" rel="stylesheet" type="text/css">
     <link href="<%=path%>/common/css/lang.css" rel="stylesheet" type="text/css">
     <link href="<%=path%>/common/css/lrtk.css" rel="stylesheet" type="text/css">
-    <!-- <link href="http://static.gagahi.com/css/skin/zhongqiu/style.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="<%=path%>/common/css/skin/zhongqiu/style.css" rel="stylesheet" type="text/css"> -->
     <script src="<%=path%>/common/js/jquery.min.js" type="text/javascript"></script>
     <script  src="<%=path%>/common/js/laytpl.js"       type="text/javascript"></script>
     <script  src="<%=path%>/common/js/core.js"    type="text/javascript"></script>
@@ -104,7 +104,7 @@
 
     </script>
     <script src="<%=path%>/common/js/webuploader.js" type="text/javascript"></script>
-    <script src="<%=path%>/common/layer/js/layer.js" type="text/javascript"></script>
+    <script src="<%=path%>/common/layerjs/layer.js" type="text/javascript"></script>
     <script src="<%=path%>/common/js/template.js" type="text/javascript"></script>
     <script src="<%=path%>/common/js/global_plugin.js" type="text/javascript"></script>
     <script src="<%=path%>/common/js/ScrollBar/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
@@ -192,37 +192,37 @@
         //选中状态样式
         function  selectionStyle(){
             clearnSelectionStyle();
-            if('encounterIndex'=='encounterIndex'){
+            if('encounterIndex'=='leftFriendIndex'){
                 $("#encounterIndex").attr("class","on");
             }
-            if('zoneIndex'=='encounterIndex'){
+            if('zoneIndex'=='leftFriendIndex'){
                 $("#zoneIndex").attr("class","on");
             }
-            if('gameIndex'=='encounterIndex'){
+            if('gameIndex'=='leftFriendIndex'){
                 $("#gameIndex").attr("class","on");
             }
-            if('shopIndex'=='encounterIndex'){
+            if('shopIndex'=='leftFriendIndex'){
                 $("#shopIndex").attr("class","on");
             }
 
             //左侧导航
-            if('leftSixinIndex'=='encounterIndex'){
+            if('leftSixinIndex'=='leftFriendIndex'){
                 $("#leftSixinIndexImg").attr("class","on");
                 $("#leftSixinIndexText").attr("class","on");
             }
-            if('leftLikeMeIndex'=='encounterIndex'){
+            if('leftLikeMeIndex'=='leftFriendIndex'){
                 $("#leftLikeMeIndexImg").attr("class","lkm on");
                 $("#leftLikeMeIndexText").attr("class","on");
             }
-            if('leftIlikeIndex'=='encounterIndex'){
+            if('leftIlikeIndex'=='leftFriendIndex'){
                 $("#leftIlikeIndexImg").attr("class","mlk on");
                 $("#leftIlikeIndexText").attr("class","on");
             }
-            if('leftFriendIndex'=='encounterIndex'){
+            if('leftFriendIndex'=='leftFriendIndex'){
                 $("#leftFriendIndexImg").attr("class","each-lk on");
                 $("#leftFriendIndexText").attr("class","on");
             }
-            if('leftVisitorIndex'=='encounterIndex'){
+            if('leftVisitorIndex'=='leftFriendIndex'){
                 $("#leftVisitorIndexImg").attr("class","visitor on");
                 $("#leftVisitorIndexText").attr("class","on");
             }
@@ -548,11 +548,11 @@
         <div class="close"></div>
     </div>
 </div>
-<div class="head"  gagaid="2935154">
+<div class="head"  gagaid="2935185">
     <div class="w1100 jz">
         <div class="fl">
-            <a href="<%=path%>/index/iHome" class="logo"><img src="<%=path%>/common/images/logo.png" alt="gagahi"/></a>
-            <a href="<%=path%>/index/iHome" id="encounterIndex"  >Encounter</a>
+            <a href="http://www.gagahi.com:80/ihome" class="logo"><img src="<%=path%>/common/images/logo.png" alt="gagahi"/></a>
+            <a href="http://www.gagahi.com:80/ihome/" id="encounterIndex"  >Encounter</a>
             <a href="http://www.gagahi.com:80/Zone/"  id="zoneIndex" >Feeds</a>
             <!--<a href="http://game.gagahi.com/" target="blank"  id="gameIndex" >Game</a>-->
             <a href="http://www.gagahi.com:80/mall/giftReal/shophome" id="shopIndex" >Mall</a>
@@ -696,17 +696,17 @@
 <link type="text/css" href="<%=path%>/common/IM/css/webuploader.css"
       rel="stylesheet" />
 <script type="text/javascript">
-    var staticCtx="common/IM/";
+    var staticCtx="http://static.gagahi.com/IM/";
     var globalStaticCtx="http://static.gagahi.com/";
     var ctx="http://www.gagahi.com:80";
     var qiniuImgURL="http://images.gagahi.com/";
     var imUrl="http://webim.gagahi.com/";
-    var token="db2ec157e2204e109c8342979ad0b1bc";
+    var token="bf4689791055450cb822445d2d32fe93";
     var sendGender = "1";//1男2女
     var sendHeadImgUrl = "images/default/male.png";//小头像
-    var myNickname = "Sampson";//自己昵称
+    var myNickname = "Quintion";//自己昵称
     var myLanguage = "en-us";
-    var myId = "2935154";//我的ID
+    var myId = "2935185";//我的ID
     //1：普通会员，2：高级会员，3：VIP会员
     var myMemberGrade = "1";//会员等级
 
@@ -1239,7 +1239,7 @@
                 </div>
             </div>
             <div class="clear"></div>
-            <div class="moneyDiv cleard">Available gold:<!-- 账户可用金币 -->： <i class="money"></i><span class="moneyNum"> 0 </span><br/><a class="toRecharge" href="http://www.gagahi.com:80/pay/recharge">Go to recharge!<!-- 去充值 --></a></div>
+            <div class="moneyDiv cleard">Available gold:<!-- 账户可用金币 -->： <i class="money"></i><span class="moneyNum"> 0.00 </span><br/><a class="toRecharge" href="http://www.gagahi.com:80/pay/recharge">Go to recharge!<!-- 去充值 --></a></div>
             <div class="textMSGDiv">
                 <textarea class="textMSG">Your blessings</textarea>
                 <div class="wordsNumDiv"><span class="wordsNum">0</span>/500</div>
@@ -1292,20 +1292,10 @@
 
 
 
-
-<link type="text/css" href="<%=path%>/common/IM/css/qqFace.css" rel="stylesheet">
-<link href="<%=path%>/common/IM/css/webuploader.css" rel="stylesheet" type="text/css">
+<link href="<%=path%>/common/css/like.css" rel="stylesheet" type="text/css">
 <link href="<%=path%>/common/css/privateLetter.css" rel="stylesheet" type="text/css">
-
-<script src="<%=path%>/common/js/jquery.range.js" type="text/javascript"></script>
-<script src="<%=path%>/common/js/platformCountryElementMap.js"></script>
-<script src="<%=path%>/common/js/jquery.page.js"></script>
-<script type="text/javascript" src="<%=path%>/common/js/laytpl.js"></script>
-<script type="text/javascript" src="<%=path%>/common/js/webuploader.js"></script>
-<script type="text/javascript" src="<%=path%>/common/js/gift.js"></script>
-<script type="text/javascript" src="<%=path%>/common/IM/js/jquery.qqFace.js"></script>
+<script src="<%=path%>/common/js/slides-1.1.1-min.js" type="text/javascript"></script>
 <script type="text/javascript" src="<%=path%>/common/js/popPrivateLetter.js"></script>
-<script type="text/javascript" src="<%=path%>/common/js/jquery.highlight.js"></script>
 
 <div class="mid">
     <div class="w1100 jz">
@@ -1341,10 +1331,10 @@
                 </div>
                 <div class="yhxx fr">
                     <p class="ari">
-                        <a class="ellipsis-name" href="http://www.gagahi.com:80/Member/myinformation"  title="Sampson">Sampson</a>
+                        <a class="ellipsis-name" href="http://www.gagahi.com:80/Member/myinformation"  title="Quintion">Quintion</a>
 
                     </p>
-                    <p class="ari hui f12" style="margin: 8px 0">GaGaID:30039900</p>
+                    <p class="ari hui f12" style="margin: 8px 0">GaGaID:30039931</p>
 
                     <p class="jd"><span class="jdt"><span class="jdts f12">0%</span></span></p>
                 </div>
@@ -1456,422 +1446,36 @@
         </script>
 
 
+
+
+
+
         <div class="fr">
-            <div class="screen rht ">
-                <div class="inlineblock fl number">
-                    <img src="<%=path%>/common/images/oy1.jpg" class="fl"><span class="fr">We have
-					<span class=" c-ff8a00 fb">25,320,233</span> users from all over the world.
-					</span>
-                </div>
-                <div class="inlineblock fl yq">
-                    <button class="bdra15" id="yq">Invite friends</button>
-                </div>
-
-                <div class="inlineblock fl ss bdra15">
-                    <input name="keywords" id="keywords" type="text" placeholder="" autocomplete="off" class="f12" id="ss">
-                    <button id="searchbution" class="bdra15 " onclick="searchData(1)"></button>
-                </div>
-                <div class="inlineblock fl jq">
-                    <img src="<%=path%>/common/images/jq.png">
-                </div>
-                <div class="inlineblock fl mun-t all  bdra15">
-                    <span class="xld inlineblock" id="qickSearchTypeitems">Recommend</span>
-                    <ul class="xld-select" style="display: none;">
-                        <li><a href="javascript:void(0);" onclick="searchTypeData(1,2)">Recommend</a></li>
-                        <li><a href="javascript:void(0);" onclick="searchTypeData(1,3)">Online</a></li>
-                        <li><a href="javascript:void(0);" onclick="searchTypeData(1,4)">Latest </a></li>
-                    </ul>
+            <div class="rht" style="padding:0; width:856px;">
+                <div class="like-vip">
+                    <div class="like-quantity tc" style="margin-bottom:100px; padding-top:150px;">
+                        <img src="<%=path%>/common/images/likeme5.jpg">
+                    </div>
+                    <p class="f16 tc hui" style="margin-bottom:50px;">See people who like me, find those I like too</p>
+                    <p class=" tc">
+                        <button class="bdra30 h36 f16 bgc-2d57a1 c-fff mb10 mutuallike-btn" style="width:150px;" onclick="likeme()">Liked me</button>
+                    </p>
                 </div>
             </div>
-
-
-
-            <div class="clear"></div>
-            <div class="rht jqss">
-                <div class="jj jj1"></div>
-                <div class="fl jqsslb">
-                    <h3 class="f16">Country </h3>
-                    <div class="jqssn" id="countrydiv">
-                        <p>
-                            <input type="radio" name="country" id="om" value="3" class="radio" checked="checked"> <label for="a" class="radio"> European and USA  </label>
-                        </p>
-                        <p>
-                            <input type="radio" name="country" id="zgt" value="1" class="radio"> <label for="b" class="radio">China, HK, Taiwan</label>
-                        </p>
-                        <p>
-                            <input type="radio" name="country" id="rh" value="2" class="radio"> <label for="c" class="radio">Japan and Korea</label>
-                        </p>
-                        <p>
-                            <input type="radio" name="country" id="qt" value="0" class="radio"> <label for="d" class="radio">Others</label>
-                        </p>
-                        <div class="gj bdra30 h36">
-                            <span>Advanced options</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="fl jqsslb">
-                    <h3 class="f16">Gender</h3>
-                    <div class="jqssn jqssn1" id="sexdiv">
-                        <p>
-                            <input type="radio" name="sex" id="nan" value="1" class="radio"> <label for="m" class="radio">Male</label>
-                        </p>
-                        <p>
-                            <input type="radio" name="sex" id="nv" value="2" class="radio" checked="checked"> <label for="n" class="radio">Female</label>
-                        </p>
-                    </div>
-                    <div class="clear"></div>
-                    <h3 class="f16 mt15">Age</h3>
-                    <div class="nld">
-                        <input class="range-slider" type="hidden" name="ageRange" id="ageRange" value="18,32" />
-                    </div>
-                </div>
-                <div class="fl jqsslb" style="width: 34%;">
-                    <h3 class="f16" style="margin-bottom: 28px;">Language</h3>
-                    <div class="jqssn jqssn2" id="languagediv">
-
-                        <p>
-                            <input type="radio" name="language" id="a1" value="en-us" class="radio"> <label for="a1" class="radio">English</label>
-                        </p>
-
-                        <p>
-                            <input type="radio" name="language" id="a1" value="ja-jp" class="radio"> <label for="a1" class="radio">日本語</label>
-                        </p>
-
-                        <p>
-                            <input type="radio" name="language" id="a1" value="ru-ru" class="radio"> <label for="a1" class="radio">русский</label>
-                        </p>
-
-                        <p>
-                            <input type="radio" name="language" id="a1" value="es-es" class="radio"> <label for="a1" class="radio">Español</label>
-                        </p>
-
-                        <p>
-                            <input type="radio" name="language" id="a1" value="zh-cn" class="radio"> <label for="a1" class="radio">简体中文</label>
-                        </p>
-
-                        <p>
-                            <input type="radio" name="language" id="a1" value="zh-tw" class="radio"> <label for="a1" class="radio">繁體中文</label>
-                        </p>
-
-                        <p>
-                            <input type="radio" name="language" id="a1" value="ko-kr" class="radio"> <label for="a1" class="radio">한국어</label>
-                        </p>
-
-                        <p>
-                            <input type="radio" name="language" id="a1" value="de-de" class="radio"> <label for="a1" class="radio">Deutsch</label>
-                        </p>
-
-                    </div>
-                </div>
-                <div class="clear"></div>
-                <div class="gjn" style="display: none;">
-                    <div class="inlineblock fl mun-t gjxxlb  h36 bdra30">
-                        <span class="xld inlineblock" id="heightRange" data-tongyong="">170cm—180cm</span>
-                        <ul class="xld-select" style="display: none; top: 37px;">
-                            <li data-chuandi="150,160">150cm—160cm</li>
-                            <li data-chuandi="160,170">160cm—170cm</li>
-                            <li data-chuandi="170,180"  class="default">170cm—180cm</li>
-                            <li data-chuandi="180">180cm <em data-i18n="global.above"></em></li>
-                        </ul>
-                    </div>
-
-                    <div class="inlineblock fl mun-t gjxxlb  h36 bdra30">
-                        <span class="xld inlineblock" id="weightRange" data-tongyong="">60kg—70kg</span>
-                        <ul class="xld-select" style="display: none; top: 37px;">
-                            <li data-chuandi="40,50">40kg—50kg</li>
-                            <li data-chuandi="50,60" class="default">50kg—60kg</li>
-                            <li data-chuandi="60,70">60kg—70kg</li>
-                            <li data-chuandi="70,80">70kg—80kg</li>
-                            <li data-chuandi="80">80kg <em data-i18n="global.above"></em></li>
-                        </ul>
-                    </div>
-                    <div class="inlineblock fl mun-t gjxxlb  h36 bdra30">
-                        <span class="xld inlineblock" id="jobText" data-tongyong="">Copywriter</span>
-                        <ul class="xld-select " id="joblist" style="display: none; top: 37px;height:300px;overflow-y:auto;">
-
-                            <li data-chuandi="1">Copywriter</li>
-
-                            <li data-chuandi="2">Clerk</li>
-
-                            <li data-chuandi="3">Programmer</li>
-
-                            <li data-chuandi="4">Designer</li>
-
-                            <li data-chuandi="5">Salesman</li>
-
-                            <li data-chuandi="6">Customer Manager</li>
-
-                            <li data-chuandi="7">Engineer</li>
-
-                            <li data-chuandi="8">CEO</li>
-
-                            <li data-chuandi="9">Accountant</li>
-
-                            <li data-chuandi="10">Cashier</li>
-
-                            <li data-chuandi="11">Civil Servant</li>
-
-                            <li data-chuandi="12">Farmer</li>
-
-                            <li data-chuandi="13">Fisherman</li>
-
-                            <li data-chuandi="14">Doctor</li>
-
-                            <li data-chuandi="15">Nurse</li>
-
-                            <li data-chuandi="16">Cleaner</li>
-
-                            <li data-chuandi="17">Security</li>
-
-                            <li data-chuandi="18">Policeman</li>
-
-                            <li data-chuandi="19">Coach</li>
-
-                            <li data-chuandi="20">Athlete</li>
-
-                            <li data-chuandi="21">Driver</li>
-
-                            <li data-chuandi="22">Delivery Courier</li>
-
-                            <li data-chuandi="23">Waiter</li>
-
-                            <li data-chuandi="24">Airline Stewardess</li>
-
-                            <li data-chuandi="25">Captain</li>
-
-                            <li data-chuandi="26">Maintainer</li>
-
-                            <li data-chuandi="27">Buyer</li>
-
-                            <li data-chuandi="28">Chef</li>
-
-                            <li data-chuandi="29">Gourmet</li>
-
-                            <li data-chuandi="30">Guide</li>
-
-                            <li data-chuandi="31">Teacher</li>
-
-                            <li data-chuandi="32">Student</li>
-
-                            <li data-chuandi="33">Janitor</li>
-
-                            <li data-chuandi="34">Shop Assistant</li>
-
-                            <li data-chuandi="36">Lawyer</li>
-
-                            <li data-chuandi="37">Barber</li>
-
-                            <li data-chuandi="38">Beautician</li>
-
-                            <li data-chuandi="39">Priest</li>
-
-                            <li data-chuandi="40">Actor</li>
-
-                            <li data-chuandi="41">Singer</li>
-
-                            <li data-chuandi="42">Broker</li>
-
-                            <li data-chuandi="43">Photographer</li>
-
-                            <li data-chuandi="44">Director</li>
-
-                            <li data-chuandi="45">Dancer</li>
-
-                            <li data-chuandi="46">Painter</li>
-
-                            <li data-chuandi="47">Writer</li>
-
-                            <li data-chuandi="48">Self-employed</li>
-
-                            <li data-chuandi="49">Housewife</li>
-
-                            <li data-chuandi="50">Freelance</li>
-
-                        </ul>
-                    </div>
-                </div>
-                <div class="sxan">
-                    <button class="bdra30 bnt-lan h36 w100 f15" id="cx" onclick="searchSelectionData(1)">Re-search</button>
-                    <button class="bdra30 bnt-hui h36 w80 f15" id="qx"  >Cancel</button>
-                </div>
-            </div>
-
-            <!-- 这是搜索结果 -->
-
-            <div class="oyt rht mt15" id="datacover" style="position: relative;min-height: 120px;">
-
-                <!--没有搜索到展示-->
-
-                <div class="oyt-none p30 tc"  id="nodatatips"  style="display:none">Not finding the one that match your search criteria.</div>
-                <ul id="datalists">
-
-                </ul>
-                <!-- 分页 -->
-                <div class="page" id="pagediv">
-                    <div class="tcdPageCode"></div>
-                </div>
-            </div>
-
         </div>
+
+
+
         <div class="clear"></div>
-    </div>
-    <!--邀请好友弹窗html-->
-    <div class="yqCon" style="display: none;">
-        <div class="yqtc">
-            Invite more friends and colleages to join GaGaHi, the intimate-friend-making SNS!   <br>
-            You can tell your friends the following link and invite them in by QQ、MSN or other chatting tools. <a href="http://www.gagahi.com:80/Member/myinformation"><span class="c-2d57a1">http://www.gagahi.com:80/Member/myinformation</span></a>
-            <div class="yqnr" style="position:relative">
-                <p>Your friends' email:</p>
-                <textarea  name="emails" id="emails" class="bdra15 mail" style=" height:50px;line-height:25px; padding-top:5px;padding-bottom:5px"></textarea>
-                <div style="display: inline;">
-                    <span class="f12 ts maxmaillength " style="display: none;top:14px;left:283px;"> You can enter up to 10 mailboxes.</span>
-					<span class="f12 ts kd1 " style="display: none;top:14px;left:283px;"> Please enter your account number
-					</span> <span class="f12 ts yy " style="display: none;top:14px;left:283px;">The email format is incorrect.</span>
-                </div>
-                <p class="hui f13">Input your friends' email.You can use ","to seperate when there have several mails.You can enter up to 10 mailboxes.</p>
-				<textarea cols="" rows="" id="emailTextWords" class="yqhy">Hi,
-         Hi, Im {0}, i have register on GaGaHi, this is a international social communication net, you can not only know more friends all over the world,but also can be their close friends here. Come to GaGaHi, open a trip to make close friends.
-         Click http://www.gagahi.com:80/Member/otherHome/2935154, find an international close friend, make your social life relax and wonderful.
-                </textarea>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<span id="winodowtitle"  style="display:none">Invite your friends</span>
-<span id="winodowbutton" style="display:none">Yes</span>
-<span id="popPrivateBtn" style="display:none;"></span>
-
-<span id="chargewindowyes"  style="display:none">Yes</span>
-<span id="onekey50windowsend"  style="display:none">Send</span>
-
-
-
-<script type="text/javascript">
-    /* (function($){
-     $(window).load(function() {
-     //隐藏全局加载层
-     $("#global_overflow").fadeOut(500);
-     });
-     })(jQuery); */
-    selectItem();
-
-    //选中英语
-    function selectItem(){
-        $("input[name$='language'][value$='en-us']").attr("checked","true");
-    }
-    //头像显示
-    function showBigImage(imgCode){
-        if(imgCode==1){
-            return 'images/default/male.png';
-        }else if(imgCode==2){
-            return 'images/default/female.png';
-        }else{
-            return imgCode;
-        }
-    };
-
-    function i18nSucess() {
-        $('#keywords').attr('placeholder', $.t('home.searchKey'));
-    }
-</script>
-
-
-
-
-
-
-
-
-<script type="text/javascript">
-    function doSendMsg(idname){
-        var str=idname.split(";");
-        var mid = str[0];
-        var gettpl = Zoneyet.template($('#temp_home_popPrivate').html()).render({});
-        $.post(ctx+"/Member/getMemberId",{"gagaid":mid},function(reg){
-            //console.log(reg);
-            // console.log("dd");
-            var receiveLanguage = reg.obj.membLanguage;
-
-            layer.open({
-                area: '600px',
-                skin: 'giftCon1',
-                title:$.t("Letter.sendPri"),
-                content: gettpl,
-                type: 1,
-                //title: false,
-                // btn: [],
-                zIndex:19890305,
-                success: function(layero, index){
-                    if(sendGender =="1"){
-                        switch(receiveLanguage){
-                            case "en-us":
-                                $(".giftCon1 .language").attr("langs-lang", "en").text("English");
-                                break;
-                            case "zh-cn":
-                                $(".giftCon1 .language").attr("langs-lang", "zh").text("简体中文");
-                                break;
-                            case "zh-tw":
-                                $(".giftCon1 .language").attr("langs-lang", "cht").text("繁體中文");
-                                break;
-                            case "ko-kr":
-                                $(".giftCon1 .language").attr("langs-lang", "kor").text("한국어");
-                                break;
-                            case "ru-ru":
-                                $(".giftCon1 .language").attr("langs-lang", "ru").text("Pусский");
-                                break;
-                            case "de-de":
-                                $(".giftCon1 .language").attr("langs-lang", "de").text("Deutsch");
-                                break;
-                            case "es-es":
-                                $(".giftCon1 .language").attr("langs-lang", "spa").text("Español");
-                                break;
-                            case "ja-jp":
-                                $(".giftCon1 .language").attr("langs-lang", "jp").text("日本語");
-                                break;
-                            default:
-                                $(".giftCon1 .language").attr("langs-lang", "").text("不翻译");
-                                break;
-                        }
-                    }
-
-                    var give_pv_to =str[1] ;
-
-                    $("#give_pv_to").text(give_pv_to);
-                    $("#give_pv_to_id").val(mid);
-                    //初始化弹出私信框
-                    new popPrivate.pri();
-                },
-                yes: function (index, layero) {
-
-                },
-                cancel: function (index) {
-                }
-            });
-
-        });
-    }
-</script>
-
-<!----------男性---购买条数-------------->
-<div class="privatebuyNumCon" style=" display:none;">
-    <div class="balance tc">Your gold balance：<span class="c-ff8a00 f25 mr5 myMoney">0</span><span class="money mt15"></span><span class="hui ml10">（Service fee 1 Gold / 10 messages）</span></div>
-    <div class="recharge" style="margin:50px auto 45px;">
-        <p class=" tc mb10">Choose number：
-            <input class="min bdra15 h36 fb f20" name="" type="button" value="-">
-            <b><input class="text_box f18 fb" name="" type="text" value="10"></b>
-            <b><input class="add bdra15 h36 fb f18" name="" type="button" value="+"></b>
-        </p>
     </div>
 </div>
 <script id="temp_home_popPrivate" type="text/html">
     <div>
-        <span class="popPLetterWrapLable ihome-pop-name1">##Letter.towho##：</span>
+        <span class="popPLetterWrapLable">##Letter.towho##：</span>
         <span id="give_pv_to" class="popPLetterTo"></span><input type="hidden" id="give_pv_to_id">
     </div>
     <div class="">
-        <span class="popPLetterWrapLable ihome-pop-name2">##Letter.pricontent##：</span>
+        <span class="popPLetterWrapLable">##Letter.pricontent##：</span>
         <div id="chatConBottom" class="inlineblock  border-all bdra15 mt20 popPLetterWrap">
             <div class="TipsContent">You have run out of the number of chat today.<!-- 您今日私信条数已用完 -->！</div>
             <div class="character"><span class="characterNum">0</span>/500</div>
@@ -1885,7 +1489,6 @@
                     </div>
                     <ul class="languageUl">
                         <li class="langLi" langs-lang="">No translation</li>
-
                         <li class="langLi" langs-lang="en">English</li>
 
                         <li class="langLi" langs-lang="jp">日本語</li>
@@ -1915,8 +1518,483 @@
         </div>
     </div>
 </script>
+<script src="<%=path%>/common/js/jquery.page.js"></script>
+<script>
+    /*修改滚动轴*/
+    $(window).load(function(){
+        $(".dz").css("display","none");
+    });
+    /*下拉菜单*/
+    $(".xld").each(function(index, element) {
+        $(this).click(function (e) {
+            $(this).next("ul").css("display","block");
+            $(this).css("background-image","url(<%=path%>/common/images/xld1.png)");
+            $(".xld-select>li").each(function (e) {
+                var _selt = $(this);
+                $(this).hover(function (){
+                    $(this).addClass("default").siblings().removeClass("default");
+                })
+                $(this).click(function (e) {
+                    $(_selt.parent(".xld-select").siblings("span")).text(_selt.children("a").text()).css("background-image","url(<%=path%>/common/images/xld.png)");
+                    _selt.parent(".xld-select").css("display", "none");
+                });
+            });
+        })
+    });
+    /*查看我喜欢我的人图片展示*/
+    $(function(){
+        $('#sildes').olvSlides(
+                {
+                    thumb:true,
+                    thumbPage:true,
+                    thumbDirection:"Y",
+                    onetip: $.t('home.onlyOneLike'),
+                    effect:'fade'
+                }
+        );
+    })
+
+    /*分页*/
+    $(".tcdPageCode").createPage({
+        pageCount:15,//总页数
+        current:1,//当前页
+        backFn:function(p){
+            console.log(p);
+        }
+    });
 
 
+    /**跳转充值会员*/
+    $(".govip").click(function(e) {
+        location.href = "http://www.gagahi.com:80/pay/upgradeMember";
+    });
+
+    /*加好友*/
+    $(".friending").click(function(e) {
+        var mid = $(".thumbWrap").find(".cur").find("img:first").attr("lmid");
+        $.ajax({//虚拟礼物
+            type : "post",
+            url : "http://www.gagahi.com:80/Member/Friend/applyFriend",
+            contentType : "application/x-www-form-urlencoded",
+            data: {"friGagaid":mid,"source":1},
+            success: function(data){
+                if(data.success){
+                    layer.msg(data.msg);//
+                }else{
+                    layer.msg(data.msg);//
+                }
+            }
+        });
+    });
+    /*举报*/
+    $(".report").click(function(e) {
+        layer.open({
+            area: ['482px','320px'],
+            skin: 'demo-report',
+            title: ['Report', 'font-size:18px;'],
+            content:$('.reportCon').html(),
+            btn: 'Yes',
+            yes: function (index, layero) {
+                //console.log(index+'||'+layero)
+                layer.close(index)
+            },
+            cancel: function (index) {
+
+            },
+        });
+    });
+
+    /*取消喜欢*/
+    $(document).on("click",".Cancel-like",function(){
+//$(".Cancel-like").click(function(e) {
+        layer.open({
+            offset: '430px',
+            area: ['220px',''],
+            skin: 'Cancel-like-mutual',
+            type: 1,
+            title: false,
+            content: '<p class="tc">Are you sure to cancel?</p>',
+            btn: ['Yes', 'Cancel'],
+            yes: function (index, layero) {
+                layer.close(index);
+                delilike();
+            },
+            cancel: function (index) {
+
+            }
+        });
+        var lis = $(".thumbWrap").find(".thumbCont").find("li").length;
+        if(lis == 1){
+            layer.msg('Only one user you like at present.', {
+                time: 2000 //2秒关闭（如果不配置，默认是3秒）
+            }, function () {})
+        }
+    })
+
+    /*私信所有人*/
+    $(".private-all").click(function(e) {
+        layer.open({
+            area: '542px',
+            skin: 'privateall',
+            title:'Tip',
+            content:$(".privateallCon").html(),
+            btn: 'Send',
+            yes: function (index, layero) {
+                //console.log(index+'||'+layero)
+                layer.close(index)
+            },
+            cancel: function (index) {
+
+            },
+
+        });
+        $(".layui-layer-btn0").after("<br><a herf='' class='lj'><span class='c-2d57a1'>Upgrade membership</span>more cost-effective</a>");
+    })
+
+    gvid = "";//选中的礼物id
+    type = "";//礼物or翻译包
+    goodmoney = 0;//商品单价（用户计算成功后金币）
+    /**选中礼物*/
+    function selectedgift(obj,gid,types,money){
+        //$(obj).siblings().children(".chosed").css("display","none");
+        $(obj).closest(".giftcont").find(".giftcont1 li").children(".chosed").css("display","none");
+        $(obj).children(".chosed").css("display","block");
+        gvid = gid;
+        type = types;
+        goodmoney = money;
+    }
+
+    /*赠送礼物*/
+    gpage = 0;//礼物分页
+    tpage = 0;//翻译包分页
+
+    $(document).on("click",".gift",function(){
+//$(".gift").click(function(e) {
+        //var gifthtml = '<div class="giftCon"><div class="gift-top"><div class="fl"><span class="mr15 f16 gift-chose pb5" id="gift">虚拟礼物</span><span class="f16 pb5" id="trans">翻译包</span></div><div class="fr"><a href="" class="c-2d57a1 pb5">去商城逛逛</a></div><div class="clear"></div></div><div class="giftcont"><ul class="giftcont1 mCustomScrollbar" id="gift1"><li><p><img src="../images/gift2.jpg" ></p><p class="mt5"><span class="c-ff8a00 f18 mr5">20</span><span class="money"></span></p><div class="chosed"></div></li><li><p><img src="../images/gift2.jpg" ></p><p class="mt5"><span class="c-ff8a00 f18 mr5">20</span><span class="money"></span></p><div class="chosed"></div></li><li><p><img src="../images/gift2.jpg" ></p><p class="mt5"><span class="c-ff8a00 f18 mr5">20</span><span class="money"></span></p><div class="chosed"></div></li><li><p><img src="../images/gift2.jpg" ></p><p  class="mt5"><span class="c-ff8a00 f18 mr5">20</span><span class="money"></span></p><div class="chosed"></div></li><li><p><img src="../images/gift2.jpg" ></p><p class="mt5"><span class="c-ff8a00 f18 mr5">20</span><span class="money"</span></p><div class="chosed"></div></li><li><p><img src="../images/gift2.jpg" ></p><p class="mt5"><span class="c-ff8a00 f18 mr5">20</span><span class="money"</span></p><div class="chosed"></div></li><li><p><img src="../images/gift2.jpg" ></p><p class="mt5"><span class="c-ff8a00 f18 mr5">20</span><span class="money"</span></p><div class="chosed"></div></li><li><p><img src="../images/gift2.jpg" ></p><p class="mt5"><span class="c-ff8a00 f18 mr5">20</span><span class="money"</span></p><div class="chosed"></div></li><li><p><img src="../images/gift2.jpg" ></p><p class="mt5"><span class="c-ff8a00 f18 mr5">20</span><span class="money"</span></p><div class="chosed"></div></li><li><p><img src="../images/gift2.jpg" ></p><p class="mt5"><span class="c-ff8a00 f18 mr5">20</span><span class="money"</span></p><div class="chosed"></div></li><li><p><img src="../images/gift2.jpg" ></p><p class="mt5"><span class="c-ff8a00 f18 mr5">20</span><span class="money"</span></p><div class="chosed"></div></li><li><p><img src="../images/gift2.jpg" ></p><p class="mt5"><span class="c-ff8a00 f18 mr5">20</span><span class="money"></span></p> <div class="chosed"></div></li><div class="clear"></div></ul><ul class="giftcont1 mCustomScrollbar" id="trans1" style="display:none"><li><p><img src="../images/gift1.jpg" ></p><p>3000字符</p><p class="mt5"><span class="c-ff8a00 f18 mr5">20</span><span class="money"></span></p><div class="chosed"></div> </li><li><p><img src="../images/gift1.jpg" ></p><p>3000字符</p><p class="mt5"><span class="c-ff8a00 f18 mr5">20</span<span class="money"></span></p><div class="chosed"></div></li><li><p><img src="../images/gift1.jpg" ></p><p>3000字符</p><p class="mt5"><span class="c-ff8a00 f18 mr5">20</span><span class="money"></span></p><div class="chosed"></div></li><li><p><img src="../images/gift1.jpg" ></p><p>3000字符</p><p class="mt5"><span class="c-ff8a00 f18 mr5">2</span><span class="money"></span></p><div class="chosed"></div></li></ul></div></div>'
+        gpage = 0;//礼物分页
+        tpage = 0;//翻译包分页
+        gvid = "";//选中的礼物id
+        type = "";//礼物or翻译包
+        $.ajax({//虚拟礼物
+            type : "post",
+            url : "http://www.gagahi.com:80/Member/giftlist",
+            contentType : "application/x-www-form-urlencoded",
+            data: {"page":++gpage},
+            success: function(data){
+                if(data.success){
+                    var str = "";
+                    for(var i = 0;i < data.obj.length;i++){
+                        str += "<li onclick=\"selectedgift(this,"+data.obj[i].giviId+",1,"+ data.obj[i].giviGold +")\">"
+                                +"<p><img src=\"http://images.gagahi.com/"+data.obj[i].giviDisplay+"?imageMogr2/thumbnail/100x100\" ></p>"
+                                +"<p class=\"mt5\"><span class=\"c-ff8a00 f18 mr5\">"+data.obj[i].giviGold
+                                +"</span><span class=\"money\"></span></p><div class=\"chosed\"></div></li>";
+                    }
+                    $(".giftcont").find(".gift1").html(str);
+                }else{
+                    layer.msg(data.msg);
+                }
+            }
+        });
+        $.ajax({//翻譯包
+            type : "post",
+            url : "http://www.gagahi.com:80/Member/transpackagelist",
+            contentType : "application/x-www-form-urlencoded",
+            data: {"page":++tpage},
+            success: function(data){
+                if(data.success){
+                    var str = "";
+                    for(var i = 0;i < data.obj.length;i++){
+                        str += "<li onclick=\"selectedgift(this,"+data.obj[i].trpaId+",2," + data.obj[i].trpaGold + ")\">"
+                                +"<p><img src=\"http://images.gagahi.com/"+data.obj[i].trpaImgurl+"?imageMogr2/thumbnail/100x78\" ></p>"
+                                +"<p>"+data.obj[i].trpaCharcount+"Character</p>"
+                                +"<p class=\"mt5\"><span class=\"c-ff8a00 f18 mr5\">"+data.obj[i].trpaGold
+                                +"</span><span class=\"money\"></span></p><div class=\"chosed\"></div></li>";
+                    }
+                    $(".giftcont").find(".trans1").html(str);
+                }else{
+                    alert(data.msg);
+                }
+            }
+        });
+
+
+        layer.open({
+            type: 1,
+            area: '700px',
+            skin: 'giftCon1',
+            title:'Send gifts',
+            content: $(".giftCon").html(),
+            btn: 'Yes',
+            yes: function (index, layero) {
+                if(null == gvid || $.trim(gvid).length <= 0
+                        ||null == type || $.trim(type).length <= 0){
+                    layer.msg("Please choose a gift.");
+                    return;
+                }
+                returnGive();
+                layer.close(index)
+            },
+            cancel: function (index) {
+
+            },
+        });
+
+        $(".giftCon1 .gift-top span").click(function(e) {
+            $(this).addClass("gift-chose").siblings().removeClass("gift-chose");
+            var $ulobj = $(this).parents(".layui-layer-content").find(".giftcont").find("ul");
+            $ulobj.hide().eq($(this).index()).show();
+        });
+    })
+
+    $(".xld").each(function(index, element) {
+        $(this).click(function (e) {
+            $(this).next("ul").css("display","block");
+            $(this).css("background-image","url(<%=path%>/common/images/xld1.png)");
+            $(".xld-select>li").each(function (e) {
+                var _selt = $(this);
+                $(this).hover(function (){
+                    $(this).addClass("default").siblings().removeClass("default");
+                })
+                $(this).click(function (e) {
+                    $(_selt.parent(".xld-select").siblings("span")).text(_selt.children("a").text()).css("background-image","url(<%=path%>/common/images/xld.png)");
+                    _selt.parent(".xld-select").css("display", "none");
+                });
+            });
+        })
+    });
+
+    /**跳转至喜欢我的人*/
+    function likeme(){
+        window.location.href="http://www.gagahi.com:80/Member/Like/likeMe";
+    }
+
+    /**取消喜欢*/
+    function delilike(){
+        var id = $(".thumbWrap").find(".cur").find("img:first").attr("lid");
+        $.ajax({
+            type : "post",
+            url : "http://www.gagahi.com:80/Member/Like/delilike",
+            contentType : "application/x-www-form-urlencoded",
+            data: {"id":id},
+            success: function(data){
+                if(data.success){
+                    var obj = $(".thumbWrap").find(".cur");
+                    var intro1 = $(".control").find(".intro1");
+
+                    var nobj = $(obj).next();
+                    var nintro1 = $(intro1).next();
+
+                    if(null == nobj || nobj.length <= 0 ){
+                        nobj = $(obj).prev();
+                        nintro1 = $(intro1).prev();
+                    }
+                    if(null != nobj && nobj.length > 0 ){
+                        nobj.attr("class","cur");
+                        nintro1.css("display","block");
+                        nintro1.addClass("intro1");
+                    }
+                    $(obj).remove();
+                    $(intro1).remove();
+
+                    //数量
+                    var obj = $(".fr").find(".like-top").find(".frigs").find(".c-2d57a1");
+                    $(obj).text(parseInt($(obj).text())-1);
+                    //alert(data.msg);
+                }else{
+                    layer.msg(data.msg);
+                }
+            }
+        });
+    }
+
+    //////////////////////////////////////////////礼物////////////////////////////////////////////
+    /**获取礼物*/
+    function findgiftlist(obj){
+        if(obj.scrollHeight > obj.scrollTop +40 +420){
+            return;
+        }
+        $.ajax({
+            type : "post",
+            url : "http://www.gagahi.com:80/Member/giftlist",
+            contentType : "application/x-www-form-urlencoded",
+            data: {"page":++gpage},
+            success: function(data){
+                if(data.success){
+                    var str = "";
+                    for(var i = 0;i < data.obj.length;i++){
+                        str += "<li onclick=\"selectedgift(this,"+data.obj[i].giviId+",1," + data.obj[i].giviGold + ")\">"
+                                +"<p><img src=\"http://images.gagahi.com/"+data.obj[i].giviDisplay+"?imageMogr2/thumbnail/100x100\" ></p>"
+                                +"<p class=\"mt5\"><span class=\"c-ff8a00 f18 mr5\">"+data.obj[i].giviGold
+                                +"</span><span class=\"money\"></span></p><div class=\"chosed\"></div></li>";
+                    }
+                    $(obj).append(str);
+                }else{
+                    layer.msg(data.msg);
+                }
+            }
+        });
+    }
+
+    /**获取翻译包*/
+    function findTranspackage(obj){
+        if(obj.scrollHeight > obj.scrollTop +20 + 420){
+            return;
+        }
+        $.ajax({
+            type : "post",
+            url : "http://www.gagahi.com:80/Member/transpackagelist",
+            contentType : "application/x-www-form-urlencoded",
+            data: {"page":++tpage},
+            success: function(data){
+                if(data.success){
+                    var str = "";
+                    for(var i = 0;i < data.obj.length;i++){
+                        str += "<li onclick=\"selectedgift(this,"+data.obj[i].trpaId+",2," + data.obj[i].trpaGold + ")\">"
+                                +"<p><img src=\"http://images.gagahi.com/"+data.obj[i].trpaImgurl+"?imageMogr2/thumbnail/100x78\" ></p>"
+                                +"<p>"+data.obj[i].trpaCharcount+"Character</p>"
+                                +"<p class=\"mt5\"><span class=\"c-ff8a00 f18 mr5\">"+data.obj[i].trpaGold
+                                +"</span><span class=\"money\"></span></p><div class=\"chosed\"></div></li>";
+                    }
+                    $(obj).append(str);
+                }else{
+                    layer.msg(data.msg);
+                }
+            }
+        });
+    }
+
+    /**回赠*/
+    function returnGive(){
+        var mid = $(".thumbWrap").find(".cur").find("img:first").attr("lmid");
+        $.ajax({
+            type : "post",
+            url : "http://www.gagahi.com:80/Member/givegift",
+            contentType : "application/x-www-form-urlencoded",
+            data: {"mid":mid,"gvid":gvid,"type":type},
+            success: function(data){
+                if(data.success){
+                    /*
+                     var divvalue = $("#totalMoney").text();
+                     if(null == divvalue || $.trim(divvalue).length <= 0){
+                     divvalue = 0;
+                     }
+                     $("#totalMoney").text(parseInt(divvalue) - parseInt(goodmoney))*/
+                    layer.msg(data.msg);
+                }else{
+                    layer.msg(data.msg);
+                }
+            }
+        });
+    }
+
+    /**聊天*/
+    $(document).on('click','.conversation',function(){
+        var isFriends="false";
+        var mid = $(".thumbWrap").find(".cur").find("img:first").attr("lmid");
+        var name = $(".thumbWrap").find(".cur").find("img:first").attr("alt");
+        var obj = $("#js-contactsScrollBar").find("#friendGroup").find("ul > li");
+        for(var i = 0;i < obj.length;i++){
+            if($(obj[i]).attr("data-gagaid") == mid){
+                $(obj[i]).trigger("click");
+                isFriends="true";
+            }
+        }
+        if(isFriends=="false"){
+            var gettpl = Zoneyet.template($('#temp_home_popPrivate').html()).render({});
+            layer.open({
+                area: '600px',
+                skin: 'giftCon1',
+                title:$.t("Letter.sendPri"),
+                content: gettpl,
+                type: 1,
+                zIndex:19890305,
+                success: function(layero, ix){
+                    //console.log('en-us');
+                    if(sendGender =="1"){
+                        switch('en-us'){
+                            case "en-us":
+                                $(".giftCon1 .language").attr("langs-lang", "en").text("English");
+                                break;
+                            case "zh-cn":
+                                $(".giftCon1 .language").attr("langs-lang", "zh").text("简体中文");
+                                break;
+                            case "zh-tw":
+                                $(".giftCon1 .language").attr("langs-lang", "cht").text("繁體中文");
+                                break;
+                            case "ko-kr":
+                                $(".giftCon1 .language").attr("langs-lang", "kor").text("한국어");
+                                break;
+                            case "ru-ru":
+                                $(".giftCon1 .language").attr("langs-lang", "ru").text("Pусский");
+                                break;
+                            case "de-de":
+                                $(".giftCon1 .language").attr("langs-lang", "de").text("Deutsch");
+                                break;
+                            case "es-es":
+                                $(".giftCon1 .language").attr("langs-lang", "spa").text("Español");
+                                break;
+                            case "ja-jp":
+                                $(".giftCon1 .language").attr("langs-lang", "jp").text("日本語");
+                                break;
+                            default:
+                                $(".giftCon1 .language").attr("langs-lang", "").text("不翻译");
+                                break;
+                        }
+                    }
+                    $("#give_pv_to").text(name);
+                    $("#give_pv_to_id").val(mid);
+                    //初始化弹出私信框
+                    new popPrivate.pri();
+                }
+            });
+        }
+
+    });
+</script>
+
+<!--发送私信-->
+
+
+
+<div class="privateallCon" style="display: none;">
+    <div class="balance tc">
+        the fees of this service：
+        <span class="c-ff8a00 f25 mr5">0.0</span>
+        <span class="money mt15"></span>
+        <span class="hui ml10">（Your gold balance is 0.00 Gold）</span>
+    </div>
+    <div class="lxlb h36 bdra30" style="margin: 50px auto 45px;">
+        <span class="xld inlineblock">What kind of opposite sex do you like?</span>
+        <ul style="display: none; top: 39px;" class="xld-select">
+            <li><a href="/">我一个人去，有一种情自己看电影的美好</a></li>
+            <li class="default"><a href="/">男朋友漏电了，打一歇后语</a></li>
+            <li><a href="/">每次追完一个距就像是要分手一样？</a></li>
+            <li><a href="/">你是变得越来越好，还是只是越来越老？</a></li>
+            <li><a href="/">你觉着自己是哪种类型的人？</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+<!-- 商品列表 -->
+<div class="giftCon" style="display: none;">
+    <div class="gift-top">
+        <div class="fl">
+            <span class="mr15 f16 gift-chose pb5" id="gift">Virtual gifts</span>
+
+        </div>
+        <div class="fr"><a href="" class="c-2d57a1 pb5">Go to the mall.</a></div>
+        <div class="clear"></div>
+    </div>
+    <div class="giftcont" >
+        <ul class="gift1 giftcont1" onscroll="findgiftlist(this)" >
+            <div class="clear"></div>
+        </ul>
+        <ul class="trans1 giftcont1" style="display:none" onscroll="findTranspackage(this)">
+        </ul>
+    </div>
+</div>
 
 
 
@@ -1956,7 +2034,7 @@
                 <button id="log-bnt" class="btn">Log in<!-- 登录 --></button>
             </div>
             <div class=" mt10">
-                <a href="http://www.gagahi.com:80/Platform/inviteRegIndex?source=2&inviter=&sysid=" class="fl c-2d57a1 f13">Register<!-- 注册 --></a>
+                <a href="http://www.gagahi.com:80/Platform/inviteRegIndex?source=2&inviter=2935185&sysid=" class="fl c-2d57a1 f13">Register<!-- 注册 --></a>
                 <a href="http://www.gagahi.com:80/Platform/forgotPassword" class="fr c-2d57a1 f13">Forget password<!-- 忘记密码？ --></a>
                 <div class="clear"></div>
             </div>
@@ -2081,7 +2159,7 @@
 <script type="text/javascript">
     $(function(){
 
-        var token="db2ec157e2204e109c8342979ad0b1bc";
+        var token="bf4689791055450cb822445d2d32fe93";
         if(token==""){
             return;
         }
@@ -2578,960 +2656,4 @@
 
 </script>
 </html>
-
-
-
-
-
-
-
-
-<!--购买头像首位位置html-->
-<div class="buyCon" style="display:none;" id="buyShowFirstWindow">
-    <div class="buy-top tc"><img src="<%=path%>/common/images/xxgg.jpg" width="339" height="180"><br>
-        <span class="f16 c-fff inlineblock mb20 h30 mt10 ihome-buy-first">Your avatar has gotten to the top,attract more visitors, and promote your chaming index</span></div>
-    <div class="balance tc">Your gold balance：<span class="c-ff8a00 f25 mr5" id="buyShowFirstLeftGlod"></span><span class="money mt15"></span><span class="hui ml10" data-i18n="home.chargePer"><!--（服务费用1金币/天）--></span></div>
-    <div class="recharge">
-        <p class=" tc mt20 mb10" id="showLessMoneyWin"/>
-        <p class=" tc mb10">Choose days：
-            <input id="min" name="" type="button" value="-" class="bdra15 h36 fb f20" />
-            </b> <b>
-                <input id="text_box" name="" type="text" value="1"  class="f18 fb"/ >
-            </b><b>
-                <input id="add"   type="button" value="+" class="bdra15 h36 fb f18" />
-            </b> </p>
-    </div>
-</div>
-
-<!--充值窗口-->
-<div class="rechargeCon" style="background: #fff; display:none;"  id="chargeCoinsWindow">
-    <a id="openpay_a" style="display:none;" target="_blank"></a>
-    <div class="recharge">
-        <div class="recharge-top">
-            <span class="rec-1">Know more good-looking member</span><span class="rec-2">Gain more attention</span><span class="rec-3">VIP can enjoy more dignity privilege</span>
-        </div>
-        <div class="recharge-mid">
-            <h3 class="mb15 mt15 rec-title">Choose the gold amount you want to recharge<span class="fr" >Service fee: 1 gold each day</span></h3>
-            <ul>
-                <li data-dollar='20'>
-                    <p class="mt20"><span class="c-ff8a00 f25 mr5">20</span><span class="money"></span></p>
-                    <p class=" mt5"><span class="fb">$20</span> /￥<span class="fb">120</span></p>
-                    <div class="chosed"></div>
-                </li>
-                <li data-dollar='50'>
-                    <p class="mt20"><span class="c-ff8a00 f25 mr5">50</span><span class="money"></span></p>
-                    <p class=" mt5"><span class="fb">$50</span> /￥<span class="fb">300</span></p>
-                    <div class="chosed"></div>
-                </li>
-                <li data-dollar='100'>
-                    <p class="mt20"><span class="c-ff8a00 f25 mr5">100</span><span class="money"></span></p>
-                    <p class=" mt5"><span class="fb">$100</span> /￥<span class="fb">600</span></p>
-                    <div class="chosed"></div>
-                </li>
-                <li data-dollar='200'>
-                    <p class="mt20"><span class="c-ff8a00 f25 mr5">200</span><span class="money"></span></p>
-                    <p class=" mt5"><span class="fb">$200</span> /￥<span class="fb">1200</span></p>
-                    <div class="chosed"></div>
-                </li>
-                <li data-dollar='500'>
-                    <p class="mt20"><span class="c-ff8a00 f25 mr5">500</span><span class="money"></span></p>
-                    <p class=" mt5"><span class="fb">$500</span> /￥<span class="fb">3000</span></p>
-                    <div class="chosed"></div>
-                </li>
-                <li data-dollar='1000'>
-                    <p class="mt20"><span class="c-ff8a00 f25 mr5">1000</span><span class="money"></span></p>
-                    <p class=" mt5"><span class="fb">$1000</span> /￥<span class="fb">6000</span></p>
-                    <div class="chosed"></div>
-                </li>
-                <div class="clear"></div>
-            </ul>
-            <h3 class="mb10">Payment method</h3>
-            <div class="zf">
-                <a data-tple="ali">
-                    <img src="<%=path%>/common/images/zfb.png">
-                    <div class="chosed1"></div>
-                </a>
-                <a data-tple="paypal">
-                    <img src="<%=path%>/common/images/paypal.png">
-                    <div class="chosed1"></div>
-                </a>
-                <a data-tple="visa">
-                    <img src="<%=path%>/common/images/visa.png">
-                    <div class="chosed1"></div>
-                </a>
-                <a data-tple="master">
-                    <img src="<%=path%>/common/images/master.png">
-                    <div class="chosed1"></div>
-                </a>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<div id="redirectDiv"></div>
-
-
-<script type="text/javascript">
-    $.IM.getMoneyNum();
-    $("#buyShowFirstLeftGlod").text($.IM.myMoneyNum);
-    //购买首页展示
-    function checkBuyShowFirst(){
-        if($.IM.myMoneyNum>0){
-            buyShowFirstWindow();
-        }else{
-            recha();
-        }
-
-    }
-
-    //购买展现
-    function buyShowFirst(){
-        $.post("http://www.gagahi.com:80/memberFinance/buyShowFirstDay",
-                {
-                    "dayNum":$("#layui-layer1 #text_box").val()
-                },
-                function(data,textStatus){
-                    if(data.success){
-                        updateSession();
-                        layer.msg($.t('home.rechargeSuccess'));
-                        window.location.reload();
-                    }else{
-                        layer.msg($.t('home.rechargeError'));
-                    }
-                })
-    }
-
-    //兑换首页展示天数
-    function buyShowFirstWindow(){
-        layer.open({
-            area: ['660px', '530px'],
-            skin: 'demo-buy demo-buy1',
-            title: $.t('home.purchase'),
-            content: $('#buyShowFirstWindow').html(),
-            btn: $.t('global.ok'),
-            yes: function(index, layero) {
-                // $("#myMoneyTotal").text($.IM.myMoneyNum);
-                if($.IM.myMoneyNum< $("#layui-layer1 #text_box").val()){
-                    $("#layui-layer1 #showLessMoneyWin").html("<div ><span class='red'>" + $.t('home.goldNotEnough') + "</span> <a href='http://www.gagahi.com:80/pay/recharge' style='color:#2d57a1'>" + $.t('home.rechargeGold') + "</a></div>");
-                }else{
-                    buyShowFirst();
-                    layer.close(index);
-                }
-
-            },
-            cancel: function(index) {},
-        });
-        $(".layui-layer-btn0").after("<br><a href='http://www.gagahi.com:80/pay/upgradeMember' class='lj'>It's cheaper to upgrade member</a>");
-        var t = $("#layui-layer1 #text_box");
-        //初始化数量为1,并失效减
-        $("#layui-layer1 #min").attr('disabled', true);
-        //数量增加操作
-        $("#layui-layer1 #add").live("click", function() {
-            t.val(parseInt(t.val()) + 1)
-            if (parseInt(t.val()) != 1) {
-                $("#layui-layer1 #min").attr('disabled', false);
-            }
-        })
-        //数量减少操作
-        $("#layui-layer1 #min").live("click", function() {
-            t.val(parseInt(t.val()) - 1);
-            if (parseInt(t.val()) == 1) {
-                $("#layui-layer1 #min").attr('disabled', true);
-            }
-        })
-    }
-
-
-
-
-
-
-
-
-
-    /*充值服务*/
-    var money = "";//支付类型
-    var zftype = "";//支付类型
-    function recha(){
-        //转化
-        var htmlstr = $('#chargeCoinsWindow').html();
-        //用
-        layer.open({
-            type:1,
-            area: ['850px', '700px'],
-            skin: 'demo-class',
-            title: [$.t('home.recharge'), 'font-size:18px;'],
-            content: htmlstr,
-            btn: $("#chargewindowyes").text(),
-            success: function() {
-                $(function() {
-                    $(".recharge-mid li").click(function(e) {
-                        money = $(this).find(".c-ff8a00").text();//钱数   美元
-                        $(this).css("background", "#fff3d9").children(".chosed").css("display", "block");
-                        $(this).siblings().css("background", "#fff").children(".chosed").css("display", "none");
-
-                    });
-                    $(".zf a").click(function(e) {
-                        zftype = $(this).attr("data-tple");//支付类型
-                        $(this).css("background", "#fff3d9").children(".chosed1").css("display", "block");
-                        $(this).siblings().css("background", "#fff").children(".chosed1").css("display", "none");
-                    });
-                })
-                $(".layui-layer-btn0").after("<br><a herf='' class='lj'>It's cheaper to upgrade member</a>");
-            },
-            yes: function(index, layero) {
-                //实现充值
-                if(null == money || $.trim(money).length <= 0){
-                    layer.msg($.t('home.goldNumError'));
-                    return;
-                }
-                if(null == zftype || $.trim(zftype).length <= 0){
-                    layer.msg($.t('home.payTypeError'));
-                    return;
-                }
-
-                var url = "";
-                var data;
-                if(zftype == "ali"){//支付宝
-                    url = "http://www.gagahi.com:80/pay/subalipay";
-                    data = {"subject": money + "gold","total_fee":money,"paid":money,"money":money*6};
-                }else if(zftype == "paypal"){//paypal
-                    url = "http://www.gagahi.com:80/pay/subpaypal";
-                    data = {"item_name": money + "gold","amount":money,"paid":money,"money":money};
-                }else if(zftype == "visa"){
-                    $.post("http://www.gagahi.com:80/payMasa/payRedirectIndex",{ "subject": money + $.t('global.Gold'),"total_fee":money,"amount":money,"paid":money,"money":money,"femaleid":$("#femaleid").val(),"payMethod":"VISA"},
-                            function(data,textStatus){
-                                $("#redirectDiv").html(data.msg);
-                                openFinishWinodow()
-                            })
-                    return;
-                }else if(zftype == "master"){
-                    $.post("http://www.gagahi.com:80/payMasa/payRedirectIndex",{ "subject": money + $.t('global.Gold'),"total_fee":money,"amount":money,"paid":money,"money":money,"femaleid":$("#femaleid").val(),"payMethod":"MASTER"},
-                            function(data,textStatus){
-                                $("#redirectDiv").html(data.msg);
-                                openFinishWinodow()
-                            })
-                    return;
-                }
-
-
-                //验证小白登录
-                if(''.length<=0 ||''.length<=0){
-                    layer.open({
-                        area: ['364px',''],
-                        title: $.t('global.guestOutTitle'),
-                        content: "<p class='tc'>  " + $.t('global.guestOutWords') + "       </p>",
-                        btn: $.t('global.guestOutBtn'),
-                        yes: function (index, layero) {
-                            layer.close(index)
-                            window.location.href = 'http://www.gagahi.com:80/Member/memberinformation?srcurl=xiaobai#showinfo';
-                        },
-                        cancel: function (index) {},
-                    });
-                    return;
-                }
-
-                openFinishWinodow();
-                $.ajax({//虚拟礼物
-                    type : "post",
-                    url : url,
-                    contentType : "application/x-www-form-urlencoded",
-                    data: data,
-                    async: false,//注意这里同步设置
-                    success: function(data){
-                        if(data.success){
-                            if(data.msg != "-1" && data.msg != "-2"){
-                                //$("#openpay_a").attr("href",data.msg);
-                                $("#openpay_a").click(function(){
-                                    window.open(data.msg,"_target");
-                                });
-                                $("#openpay_a").click();
-                            }
-                        }else{
-                            layer.msg(data.msg);
-                        }
-                    }
-                });
-
-
-                layer.close(index);
-            },
-            cancel: function(index) {},
-        });
-    };
-
-
-    //支付完成跳转弹窗
-    function openFinishWinodow(){
-        layer.open({
-            type: 1,
-            area: '424px',
-            title: false,
-            content: '<p class="p15"><span class="f16 fb inlineblock mb10">' + $.t('home.payNewlyPage') + '</span><br>' + $.t('home.notClosePayPopup') + '<a href="#" id="reselectpayaction" onclick="reselectpay()" class="c-2d57a1 ml15">' + $.t('home.reselectPayType') + '</a></p>',
-            btn: [$.t('home.completePay'), $.t('home.payProblem')],
-            success:function (layero, index) {
-                $("#reselectpayaction").click(function(){
-                    layer.close(index);
-                })
-            },
-            yes: function(index, layero) {
-                window.location.reload();
-            },
-            cancel: function(index) {
-                window.location.href="http://www.gagahi.com:80/pay/help";
-            }
-
-        });
-
-    }
-
-
-</script>
-
-
-
-
-
-
-
-
-<script  type="text/javascript">
-
-    //女性用户一键50人
-    function openRecommendWin(){
-        //alert($('#sayhelloTo50').text());
-        layer.open({
-            area: ['660px','620px'],
-            fix: false ,
-            skin: 'demo-buy demo-buy1',
-            title: $.t('home.womenTransGift'),
-            content:$('#femaleFirstTask').html(),
-            btn: $("#onekey50windowsend").text(),
-            success: function(){
-                $(".xld").each(function(index, element) {
-                    $(this).toggle(function (e) {
-                                $(this).next("ul").css("display","block");
-                                $(this).css("background-image","url(<%=path%>/common/images/xld1.png)");
-                                $(".xld-select>li").each(function (e) {
-                                    var _selt = $(this);
-                                    $(this).hover(function (){
-                                        $(this).addClass("default").siblings().removeClass("default");
-                                    });
-                                    $(this).click(function (e) {
-                                        $(_selt.parent(".xld-select").siblings("span")).text(_selt.children("a").text()).css("background-image","url(<%=path%>/common/images/xld.png)");
-                                        _selt.parent(".xld-select").css("display", "none");
-                                    });
-                                });
-                            },
-                            function(){
-                                $(this).next("ul").css("display","none");
-                                $(this).css("background-image","url(<%=path%>/common/images/xld.png)");
-                            });
-                });
-            },
-            yes: function (index, layero) {
-                var sendmsg=($('.demo-buy .sayhelloTo50').text());
-                $.post("http://www.gagahi.com:80/pm/femailSendTo50",{"msg":sendmsg,"isPl":'0'},function(data,textStatus){
-                    layer.msg(data.msg);
-                })
-                layer.close(index)
-            },
-            cancel: function (index) {
-
-            },
-        });
-    };
-
-</script>
-
-
-<script  type="text/javascript">
-    var pageNo = 1; //页码
-    var pageCount = 1; //总页数
-    var searchType= 1;  //  1.精确,2.模糊,3.类型
-    var quickSearchType = 1;  //1.全部 2.推荐 3.在线 4.最新
-
-
-    var selfhtmlstr="";
-    var buyshowflag=0;   //是否购买展示
-
-
-    var lovedListStr="";  //偶遇列表id
-    var jsonObj=[];  //一次或取当前点赞信息
-
-    searchTypeData(1,2);
-
-
-    /*模糊搜索*/
-    function searchData(pageNo) {
-        if($("#keywords").val().length<=0)  return;
-        $("#datalists").empty();
-        $("#datacover").partialLoader();
-        $.post("http://www.gagahi.com:80/ihome/getDatas",
-                {"keywords":$("#keywords").val(),
-                    "pageNo":pageNo,
-                    "pageSize":"60",
-                    "quickSearchType":"1",
-                    "searchType":"2"
-                },
-                function(data,textStatus){
-                    $("#datacover").partialLoader("close");
-                    searchType=2;
-                    var obj = eval(data);
-                    //parseselfbean(obj.attributes.selfbean);
-                    parsePage(obj.attributes.page);
-                    parseList(obj.attributes.data);
-                    $(".nickfullname").highlight($("#keywords").val());
-                })
-
-    }
-
-    /*快捷搜索 类型搜索*/
-    function searchTypeData(pageNo,quickSearchTypeval) {
-        $("#datalists").empty();
-        $("#datacover").partialLoader();
-        $.post("http://www.gagahi.com:80/ihome/getTypeData",
-                {
-                    "pageNo":pageNo,
-                    "pageSize":"60",
-                    "quickSearchType":quickSearchTypeval,
-                    "searchType":"3"
-                },
-                function(data,textStatus){
-                    $("#datacover").partialLoader("close");
-                    var obj = eval(data);
-                    parseselfbean(obj.attributes.selfbean);
-                    parsePage(obj.attributes.page);
-                    parseList(obj.attributes.data);
-
-                })
-    }
-    /*条件搜索*/
-    function searchSelectionData(pageNo) {
-        $("#datalists").empty();
-        $("#datacover").partialLoader();
-        $.post("http://www.gagahi.com:80/ihome/getSelectionsData",
-                {
-                    "country":$('#countrydiv input[name="country"]:checked ').val(),
-                    "sex":$('#sexdiv input[name="sex"]:checked ').val(),
-                    "ageRange":$("#ageRange").val(),
-                    "language":$('#languagediv input[name="language"]:checked ').val(),
-                    "heightRange":$("#heightRange").attr("data-tongyong"),
-                    "weightRange":$("#weightRange").attr("data-tongyong"),
-                    "jobId":$("#jobText").attr("data-tongyong"),
-                    "pageNo":pageNo,
-                    "pageSize":"60",
-                    "searchType":"1"
-                },
-                function(data,textStatus){
-                    $("#datacover").partialLoader("close");
-                    var obj = eval(data);
-                    //  parseselfbean(obj.attributes.selfbean);
-                    parsePage(obj.attributes.page);
-                    parseList(obj.attributes.data);
-                })
-    }
-
-
-    //购买显示
-    function parseselfbean(selfbean){
-        if(null!=selfbean){
-            buyshowflag=1;
-            var bean=selfbean;
-            //剪切nickname
-            var nickname=bean.membNickname;
-            selfhtmlstr="<li class='bdra15'> <a href='http://www.gagahi.com:80/Member/otherHome?gagaid="+bean.membGagaid+"' ><div class='pic tc'>"+
-                    "<span><img src='http://images.gagahi.com//"+showBigImage(bean.membBigimg)+"'></span></div></a>"+
-                    "<div class='jbxx'>"+
-                    "<span class='ari c-2d57a1 nickfullname name-width'>"+nickname+"</span> <span class='idh'>("+bean.membGagano+")</span>";
-            if(bean.memberfinance.mefiLevel==2){
-                selfhtmlstr=selfhtmlstr+ "<span><img src='<%=path%>/common/images/hg.jpg'/></span>";
-            }
-            if(bean.memberfinance.mefiLevel==3){
-                selfhtmlstr=selfhtmlstr+ "<span><img src='<%=path%>/common/images/vip-hg.jpg'/></span>";
-            }
-
-            var countryInfo = null!=bean.membCountry?getMemberCountryInfo("en-us",bean.membCountry):"";
-            var ageStr = 0 == bean.age?"":bean.age;
-            if(ageStr != "" && countryInfo != ""){
-                ageStr += "," + countryInfo;
-            }else if(ageStr == "" && countryInfo != ""){
-                ageStr += countryInfo;
-            }
-            selfhtmlstr=selfhtmlstr+"<br> <span class='ari hui '>"+ageStr+"</span> </div>"+
-                    "<div class='jbxx1'><span class=' inlineblock dz'><img src='<%=path%>/common/images/hart.png'></span> <span class=' eml inlineblock'></span></div>";
-            if(bean.ifOnline==1){
-                selfhtmlstr=selfhtmlstr+ "<div class='zx bdra15'></div>";
-            }
-            selfhtmlstr=selfhtmlstr+"</li>";
-        }else{
-            buyshowflag=0;
-        }
-    }
-
-
-    //填充列表数据
-    function parseList(list){
-        //alert(list.length);
-        if(null==list) return;
-        if(list.length==0){
-            $("#datalists").hide();
-            $("#pagediv").hide();
-            $("#nodatatips").show();
-        }else{
-            $("#pagediv").show();
-            $("#datalists").show();
-            $("#nodatatips").hide();
-            $("#datalists").html("");
-
-            lovedListStr="";//初始化列表id
-
-            var num=GetRandomNum(0,2);
-            var listLen = list.length;
-            for(var i=0;i<list.length;i++){
-                lovedListStr=lovedListStr+(lovedListStr.length<=0?"":",")+list[i].membGagaid;  //修改数据列表
-                //首页展示
-                if(pageNo==1 && '1'<2){
-                    if(buyshowflag==0 && i==0){
-                        if(searchType==3) $("#datalists").append("<li class='bdra5'><div class='sw'><img src='<%=path%>/common/images/sw.jpg'></div><div class='wz'><p class=' f12 mb10'>I want to be here to win the attention of millions of people.</p><button class='bdra15 ban f12' onclick='checkBuyShowFirst()'>Learn more</button></div></li>");
-                    }else if(buyshowflag==1 && num==i){
-                        if(searchType==3) $("#datalists").append(selfhtmlstr);
-                    }
-                }
-                //广告位
-                if((pageNo==1 && i==1) || (listLen==1&&pageNo==1&&i==0)){
-                    if (searchType==3) {
-                        $._post(apiUrl + '/ad/area/getContent', {
-                            areaCode: '1467084938622'
-                        }, function(adData) {
-                            if (adData.success && adData.obj) {
-                                if ($("#datalists li.bdra5:first").next('li').length) {
-                                    $("#datalists li.bdra5:first").next('li').after(" <li class='ggw bdra5'>" + adData.obj + "</li>");
-                                } else {
-                                    $("#datalists li.bdra5:first").after(" <li class='ggw bdra5'>" + adData.obj + "</li>");
-                                }
-                            } else {
-                                if ($("#datalists li.bdra5:first").next('li').length) {
-                                    $("#datalists li.bdra5:first").next('li').after("<li class='ggw bdra5'><img src='http://static.gagahi.com/images/" + (Zoneyet.Global.language == "zh-cn"? "ad_img" : "ad_img_en") + ".jpg'></li>");
-                                } else {
-                                    $("#datalists li.bdra5:first").after("<li class='ggw bdra5'><img src='http://static.gagahi.com/images/" + (Zoneyet.Global.language == "zh-cn"? "ad_img" : "ad_img_en") + ".jpg'></li>");
-                                }
-                            }
-                        });
-                    }
-                }
-                var handStr = list[i].isHand == 1? "ishand":"";
-                if (handStr) {
-                    if (i==0) {
-                        handStr += '';
-                    }else if(i==1) {
-                        handStr += ' second';
-                    }else if(i==2) {
-                        handStr += ' three';
-                    } else {
-                        handStr += ' three';
-                    }
-                }
-                var htmlstr="<li class='bdra5 " + handStr + "' dataid='"+list[i].membGagaid+"'>"+(list[i].isHand==1?"<span class='crown'></span><span class='s-trangle'></span><span class='s-trangle rt'></span><span class='s-trangle lb'></span><span class='s-trangle rb'></span>":"")+" <a href='http://www.gagahi.com:80/Member/otherHome/"+list[i].membGagaid+"' ><div class='pic tc'>"+
-                        "<span><img src='http://images.gagahi.com//"+showBigImage(list[i].membBigimg)+"'></span></div></a>"+
-                        "<div class='jbxx'>";
-
-//		   	       if(list[i].membLightNickname==null){
-                htmlstr=htmlstr+"<span class='ari c-2d57a1 nickfullname name-width'>"+list[i].membNickname+"</span>";
-//		   	       }else{
-//		   	    	htmlstr=htmlstr+"<span class='ari c-2d57a1 nickfullname name-width'>"+list[i].membLightNickname+"</span>";
-//		   	       }
-                if(searchType==2){
-                    // if(list[i].membLightGagano==null){
-                    htmlstr=htmlstr+"(<span class='idh nickfullname'>"+list[i].membGagano+"</span>)";
-                    // }else{
-                    //htmlstr=htmlstr+"<span class='idh'>("+list[i].membLightGagano+")</span>";
-                    // }
-                }
-
-                if(list[i].mefi_level==2){
-                    htmlstr=htmlstr+ "<span><img src='<%=path%>/common/images/hg.jpg'></span>";
-                }
-                if(list[i].mefi_level==3){
-                    htmlstr=htmlstr+ "<span><img src='<%=path%>/common/images/vip-hg.jpg'></span>";
-                }
-                var countryInfo = null!=list[i].membCountry?getMemberCountryInfo("en-us",list[i].membCountry):"";
-                var ageStr= 0==list[i].membAge?"":list[i].membAge;
-                if(ageStr != "" && countryInfo != ""){
-                    ageStr += "," + countryInfo;
-                }else if(ageStr == "" && countryInfo != ""){
-                    ageStr += countryInfo;
-                }
-                //var ageStr= 0==list[i].membAge?"":list[i].membAge+",";
-
-                htmlstr=htmlstr+"<br> <span class='ari hui '>"+ageStr+"</span> </div>"+
-                        "<div class='jbxx1'><a onclick='javascript:doLikeSb("+list[i].membGagaid+",this)'><span class=' inlineblock dz'><img src='<%=path%>/common/images/hart.png'></span></a>"+
-                        "<a onclick='javascript:doSendMsg(\""+list[i].membGagaid+";"+list[i].membNickname+"\")'><span class=' eml inlineblock'></span></a></div>";
-                if(list[i].ifOnline==1){
-                    htmlstr=htmlstr+ "<div class='zx bdra15'></div>";
-                }
-                htmlstr=htmlstr+"</li>";
-                $("#datalists").append(htmlstr);
-            }
-        }
-
-
-
-        $("#datalists").append("<div class='clear'></div>");
-
-
-
-
-
-
-
-
-        //记住点赞状态
-        $.post("http://www.gagahi.com:80/Member/Like/findIfIloveList",{"lovedIdList":lovedListStr},
-                function(data,textStatus){
-                    if(data.success){
-                        jsonObj=JSON.parse(data.obj);
-                        console.log(jsonObj)
-                        //显示点赞和私信
-                        $("#datalists li").each(
-                                function  () {
-
-                                    $(this).hover(function  () {
-                                                $(this).children(".jbxx").css("display","none").next().css("display","block");
-                                                //查看是否是我点过赞的用户
-                                                var that=this;
-                                                console.log(jsonObj[$(this).attr("dataid")]==1);
-                                                if( typeof(jsonObj[$(this).attr("dataid")])!="undefined" && jsonObj[$(this).attr("dataid")]==1){
-
-                                                    $($(that).children(".jbxx1").find("a")[0]).find("span").css("background-position","0 -41px");
-                                                }
-                                            },function  () {
-                                                $(this).children(".jbxx").css("display","block").next().css("display","none");
-                                            }
-                                    );
-                                }
-                        )
-                    }
-
-                })
-
-
-
-
-    }
-
-    //喜欢某人
-    function doLikeSb(id,that){
-        $.post("http://www.gagahi.com:80/Member/Like/iliketoonly",
-                {'mid':id},
-                function(data,textStatus){
-                    // alert(data.success);
-                    if(data.success){
-                        var ab=$(that).find("span");
-                        var dc=$(that).find("img");
-                        $(dc).css({"top":0,opacity:"1"})
-                        $(dc).css("display","block").stop(false,true).animate({top:"-70px",opacity:"0",width:"16px",height:"14px"},1000);
-                        $(ab).css("background-position","0 -41px");
-                        jsonObj[id]=1
-                        //layer.msg(data.msg);
-                    }else{
-                        var ab=$(that).find("span");
-                        var dc=$(that).find("img");
-                        $(dc).css("display","none");
-                        $(ab).css("background-position","0 0")
-                        jsonObj[id]=0;
-                    }
-
-                })
-
-    }
-
-
-
-
-
-    //整理分页数据
-    function parsePage(pageUtil){
-        if(null!=pageUtil){
-            if(pageUtil.totalPage>15){
-                pageCount=15;
-            }else{
-                pageCount=pageUtil.totalPage;
-            }
-            pageNo=pageUtil.pageNo;
-            searchType=pageUtil.searchType;
-            quickSearchType=pageUtil.quickSearchType;
-            createPage();
-        }
-    }
-
-    function  createPage(){
-        /*分页*/
-        $(".tcdPageCode").createPage({
-            pageCount : pageCount,//总页数
-            current : pageNo,//当前页
-            backFn : function(p) {
-                if (1 == searchType) {
-                    searchSelectionData(p)
-                }
-                if (2 == searchType) {
-                    searchData(p)
-                }
-                if (3 == searchType) {
-                    searchTypeData(p,quickSearchType)
-                }
-            }
-        });
-    }
-
-</script>
-
-
-
-
-<script type="text/javascript">
-
-    /*修改滚动轴*/
-
-
-
-    $(window).load(function() {
-        /* if(1=='0') {
-         var tmoutopen=setTimeout(function(){
-         openRecommendWin();
-         clearTimeout(tmoutopen);
-         },60000);
-
-         } */
-        //新手指引
-        if(1=='1'){
-            newRegGuide();
-        }
-    });
-    /*新手引导*/
-    function newRegGuide(){
-        //新手引导样式  1:男 2:女
-        /* if('1'==1){
-         $(".searchTip").css("margin-top","30px");
-         } */
-        $(".coverall,.searchTip,.searchTip div:eq(0)").show();
-        var tmout=setTimeout(function(){
-            $(".searchTip div:eq(0)").click();
-        },3000);
-
-        $(".searchTip div").click(function() {
-            var current=$(this);
-            $(current).hide();
-            $(current).next().show();
-            clearTimeout(tmout);
-            tmout=setTimeout(function(){
-                $(current).next().click();
-            },3000);
-        });
-        $(".searchTip div:last").click(function(e) {
-            $(".coverall,.searchTip,").hide();
-            //一键打招呼
-            /*    if(1=='0') {
-             var tmoutopen=setTimeout(function(){
-             //openRecommendWin();
-             clearTimeout(tmoutopen);
-             },200);
-
-             } */
-        });
-    };
-
-    /*分页*/
-
-    /*搜索框边框控制*/
-    $("#ss").focus(function(e) {
-        $(this).parent("div").css("border", "1px solid #2d57a1");
-    });
-
-    /*下拉菜单*/
-    $(".mun-t").each(function(index, element) {
-        $(this).hover(function (e) {
-                    $(this).children("ul").css("display","block");
-                    $(this).children("span").css("background-image","url(<%=path%>/common/images/xld1.png)");
-                    $(".xld-select li",$(this)).each(function (e) {
-                        var _selt = $(this);
-                        $(this).hover(function (){
-                            $(this).addClass("default").siblings().removeClass("default");
-                        })
-                        $(this).off("click");
-                        $(this).on("click",function (e) {
-                            $(_selt.parent(".xld-select").siblings("span")).text(_selt.text()).css("background-image","url(<%=path%>/common/images/xld.png)");
-                            $(_selt.parent(".xld-select").siblings("span")).attr("data-tongyong",$(_selt).data("chuandi"));
-                            _selt.parent(".xld-select").css("display", "none");
-                        });
-                        $(".mCustomScrollBox li").on("click",function (e) {
-                            $(this).parents(".xld-select").siblings("span").text($(this).text()).css("background-image","url(<%=path%>/common/images/xld.png)");
-                            $(this).parents(".xld-select").siblings("span").attr("data-tongyong",$(this).data("chuandi"));
-                            $(this).parents(".xld-select").css("display", "none");
-                        });
-
-                    });
-
-                },
-                function  () {
-                    $(this).children("ul").css("display","none");
-                    $(this).children("span").css("background-image","url(<%=path%>/common/images/xld.png)");
-                })
-
-    });
-    $("#joblist").mCustomScrollbar();
-
-    /*精确搜索*/
-    $(".jq").click(function(e) {
-        $(".jqss").toggle()
-    });
-    $("#cx").click(function(e) {
-        $(".jqss").css("display", "none");
-
-    });
-    $("#qx").click(function(e) {
-        $(".jqss").css("display", "none");
-
-    });
-    /*选择年龄段*/
-    $('.range-slider').jRange({
-        from : 18,
-        to : 60,
-        step : 1,
-        scale : [ 18, 25, 35, 45, 59 ],
-        format : '%s',
-        width : 210,
-        showLabels : true,
-        isRange : true
-    });
-    /*高级选项*/
-    $(".gj").click(
-            function(e) {
-                $(".gjn").toggle(
-                        function() {
-                            if ($(this).is(":hidden")) {
-                                $(".gj>span").css("background-image","url(<%=path%>/common/images/xld.png)");
-                                //取消默认数据
-                                $("#heightRange").attr("data-tongyong","");
-                                $("#weightRange").attr("data-tongyong","");
-                                $("#jobText").attr("data-tongyong","");
-
-                            } else {
-                                $(".gj>span").css("background-image","url(<%=path%>/common/images/xld1.png)")
-                                //填充默认数据
-                                $("#heightRange").attr("data-tongyong","170,180");
-                                $("#weightRange").attr("data-tongyong","60,70");
-                                $("#jobText").attr("data-tongyong","1");
-                            }
-                        })
-            });
-    $("#yq")
-            .click(
-                    function(e) {
-                        layer
-                                .open({
-                                    area :'700px',
-                                    skin : 'demo-yq',
-                                    title : [ $("#winodowtitle").html(), 'font-size:18px;' ],
-                                    content : $('.yqCon').html(),
-                                    btn : $("#winodowbutton").html(),
-                                    yes : function(index, layero) {
-                                        //console.log(index+'||'+layero)
-                                        var checkem = /^((\w-*\.*)+@(\w-?)+(\.\w{2,}),)*((\w-*\.*)+@(\w-?)+(\.\w{2,})$)/;
-                                        var emails = $(".demo-yq #emails").val();
-                                        var flagem = true;
-                                        var emalArray=emails.split(",");
-                                        if(emalArray.length>10){
-                                            $('.maxmaillength').css('display', 'block')
-                                                    .siblings().css('display',
-                                                    'none');
-                                            $(".mail").css("border-color","#ff9c00");
-                                            return false;
-                                        }
-                                        if (emails == '') {
-                                            $('.kd1').css('display', 'block')
-                                                    .siblings().css('display',
-                                                    'none');
-                                            $(".mail").css("border-color",
-                                                    "#ff9c00");
-                                            return false;
-                                        }
-                                        if (!checkem.test(emails)) {
-                                            $('.yy').css('display', 'block')
-                                                    .siblings().css('display',
-                                                    'none');
-                                            $(".mail").css("border-color",
-                                                    "#ff9c00");
-                                            return false;
-                                        }
-                                        $('.yy').css('display', 'none')
-                                                .siblings().css('display',
-                                                'none');
-                                        $('.kd1').css('display', 'none')
-                                                .siblings().css('display',
-                                                'none');
-                                        $(".mail").css("border-color", "#fff");
-                                        var date = new Date().Format("yyyy-MM-dd hh:mm:ss");
-                                        $.post("http://www.gagahi.com:80/Member/emailSent", {
-                                            type : "1",
-                                            textWords:$("#emailTextWords").val(),
-                                            emails : emails,nowdate:date
-                                        }, function(result) {
-                                            if (result.success) {
-                                                layer.msg(result.msg);
-                                                layer.close(index);
-                                            }else{
-                                                layer.msg(result.msg);
-                                                layer.close(index);
-                                            }
-                                        });
-                                    },
-                                    cancel : function(index) {
-                                    },
-
-                                });
-                    });
-
-    Date.prototype.Format = function (fmt) { //author: meizz
-        var o = {
-            "M+": this.getMonth() + 1, //月份
-            "d+": this.getDate(), //日
-            "h+": this.getHours(), //小时
-            "m+": this.getMinutes(), //分
-            "s+": this.getSeconds(), //秒
-            "q+": Math.floor((this.getMonth() + 3) / 3), //季度
-            "S": this.getMilliseconds() //毫秒
-        };
-        if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
-        for (var k in o)
-            if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
-        return fmt;
-    }
-
-
-    //获取随机数
-    function GetRandomNum(Min,Max){
-        var Range = Max - Min;
-        var Rand = Math.random();
-        return(Min + Math.round(Rand * Range));
-    }
-
-    //中秋弹窗 1.34
-    /*
-     if (!$.cookie('ztip')) {
-     layer.open({
-     title: false,
-     content: '<div class="zhongqiu-dialog-words"></div>',
-     area: ['477px', '395px'],
-     skin: 'zhongqiu-dialog',
-     btn: $.t('global.actionDetail'),
-     yes: function() {
-     window.location.href = ctx + '/Platform/action';
-     //window.open((ctx + '/Platform/action'),undefined, undefined,false)
-     }
-     });
-     $.cookie('ztip', 1, {expires: 1});
-     }*/
-</script>
 

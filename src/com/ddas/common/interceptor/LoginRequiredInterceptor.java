@@ -33,6 +33,10 @@ public class LoginRequiredInterceptor implements HandlerInterceptor {
         if (requestURL.contains("Process")) {
             return true;
         }
+        if(req.getRequestURI().equals("/")){
+            req.getRequestDispatcher("/WEB-INF/views/login/login.jsp").forward(req,response);
+            return false;
+        }
 /*        if (userInfo == null) {
             try {
                 req.getRequestDispatcher("/WEB-INF/views/login/login.jsp").forward(req,response);

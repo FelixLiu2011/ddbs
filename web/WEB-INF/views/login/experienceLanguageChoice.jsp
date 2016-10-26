@@ -474,15 +474,16 @@
         });
     });
     $(document).ready(function(){
+        var path = "<%=path%>";
         $('#log-btn').click(function(){
             var language = $('.selected').attr("language");
             var uuid = $("#uuid").val();
             $.post(path + "/platform/experience/regExperienceMember",{sex:'1',language:language,uuid:uuid},function(result){
                 if(result.successful){
-                    window.location.href = path + "index/iHome";
+                    window.location.href = path + "/index/iHome";
                 }else{
                     /*layer.msg(result.msg);*/
-                    window.location.href = path + "index/iHome";
+                    window.location.href = path + "/index/iHome";
                 }
             });
         });
