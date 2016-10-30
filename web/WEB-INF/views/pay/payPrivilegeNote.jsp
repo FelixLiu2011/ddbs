@@ -23,7 +23,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>gagahi_多语言国际交友_跨越语言,向世界say hi</title>
-    <link href="<%=path%>/common/images/favicon.ico" rel="shortcut icon">
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     <meta content="gagahi,国际交友,多语言社交,多语言交友网站,多语言交友平台,翻译社交,国际交友平台,多语言社交网站,多语言社交平台,翻译社交平台,跨语言社交平台" name="keywords">
     <meta content="gagahi是一个基于翻译的国际社交平台,为您提供国际社交,多语言国际交友,随时随地翻译等社交服务,让您跨越语言障碍轻松扩大国际社交圈." name="description">
@@ -35,7 +34,11 @@
     <link href="<%=path%>/common/css/jquery.range.css" rel="stylesheet" type="text/css">
     <link href="<%=path%>/common/css/lang.css" rel="stylesheet" type="text/css">
     <link href="<%=path%>/common/css/lrtk.css" rel="stylesheet" type="text/css">
+    <link type="text/css" href="<%=path%>/common/IM/css/im.css" rel="stylesheet" />
+    <link type="text/css" href="<%=path%>/common/IM/css/qqFace.css"	rel="stylesheet" />
+    <link type="text/css" href="<%=path%>/common/IM/css/webuploader.css" rel="stylesheet" />
     <!-- <link href="<%=path%>/common/css/skin/zhongqiu/style.css" rel="stylesheet" type="text/css"> -->
+    <link href="<%=path%>/common/css/skin/wansheng/style.css" rel="stylesheet" type="text/css">
     <script src="<%=path%>/common/js/jquery.min.js" type="text/javascript"></script>
     <script  src="<%=path%>/common/js/laytpl.js"       type="text/javascript"></script>
     <script  src="<%=path%>/common/js/core.js"    type="text/javascript"></script>
@@ -102,6 +105,13 @@
             });
         });
 
+    </script>
+    <script type="text/javascript">
+        if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+            document.write('<link rel="shortcut icon" href="<%=path%>/common/images/favicon.ico" type="image/x-icon"><link rel="apple-touch-icon-precomposed" href="<%=path%>/common/images/favicon.ico">');
+        } else {
+            document.write('<link href="<%=path%>/common/images/favicon.ico" rel="shortcut icon">');
+        }
     </script>
     <script src="<%=path%>/common/js/webuploader.js" type="text/javascript"></script>
     <script src="<%=path%>/common/layer/js/layer.js" type="text/javascript"></script>
@@ -192,37 +202,37 @@
         //选中状态样式
         function  selectionStyle(){
             clearnSelectionStyle();
-            if('encounterIndex'=='leftLikeMeIndex'){
+            if('encounterIndex'==''){
                 $("#encounterIndex").attr("class","on");
             }
-            if('zoneIndex'=='leftLikeMeIndex'){
+            if('zoneIndex'==''){
                 $("#zoneIndex").attr("class","on");
             }
-            if('gameIndex'=='leftLikeMeIndex'){
+            if('gameIndex'==''){
                 $("#gameIndex").attr("class","on");
             }
-            if('shopIndex'=='leftLikeMeIndex'){
+            if('shopIndex'==''){
                 $("#shopIndex").attr("class","on");
             }
 
             //左侧导航
-            if('leftSixinIndex'=='leftLikeMeIndex'){
+            if('leftSixinIndex'==''){
                 $("#leftSixinIndexImg").attr("class","on");
                 $("#leftSixinIndexText").attr("class","on");
             }
-            if('leftLikeMeIndex'=='leftLikeMeIndex'){
+            if('leftLikeMeIndex'==''){
                 $("#leftLikeMeIndexImg").attr("class","lkm on");
                 $("#leftLikeMeIndexText").attr("class","on");
             }
-            if('leftIlikeIndex'=='leftLikeMeIndex'){
+            if('leftIlikeIndex'==''){
                 $("#leftIlikeIndexImg").attr("class","mlk on");
                 $("#leftIlikeIndexText").attr("class","on");
             }
-            if('leftFriendIndex'=='leftLikeMeIndex'){
+            if('leftFriendIndex'==''){
                 $("#leftFriendIndexImg").attr("class","each-lk on");
                 $("#leftFriendIndexText").attr("class","on");
             }
-            if('leftVisitorIndex'=='leftLikeMeIndex'){
+            if('leftVisitorIndex'==''){
                 $("#leftVisitorIndexImg").attr("class","visitor on");
                 $("#leftVisitorIndexText").attr("class","on");
             }
@@ -548,7 +558,7 @@
         <div class="close"></div>
     </div>
 </div>
-<div class="head"  gagaid="2935185">
+<div class="head"  gagaid="">
     <div class="w1100 jz">
         <div class="fl">
             <a href="<%=path%>/index/iHome" class="logo"><img src="<%=path%>/common/images/logo.png" alt="gagahi"/></a>
@@ -690,25 +700,20 @@
 
 
 
-<link type="text/css" href="<%=path%>/common/IM/css/im.css" rel="stylesheet" />
-<link type="text/css" href="<%=path%>/common/IM/css/qqFace.css"
-      rel="stylesheet" />
-<link type="text/css" href="<%=path%>/common/IM/css/webuploader.css"
-      rel="stylesheet" />
 <script type="text/javascript">
     var staticCtx="http://static.gagahi.com/IM/";
     var globalStaticCtx="http://static.gagahi.com/";
     var ctx="http://www.gagahi.com:80";
     var qiniuImgURL="http://images.gagahi.com/";
     var imUrl="http://webim.gagahi.com/";
-    var token="bc19844b369b4f9e87381ae22febca51";
-    var sendGender = "1";//1男2女
-    var sendHeadImgUrl = "images/default/male.png";//小头像
-    var myNickname = "Quintion";//自己昵称
+    var token="null";
+    var sendGender = "";//1男2女
+    var sendHeadImgUrl = "";//小头像
+    var myNickname = "";//自己昵称
     var myLanguage = "zh-cn";
-    var myId = "2935185";//我的ID
+    var myId = "";//我的ID
     //1：普通会员，2：高级会员，3：VIP会员
-    var myMemberGrade = "1";//会员等级
+    var myMemberGrade = "";//会员等级
 
     if (!staticCtx) {
         staticCtx = "";//静态资源路径
@@ -766,7 +771,7 @@
                         <i class="foldingBtn js-foldingBtn"></i>
                         <p>
 							<span>最近聊天
-                                <!-- 最近聊天 --></span><span class="recentlyNum">12</span>
+                                <!-- 最近聊天 --></span><span class="recentlyNum">1</span>
                         </p>
                     </h6>
                     <div class="clear"></div>
@@ -797,8 +802,8 @@
                         <i class="foldingBtn js-foldingBtn"></i>
                         <p>
 							<span>我的好友
-                                <!-- 我的好友 --></span><span class="friendNum">12</span><i
-                                class="separator">/</i><span class="friendNumTotal">24</span>
+                                <!-- 我的好友 --></span><span class="friendNum">1</span><i
+                                class="separator">/</i><span class="friendNumTotal">1</span>
                         </p>
                     </h6>
                     <ul class="friendContainer FoldContainer">
@@ -830,7 +835,7 @@
                             <i class="foldingBtn js-foldingBtn"></i>
                             <p>
 								<span>群
-                                    <!-- 群 --></span><span class="groupNum">6</span>
+                                    <!-- 群 --></span><span class="groupNum">0</span>
                             </p>
                         </h6>
                         <div class="clear"></div>
@@ -915,15 +920,15 @@
                 <!-- 建群 --></span> <span class="inviteFriends">邀请好友
             <!-- 邀请好友 --></span> <span class="functionBtn"> <i class="functionI"></i>
 				<ul class="functionMore">
-                    <li class="functionBack">退群
+					<li class="functionBack">退群
                         <!-- 退群 --></li>
-                    <li class="functionRelationState">删除好友
+					<li class="functionRelationState">删除好友
                         <!-- 删除好友 --></li>
-                    <li class="functionReport">举报
+					<li class="functionReport">举报
                         <!-- 举报 --></li>
-                    <li class="functionShieldState">屏蔽
+					<li class="functionShieldState">屏蔽
                         <!-- 屏蔽 --></li>
-                </ul>
+				</ul>
 			</span> <i id="js-closedChatBox" class="closedChatBox"></i>
         </div>
     </div>
@@ -1224,14 +1229,14 @@
         </div>
         <div class="RedEnvelopeTCRight">
             <p class="tips">金币不足<!-- 金币不足 -->，请先充值<!-- 请先充值 --></p>
-            <input type="text" class="moneyTXT" value="请输入1-200个金币，仅限整数" onkeyup="this.value=this.value.replace(/\D/g,'')"
+            <input type="text" class="moneyTXT" value="请输入1-500个金币，仅限整数" onkeyup="this.value=this.value.replace(/\D/g,'')"
                    onafterpaste="this.value=this.value.replace(/\D/g,'')"/>
             <div class="Remind">
                 <i class="RemindIcon"></i>
                 <div class="RemindContent">
                     <div class="triangle-left"></div>
                     <div class="triangle-bg"></div>
-                    <span>红包规则<!-- 红包规则 --></span> 1、每个红包金额为1-200金币，仅限整数；<!-- 每个红包金额为1-200金币，仅限整数； -->
+                    <span>红包规则<!-- 红包规则 --></span> 1、每个红包金额为1-500金币，仅限整数；<!-- 每个红包金额为1-200金币，仅限整数； -->
                     <br> 2、发红包可使用账户余额中的金币，如账户余额不足，请先充值再发送；<!-- 发红包可使用账户余额中的金币，如账户余额不足，请先充值再发送； -->
                     <br> 3、红包金币被领取后，直接进入领取人账户余额，可用于GaGaHi网站消费。<!-- 红包金币被领取后，直接进入领取人账户余额，可用于GaGaHi网站消费。 -->
                     <br> 4、红包一旦发出将不予退回，一直保留到对方领取。<!-- 红包一旦发出将不予退回，一直保留到对方领取。 -->
@@ -1239,7 +1244,7 @@
                 </div>
             </div>
             <div class="clear"></div>
-            <div class="moneyDiv cleard">账户可用金币<!-- 账户可用金币 -->： <i class="money"></i><span class="moneyNum"> 0.00 </span><br/><a class="toRecharge" href="http://www.gagahi.com:80/pay/recharge">去充值<!-- 去充值 --></a></div>
+            <div class="moneyDiv cleard">账户可用金币<!-- 账户可用金币 -->： <i class="money"></i><span class="moneyNum">  </span><br/><a class="toRecharge" href="http://www.gagahi.com:80/pay/recharge">去充值<!-- 去充值 --></a></div>
             <div class="textMSGDiv">
                 <textarea class="textMSG">你的祝福语</textarea>
                 <div class="wordsNumDiv"><span class="wordsNum">0</span>/500</div>
@@ -1292,8 +1297,10 @@
 
 
 
-<link href="<%=path%>/common/css/like.css" rel="stylesheet" type="text/css">
-<script src="<%=path%>/common/js/slides-1.1.1-min.js" type="text/javascript"></script>
+
+
+<link href="<%=path%>/common/css/vipService.css" rel="stylesheet" type="text/css">
+<script src="<%=path%>/common/js/jquery.page.js"></script>
 
 
 <div class="mid">
@@ -1326,14 +1333,14 @@
         <div class="lft fl">
             <div class="lfttop">
                 <div class="yhtx fl">
-                    <a href="http://www.gagahi.com:80/Member/myinformation"><img src="http://images.gagahi.com//images/default/male.png"></a>
+                    <a href="http://www.gagahi.com:80/Member/myinformation"><img src="http://images.gagahi.com//"></a>
                 </div>
                 <div class="yhxx fr">
                     <p class="ari">
-                        <a class="ellipsis-name" href="http://www.gagahi.com:80/Member/myinformation"  title="Quintion">Quintion</a>
+                        <a class="ellipsis-name" href="http://www.gagahi.com:80/Member/myinformation"  title=""></a>
 
                     </p>
-                    <p class="ari hui f12" style="margin: 8px 0">GaGaID:30039931</p>
+                    <p class="ari hui f12" style="margin: 8px 0">GaGaID:</p>
 
                     <p class="jd"><span class="jdt"><span class="jdts f12">0%</span></span></p>
                 </div>
@@ -1352,8 +1359,6 @@
                 <a href="http://www.gagahi.com:80/Member/memberinformation"><span class="ws"></span>请上传您的靓照</a><br>
 
 
-
-                <span class="hui f12">完善资料，让朋友们更快了解你</a></span>
 
 
             </p>
@@ -1374,15 +1379,15 @@
                 <div class="inlineblock newsNum" id="leftSixinNotice"></div>
             </div>
             <div class="lf-lb">
-                <span class="lkm" id="leftLikeMeIndexImg"></span><a href="<%=path%>/member/like/likeMe" id="leftLikeMeIndexText">喜欢我的人</a>
+                <span class="lkm" id="leftLikeMeIndexImg"></span><a href="<%=path%>/member/like/likeMe?pageNo=1" id="leftLikeMeIndexText">喜欢我的人</a>
                 <div class="inlineblock newsNum" id="leftLikeMeNotice"></div>
             </div>
             <div class="lf-lb">
-                <span class="mlk" id="leftIlikeIndexImg"></span><a href="<%=path%>/member/like/iLike" id="leftIlikeIndexText">我喜欢的人</a>
+                <span class="mlk" id="leftIlikeIndexImg"></span><a href="<%=path%>/member/like/iLike?pageNo=1" id="leftIlikeIndexText">我喜欢的人</a>
                 <div class="inlineblock newsNum" id="leftIlike"></div>
             </div>
             <div class="lf-lb lf-mutual">
-                <span class="each-lk" id="leftFriendIndexImg"></span><a href="<%=path%>/member/like/likeMeAndILike" id="leftFriendIndexText">互相喜欢</a>
+                <span class="each-lk" id="leftFriendIndexImg"></span><a href="<%=path%>/member/like/likeMeAndILike?pageNo=1" id="leftFriendIndexText">互相喜欢</a>
                 <div class="inlineblock newsNum" id="leftFriendNotice"></div>
             </div>
             <div class="lf-lb" >
@@ -1445,91 +1450,236 @@
         </script>
 
 
-        <!-- member.memberfinance.mefiLevel == 3 &&  -->
+
+        <div class="fr w860">
+            <div class="top">
+                <img class="block" src="<%=path%>/common/images/vipTop.jpg" />
 
 
+                <ul class="nav">
+                    <a href="http://www.gagahi.com:80/pay/upgradeMember"><li id="upgradeMember">升级会员</li></a>
+                    <a href="http://www.gagahi.com:80/pay/recharge"><li id="recharge">充值金币</li></a>
 
+                    <a href="http://www.gagahi.com:80/pay/transactionRecord"><li id="transactionRecord">充值记录</li></a>
+                    <a href="http://www.gagahi.com:80/pay/privilegeNote" id="powerItem"><li id="privilegeNote">特权说明</li></a>
 
-        <!-- 无好友 -->
-        <div class="fr">
-            <div class="rht">
-                <div class="shengji">
-                    <img src="<%=path%>/common/images/shengji.jpg" class=" mt100 mb45">
-                    <p style="font-size:22px;" class="mb20">还没有人为您点赞</p>
-                    <p class="f16 enjz" style="margin-bottom:50px;">马上升级会员，增加首页展现机会，让更多帅哥美女找到您</p>
+                    <a href="http://www.gagahi.com:80/pay/help"><li class="help current" id="help">帮助</li></a>
+                </ul>
+                <script type="text/javascript">
 
-                    <!-- 升级为会员 -->
+                    searchifcommissiongirl();
+                    function searchifcommissiongirl() {
+                        //  $("#powerItem").after("<a href='http://www.gagahi.com:80/pay/myMoney'><li id='myMoney'>我的金币</li></a>'");
+                        if('' == 2)
+                            $.post("http://www.gagahi.com:80/commission/ifcommissiongirl",{},
+                                    function(data,textStatus){
+                                        if(data.obj>0){
 
-                    <p><button class="bdra30 h36 f16 bgc-2d57a1 c-fff govip">升级会员</button></p>
+                                            $("#powerItem").after("<a href='http://www.gagahi.com:80/pay/myMoney'><li id='myMoney'>我的金币</li></a>'");
+                                        };
+                                        selectionStyle();
+                                    })
 
+                    }
+
+                    //选中状态样式
+                    function  selectionStyle(){
+                        clearnSelectionStyle();
+                        if('upgradeMember'=='privilegeNote'){
+                            $("#upgradeMember").attr("class","current");
+                        }
+                        if('translationPack'=='privilegeNote'){
+                            $("#translationPack").attr("class","current");
+                        }
+                        if('transactionRecord'=='privilegeNote'){
+                            $("#transactionRecord").attr("class","current");
+                        }
+                        if('recharge'=='privilegeNote'){
+                            $("#recharge").attr("class","current");
+                        }
+                        if('privilegeNote'=='privilegeNote'){
+                            $("#privilegeNote").attr("class","current");
+                        }
+                        if('myMoney'=='privilegeNote'){
+                            $("#myMoney").attr("class","current");
+                        }
+                        if('help'=='privilegeNote'){
+                            $("#help").attr("class","help current");
+                        }
+
+                    }
+
+                    function clearnSelectionStyle(){
+                        $("#upgradeMember").attr("class","");
+                        $("#translationPack").attr("class","");
+                        $("#transactionRecord").attr("class","");
+                        $("#recharge").attr("class","");
+                        $("#privilegeNote").attr("class","");
+                        $("#myMoney").attr("class","");
+                        $("#help").attr("class","help");
+                    }
+                </script>
+            </div>
+            <div class="content1 mt15">
+                <div class="vip-cont notWordbreak">
+                    <div class="table">
+                        <ul class="firstUl">
+                            <li class="w237">特权名称</li>
+                            <li class="w225">
+                                <p>普通用户</p>
+                                <span class="block fl w116">男</span>
+                                <span class="block fl w108">女</span>
+                            </li>
+                            <li class="w135">高级会员</li>
+                            <li class="w145 lastLi">高级VIP会员</li>
+                            <div class="clear"></div>
+                        </ul>
+                        <div class="th-bg">
+                            <ul>
+                                <li class="w237">首页展示</li>
+                                <li class="w116">一</li>
+                                <li class="w108">一</li>
+                                <li class="w135 fs15 c-2e9348 fb">√</li>
+                                <li class="w145 lastLi fs15 c-2e9348 fb">√</li>
+                                <div class="clear"></div>
+                            </ul>
+                            <!-- <ul>
+                                <li class="w237">一键私信所有喜欢的人</li>
+                                <li class="w116">一</li>
+                                <li class="w108">一</li>
+                                <li class="w135 fs15 c-2e9348 fb">√</li>
+                                <li class="w145 lastLi fs15 c-2e9348 fb">√</li>
+                                <div class="clear"></div>
+                            </ul> -->
+                            <ul>
+                                <li class="w237">翻译字符</li>
+                                <li class="w116">一</li>
+                                <li class="w108">一</li>
+                                <li class="w135">一</li>
+                                <li class="w145 lastLi">3500/天</li>
+                                <div class="clear"></div>
+                            </ul>
+                            <!-- <ul>
+                                <li class="w237">发送虚拟礼物</li>
+                                <li class="w116">一</li>
+                                <li class="w108">一</li>
+                                <li class="w135 fs15 c-2e9348 fb">√</li>
+                                <li class="w145 lastLi fs15 c-2e9348 fb">√</li>
+                                <div class="clear"></div>
+                            </ul> -->
+                            <ul>
+                                <li class="w237 en-notes">一键私信50位异性</li>
+                                <li class="w116">一</li>
+                                <li class="w108">一</li>
+                                <li class="w135 fs15 c-2e9348 fb">√</li>
+                                <li class="w145 lastLi fs15 c-2e9348 fb">√</li>
+                                <div class="clear"></div>
+                            </ul>
+                            <ul>
+                                <li class="w237">私信条数</li>
+                                <li class="w116">6</li>
+                                <li class="w108">不限</li>
+                                <li class="w135">不限</li>
+                                <li class="w145 lastLi">不限</li>
+                                <div class="clear"></div>
+                            </ul>
+                            <ul>
+                                <li class="w237 en-notes">个人主页展示照片数</li>
+                                <li class="w116">4</li>
+                                <li class="w108">4</li>
+                                <li class="w135">6</li>
+                                <li class="w145 lastLi">12</li>
+                                <div class="clear"></div>
+                            </ul>
+                            <ul>
+                                <li class="w237">查看谁喜欢我</li>
+                                <li class="w116">一</li>
+                                <li class="w108">一</li>
+                                <li class="w135">一</li>
+                                <li class="w145 lastLi fs15 c-2e9348 fb">√</li>
+                                <div class="clear"></div>
+                            </ul>
+                            <ul>
+                                <li class="w237 en-notes">信息是否已读</li>
+                                <li class="w116">一</li>
+                                <li class="w108">一</li>
+                                <li class="w135">一</li>
+                                <li class="w145 lastLi fs15 c-2e9348 fb">√</li>
+                                <div class="clear"></div>
+                            </ul>
+                            <ul>
+                                <li class="w237">实体礼物</li>
+                                <li class="w116">一</li>
+                                <li class="w108">一</li>
+                                <li class="w135">一</li>
+                                <li class="w145 lastLi">9.5折</li>
+                                <div class="clear"></div>
+                            </ul>
+                            <!--<ul>
+                                <li class="w237">游戏大礼包</li>
+                                <li class="w116">一</li>
+                                <li class="w108">一</li>
+                                <li class="w135 fs15 c-2e9348 fb">√</li>
+                                <li class="w145 lastLi fs15 c-2e9348 fb">√</li>
+                                <div class="clear"></div>
+                            </ul>
+                            <ul>
+                                <li class="w237">新游戏抢先玩</li>
+                                <li class="w116">一</li>
+                                <li class="w108">一</li>
+                                <li class="w135 fs15 c-2e9348 fb">√</li>
+                                <li class="w145 lastLi fs15 c-2e9348 fb">√</li>
+                                <div class="clear"></div>
+                            </ul>
+                            -->
+                        </div>
+                    </div>
+                    <div class="remarks">
+                        <h3>备注：</h3>
+                        <p><span>首页展示：</span>仅对会员用户，其中金币会员首页展现：1金币/天</p>
+                        <p><span>翻译字符: </span>仅对vip开放，超出字符数：1金币/100字符</p>
+                        <p><span>一键私信50位异性 </span>:仅对女性和会员开放，其中金币会员同时发送50名异性：5金币/次</p>
+                        <p><span>私信条数：</span>仅对女性和会员开放，私信条数：1金币/10条</p>
+                        <p><span>查看谁喜欢我：</span>仅对vip会员开放</p>
+                        <p><span>信息是否已读：</span>仅对vip会员开放</p>
+                        <p><span>实体礼物：</span>vip用户享折扣</p>
+                    </div>
                 </div>
             </div>
         </div>
-
-
-
-
         <div class="clear"></div>
-
     </div>
 </div>
-<script id="temp_home_popPrivate" type="text/html">
-    <div class="likeme-pop-top">
-        <span class="popPLetterWrapLable likeme-pop-name1">##Letter.towho##：</span>
-        <span id="give_pv_to" class="popPLetterTo"></span><input type="hidden" id="give_pv_to_id">
-    </div>
-    <div class="likeme-pop-bottom">
-        <span class="popPLetterWrapLable likeme-pop-name2">##Letter.pricontent##：</span>
-        <div id="chatConBottom" class="inlineblock  border-all bdra15 mt20 popPLetterWrap">
-            <div class="TipsContent">您今日私信条数已用完<!-- 您今日私信条数已用完 -->！</div>
-            <div class="character"><span class="characterNum">0</span>/500</div>
-            <textarea id="sendContent" class="sendContent mt10" style="height: 150px;width:450px;">##im.enterKeySend##</textarea>
-            <div class="btnContainer bdra15">
-                <div class="langOptions">
-                    <span class="txt">翻译：</span>
-                    <div class="langBtn">
-                        <span class="language" langs-lang="">不翻译</span>
-                        <i class="Triangle"></i>
-                    </div>
-                    <ul class="languageUl">
-                        <li class="langLi" langs-lang="">不翻译</li>
-                        <!--   <li class="langLi" langs-lang="en">English</li>
-                          <li class="langLi" langs-lang="cn">简体中文</li>
-                          <li class="langLi" langs-lang="tr">繁體中文</li>
-                          <li class="langLi" langs-lang="ko">한국어</li>
-                          <li class="langLi" langs-lang="rs">Pусский</li>
-                          <li class="langLi" langs-lang="gm">Deutsch</li>
-                          <li class="langLi" langs-lang="sp">Español</li>
-                          <li class="langLi" langs-lang="jp">日本語</li> -->
 
-                        <li class="langLi" langs-lang="en">English</li>
 
-                        <li class="langLi" langs-lang="jp">日本語</li>
-
-                        <li class="langLi" langs-lang="ru">русский</li>
-
-                        <li class="langLi" langs-lang="spa">Español</li>
-
-                        <li class="langLi" langs-lang="zh">简体中文</li>
-
-                        <li class="langLi" langs-lang="cht">繁體中文</li>
-
-                        <li class="langLi" langs-lang="kor">한국어</li>
-
-                        <li class="langLi" langs-lang="de">Deutsch</li>
-
-                    </ul>
-                </div>
-                <ul class="funBtnUl">
-                    <li class="qqFaceBtn"></li>
-                    <!--  <li class="imgBtn"></li>
-                    <li class="giftBtn"></li>
-                    <li class="redBtn"></li>-->
-                    <li id="sendBtn" class="sendBtn">发送<!-- 发送 --></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+<script>
+    /*修改滚动轴*/
+    $(window).load(function() {
+        $(".yts,.yts1").mCustomScrollbar();
+        /*下拉菜单*/
+        $(".xld").each(function(index, element) {
+            $(this).click(function(e) {
+                $(this).next("ul").css("display", "block");
+                $(this).css("background-image", "url(<%=path%>/common/images/xld1.png)");
+                $(".xld-select>li").each(function(e) {
+                    var _selt = $(this);
+                    $(this).hover(function() {
+                        $(this).addClass("default").siblings().removeClass("default");
+                    })
+                    $(this).click(function(e) {
+                        $(_selt.parent(".xld-select").siblings("span")).text(_selt.children("a").text()).css("background-image", "url(<%=path%>/common/images/xld.png)");
+                        _selt.parent(".xld-select").css("display", "none");
+                    });
+                });
+            })
+        });
+        /*返回顶部*/
+        $('.scroll_t').click(function() {
+            $('html,body').animate({
+                scrollTop: '0px'
+            }, 800);
+        });
+    });
 </script>
 
 
@@ -1568,7 +1718,7 @@
                 <button id="log-bnt" class="btn">登录<!-- 登录 --></button>
             </div>
             <div class=" mt10">
-                <a href="http://www.gagahi.com:80/Platform/inviteRegIndex?source=2&inviter=2935185&sysid=" class="fl c-2d57a1 f13">注册<!-- 注册 --></a>
+                <a href="http://www.gagahi.com:80/Platform/inviteRegIndex?source=2&inviter=&sysid=" class="fl c-2d57a1 f13">注册<!-- 注册 --></a>
                 <a href="http://www.gagahi.com:80/Platform/forgotPassword" class="fr c-2d57a1 f13">忘记密码<!-- 忘记密码？ --></a>
                 <div class="clear"></div>
             </div>
@@ -1693,7 +1843,7 @@
 <script type="text/javascript">
     $(function(){
 
-        var token="bc19844b369b4f9e87381ae22febca51";
+        var token="";
         if(token==""){
             return;
         }
@@ -1823,26 +1973,30 @@
                         //弹窗
                         RBTIPS(message.content);
                     }else if(message.type == 12){//通知 私信
-                        var obj1 = $("#leftSixinNotice");
-                        var count = $(obj1).text();
-                        if(null == count || $.trim(count).length <= 0){
-                            count = parseInt(message.content.count);
-                            obj1.addClass("newsNumSingle");
-                        }else if(count =="99+"){
-                            count ="99+";
-                        }else{
-                            count = parseInt(count)+parseInt(message.content.count);
-                            if(count>99){
-                                count ="99+";
-                                obj1.removeClass("newsNumSingle").addClass("newsNumDouble");
-                            }else{
-                                obj1.addClass("newsNumSingle");
-                            }
-                        }
-                        $(obj1).text(count);
 
                         //在私信页面不提醒
                         if(window.location.pathname.indexOf("/privateLetter") < 0){
+                            var obj1 = $("#leftSixinNotice");
+                            var count = $(obj1).text();
+                            if(null == count || $.trim(count).length <= 0){
+                                count = parseInt(message.content.count);
+                                obj1.addClass("newsNumSingle");
+                            }else if(count =="99+"){
+                                count ="99+";
+                            }else{
+                                count = parseInt(count)+parseInt(message.content.count);
+                                if(count>99){
+                                    count ="99+";
+                                    obj1.removeClass("newsNumSingle").addClass("newsNumDouble");
+                                }else{
+                                    obj1.addClass("newsNumSingle");
+                                }
+                            }
+                            $(obj1).text(count);
+
+
+
+
                             var obj = $("#rightNotice");
                             var count = $(obj).text();
                             if(null == count || $.trim(count).length <= 0){
@@ -2189,324 +2343,15 @@
     }
 
 </script>
+
+<!-- <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-84665497-1', 'auto');
+  ga('send', 'pageview');
+
+</script> -->
 </html>
-
-
-<link type="text/css" href="<%=path%>/common/IM/css/qqFace.css" rel="stylesheet">
-<link href="<%=path%>/common/IM/css/webuploader.css" rel="stylesheet" type="text/css">
-<link href="<%=path%>/common/css/privateLetter.css" rel="stylesheet" type="text/css">
-
-<script src="<%=path%>/common/js/jquery.page.js"></script>
-
-
-<script type="text/javascript" src="<%=path%>/common/js/laytpl.js"></script>
-<script type="text/javascript" src="<%=path%>/common/js/webuploader.js"></script>
-<script type="text/javascript" src="<%=path%>/common/js/gift.js"></script>
-<script type="text/javascript" src="<%=path%>/common/IM/js/jquery.qqFace.js"></script>
-<script type="text/javascript" src="<%=path%>/common/js/popPrivateLetter.js"></script>
-
-<script>
-
-    /**跳转充值会员*/
-    $(".govip").click(function(e) {
-        location.href = "http://www.gagahi.com:80/pay/upgradeMember";
-    });
-
-
-    /*修改滚动轴*/
-    $(window).load(function(){
-    });
-    /*下拉菜单*/
-    $(".xld").each(function(index, element) {
-        $(this).click(function (e) {
-            $(this).next("ul").css("display","block");
-            $(this).css("background-image","url(<%=path%>/common/images/xld1.png)");
-            $(".xld-select>li").each(function (e) {
-                var _selt = $(this);
-                $(this).hover(function (){
-                    $(this).addClass("default").siblings().removeClass("default");
-                })
-                $(this).click(function (e) {
-                    $(_selt.parent(".xld-select").siblings("span")).text(_selt.children("a").text()).css("background-image","url(<%=path%>/common/images/xld.png)");
-                    _selt.parent(".xld-select").css("display", "none");
-                });
-            });
-        })
-    });
-    /*查看我喜欢我的人图片展示*/
-    $(function(){
-        $('#sildes').olvSlides({
-            thumb:true,
-            thumbPage:true,
-            thumbDirection:"Y",
-            onetip: $.t('home.onlyOneLike'),
-            effect:'fade'
-        });
-    })
-
-    /*分页*/
-    $(".tcdPageCode").createPage({
-        pageCount:15,//总页数
-        current:1,//当前页
-        backFn:function(p){
-            console.log(p);
-        }
-    });
-
-
-    /*加好友*/
-    $(document).on("click",".friending",function(){
-        var mid = $(".thumbWrap").find(".cur").find("img:first").attr("lmid");
-        var obj = $(this);
-        if(obj.hasClass("friending1")){//不可点
-            return;
-        }else{
-            obj.addClass("friending1");
-        }
-        $.ajax({//
-            type : "post",
-            url : "http://www.gagahi.com:80/Member/Friend/applyFriend",
-            contentType : "application/x-www-form-urlencoded",
-            data: {"friGagaid":mid,"source":1},
-            success: function(data){
-                if(data.success){
-                    if(data.obj == 1 || data.obj == 3){//1 成功 2失败 3 好友关系
-                        obj.remove();
-                    }else if(data.obj == 4){//申请中....
-                        obj.remove();
-                    }
-                    //layer.msg("加好友申请发送成功");
-                    layer.msg(data.msg);
-                }else{
-                    layer.msg(data.msg);//
-                    obj.removeClass("friending1");
-                }
-            }
-        });
-    });
-
-    /*举报*/
-    $(document).on("click",".report",function(){
-        var reporthtml = '<div class="jqss jqssn3" style="display:block"><p>'
-                +'<input type="radio" checked="checked" class="radio" value="X" id="a1" name="jb">'
-                +'<label class="radio" for="a1"> 垃圾广告</label></p><p>'
-                +'<input type="radio" class="radio" value="y" id="b1" name="jb">'
-                +'<label class="radio" for="b1"> 淫秽色情</label></p><p>'
-                +'<input type="radio" class="radio" value="z" id="c1" name="jb">'
-                +'<label class="radio" for="c1">虚假中奖</label></p><p>'
-                +'<input type="radio" class="radio" value="w" id="d1" name="jb">'
-                +'<label class="radio" for="d1"> 敏感信息</label></p><p>'
-                +'<input type="radio" class="radio" value="X" id="f" name="jb">'
-                +'<label class="radio" for="f"> 人身攻击</label></p><p>'
-                +'<input type="radio" class="radio" value="y" id="g" name="jb">'
-                +'<label class="radio" for="g">骚然他人</label></p><div class="clear"></div></div>'
-        layer.open({
-            area: ['482px','340px'],
-            skin: 'demo-report',
-            title: ['举报', 'font-size:18px;'],
-            content:reporthtml,
-            btn: $.t("global.submit"),//'确认',
-            yes: function (index, layero) {
-                report();
-                layer.close(index)
-            },
-            cancel: function (index) {
-
-            },
-        });
-    });
-
-    /**
-     * 举报
-     */
-    function report(){
-        var id = $(".thumbWrap").find(".cur").find("img:first").attr("lmid");
-        var reason = "";
-        var contents = $(".jqssn3").find(".radio");
-        for(var i = 0;i < contents.length;i++){
-            if($(contents[i]).is(':checked')){
-                reason = $(contents[i]).next().html();
-            }
-        }
-        $.ajax({
-            type : "post",
-            url : "http://www.gagahi.com:80/Report/report",
-            contentType : "application/x-www-form-urlencoded",
-            data: {"isGagaId":id,"type":"L","reason":reason},
-            success: function(data){
-                if(data.success){
-                    layer.msg(data.msg);
-                }else{
-                    layer.msg(data.msg);
-                }
-            }
-        });
-    }
-
-    /*发私信*/
-    $(".private").click(function(e) {
-        /* var html = '<div class="privateCon"><div class="Friendname">发给：'
-         +'<input id="" class=" bdra30 h36 text"  autocomplete="off">'
-         +'</div><div id="show"></div>     <div class="comment">       '
-         +' <div class="com_form">        	'
-         +'<textarea class="input" id="saytext" name="saytext"></textarea>  '
-         +'      	<p><input type="button" class="sub_btn" value="提交">'
-         +'<span class="emotion">表情</span></p>        </div>     </div> '
-         layer.open({
-         area: ['560px','406px'],
-         skin: 'demo-private',
-         title: ['发私信', 'font-size:18px;'],
-         //content:$('.privateCon').html(),
-         content:html,
-         success:function(){
-         $('.emotion').qqFace({
-         id : 'facebox',
-         assign:'saytext',
-         path:'../arclist/'	//表情存放的路径
-         });
-         }
-         }); */
-
-
-    });
-</script>
-
-
-<script type="text/javascript">
-    $(function(){
-        $(".sub_btn").click(function(){
-            var str = $("#saytext").val();
-            $("#show").html(replace_em(str));
-        });
-    });
-    //查看结果
-    function replace_em(str){
-        str = str.replace(/\</g,'&lt;');
-        str = str.replace(/\>/g,'&gt;');
-        str = str.replace(/\n/g,'<br/>');
-        str = str.replace(/\[em_([0-9]*)\]/g,'<img src="<%=path%>/common/arclist/$1.gif" border="0" />');
-        return str;
-    }
-
-
-    //忽略喜欢我的人
-    function ignorelikeme(t){
-        var id = $(".thumbWrap").find(".cur").find("img:first").attr("lid");
-        $.ajax({
-            type : "post",
-            url : "http://www.gagahi.com:80/Member/Like/ignorelikeme",
-            contentType : "application/x-www-form-urlencoded",
-            data: {"id":id},
-            success: function(data){
-                if(data.success){
-                    var obj = $(".thumbWrap").find(".cur");
-                    var img = $(t).parent().parent();
-
-                    var nobj = $(obj).next();
-                    var nimg = $(img).next();
-
-                    if(null == nobj || nobj.length <= 0 ){
-                        nobj = $(obj).prev();
-                        nimg = $(img).prev();
-                    }
-                    if(null != nobj && nobj.length > 0 ){
-                        nobj.attr("class","cur");
-                        nimg.css("display","block");
-                    }
-                    $(obj).remove();
-                    $(img).remove();
-
-
-                    //数量
-                    var obj = $(".fr").find(".like-top").find(".frigs").find(".c-2d57a1");
-                    $(obj).text(parseInt($(obj).text())-1);
-
-                    var lis = $(".thumbWrap").find(".thumbCont").find("li").length;
-                    if(null == lis || lis <= 0){//没有喜欢的人
-                        $(".mid").find(".w1100").find(".bigcount").hide();
-                        var str = "<div class=\"fr\">"
-                                +"<div class=\"rht\">"
-                                +"<div class=\"shengji\">"
-                                +"<img src=\"<%=path%>/common/images/shengji.jpg\" class=\" mt100 mb45\">"
-                                +"<p style=\"font-size:22px;\" class=\"mb20\">还没有人为您点赞</p>"
-                                +"<p class=\"f16 enjz\" style=\"margin-bottom:50px;\">马上升级会员，增加首页展现机会，让更多帅哥美女找到您</p>"
-                                +"</div>"
-                                +"</div>"
-                                +"</div>";
-
-                        $(".mid").find(".w1100").find(".fr").remove();
-                        $(".mid").find(".w1100").prepend(str);
-                    }
-                }else{
-                    layer.msg(data.msg);
-                }
-            }
-        });
-    }
-
-    //点赞（喜欢）
-    function ilike(t){
-        var mid = $(".thumbWrap").find(".cur").find("img:first").attr("lmid");
-        $.ajax({
-            type : "post",
-            url : "http://www.gagahi.com:80/Member/Like/iliketo",
-            contentType : "application/x-www-form-urlencoded",
-            data: {"mid":mid},
-            success: function(data){
-                if(data.success){
-                    if(data.obj == "del"){//忽略喜欢
-                        /* var obj = $(".thumbWrap").find(".cur");
-                         var img = $(t).parent().parent();
-
-                         var nobj = $(obj).next();
-                         var nimg = $(img).next();
-
-                         if(null == nobj || nobj.length <= 0 ){
-                         nobj = $(obj).prev();
-                         nimg = $(img).prev();
-                         }
-                         if(null != nobj && nobj.length > 0 ){
-                         nobj.attr("class","cur");
-                         nimg.css("display","block");
-                         }
-                         $(obj).remove();
-                         $(img).remove(); */
-
-                        //2016年4月15日11:33:17  产品要求去掉提示
-                        //layer.msg(data.msg);
-                        $(t).removeClass().addClass("lkdz");
-                    }else if(data.obj == "friend" || data.obj == "oldfriend"){
-                        //2016年4月15日11:33:17  产品要求去掉提示
-                        //layer.msg(data.msg);
-                        $.zone.likeAct($(t),{"left":"30px","transform":"scale(2)"});
-                        $(t).removeClass().addClass("dzed");
-                    }
-                }else{
-                    layer.msg(data.msg);
-                }
-            }
-        });
-    }
-
-    function ilikebatch(){
-        $.ajax({
-            type : "post",
-            url : "http://www.gagahi.com:80/Member/Like/ilikebatch",
-            contentType : "application/x-www-form-urlencoded",
-            success: function(data){
-                if(data.success){
-                    layer.msg(data.msg);
-                }else{
-                    layer.msg(data.msg);
-                }
-            }
-        });
-    }
-</script>
-
-
-
-
-
-
-

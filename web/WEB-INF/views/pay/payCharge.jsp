@@ -192,37 +192,37 @@
         //选中状态样式
         function  selectionStyle(){
             clearnSelectionStyle();
-            if('encounterIndex'=='leftLikeMeIndex'){
+            if('encounterIndex'=='shopIndex'){
                 $("#encounterIndex").attr("class","on");
             }
-            if('zoneIndex'=='leftLikeMeIndex'){
+            if('zoneIndex'=='shopIndex'){
                 $("#zoneIndex").attr("class","on");
             }
-            if('gameIndex'=='leftLikeMeIndex'){
+            if('gameIndex'=='shopIndex'){
                 $("#gameIndex").attr("class","on");
             }
-            if('shopIndex'=='leftLikeMeIndex'){
+            if('shopIndex'=='shopIndex'){
                 $("#shopIndex").attr("class","on");
             }
 
             //左侧导航
-            if('leftSixinIndex'=='leftLikeMeIndex'){
+            if('leftSixinIndex'=='shopIndex'){
                 $("#leftSixinIndexImg").attr("class","on");
                 $("#leftSixinIndexText").attr("class","on");
             }
-            if('leftLikeMeIndex'=='leftLikeMeIndex'){
+            if('leftLikeMeIndex'=='shopIndex'){
                 $("#leftLikeMeIndexImg").attr("class","lkm on");
                 $("#leftLikeMeIndexText").attr("class","on");
             }
-            if('leftIlikeIndex'=='leftLikeMeIndex'){
+            if('leftIlikeIndex'=='shopIndex'){
                 $("#leftIlikeIndexImg").attr("class","mlk on");
                 $("#leftIlikeIndexText").attr("class","on");
             }
-            if('leftFriendIndex'=='leftLikeMeIndex'){
+            if('leftFriendIndex'=='shopIndex'){
                 $("#leftFriendIndexImg").attr("class","each-lk on");
                 $("#leftFriendIndexText").attr("class","on");
             }
-            if('leftVisitorIndex'=='leftLikeMeIndex'){
+            if('leftVisitorIndex'=='shopIndex'){
                 $("#leftVisitorIndexImg").attr("class","visitor on");
                 $("#leftVisitorIndexText").attr("class","on");
             }
@@ -548,7 +548,7 @@
         <div class="close"></div>
     </div>
 </div>
-<div class="head"  gagaid="2935185">
+<div class="head"  gagaid="2935498">
     <div class="w1100 jz">
         <div class="fl">
             <a href="<%=path%>/index/iHome" class="logo"><img src="<%=path%>/common/images/logo.png" alt="gagahi"/></a>
@@ -578,7 +578,7 @@
                 <div class="nr">
                     <ul class="yhy yts1 mCustomScrollbar _mCS_1 mCS_no_scrollbar ihome_top_apply_friend_ul" >
                         <!-- <h3>加好友申请</h3> -->
-                        <!-- <li><span class="tx"><img src="<%=path%>/common/images/gg1.jpg"></span><span class="nm">Nita2009</span>
+                        <!-- <li><span class="tx"><img src="http://static.gagahi.com/images/gg1.jpg"></span><span class="nm">Nita2009</span>
                           <p class="fr">
                             <button>同意</button>
                             <button>忽略</button>
@@ -701,12 +701,12 @@
     var ctx="http://www.gagahi.com:80";
     var qiniuImgURL="http://images.gagahi.com/";
     var imUrl="http://webim.gagahi.com/";
-    var token="bc19844b369b4f9e87381ae22febca51";
+    var token="29b525b8905e49f3aa987b286a5e2789";
     var sendGender = "1";//1男2女
     var sendHeadImgUrl = "images/default/male.png";//小头像
-    var myNickname = "Quintion";//自己昵称
+    var myNickname = "正直的代言人";//自己昵称
     var myLanguage = "zh-cn";
-    var myId = "2935185";//我的ID
+    var myId = "2935498";//我的ID
     //1：普通会员，2：高级会员，3：VIP会员
     var myMemberGrade = "1";//会员等级
 
@@ -915,15 +915,15 @@
                 <!-- 建群 --></span> <span class="inviteFriends">邀请好友
             <!-- 邀请好友 --></span> <span class="functionBtn"> <i class="functionI"></i>
 				<ul class="functionMore">
-                    <li class="functionBack">退群
+					<li class="functionBack">退群
                         <!-- 退群 --></li>
-                    <li class="functionRelationState">删除好友
+					<li class="functionRelationState">删除好友
                         <!-- 删除好友 --></li>
-                    <li class="functionReport">举报
+					<li class="functionReport">举报
                         <!-- 举报 --></li>
-                    <li class="functionShieldState">屏蔽
+					<li class="functionShieldState">屏蔽
                         <!-- 屏蔽 --></li>
-                </ul>
+				</ul>
 			</span> <i id="js-closedChatBox" class="closedChatBox"></i>
         </div>
     </div>
@@ -1292,9 +1292,9 @@
 
 
 
-<link href="<%=path%>/common/css/like.css" rel="stylesheet" type="text/css">
-<script src="<%=path%>/common/js/slides-1.1.1-min.js" type="text/javascript"></script>
 
+<link href="<%=path%>/common/css/vipService.css" rel="stylesheet" type="text/css">
+<script src="<%=path%>/common/js/jquery.page.js"></script>
 
 <div class="mid">
     <div class="w1100 jz">
@@ -1330,10 +1330,10 @@
                 </div>
                 <div class="yhxx fr">
                     <p class="ari">
-                        <a class="ellipsis-name" href="http://www.gagahi.com:80/Member/myinformation"  title="Quintion">Quintion</a>
+                        <a class="ellipsis-name" href="http://www.gagahi.com:80/Member/myinformation"  title="正直的代言人">正直的代言人</a>
 
                     </p>
-                    <p class="ari hui f12" style="margin: 8px 0">GaGaID:30039931</p>
+                    <p class="ari hui f12" style="margin: 8px 0">GaGaID:30040277</p>
 
                     <p class="jd"><span class="jdt"><span class="jdts f12">0%</span></span></p>
                 </div>
@@ -1445,91 +1445,889 @@
         </script>
 
 
-        <!-- member.memberfinance.mefiLevel == 3 &&  -->
+        <div class="fr w860">
+            <div class="top">
+                <img class="block" src="<%=path%>/common/images/vipTop.jpg" />
 
 
+                <ul class="nav">
+                    <a href="http://www.gagahi.com:80/pay/upgradeMember"><li id="upgradeMember">升级会员</li></a>
+                    <a href="http://www.gagahi.com:80/pay/recharge"><li id="recharge">充值金币</li></a>
+
+                    <a href="http://www.gagahi.com:80/pay/transactionRecord"><li id="transactionRecord">充值记录</li></a>
+                    <a href="http://www.gagahi.com:80/pay/privilegeNote" id="powerItem"><li id="privilegeNote">特权说明</li></a>
+
+                    <a href="http://www.gagahi.com:80/pay/help"><li class="help current" id="help">帮助</li></a>
+                </ul>
+                <script type="text/javascript">
+
+                    searchifcommissiongirl();
+                    function searchifcommissiongirl() {
+                        //  $("#powerItem").after("<a href='http://www.gagahi.com:80/pay/myMoney'><li id='myMoney'>我的金币</li></a>'");
+                        if('1' == 2)
+                            $.post("http://www.gagahi.com:80/commission/ifcommissiongirl",{},
+                                    function(data,textStatus){
+                                        if(data.obj>0){
+
+                                            $("#powerItem").after("<a href='http://www.gagahi.com:80/pay/myMoney'><li id='myMoney'>我的金币</li></a>'");
+                                        };
+                                        selectionStyle();
+                                    })
+
+                    }
+
+                    //选中状态样式
+                    function  selectionStyle(){
+                        clearnSelectionStyle();
+                        if('upgradeMember'=='recharge'){
+                            $("#upgradeMember").attr("class","current");
+                        }
+                        if('translationPack'=='recharge'){
+                            $("#translationPack").attr("class","current");
+                        }
+                        if('transactionRecord'=='recharge'){
+                            $("#transactionRecord").attr("class","current");
+                        }
+                        if('recharge'=='recharge'){
+                            $("#recharge").attr("class","current");
+                        }
+                        if('privilegeNote'=='recharge'){
+                            $("#privilegeNote").attr("class","current");
+                        }
+                        if('myMoney'=='recharge'){
+                            $("#myMoney").attr("class","current");
+                        }
+                        if('help'=='recharge'){
+                            $("#help").attr("class","help current");
+                        }
+
+                    }
+
+                    function clearnSelectionStyle(){
+                        $("#upgradeMember").attr("class","");
+                        $("#translationPack").attr("class","");
+                        $("#transactionRecord").attr("class","");
+                        $("#recharge").attr("class","");
+                        $("#privilegeNote").attr("class","");
+                        $("#myMoney").attr("class","");
+                        $("#help").attr("class","help");
+                    }
+                </script>
+            </div>
+            <div class="content1 mt15">
+                <div class="vip-cont">
+                    <div class="recharge-con">
+                        <div class="Gold-volume p10 mb20">
+                            您账户可用金币数：<span class="c-ff8a00 f18" id="rechargeTotalMoney">0</span>
+                            <span class="money ml5" style="vertical-align: text-top;"></span>
+                        </div>
+                        <div class="recharge-mid recharge-mid1">
+                            <ul class="recharge-type-list">
+                                <li data-dollar="20">
+                                    <p class="mt20">
+                                        <span class="c-ff8a00 f25 mr5">20</span>
+                                        <span class="money"></span>
+                                    </p>
+                                    <p class=" mt5">
+                                        <span class="fb">$20</span> /￥<span class="fb">120</span>
+                                    </p>
+                                    <div class="chosed"></div>
+                                </li>
+                                <li data-dollar="50">
+                                    <p class="mt20">
+                                        <span class="c-ff8a00 f25 mr5">50</span>
+                                        <span class="money"></span>
+                                    </p>
+                                    <p class=" mt5">
+                                        <span class="fb">$50</span> /￥<span class="fb">300</span>
+                                    </p>
+                                    <div class="chosed"></div>
+                                </li>
+                                <li data-dollar="100" style="background: #fff3d9; border: 1px solid #fabc3f;">
+                                    <p class="mt20">
+                                        <span class="c-ff8a00 f25 mr5">100</span>
+                                        <span class="money"></span>
+                                    </p>
+                                    <p class=" mt5">
+                                        <span class="fb">$100</span> /￥<span class="fb">600</span>
+                                    </p>
+                                    <div class="chosed" style="display: block;"></div>
+                                </li>
+                                <li data-dollar="200">
+                                    <p class="mt20">
+                                        <span class="c-ff8a00 f25 mr5">200</span>
+                                        <span class="money"></span>
+                                    </p>
+                                    <p class=" mt5">
+                                        <span class="fb">$200</span> /￥<span class="fb">1200</span>
+                                    </p>
+                                    <div class="chosed"></div>
+                                </li>
+                                <li data-dollar="500">
+                                    <p class="mt20">
+                                        <span class="c-ff8a00 f25 mr5">500</span>
+                                        <span class="money"></span>
+                                    </p>
+                                    <p class=" mt5">
+                                        <span class="fb">$500</span> /￥<span class="fb">3000</span>
+                                    </p>
+                                    <div class="chosed"></div>
+                                </li>
+                                <li data-dollar="1000">
+                                    <p class="mt20">
+                                        <span class="c-ff8a00 f25 mr5">1000</span>
+                                        <span class="money"></span>
+                                    </p>
+                                    <p class=" mt5">
+                                        <span class="fb">$1000</span> /￥<span class="fb">6000</span>
+                                    </p>
+                                    <div class="chosed"></div>
+                                </li>
+                                <li class="recharge-diy" data-dollar="">
+                                    <p class="mt20">
+                                        <span class="c-666 mr5">其他金额:</span>
+                                        <input type="text" class="recharge-sr mr5" autocomplete="off" id="diy-daller"/>
+                                        <span class="money" style="vertical-align: text-top;"></span>
+                                    </p>
+                                    <p class=" c-333 ml50 f12">需支付
+                                        <span class="diy-vsb">0</span>
+                                        美元 (RMB ¥<span class="diy-rmb">0</span>)
+                                    </p>
+                                    <div class="chosed"></div>
+                                </li>
+                            </ul>
+                            <div class="clear"></div>
+                            <h3 class="mb10 mt20">
+                                选择支付方式:
+                                <span style="color:#f8ab62">（温馨提示：1金币仅需1美元）</span>
+                            </h3>
+                            <div class="zf">
+                                <a data-tple="ali">
+                                    <img src="<%=path%>/common/images/zfb.png">
+                                    <div class="chosed1"></div>
+                                </a>
+                                <a data-tple="paypal">
+                                    <img src="<%=path%>/common/images/paypal.png">
+                                    <div class="chosed1"></div>
+                                </a>
+                                <a data-tple="visa">
+                                    <img src="<%=path%>/common/images/visa.png">
+                                    <div class="chosed1"></div>
+                                </a>
+                                <a data-tple="master">
+                                    <img src="<%=path%>/common/images/master.png">
+                                    <div class="chosed1"></div>
+                                </a>
+                                <a data-tple="kuaijie" class="kuaijie">
+                                    <img src="<%=path%>/common/images/kuaijie.png">
+                                    <div class="chosed1"></div>
+                                </a>
+                            </div>
+
+                            <div class="vip-Credit-con">
+                                <p class="mb10">信用卡：</p>
+                                <div><div class=" bdra15 vip-Credit inlineblock" style="z-index:3;">
+									<span id="creditCardSelection" class=" inlineblock" data-tongyong="" data-cardnum="">
+										<span class="mr10 ml10"></span>
+										<span class="mr10">---------------------</span>
+										请选择   ---------------------
+									</span>
+                                    <ul style="display: none;" class="xld-select"  id="creditCardList">
+                                        <!-- <li data-chuandi = "VISA信用卡1">VISA信用卡1
+                                        <span class="mr10 ml10">石头</span>
+                                        <span class="mr10">尾号**5656</span>
+                                        04/20</li> -->
+                                    </ul>
+                                </div><span class="c-2d57a1 vip-add">
+									<b class=" f20 ml5">+</b>
+									添加新信用卡</span><br />
+                                    <a class="c-2d57a1 pt10 inlineblock" href="http://www.gagahi.com:80/Member/memberinformation#membercard">
+                                        管理信用卡
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="credit-detail mt20">
+                                <p>
+                                    请输入您的信用卡信息：
+                                </p>
+                                <div class="vip-tsk"></div>
+                                <p><span class="credit-detail-title">发卡机构类型：</span>
+								  <span class="credit-detail-con">
+								    <input type="radio" name="credit" id="mas" value="MASTER" autocomplete="off" /> <label for="mas" class="mr50">masterCard</label>
+								  	<input type="radio" name="credit" id="vis" value="VISA" autocomplete="off"/> <label for="vis" class="mr50">VISA</label>
+								    <input type="radio" name="credit" id="jbc" value="JCB" autocomplete="off"/><label for="jbc">JBC</label></span></p>
+
+                                <p><span class="credit-detail-title">持卡人姓名：</span>
+                                    <input type="text" id="cardHolderName" name="cardHolderName" class="vip-Credit-sr credit-nam" placeholder='持卡人姓名' autocomplete="off"/></p>
+                                <p><span class="credit-detail-title">信用卡号码：</span>
+                                    <input type="text" id="cardNumber" name="cardNumber" class="vip-Credit-sr credit-num" placeholder='信用卡号码'  autocomplete="off"/></p>
+                                <div class=" mb20">
+                                    <span class="credit-detail-title">信用卡有效期：</span>
+                                    <div class="inlineblock credit-time vip-Credit mr15">
+                                        <span class=" inlineblock"  id="cardExpirationMonth" data-tongyong="01">01</span>
+                                        <ul style="display: none;" class="xld-select">
+                                            <li data-chuandi = "01">01</li>
+                                            <li data-chuandi = "02">02</li>
+                                            <li data-chuandi = "03">03</li>
+                                            <li data-chuandi = "04">04</li>
+                                            <li data-chuandi = "05">05</li>
+                                            <li data-chuandi = "06">06</li>
+                                            <li data-chuandi = "07">07</li>
+                                            <li data-chuandi = "08">08</li>
+                                            <li data-chuandi = "08">09</li>
+                                            <li data-chuandi = "10">10</li>
+                                            <li data-chuandi = "11">11</li>
+                                            <li data-chuandi = "12">12</li>
+                                        </ul>
+                                    </div>
+                                    <div class="inlineblock credit-time vip-Credit">
+                                        <span class=" inlineblock" id="cardExpirationYear" data-tongyong="2016">2016</span>
+                                        <ul style="display: none;" class="xld-select">
+                                            <li data-chuandi = "2016">2016</li>
+                                            <li data-chuandi = "2017">2017</li>
+                                            <li data-chuandi = "2018">2018</li>
+                                            <li data-chuandi = "2019">2019</li>
+                                            <li data-chuandi = "2020">2020</li>
+                                            <li data-chuandi = "2021">2021</li>
+                                            <li data-chuandi = "2022">2022</li>
+                                            <li data-chuandi = "2023">2023</li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p>
+								   	<span class="credit-detail-title">
+								   	安全码：</span>
+                                    <input type="text" id="securityCode" name="securityCode" class="vip-Credit-sr credit-safe" placeholder='安全码' autocomplete="off"/></p>
+                                <p>
+                                    <span class="credit-detail-title">手机号码：</span><input type="text" id="phoneNum" name="phoneNum" class="vip-Credit-sr credit-tel" placeholder='手机号码' autocomplete="off"/>
+                                </p>
+                                <P><span class="credit-detail-title"></span><input id="agreement" class="vm" type="checkbox" > <a class="c-2d57a1 f12 vm" href="http://www.gagahi.com:80/Platform/QuickAgreement" >我已阅读并同意《快捷支付服务协议》</a></P>
+                                <p class="addBankBtn"><span class="credit-detail-title"></span><button class="bdra15 c-fff bgc-2d57a1 h30 pl10 pr10 credit-add">添加</button></p>
+                            </div>
 
 
-        <!-- 无好友 -->
-        <div class="fr">
-            <div class="rht">
-                <div class="shengji">
-                    <img src="<%=path%>/common/images/shengji.jpg" class=" mt100 mb45">
-                    <p style="font-size:22px;" class="mb20">还没有人为您点赞</p>
-                    <p class="f16 enjz" style="margin-bottom:50px;">马上升级会员，增加首页展现机会，让更多帅哥美女找到您</p>
-
-                    <!-- 升级为会员 -->
-
-                    <p><button class="bdra30 h36 f16 bgc-2d57a1 c-fff govip">升级会员</button></p>
-
+                            <div class="recharge-up tc mt50 mb45">
+                                <button class="bdra30 bgc-2d57a1 c-fff recharge-up-btn f16"  onclick="recharge()">立即充值</button><br />
+                                <!-- <a class="c-2d57a1">《条款和条件》</a> -->
+                            </div>
+                            <div class="recharge-adv">
+                                <div class="recharge-present">
+                                    <i></i><br /> 给您喜欢的人赠送
+                                    <br /> 一份完美礼物
+                                </div>
+                                <div class="recharge-coins">
+                                    <i></i><br /> 使用金币购买翻译字符
+                                    <br /> 让您和ta无障碍嗨聊
+                                </div>
+                                <div class="recharge-favrite">
+                                    <i></i><br /> 获得更多帅哥
+                                    <br /> 美女的关注
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-
-
-
         <div class="clear"></div>
-
+        <a id="openpay_a" style="display:none;" target="_blank"></a>
+        <div id="redirectDiv"></div>
     </div>
 </div>
-<script id="temp_home_popPrivate" type="text/html">
-    <div class="likeme-pop-top">
-        <span class="popPLetterWrapLable likeme-pop-name1">##Letter.towho##：</span>
-        <span id="give_pv_to" class="popPLetterTo"></span><input type="hidden" id="give_pv_to_id">
-    </div>
-    <div class="likeme-pop-bottom">
-        <span class="popPLetterWrapLable likeme-pop-name2">##Letter.pricontent##：</span>
-        <div id="chatConBottom" class="inlineblock  border-all bdra15 mt20 popPLetterWrap">
-            <div class="TipsContent">您今日私信条数已用完<!-- 您今日私信条数已用完 -->！</div>
-            <div class="character"><span class="characterNum">0</span>/500</div>
-            <textarea id="sendContent" class="sendContent mt10" style="height: 150px;width:450px;">##im.enterKeySend##</textarea>
-            <div class="btnContainer bdra15">
-                <div class="langOptions">
-                    <span class="txt">翻译：</span>
-                    <div class="langBtn">
-                        <span class="language" langs-lang="">不翻译</span>
-                        <i class="Triangle"></i>
-                    </div>
-                    <ul class="languageUl">
-                        <li class="langLi" langs-lang="">不翻译</li>
-                        <!--   <li class="langLi" langs-lang="en">English</li>
-                          <li class="langLi" langs-lang="cn">简体中文</li>
-                          <li class="langLi" langs-lang="tr">繁體中文</li>
-                          <li class="langLi" langs-lang="ko">한국어</li>
-                          <li class="langLi" langs-lang="rs">Pусский</li>
-                          <li class="langLi" langs-lang="gm">Deutsch</li>
-                          <li class="langLi" langs-lang="sp">Español</li>
-                          <li class="langLi" langs-lang="jp">日本語</li> -->
 
-                        <li class="langLi" langs-lang="en">English</li>
+<script type="text/javascript">
+    //绑定银行卡个数
+    var cardLength=0;
+    /*本次支付订单*/
+    var redirectOrderId;
+    //获取金币数
+    $(function(){
+        updateSession();
+        $.ajax({
+            url:"http://www.gagahi.com:80/im/getMemberGold",
+            type: 'get',
+            cache: false,
+            async:true,
+            dataType: 'json',
+            success: function (reg) {
+                if(reg.success){
+                    var myMoneyNum = reg.obj;
+                    $("#rechargeTotalMoney").text(myMoneyNum);
+                }else{}
+            },
+            error: function () {}
+        });
+        //金币输入控制
+        $("#diy-daller").on("keyup",function(){
+            var val=$(this).val();
+            val=val.replace(/[^\d]/g,'');
+            if(val==0){
+                val="";
+            }
+            $(this).val(val);
+        });
+    });
 
-                        <li class="langLi" langs-lang="jp">日本語</li>
+    function checkXiaoBai(){
+        //验证小白登录
+        if(''.length<=0 ||''.length<=0){
+            layer.open({
+                area: ['364px',''],
+                title: $.t('global.guestOutTitle'),
+                content: "<p class='tc'>  " + $.t('global.guestOutWords') + "</p>",
+                btn: $.t('global.guestOutBtn'),
+                yes: function (index, layero) {
+                    layer.close(index)
+                    window.location.href = 'http://www.gagahi.com:80/Member/memberinformation?srcurl=xiaobai#showinfo';
+                },
+                cancel: function (index) {},
+            });
+            return 0;
+        }else{
+            return 1;
+        }
+    }
 
-                        <li class="langLi" langs-lang="ru">русский</li>
 
-                        <li class="langLi" langs-lang="spa">Español</li>
+    //支付完成跳转弹窗
+    function openFinishWinodow(){
+        layer.open({
+            type: 1,
+            area: '424px',
+            title: false,
+            content: '<p class="p15"><span class="f16 fb inlineblock mb10">'+$.t("home.payNewlyPage")+'</span><br>'+$.t("home.notClosePayPopup")+'<a href="#" id="reselectpayaction" onclick="reselectpay()" class="c-2d57a1 ml15">'+$.t("home.reselectPayType")+'</a></p>',
+            btn: [$.t("home.completePay"),$.t("home.payProblem")],
+            success:function (layero, index) {
+                $("#reselectpayaction").click(function(){
+                    layer.close(index);
+                })
+            },
+            yes: function(index, layero) {
+                recordUserAction(1,redirectOrderId);
+                window.location.reload();
+            },
+            cancel: function(index) {
+                recordUserAction(2,redirectOrderId);
+                window.location.href="http://www.gagahi.com:80/pay/help";
+            }
 
-                        <li class="langLi" langs-lang="zh">简体中文</li>
+        });
 
-                        <li class="langLi" langs-lang="cht">繁體中文</li>
+    }
 
-                        <li class="langLi" langs-lang="kor">한국어</li>
+    //计入用户行为
+    function recordUserAction(actionCode,orderId){
+        //alert(actionCode);
+        //alert(orderId);
+        $.ajax({
+            url:"http://www.gagahi.com:80/recharge/recordUserAction",
+            type: 'get',
+            data: { "actionCode": actionCode,"orderId":orderId},
+            cache: false,
+            async:true,
+            dataType: 'json',
+            success: function (reg) {},
+            error: function () {}
+        });
+    }
 
-                        <li class="langLi" langs-lang="de">Deutsch</li>
+    //添加信用卡
+    function addCreditCards(payPassword){
+        var loadIndex = layer.load(0, {shade: 0.1});
+        var creditType;
+        var temp = document.getElementsByName("credit");
+        for(var i=0;i<temp.length;i++)
+        {
+            if(temp[i].checked)
+                creditType = temp[i].value;
+            //alert(creditType);
+        }
+        var cardExpirationMonth=$("#cardExpirationMonth").attr("data-tongyong").length>1?$("#cardExpirationMonth").attr("data-tongyong"):"0"+$("#cardExpirationMonth").attr("data-tongyong");
+        var endDate=$("#cardExpirationYear").attr("data-tongyong")+"-"+cardExpirationMonth+"-01";
+        var ckeckInfoData={"cardName":$("#cardHolderName").val(),"cardNum":$("#cardNumber").val(),"endDate":endDate,"safetycode":$("#securityCode").val(),"cardtype":creditType,"phone":$("#phoneNum").val()};
+        var StockData = {"cardName":$("#cardHolderName").val(),"cardNum":$("#cardNumber").val(),"endDate":endDate,"safetycode":$("#securityCode").val(),"cardtype":creditType,"phone":$("#phoneNum").val(),"cardpwd":payPassword};
 
-                    </ul>
-                </div>
-                <ul class="funBtnUl">
-                    <li class="qqFaceBtn"></li>
-                    <!--  <li class="imgBtn"></li>
-                    <li class="giftBtn"></li>
-                    <li class="redBtn"></li>-->
-                    <li id="sendBtn" class="sendBtn">发送<!-- 发送 --></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+        $.post("http://www.gagahi.com:80/payMasa/payApiAgreementSign",ckeckInfoData,function(data,textStatus){
+            if(data.success){
+                $.post("http://www.gagahi.com:80/MemberCredit/insertMembCredit",StockData,function(data,textStatus){
+                    layer.close(loadIndex);
+                    if(data.success){
+                        // var strTemp="MASTERcredit1<span class='mr10 ml10'>郭凯歌</span><span class='mr10'>tail numbers******1118</span>01/2016</span>";
+                        $("#cardHolderName").val('');
+                        $("#cardNumber").val('');
+                        $("#securityCode").val('');
+                        $("#phoneNum").val('');
+                        $('#cardExpirationMonth').html('01');
+                        $('#cardExpirationYear').html('2016');
+                        $('.vip-tsk').hide();
+                        getCreditCards(data.obj);
+                    }else{
+                        if(data.obj =="1"){
+                            layer.msg($.t("quickPay.payPasswordErr"));
+                        }
+                    }
+                })
+            }else{
+                layer.close(loadIndex);
+                layer.msg($.t("quickPay.infoWrong"));
+            }
+        })
+
+    }
+
+
+    //判断是否绑定信用卡  ///查询信用卡列表
+    function getCreditCards(cardId){
+        $.post("http://www.gagahi.com:80/MemberCredit/MembCreditListJson",{},function(data,textStatus){
+            cardLength=data.attributes.data.length;
+            parseList(data.attributes.data,cardId);
+        })
+    }
+
+    //填充列表数据
+    function parseList(list,cardId){
+        var dataChargeStr="";
+        for(var i=0;i<list.length;i++){
+            var dataStr="<li data-chuandi ="+list[i].mecrCardtype+" \"信用卡 \"  data-cardnum='"+list[i].mecrId+"'>  "  +list[i].mecrCardtype+"  信用卡<span class='mr10 ml10'>"+list[i].mecrCardname+"</span><span class='mr10'>尾号"+cardNoMi(list[i].mecrCardnumber)+"</span>"+list[i].showEnddate+"</li>";
+            dataChargeStr=dataChargeStr+dataStr;
+            if(list[i].mecrId==cardId){
+                var strSpan=list[i].mecrCardtype+" 信用卡<span class='mr10 ml10'>"+list[i].mecrCardname+"</span><span class='mr10'>尾号"+cardNoMi(list[i].mecrCardnumber)+"</span>"+list[i].showEnddate+"</span>";
+                $("#creditCardSelection").attr("data-cardnum",cardId);
+                $("#creditCardSelection").html(strSpan);
+            }
+        }
+        $("#creditCardList").html(dataChargeStr);
+
+        $(".credit-detail").css("display","none");
+        $(".vip-Credit-con").css("display","block");
+    }
+    //card号加密//5111111111111118
+    function cardNoMi(cardNo){
+        return "******"+cardNo.substring(12);
+    }
+
+</script>
+
+
+
+
+<script type="text/javascript">
+    var money = "100";//支付类型
+    var zftype = "";//支付类型
+
+    /**充值*/
+    function recharge(){
+        var v = $("#diy-daller").val();
+        if(null != v && v.length > 0){
+            if($("#diy-daller").parent().parent().find(".chosed").css('display') != 'none'){
+                money = v;
+            }
+        }
+        if(null == money || $.trim(money).length <= 0){
+            layer.msg('请选择充值金币数！');
+            return;
+        }
+        if(null == zftype || $.trim(zftype).length <= 0){
+            layer.msg('选择支付方式！');
+            return;
+        }
+
+        var url = "";
+        var data;
+        if(zftype == "ali"){//支付宝
+            url = "http://www.gagahi.com:80/pay/subalipay";
+            data = {"subject": money + "金币","total_fee":money,"paid":money,"money":money*6};
+        }else if(zftype == "paypal"){//paypal
+            url = "http://www.gagahi.com:80/pay/subpaypal";
+            data = {"item_name": money + "金币","amount":money,"paid":money,"money":money};
+        }else if(zftype == "visa"){
+            if(checkXiaoBai()==1){
+                $.ajax({
+                    type : "post",
+                    url : "http://www.gagahi.com:80/payMasa/payRedirectIndex",
+                    contentType : "application/x-www-form-urlencoded",
+                    data: { "subject": money + "金币","total_fee":money,"amount":money,"paid":money,"money":money,"femaleid":$("#femaleid").val(),"payMethod":"masapay"},
+                    async: false,//注意这里同步设置
+                    success:function(data,textStatus){
+                        if(data.success){
+                            redirectOrderId=data.obj;
+                            openFinishWinodow();
+                            $("#redirectDiv").html(data.msg);
+                        }else{
+                            layer.msg(data.msg);
+                        }
+                    }
+                });
+            }
+            return;
+        }else if(zftype == "master"){
+            if(checkXiaoBai()==1){
+                /* 		$.post("http://www.gagahi.com:80/payMasa/payRedirectIndex",{ "subject": money + "金币","total_fee":money,"amount":money,"paid":money,"money":money,"femaleid":$("#femaleid").val(),"payMethod":"MASTER"},
+                 function(data,textStatus){
+                 if(data.success){
+                 openFinishWinodow();
+                 $("#redirectDiv").html(data.msg);
+                 }else{
+                 layer.msg(data.msg);
+                 }
+                 }) */
+                $.ajax({
+                    type : "post",
+                    url : "http://www.gagahi.com:80/payMasa/payRedirectIndex",
+                    contentType : "application/x-www-form-urlencoded",
+                    data: { "subject": money + "金币","total_fee":money,"amount":money,"paid":money,"money":money,"femaleid":$("#femaleid").val(),"payMethod":"masapay"},
+                    async: false,//注意这里同步设置
+                    success:function(data,textStatus){
+                        if(data.success){
+                            redirectOrderId=data.obj;
+                            openFinishWinodow();
+                            $("#redirectDiv").html(data.msg);
+                        }else{
+                            layer.msg(data.msg);
+                        }
+                    }
+                });
+            }
+            return;
+        }else if(zftype == "kuaijie"){
+            if(!$("#creditCardSelection").attr("data-cardnum")){
+                layer.msg($.t("quickPay.selectBankCard"));
+                return;
+            }
+            $.post("http://www.gagahi.com:80/MemberCredit/getMemCardPassword","",function(reg){
+                //console.log("支付密码:"+JSON.stringify(reg));
+                if(reg.success){
+                    layer.open({
+                        type: 1,
+                        skin:"paymentLayer",
+                        area: 'auto',
+                        maxWidth:"440px",
+                        title:$.t("quickPay.payPassword"),
+                        content: $.t("quickPay.payPassword")+' :<input id="PasswordInput" class="marL5 h30 pl15 bdra15  " type="password" placeholder="'+$.t("quickPay.enterPayPassword")+'"/>' ,
+                        btn: $.t("global.submit"),
+                        yes:function (index,layero){
+                            var  payPasswordReg =  new RegExp("^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,12}$");
+                            var  payPassword = $("#PasswordInput").val();
+                            if(!payPasswordReg.test(payPassword)){
+                                layer.msg($.t("quickPay.passwordLettersAndNum"));
+                                return;
+                            }
+                            QuickPayFun(money,payPassword);
+                            layer.close(index);
+                        }
+                    });
+                    return;
+                }else{
+                    layer.open({
+                        type: 1,
+                        title:$.t("quickPay.setPayPassword"),
+                        skin:"paymentLayer",
+                        area: 'auto',
+                        maxWidth:"440px",
+                        content: $.t("quickPay.setPayPassword")+' :<input id="setPasswordInput" class="marL5 h30 pl15 bdra15  " type="password" placeholder="'+$.t("quickPay.setPayPassword")+'"/><p class="mt20 c-fe2525">'+$.t("quickPay.passwordsAddCreditCheckTips")+'</p>' ,
+                        btn: [$.t("global.submit"),$.t("global.cancel")],
+                        yes:function (index,layero){
+                            var payPassword = $("#setPasswordInput").val();
+                            var payPasswordReg =  new RegExp("^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,12}$");
+                            if(!payPasswordReg.test(payPassword)){
+                                layer.msg($.t("quickPay.passwordLettersAndNum"));
+                            }else{
+                                $.post("http://www.gagahi.com:80/MemberCredit/setpaypwd",{"password":payPassword},function(reg){
+                                    if(reg.success){
+                                        QuickPayFun(money,payPassword);
+                                        //layer.msg($.t("global.zoneApiSucc"));
+                                    }else{
+                                        layer.msg($.t("global.zoneApiError"));
+                                    }
+
+                                })
+                            }
+
+                            layer.close(index);
+                        },
+                        cancel:function(index){}
+                    })
+                }
+            })
+
+
+
+
+            return;
+        }
+        //验证小白登录
+        if(''.length<=0 ||''.length<=0){
+            layer.open({
+                area: ['364px',''],
+                title: $.t('global.guestOutTitle'),
+                content: "<p class='tc'>  " + $.t('global.guestOutWords') + "       </p>",
+                btn: $.t('global.guestOutBtn'),
+                yes: function (index, layero) {
+                    layer.close(index)
+                    window.location.href = 'http://www.gagahi.com:80/Member/memberinformation?srcurl=xiaobai#showinfo';
+                },
+                cancel: function (index) {},
+            });
+            return;
+        }
+
+        openFinishWinodow();
+        $.ajax({//虚拟礼物
+            type : "post",
+            url : url,
+            contentType : "application/x-www-form-urlencoded",
+            data: data,
+            async: false,//注意这里同步设置
+            success: function(data){
+                if(data.success){
+                    redirectOrderId=data.obj.rechId;
+
+                    if(data.msg != "-1" && data.msg != "-2"){
+                        //$("#openpay_a").attr("href",data.msg);
+                        $("#openpay_a").click(function(){
+                            window.open(data.msg,"_target");
+                        });
+                        $("#openpay_a").click();
+                    }
+                }else{
+                    layer.msg(data.msg);
+
+                }
+            }
+        });
+    }
+    //快捷支付 --- 支付请求
+    function QuickPayFun(money,payPassword){
+        if(checkXiaoBai()==1){
+            if(null == $("#creditCardSelection").attr("data-cardnum") || $("#creditCardSelection").attr("data-cardnum").length <= 0){
+                layer.msg("请选择信用卡！");
+                return;
+            }
+            layer.load(0, {shade: 0.1});
+            var femaleid = $("#femaleid").val();
+            var creditCardSelection = $("#creditCardSelection").attr("data-cardnum");
+            var data = {"subject": money + "金币","total_fee":money,"amount":money,"paid":money,"money":money,"femaleid":femaleid,"payMethod":"quickpayment",
+                "cardNumber":creditCardSelection,"mecrPaypass":payPassword}
+            $.post("http://www.gagahi.com:80/payMasa/payApiAgreement",data,function(data,textStatus){
+                if(data.success){
+                    layer.closeAll('loading');
+                    layer.msg("您已成功提交付款请求");
+                    //alert(data.msg);
+                    // updateSession();
+                    setTimeout(function(){
+                        //window.location.reload();
+                        window.location.href="http://www.gagahi.com:80/pay/transactionRecord";
+                    },3000);
+                }else{
+                    layer.closeAll('loading');
+                    layer.msg(data.msg);
+                }
+            })
+        }
+
+
+    }
+    /*修改滚动轴*/
+    $(window).load(function() {
+        $(".yts,.yts1").mCustomScrollbar();
+
+        /*添加信用卡*/
+        $(".vip-add").click(function  () {
+            $('.credit-detail').toggle();
+        })
+        /*信用卡信息是否为空判断*/
+        $(".credit-add").click(function  () {
+            $(".vip-tsk").css("display","none").text("");
+            var  payPasswordReg =  new RegExp("^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,12}$");
+            var  payPassword = $("#payPassword").val();
+
+            if($(".credit-detail-con input:checked").length==0){
+                $(".vip-tsk").css("display","block").text("请选择发卡机构类型")	;
+                return;
+            };
+            if($(".credit-nam").val()==""){
+                $(".vip-tsk").css("display","block").text("请输入您的持卡人姓名")	;
+                return;
+            };
+            if($(".credit-num").val()==""){
+                $(".vip-tsk").css("display","block").text("请输入您的信用卡号码")	;
+                return;
+            };
+            /*if(!payPasswordReg.test(payPassword)){
+             $(".vip-tsk").css("display","block").text($.t("quickPay.passwordLettersAndNum"))	;
+             return;
+             }*/
+            if($(".credit-safe").val()==""){
+                $(".vip-tsk").css("display","block").text("请输入您的安全码")	;
+                return;
+            };
+            if($(".credit-tel").val()==""){
+                $(".vip-tsk").css("display","block").text("请输入您的手机号码")	;
+                return;
+            };
+            if(!$("#agreement").attr('checked')){
+                $(".vip-tsk").css("display","block").text($.t("quickPay.notAgreePayAgreement"))	;
+                return;
+            }
+            layer.open({
+                type: 1,
+                title:$.t("quickPay.payPassword"),
+                skin:"paymentLayer",
+                area: 'auto',
+                maxWidth:"440px",
+                content: $.t("quickPay.payPassword")+' :<input id="addCreditPassword" class="marL5 h30 pl15 bdra15  " type="password" placeholder="'+$.t("quickPay.payPassword")+'"/><p class="mt20 c-fe2525">'+$.t("quickPay.passwordsAddCreditCheckTips")+'</p>' ,
+                btn: [$.t("global.submit"),$.t("global.cancel")],
+                yes:function (index,layero){
+                    var payPassword = $("#addCreditPassword").val();
+                    var payPasswordReg =  new RegExp("^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,12}$");
+                    if(!payPasswordReg.test(payPassword)){
+                        layer.msg($.t("quickPay.passwordLettersAndNum"));
+                    }else{
+                        //添加信用卡
+                        addCreditCards(payPassword);
+
+                        layer.close(index);
+                    }
+                },
+                cancel:function(index){}
+            })
+        })
+
+
+        /*输入金额*/
+        $("#diy-daller").on('input propertychange',function  () {
+            var z= /^[0-9]*$/;
+            if(z.test($(this).val())){
+                $(".diy-vsb").text($(this).val())
+                var obj = $(this).val();
+                if(null == obj || $.trim(obj).length <= 0){
+                    obj = 0;
+                }
+                $(".diy-rmb").text(obj * 6);
+            }
+        })
+
+
+
+        /*下拉菜单*/
+        $(".vip-Credit").each(function(index, element) {
+            $(this).hover(function (e) {
+                        $(this).children("ul").css("display","block");
+                        $(this).children("span").css("background-image","url(<%=path%>/common/images/xld1.png)");
+                        $(".xld-select>li",$(this)).each(function (e) {
+                            var _selt = $(this);
+                            $(this).hover(function (){
+                                $(this).addClass("default").siblings().removeClass("default");
+                            })
+                            $(this).off("click");
+                            $(this).on("click",function (e) {
+                                _selt.parent(".xld-select").siblings("span").html(_selt.html()).css("background-image","url(<%=path%>/common/images/xld.png)");
+                                _selt.parent(".xld-select").siblings("span").attr("data-tongyong",$(_selt).data("chuandi"));
+                                //传递卡号
+                                _selt.parent(".xld-select").siblings("span").attr("data-cardnum",$(_selt).data("cardnum"));
+                                _selt.parent(".xld-select").css("display", "none");
+                            });
+                        });
+                    },
+                    function() {
+                        $(this).children("ul").css("display","none");
+                        $(this).children("span").css("background-image","url(<%=path%>/common/images/xld.png)");
+                    })
+        });
+
+        /*分页
+         $(".tcdPageCode,.tcdPageCode1,.tcdPageCode2,.tcdPageCode3").createPage({
+         pageCount: 15, //总页数
+         current: 1, //当前页
+         backFn: function(p) {
+         console.log(p);
+         }
+         });*/
+
+        /*返回顶部*/
+        $('.scroll_t').click(function() {
+            $('html,body').animate({
+                scrollTop: '0px'
+            }, 800);
+        });
+
+        /*充值选择*/
+        $(".recharge-mid .recharge-type-list li").click(function(e) {
+            var obj = $(this).find(".c-ff8a00");
+            if(null == obj || obj.length <= 0){
+                obj = $(this).find("#diy-daller");
+                money = obj.val();
+            }else{
+                money = obj.text();
+            }
+            $(this).css({
+                "background": "#fff3d9",
+                "border": "1px solid #fabc3f"
+            }).siblings().css({
+                "background": "#fff",
+                "border": "1px solid #ccc"
+            });
+            $(this).children(".chosed").css("display", "block");
+            $(this).siblings().children(".chosed").css("display", "none");
+        });
+
+        //点击展示信用卡 还是添加信用卡
+        $(".zf a").click(function () {
+            $(".credit-detail").css("display","none");
+            $(".vip-Credit-con").css("display","none");
+        })
+
+        //点击展示信用卡 还是添加信用卡
+        $(".zf .kuaijie").click(function () {
+            $.post("http://www.gagahi.com:80/MemberCredit/MembCreditListJson", {},
+                    function(data,textStatus){
+                        cardLength=data.attributes.data.length;
+                        if(cardLength > 0){
+
+                            $(".credit-detail").css("display","none");
+                            $(".vip-Credit-con").css("display","block");
+                            parseList(data.attributes.data);
+                        }else{
+                            $('.credit-detail').show();
+                        }
+                    })
+        });
+
+
+        /**支付选择*/
+        $(".zf a").click(function(e) {
+            payTypeChange($(this));
+        });
+        function payTypeChange(obj) {
+            zftype = $(obj).attr("data-tple");
+            $(obj).css({
+                "background": "#fff3d9",
+                "border": "1px solid #fabc3f"
+            }).siblings().css({
+                "background": "#fff",
+                "border": "1px solid #ccc"
+            });
+            $(obj).children(".chosed1").css("display", "block");
+            $(obj).siblings().children(".chosed1").css("display", "none");
+        }
+
+        function defaultPayType() {
+            if (Zoneyet.Global.language == 'zh-cn') {
+                payTypeChange($('[data-tple="ali"]'));
+            } else {
+                payTypeChange($('[data-tple="paypal"]'));
+            }
+        }
+
+        defaultPayType();
+    });
+
+    function i18nSucess() {
+        var kuaijieUrl = 'http://static.gagahi.com/images/' + (Zoneyet.Global.language == 'zh-cn'? 'kuaijie.png':'kuaijie_en.png');
+        $('a.kuaijie img').attr('src', kuaijieUrl);
+    }
 </script>
 
 
@@ -1568,7 +2366,7 @@
                 <button id="log-bnt" class="btn">登录<!-- 登录 --></button>
             </div>
             <div class=" mt10">
-                <a href="http://www.gagahi.com:80/Platform/inviteRegIndex?source=2&inviter=2935185&sysid=" class="fl c-2d57a1 f13">注册<!-- 注册 --></a>
+                <a href="http://www.gagahi.com:80/Platform/inviteRegIndex?source=2&inviter=2935498&sysid=" class="fl c-2d57a1 f13">注册<!-- 注册 --></a>
                 <a href="http://www.gagahi.com:80/Platform/forgotPassword" class="fr c-2d57a1 f13">忘记密码<!-- 忘记密码？ --></a>
                 <div class="clear"></div>
             </div>
@@ -1693,7 +2491,7 @@
 <script type="text/javascript">
     $(function(){
 
-        var token="bc19844b369b4f9e87381ae22febca51";
+        var token="29b525b8905e49f3aa987b286a5e2789";
         if(token==""){
             return;
         }
@@ -2190,323 +2988,3 @@
 
 </script>
 </html>
-
-
-<link type="text/css" href="<%=path%>/common/IM/css/qqFace.css" rel="stylesheet">
-<link href="<%=path%>/common/IM/css/webuploader.css" rel="stylesheet" type="text/css">
-<link href="<%=path%>/common/css/privateLetter.css" rel="stylesheet" type="text/css">
-
-<script src="<%=path%>/common/js/jquery.page.js"></script>
-
-
-<script type="text/javascript" src="<%=path%>/common/js/laytpl.js"></script>
-<script type="text/javascript" src="<%=path%>/common/js/webuploader.js"></script>
-<script type="text/javascript" src="<%=path%>/common/js/gift.js"></script>
-<script type="text/javascript" src="<%=path%>/common/IM/js/jquery.qqFace.js"></script>
-<script type="text/javascript" src="<%=path%>/common/js/popPrivateLetter.js"></script>
-
-<script>
-
-    /**跳转充值会员*/
-    $(".govip").click(function(e) {
-        location.href = "http://www.gagahi.com:80/pay/upgradeMember";
-    });
-
-
-    /*修改滚动轴*/
-    $(window).load(function(){
-    });
-    /*下拉菜单*/
-    $(".xld").each(function(index, element) {
-        $(this).click(function (e) {
-            $(this).next("ul").css("display","block");
-            $(this).css("background-image","url(<%=path%>/common/images/xld1.png)");
-            $(".xld-select>li").each(function (e) {
-                var _selt = $(this);
-                $(this).hover(function (){
-                    $(this).addClass("default").siblings().removeClass("default");
-                })
-                $(this).click(function (e) {
-                    $(_selt.parent(".xld-select").siblings("span")).text(_selt.children("a").text()).css("background-image","url(<%=path%>/common/images/xld.png)");
-                    _selt.parent(".xld-select").css("display", "none");
-                });
-            });
-        })
-    });
-    /*查看我喜欢我的人图片展示*/
-    $(function(){
-        $('#sildes').olvSlides({
-            thumb:true,
-            thumbPage:true,
-            thumbDirection:"Y",
-            onetip: $.t('home.onlyOneLike'),
-            effect:'fade'
-        });
-    })
-
-    /*分页*/
-    $(".tcdPageCode").createPage({
-        pageCount:15,//总页数
-        current:1,//当前页
-        backFn:function(p){
-            console.log(p);
-        }
-    });
-
-
-    /*加好友*/
-    $(document).on("click",".friending",function(){
-        var mid = $(".thumbWrap").find(".cur").find("img:first").attr("lmid");
-        var obj = $(this);
-        if(obj.hasClass("friending1")){//不可点
-            return;
-        }else{
-            obj.addClass("friending1");
-        }
-        $.ajax({//
-            type : "post",
-            url : "http://www.gagahi.com:80/Member/Friend/applyFriend",
-            contentType : "application/x-www-form-urlencoded",
-            data: {"friGagaid":mid,"source":1},
-            success: function(data){
-                if(data.success){
-                    if(data.obj == 1 || data.obj == 3){//1 成功 2失败 3 好友关系
-                        obj.remove();
-                    }else if(data.obj == 4){//申请中....
-                        obj.remove();
-                    }
-                    //layer.msg("加好友申请发送成功");
-                    layer.msg(data.msg);
-                }else{
-                    layer.msg(data.msg);//
-                    obj.removeClass("friending1");
-                }
-            }
-        });
-    });
-
-    /*举报*/
-    $(document).on("click",".report",function(){
-        var reporthtml = '<div class="jqss jqssn3" style="display:block"><p>'
-                +'<input type="radio" checked="checked" class="radio" value="X" id="a1" name="jb">'
-                +'<label class="radio" for="a1"> 垃圾广告</label></p><p>'
-                +'<input type="radio" class="radio" value="y" id="b1" name="jb">'
-                +'<label class="radio" for="b1"> 淫秽色情</label></p><p>'
-                +'<input type="radio" class="radio" value="z" id="c1" name="jb">'
-                +'<label class="radio" for="c1">虚假中奖</label></p><p>'
-                +'<input type="radio" class="radio" value="w" id="d1" name="jb">'
-                +'<label class="radio" for="d1"> 敏感信息</label></p><p>'
-                +'<input type="radio" class="radio" value="X" id="f" name="jb">'
-                +'<label class="radio" for="f"> 人身攻击</label></p><p>'
-                +'<input type="radio" class="radio" value="y" id="g" name="jb">'
-                +'<label class="radio" for="g">骚然他人</label></p><div class="clear"></div></div>'
-        layer.open({
-            area: ['482px','340px'],
-            skin: 'demo-report',
-            title: ['举报', 'font-size:18px;'],
-            content:reporthtml,
-            btn: $.t("global.submit"),//'确认',
-            yes: function (index, layero) {
-                report();
-                layer.close(index)
-            },
-            cancel: function (index) {
-
-            },
-        });
-    });
-
-    /**
-     * 举报
-     */
-    function report(){
-        var id = $(".thumbWrap").find(".cur").find("img:first").attr("lmid");
-        var reason = "";
-        var contents = $(".jqssn3").find(".radio");
-        for(var i = 0;i < contents.length;i++){
-            if($(contents[i]).is(':checked')){
-                reason = $(contents[i]).next().html();
-            }
-        }
-        $.ajax({
-            type : "post",
-            url : "http://www.gagahi.com:80/Report/report",
-            contentType : "application/x-www-form-urlencoded",
-            data: {"isGagaId":id,"type":"L","reason":reason},
-            success: function(data){
-                if(data.success){
-                    layer.msg(data.msg);
-                }else{
-                    layer.msg(data.msg);
-                }
-            }
-        });
-    }
-
-    /*发私信*/
-    $(".private").click(function(e) {
-        /* var html = '<div class="privateCon"><div class="Friendname">发给：'
-         +'<input id="" class=" bdra30 h36 text"  autocomplete="off">'
-         +'</div><div id="show"></div>     <div class="comment">       '
-         +' <div class="com_form">        	'
-         +'<textarea class="input" id="saytext" name="saytext"></textarea>  '
-         +'      	<p><input type="button" class="sub_btn" value="提交">'
-         +'<span class="emotion">表情</span></p>        </div>     </div> '
-         layer.open({
-         area: ['560px','406px'],
-         skin: 'demo-private',
-         title: ['发私信', 'font-size:18px;'],
-         //content:$('.privateCon').html(),
-         content:html,
-         success:function(){
-         $('.emotion').qqFace({
-         id : 'facebox',
-         assign:'saytext',
-         path:'../arclist/'	//表情存放的路径
-         });
-         }
-         }); */
-
-
-    });
-</script>
-
-
-<script type="text/javascript">
-    $(function(){
-        $(".sub_btn").click(function(){
-            var str = $("#saytext").val();
-            $("#show").html(replace_em(str));
-        });
-    });
-    //查看结果
-    function replace_em(str){
-        str = str.replace(/\</g,'&lt;');
-        str = str.replace(/\>/g,'&gt;');
-        str = str.replace(/\n/g,'<br/>');
-        str = str.replace(/\[em_([0-9]*)\]/g,'<img src="<%=path%>/common/arclist/$1.gif" border="0" />');
-        return str;
-    }
-
-
-    //忽略喜欢我的人
-    function ignorelikeme(t){
-        var id = $(".thumbWrap").find(".cur").find("img:first").attr("lid");
-        $.ajax({
-            type : "post",
-            url : "http://www.gagahi.com:80/Member/Like/ignorelikeme",
-            contentType : "application/x-www-form-urlencoded",
-            data: {"id":id},
-            success: function(data){
-                if(data.success){
-                    var obj = $(".thumbWrap").find(".cur");
-                    var img = $(t).parent().parent();
-
-                    var nobj = $(obj).next();
-                    var nimg = $(img).next();
-
-                    if(null == nobj || nobj.length <= 0 ){
-                        nobj = $(obj).prev();
-                        nimg = $(img).prev();
-                    }
-                    if(null != nobj && nobj.length > 0 ){
-                        nobj.attr("class","cur");
-                        nimg.css("display","block");
-                    }
-                    $(obj).remove();
-                    $(img).remove();
-
-
-                    //数量
-                    var obj = $(".fr").find(".like-top").find(".frigs").find(".c-2d57a1");
-                    $(obj).text(parseInt($(obj).text())-1);
-
-                    var lis = $(".thumbWrap").find(".thumbCont").find("li").length;
-                    if(null == lis || lis <= 0){//没有喜欢的人
-                        $(".mid").find(".w1100").find(".bigcount").hide();
-                        var str = "<div class=\"fr\">"
-                                +"<div class=\"rht\">"
-                                +"<div class=\"shengji\">"
-                                +"<img src=\"<%=path%>/common/images/shengji.jpg\" class=\" mt100 mb45\">"
-                                +"<p style=\"font-size:22px;\" class=\"mb20\">还没有人为您点赞</p>"
-                                +"<p class=\"f16 enjz\" style=\"margin-bottom:50px;\">马上升级会员，增加首页展现机会，让更多帅哥美女找到您</p>"
-                                +"</div>"
-                                +"</div>"
-                                +"</div>";
-
-                        $(".mid").find(".w1100").find(".fr").remove();
-                        $(".mid").find(".w1100").prepend(str);
-                    }
-                }else{
-                    layer.msg(data.msg);
-                }
-            }
-        });
-    }
-
-    //点赞（喜欢）
-    function ilike(t){
-        var mid = $(".thumbWrap").find(".cur").find("img:first").attr("lmid");
-        $.ajax({
-            type : "post",
-            url : "http://www.gagahi.com:80/Member/Like/iliketo",
-            contentType : "application/x-www-form-urlencoded",
-            data: {"mid":mid},
-            success: function(data){
-                if(data.success){
-                    if(data.obj == "del"){//忽略喜欢
-                        /* var obj = $(".thumbWrap").find(".cur");
-                         var img = $(t).parent().parent();
-
-                         var nobj = $(obj).next();
-                         var nimg = $(img).next();
-
-                         if(null == nobj || nobj.length <= 0 ){
-                         nobj = $(obj).prev();
-                         nimg = $(img).prev();
-                         }
-                         if(null != nobj && nobj.length > 0 ){
-                         nobj.attr("class","cur");
-                         nimg.css("display","block");
-                         }
-                         $(obj).remove();
-                         $(img).remove(); */
-
-                        //2016年4月15日11:33:17  产品要求去掉提示
-                        //layer.msg(data.msg);
-                        $(t).removeClass().addClass("lkdz");
-                    }else if(data.obj == "friend" || data.obj == "oldfriend"){
-                        //2016年4月15日11:33:17  产品要求去掉提示
-                        //layer.msg(data.msg);
-                        $.zone.likeAct($(t),{"left":"30px","transform":"scale(2)"});
-                        $(t).removeClass().addClass("dzed");
-                    }
-                }else{
-                    layer.msg(data.msg);
-                }
-            }
-        });
-    }
-
-    function ilikebatch(){
-        $.ajax({
-            type : "post",
-            url : "http://www.gagahi.com:80/Member/Like/ilikebatch",
-            contentType : "application/x-www-form-urlencoded",
-            success: function(data){
-                if(data.success){
-                    layer.msg(data.msg);
-                }else{
-                    layer.msg(data.msg);
-                }
-            }
-        });
-    }
-</script>
-
-
-
-
-
-
-

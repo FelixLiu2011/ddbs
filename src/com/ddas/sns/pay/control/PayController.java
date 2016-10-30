@@ -6,7 +6,7 @@
  * 创建日期:	2016/6/27
  * Copyright (c) 2016, All Rights Reserved.
  */
-package com.ddas.sns.member.control;
+package com.ddas.sns.pay.control;
 
 import com.ddas.sns.common.BaseController;
 import org.springframework.stereotype.Controller;
@@ -24,9 +24,8 @@ import javax.servlet.http.HttpServletRequest;
  * @since JDK 1.6      
  */
 @Controller
-@RequestMapping("/member")
-public class MemberController extends BaseController {
-
+@RequestMapping("/pay")
+public class PayController extends BaseController {
     /**
      *
      * @param request
@@ -36,9 +35,9 @@ public class MemberController extends BaseController {
      *@version 1.0
      *@since 1.6
      */
-    @RequestMapping("/like/likeMe")
-    public ModelAndView getLikeMeContent(HttpServletRequest request){
-        ModelAndView modelAndView= withLocal(request,"member/likeMe");
+    @RequestMapping("/recharge")
+    public ModelAndView goToRecharge(HttpServletRequest request){
+        ModelAndView modelAndView= withLocal(request,"pay/payCharge");
         return modelAndView;
     }
 
@@ -51,9 +50,9 @@ public class MemberController extends BaseController {
      *@version 1.0
      *@since 1.6
      */
-    @RequestMapping("/like/iLike")
-    public ModelAndView getILikeContent(HttpServletRequest request){
-        ModelAndView modelAndView= withLocal(request,"member/iLike");
+    @RequestMapping("/upgradeMember")
+    public ModelAndView goToUpgradeMember(HttpServletRequest request){
+        ModelAndView modelAndView= withLocal(request,"pay/payUpgradeMember");
         return modelAndView;
     }
 
@@ -66,9 +65,9 @@ public class MemberController extends BaseController {
      *@version 1.0
      *@since 1.6
      */
-    @RequestMapping("/like/likeMeAndILike")
-    public ModelAndView getLikeMeAndILikeContent(HttpServletRequest request){
-        ModelAndView modelAndView= withLocal(request,"member/iLike");
+    @RequestMapping("/transactionRecord")
+    public ModelAndView goToTransactionRecord(HttpServletRequest request){
+        ModelAndView modelAndView= withLocal(request,"pay/payTransactionRecord");
         return modelAndView;
     }
 
@@ -81,10 +80,24 @@ public class MemberController extends BaseController {
      *@version 1.0
      *@since 1.6
      */
-    @RequestMapping("/visitor/myVisitor")
-    public ModelAndView getMyVisitorContent(HttpServletRequest request){
-        ModelAndView modelAndView= withLocal(request,"member/myVisitor");
+    @RequestMapping("/privilegeNote")
+    public ModelAndView goToPrivilegeNote(HttpServletRequest request){
+        ModelAndView modelAndView= withLocal(request,"pay/payPrivilegeNote");
         return modelAndView;
     }
 
+    /**
+     *
+     * @param request
+     *@return org.springframework.web.servlet.ModelAndView
+     *@author shaojx
+     *@date 2016/7/9 21:23
+     *@version 1.0
+     *@since 1.6
+     */
+    @RequestMapping("/help")
+    public ModelAndView goToPayHelp(HttpServletRequest request){
+        ModelAndView modelAndView= withLocal(request,"pay/payHelp");
+        return modelAndView;
+    }
 }

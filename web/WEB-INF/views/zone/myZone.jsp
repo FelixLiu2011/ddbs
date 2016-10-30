@@ -22,11 +22,11 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>gagahi_多语言国际交友_跨越语言,向世界say hi</title>
+    <title>gagahi_Multi language international dating_Across Languages，Say Hi to the world！</title>
     <link href="<%=path%>/common/images/favicon.ico" rel="shortcut icon">
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    <meta content="gagahi,国际交友,多语言社交,多语言交友网站,多语言交友平台,翻译社交,国际交友平台,多语言社交网站,多语言社交平台,翻译社交平台,跨语言社交平台" name="keywords">
-    <meta content="gagahi是一个基于翻译的国际社交平台,为您提供国际社交,多语言国际交友,随时随地翻译等社交服务,让您跨越语言障碍轻松扩大国际社交圈." name="description">
+    <meta content="gagahi,International dating,Multilingual sns,Multilingual dating sites,Multi language dating platform,Social translation,International dating platform,Multilingual social networking site,Multi language social networking platform,Translated social networking platform,Cross language social networking platform" name="keywords">
+    <meta content="gagahi is a translation based international social platform,providing you with the international community, multi language international dating, translation and other social services at any time and at any time,allowing you to easily overcome language barriers and expand international social circle." name="description">
     <link href="<%=path%>/common/js/ScrollBar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
     <link href="<%=path%>/common/css/base.css" rel="stylesheet" type="text/css">
     <link href="<%=path%>/common/css/common.css" rel="stylesheet" type="text/css">
@@ -35,17 +35,17 @@
     <link href="<%=path%>/common/css/jquery.range.css" rel="stylesheet" type="text/css">
     <link href="<%=path%>/common/css/lang.css" rel="stylesheet" type="text/css">
     <link href="<%=path%>/common/css/lrtk.css" rel="stylesheet" type="text/css">
-    <!-- <link href="<%=path%>/common/css/skin/zhongqiu/style.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="http://static.gagahi.com/css/skin/zhongqiu/style.css" rel="stylesheet" type="text/css"> -->
     <script src="<%=path%>/common/js/jquery.min.js" type="text/javascript"></script>
-    <script  src="<%=path%>/common/js/laytpl.js"       type="text/javascript"></script>
-    <script  src="<%=path%>/common/js/core.js"    type="text/javascript"></script>
-    <script  src="<%=path%>/common/js/i18next-1.11.2.min.js" type="text/javascript"></script>
+    <script src="<%=path%>/common/js/laytpl.js" type="text/javascript"></script>
+    <script src="<%=path%>/common/js/core.js" type="text/javascript"></script>
+    <script src="<%=path%>/common/js/i18next-1.11.2.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         var ctx = 'http://www.gagahi.com:80';
         var staticPath = "http://static.gagahi.com";
         var qiniuImgUrl = 'http://images.gagahi.com/';
         var myGagaId='';
-        Zoneyet.Global.language = 'zh-cn';
+        Zoneyet.Global.language = 'en-us';
         //ç§»å¨è®¾å¤å¤æ­æ¯æ
         if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
             Zoneyet.Global.device='mobile';
@@ -104,7 +104,7 @@
 
     </script>
     <script src="<%=path%>/common/js/webuploader.js" type="text/javascript"></script>
-    <script src="<%=path%>/common/layer/js/layer.js" type="text/javascript"></script>
+    <script src="<%=path%>/common/js/layer.js" type="text/javascript"></script>
     <script src="<%=path%>/common/js/template.js" type="text/javascript"></script>
     <script src="<%=path%>/common/js/global_plugin.js" type="text/javascript"></script>
     <script src="<%=path%>/common/js/ScrollBar/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
@@ -192,37 +192,37 @@
         //选中状态样式
         function  selectionStyle(){
             clearnSelectionStyle();
-            if('encounterIndex'=='leftLikeMeIndex'){
+            if('encounterIndex'=='zoneIndex'){
                 $("#encounterIndex").attr("class","on");
             }
-            if('zoneIndex'=='leftLikeMeIndex'){
+            if('zoneIndex'=='zoneIndex'){
                 $("#zoneIndex").attr("class","on");
             }
-            if('gameIndex'=='leftLikeMeIndex'){
+            if('gameIndex'=='zoneIndex'){
                 $("#gameIndex").attr("class","on");
             }
-            if('shopIndex'=='leftLikeMeIndex'){
+            if('shopIndex'=='zoneIndex'){
                 $("#shopIndex").attr("class","on");
             }
 
             //左侧导航
-            if('leftSixinIndex'=='leftLikeMeIndex'){
+            if('leftSixinIndex'=='zoneIndex'){
                 $("#leftSixinIndexImg").attr("class","on");
                 $("#leftSixinIndexText").attr("class","on");
             }
-            if('leftLikeMeIndex'=='leftLikeMeIndex'){
+            if('leftLikeMeIndex'=='zoneIndex'){
                 $("#leftLikeMeIndexImg").attr("class","lkm on");
                 $("#leftLikeMeIndexText").attr("class","on");
             }
-            if('leftIlikeIndex'=='leftLikeMeIndex'){
+            if('leftIlikeIndex'=='zoneIndex'){
                 $("#leftIlikeIndexImg").attr("class","mlk on");
                 $("#leftIlikeIndexText").attr("class","on");
             }
-            if('leftFriendIndex'=='leftLikeMeIndex'){
+            if('leftFriendIndex'=='zoneIndex'){
                 $("#leftFriendIndexImg").attr("class","each-lk on");
                 $("#leftFriendIndexText").attr("class","on");
             }
-            if('leftVisitorIndex'=='leftLikeMeIndex'){
+            if('leftVisitorIndex'=='zoneIndex'){
                 $("#leftVisitorIndexImg").attr("class","visitor on");
                 $("#leftVisitorIndexText").attr("class","on");
             }
@@ -331,19 +331,19 @@
                         }
 
                         var str = "";
-                        str +="<h3 id='h31'>加好友申请</h3>";
+                        str +="<h3 id='h31'>Friend Requests</h3>";
                         if(null != data.obj.list && data.obj.list.length > 0){
                             for(var i = 0; i < data.obj.list.length;i++){//好友申请
                                 str +="<li class='addfriend'><span class='tx'>"
                                         +"<a href='"+ctx+"/Member/otherHome/"+data.obj.list[i].frapGagaid+"'><img src='http://images.gagahi.com//"+ data.obj.list[i].member.membBigimg +"'></a>"
                                         +"</span><span class='nm' title='"+ data.obj.list[i].member.membNickname +"'><a href='"+ctx+"/Member/otherHome/"+data.obj.list[i].frapGagaid+"'>"+ data.obj.list[i].member.membNickname + "</a></span>"
-                                        +"<p class='fr'><button onclick='friendApplyHandle(this,3,"+ data.obj.list[i].frapId +")' title='同意'>"
-                                        +"同意</button>"
-                                        +"<button onclick='friendApplyHandle(this,2,"+ data.obj.list[i].frapId +")' title='忽略'>"
-                                        +"忽略</button></p></li>";
+                                        +"<p class='fr'><button onclick='friendApplyHandle(this,3,"+ data.obj.list[i].frapId +")' title='Accept'>"
+                                        +"Accept</button>"
+                                        +"<button onclick='friendApplyHandle(this,2,"+ data.obj.list[i].frapId +")' title='Ignore'>"
+                                        +"Ignore</button></p></li>";
                             }
                         }else{
-                            str += "<li style=\"color:#696969; text-align:center;\">没有新好友请求！</li>";
+                            str += "<li style=\"color:#696969; text-align:center;\">No friend requests！</li>";
                         }
 
                         //可能认识的人
@@ -353,14 +353,14 @@
                                 str +="<li><span class='tx'>"
                                         +"<a href='"+ctx+"/Member/otherHome/"+data.obj.mList[i].membGagaid+"'><img src='http://images.gagahi.com//"+ data.obj.mList[i].membBigimg +"'></a>"
                                         +"</span><span class='nm' title='"+ data.obj.mList[i].membNickname +"'><a href='"+ctx+"/Member/otherHome/"+data.obj.mList[i].membGagaid+"'>"+ data.obj.mList[i].membNickname + "</a></span>"
-                                        +"<p class='fr'><button onclick='applyFriend(this,"+ data.obj.mList[i].membGagaid +")' class='agree_bt' title='加好友'>"
-                                        +"加好友</button>"
-                                        +"<button onclick='friendApplyHandle(this,2,"+ data.obj.mList[i].membGagaid +")' title='忽略'>"
-                                        +"忽略</button></p></li>";
+                                        +"<p class='fr'><button onclick='applyFriend(this,"+ data.obj.mList[i].membGagaid +")' class='agree_bt' title='Add friends'>"
+                                        +"Add friends</button>"
+                                        +"<button onclick='friendApplyHandle(this,2,"+ data.obj.mList[i].membGagaid +")' title='Ignore'>"
+                                        +"Ignore</button></p></li>";
                             }
                             str += "<h3 id='h33' style='display:none;'></h3>";
                         }else{
-                            str += "<li style=\"color:#696969; text-align:center;\">暂无可推荐的人</li>";
+                            str += "<li style=\"color:#696969; text-align:center;\">No person to recommend</li>";
                         }
 
                         $(".ihome_top_apply_friend_ul").empty();
@@ -402,13 +402,13 @@
                         $('#h31').nextUntil('#h32').addClass('liclazz');
                         var count1 = $(".ihome_top_apply_friend_ul").find('.liclazz').length;
                         if(count1 <= 0){
-                            $('#h31').after("<li style=\"color:#696969; text-align:center;\">没有新好友请求！</li>");
+                            $('#h31').after("<li style=\"color:#696969; text-align:center;\">No friend requests！</li>");
                         }
 
                         $('#h32').nextUntil('#h33').addClass('liclazz2');
                         var count1 = $(".ihome_top_apply_friend_ul").find('.liclazz2').length;
                         if(count1 <= 0){
-                            $('#h32').after("<li style=\"color:#696969; text-align:center;\">暂无可推荐的人</li>");
+                            $('#h32').after("<li style=\"color:#696969; text-align:center;\">No person to recommend</li>");
                         }
                     }else{
                         layer.msg(data.msg);
@@ -433,13 +433,13 @@
                         $('#h31').nextUntil('#h32').addClass('liclazz');
                         var count1 = $(".ihome_top_apply_friend_ul").find('.liclazz').length;
                         if(count1 <= 0){
-                            $('#h31').after("<li style=\"color:#696969; text-align:center;\">没有新好友请求！</li>");
+                            $('#h31').after("<li style=\"color:#696969; text-align:center;\">No friend requests！</li>");
                         }
 
                         $('#h32').nextUntil('#h33').addClass('liclazz2');
                         var count1 = $(".ihome_top_apply_friend_ul").find('.liclazz2').length;
                         if(count1 <= 0){
-                            $('#h32').after("<li style=\"color:#696969; text-align:center;\">暂无可推荐的人</li>");
+                            $('#h32').after("<li style=\"color:#696969; text-align:center;\">No person to recommend</li>");
                         }
                     }else{
                         layer.msg(data.msg);
@@ -495,17 +495,17 @@
     </script>
 </head>
 
-<body style="position:relative;" class='zh-cn'>
+<body style="position:relative;" class='en-us'>
 <div class="coverall">
     <div class=" w1100 jz searchTip">
         <div class="step1">
-            <p>没有找到喜欢的人？试试筛选吧</p>
+            <p>Cannot find the one you like?Try "search".</p>
         </div>
         <div class="step2">
-            <p>喜欢ta，就给ta点赞吧</p>
+            <p>If you like him/her,then vote for him/her.</p>
         </div>
         <div class="step3">
-            <p>请先上传头像，大家都想见你</p>
+            <p>Please upload your avatar, everybody wants to see you.</p>
         </div>
     </div>
 </div>
@@ -515,22 +515,22 @@
         <div id="fsD1" class="focus">
             <div id="D1pic1" class="fPic">
                 <div class="fcon" style="display: none;">
-                    <a><img src="<%=path%>/common/images/zh-cn-xb01.jpg" style="opacity: 1; "></a>
+                    <a><img src="<%=path%>/common/images/en-us-xb01.jpg" style="opacity: 1; "></a>
                     <span class="shadow" data-i18n="sm1.tu1"></span>
                 </div>
 
                 <div class="fcon" style="display: none;">
-                    <a><img src="<%=path%>/common/images/zh-cn-xb02.jpg" style="opacity: 1; "></a>
+                    <a><img src="<%=path%>/common/images/en-us-xb02.jpg" style="opacity: 1; "></a>
                     <span class="shadow" data-i18n="sm1.tu2"></span>
                 </div>
 
                 <div class="fcon" style="display: none;">
-                    <a><img src="<%=path%>/common/images/zh-cn-xb03.jpg" style="opacity: 1; "></a>
+                    <a><img src="<%=path%>/common/images/en-us-xb03.jpg" style="opacity: 1; "></a>
                     <span class="shadow" data-i18n="sm1.tu3"></span>
                 </div>
 
                 <div class="fcon" style="display: none;">
-                    <a><img src="<%=path%>/common/images/zh-cn-xb04.jpg" style="opacity: 1; "></a>
+                    <a><img src="<%=path%>/common/images/en-us-xb04.jpg" style="opacity: 1; "></a>
                     <span class="shadow" data-i18n="sm1.tu4"></span>
                 </div>
             </div>
@@ -552,15 +552,15 @@
     <div class="w1100 jz">
         <div class="fl">
             <a href="<%=path%>/index/iHome" class="logo"><img src="<%=path%>/common/images/logo.png" alt="gagahi"/></a>
-            <a href="<%=path%>/index/iHome" id="encounterIndex"  >偶遇</a>
-            <a href="<%=path%>/zone/myZone"  id="zoneIndex" >动态</a>
-            <!--<a href="http://game.gagahi.com/" target="blank"  id="gameIndex" >游戏</a>-->
-            <a href="<%=path%>/mall/giftReal/shopHome" id="shopIndex" >商城</a>
+            <a href="<%=path%>/index/iHome" id="encounterIndex"  >Encounter</a>
+            <a href="<%=path%>/zone/myZone"  id="zoneIndex" >Feeds</a>
+            <!--<a href="http://game.gagahi.com/" target="blank"  id="gameIndex" >Game</a>-->
+            <a href="<%=path%>/mall/giftReal/shopHome" id="shopIndex" >Mall</a>
         </div>
         <div class="fr">
             <!--<a class="fhlb" data-i18n="fhlb.nr"></a> -->
             <a class="xbsm"  data-i18n="xbsm.nr"></a>
-            <a class="vip" href="http://www.gagahi.com:80/pay/recharge" >充值</a>
+            <a class="vip" href="http://www.gagahi.com:80/pay/recharge" >Recharge</a>
             <a class="tip" onmouseover="onmoseovernotice()"><span></span>
                 <div class="" id="rightNotice"></div>
                 <div class="xl xltip">
@@ -578,7 +578,7 @@
                 <div class="nr">
                     <ul class="yhy yts1 mCustomScrollbar _mCS_1 mCS_no_scrollbar ihome_top_apply_friend_ul" >
                         <!-- <h3>加好友申请</h3> -->
-                        <!-- <li><span class="tx"><img src="<%=path%>/common/images/gg1.jpg"></span><span class="nm">Nita2009</span>
+                        <!-- <li><span class="tx"><img src="http://static.gagahi.com/images/gg1.jpg"></span><span class="nm">Nita2009</span>
                           <p class="fr">
                             <button>同意</button>
                             <button>忽略</button>
@@ -592,9 +592,9 @@
                 <div class="jj1"></div>
                 <div class="nr1">
                     <ul>
-                        <li><a href="http://www.gagahi.com:80/Member/memberinformation">个人资料</a></li>
-                        <li><a href="http://www.gagahi.com:80/Member/memberinformation#showinfo">账号设置</a></li>
-                        <li style=" border-bottom:none;"><a href="javascript:loginout()">退出</a></li>
+                        <li><a href="http://www.gagahi.com:80/Member/memberinformation">About Me</a></li>
+                        <li><a href="http://www.gagahi.com:80/Member/memberinformation#showinfo">Account Settings</a></li>
+                        <li style=" border-bottom:none;"><a href="javascript:loginout()">Sign out</a></li>
                     </ul>
                 </div>
             </div>
@@ -701,11 +701,11 @@
     var ctx="http://www.gagahi.com:80";
     var qiniuImgURL="http://images.gagahi.com/";
     var imUrl="http://webim.gagahi.com/";
-    var token="bc19844b369b4f9e87381ae22febca51";
+    var token="5134a95f4e53432cab15cbd5f2386f30";
     var sendGender = "1";//1男2女
     var sendHeadImgUrl = "images/default/male.png";//小头像
     var myNickname = "Quintion";//自己昵称
-    var myLanguage = "zh-cn";
+    var myLanguage = "en-us";
     var myId = "2935185";//我的ID
     //1：普通会员，2：高级会员，3：VIP会员
     var myMemberGrade = "1";//会员等级
@@ -726,12 +726,12 @@
         <div class="hiddenTop">
             <span id="js-showBtn" class="showBtn showHideBtn"></span>
             <div id="js-newsArrive" class="newsArrive">
-                新消息
+                News
             </div>
         </div>
         <div id="js-hiddenScrollBar" class="hiddenScrollContainer">
             <ul class="hiddenContactsCon">
-                <li class="content singleNum" data-signid="people" data-gagaid="-1" data-remarkname="嘎嘎客服" data-nickname="嘎嘎客服" data-shield="0" data-online="2" data-language="zh">
+                <li class="content singleNum" data-signid="people" data-gagaid="-1" data-remarkname="GaGa Customer Service" data-nickname="GaGa Customer Service" data-shield="0" data-online="2" data-language="zh">
                     <div class="headDiv">
                         <img class="headImg" src="<%=path%>/common/images/gagaService.png">
                         <img class="headLine" src="<%=path%>/common/IM/img/On-line.png" style="display:none">
@@ -747,14 +747,14 @@
         </div>
         <div class="searchDiv">
             <input type="text" class="searchInput" id="js-searchInput"
-                   value="搜索联系人"><i
+                   value="Search for contacts"><i
                 id="js-searchBtn" class="searchBtn"></i> <i id="js-SearchCloseBtn"
                                                             class="searchCloseBtn"></i>
 
         </div>
         <div class="showTab">
-			<span class="js-contacts contacts">联系人
-                <!-- 联系人 --></span> <span class="js-group group">群
+			<span class="js-contacts contacts">Contacts
+                <!-- 联系人 --></span> <span class="js-group group">Groups
             <!-- 群 --></span>
         </div>
         <div class="clear"></div>
@@ -765,18 +765,18 @@
                     <h6 class="showTitle FoldTitle openTitle">
                         <i class="foldingBtn js-foldingBtn"></i>
                         <p>
-							<span>最近聊天
+							<span>Recent chats
                                 <!-- 最近聊天 --></span><span class="recentlyNum">12</span>
                         </p>
                     </h6>
                     <div class="clear"></div>
                     <ul class="recentlyContainer FoldContainer">
-                        <li class="showContent" data-signid="people" data-gagaid="-1" data-remarkname="嘎嘎客服" data-nickname="嘎嘎客服" data-shield="0" data-online="2" data-language="zh">
+                        <li class="showContent" data-signid="people" data-gagaid="-1" data-remarkname="GaGa Customer Service" data-nickname="GaGa Customer Service" data-shield="0" data-online="2" data-language="zh">
                             <div class="showHead">
                                 <img class="headImg" src="<%=path%>/common/images/gagaService.png">
                                 <img class="headLine" src="<%=path%>/common/IM/img/On-line.png" style="display:none">
                             </div>
-                            <span class="showRemarkName">嘎嘎客服</span>
+                            <span class="showRemarkName">GaGa Customer Service</span>
                             <span class="newsNum newsNumSingle" style="display:none">0</span></li>
                     </ul>
                 </div>
@@ -785,7 +785,7 @@
                     <h6 class="onLineTitle FoldTitle openTitle">
                         <i class="foldingBtn js-foldingBtn"></i>
                         <p>
-                            <span>在线用户</span> <span class="onLineNum">0</span>
+                            <span>Online Users</span> <span class="onLineNum">0</span>
                         </p>
                     </h6>
                     <ul class="onLineContainer FoldContainer">
@@ -796,18 +796,18 @@
                     <h6 class="friendTitle FoldTitle openTitle">
                         <i class="foldingBtn js-foldingBtn"></i>
                         <p>
-							<span>我的好友
+							<span>My friends
                                 <!-- 我的好友 --></span><span class="friendNum">12</span><i
                                 class="separator">/</i><span class="friendNumTotal">24</span>
                         </p>
                     </h6>
                     <ul class="friendContainer FoldContainer">
-                        <li class="showContent" data-signid="people" data-gagaid="-1" data-remarkname="嘎嘎客服" data-nickname="嘎嘎客服" data-shield="0" data-online="2" data-language="zh">
+                        <li class="showContent" data-signid="people" data-gagaid="-1" data-remarkname="GaGa Customer Service" data-nickname="GaGa Customer Service" data-shield="0" data-online="2" data-language="zh">
                             <div class="showHead">
                                 <img class="headImg" src="<%=path%>/common/images/gagaService.png">
                                 <img class="headLine" src="<%=path%>/common/IM/img/On-line.png" style="display:none">
                             </div>
-                            <span class="showRemarkName">嘎嘎客服</span>
+                            <span class="showRemarkName">GaGa Customer Service</span>
                             <span class="newsNum newsNumSingle" style="display:none">0</span>
                         </li>
                     </ul>
@@ -820,7 +820,7 @@
         <!------ 群组-----start--------->
         <div id="groupGroup" class="js-groupGroup">
             <div id="js-createGroup" class="createGroup">
-				<span>创建群聊
+				<span>Create Group
                     <!-- 创建群聊 -->
             </div>
             <div id="js-groupScrollBar">
@@ -829,7 +829,7 @@
                         <h6 class="groupTitle FoldTitle openTitle">
                             <i class="foldingBtn js-foldingBtn"></i>
                             <p>
-								<span>群
+								<span>Groups
                                     <!-- 群 --></span><span class="groupNum">6</span>
                             </p>
                         </h6>
@@ -846,7 +846,7 @@
                 <h6 class="recentlyTitle FoldTitle openTitle">
                     <i class="foldingBtn js-foldingBtn"></i>
                     <p>
-						<span>最近聊天
+						<span>Recent chats
                             <!-- 最近聊天 --></span>
                     </p>
                 </h6>
@@ -856,7 +856,7 @@
                 <h6 class="friendTitle FoldTitle openTitle">
                     <i class="foldingBtn js-foldingBtn"></i>
                     <p>
-						<span>我的好友
+						<span>My friends
                             <!-- 我的好友 --></span>
                     </p>
                 </h6>
@@ -866,7 +866,7 @@
                 <h6 class="groupTitle FoldTitle openTitle">
                     <i class="foldingBtn js-foldingBtn"></i>
                     <p>
-						<span>群
+						<span>Groups
                             <!-- 群 --></span>
                     </p>
                 </h6>
@@ -874,7 +874,7 @@
             </div>
             <div class="searchResultNothing">
                 <i class="searchResultNothingImg"></i><span
-                    class="searchResultNothingTXT">无搜索结果
+                    class="searchResultNothingTXT">No results
                 <!-- 无搜索结果 --></span>
             </div>
         </div>
@@ -882,7 +882,7 @@
     </div>
     <div id="IMgagaService">
         <img src="<%=path%>/common/IM/img/gagaService.png">
-        <div class="gagaServiceTXT">嘎嘎客服<!-- 嘎嘎客服 --></div>
+        <div class="gagaServiceTXT">GaGa Customer Service<!-- 嘎嘎客服 --></div>
         <span class="close-gagaservice"></span>
     </div>
 
@@ -891,7 +891,7 @@
 <div id="chatBox">
     <div  id="chatBoxUpper" class="chatBoxUpper">
         <div class="upperLeft">
-            全部
+            All
             <!-- 全部  -->
             (<span id="peopleNum">0</span>)
         </div>
@@ -911,17 +911,17 @@
         </div>
         <div class="chatUpperBtn">
 
-			<span class="createGroupBtn">建群
-                <!-- 建群 --></span> <span class="inviteFriends">邀请好友
+			<span class="createGroupBtn">Create group
+                <!-- 建群 --></span> <span class="inviteFriends">Invite friends
             <!-- 邀请好友 --></span> <span class="functionBtn"> <i class="functionI"></i>
 				<ul class="functionMore">
-                    <li class="functionBack">退群
+                    <li class="functionBack">Quit group
                         <!-- 退群 --></li>
-                    <li class="functionRelationState">删除好友
+                    <li class="functionRelationState">Delete friend
                         <!-- 删除好友 --></li>
-                    <li class="functionReport">举报
+                    <li class="functionReport">Report
                         <!-- 举报 --></li>
-                    <li class="functionShieldState">屏蔽
+                    <li class="functionShieldState">Shield
                         <!-- 屏蔽 --></li>
                 </ul>
 			</span> <i id="js-closedChatBox" class="closedChatBox"></i>
@@ -937,14 +937,14 @@
                 <div class="normal">
                     <div class="upgradeTips">
                         <p class="upgradeTipsCon">
-                            <span class="upgradeTipsTXT">系统提示<!-- 系统提示 -->：</span>
-                            你今日聊天条数已用完，继续聊天 点此升级<!-- 你今日聊天条数已用完，继续聊天 点此升级 --></p>
-                        <a href="http://www.gagahi.com:80/pay/upgradeMember"><span class="upgradeTipsBtn">点击升级<!-- 点击升级 --></span></a>
+                            <span class="upgradeTipsTXT">System prompt<!-- 系统提示 -->：</span>
+                            You have run out of the number of chat today, continue to chat？ Upgrade<!-- 你今日聊天条数已用完，继续聊天 点此升级 --></p>
+                        <a href="http://www.gagahi.com:80/pay/upgradeMember"><span class="upgradeTipsBtn">Upgrade<!-- 点击升级 --></span></a>
                         <div class="upgradeTipsBG"></div>
                     </div>
                     <div class="sendContentCon">
 						<textarea id="inputBox" class="inputBox">
-							按回车键发送消息
+							Press enter to send messages
                             <!-- 按回车键发送消息 -->
 						</textarea>
                     </div>
@@ -953,7 +953,7 @@
                             <div class="languageOptions">
                                 <div class="languageSpan js-receiveOptions">
                                     <div class="translateTXT">
-										<span>翻译
+										<span>translate
                                             <!-- 翻译 -->：
                                     </div>
                                     <div class="txt">
@@ -963,7 +963,7 @@
                                 </div>
                                 <ul class="languageUl">
                                     <li class="langLi noTranslation" langs-lang="">
-                                        不翻译
+                                        No translation
                                     </li>
                                     <!-- 不翻译 -->
 
@@ -990,15 +990,15 @@
                         <div class="fr">
                             <!-- <input id="Im_data" type="hidden"> -->
                             <ul class="FunBtnUl">
-                                <li class="qqFaceBtn" data-Explain="选择表情"></li>
-                                <li class="imgBtn js_imgBtn" data-Explain="发送图片"></li>
-                                <li class="giftBtn" data-explain="发送礼物"></li>
-                                <li class="redBtn" data-Explain="发红包"></li>
+                                <li class="qqFaceBtn" data-Explain="Select emoticons"></li>
+                                <li class="imgBtn js_imgBtn" data-Explain="Send picture"></li>
+                                <li class="giftBtn" data-explain="Send gift"></li>
+                                <li class="redBtn" data-Explain="Send red packet"></li>
                                 <!--<li class="giftBtn"></li>
                                   <li class="redBtn"></li>-->
-                                <li class="HistoricalRecords" data-Explain="显示消息记录"></li>
-                                <li class="HistoricalRecordsClosed" data-Explain="显示消息记录"></li>
-                                <li class="sendBtn">发送
+                                <li class="HistoricalRecords" data-Explain="Show chat record"></li>
+                                <li class="HistoricalRecordsClosed" data-Explain="Show chat record"></li>
+                                <li class="sendBtn">Send
                                     <!-- 发送 --></li>
                             </ul>
                             <!-- <div id="upLoad_box" style="display:none"></div> -->
@@ -1009,7 +1009,7 @@
                 <div class="service hide">
                     <div class="sendContentCon">
 						<textarea id="inputBox1" class="inputBox">
-							按回车键发送消息
+							Press enter to send messages
                             <!-- 按回车键发送消息 -->
 						</textarea>
                     </div>
@@ -1018,7 +1018,7 @@
                             <div class="languageOptions">
                                 <div class="languageSpan js-receiveOptions">
                                     <div class="translateTXT">
-										<span>翻译
+										<span>translate
                                             <!-- 翻译 -->：
                                     </div>
                                     <div class="txt">
@@ -1028,7 +1028,7 @@
                                 </div>
                                 <ul class="languageUl">
                                     <li class="langLi noTranslation" langs-lang="">
-                                        不翻译
+                                        No translation
                                     </li>
                                     <!-- 不翻译 -->
 
@@ -1055,13 +1055,13 @@
                         <div class="fr">
                             <!-- <input id="Im_data" type="hidden"> -->
                             <ul class="FunBtnUl">
-                                <li class="qqFaceBtn" data-Explain="选择表情"></li>
-                                <li class="imgBtn js_imgBtn" data-Explain="发送图片"></li>
+                                <li class="qqFaceBtn" data-Explain="Select emoticons"></li>
+                                <li class="imgBtn js_imgBtn" data-Explain="Send picture"></li>
                                 <!--<li class="giftBtn"></li>
                                   <li class="redBtn"></li>-->
-                                <li class="HistoricalRecords" data-Explain="显示消息记录"></li>
-                                <li class="HistoricalRecordsClosed" data-Explain="显示消息记录"></li>
-                                <li class="sendBtn">发送
+                                <li class="HistoricalRecords" data-Explain="Show chat record"></li>
+                                <li class="HistoricalRecordsClosed" data-Explain="Show chat record"></li>
+                                <li class="sendBtn">Send
                                     <!-- 发送 --></li>
                             </ul>
                             <!-- <div id="upLoad_box" style="display:none"></div> -->
@@ -1073,7 +1073,7 @@
         </div>
         <div class="chatGroupMembers">
             <p class="chatGroupTitle">
-                群成员
+                Group members
                 <!-- 群成员 -->
                 （<span class="chatGroupNum">0</span>/<span class="chatGroupTotalNum">0</span>）
             </p>
@@ -1083,12 +1083,12 @@
         </div>
         <div class="chatHistorical">
             <h6>
-                聊天记录
+                Chat record
                 <!-- 聊天记录 -->
                 <i class="historicalClosed"></i>
             </h6>
             <div class="historicalContainer">
-                <div class="textCenter marT5 IMnoChat" style="display:none">暂无聊天记录<!-- 暂无聊天记录 --></div>
+                <div class="textCenter marT5 IMnoChat" style="display:none">No chat record.<!-- 暂无聊天记录 --></div>
                 <div class="historicalCon"></div>
             </div>
             <div class="historicalBottom">
@@ -1107,13 +1107,13 @@
 </div>
 <div id="PopupCreateGroup">
     <h2 class="CreateGroupTitle" id="CreateGroupTitle">
-		<span>创建群聊
+		<span>Create Group
             <!-- 创建群聊 -->
     </h2>
     <div class="CreateGroupLeft">
         <div class="searchDiv">
             <input type="text" class="searchInput"
-                   value="搜索联系人<!-- 搜索联系人 -->" />
+                   value="Search for contacts<!-- 搜索联系人 -->" />
             <i class="searchBtn"></i> <i class="searchCloseBtn"></i>
         </div>
         <div class="CreateGroupLeftScrollBar">
@@ -1123,7 +1123,7 @@
                     <h6 class="CreateGroupRecentlyTitle FoldTitle openTitle">
                         <i class="CreateGroupFoldingBtn "></i>
                         <p>
-							<span>最近聊天
+							<span>Recent chats
                                 <!-- 最近聊天 --></span><span class="recentlyNum">12</span>
                         </p>
                     </h6>
@@ -1136,7 +1136,7 @@
                     <h6 class="CreateGroupFriendTitle FoldTitle openTitle">
                         <i class="CreateGroupFoldingBtn "></i>
                         <p>
-							<span>我的好友
+							<span>My friends
                                 <!-- 我的好友 --></span><span class="friendNum">12</span><i
                                 class="separator">/</i><span class="friendNumTotal">24</span>
                         </p>
@@ -1152,7 +1152,7 @@
                 <h6 class="recentlyTitle FoldTitle openTitle">
                     <i class="foldingBtn js-foldingBtn"></i>
                     <p>
-						<span>最近聊天
+						<span>Recent chats
                             <!-- 最近聊天 --></span>
                     </p>
                 </h6>
@@ -1162,7 +1162,7 @@
                 <h6 class="friendTitle FoldTitle openTitle">
                     <i class="foldingBtn js-foldingBtn"></i>
                     <p>
-						<span>我的好友
+						<span>My friends
                             <!-- 我的好友 --></span>
                     </p>
                 </h6>
@@ -1170,7 +1170,7 @@
             </div>
             <div class="searchResultNothing">
                 <i class="searchResultNothingImg"></i> <span
-                    class="searchResultNothingTXT">无搜索结果
+                    class="searchResultNothingTXT">No results
                 <!-- 无搜索结果 --></span>
             </div>
         </div>
@@ -1178,7 +1178,7 @@
     <div class="CreateGroupCenter"></div>
     <div class="CreateGroupRight">
         <h6>
-            已选联系人
+            Selected contacts
             <!-- 已选联系人 -->
             <span class="PeopleNum">0</span><span>/</span><span>50</span>
         </h6>
@@ -1188,8 +1188,8 @@
     </div>
     <div class="clear"></div>
     <div class="CreateGroupButtom">
-		<span class="CreateGroupOK">确定
-            <!-- 确定 --></span> <span class="CreateGroupCncel">取消
+		<span class="CreateGroupOK">Yes
+            <!-- 确定 --></span> <span class="CreateGroupCncel">No
         <!-- 取消 --></span>
     </div>
 </div>
@@ -1200,10 +1200,10 @@
 <div class="giftCon" style="display: none;">
     <div class="gift-top">
         <div class="fl">
-            <span class="mr15 f16 gift-chose pb5" id="gift">虚拟礼物</span>
+            <span class="mr15 f16 gift-chose pb5" id="gift">Virtual gifts</span>
 
         </div>
-        <div class="fr"><a href="<%=path%>/mall/giftReal/shopHome" class="c-2d57a1 pb5">去商城逛逛</a></div>
+        <div class="fr"><a href="<%=path%>/mall/giftReal/shopHome" class="c-2d57a1 pb5">Go to the mall.</a></div>
         <div class="clear"></div>
     </div>
     <div class="giftcont" >
@@ -1219,29 +1219,29 @@
 <div id="RedEnvelopeTCCon" style="display:none">
     <div>
         <div class="RedEnvelopeTCLeft">
-            <div class="marT25">金币:<!-- 金币 --></div>
-            <div class="marT100">留言:<!-- 留言 --></div>
+            <div class="marT25">Gold:<!-- 金币 --></div>
+            <div class="marT100">Message:<!-- 留言 --></div>
         </div>
         <div class="RedEnvelopeTCRight">
-            <p class="tips">金币不足<!-- 金币不足 -->，请先充值<!-- 请先充值 --></p>
-            <input type="text" class="moneyTXT" value="请输入1-200个金币，仅限整数" onkeyup="this.value=this.value.replace(/\D/g,'')"
+            <p class="tips">Insufficient gold<!-- 金币不足 -->，Please recharge first.<!-- 请先充值 --></p>
+            <input type="text" class="moneyTXT" value="Please enter 1-200 gold(s), integer only." onkeyup="this.value=this.value.replace(/\D/g,'')"
                    onafterpaste="this.value=this.value.replace(/\D/g,'')"/>
             <div class="Remind">
                 <i class="RemindIcon"></i>
                 <div class="RemindContent">
                     <div class="triangle-left"></div>
                     <div class="triangle-bg"></div>
-                    <span>红包规则<!-- 红包规则 --></span> 1、每个红包金额为1-200金币，仅限整数；<!-- 每个红包金额为1-200金币，仅限整数； -->
-                    <br> 2、发红包可使用账户余额中的金币，如账户余额不足，请先充值再发送；<!-- 发红包可使用账户余额中的金币，如账户余额不足，请先充值再发送； -->
-                    <br> 3、红包金币被领取后，直接进入领取人账户余额，可用于GaGaHi网站消费。<!-- 红包金币被领取后，直接进入领取人账户余额，可用于GaGaHi网站消费。 -->
-                    <br> 4、红包一旦发出将不予退回，一直保留到对方领取。<!-- 红包一旦发出将不予退回，一直保留到对方领取。 -->
+                    <span>Red packet rules<!-- 红包规则 --></span> 1、Each red packet contains 1-200 gold(s), integer only.<!-- 每个红包金额为1-200金币，仅限整数； -->
+                    <br> 2、You can use the gold balance to send a red packet, if the gold is insufficient, please recharge first.<!-- 发红包可使用账户余额中的金币，如账户余额不足，请先充值再发送； -->
+                    <br> 3、If the red packet is received, the gold can be in the recipient account, it can be used to consume on GaGaHi.<!-- 红包金币被领取后，直接进入领取人账户余额，可用于GaGaHi网站消费。 -->
+                    <br> 4、Once the red packet is sent, it can't be returned, we will reserve for you until the recipient take it.<!-- 红包一旦发出将不予退回，一直保留到对方领取。 -->
                     <br>
                 </div>
             </div>
             <div class="clear"></div>
-            <div class="moneyDiv cleard">账户可用金币<!-- 账户可用金币 -->： <i class="money"></i><span class="moneyNum"> 0.00 </span><br/><a class="toRecharge" href="http://www.gagahi.com:80/pay/recharge">去充值<!-- 去充值 --></a></div>
+            <div class="moneyDiv cleard">Available gold:<!-- 账户可用金币 -->： <i class="money"></i><span class="moneyNum"> 0 </span><br/><a class="toRecharge" href="http://www.gagahi.com:80/pay/recharge">Go to recharge!<!-- 去充值 --></a></div>
             <div class="textMSGDiv">
-                <textarea class="textMSG">你的祝福语</textarea>
+                <textarea class="textMSG">Your blessings</textarea>
                 <div class="wordsNumDiv"><span class="wordsNum">0</span>/500</div>
             </div>
         </div>
@@ -1253,7 +1253,7 @@
     <div class="RedEnvelopeOpenContainer">
         <div class="RedEnvelopeOpenTop">
             <i class="RedEnvelopeOpenCloseBtn"></i>
-            <p class="titleName"><span class="name"></span>的红包</p>
+            <p class="titleName"><span class="name"></span>'s red packet</p>
             <img class="headImg" src="">
         </div>
         <div class="RedEnvelopeOpenMiddle">
@@ -1275,7 +1275,7 @@
             <div class="triangle-left"></div>
             <div class="triangle-bg"></div>
 
-            红包是在红色的信封里包上钱钞给出去的礼物，通常在中国新年的时候家庭中的长辈需要给孩子们包红包，作为一年开始的幸运礼物。红包里的钱的数目通常是诸如600或者800一类的偶数，因为偶数在中国文化中被赋予了幸运吉祥的寓意。如今，许多人还将红包视作一种变相的社交。
+            Hongbao are gifts of cash in red envelopes. They are given to children by older family members on Chinese New Year as lucky gifts for the year ahead. Actually, the amount of money in hongbao usually come in even numbers like 600 and 800, as even numbers are supposed to be lucky in Chinese culture. Today, many people even see hongbao as a sugarcoated way of socializing.
         </div>
     </div>
 </div>
@@ -1292,10 +1292,9 @@
 
 
 
-<link href="<%=path%>/common/css/like.css" rel="stylesheet" type="text/css">
-<script src="<%=path%>/common/js/slides-1.1.1-min.js" type="text/javascript"></script>
-
-
+<link href="<%=path%>/common/css/zfx.css" rel="stylesheet" type="text/css">
+<link href="<%=path%>/common/css/webupload.css" rel="stylesheet" type="text/css">
+<link href="<%=path%>/common/css/zone.css" rel="stylesheet" type="text/css">
 <div class="mid">
     <div class="w1100 jz">
 
@@ -1349,44 +1348,44 @@
 
 
 
-                <a href="http://www.gagahi.com:80/Member/memberinformation"><span class="ws"></span>请上传您的靓照</a><br>
+                <a href="http://www.gagahi.com:80/Member/memberinformation"><span class="ws"></span>Please upload your charming avatar.</a><br>
 
 
 
-                <span class="hui f12">完善资料，让朋友们更快了解你</a></span>
+                <span class="hui f12">Perfect information, let friends know you faster</a></span>
 
 
             </p>
             <div class="lf-cz">
-                <button class="leftMoneyTranslate leftMoney bdra15  pad1-2 overVisible" data-explain="0" data-suffix="金币"><!-- 金币 -->
+                <button class="leftMoneyTranslate leftMoney bdra15  pad1-2 overVisible" data-explain="0" data-suffix="Gold"><!-- 金币 -->
                     <span></span>
                     <div id="totalMoney">0</div>
-                    <!-- <p class="totalMoney"><a class="Money"></a>金币</p>-->
+                    <!-- <p class="totalMoney"><a class="Money"></a>Gold</p>-->
                 </button>
-                <button class="leftMoneyTranslate leftTranslate bdra15  pad1-2 overVisible" data-explain="0" data-suffix="字符"><!-- 翻译包 -->
+                <button class="leftMoneyTranslate leftTranslate bdra15  pad1-2 overVisible" data-explain="0" data-suffix="Character"><!-- 翻译包 -->
                     <span class="fy"></span>
                     <div id="totalTranslate">0</div>
 
                 </button>
             </div>
             <div class="lf-lb">
-                <span id="leftSixinIndexImg" class="on"></span><a href="<%=path%>/platform/privateLetter" id="leftSixinIndexText" class="on">私信</a>
+                <span id="leftSixinIndexImg" class="on"></span><a href="<%=path%>/platform/privateLetter" id="leftSixinIndexText" class="on">Direct Message</a>
                 <div class="inlineblock newsNum" id="leftSixinNotice"></div>
             </div>
             <div class="lf-lb">
-                <span class="lkm" id="leftLikeMeIndexImg"></span><a href="<%=path%>/member/like/likeMe" id="leftLikeMeIndexText">喜欢我的人</a>
+                <span class="lkm" id="leftLikeMeIndexImg"></span><a href="<%=path%>/member/like/likeMe" id="leftLikeMeIndexText">Liked me</a>
                 <div class="inlineblock newsNum" id="leftLikeMeNotice"></div>
             </div>
             <div class="lf-lb">
-                <span class="mlk" id="leftIlikeIndexImg"></span><a href="<%=path%>/member/like/iLike" id="leftIlikeIndexText">我喜欢的人</a>
+                <span class="mlk" id="leftIlikeIndexImg"></span><a href="<%=path%>/member/like/iLike" id="leftIlikeIndexText">I liked</a>
                 <div class="inlineblock newsNum" id="leftIlike"></div>
             </div>
             <div class="lf-lb lf-mutual">
-                <span class="each-lk" id="leftFriendIndexImg"></span><a href="<%=path%>/member/like/likeMeAndILike" id="leftFriendIndexText">互相喜欢</a>
+                <span class="each-lk" id="leftFriendIndexImg"></span><a href="<%=path%>/member/like/likeMeAndILike" id="leftFriendIndexText">Liked mutual</a>
                 <div class="inlineblock newsNum" id="leftFriendNotice"></div>
             </div>
             <div class="lf-lb" >
-                <span class="visitor" id="leftVisitorIndexImg" ></span><a href="<%=path%>/member/visitor/myVisitor" id="leftVisitorIndexText">访客</a>
+                <span class="visitor" id="leftVisitorIndexImg" ></span><a href="<%=path%>/member/visitor/myVisitor" id="leftVisitorIndexText">Visitor</a>
                 <div class="inlineblock newsNum" id="leftVisitorNotice"></div>
             </div>
             <div class="mb20 ggw1">
@@ -1445,91 +1444,50 @@
         </script>
 
 
-        <!-- member.memberfinance.mefiLevel == 3 &&  -->
-
-
-
-
-        <!-- 无好友 -->
         <div class="fr">
-            <div class="rht">
-                <div class="shengji">
-                    <img src="<%=path%>/common/images/shengji.jpg" class=" mt100 mb45">
-                    <p style="font-size:22px;" class="mb20">还没有人为您点赞</p>
-                    <p class="f16 enjz" style="margin-bottom:50px;">马上升级会员，增加首页展现机会，让更多帅哥美女找到您</p>
-
-                    <!-- 升级为会员 -->
-
-                    <p><button class="bdra30 h36 f16 bgc-2d57a1 c-fff govip">升级会员</button></p>
-
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <div class="clear"></div>
-
-    </div>
-</div>
-<script id="temp_home_popPrivate" type="text/html">
-    <div class="likeme-pop-top">
-        <span class="popPLetterWrapLable likeme-pop-name1">##Letter.towho##：</span>
-        <span id="give_pv_to" class="popPLetterTo"></span><input type="hidden" id="give_pv_to_id">
-    </div>
-    <div class="likeme-pop-bottom">
-        <span class="popPLetterWrapLable likeme-pop-name2">##Letter.pricontent##：</span>
-        <div id="chatConBottom" class="inlineblock  border-all bdra15 mt20 popPLetterWrap">
-            <div class="TipsContent">您今日私信条数已用完<!-- 您今日私信条数已用完 -->！</div>
-            <div class="character"><span class="characterNum">0</span>/500</div>
-            <textarea id="sendContent" class="sendContent mt10" style="height: 150px;width:450px;">##im.enterKeySend##</textarea>
-            <div class="btnContainer bdra15">
-                <div class="langOptions">
-                    <span class="txt">翻译：</span>
-                    <div class="langBtn">
-                        <span class="language" langs-lang="">不翻译</span>
-                        <i class="Triangle"></i>
-                    </div>
-                    <ul class="languageUl">
-                        <li class="langLi" langs-lang="">不翻译</li>
-                        <!--   <li class="langLi" langs-lang="en">English</li>
-                          <li class="langLi" langs-lang="cn">简体中文</li>
-                          <li class="langLi" langs-lang="tr">繁體中文</li>
-                          <li class="langLi" langs-lang="ko">한국어</li>
-                          <li class="langLi" langs-lang="rs">Pусский</li>
-                          <li class="langLi" langs-lang="gm">Deutsch</li>
-                          <li class="langLi" langs-lang="sp">Español</li>
-                          <li class="langLi" langs-lang="jp">日本語</li> -->
-
-                        <li class="langLi" langs-lang="en">English</li>
-
-                        <li class="langLi" langs-lang="jp">日本語</li>
-
-                        <li class="langLi" langs-lang="ru">русский</li>
-
-                        <li class="langLi" langs-lang="spa">Español</li>
-
-                        <li class="langLi" langs-lang="zh">简体中文</li>
-
-                        <li class="langLi" langs-lang="cht">繁體中文</li>
-
-                        <li class="langLi" langs-lang="kor">한국어</li>
-
-                        <li class="langLi" langs-lang="de">Deutsch</li>
-
-                    </ul>
-                </div>
-                <ul class="funBtnUl">
-                    <li class="qqFaceBtn"></li>
-                    <!--  <li class="imgBtn"></li>
-                    <li class="giftBtn"></li>
-                    <li class="redBtn"></li>-->
-                    <li id="sendBtn" class="sendBtn">发送<!-- 发送 --></li>
+            <div class="dynamic_title">
+                <ul>
+                    <li class="dynamic_i on inlineblock"><a href="<%=path%>/zone/myZone">Feeds Square</a><i class="triangle"></i></li>
+                    <li class="dynamic_i inlineblock"><a href="<%=path%>/zone/friendZone">Friends</a><i class="triangle"></i></li>
+                    <li class="dynamic_i inlineblock"><a href="<%=path%>/zone/recommendZone">Recommendation</a><i class="triangle"></i></li>
                 </ul>
             </div>
+            <div class="dynamic_main">
+                <div id="dynamic_list">
+                    <div class="dynamic_item input_zone hidden">
+                        <div class="dynamicTextBox">
+                            <textarea name="zone_text" id="zone_text" placeholder="What do you want to share?"></textarea>
+                            <div class="textCode position_r"><div class="textCode_bg"><span id="textNum">0/500</span></div></div>
+                            <div class="dynamic_foot">
+                                <div class="EmotAndPic fl"><i class="z_dt_icon inlineblock dt_emo mr15"></i><i class="z_dt_icon inlineblock dt_picUp" id="picUp"></i></div>
+                                <div class="send_btn pl15 pr15 fr" id="js_publish">Send</div>
+                            </div>
+                            <div id="upLoad_box" style="display:none"></div>
+                        </div>
+                    </div>
+                    <div id="zone_list" class="clearfix">
+                        <div class="left-zone"></div><div class="center-zone"></div><div class="right-zone"></div>
+                    </div>
+                </div>
+                <a class="no-zone-msg hide" href="<%=path%>/index/iHome">You do not have a circle of friends of the dynamic, quick to know some friends!</a>
+            </div>
         </div>
+        <div class="clear"></div>
     </div>
+</div>
+<div id="commentTempBox" class="hide"></div>
+<script src="<%=path%>/common/js/jquery.page.js"></script>
+<script src="<%=path%>/common/js/global_plugin.js"></script>
+<script src="<%=path%>/common/js/platformCountryElementMap.js"></script>
+<script src="<%=path%>/common/js/zonelist.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var curLanguage = Zoneyet.Global.language || 'en-us';
+    var initZoneObj = new initZoneList();
+    var pageMethod;
+    $(function() {
+        initZoneObj.getData();
+        publishZone(pageMethod);
+    });
 </script>
 
 
@@ -1541,35 +1499,35 @@
 <div class="creditcon"></div>
 <div class="logn-con">
     <div class="diy-layer-top">
-        登录<span class="diy-close2"></span>
+        Log in<span class="diy-close2"></span>
     </div>
     <div class="logn-con-bottom">
         <div style="display: block;">
             <div class="form-control">
                 <div style="display: inline;">
-                    <span style="display: none;" class="f12 ts kd ">请输入帐号<!-- 用户名不能为空 --></span>
+                    <span style="display: none;" class="f12 ts kd ">Please enter your account number<!-- 用户名不能为空 --></span>
                 </div>
-                <input type="text" placeholder='邮箱'
+                <input type="text" placeholder='Email'
                        data-type-diy-regex="^(1\d{10})|(([0-9a-zA-Z]+[-._+&amp;])*[0-9a-zA-Z]+@([-0-9a-zA-Z]+[.])+[a-zA-Z]{2,6})$"
                        data-type="required|diy-regex" name="name"
                        class="inp txt-name bdra30" autocomplete="off" id="txt-name">
             </div>
             <div class="form-control">
                 <div style="display: inline;">
-                    <span style="display: none;" class="f12 ts mkd ">请输入密码<!-- 密码不能为空！ --></span>
+                    <span style="display: none;" class="f12 ts mkd ">Please enter a password.<!-- 密码不能为空！ --></span>
                 </div>
                 <input type="password" err="required" name="pwd"
                        data-type="required|diy-regex"
                        data-type-diy-regex="^[\da-zA-Z]{6,20}$" maxlength="20"
-                       id="txt-pwd" class="inp txt-pwd bdra30" placeholder='密码'
+                       id="txt-pwd" class="inp txt-pwd bdra30" placeholder='Password'
                        autocomplete="off">
             </div>
             <div style="text-align: center; margin: 10px 0 15px;">
-                <button id="log-bnt" class="btn">登录<!-- 登录 --></button>
+                <button id="log-bnt" class="btn">Log in<!-- 登录 --></button>
             </div>
             <div class=" mt10">
-                <a href="http://www.gagahi.com:80/Platform/inviteRegIndex?source=2&inviter=2935185&sysid=" class="fl c-2d57a1 f13">注册<!-- 注册 --></a>
-                <a href="http://www.gagahi.com:80/Platform/forgotPassword" class="fr c-2d57a1 f13">忘记密码<!-- 忘记密码？ --></a>
+                <a href="http://www.gagahi.com:80/Platform/inviteRegIndex?source=2&inviter=&sysid=" class="fl c-2d57a1 f13">Register<!-- 注册 --></a>
+                <a href="http://www.gagahi.com:80/Platform/forgotPassword" class="fr c-2d57a1 f13">Forget password<!-- 忘记密码？ --></a>
                 <div class="clear"></div>
             </div>
         </div>
@@ -1654,18 +1612,18 @@
 
         </p>
         <p>
-            <a href="http://www.gagahi.com:80/Platform/abutUs" target="_blank">关于我们</a> |
-            <a href="http://www.gagahi.com:80/Platform/friendssafe" target="_blank">安全交友</a> |
-            <a href="http://www.gagahi.com:80/Platform/privacyclause" target="_blank">隐私条款</a> |
-            <a href="http://www.gagahi.com:80/Platform/help" target="_blank">帮助中心</a> |
-            <a href="http://www.gagahi.com:80/Platform/contactus" target="_blank">联系我们</a>
+            <a href="http://www.gagahi.com:80/Platform/abutUs" target="_blank">About us</a> |
+            <a href="http://www.gagahi.com:80/Platform/friendssafe" target="_blank">Online safety</a> |
+            <a href="http://www.gagahi.com:80/Platform/privacyclause" target="_blank">Terms</a> |
+            <a href="http://www.gagahi.com:80/Platform/help" target="_blank">Help</a> |
+            <a href="http://www.gagahi.com:80/Platform/contactus" target="_blank">Contact us</a>
         </p>
         <div class="fhdb">
             <div class="scroll_t">
                 <img src="<%=path%>/common/images/xs.png">
             </div>
             <!-- <div class="fk">
-                <a href="#" class="f12">意见反馈意见反馈</a>
+                <a href="#" class="f12">Feedback意见反馈</a>
             </div> -->
         </div>
     </div>
@@ -1693,7 +1651,7 @@
 <script type="text/javascript">
     $(function(){
 
-        var token="bc19844b369b4f9e87381ae22febca51";
+        var token="5134a95f4e53432cab15cbd5f2386f30";
         if(token==""){
             return;
         }
@@ -2190,323 +2148,3 @@
 
 </script>
 </html>
-
-
-<link type="text/css" href="<%=path%>/common/IM/css/qqFace.css" rel="stylesheet">
-<link href="<%=path%>/common/IM/css/webuploader.css" rel="stylesheet" type="text/css">
-<link href="<%=path%>/common/css/privateLetter.css" rel="stylesheet" type="text/css">
-
-<script src="<%=path%>/common/js/jquery.page.js"></script>
-
-
-<script type="text/javascript" src="<%=path%>/common/js/laytpl.js"></script>
-<script type="text/javascript" src="<%=path%>/common/js/webuploader.js"></script>
-<script type="text/javascript" src="<%=path%>/common/js/gift.js"></script>
-<script type="text/javascript" src="<%=path%>/common/IM/js/jquery.qqFace.js"></script>
-<script type="text/javascript" src="<%=path%>/common/js/popPrivateLetter.js"></script>
-
-<script>
-
-    /**跳转充值会员*/
-    $(".govip").click(function(e) {
-        location.href = "http://www.gagahi.com:80/pay/upgradeMember";
-    });
-
-
-    /*修改滚动轴*/
-    $(window).load(function(){
-    });
-    /*下拉菜单*/
-    $(".xld").each(function(index, element) {
-        $(this).click(function (e) {
-            $(this).next("ul").css("display","block");
-            $(this).css("background-image","url(<%=path%>/common/images/xld1.png)");
-            $(".xld-select>li").each(function (e) {
-                var _selt = $(this);
-                $(this).hover(function (){
-                    $(this).addClass("default").siblings().removeClass("default");
-                })
-                $(this).click(function (e) {
-                    $(_selt.parent(".xld-select").siblings("span")).text(_selt.children("a").text()).css("background-image","url(<%=path%>/common/images/xld.png)");
-                    _selt.parent(".xld-select").css("display", "none");
-                });
-            });
-        })
-    });
-    /*查看我喜欢我的人图片展示*/
-    $(function(){
-        $('#sildes').olvSlides({
-            thumb:true,
-            thumbPage:true,
-            thumbDirection:"Y",
-            onetip: $.t('home.onlyOneLike'),
-            effect:'fade'
-        });
-    })
-
-    /*分页*/
-    $(".tcdPageCode").createPage({
-        pageCount:15,//总页数
-        current:1,//当前页
-        backFn:function(p){
-            console.log(p);
-        }
-    });
-
-
-    /*加好友*/
-    $(document).on("click",".friending",function(){
-        var mid = $(".thumbWrap").find(".cur").find("img:first").attr("lmid");
-        var obj = $(this);
-        if(obj.hasClass("friending1")){//不可点
-            return;
-        }else{
-            obj.addClass("friending1");
-        }
-        $.ajax({//
-            type : "post",
-            url : "http://www.gagahi.com:80/Member/Friend/applyFriend",
-            contentType : "application/x-www-form-urlencoded",
-            data: {"friGagaid":mid,"source":1},
-            success: function(data){
-                if(data.success){
-                    if(data.obj == 1 || data.obj == 3){//1 成功 2失败 3 好友关系
-                        obj.remove();
-                    }else if(data.obj == 4){//申请中....
-                        obj.remove();
-                    }
-                    //layer.msg("加好友申请发送成功");
-                    layer.msg(data.msg);
-                }else{
-                    layer.msg(data.msg);//
-                    obj.removeClass("friending1");
-                }
-            }
-        });
-    });
-
-    /*举报*/
-    $(document).on("click",".report",function(){
-        var reporthtml = '<div class="jqss jqssn3" style="display:block"><p>'
-                +'<input type="radio" checked="checked" class="radio" value="X" id="a1" name="jb">'
-                +'<label class="radio" for="a1"> 垃圾广告</label></p><p>'
-                +'<input type="radio" class="radio" value="y" id="b1" name="jb">'
-                +'<label class="radio" for="b1"> 淫秽色情</label></p><p>'
-                +'<input type="radio" class="radio" value="z" id="c1" name="jb">'
-                +'<label class="radio" for="c1">虚假中奖</label></p><p>'
-                +'<input type="radio" class="radio" value="w" id="d1" name="jb">'
-                +'<label class="radio" for="d1"> 敏感信息</label></p><p>'
-                +'<input type="radio" class="radio" value="X" id="f" name="jb">'
-                +'<label class="radio" for="f"> 人身攻击</label></p><p>'
-                +'<input type="radio" class="radio" value="y" id="g" name="jb">'
-                +'<label class="radio" for="g">骚然他人</label></p><div class="clear"></div></div>'
-        layer.open({
-            area: ['482px','340px'],
-            skin: 'demo-report',
-            title: ['举报', 'font-size:18px;'],
-            content:reporthtml,
-            btn: $.t("global.submit"),//'确认',
-            yes: function (index, layero) {
-                report();
-                layer.close(index)
-            },
-            cancel: function (index) {
-
-            },
-        });
-    });
-
-    /**
-     * 举报
-     */
-    function report(){
-        var id = $(".thumbWrap").find(".cur").find("img:first").attr("lmid");
-        var reason = "";
-        var contents = $(".jqssn3").find(".radio");
-        for(var i = 0;i < contents.length;i++){
-            if($(contents[i]).is(':checked')){
-                reason = $(contents[i]).next().html();
-            }
-        }
-        $.ajax({
-            type : "post",
-            url : "http://www.gagahi.com:80/Report/report",
-            contentType : "application/x-www-form-urlencoded",
-            data: {"isGagaId":id,"type":"L","reason":reason},
-            success: function(data){
-                if(data.success){
-                    layer.msg(data.msg);
-                }else{
-                    layer.msg(data.msg);
-                }
-            }
-        });
-    }
-
-    /*发私信*/
-    $(".private").click(function(e) {
-        /* var html = '<div class="privateCon"><div class="Friendname">发给：'
-         +'<input id="" class=" bdra30 h36 text"  autocomplete="off">'
-         +'</div><div id="show"></div>     <div class="comment">       '
-         +' <div class="com_form">        	'
-         +'<textarea class="input" id="saytext" name="saytext"></textarea>  '
-         +'      	<p><input type="button" class="sub_btn" value="提交">'
-         +'<span class="emotion">表情</span></p>        </div>     </div> '
-         layer.open({
-         area: ['560px','406px'],
-         skin: 'demo-private',
-         title: ['发私信', 'font-size:18px;'],
-         //content:$('.privateCon').html(),
-         content:html,
-         success:function(){
-         $('.emotion').qqFace({
-         id : 'facebox',
-         assign:'saytext',
-         path:'../arclist/'	//表情存放的路径
-         });
-         }
-         }); */
-
-
-    });
-</script>
-
-
-<script type="text/javascript">
-    $(function(){
-        $(".sub_btn").click(function(){
-            var str = $("#saytext").val();
-            $("#show").html(replace_em(str));
-        });
-    });
-    //查看结果
-    function replace_em(str){
-        str = str.replace(/\</g,'&lt;');
-        str = str.replace(/\>/g,'&gt;');
-        str = str.replace(/\n/g,'<br/>');
-        str = str.replace(/\[em_([0-9]*)\]/g,'<img src="<%=path%>/common/arclist/$1.gif" border="0" />');
-        return str;
-    }
-
-
-    //忽略喜欢我的人
-    function ignorelikeme(t){
-        var id = $(".thumbWrap").find(".cur").find("img:first").attr("lid");
-        $.ajax({
-            type : "post",
-            url : "http://www.gagahi.com:80/Member/Like/ignorelikeme",
-            contentType : "application/x-www-form-urlencoded",
-            data: {"id":id},
-            success: function(data){
-                if(data.success){
-                    var obj = $(".thumbWrap").find(".cur");
-                    var img = $(t).parent().parent();
-
-                    var nobj = $(obj).next();
-                    var nimg = $(img).next();
-
-                    if(null == nobj || nobj.length <= 0 ){
-                        nobj = $(obj).prev();
-                        nimg = $(img).prev();
-                    }
-                    if(null != nobj && nobj.length > 0 ){
-                        nobj.attr("class","cur");
-                        nimg.css("display","block");
-                    }
-                    $(obj).remove();
-                    $(img).remove();
-
-
-                    //数量
-                    var obj = $(".fr").find(".like-top").find(".frigs").find(".c-2d57a1");
-                    $(obj).text(parseInt($(obj).text())-1);
-
-                    var lis = $(".thumbWrap").find(".thumbCont").find("li").length;
-                    if(null == lis || lis <= 0){//没有喜欢的人
-                        $(".mid").find(".w1100").find(".bigcount").hide();
-                        var str = "<div class=\"fr\">"
-                                +"<div class=\"rht\">"
-                                +"<div class=\"shengji\">"
-                                +"<img src=\"<%=path%>/common/images/shengji.jpg\" class=\" mt100 mb45\">"
-                                +"<p style=\"font-size:22px;\" class=\"mb20\">还没有人为您点赞</p>"
-                                +"<p class=\"f16 enjz\" style=\"margin-bottom:50px;\">马上升级会员，增加首页展现机会，让更多帅哥美女找到您</p>"
-                                +"</div>"
-                                +"</div>"
-                                +"</div>";
-
-                        $(".mid").find(".w1100").find(".fr").remove();
-                        $(".mid").find(".w1100").prepend(str);
-                    }
-                }else{
-                    layer.msg(data.msg);
-                }
-            }
-        });
-    }
-
-    //点赞（喜欢）
-    function ilike(t){
-        var mid = $(".thumbWrap").find(".cur").find("img:first").attr("lmid");
-        $.ajax({
-            type : "post",
-            url : "http://www.gagahi.com:80/Member/Like/iliketo",
-            contentType : "application/x-www-form-urlencoded",
-            data: {"mid":mid},
-            success: function(data){
-                if(data.success){
-                    if(data.obj == "del"){//忽略喜欢
-                        /* var obj = $(".thumbWrap").find(".cur");
-                         var img = $(t).parent().parent();
-
-                         var nobj = $(obj).next();
-                         var nimg = $(img).next();
-
-                         if(null == nobj || nobj.length <= 0 ){
-                         nobj = $(obj).prev();
-                         nimg = $(img).prev();
-                         }
-                         if(null != nobj && nobj.length > 0 ){
-                         nobj.attr("class","cur");
-                         nimg.css("display","block");
-                         }
-                         $(obj).remove();
-                         $(img).remove(); */
-
-                        //2016年4月15日11:33:17  产品要求去掉提示
-                        //layer.msg(data.msg);
-                        $(t).removeClass().addClass("lkdz");
-                    }else if(data.obj == "friend" || data.obj == "oldfriend"){
-                        //2016年4月15日11:33:17  产品要求去掉提示
-                        //layer.msg(data.msg);
-                        $.zone.likeAct($(t),{"left":"30px","transform":"scale(2)"});
-                        $(t).removeClass().addClass("dzed");
-                    }
-                }else{
-                    layer.msg(data.msg);
-                }
-            }
-        });
-    }
-
-    function ilikebatch(){
-        $.ajax({
-            type : "post",
-            url : "http://www.gagahi.com:80/Member/Like/ilikebatch",
-            contentType : "application/x-www-form-urlencoded",
-            success: function(data){
-                if(data.success){
-                    layer.msg(data.msg);
-                }else{
-                    layer.msg(data.msg);
-                }
-            }
-        });
-    }
-</script>
-
-
-
-
-
-
-

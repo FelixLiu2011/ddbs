@@ -24,9 +24,8 @@ import javax.servlet.http.HttpServletRequest;
  * @since JDK 1.6      
  */
 @Controller
-@RequestMapping("/member")
-public class MemberController extends BaseController {
-
+@RequestMapping("/zone")
+public class ZoneController extends BaseController {
     /**
      *
      * @param request
@@ -36,9 +35,9 @@ public class MemberController extends BaseController {
      *@version 1.0
      *@since 1.6
      */
-    @RequestMapping("/like/likeMe")
-    public ModelAndView getLikeMeContent(HttpServletRequest request){
-        ModelAndView modelAndView= withLocal(request,"member/likeMe");
+    @RequestMapping("/myZone")
+    public ModelAndView goToMyZone(HttpServletRequest request){
+        ModelAndView modelAndView= withLocal(request,"zone/myZone");
         return modelAndView;
     }
 
@@ -51,9 +50,9 @@ public class MemberController extends BaseController {
      *@version 1.0
      *@since 1.6
      */
-    @RequestMapping("/like/iLike")
-    public ModelAndView getILikeContent(HttpServletRequest request){
-        ModelAndView modelAndView= withLocal(request,"member/iLike");
+    @RequestMapping("/friendZone")
+    public ModelAndView goToFriendZone(HttpServletRequest request){
+        ModelAndView modelAndView= withLocal(request,"zone/friendZone");
         return modelAndView;
     }
 
@@ -66,24 +65,9 @@ public class MemberController extends BaseController {
      *@version 1.0
      *@since 1.6
      */
-    @RequestMapping("/like/likeMeAndILike")
-    public ModelAndView getLikeMeAndILikeContent(HttpServletRequest request){
-        ModelAndView modelAndView= withLocal(request,"member/iLike");
-        return modelAndView;
-    }
-
-    /**
-     *
-     * @param request
-     *@return org.springframework.web.servlet.ModelAndView
-     *@author shaojx
-     *@date 2016/7/9 21:23
-     *@version 1.0
-     *@since 1.6
-     */
-    @RequestMapping("/visitor/myVisitor")
-    public ModelAndView getMyVisitorContent(HttpServletRequest request){
-        ModelAndView modelAndView= withLocal(request,"member/myVisitor");
+    @RequestMapping("/recommendZone")
+    public ModelAndView goToRecommendZone(HttpServletRequest request){
+        ModelAndView modelAndView= withLocal(request,"zone/zoneRecommend");
         return modelAndView;
     }
 

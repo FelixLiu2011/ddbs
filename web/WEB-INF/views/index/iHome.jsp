@@ -553,9 +553,9 @@
         <div class="fl">
             <a href="<%=path%>/index/iHome" class="logo"><img src="<%=path%>/common/images/logo.png" alt="gagahi"/></a>
             <a href="<%=path%>/index/iHome" id="encounterIndex"  >Encounter</a>
-            <a href="http://www.gagahi.com:80/Zone/"  id="zoneIndex" >Feeds</a>
+            <a href="<%=path%>/zone/myZone"  id="zoneIndex" >Feeds</a>
             <!--<a href="http://game.gagahi.com/" target="blank"  id="gameIndex" >Game</a>-->
-            <a href="http://www.gagahi.com:80/mall/giftReal/shophome" id="shopIndex" >Mall</a>
+            <a href="<%=path%>/mall/giftReal/shopHome" id="shopIndex" >Mall</a>
         </div>
         <div class="fr">
             <!--<a class="fhlb" data-i18n="fhlb.nr"></a> -->
@@ -1203,7 +1203,7 @@
             <span class="mr15 f16 gift-chose pb5" id="gift">Virtual gifts</span>
 
         </div>
-        <div class="fr"><a href="http://www.gagahi.com:80/mall/giftReal/shophome" class="c-2d57a1 pb5">Go to the mall.</a></div>
+        <div class="fr"><a href="<%=path%>/mall/giftReal/shopHome" class="c-2d57a1 pb5">Go to the mall.</a></div>
         <div class="clear"></div>
     </div>
     <div class="giftcont" >
@@ -1381,23 +1381,23 @@
                 </button>
             </div>
             <div class="lf-lb">
-                <span id="leftSixinIndexImg" class="on"></span><a href="http://www.gagahi.com:80/pm/privateLetter" id="leftSixinIndexText" class="on">Direct Message</a>
+                <span id="leftSixinIndexImg" class="on"></span><a href="<%=path%>/platform/privateLetter" id="leftSixinIndexText" class="on">Direct Message</a>
                 <div class="inlineblock newsNum" id="leftSixinNotice"></div>
             </div>
             <div class="lf-lb">
-                <span class="lkm" id="leftLikeMeIndexImg"></span><a href="http://www.gagahi.com:80/Member/Like/likeMe" id="leftLikeMeIndexText">Liked me</a>
+                <span class="lkm" id="leftLikeMeIndexImg"></span><a href="<%=path%>/member/like/likeMe" id="leftLikeMeIndexText">Liked me</a>
                 <div class="inlineblock newsNum" id="leftLikeMeNotice"></div>
             </div>
             <div class="lf-lb">
-                <span class="mlk" id="leftIlikeIndexImg"></span><a href="http://www.gagahi.com:80/Member/Like/iLike" id="leftIlikeIndexText">I liked</a>
+                <span class="mlk" id="leftIlikeIndexImg"></span><a href="<%=path%>/member/like/iLike" id="leftIlikeIndexText">I liked</a>
                 <div class="inlineblock newsNum" id="leftIlike"></div>
             </div>
             <div class="lf-lb lf-mutual">
-                <span class="each-lk" id="leftFriendIndexImg"></span><a href="http://www.gagahi.com:80/Member/Like/likeMeAndILike" id="leftFriendIndexText">Liked mutual</a>
+                <span class="each-lk" id="leftFriendIndexImg"></span><a href="<%=path%>/member/like/likeMeAndILike" id="leftFriendIndexText">Liked mutual</a>
                 <div class="inlineblock newsNum" id="leftFriendNotice"></div>
             </div>
             <div class="lf-lb" >
-                <span class="visitor" id="leftVisitorIndexImg" ></span><a href="http://www.gagahi.com:80/Member/Visitor/myVisitor" id="leftVisitorIndexText">Visitor</a>
+                <span class="visitor" id="leftVisitorIndexImg" ></span><a href="<%=path%>/member/visitor/myVisitor" id="leftVisitorIndexText">Visitor</a>
                 <div class="inlineblock newsNum" id="leftVisitorNotice"></div>
             </div>
             <div class="mb20 ggw1">

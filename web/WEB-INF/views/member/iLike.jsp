@@ -551,11 +551,11 @@
 <div class="head"  gagaid="2935185">
     <div class="w1100 jz">
         <div class="fl">
-            <a href="http://www.gagahi.com:80/ihome" class="logo"><img src="<%=path%>/common/images/logo.png" alt="gagahi"/></a>
-            <a href="http://www.gagahi.com:80/ihome/" id="encounterIndex"  >偶遇</a>
-            <a href="http://www.gagahi.com:80/Zone/"  id="zoneIndex" >动态</a>
+            <a href="<%=path%>/index/iHome" class="logo"><img src="<%=path%>/common/images/logo.png" alt="gagahi"/></a>
+            <a href="<%=path%>/index/iHome" id="encounterIndex"  >偶遇</a>
+            <a href="<%=path%>/zone/myZone"  id="zoneIndex" >动态</a>
             <!--<a href="http://game.gagahi.com/" target="blank"  id="gameIndex" >游戏</a>-->
-            <a href="http://www.gagahi.com:80/mall/giftReal/shophome" id="shopIndex" >商城</a>
+            <a href="<%=path%>/mall/giftReal/shopHome" id="shopIndex" >商城</a>
         </div>
         <div class="fr">
             <!--<a class="fhlb" data-i18n="fhlb.nr"></a> -->
@@ -1203,7 +1203,7 @@
             <span class="mr15 f16 gift-chose pb5" id="gift">虚拟礼物</span>
 
         </div>
-        <div class="fr"><a href="http://www.gagahi.com:80/mall/giftReal/shophome" class="c-2d57a1 pb5">去商城逛逛</a></div>
+        <div class="fr"><a href="<%=path%>/mall/giftReal/shopHome" class="c-2d57a1 pb5">去商城逛逛</a></div>
         <div class="clear"></div>
     </div>
     <div class="giftcont" >
@@ -1370,23 +1370,23 @@
                 </button>
             </div>
             <div class="lf-lb">
-                <span id="leftSixinIndexImg" class="on"></span><a href="http://www.gagahi.com:80/pm/privateLetter" id="leftSixinIndexText" class="on">私信</a>
+                <span id="leftSixinIndexImg" class="on"></span><a href="<%=path%>/platform/privateLetter" id="leftSixinIndexText" class="on">私信</a>
                 <div class="inlineblock newsNum" id="leftSixinNotice"></div>
             </div>
             <div class="lf-lb">
-                <span class="lkm" id="leftLikeMeIndexImg"></span><a href="http://www.gagahi.com:80/Member/Like/likeMe" id="leftLikeMeIndexText">喜欢我的人</a>
+                <span class="lkm" id="leftLikeMeIndexImg"></span><a href="<%=path%>/member/like/likeMe" id="leftLikeMeIndexText">喜欢我的人</a>
                 <div class="inlineblock newsNum" id="leftLikeMeNotice"></div>
             </div>
             <div class="lf-lb">
-                <span class="mlk" id="leftIlikeIndexImg"></span><a href="http://www.gagahi.com:80/Member/Like/iLike" id="leftIlikeIndexText">我喜欢的人</a>
+                <span class="mlk" id="leftIlikeIndexImg"></span><a href="<%=path%>/member/like/iLike" id="leftIlikeIndexText">我喜欢的人</a>
                 <div class="inlineblock newsNum" id="leftIlike"></div>
             </div>
             <div class="lf-lb lf-mutual">
-                <span class="each-lk" id="leftFriendIndexImg"></span><a href="http://www.gagahi.com:80/Member/Like/likeMeAndILike" id="leftFriendIndexText">互相喜欢</a>
+                <span class="each-lk" id="leftFriendIndexImg"></span><a href="<%=path%>/member/like/likeMeAndILike" id="leftFriendIndexText">互相喜欢</a>
                 <div class="inlineblock newsNum" id="leftFriendNotice"></div>
             </div>
             <div class="lf-lb" >
-                <span class="visitor" id="leftVisitorIndexImg" ></span><a href="http://www.gagahi.com:80/Member/Visitor/myVisitor" id="leftVisitorIndexText">访客</a>
+                <span class="visitor" id="leftVisitorIndexImg" ></span><a href="<%=path%>/member/visitor/myVisitor" id="leftVisitorIndexText">访客</a>
                 <div class="inlineblock newsNum" id="leftVisitorNotice"></div>
             </div>
             <div class="mb20 ggw1">
@@ -1482,7 +1482,7 @@
      * 挑战至偶遇
      */
     $(document).on("click",".gotoencounterhome",function(){
-        window.location.href="http://www.gagahi.com:80/ihome/index";
+        window.location.href="<%=path%>/index/iHome";
     });
 
     /*修改滚动轴*/
@@ -1926,7 +1926,7 @@
             <span class="mr15 f16 gift-chose pb5" id="gift">虚拟礼物</span>
 
         </div>
-        <div class="fr"><a href="http://www.gagahi.com:80/mall/giftReal/shophome" class="c-2d57a1 pb5">去商城逛逛</a></div>
+        <div class="fr"><a href="<%=path%>/mall/giftReal/shopHome" class="c-2d57a1 pb5">去商城逛逛</a></div>
         <div class="clear"></div>
     </div>
     <div class="giftcont" >
