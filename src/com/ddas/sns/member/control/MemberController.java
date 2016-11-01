@@ -87,4 +87,34 @@ public class MemberController extends BaseController {
         return modelAndView;
     }
 
+    /**
+     *
+     * @param request
+     *@return org.springframework.web.servlet.ModelAndView
+     *@author shaojx
+     *@date 2016/7/9 21:23
+     *@version 1.0
+     *@since 1.6
+     */
+    @RequestMapping("/memberInformation")
+    public ModelAndView goToMemberInformation(HttpServletRequest request){
+        ModelAndView modelAndView= withLocal(request,"member/memberInformation");
+        return modelAndView;
+    }
+
+    /**
+     *
+     * @param request
+     *@return org.springframework.web.servlet.ModelAndView
+     *@author shaojx
+     *@date 2016/7/9 21:23
+     *@version 1.0
+     *@since 1.6
+     */
+    @RequestMapping("/myInformation")
+    public ModelAndView goToMyInformation(HttpServletRequest request){
+        ModelAndView modelAndView= withLocal(request,"member/myInformation");
+        return modelAndView;
+    }
+
 }

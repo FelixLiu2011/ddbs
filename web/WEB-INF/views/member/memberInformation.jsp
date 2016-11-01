@@ -560,7 +560,7 @@
         <div class="fr">
             <!--<a class="fhlb" data-i18n="fhlb.nr"></a> -->
             <a class="xbsm"  data-i18n="xbsm.nr"></a>
-            <a class="vip" href="http://www.gagahi.com:80/pay/recharge" >充值</a>
+            <a class="vip" href="<%=path%>/pay/recharge" >充值</a>
             <a class="tip" onmouseover="onmoseovernotice()"><span></span>
                 <div class="" id="rightNotice"></div>
                 <div class="xl xltip">
@@ -592,8 +592,8 @@
                 <div class="jj1"></div>
                 <div class="nr1">
                     <ul>
-                        <li><a href="http://www.gagahi.com:80/Member/memberinformation">个人资料</a></li>
-                        <li><a href="http://www.gagahi.com:80/Member/memberinformation#showinfo">账号设置</a></li>
+                        <li><a href="<%=path%>/member/memberInformation">个人资料</a></li>
+                        <li><a href="<%=path%>/member/memberInformation#showinfo">账号设置</a></li>
                         <li style=" border-bottom:none;"><a href="javascript:loginout()">退出</a></li>
                     </ul>
                 </div>
@@ -939,7 +939,7 @@
                         <p class="upgradeTipsCon">
                             <span class="upgradeTipsTXT">系统提示<!-- 系统提示 -->：</span>
                             你今日聊天条数已用完，继续聊天 点此升级<!-- 你今日聊天条数已用完，继续聊天 点此升级 --></p>
-                        <a href="http://www.gagahi.com:80/pay/upgradeMember"><span class="upgradeTipsBtn">点击升级<!-- 点击升级 --></span></a>
+                        <a href="<%=path%>/pay/upgradeMember"><span class="upgradeTipsBtn">点击升级<!-- 点击升级 --></span></a>
                         <div class="upgradeTipsBG"></div>
                     </div>
                     <div class="sendContentCon">
@@ -1239,7 +1239,7 @@
                 </div>
             </div>
             <div class="clear"></div>
-            <div class="moneyDiv cleard">账户可用金币<!-- 账户可用金币 -->： <i class="money"></i><span class="moneyNum"> 0.00 </span><br/><a class="toRecharge" href="http://www.gagahi.com:80/pay/recharge">去充值<!-- 去充值 --></a></div>
+            <div class="moneyDiv cleard">账户可用金币<!-- 账户可用金币 -->： <i class="money"></i><span class="moneyNum"> 0.00 </span><br/><a class="toRecharge" href="<%=path%>/pay/recharge">去充值<!-- 去充值 --></a></div>
             <div class="textMSGDiv">
                 <textarea class="textMSG">你的祝福语</textarea>
                 <div class="wordsNumDiv"><span class="wordsNum">0</span>/500</div>
@@ -1331,11 +1331,11 @@
         <div class="lft fl">
             <div class="lfttop">
                 <div class="yhtx fl">
-                    <a href="http://www.gagahi.com:80/Member/myinformation"><img src="http://images.gagahi.com//images/default/male.png"></a>
+                    <a href="<%=path%>/member/myInformation"><img src="http://images.gagahi.com//images/default/male.png"></a>
                 </div>
                 <div class="yhxx fr">
                     <p class="ari">
-                        <a class="ellipsis-name" href="http://www.gagahi.com:80/Member/myinformation"  title="Quintion">Quintion</a>
+                        <a class="ellipsis-name" href="<%=path%>/member/myInformation"  title="Quintion">Quintion</a>
 
                     </p>
                     <p class="ari hui f12" style="margin: 8px 0">GaGaID:30039931</p>
@@ -1354,7 +1354,7 @@
 
 
 
-                <a href="http://www.gagahi.com:80/Member/memberinformation"><span class="ws"></span>请上传您的靓照</a><br>
+                <a href="<%=path%>/member/memberInformation"><span class="ws"></span>请上传您的靓照</a><br>
 
 
 
@@ -1418,7 +1418,7 @@
                 $.IM.getTranslationCharacterNum();
             }
             $("#totalMoney").parent().click(function(){
-                window.open("http://www.gagahi.com:80/pay/recharge","_blank");
+                window.open("<%=path%>/pay/recharge","_blank");
             });
             /* $("#totalTranslate").parent().click(function(){
              window.open("http://www.gagahi.com:80/pay/translationPack","_blank");
@@ -1454,7 +1454,7 @@
             <div class="set-up">
                 <div class="set-up-top pl15 pr15">
                     <div class="fl">设置</div>
-                    <div class="fr"><a href="http://www.gagahi.com:80/Member/myinformation" class="c-2d57a1" >返回个人主页&gt;&gt;</a></div>
+                    <div class="fr"><a href="<%=path%>/member/myInformation" class="c-2d57a1" >返回个人主页&gt;&gt;</a></div>
                 </div>
                 <div class=" rht">
                     <div class="set-dom">
@@ -1757,7 +1757,7 @@
                         <div class="set-content">
                             <div  id="personalinformationWin" class="set-hidden" style="display:none;">
                                 <ul>
-                                    <li><span class="set-content-title">金币：</span><span class="set-content-con">0.00<a href="http://www.gagahi.com:80/pay/recharge"><span class="set-recharge c-2d57a1">充值</span></a> </span></li>
+                                    <li><span class="set-content-title">金币：</span><span class="set-content-con">0.00<a href="<%=path%>/pay/recharge"><span class="set-recharge c-2d57a1">充值</span></a> </span></li>
                                     <li><span class="set-content-title">会员级别：</span><span class="set-content-con">
 
 
@@ -1767,7 +1767,7 @@
 
 
 
-				<a href="http://www.gagahi.com:80/pay/upgradeMember"><span class="set-member c-2d57a1" style=" margin-left:30px;">升级</span></a></span></li>
+				<a href="<%=path%>/pay/upgradeMember"><span class="set-member c-2d57a1" style=" margin-left:30px;">升级</span></a></span></li>
                                     <li><span class="set-content-title">翻译包字符数：</span><span class="set-content-con" ><span id="myTotalTranslateNum">0</span></span></li>
 
                                     <li><span class="set-content-title">邮箱：</span>
@@ -3249,7 +3249,7 @@
                                 btn: ['知道了'],
                                 yes: function (index, layero) {
                                     layer.close(index);
-                                    window.location.href ="http://www.gagahi.com:80/Member/memberinformation"
+                                    window.location.href ="<%=path%>/member/memberInformation"
                                 },
                                 cancel: function (index) {
                                     layer.close(index);

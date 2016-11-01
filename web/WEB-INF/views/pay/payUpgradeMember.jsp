@@ -570,7 +570,7 @@
         <div class="fr">
             <!--<a class="fhlb" data-i18n="fhlb.nr"></a> -->
             <a class="xbsm"  data-i18n="xbsm.nr"></a>
-            <a class="vip" href="http://www.gagahi.com:80/pay/recharge" >充值</a>
+            <a class="vip" href="<%=path%>/pay/recharge" >充值</a>
             <a class="tip" onmouseover="onmoseovernotice()"><span></span>
                 <div class="" id="rightNotice"></div>
                 <div class="xl xltip">
@@ -602,7 +602,7 @@
                 <div class="jj1"></div>
                 <div class="nr1">
                     <ul>
-                        <li><a href="http://www.gagahi.com:80/Member/memberinformation">个人资料</a></li>
+                        <li><a href="<%=path%>/member/memberInformation">个人资料</a></li>
                         <li><a href="http://www.gagahi.com:80/Member/memberinformation#showinfo">账号设置</a></li>
                         <li style=" border-bottom:none;"><a href="javascript:loginout()">退出</a></li>
                     </ul>
@@ -944,7 +944,7 @@
                         <p class="upgradeTipsCon">
                             <span class="upgradeTipsTXT">系统提示<!-- 系统提示 -->：</span>
                             你今日聊天条数已用完，继续聊天 点此升级<!-- 你今日聊天条数已用完，继续聊天 点此升级 --></p>
-                        <a href="http://www.gagahi.com:80/pay/upgradeMember"><span class="upgradeTipsBtn">点击升级<!-- 点击升级 --></span></a>
+                        <a href="<%=path%>/pay/upgradeMember"><span class="upgradeTipsBtn">点击升级<!-- 点击升级 --></span></a>
                         <div class="upgradeTipsBG"></div>
                     </div>
                     <div class="sendContentCon">
@@ -1244,7 +1244,7 @@
                 </div>
             </div>
             <div class="clear"></div>
-            <div class="moneyDiv cleard">账户可用金币<!-- 账户可用金币 -->： <i class="money"></i><span class="moneyNum">  </span><br/><a class="toRecharge" href="http://www.gagahi.com:80/pay/recharge">去充值<!-- 去充值 --></a></div>
+            <div class="moneyDiv cleard">账户可用金币<!-- 账户可用金币 -->： <i class="money"></i><span class="moneyNum">  </span><br/><a class="toRecharge" href="<%=path%>/pay/recharge">去充值<!-- 去充值 --></a></div>
             <div class="textMSGDiv">
                 <textarea class="textMSG">你的祝福语</textarea>
                 <div class="wordsNumDiv"><span class="wordsNum">0</span>/500</div>
@@ -1331,11 +1331,11 @@
         <div class="lft fl">
             <div class="lfttop">
                 <div class="yhtx fl">
-                    <a href="http://www.gagahi.com:80/Member/myinformation"><img src="http://images.gagahi.com//"></a>
+                    <a href="<%=path%>/member/myInformation"><img src="http://images.gagahi.com//"></a>
                 </div>
                 <div class="yhxx fr">
                     <p class="ari">
-                        <a class="ellipsis-name" href="http://www.gagahi.com:80/Member/myinformation"  title=""></a>
+                        <a class="ellipsis-name" href="<%=path%>/member/myInformation"  title=""></a>
 
                     </p>
                     <p class="ari hui f12" style="margin: 8px 0">GaGaID:</p>
@@ -1416,7 +1416,7 @@
                 $.IM.getTranslationCharacterNum();
             }
             $("#totalMoney").parent().click(function(){
-                window.open("http://www.gagahi.com:80/pay/recharge","_blank");
+                window.open("<%=path%>/pay/recharge","_blank");
             });
             /* $("#totalTranslate").parent().click(function(){
              window.open("http://www.gagahi.com:80/pay/translationPack","_blank");
@@ -1459,13 +1459,13 @@
 
 
                 <ul class="nav">
-                    <a href="http://www.gagahi.com:80/pay/upgradeMember"><li id="upgradeMember">升级会员</li></a>
-                    <a href="http://www.gagahi.com:80/pay/recharge"><li id="recharge">充值金币</li></a>
+                    <a href="<%=path%>/pay/upgradeMember"><li id="upgradeMember">升级会员</li></a>
+                    <a href="<%=path%>/pay/recharge"><li id="recharge">充值金币</li></a>
 
-                    <a href="http://www.gagahi.com:80/pay/transactionRecord"><li id="transactionRecord">充值记录</li></a>
-                    <a href="http://www.gagahi.com:80/pay/privilegeNote" id="powerItem"><li id="privilegeNote">特权说明</li></a>
+                    <a href="<%=path%>/pay/transactionRecord"><li id="transactionRecord">充值记录</li></a>
+                    <a href="<%=path%>/pay/privilegeNote" id="powerItem"><li id="privilegeNote">特权说明</li></a>
 
-                    <a href="http://www.gagahi.com:80/pay/help"><li class="help current" id="help">帮助</li></a>
+                    <a href="<%=path%>/pay/help"><li class="help current" id="help">帮助</li></a>
                 </ul>
                 <script type="text/javascript">
 
@@ -1791,7 +1791,7 @@
             },
             cancel: function(index) {
                 recordUserAction(2,redirectOrderId);
-                window.location.href="http://www.gagahi.com:80/pay/help";
+                window.location.href="<%=path%>/pay/help";
             }
 
         });
@@ -2158,7 +2158,7 @@
                     // updateSession();
                     setTimeout(function(){
                         //window.location.reload();
-                        window.location.href="http://www.gagahi.com:80/pay/transactionRecord";
+                        window.location.href="<%=path%>/pay/transactionRecord";
                     },3000);
                 }else{
                     layer.closeAll('loading');

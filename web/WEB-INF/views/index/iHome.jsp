@@ -560,7 +560,7 @@
         <div class="fr">
             <!--<a class="fhlb" data-i18n="fhlb.nr"></a> -->
             <a class="xbsm"  data-i18n="xbsm.nr"></a>
-            <a class="vip" href="http://www.gagahi.com:80/pay/recharge" >Recharge</a>
+            <a class="vip" href="<%=path%>/pay/recharge" >Recharge</a>
             <a class="tip" onmouseover="onmoseovernotice()"><span></span>
                 <div class="" id="rightNotice"></div>
                 <div class="xl xltip">
@@ -592,8 +592,8 @@
                 <div class="jj1"></div>
                 <div class="nr1">
                     <ul>
-                        <li><a href="http://www.gagahi.com:80/Member/memberinformation">About Me</a></li>
-                        <li><a href="http://www.gagahi.com:80/Member/memberinformation#showinfo">Account Settings</a></li>
+                        <li><a href="<%=path%>/member/memberInformation">About Me</a></li>
+                        <li><a href="<%=path%>/member/memberInformation#showinfo">Account Settings</a></li>
                         <li style=" border-bottom:none;"><a href="javascript:loginout()">Sign out</a></li>
                     </ul>
                 </div>
@@ -939,7 +939,7 @@
                         <p class="upgradeTipsCon">
                             <span class="upgradeTipsTXT">System prompt<!-- 系统提示 -->：</span>
                             You have run out of the number of chat today, continue to chat？ Upgrade<!-- 你今日聊天条数已用完，继续聊天 点此升级 --></p>
-                        <a href="http://www.gagahi.com:80/pay/upgradeMember"><span class="upgradeTipsBtn">Upgrade<!-- 点击升级 --></span></a>
+                        <a href="<%=path%>/pay/upgradeMember"><span class="upgradeTipsBtn">Upgrade<!-- 点击升级 --></span></a>
                         <div class="upgradeTipsBG"></div>
                     </div>
                     <div class="sendContentCon">
@@ -1239,7 +1239,7 @@
                 </div>
             </div>
             <div class="clear"></div>
-            <div class="moneyDiv cleard">Available gold:<!-- 账户可用金币 -->： <i class="money"></i><span class="moneyNum"> 0 </span><br/><a class="toRecharge" href="http://www.gagahi.com:80/pay/recharge">Go to recharge!<!-- 去充值 --></a></div>
+            <div class="moneyDiv cleard">Available gold:<!-- 账户可用金币 -->： <i class="money"></i><span class="moneyNum"> 0 </span><br/><a class="toRecharge" href="<%=path%>/pay/recharge">Go to recharge!<!-- 去充值 --></a></div>
             <div class="textMSGDiv">
                 <textarea class="textMSG">Your blessings</textarea>
                 <div class="wordsNumDiv"><span class="wordsNum">0</span>/500</div>
@@ -1337,11 +1337,11 @@
         <div class="lft fl">
             <div class="lfttop">
                 <div class="yhtx fl">
-                    <a href="http://www.gagahi.com:80/Member/myinformation"><img src="http://images.gagahi.com//images/default/male.png"></a>
+                    <a href="<%=path%>/member/myInformation"><img src="http://images.gagahi.com//images/default/male.png"></a>
                 </div>
                 <div class="yhxx fr">
                     <p class="ari">
-                        <a class="ellipsis-name" href="http://www.gagahi.com:80/Member/myinformation"  title="Sampson">Sampson</a>
+                        <a class="ellipsis-name" href="<%=path%>/member/myInformation"  title="Sampson">Sampson</a>
 
                     </p>
                     <p class="ari hui f12" style="margin: 8px 0">GaGaID:30039900</p>
@@ -1360,7 +1360,7 @@
 
 
 
-                <a href="http://www.gagahi.com:80/Member/memberinformation"><span class="ws"></span>Please upload your charming avatar.</a><br>
+                <a href="<%=path%>/member/memberInformation"><span class="ws"></span>Please upload your charming avatar.</a><br>
 
 
 
@@ -1424,7 +1424,7 @@
                 $.IM.getTranslationCharacterNum();
             }
             $("#totalMoney").parent().click(function(){
-                window.open("http://www.gagahi.com:80/pay/recharge","_blank");
+                window.open("<%=path%>/pay/recharge","_blank");
             });
             /* $("#totalTranslate").parent().click(function(){
              window.open("http://www.gagahi.com:80/pay/translationPack","_blank");
@@ -1719,7 +1719,7 @@
     <div class="yqCon" style="display: none;">
         <div class="yqtc">
             Invite more friends and colleages to join GaGaHi, the intimate-friend-making SNS!   <br>
-            You can tell your friends the following link and invite them in by QQ、MSN or other chatting tools. <a href="http://www.gagahi.com:80/Member/myinformation"><span class="c-2d57a1">http://www.gagahi.com:80/Member/myinformation</span></a>
+            You can tell your friends the following link and invite them in by QQ、MSN or other chatting tools. <a href="<%=path%>/member/myInformation"><span class="c-2d57a1"><%=path%>/member/myInformation</span></a>
             <div class="yqnr" style="position:relative">
                 <p>Your friends' email:</p>
                 <textarea  name="emails" id="emails" class="bdra15 mail" style=" height:50px;line-height:25px; padding-top:5px;padding-bottom:5px"></textarea>
@@ -2713,7 +2713,7 @@
             yes: function(index, layero) {
                 // $("#myMoneyTotal").text($.IM.myMoneyNum);
                 if($.IM.myMoneyNum< $("#layui-layer1 #text_box").val()){
-                    $("#layui-layer1 #showLessMoneyWin").html("<div ><span class='red'>" + $.t('home.goldNotEnough') + "</span> <a href='http://www.gagahi.com:80/pay/recharge' style='color:#2d57a1'>" + $.t('home.rechargeGold') + "</a></div>");
+                    $("#layui-layer1 #showLessMoneyWin").html("<div ><span class='red'>" + $.t('home.goldNotEnough') + "</span> <a href='<%=path%>/pay/recharge' style='color:#2d57a1'>" + $.t('home.rechargeGold') + "</a></div>");
                 }else{
                     buyShowFirst();
                     layer.close(index);
@@ -2722,7 +2722,7 @@
             },
             cancel: function(index) {},
         });
-        $(".layui-layer-btn0").after("<br><a href='http://www.gagahi.com:80/pay/upgradeMember' class='lj'>It's cheaper to upgrade member</a>");
+        $(".layui-layer-btn0").after("<br><a href='<%=path%>/pay/upgradeMember' class='lj'>It's cheaper to upgrade member</a>");
         var t = $("#layui-layer1 #text_box");
         //初始化数量为1,并失效减
         $("#layui-layer1 #min").attr('disabled', true);
@@ -2879,7 +2879,7 @@
                 window.location.reload();
             },
             cancel: function(index) {
-                window.location.href="http://www.gagahi.com:80/pay/help";
+                window.location.href="<%=path%>/pay/help";
             }
 
         });
