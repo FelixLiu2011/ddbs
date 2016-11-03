@@ -3305,9 +3305,9 @@
 
          } */
         //新手指引
-        if(1=='1'){
+  /*      if(1=='1'){
             newRegGuide();
-        }
+        }*/
     });
     /*新手引导*/
     function newRegGuide(){
