@@ -27,12 +27,3 @@ CREATE TABLE `gift` (
   `gift_name` varchar(64) DEFAULT NULL COMMENT '礼物名称',
   PRIMARY KEY (`gift_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of gift
--- ----------------------------
-INSERT INTO `gift` VALUES ('1', '/business/gift/images/watch1.jpg', '399', '0', '电子表');
-INSERT INTO `gift` VALUES ('2', '/business/gift/images/watch2.jpg', '299', '0', '机械表');
-INSERT INTO `gift` VALUES ('3', '/business/gift/images/watch3.jpg', '199', '0', '智能表');
-INSERT INTO `gift` VALUES ('4', '/business/gift/images/watch4.jpg', '100', '0', '名牌表');
-INSERT INTO `gift` VALUES ('5', '/business/gift/images/watch5.jpg', '1999', '0', '土豪表');

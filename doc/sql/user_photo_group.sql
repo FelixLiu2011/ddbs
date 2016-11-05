@@ -31,8 +31,3 @@ CREATE TABLE `user_photo_group` (
   `tags` varchar(1500) DEFAULT NULL COMMENT '相册的标签',
   PRIMARY KEY (`group_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of user_photo_group
--- ----------------------------
-INSERT INTO `user_photo_group` VALUES ('3', '1000', '默认分组', '', '2', '默认分组', '2016-08-16 22:16:48', '2016-08-16 23:13:00', '');

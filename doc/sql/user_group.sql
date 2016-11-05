@@ -29,9 +29,3 @@ CREATE TABLE `user_group` (
   `level` varchar(2) DEFAULT NULL COMMENT '分组的等级,0表示系统级别，暂无其他级别',
   PRIMARY KEY (`group_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of user_group
--- ----------------------------
-INSERT INTO `user_group` VALUES ('1', '1000', '默认分组', '1', '2016-07-31 11:33:31', '2016-07-31 11:33:31', '0');
-INSERT INTO `user_group` VALUES ('2', '1000', '默认分组', '2', '2016-07-31 11:33:31', '2016-07-31 11:33:31', '0');

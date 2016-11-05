@@ -15,13 +15,3 @@ CREATE TABLE `user_blog` (
   `created_time` varchar(32) DEFAULT NULL COMMENT '创建时间',
   `updated_time` varchar(32) DEFAULT NULL COMMENT '更新时间'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of user_blog
--- ----------------------------
-INSERT INTO `user_blog` VALUES ('8a9e24ff4b0f9e02', '1', '1', '是是非非 你要勇敢去面对', '自由自在的飞 让梦纯粹 静候轮回', '0', 'heart', '2016-07-07 21:59:56', null);
-INSERT INTO `user_blog` VALUES ('6d7f67429e2499b9', '1', '1', '将军', '当敌人是空 我战法无穷 我攻势如风 用单车入宫 辗过你懊丧的脸孔', '0', 'heart', '2016-07-07 22:00:48', null);
-INSERT INTO `user_blog` VALUES ('8a9e24ff4b0f9e02', '1', '1', '是是非非 你要勇敢去面对', '自由自在的飞 让梦纯粹 静候轮回', '0', 'heart', '2016-07-07 21:59:56', null);
-INSERT INTO `user_blog` VALUES ('6d7f67429e2493b9', '1', '1', '将军', '当敌人是空 我战法无穷 我攻势如风 用单车入宫 辗过你懊丧的脸孔', '0', 'heart', '2016-07-07 22:00:48', null);
-INSERT INTO `user_blog` VALUES ('8a9e24ff4b0f9e12', '1', '1', '是是非非 你要勇敢去面对', '自由自在的飞 让梦纯粹 静候轮回', '0', 'heart', '2016-07-07 21:59:56', null);
-INSERT INTO `user_blog` VALUES ('6d7f67429e2439b9', '1', '1', '将军', '当敌人是空 我战法无穷 我攻势如风 用单车入宫 辗过你懊丧的脸孔', '0', 'heart', '2016-07-07 22:00:48', null);
