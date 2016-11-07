@@ -395,7 +395,8 @@
 <div class="log-content">
     <div class="lan-sele">
         <h3 class="tc f18 mb45">选择一种您熟悉的语言</h3>
-        <input type="hidden" id="uuid" value="42230caf-a2d9-4cd4-bc2d-d67b7a1327db"/>
+        <input type="hidden" id="uuid" value="${uuid}"/>
+        <input type="hidden" id="sex" value="${sex}"/>
         <ul class="lan-bk mb45">
 
             <li>English
@@ -478,7 +479,8 @@
         $('#log-btn').click(function(){
             var language = $('.selected').attr("language");
             var uuid = $("#uuid").val();
-            $.post(path + "/platform/experience/regExperienceMember",{sex:'1',language:language,uuid:uuid},function(result){
+            var sex = $("#sex").val();
+            $.post(path + "/platform/regMember",{sex:sex,language:language,uuid:uuid},function(result){
                 if(result.successful){
                     window.location.href = path + "/index/iHome";
                 }else{

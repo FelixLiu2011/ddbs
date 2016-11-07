@@ -3,6 +3,9 @@
 <%
     String path = request.getContextPath();
 %>
+<script type="text/javascript">
+    var path = "<%=path%>";
+</script>
 <!-- 用户设置的会话语言  -->
 
 <!-- 当前登录用户，在站点内部可直接调用 -->
@@ -426,7 +429,7 @@
                                 </div>
                                 <input id="zc-txt-name" autocomplete="off"
                                        class="inp zc-txt-name" type="text" name="name"
-                                       placeholder='邮箱'>
+                                       placeholder='邮箱' value="123@qq.com">
                             </div>
                             <div class="form-control Password-en">
                                 <div style="display: inline;">
@@ -434,7 +437,7 @@
                                 </div>
                                 <input id="zc-txt-nickname" autocomplete="off"
                                        class="inp" type="text" name="name"
-                                       placeholder='昵称'>
+                                       placeholder='昵称' value="wantu">
                             </div>
                             <div class="form-control Password-en">
                                 <div style="display: inline;">
@@ -678,7 +681,7 @@
             $(".zc-txt-name").css("border-color", "#ff9c00");
             emailflag = false;
         }else {
-            $.post("http://www.gagahi.com:80/Platform/checkEmail",{email:zcusername},function(result){
+            /*$.post("http://www.gagahi.com:80/Platform/checkEmail",{email:zcusername},function(result){
                 //$("span").html(result);
                 if(!result.success){
                     $('.yy').css('display', 'block').siblings().css('display', 'none');
@@ -689,7 +692,8 @@
                     $(".zc-txt-name").css("border-color", "#fff");
                     emailflag = true;
                 }
-            });
+            });*/
+            emailflag = true;
         }
 
 
@@ -722,7 +726,7 @@
             $(".yzm").css("border-color", "#ff9c00");
             codeflag = false;
         }else{
-            $.post("http://www.gagahi.com:80/Platform/reg/codeCheck",{imageCode:txtCode},function(result){
+/*            $.post("http://www.gagahi.com:80/Platform/reg/codeCheck",{imageCode:txtCode},function(result){
                 //$("span").html(result);
                 if(!result.success){
                     $('.yzmbzq').css('display', 'block').siblings().css('display', 'none');
@@ -736,8 +740,8 @@
                         callback();
                     }
                 }
-            });
-
+            });*/
+            codeflag = true;
             //验证码是否正确
         }
     }
@@ -797,20 +801,18 @@
             if(emailflag&&pwdflag&&nicknameflag){
                 var birthday = selYear+"-"+selMonth+"-"+selDay;
                 if (codeflag) {
-                    $.post("http://www.gagahi.com:80/Platform/checkblackip",function(reg){
-                        if(reg.success){
-                            var data = {name:email,pwd:pwd,birthday:birthday,source:source,inviter:inviter,sysid:sysid,ispromoter:ispromoter,inviteEmail:inviteEmail,nickname:nickName}
-                            $.post("http://www.gagahi.com:80/Platform/platformReg",data,function(result){
-
-                                if(result){
-                                    window.location.href = 'http://www.gagahi.com:80/Platform/setSex/'+result.obj;
-                                    //$('html').html(result);
-                                }
-                            });
-                        }else{
-                            layer.msg(reg.msg);
+                    var data = {
+                        userEmail:email,
+                        userPwd:pwd,
+                        userBirth:birthday,
+                        userName:nickName
+                    }
+                    $.post(path + "/platform/register",data,function(result){
+                        if(result){
+                            console.log(result);
+                            window.location.href =path +  '/platform/setSex?uuid'+result.obj;
                         }
-                    })
+                    });
                 } else {
                     txtcodeCheck(function() {
                         $.post("http://www.gagahi.com:80/Platform/checkblackip",function(reg){

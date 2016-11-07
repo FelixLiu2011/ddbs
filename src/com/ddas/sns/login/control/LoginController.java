@@ -151,20 +151,6 @@ public class LoginController extends BaseController {
     }
 
     /**
-     * 跳转到注册页面
-     *
-     * @return java.lang.String
-     * @Author shaojunxiang
-     * @Date 2016/7/8 16:34
-     * @since JDK1.6
-     */
-    @RequestMapping("/gotoRegister")
-    public ModelAndView gotoRegister(HttpServletRequest request) {
-        ModelAndView modelAndView = withLocal(request, "login/register");
-        return modelAndView;
-    }
-
-    /**
      * 跳转到首页，清除session中的user信息
      *
      * @return java.lang.String
@@ -198,7 +184,7 @@ public class LoginController extends BaseController {
 
     @RequestMapping("/register")
     @ResponseBody
-    public Msg register(@RequestBody UserInfo userInfo, String repeatPwd, HttpServletRequest request) {
+    public Msg register(@RequestBody UserInfo userInfo, HttpServletRequest request) {
         boolean save = false;
 
         try {

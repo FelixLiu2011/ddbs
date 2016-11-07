@@ -391,9 +391,9 @@
 <div class="log-content">
     <div class="lan-sele">
         <h3 class="tc f18">Select gender</h3>
-        <input type="hidden" id="uuid" value="42230caf-a2d9-4cd4-bc2d-d67b7a1327db"/>
+        <input type="hidden" id="uuid" value="${uuid}"/>
         <p class="tc c-ff8a00 mb45 mt10">After sex selection can not be changed</p>
-        <input type="hidden" name = "sex" id = "sex" value="1">
+        <input type="hidden" name = "sex" id = "sex" value="${sex}">
         <ul class="lan-bk mb45 sel-sex tc">
             <li id="1">Male
                 <div class="selected" ></div>
@@ -457,7 +457,7 @@
         if(sex > 0){
             sex = $("#sex").val();
             var uuid = $("#uuid").val();
-            window.location.href = path + '/platform/experience/languageChoice?sex='+sex+'&uuid='+uuid;
+            window.location.href = path + '/platform/setLanguage?sex='+sex+'&uuid='+uuid;
         }else{
             layer.msg('Select gender');
         }
