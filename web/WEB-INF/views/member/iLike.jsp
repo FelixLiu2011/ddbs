@@ -6,6 +6,7 @@
 <script type="text/javascript">
     var path = "<%=path%>";
 </script>
+<!DOCTYPE html>
 <!-- 用户设置的会话语言  -->
 
 <!-- 当前登录用户，在站点内部可直接调用 -->
@@ -15,8 +16,6 @@
 <!-- 二级导航选中状态 -->
 
 <!-- 头像尺寸 -->
-
-<!DOCTYPE html>
 <html>
 <head>
     <meta name="renderer" content="webkit">
