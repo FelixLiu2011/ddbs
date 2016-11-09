@@ -9,6 +9,7 @@
 package com.ddas.sns.platform.control;
 
 import com.ddas.common.Msg;
+import com.ddas.common.util.StringUtil;
 import com.ddas.common.util.springutil.SpringContextUtil;
 import com.ddas.sns.common.BaseController;
 import com.ddas.sns.userinfo.domain.UserInfo;
@@ -131,9 +132,9 @@ public class PlatFormController extends BaseController {
     @ResponseBody
     public Msg regMember(String sex, String language, String uuid) {
         UserInfo userInfo = userInfoService.fetchUserInfoByUserId(uuid);
-        userInfo.setUserSex(sex);
+        userInfo.setMembSex(sex);
         // TODO: 2016/11/7 设置语言
-        userInfoService.save(userInfo);
+        userInfoService.saveUserInfo(userInfo);
         Msg msg = new Msg();
         msg.setSuccessful(true);
 
@@ -156,28 +157,13 @@ public class PlatFormController extends BaseController {
 
     @RequestMapping("/register")
     @ResponseBody
-    public Msg register(@RequestBody UserInfo userInfo, HttpServletRequest request) {
+    public Msg register(UserInfo userInfo, HttpServletRequest request) {
         boolean save = false;
 
-        try {
-            String ip = "";
-            String address = "";
-            AddressUtils addressUtils = new AddressUtils();
-            ip = addressUtils.getIpAddr(request);
-            address = addressUtils.getAddresses(ip, "utf-8");
-            userInfo.setLoginIp(ip);
-            userInfo.setLoginAddress(address);
-            if (address.contains("中国")) {
-                userInfo.setUserStatus("0");//用0表示中国用户，前台会拦截掉，后台会进行登录审核，审核通过的
-            }
-        }catch (Exception e){
-            LOGGER.error(e.getMessage(), e);
-        }
-
-        save = userInfoService.save(userInfo);
+        save = userInfoService.saveUserInfo(userInfo);
         if (save) {
             Msg msg = new Msg();
-            msg.setMsg(SpringContextUtil.getMsgByKey("register.success", getLocalObject(request)));
+            msg.setMsg(userInfo.getMembGagaid());
             msg.setSuccessful(true);
             return msg;
         } else {
@@ -187,5 +173,50 @@ public class PlatFormController extends BaseController {
             return msg;
         }
     }
+
+    /**
+     * 验证用户输入的验证码
+     *
+     * @return java.lang.String
+     * @Author shaojunxiang
+     * @Date 2016/7/8 16:34
+     * @since JDK1.6
+     */
+    @RequestMapping("/reg/codeCheck")
+    @ResponseBody
+    public Msg codeCheck(HttpServletRequest request, String imageCode) {
+        String code = (String) request.getSession(true).getAttribute("validateCode");
+        Msg msg = new Msg();
+        msg.setSuccessful(false);
+        if (StringUtil.isNotEmpty(imageCode) && StringUtil.isNotEmpty(code)) {
+            if (imageCode.equals(code)) {
+                msg.setSuccessful(true);
+            }
+        }
+
+        return msg;
+    }
+
+    /**
+     * 邮箱唯一性的验证码
+     *
+     * @return java.lang.String
+     * @Author shaojunxiang
+     * @Date 2016/7/8 16:34
+     * @since JDK1.6
+     */
+    @RequestMapping("/checkEmail")
+    @ResponseBody
+    public Msg emailCheck(HttpServletRequest request, String email) {
+        Msg msg = new Msg();
+        boolean success = false;
+        if (StringUtil.isNotEmpty(email)) {
+            success = userInfoService.findUserByEmail(email);
+        }
+        msg.setSuccessful(success);
+
+        return msg;
+    }
+
 
 }

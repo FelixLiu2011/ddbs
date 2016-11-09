@@ -94,15 +94,11 @@
         </tx:attributes>
     </tx:advice>
 
-    <!--权限Interceptor-->
-    <bean id="privilegeInterceptor" class="com.ddas.sns.interceptor.VipPrivilegeInterceptor" ></bean>
+
     <!--配置切面-->
     <aop:config proxy-target-class="true">
         <aop:pointcut id="transactionPointcut" expression="execution(* com.ddas.sns.*.service.*.*(..))"/>
         <aop:advisor advice-ref="transactionInterceptor" pointcut-ref="transactionPointcut"/>
-        <!--配置MethodInterceptor-->
-        <!--pointcut使用相应的transactionPointcut-->
-       <aop:advisor advice-ref="privilegeInterceptor" pointcut-ref="transactionPointcut"></aop:advisor>
     </aop:config>
 	
 

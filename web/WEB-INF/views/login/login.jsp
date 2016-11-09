@@ -483,7 +483,7 @@
                                 <input id="txt-code" class=" w100 yzm" type="text"
                                        autocomplete="off" placeholder='验证码' maxlength="4"
                                        minlength="4" data-type="required|minlength" name="code"
-                                       err="required"> <span class="yzt"><img title='点击更换' onclick="javascript:refresh(this);" src="http://www.gagahi.com:80/imageServlet"/></span><!-- <span class="sx"></span> -->
+                                       err="required"> <span class="yzt"><img title='点击更换' onclick="javascript:refresh(this);" src="<%=path%>/getAuthCode"/></span><!-- <span class="sx"></span> -->
                             </div>
                             <p class="f13">
                                 点击注册，即表示您阅读并同意我们的<a href="http://www.gagahi.com:80/Platform/privacyclause" class="ls"  target="_blank">《隐私条款》</a>
@@ -681,9 +681,8 @@
             $(".zc-txt-name").css("border-color", "#ff9c00");
             emailflag = false;
         }else {
-            /*$.post("http://www.gagahi.com:80/Platform/checkEmail",{email:zcusername},function(result){
-                //$("span").html(result);
-                if(!result.success){
+            $.post(path + "/platform/checkEmail",{membEmail:zcusername},function(result){
+                if(!result.successful){
                     $('.yy').css('display', 'block').siblings().css('display', 'none');
                     $(".zc-txt-name").css("border-color", "#ff9c00");
                     emailflag = false;
@@ -692,7 +691,7 @@
                     $(".zc-txt-name").css("border-color", "#fff");
                     emailflag = true;
                 }
-            });*/
+            });
             emailflag = true;
         }
 
@@ -726,9 +725,9 @@
             $(".yzm").css("border-color", "#ff9c00");
             codeflag = false;
         }else{
-/*            $.post("http://www.gagahi.com:80/Platform/reg/codeCheck",{imageCode:txtCode},function(result){
+            $.post(path + "/platform/reg/codeCheck",{imageCode:txtCode},function(result){
                 //$("span").html(result);
-                if(!result.success){
+                if(!result.successful){
                     $('.yzmbzq').css('display', 'block').siblings().css('display', 'none');
                     $(".yzm").css("border-color", "#ff9c00");
                     codeflag = false;
@@ -740,8 +739,7 @@
                         callback();
                     }
                 }
-            });*/
-            codeflag = true;
+            });
             //验证码是否正确
         }
     }
@@ -802,36 +800,17 @@
                 var birthday = selYear+"-"+selMonth+"-"+selDay;
                 if (codeflag) {
                     var data = {
-                        userEmail:email,
-                        userPwd:pwd,
-                        userBirth:birthday,
-                        userName:nickName
+                        membEmail:email,
+                        membPwd:pwd,
+                        membBirth:birthday,
+                        membNickname:nickName
                     }
                     $.post(path + "/platform/register",data,function(result){
-                        if(result){
-                            console.log(result);
-                            window.location.href =path +  '/platform/setSex?uuid'+result.obj;
+                        if(result.successful){
+                            window.location.href = path +  '/platform/setSex?uuid='+result.msg;
                         }
-                    });
-                } else {
-                    txtcodeCheck(function() {
-                        $.post("http://www.gagahi.com:80/Platform/checkblackip",function(reg){
-                            if(reg.success){
-                                var data = {name:email,pwd:pwd,birthday:birthday,source:source,inviter:inviter,sysid:sysid,ispromoter:ispromoter,inviteEmail:inviteEmail,nickname:nickName}
-                                $.post("http://www.gagahi.com:80/Platform/platformReg",data,function(result){
-
-                                    if(result){
-                                        window.location.href = 'http://www.gagahi.com:80/Platform/setSex/'+result.obj;
-                                        //$('html').html(result);
-                                    }
-                                });
-                            }else{
-                                layer.msg(reg.msg);
-                            }
-                        })
-                    });
+                    }, "json");
                 }
-
             }
         }
 
@@ -922,7 +901,7 @@
         }
     });
     function refresh(obj) {
-        obj.src = "http://www.gagahi.com:80/imageServlet?"+Math.random();
+        obj.src = path + "getAuthCode?"+Math.random();
     }
 </script>
 

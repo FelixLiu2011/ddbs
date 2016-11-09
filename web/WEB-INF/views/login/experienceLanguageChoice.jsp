@@ -485,7 +485,7 @@
                     /*layer.msg(result.msg);*/
                     window.location.href = path + "/index/iHome";
                 }
-            });
+            },"json");
         });
     })
 </script>
