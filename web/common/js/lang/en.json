@@ -52,7 +52,20 @@
         "addFirendWord1": "People you may know",
         "selectCountry":"Select Country",
         "nomoremsg": "No new messages!",
-        "actionDetail": "Activity details"
+        "actionDetail": "Activity details",
+        "uploadPhotoTip":"Please upload your charming avatar.",
+        "profileTip":"Perfect information, let friends know you faster",
+        "directLetter":"Direct Message",
+        "likeMe": "Liked me ",
+        "meLike": "I liked",
+        "likeEachOther": "Liked mutual",
+        "visitor": "Visitor",
+        "encounter":"Encounter",
+        "feeds":"Feeds",
+        "mall":"Mall",
+        "peopleNums":"We have 25,320,233 users from all over the world.",
+        "invite_friend":"Invite friends",
+        "recommend":"Recommend"
     },
     "im": {
         "searchContacts": "Search contacts",

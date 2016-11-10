@@ -54,7 +54,7 @@
   </filter-mapping>
 
     <!--XSS攻击-->
-    <filter>
+   <filter>
         <filter-name>XssSqlFilter</filter-name>
         <filter-class>com.ddas.common.filter.XssFilter</filter-class>
     </filter>
