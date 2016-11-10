@@ -37,6 +37,7 @@ public class IHomeService {
         attachment.setData(userInfos);
         attachment.setPage(page);
         Result result=new Result();
+        result.setAttributes(attachment);
         result.setSuccess(true);
         result.setMsg(Constants.SUCCESS);
         return result;

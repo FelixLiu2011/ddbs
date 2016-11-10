@@ -18,7 +18,8 @@ import javax.annotation.Resource;
  * @date 2016/11/10 22:19
  * @since JDK 1.6
  */
-@Controller("/ihome")
+@Controller
+@RequestMapping("/ihome")
 public class IHomeController {
     @Resource
     private IHomeService iHomeService;
@@ -31,7 +32,7 @@ public class IHomeController {
      * @param searchType ?
      * @return
      */
-    @RequestMapping(value = "/getTypeData",method = RequestMethod.POST)
+    @RequestMapping("/getTypeData")
     @ResponseBody
     public Result getTypeData(@RequestParam(value = "pageNo") int pageNo,@RequestParam("pageSize") int pageSize,
                               @RequestParam("quickSearchType") String quickSearchType,@RequestParam("searchType") String searchType){
