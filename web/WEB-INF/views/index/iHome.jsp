@@ -45,6 +45,7 @@
     <script src="<%=path%>/common/js/jquery.range.js" type="text/javascript"></script>
     <script type="text/javascript" src="<%=path%>/common/IM/js/processingTime.js"></script>
     <script type="text/javascript" src="<%=path%>/common/js/gift.js"></script>
+    <script type="text/javascript" src="<%=path%>/common/js/platformCountryElementMap.js"></script>
     <script type="text/javascript" src="<%=path%>/business/ihome/ihome.js"></script>
 </head>
 

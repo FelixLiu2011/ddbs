@@ -98,10 +98,10 @@ function parseselfbean(selfbean){
             "<div class='jbxx'>"+
             "<span class='ari c-2d57a1 nickfullname name-width'>"+nickname+"</span> <span class='idh'>("+bean.membGagano+")</span>";
         if(bean.memberfinance.mefiLevel==2){
-            selfhtmlstr=selfhtmlstr+ "<span><img src='<%=path%>/common/images/hg.jpg'/></span>";
+            selfhtmlstr=selfhtmlstr+ "<span><img src='"+path+"/common/images/hg.jpg'/></span>";
         }
         if(bean.memberfinance.mefiLevel==3){
-            selfhtmlstr=selfhtmlstr+ "<span><img src='<%=path%>/common/images/vip-hg.jpg'/></span>";
+            selfhtmlstr=selfhtmlstr+ "<span><img src='"+path+"/common/images/vip-hg.jpg'/></span>";
         }
 
         var countryInfo = null!=bean.membCountry?getMemberCountryInfo("en-us",bean.membCountry):"";
@@ -112,7 +112,7 @@ function parseselfbean(selfbean){
             ageStr += countryInfo;
         }
         selfhtmlstr=selfhtmlstr+"<br> <span class='ari hui '>"+ageStr+"</span> </div>"+
-            "<div class='jbxx1'><span class=' inlineblock dz'><img src='<%=path%>/common/images/hart.png'></span> <span class=' eml inlineblock'></span></div>";
+            "<div class='jbxx1'><span class=' inlineblock dz'><img src='"+path+"/common/images/hart.png'></span> <span class=' eml inlineblock'></span></div>";
         if(bean.ifOnline==1){
             selfhtmlstr=selfhtmlstr+ "<div class='zx bdra15'></div>";
         }
@@ -146,7 +146,7 @@ function parseList(list){
             //首页展示
             if(pageNo==1 && '1'<2){
                 if(buyshowflag==0 && i==0){
-                    if(searchType==3) $("#datalists").append("<li class='bdra5'><div class='sw'><img src='<%=path%>/common/images/sw.jpg'></div><div class='wz'><p class=' f12 mb10'>I want to be here to win the attention of millions of people.</p><button class='bdra15 ban f12' onclick='checkBuyShowFirst()'>Learn more</button></div></li>");
+                    if(searchType==3) $("#datalists").append("<li class='bdra5'><div class='sw'><img src='"+path+"/common/images/sw.jpg'></div><div class='wz'><p class=' f12 mb10'>I want to be here to win the attention of millions of people.</p><button class='bdra15 ban f12' onclick='checkBuyShowFirst()'>Learn more</button></div></li>");
                 }else if(buyshowflag==1 && num==i){
                     if(searchType==3) $("#datalists").append(selfhtmlstr);
                 }
@@ -203,10 +203,10 @@ function parseList(list){
             }
 
             if(list[i].mefi_level==2){
-                htmlstr=htmlstr+ "<span><img src='<%=path%>/common/images/hg.jpg'></span>";
+                htmlstr=htmlstr+ "<span><img src='"+path+"/common/images/hg.jpg'></span>";
             }
             if(list[i].mefi_level==3){
-                htmlstr=htmlstr+ "<span><img src='<%=path%>/common/images/vip-hg.jpg'></span>";
+                htmlstr=htmlstr+ "<span><img src='"+path+"/common/images/vip-hg.jpg'></span>";
             }
             var countryInfo = null!=list[i].membCountry?getMemberCountryInfo("en-us",list[i].membCountry):"";
             var ageStr= 0==list[i].membAge?"":list[i].membAge;
@@ -218,7 +218,7 @@ function parseList(list){
             //var ageStr= 0==list[i].membAge?"":list[i].membAge+",";
 
             htmlstr=htmlstr+"<br> <span class='ari hui '>"+ageStr+"</span> </div>"+
-                "<div class='jbxx1'><a onclick='javascript:doLikeSb("+list[i].membGagaid+",this)'><span class=' inlineblock dz'><img src='<%=path%>/common/images/hart.png'></span></a>"+
+                "<div class='jbxx1'><a onclick='javascript:doLikeSb("+list[i].membGagaid+",this)'><span class=' inlineblock dz'><img src='"+path+"/common/images/hart.png'></span></a>"+
                 "<a onclick='javascript:doSendMsg(\""+list[i].membGagaid+";"+list[i].membNickname+"\")'><span class=' eml inlineblock'></span></a></div>";
             if(list[i].ifOnline==1){
                 htmlstr=htmlstr+ "<div class='zx bdra15'></div>";
