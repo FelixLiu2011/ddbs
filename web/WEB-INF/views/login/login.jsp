@@ -649,11 +649,11 @@
         if(username != '' && pwd != ''){
             $("#log-bnt").text($.t("global.logining"));
             LOGGING=true;
-            $.post("http://www.gagahi.com:80/Platform/login",{username:username,password:pwd},function(result){
+            $.post(path + "/platform/login",{userName:username,userPwd:pwd},function(result){
                 //$("span").html(result);
-                if(result.success){
+                if(result.successful){
                     LOGGING=true;
-                    window.location.href = 'http://www.gagahi.com:80' + result.attributes["redirectUrl"];
+                    window.location.href = path + "/index/iHome";
                 }else{
                     LOGGING=false;
                     $("#log-bnt").text($.t("global.login"));
@@ -681,7 +681,7 @@
             $(".zc-txt-name").css("border-color", "#ff9c00");
             emailflag = false;
         }else {
-            $.post(path + "/platform/checkEmail",{membEmail:zcusername},function(result){
+            $.post(path + "/platform/checkEmail",{email:zcusername},function(result){
                 if(!result.successful){
                     $('.yy').css('display', 'block').siblings().css('display', 'none');
                     $(".zc-txt-name").css("border-color", "#ff9c00");

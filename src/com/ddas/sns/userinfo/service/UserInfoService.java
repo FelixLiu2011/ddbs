@@ -84,14 +84,23 @@ public class UserInfoService {
      * @version 1.0
      * @since 1.6
      */
-    public UserInfo loginInProxy(UserInfo userInfo) {
-        if (userInfo == null) {
+    public UserInfo loginInProxy(String userName, String userPwd) {
+        if (StringUtil.isEmpty(userName) || StringUtil.isEmpty(userPwd)) {
             return null;
         }
         UserInfoCriteria example = new UserInfoCriteria();
         UserInfoCriteria.Criteria criteria = example.createCriteria();
-       // criteria.and(userInfo.getUserName()).andUserPwdEqualTo(userInfo.getUserPwd());
+        criteria.andMembEmailEqualTo(userName);
+        criteria.andMembPwdEqualTo(userPwd);
         List<UserInfo> userInfos = userInfoMapper.selectByExample(example);
+        if (userInfos != null && userInfos.size() == 1) {//有且只有一条记录
+            return userInfos.get(0);
+        }
+        UserInfoCriteria example1 = new UserInfoCriteria();
+        UserInfoCriteria.Criteria criteria1 = example1.createCriteria();
+        criteria1.andMembNicknameEqualTo(userName);
+        criteria1.andMembPwdEqualTo(userPwd);
+        userInfos = userInfoMapper.selectByExample(example1);
         if (userInfos != null && userInfos.size() == 1) {//有且只有一条记录
             return userInfos.get(0);
         }

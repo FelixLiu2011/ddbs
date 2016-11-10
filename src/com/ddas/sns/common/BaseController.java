@@ -165,4 +165,19 @@ public class BaseController {
         LOGGER.error(e.getMessage(), e);
     }
 
+    /**
+     *把当前登陆的用户信息放到session，调用此方法会重置session中的用户信息，除掉如密码隐私信息
+     * 适用于当更新了用户的某些信息的时候重置session中的用户信息
+     * @param request
+     *@return com.ddas.sns.userinfo.domain.UserInfo
+     *@author shaojx
+     *@date 2016/7/10 11:19
+     *@version 1.0
+     *@since 1.6
+     */
+    public void setLoginUserToSession(UserInfo userInfo, HttpServletRequest request){
+        userInfo.setMembPwd(null);
+        request.getSession(true).setAttribute("userInfo", userInfo);
+    }
+
 }

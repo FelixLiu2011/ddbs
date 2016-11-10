@@ -25,7 +25,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * ClassName:	PlatFormController
@@ -133,6 +135,7 @@ public class PlatFormController extends BaseController {
     public Msg regMember(String sex, String language, String uuid) {
         UserInfo userInfo = userInfoService.fetchUserInfoByUserId(uuid);
         userInfo.setMembSex(sex);
+        userInfo.setMembLanguage(language);
         // TODO: 2016/11/7 设置语言
         userInfoService.saveUserInfo(userInfo);
         Msg msg = new Msg();
@@ -216,6 +219,45 @@ public class PlatFormController extends BaseController {
         msg.setSuccessful(success);
 
         return msg;
+    }
+
+    @RequestMapping("/login")
+    @ResponseBody
+    public Msg login(String userName, String userPwd, HttpServletRequest request, HttpServletResponse response) {
+        UserInfo userInfoFromDb = null;
+        try {
+            userInfoFromDb = userInfoService.loginInProxy(userName, userPwd);
+        } catch (Exception e) {
+            LOGGER.error("系统出现错误!",e);
+            Msg msg = new Msg();
+            msg.setSuccessful(false);
+            String msgByKey = SpringContextUtil.getMsgByKey("login.sysError", getLocalObject(request));
+            msg.setMsg(msgByKey);
+            return msg;
+        }
+
+        boolean loginInResult = userInfoFromDb != null;
+        if (loginInResult) {
+            Cookie userNameCookie = new Cookie("userName", userName);
+            Cookie userPwdCookie = new Cookie("userPwd", userPwd);
+            //set cookie for expire 7days
+            userNameCookie.setMaxAge(60*60*24*7);
+            userPwdCookie.setMaxAge(60*60*24*7);
+
+            response.addCookie(userNameCookie);
+            response.addCookie(userPwdCookie);
+
+            setLoginUserToSession(userInfoFromDb, request);
+            Msg msg = new Msg();
+            msg.setMsg("success");
+            msg.setSuccessful(true);
+            return msg;
+        } else {
+            Msg msg = new Msg();
+            msg.setSuccessful(false);
+            msg.setMsg(SpringContextUtil.getMsgByKey("login.errorUserNameOrPwd", getLocalObject(request)));
+            return msg;
+        }
     }
 
 
