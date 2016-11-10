@@ -23,6 +23,8 @@ public class Page {
     private int totalCount;
     /**当前分页的数据*/
     private List<?> dataList;
+    /**当前页，这个属性与currentPage相同，为了与页面上的内容兼容增加此属性*/
+    private int pageNo;
     /**分页的一些查询条件*/
     private Map<String, Object> condition;
 
@@ -99,5 +101,14 @@ public class Page {
 
     public void setExtra(Map<String, Object> extra) {
         this.extra = extra;
+    }
+
+    public int getPageNo() {
+        return pageNo;
+    }
+
+    public void setPageNo(int pageNo) {
+        this.pageNo = pageNo;
+        this.currentPage=pageNo;
     }
 }

@@ -1,0 +1,679 @@
+<%--<script type="text/javascript">
+
+    function closeUp(){
+        //$(".statement").css("display","none");
+        //$(".mid").css("margin-top","66px");
+        //$(".mid").css("top","65px");
+        //$(".searchTip div.step1").css("top","100px");
+        //$(".searchTip div.step2").css("top","200px");
+        //$(".searchTip div.step3").css("top","78px");
+        //$.cookie('close_flag','1',{ path: '/' });
+    }
+    $(function(){
+        //$(".statement").slideDown();
+        //$(".mid").css("margin-top","171px");
+        //$(".mid").css("top","65px");
+        //$(".searchTip div.step1").css("top","205px");
+        //$(".searchTip div.step2").css("top","505px");
+        //$(".searchTip div.step3").css("top","183px");
+        //关闭
+        /*
+         var close_flag=$.cookie('close_flag');
+         if(close_flag==1){
+         closeUp();
+         }*/
+        //closeUp();
+        //<a class="btn btn6 sayout">'+$.t("tucao.tc")+'</a><br/><a class="btn btn7" href="https://old.gagahi.com" >'+$.t("tucao.back")+'</a>
+        $.cookie('close_flag','1',{ path: '/' });
+        $(".fhlb").click(function(){
+            layer.open({
+                skin: 'demo-tc',
+                type: 1,
+                title: false,
+                area: ['521px','580px'],
+                success: function(layero, index){
+                    $(".sayout").click(function(){
+                        $("#hiddenIM").find("[data-gagaID=-1]").click();
+                        layer.close(index)
+                    })
+                },
+                content: '<h4 class="back-old-title">' + $.t('ggnr.title') + '</h4><p>' + $.t('fhlb.nr1') + '</p><p>' + $.t('fhlb.nr2') + '</p><a href="http://old.gagahi.com/" class="back-old-btn">' + $.t('fhlb.nr') + '</a>',
+                yes: function(index, layero) {
+                    //console.log(index+'||'+layero)
+
+                    layer.close(index)
+                },
+                cancel: function(index) {}
+            });
+        });
+        /*新版说明*/
+        $(".xbsm").click(function(){
+            $(".coverall1").css("display","block");
+        });
+        $(".xbtc .close").click(function(){
+            $(".coverall1").css("display","none");
+        })
+        Qfast.add('widgets', { path: "<%=path%>/common/js/terminator2.2.min.js", type: "js", requires: ['fx'] });
+        Qfast(false, 'widgets', function () {
+            K.tabs({
+                id: 'fsD1',   //焦点图包裹id
+                conId: "D1pic1",  //** 大图域包裹id
+                tabId:"D1fBt",
+                tabTn:"a",
+                conCn: '.fcon', //** 大图域配置class
+                auto: 0,   //自动播放 1或0
+                effect: 'fade',   //效果配置
+                eType: 'click', //** 鼠标事件
+                pageBt:true,//是否有按钮切换页码
+                bns: ['.prev', '.next'],//** 前后按钮配置class
+                interval: 3000  //** 停顿时间
+            })
+        }) ;
+        $(".xbtc").css("left",($(window).width()-$(".xbtc").width())/2+'px');
+    })
+</script>
+<link type="text/css" href="<%=path%>/common/IM/css/im.css" rel="stylesheet" />
+<link type="text/css" href="<%=path%>/common/IM/css/qqFace.css" rel="stylesheet" />
+<link type="text/css" href="<%=path%>/common/IM/css/webuploader.css" rel="stylesheet" />
+<script type="text/javascript">
+    var staticCtx="common/IM/";
+    var globalStaticCtx="http://static.gagahi.com/";
+    var ctx="http://www.gagahi.com:80";
+    var qiniuImgURL="http://images.gagahi.com/";
+    var imUrl="http://webim.gagahi.com/";
+    var token="db2ec157e2204e109c8342979ad0b1bc";
+    var sendGender = "1";//1男2女
+    var sendHeadImgUrl = "images/default/male.png";//小头像
+    var myNickname = "Sampson";//自己昵称
+    var myLanguage = "en-us";
+    var myId = "2935154";//我的ID
+    //1：普通会员，2：高级会员，3：VIP会员
+    var myMemberGrade = "1";//会员等级
+
+    if (!staticCtx) {
+        staticCtx = "";//静态资源路径
+    }
+    if (!ctx) {
+        ctx = "";//后台请求路径
+    }
+    if (!qiniuImgURL) {
+        qiniuImgURL = "";//七牛图片路径
+    }
+</script>
+<div id="IM">
+    <div id="hiddenIM">
+        <div id="hiddenLeftline"></div>
+        <div class="hiddenTop">
+            <span id="js-showBtn" class="showBtn showHideBtn"></span>
+            <div id="js-newsArrive" class="newsArrive">
+                News
+            </div>
+        </div>
+        <div id="js-hiddenScrollBar" class="hiddenScrollContainer">
+            <ul class="hiddenContactsCon">
+                <li class="content singleNum" data-signid="people" data-gagaid="-1" data-remarkname="GaGa Customer Service" data-nickname="GaGa Customer Service" data-shield="0" data-online="2" data-language="zh">
+                    <div class="headDiv">
+                        <img class="headImg" src="<%=path%>/common/images/gagaService.png">
+                        <img class="headLine" src="<%=path%>/common/IM/img/On-line.png" style="display:none">
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div id="showIM">
+        <div class="showTop">
+            <span id="js-hideBtn" class="hideBtn showHideBtn"></span>
+        </div>
+        <div class="searchDiv">
+            <input type="text" class="searchInput" id="js-searchInput"
+                   value="Search for contacts"><i
+                id="js-searchBtn" class="searchBtn"></i> <i id="js-SearchCloseBtn"
+                                                            class="searchCloseBtn"></i>
+
+        </div>
+        <div class="showTab">
+			<span class="js-contacts contacts">Contacts
+                <!-- 联系人 --></span> <span class="js-group group">Groups
+            <!-- 群 --></span>
+        </div>
+        <div class="clear"></div>
+        <div id="js-contactsScrollBar">
+            <div class="contactsCon">
+                <!--  最近联系人-----start--------->
+                <div id="recentlyGroup">
+                    <h6 class="showTitle FoldTitle openTitle">
+                        <i class="foldingBtn js-foldingBtn"></i>
+                        <p>
+							<span>Recent chats
+                                <!-- 最近聊天 --></span><span class="recentlyNum">12</span>
+                        </p>
+                    </h6>
+                    <div class="clear"></div>
+                    <ul class="recentlyContainer FoldContainer">
+                        <li class="showContent" data-signid="people" data-gagaid="-1" data-remarkname="GaGa Customer Service" data-nickname="GaGa Customer Service" data-shield="0" data-online="2" data-language="zh">
+                            <div class="showHead">
+                                <img class="headImg" src="<%=path%>/common/images/gagaService.png">
+                                <img class="headLine" src="<%=path%>/common/IM/img/On-line.png" style="display:none">
+                            </div>
+                            <span class="showRemarkName">GaGa Customer Service</span>
+                            <span class="newsNum newsNumSingle" style="display:none">0</span></li>
+                    </ul>
+                </div>
+                <!-- 在线联系人-->
+                <div id="onLineGroup">
+                    <h6 class="onLineTitle FoldTitle openTitle">
+                        <i class="foldingBtn js-foldingBtn"></i>
+                        <p>
+                            <span>Online Users</span> <span class="onLineNum">0</span>
+                        </p>
+                    </h6>
+                    <ul class="onLineContainer FoldContainer">
+                    </ul>
+                </div>
+                <!--  我的好友-----start--------->
+                <div id="friendGroup">
+                    <h6 class="friendTitle FoldTitle openTitle">
+                        <i class="foldingBtn js-foldingBtn"></i>
+                        <p>
+							<span>My friends
+                                <!-- 我的好友 --></span><span class="friendNum">12</span><i
+                                class="separator">/</i><span class="friendNumTotal">24</span>
+                        </p>
+                    </h6>
+                    <ul class="friendContainer FoldContainer">
+                        <li class="showContent" data-signid="people" data-gagaid="-1" data-remarkname="GaGa Customer Service" data-nickname="GaGa Customer Service" data-shield="0" data-online="2" data-language="zh">
+                            <div class="showHead">
+                                <img class="headImg" src="<%=path%>/common/images/gagaService.png">
+                                <img class="headLine" src="<%=path%>/common/IM/img/On-line.png" style="display:none">
+                            </div>
+                            <span class="showRemarkName">GaGa Customer Service</span>
+                            <span class="newsNum newsNumSingle" style="display:none">0</span>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+            </div>
+        </div>
+        <!------ 群组-----start--------->
+        <div id="groupGroup" class="js-groupGroup">
+            <div id="js-createGroup" class="createGroup">
+				<span>Create Group
+                    <!-- 创建群聊 -->
+            </div>
+            <div id="js-groupScrollBar">
+                <div class="groupCon">
+                    <div class="groupContent">
+                        <h6 class="groupTitle FoldTitle openTitle">
+                            <i class="foldingBtn js-foldingBtn"></i>
+                            <p>
+								<span>Groups
+                                    <!-- 群 --></span><span class="groupNum">6</span>
+                            </p>
+                        </h6>
+                        <div class="clear"></div>
+                        <ul class="groupContainer FoldContainer">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-----------搜索结果----------->
+        <div id="js-searchResultsGroup" class="searchResultsGroup">
+            <div id="searchrecentlyGroup">
+                <h6 class="recentlyTitle FoldTitle openTitle">
+                    <i class="foldingBtn js-foldingBtn"></i>
+                    <p>
+						<span>Recent chats
+                            <!-- 最近聊天 --></span>
+                    </p>
+                </h6>
+                <ul class="recentlyContainer FoldContainer"></ul>
+            </div>
+            <div id="searchFriendGroup">
+                <h6 class="friendTitle FoldTitle openTitle">
+                    <i class="foldingBtn js-foldingBtn"></i>
+                    <p>
+						<span>My friends
+                            <!-- 我的好友 --></span>
+                    </p>
+                </h6>
+                <ul class="friendContainer FoldContainer"></ul>
+            </div>
+            <div id="searchgroupGroup">
+                <h6 class="groupTitle FoldTitle openTitle">
+                    <i class="foldingBtn js-foldingBtn"></i>
+                    <p>
+						<span>Groups
+                            <!-- 群 --></span>
+                    </p>
+                </h6>
+                <ul class="groupContainer FoldContainer"></ul>
+            </div>
+            <div class="searchResultNothing">
+                <i class="searchResultNothingImg"></i><span
+                    class="searchResultNothingTXT">No results
+                <!-- 无搜索结果 --></span>
+            </div>
+        </div>
+
+    </div>
+    <div id="IMgagaService">
+        <img src="<%=path%>/common/IM/img/gagaService.png">
+        <div class="gagaServiceTXT">GaGa Customer Service<!-- 嘎嘎客服 --></div>
+        <span class="close-gagaservice"></span>
+    </div>
+
+</div>
+
+<div id="chatBox">
+    <div  id="chatBoxUpper" class="chatBoxUpper">
+        <div class="upperLeft">
+            All
+            <!-- 全部  -->
+            (<span id="peopleNum">0</span>)
+        </div>
+        <div class="upperRight">
+            <i class="chatHeadimgIng"> <img class="chatHeadHeadIng"
+                                            src="<%=path%>/common/IM/img/head.png" />
+            </i>
+            <div class=" modifyContent">
+                <p class="chatRemarkNameIng"></p>
+                <i class="modifyBtn js-modifyBtn"></i>
+            </div>
+            <div class=" modifyContainer">
+                <input type="text" class="modifyRemarkName" value="" /> <i
+                    class="modifyOK"></i>
+            </div>
+
+        </div>
+        <div class="chatUpperBtn">
+
+			<span class="createGroupBtn">Create group
+                <!-- 建群 --></span> <span class="inviteFriends">Invite friends
+            <!-- 邀请好友 --></span> <span class="functionBtn"> <i class="functionI"></i>
+				<ul class="functionMore">
+                    <li class="functionBack">Quit group
+                        <!-- 退群 --></li>
+                    <li class="functionRelationState">Delete friend
+                        <!-- 删除好友 --></li>
+                    <li class="functionReport">Report
+                        <!-- 举报 --></li>
+                    <li class="functionShieldState">Shield
+                        <!-- 屏蔽 --></li>
+                </ul>
+			</span> <i id="js-closedChatBox" class="closedChatBox"></i>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="chatBoxLower">
+        <ul class="lowerLeft">
+
+        </ul>
+        <div class="lowerRight">
+            <div class="lowerRightBottom">
+                <div class="normal">
+                    <div class="upgradeTips">
+                        <p class="upgradeTipsCon">
+                            <span class="upgradeTipsTXT">System prompt<!-- 系统提示 -->：</span>
+                            You have run out of the number of chat today, continue to chat？ Upgrade<!-- 你今日聊天条数已用完，继续聊天 点此升级 --></p>
+                        <a href="<%=path%>/pay/upgradeMember"><span class="upgradeTipsBtn">Upgrade<!-- 点击升级 --></span></a>
+                        <div class="upgradeTipsBG"></div>
+                    </div>
+                    <div class="sendContentCon">
+						<textarea id="inputBox" class="inputBox">
+							Press enter to send messages
+                            <!-- 按回车键发送消息 -->
+						</textarea>
+                    </div>
+                    <div class="FunBtncontainer">
+                        <div class="fl">
+                            <div class="languageOptions">
+                                <div class="languageSpan js-receiveOptions">
+                                    <div class="translateTXT">
+										<span>translate
+                                            <!-- 翻译 -->：
+                                    </div>
+                                    <div class="txt">
+                                        <span class="language" langs-lang="en">English</span> <i
+                                            class="Triangle"></i>
+                                    </div>
+                                </div>
+                                <ul class="languageUl">
+                                    <li class="langLi noTranslation" langs-lang="">
+                                        No translation
+                                    </li>
+                                    <!-- 不翻译 -->
+
+                                    <li class="langLi" langs-lang="en">English</li>
+
+                                    <li class="langLi" langs-lang="jp">日本語</li>
+
+                                    <li class="langLi" langs-lang="ru">русский</li>
+
+                                    <li class="langLi" langs-lang="spa">Español</li>
+
+                                    <li class="langLi" langs-lang="zh">简体中文</li>
+
+                                    <li class="langLi" langs-lang="cht">繁體中文</li>
+
+                                    <li class="langLi" langs-lang="kor">한국어</li>
+
+                                    <li class="langLi" langs-lang="de">Deutsch</li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="fr">
+                            <!-- <input id="Im_data" type="hidden"> -->
+                            <ul class="FunBtnUl">
+                                <li class="qqFaceBtn" data-Explain="Select emoticons"></li>
+                                <li class="imgBtn js_imgBtn" data-Explain="Send picture"></li>
+                                <li class="giftBtn" data-explain="Send gift"></li>
+                                <li class="redBtn" data-Explain="Send red packet"></li>
+                                <!--<li class="giftBtn"></li>
+                                  <li class="redBtn"></li>-->
+                                <li class="HistoricalRecords" data-Explain="Show chat record"></li>
+                                <li class="HistoricalRecordsClosed" data-Explain="Show chat record"></li>
+                                <li class="sendBtn">Send
+                                    <!-- 发送 --></li>
+                            </ul>
+                            <!-- <div id="upLoad_box" style="display:none"></div> -->
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="service hide">
+                    <div class="sendContentCon">
+						<textarea id="inputBox1" class="inputBox">
+							Press enter to send messages
+                            <!-- 按回车键发送消息 -->
+						</textarea>
+                    </div>
+                    <div class="FunBtncontainer">
+                        <div class="fl">
+                            <div class="languageOptions">
+                                <div class="languageSpan js-receiveOptions">
+                                    <div class="translateTXT">
+										<span>translate
+                                            <!-- 翻译 -->：
+                                    </div>
+                                    <div class="txt">
+                                        <span class="language" langs-lang="en">English</span> <i
+                                            class="Triangle"></i>
+                                    </div>
+                                </div>
+                                <ul class="languageUl">
+                                    <li class="langLi noTranslation" langs-lang="">
+                                        No translation
+                                    </li>
+                                    <!-- 不翻译 -->
+
+                                    <li class="langLi" langs-lang="en">English</li>
+
+                                    <li class="langLi" langs-lang="jp">日本語</li>
+
+                                    <li class="langLi" langs-lang="ru">русский</li>
+
+                                    <li class="langLi" langs-lang="spa">Español</li>
+
+                                    <li class="langLi" langs-lang="zh">简体中文</li>
+
+                                    <li class="langLi" langs-lang="cht">繁體中文</li>
+
+                                    <li class="langLi" langs-lang="kor">한국어</li>
+
+                                    <li class="langLi" langs-lang="de">Deutsch</li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="fr">
+                            <!-- <input id="Im_data" type="hidden"> -->
+                            <ul class="FunBtnUl">
+                                <li class="qqFaceBtn" data-Explain="Select emoticons"></li>
+                                <li class="imgBtn js_imgBtn" data-Explain="Send picture"></li>
+                                <!--<li class="giftBtn"></li>
+                                  <li class="redBtn"></li>-->
+                                <li class="HistoricalRecords" data-Explain="Show chat record"></li>
+                                <li class="HistoricalRecordsClosed" data-Explain="Show chat record"></li>
+                                <li class="sendBtn">Send
+                                    <!-- 发送 --></li>
+                            </ul>
+                            <!-- <div id="upLoad_box" style="display:none"></div> -->
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chatGroupMembers">
+            <p class="chatGroupTitle">
+                Group members
+                <!-- 群成员 -->
+                （<span class="chatGroupNum">0</span>/<span class="chatGroupTotalNum">0</span>）
+            </p>
+            <div id="GroupMembScrollBar">
+                <ul class="GroupMembContainer"></ul>
+            </div>
+        </div>
+        <div class="chatHistorical">
+            <h6>
+                Chat record
+                <!-- 聊天记录 -->
+                <i class="historicalClosed"></i>
+            </h6>
+            <div class="historicalContainer">
+                <div class="textCenter marT5 IMnoChat" style="display:none">No chat record.<!-- 暂无聊天记录 --></div>
+                <div class="historicalCon"></div>
+            </div>
+            <div class="historicalBottom">
+                <i class="historicalDelete"></i>
+                <ul class="historicalFun">
+                    <li class="firstPage"></li>
+                    <li class="previousPage"></li>
+                    <li class="nextPage"></li>
+                    <li class="lastPage"></li>
+                </ul>
+            </div>
+        </div>
+        <div></div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div id="PopupCreateGroup">
+    <h2 class="CreateGroupTitle" id="CreateGroupTitle">
+		<span>Create Group
+            <!-- 创建群聊 -->
+    </h2>
+    <div class="CreateGroupLeft">
+        <div class="searchDiv">
+            <input type="text" class="searchInput"
+                   value="Search for contacts<!-- 搜索联系人 -->" />
+            <i class="searchBtn"></i> <i class="searchCloseBtn"></i>
+        </div>
+        <div class="CreateGroupLeftScrollBar">
+            <div class="CreateGroupLeftCon">
+                <!--  最近联系人-----start--------->
+                <div id="CreateGroupRecently">
+                    <h6 class="CreateGroupRecentlyTitle FoldTitle openTitle">
+                        <i class="CreateGroupFoldingBtn "></i>
+                        <p>
+							<span>Recent chats
+                                <!-- 最近聊天 --></span><span class="recentlyNum">12</span>
+                        </p>
+                    </h6>
+                    <div class="clear"></div>
+                    <ul class="CreateGroupRecentlyContainer FoldContainer">
+                    </ul>
+                </div>
+                <!--  我的好友-----start--------->
+                <div id="CreateGroupFriend">
+                    <h6 class="CreateGroupFriendTitle FoldTitle openTitle">
+                        <i class="CreateGroupFoldingBtn "></i>
+                        <p>
+							<span>My friends
+                                <!-- 我的好友 --></span><span class="friendNum">12</span><i
+                                class="separator">/</i><span class="friendNumTotal">24</span>
+                        </p>
+                    </h6>
+                    <ul class="CreateGroupFriendContainer FoldContainer">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-----------搜索结果----------->
+        <div id="CreateGroupSearchResults">
+            <div id="CreateGroupRecentlySearch">
+                <h6 class="recentlyTitle FoldTitle openTitle">
+                    <i class="foldingBtn js-foldingBtn"></i>
+                    <p>
+						<span>Recent chats
+                            <!-- 最近聊天 --></span>
+                    </p>
+                </h6>
+                <ul class="recentlyContainer FoldContainer"></ul>
+            </div>
+            <div id="CreateGroupFriendSearch">
+                <h6 class="friendTitle FoldTitle openTitle">
+                    <i class="foldingBtn js-foldingBtn"></i>
+                    <p>
+						<span>My friends
+                            <!-- 我的好友 --></span>
+                    </p>
+                </h6>
+                <ul class="friendContainer FoldContainer"></ul>
+            </div>
+            <div class="searchResultNothing">
+                <i class="searchResultNothingImg"></i> <span
+                    class="searchResultNothingTXT">No results
+                <!-- 无搜索结果 --></span>
+            </div>
+        </div>
+    </div>
+    <div class="CreateGroupCenter"></div>
+    <div class="CreateGroupRight">
+        <h6>
+            Selected contacts
+            <!-- 已选联系人 -->
+            <span class="PeopleNum">0</span><span>/</span><span>50</span>
+        </h6>
+        <div class="CreateGroupRightScrollBar">
+            <ul class="SelectedPeople"></ul>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="CreateGroupButtom">
+		<span class="CreateGroupOK">Yes
+            <!-- 确定 --></span> <span class="CreateGroupCncel">No
+        <!-- 取消 --></span>
+    </div>
+</div>
+
+<div id="cacheDiv"></div>
+
+<!-- 商品列表 -->
+<div class="giftCon" style="display: none;">
+    <div class="gift-top">
+        <div class="fl">
+            <span class="mr15 f16 gift-chose pb5" id="gift">Virtual gifts</span>
+
+        </div>
+        <div class="fr"><a href="<%=path%>/mall/giftReal/shopHome" class="c-2d57a1 pb5">Go to the mall.</a></div>
+        <div class="clear"></div>
+    </div>
+    <div class="giftcont" >
+        <ul class="gift1 giftcont1" onscroll="findgiftlist(this)" >
+            <div class="clear"></div>
+        </ul>
+        <ul class="trans1 giftcont1" style="display:none" onscroll="findTranspackage(this)">
+        </ul>
+    </div>
+</div>
+
+<!--im红包-->
+<div id="RedEnvelopeTCCon" style="display:none">
+    <div>
+        <div class="RedEnvelopeTCLeft">
+            <div class="marT25">Gold:<!-- 金币 --></div>
+            <div class="marT100">Message:<!-- 留言 --></div>
+        </div>
+        <div class="RedEnvelopeTCRight">
+            <p class="tips">Insufficient gold<!-- 金币不足 -->，Please recharge first.<!-- 请先充值 --></p>
+            <input type="text" class="moneyTXT" value="Please enter 1-200 gold(s), integer only." onkeyup="this.value=this.value.replace(/\D/g,'')"
+                   onafterpaste="this.value=this.value.replace(/\D/g,'')"/>
+            <div class="Remind">
+                <i class="RemindIcon"></i>
+                <div class="RemindContent">
+                    <div class="triangle-left"></div>
+                    <div class="triangle-bg"></div>
+                    <span>Red packet rules<!-- 红包规则 --></span> 1、Each red packet contains 1-200 gold(s), integer only.<!-- 每个红包金额为1-200金币，仅限整数； -->
+                    <br> 2、You can use the gold balance to send a red packet, if the gold is insufficient, please recharge first.<!-- 发红包可使用账户余额中的金币，如账户余额不足，请先充值再发送； -->
+                    <br> 3、If the red packet is received, the gold can be in the recipient account, it can be used to consume on GaGaHi.<!-- 红包金币被领取后，直接进入领取人账户余额，可用于GaGaHi网站消费。 -->
+                    <br> 4、Once the red packet is sent, it can't be returned, we will reserve for you until the recipient take it.<!-- 红包一旦发出将不予退回，一直保留到对方领取。 -->
+                    <br>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="moneyDiv cleard">Available gold:<!-- 账户可用金币 -->： <i class="money"></i><span class="moneyNum"> 0 </span><br/><a class="toRecharge" href="<%=path%>/pay/recharge">Go to recharge!<!-- 去充值 --></a></div>
+            <div class="textMSGDiv">
+                <textarea class="textMSG">Your blessings</textarea>
+                <div class="wordsNumDiv"><span class="wordsNum">0</span>/500</div>
+            </div>
+        </div>
+        <div class="cleard"></div>
+    </div>
+</div>
+
+<div class="sendRedEnvelopeOpen RedEnvelopeOpen im" style="display:none">
+    <div class="RedEnvelopeOpenContainer">
+        <div class="RedEnvelopeOpenTop">
+            <i class="RedEnvelopeOpenCloseBtn"></i>
+            <p class="titleName"><span class="name"></span>'s red packet</p>
+            <img class="headImg" src="">
+        </div>
+        <div class="RedEnvelopeOpenMiddle">
+            <div class="MoneyDiv">
+                <span class="MoneyCount"></span><i class="MoneyImg"></i>
+            </div>
+            <p class="RedEnvelopeContent"></p>
+            <div class="getRedEnvelopeBtn"></div>
+            <p class="RedEnvelopeExplain"></p>
+        </div>
+        <div class="RedEnvelopeOpenBottom"></div>
+    </div>
+    <div class="RedEnvelopeOpenBig"></div>
+</div>
+<div id="RedExplain" style="display:none">
+    <div class="RedExplain">
+        <i class="RemindIcon"></i>
+        <div class="RemindContent">
+            <div class="triangle-left"></div>
+            <div class="triangle-bg"></div>
+
+            Hongbao are gifts of cash in red envelopes. They are given to children by older family members on Chinese New Year as lucky gifts for the year ahead. Actually, the amount of money in hongbao usually come in even numbers like 600 and 800, as even numbers are supposed to be lucky in Chinese culture. Today, many people even see hongbao as a sugarcoated way of socializing.
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="<%=path%>/common/IM/js/ImUploadIMG.js"></script>
+<script type="text/javascript" src="<%=path%>/common/IM/js/jquery.qqFace.js"></script>
+<script type="text/javascript" src="<%=path%>/common/IM/js/IMAjax.js"></script>
+<script type="text/javascript" src="<%=path%>/common/IM/js/chatBox.js"></script>
+
+<link type="text/css" href="<%=path%>/common/IM/css/qqFace.css" rel="stylesheet">
+<link href="<%=path%>/common/IM/css/webuploader.css" rel="stylesheet" type="text/css">
+<link href="<%=path%>/common/css/privateLetter.css" rel="stylesheet" type="text/css">
+
+<script src="<%=path%>/common/js/platformCountryElementMap.js"></script>
+<script src="<%=path%>/common/js/jquery.page.js"></script>
+&lt;%&ndash;<script type="text/javascript" src="<%=path%>/common/js/laytpl.js"></script>&ndash;%&gt;
+&lt;%&ndash;<script type="text/javascript" src="<%=path%>/common/js/webuploader.js"></script>&ndash;%&gt;
+&lt;%&ndash;<script type="text/javascript" src="<%=path%>/common/js/gift.js"></script>&ndash;%&gt;
+&lt;%&ndash;<script type="text/javascript" src="<%=path%>/common/IM/js/jquery.qqFace.js"></script>&ndash;%&gt;
+<script type="text/javascript" src="<%=path%>/common/js/popPrivateLetter.js"></script>
+<script type="text/javascript" src="<%=path%>/common/js/jquery.highlight.js"></script>--%>

@@ -52,7 +52,20 @@
         "addFirendWord1": "可能认识的人",
         "selectCountry":"选择国家",
         "nomoremsg": "没有新消息！",
-        "actionDetail": "活动详情"
+        "actionDetail": "活动详情",
+        "uploadPhotoTip":"请上传您的靓照",
+        "profileTip":"完善资料，让朋友们更快了解你",
+        "directLetter":"私信",
+        "likeMe": "喜欢我的人",
+        "meLike": "我喜欢的人",
+        "likeEachOther": "互相喜欢",
+        "visitor": "访客",
+        "encounter":"偶遇",
+        "feeds":"动态",
+        "mall":"商城",
+        "peopleNums":"已有 25,320,233 全球各国用户",
+        "invite_friend":"邀请好友",
+        "recommend":"推荐"
     },
     "im": {
         "searchContacts": "搜索联系人",

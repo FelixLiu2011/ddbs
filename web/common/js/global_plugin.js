@@ -197,7 +197,7 @@ var facePath = staticUrl + '/IM/img/qqFace/';
                 $(".partialLoader", this).remove();
             } else {
                 $(".partialLoader", this).remove();
-                this.append('<div class="partialLoader" id="partialLoader"> <img src="' + staticUrl + '/images/load2.gif"></div>');
+                this.append('<div class="partialLoader" id="partialLoader"> <img src="' + staticUrl + '/common/images/load2.gif"></div>');
                 $(".partialLoader", this).width(this.width()).height(this.height());
                 var mtop = ($(".partialLoader", this).height() - $(".partialLoader img", this).height()) / 2;
                 $(".partialLoader img", this).css({
