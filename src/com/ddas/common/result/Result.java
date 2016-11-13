@@ -9,7 +9,7 @@ package com.ddas.common.result;
  * @since JDK 1.6
  */
 public class Result {
-    private boolean success;
+    private boolean success=true;
     private String msg;
     private Object object;
     private Attachment attributes;

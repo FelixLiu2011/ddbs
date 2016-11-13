@@ -18,7 +18,7 @@ public class Page {
     /**当前分页(index)*/
     private int currentPage;
     /**总共的分页数*/
-    private  int totalPages;
+    private  int totalPage;
     /**总共的记录数**/
     private int totalCount;
     /**当前分页的数据*/
@@ -47,12 +47,12 @@ public class Page {
         this.currentPage = currentPage;
     }
 
-    public int getTotalPages() {
-        return totalPages;
+    public int getTotalPage() {
+        return totalPage;
     }
 
-    public void setTotalPages(int totalPages) {
-        this.totalPages = totalPages;
+    public void setTotalPage(int totalPage) {
+        this.totalPage = totalPage;
     }
 
     public int getTotalCount() {
@@ -64,7 +64,7 @@ public class Page {
         //设置总页数
         int left=this.totalCount%this.pageSize;
         int divid=this.totalCount/this.pageSize;
-        setTotalPages(left==0?divid:(divid+1));
+        setTotalPage(left==0?divid:(divid+1));
     }
 
     public List<?> getDataList() {

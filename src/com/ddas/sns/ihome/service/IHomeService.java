@@ -30,11 +30,13 @@ public class IHomeService {
         page.setPageNo(pageNo);
         page.setPageSize(pageSize);
         UserInfoCriteria example = new UserInfoCriteria();
+        int countByExample = userInfoMapper.countByExample(example);
         example.setLimitStart(page.getPageStart());
         example.setLimitEnd(pageSize);
         List<UserInfo> userInfos = userInfoMapper.selectByExample(example);
         Attachment attachment=new Attachment();
         attachment.setData(userInfos);
+        page.setTotalCount(countByExample);
         attachment.setPage(page);
         Result result=new Result();
         result.setAttributes(attachment);

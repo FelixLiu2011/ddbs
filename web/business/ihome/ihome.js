@@ -228,22 +228,13 @@ function parseList(list){
         }
     }
 
-
-
     $("#datalists").append("<div class='clear'></div>");
 
-
-
-
-
-
-
-
     //记住点赞状态
-    $.post("http://www.gagahi.com:80/Member/Like/findIfIloveList",{"lovedIdList":lovedListStr},
+    $.post(path+"/like/findIfIloveList",{"lovedIdList":lovedListStr},
         function(data,textStatus){
             if(data.success){
-                jsonObj=JSON.parse(data.obj);
+                jsonObj=data.obj;
                 console.log(jsonObj)
                 //显示点赞和私信
                 $("#datalists li").each(
@@ -275,8 +266,15 @@ function parseList(list){
 
 //喜欢某人
 function doLikeSb(id,that){
-    $.post("http://www.gagahi.com:80/Member/Like/iliketoonly",
-        {'mid':id},
+    var data={};
+    data["mid"]=id;
+    if(jsonObj[id]==1){//如果为1，则说明为取消关注
+        data["flag"]="del";
+    }else{//为关注
+
+    }
+    $.post(path+"/like/iliketoonly",
+        data,
         function(data,textStatus){
             // alert(data.success);
             if(data.success){
@@ -294,14 +292,76 @@ function doLikeSb(id,that){
                 $(ab).css("background-position","0 0")
                 jsonObj[id]=0;
             }
-
         })
-
 }
 
+function doSendMsg(idname){
+    var str=idname.split(";");
+    var mid = str[0];
+    var gettpl = Zoneyet.template($('#temp_home_popPrivate').html()).render({});
+    $.post(path+"/member/getMemberId",{"mid":mid},function(reg){
+        //console.log(reg);
+        // console.log("dd");
+        var receiveLanguage = reg.obj.membLanguage;
 
+        layer.open({
+            area: '600px',
+            skin: 'giftCon1',
+            title:$.t("Letter.sendPri"),
+            content: gettpl,
+            type: 1,
+            //title: false,
+            // btn: [],
+            zIndex:19890305,
+            success: function(layero, index){
+                if(sendGender =="1"){
+                    switch(receiveLanguage){
+                        case "en-us":
+                            $(".giftCon1 .language").attr("langs-lang", "en").text("English");
+                            break;
+                        case "zh-cn":
+                            $(".giftCon1 .language").attr("langs-lang", "zh").text("简体中文");
+                            break;
+                        case "zh-tw":
+                            $(".giftCon1 .language").attr("langs-lang", "cht").text("繁體中文");
+                            break;
+                        case "ko-kr":
+                            $(".giftCon1 .language").attr("langs-lang", "kor").text("한국어");
+                            break;
+                        case "ru-ru":
+                            $(".giftCon1 .language").attr("langs-lang", "ru").text("Pусский");
+                            break;
+                        case "de-de":
+                            $(".giftCon1 .language").attr("langs-lang", "de").text("Deutsch");
+                            break;
+                        case "es-es":
+                            $(".giftCon1 .language").attr("langs-lang", "spa").text("Español");
+                            break;
+                        case "ja-jp":
+                            $(".giftCon1 .language").attr("langs-lang", "jp").text("日本語");
+                            break;
+                        default:
+                            $(".giftCon1 .language").attr("langs-lang", "").text("不翻译");
+                            break;
+                    }
+                }
 
+                var give_pv_to =str[1] ;
 
+                $("#give_pv_to").text(give_pv_to);
+                $("#give_pv_to_id").val(mid);
+                //初始化弹出私信框
+                new popPrivate.pri();
+            },
+            yes: function (index, layero) {
+
+            },
+            cancel: function (index) {
+            }
+        });
+
+    });
+}
 
 //整理分页数据
 function parsePage(pageUtil){
