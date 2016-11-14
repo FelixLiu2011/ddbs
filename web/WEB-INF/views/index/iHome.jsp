@@ -46,6 +46,13 @@
     <script type="text/javascript" src="<%=path%>/common/IM/js/processingTime.js"></script>
     <script type="text/javascript" src="<%=path%>/common/js/gift.js"></script>
     <script type="text/javascript" src="<%=path%>/common/js/platformCountryElementMap.js"></script>
+    <%--私信--%>
+    <script type="text/javascript" src="<%=path%>/common/IM/js/IM.js"></script>
+    <script type="text/javascript" src="<%=path%>/common/IM/js/IMAjax.js"></script>
+    <link href="<%=path%>/common/css/privateLetter.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="<%=path%>/common/js/popPrivateLetter.js"></script>
+    <link type="text/css" href="<%=path%>/common/IM/css/qqFace.css" rel="stylesheet">
+    <script type="text/javascript" src="<%=path%>/common/IM/js/jquery.qqFace.js"></script>
     <script type="text/javascript" src="<%=path%>/business/ihome/ihome.js"></script>
 </head>
 

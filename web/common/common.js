@@ -1,5 +1,6 @@
 var ctx =path;// 'http://www.gagahi.com:80';
 var staticPath =path;// "http://static.gagahi.com";
+var staticCtx=path;
 var qiniuImgUrl = path;//'http://images.gagahi.com/';
 var myGagaId='';
 Zoneyet.Global.language = (local?local.toLowerCase().replace("_","-"):local)||'en-us';//换成小写形式，后台返回为(zh_CN)

@@ -2,6 +2,7 @@
  * `偶遇`页面获取数据
  * @type {number}
  */
+var sendGender = "1";//1男2女
 var pageNo = 1; //页码
 var pageCount = 1; //总页数
 var searchType= 1;  //  1.精确,2.模糊,3.类型

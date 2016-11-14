@@ -11,7 +11,7 @@ package com.ddas.common.result;
 public class Result {
     private boolean success=true;
     private String msg;
-    private Object object;
+    private Object obj;
     private Attachment attributes;
 
     public boolean isSuccess() {
@@ -30,12 +30,12 @@ public class Result {
         this.msg = msg;
     }
 
-    public Object getObject() {
-        return object;
+    public Object getObj() {
+        return obj;
     }
 
-    public void setObject(Object object) {
-        this.object = object;
+    public void setObj(Object obj) {
+        this.obj = obj;
     }
 
     public Attachment getAttributes() {

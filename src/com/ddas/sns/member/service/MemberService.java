@@ -58,7 +58,7 @@ public class MemberService {
             } else {
                 object.put("membLanguage", membLanguage);
             }
-            result.setObject(object);
+            result.setObj(object);
             return result;
         }
     }

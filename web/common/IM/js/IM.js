@@ -7,7 +7,6 @@
  *      onRead	读取消息(参数字符串)
  *      onError 错误处理(参数字符串)
  * });
- * @author xingdongyang
  */
 var IM =function() {
 		function request(url, token, onRead, onError) {
