@@ -14,7 +14,6 @@ import com.ddas.sns.common.BaseController;
 import com.ddas.sns.email.domain.UserEmail;
 import com.ddas.sns.email.service.EmailService;
 import com.ddas.sns.privilege.service.PrivilegeService;
-import com.sun.javafx.collections.annotations.ReturnsUnmodifiableCollection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
