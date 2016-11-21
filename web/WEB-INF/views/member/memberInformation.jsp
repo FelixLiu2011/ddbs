@@ -1334,7 +1334,7 @@
                 </div>
                 <div class="yhxx fr">
                     <p class="ari">
-                        <a class="ellipsis-name" href="<%=path%>/member/myInformation"  title="Quintion">Quintion</a>
+                        <a class="ellipsis-name" href="<%=path%>/member/myInformation"  title="${userInfo.membNickname}">${userInfo.membNickname}</a>
 
                     </p>
                     <p class="ari hui f12" style="margin: 8px 0">GaGaID:30039931</p>

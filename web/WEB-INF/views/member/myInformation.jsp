@@ -37,8 +37,8 @@
     <!-- <link href="<%=path%>/common/css/skin/zhongqiu/style.css" rel="stylesheet" type="text/css"> -->
     <script src="<%=path%>/common/js/jquery.min.js" type="text/javascript"></script>
     <script  src="<%=path%>/common/js/laytpl.js"       type="text/javascript"></script>
-    <script  src="http://static.gagahi.com/js/core.js"    type="text/javascript"></script>
-    <script  src="http://static.gagahi.com/js/i18next-1.11.2.min.js" type="text/javascript"></script>
+    <script  src="<%=path%>/common/js/core.js"    type="text/javascript"></script>
+    <script  src="<%=path%>/common/js/i18next-1.11.2.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         var ctx = 'http://www.gagahi.com:80';
         var staticPath = "http://static.gagahi.com";
@@ -703,7 +703,7 @@
     var token="961e84bdd1d54facb5d9b279c965eb8c";
     var sendGender = "1";//1男2女
     var sendHeadImgUrl = "images/default/male.png";//小头像
-    var myNickname = "Quintion";//自己昵称
+    var myNickname = $("#nic").val();//自己昵称
     var myLanguage = "zh-cn";
     var myId = "2935185";//我的ID
     //1：普通会员，2：高级会员，3：VIP会员
@@ -1345,7 +1345,7 @@
                 </div>
                 <div class="yhxx fr">
                     <p class="ari">
-                        <a class="ellipsis-name" href="<%=path%>/member/myInformation"  title="Quintion">Quintion</a>
+                        <a class="ellipsis-name" href="<%=path%>/member/myInformation"  title="${userInfo.membNickname}">${userInfo.membNickname}</a>
 
                     </p>
                     <p class="ari hui f12" style="margin: 8px 0">GaGaID:30039931</p>
@@ -1474,7 +1474,7 @@
                     <div class="PersonalHomepage-top-r fl pt5 ml10">
                         <input type="hidden" id="gagaid" value="2935185">
                         <input type="hidden" id="gagalevel" value="1">
-                        <p class="ari f16 c-2d57a1"><span class="nic" id="nic">Quintion</span>
+                        <p class="ari f16 c-2d57a1"><span class="nic" id="nic">${userInfo.membNickname}</span>
 
 
 
@@ -4229,7 +4229,7 @@
 
                 <!-- 评论 -->
                 <div class="detail_comment" mid="2935185"
-                     mname="Quintion" mbigimg="images/default/male.png"
+                     mname="${userInfo.membNickname}" mbigimg="images/default/male.png"
                      msex="1">
                     <div class="comment_item"></div>
 

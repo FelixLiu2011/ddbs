@@ -501,13 +501,13 @@
                                 <input id="txt-name" autocomplete="off" class="inp txt-name"
                                        type="text" name="name" data-type="required|diy-regex"
                                        data-type-diy-regex="^(1\d{10})|(([0-9a-zA-Z]+[-._+&])*[0-9a-zA-Z]+@([-0-9a-zA-Z]+[.])+[a-zA-Z]{2,6})$"
-                                       placeholder='邮箱/Gaga号'>
+                                       placeholder='邮箱/Gaga号' value='123@qq.com'>
                             </div>
                             <div class="form-control">
                                 <div style="display: inline;">
                                     <span class="f12 ts mkd " style="display: none;">请输入密码！</span>
                                 </div>
-                                <input type="password" autocomplete="off" placeholder='密码'
+                                <input type="password" autocomplete="off" value="123456" placeholder='密码'
                                        class="inp txt-pwd" id="txt-pwd" maxlength="20"
                                        data-type-diy-regex="^[\da-zA-Z]{6,20}$"
                                        data-type="required|diy-regex" name="pwd" err="required">
