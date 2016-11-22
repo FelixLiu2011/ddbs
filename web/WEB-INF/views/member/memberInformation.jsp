@@ -703,7 +703,7 @@
     var token="e712cc82a9c04bb6a8305ebe4e992326";
     var sendGender = "1";//1男2女
     var sendHeadImgUrl = "images/default/male.png";//小头像
-    var myNickname = "Quintion";//自己昵称
+    var myNickname = $("#membNickname").val();//自己昵称
     var myLanguage = "zh-cn";
     var myId = "2935185";//我的ID
     //1：普通会员，2：高级会员，3：VIP会员
@@ -1474,7 +1474,7 @@
                                     </li>
                                     <li>
                                         <span class="set-content-title">昵称：</span>
-                                        <span class="set-content-con"><input class="inp-edit bdra15 h30 pl15" id="membNickname" maxlength="20" value="Quintion"><span class="f12 bir-Infor-Tip  nicknamelength " id="nicknamelength" style="display: none;">昵称长度限制为3-20位字符</span></span>
+                                        <span class="set-content-con"><input class="inp-edit bdra15 h30 pl15" id="membNickname" maxlength="20" value="aa"><span class="f12 bir-Infor-Tip  nicknamelength " id="nicknamelength" style="display: none;">昵称长度限制为3-20位字符</span></span>
                                     </li>
                                     <li>
                                         <span class="set-content-title">GaGa 号：</span>
@@ -1720,9 +1720,11 @@
                                 <li>
                                     <div class="set-content-title"><div class="yhtx tr inlineblock"><img src="http://images.gagahi.com//images/default/male.png"></div></div>
                                 </li>
-                                <li><span class="set-content-title">昵称：</span><span class="set-content-con">Quintion</span></li>
+                                <li><span class="set-content-title">昵称：</span><span class="set-content-con">${userInfo.membNickname}</span></li>
                                 <li><span class="set-content-title">GaGa 号：</span><span class="set-content-con">30039931</span></li>
-                                <li><span class="set-content-title">年龄：</span><span class="set-content-con">0</span></li>
+                                <li><span class="set-content-title">年龄：</span><span class="set-content-con">
+                                ${userInfo.membAge}
+                                </span></li>
                                 <li><span class="set-content-title">性别：</span><span class="set-content-con">男</span></li>
                                 <li><span class="set-content-title">职业：</span><span class="set-content-con"></span></li>
                                 <li><span class="set-content-title">国家：</span><span class="set-content-con"></span></li>
