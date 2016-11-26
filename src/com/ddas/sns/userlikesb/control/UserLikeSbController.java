@@ -11,7 +11,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
-import java.util.HashMap;
+import javax.servlet.http.HttpSession;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -25,25 +27,31 @@ import java.util.Map;
 @Controller
 @RequestMapping("/like")
 public class UserLikeSbController extends BaseController {
+
+    /*Session中存放的当前用户关注的用户列表(游客使用)*/
+    private static final String liketoonlyAttribute = "liketoonly";
     @Resource
     private UserLikeSbService userLikeSbService;
 
+    /**
+     * @param lovedIdList
+     * @param request
+     * @return java.util.Map<java.lang.String,java.lang.Object>
+     * @author shaojx
+     * @date 2016/11/13 0:04
+     * @version 1.0
+     * @since 1.6
+     */
     @RequestMapping("/findIfIloveList")
     @ResponseBody
     public Map<String, Object> findIfIloveList(String lovedIdList, HttpServletRequest request) {
         UserInfo loginUser = getLoginUser(request);
         String currentUserId = loginUser == null ? null : loginUser.getMembGagaid();
+        if (loginUser == null) {
+            List<String> listInSession = (List<String>) request.getSession().getAttribute(liketoonlyAttribute);
+            return userLikeSbService.findIfIloveListFromSession(lovedIdList, listInSession);
+        }
         return userLikeSbService.findIfIloveList(lovedIdList, currentUserId);
-        /**
-         *
-         * @param lovedIdList
-         * @param request
-         *@return java.util.Map<java.lang.String,java.lang.Object>
-         *@author shaojx
-         *@date 2016/11/13 0:04
-         *@version 1.0
-         *@since 1.6
-         */
     }
 
     /**
@@ -63,24 +71,44 @@ public class UserLikeSbController extends BaseController {
         UserInfo loginUser = getLoginUser(request);
         String currentUserId = loginUser == null ? null : loginUser.getMembGagaid();
         Result result = new Result();
-        if (currentUserId == null) {
+        if (currentUserId == null) {//游客，信息放入相应的session中
             result.setSuccess(true);
             result.setMsg(Constants.SUCCESS);
+            if (flag != null && "del".equals(flag)) {//游客取消关注某人
+                HttpSession session = request.getSession();
+                Object liketoonly = session.getAttribute(liketoonlyAttribute);
+                if (liketoonly == null) {
+                } else {//从Session中移除相应的关注信息
+                    List<String> likeList = (List<String>) liketoonly;
+                    likeList.remove(mid);
+                }
+            } else {//游客关注某人
+                HttpSession session = request.getSession();
+                Object liketoonly = session.getAttribute(liketoonlyAttribute);
+                if (liketoonly == null) {
+                    List<String> likeList = new ArrayList<String>();
+                    likeList.add(mid);
+                    session.setAttribute(liketoonlyAttribute, likeList);
+                } else {
+                    List<String> likeList = (List<String>) liketoonly;
+                    likeList.add(mid);
+                }
+            }
         } else {
-            if(flag==null||flag.trim().length()<=0){//insert data
+            if (flag == null || flag.trim().length() <= 0) {//insert data
                 boolean iliketoonly = userLikeSbService.iliketoonly(mid, currentUserId);
                 result.setSuccess(iliketoonly);
-                if(iliketoonly){
+                if (iliketoonly) {
                     result.setMsg(Constants.SUCCESS);
-                }else{
+                } else {
                     result.setMsg(Constants.FAILED);
                 }
-            }else{//delete data
-                boolean deleteILiked=userLikeSbService.deleteILiked(mid,currentUserId);
+            } else {//delete data
+                boolean deleteILiked = userLikeSbService.deleteILiked(mid, currentUserId);
                 result.setSuccess(deleteILiked);
-                if(deleteILiked){
+                if (deleteILiked) {
                     result.setMsg(Constants.SUCCESS);
-                }else{
+                } else {
                     result.setMsg(Constants.FAILED);
                 }
             }

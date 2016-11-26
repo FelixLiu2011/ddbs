@@ -86,16 +86,23 @@ public class UserLikeSbService {
      * @since 1.6
      */
     private Map<String, String> fillOneValueIfLiked(List<UserLikeSomebody> userLikeSomebodies, String lovedIdList) {
-        Set<String> sbIds = new HashSet<String>(userLikeSomebodies.size());
+        List<String> sbIds = new ArrayList<String>(userLikeSomebodies.size());
         for (UserLikeSomebody userLikeSomebody : userLikeSomebodies) {
-            sbIds.add(userLikeSomebody.getSbId());
+            String sbId = userLikeSomebody.getSbId();
+            if(!sbIds.contains(sbId)){
+                sbIds.add(sbId);
+            }
         }
-        Map<String, String> result = new HashMap<String, String>(userLikeSomebodies.size());
+        return fillOneValueIfLikedInternal(lovedIdList,sbIds);
+    }
+
+    private Map<String, String> fillOneValueIfLikedInternal(String lovedIdList,List<String>likedSbs){
+        Map<String, String> result = new HashMap<String, String>(likedSbs.size());
         for (String id : lovedIdList.split(",")) {
-            if (sbIds.contains(id)) {
-                result.put("\"" + id + "\"", "1");
+            if (likedSbs.contains(id)) {
+                result.put("data_" + id, "1");
             } else {
-                result.put("\"" + id + "\"", "0");
+                result.put("data_" + id, "0");
             }
         }
         return result;
@@ -115,7 +122,7 @@ public class UserLikeSbService {
         Set<String> userIds = new HashSet<String>(Arrays.asList(lovedIdList.split(",")));
         Map<String, String> result = new HashMap<String, String>(userIds.size());
         for (String id : userIds) {
-            result.put("\"" + id + "\"", "0");
+            result.put("data_" + id, "0");
         }
         return result;
     }
@@ -173,5 +180,39 @@ public class UserLikeSbService {
            LOGGER.error("用户取消关注失败!",e);
         }
         return deleteByExample == 1;
+    }
+
+    /**
+     *从Session中喜欢的列表信息
+     * @param lovedIdList 前台传入的用户ids
+     * @param listInSession 存放于session中的用户喜欢的id
+     *@return java.util.Map<java.lang.String,java.lang.Object>
+     * success:true 表示查询成功,false表示查询失败
+     * obj:用户id:1表示为该用户为自己所关注的 用户id:0表示该用户不是自己所关注的
+     * msg:返回的查询信息
+     * attributes:一些附带的属性
+     *@author shaojx
+     *@date 2016/11/26 18:24
+     *@version 1.0
+     *@since 1.6
+     */
+    public Map<String, Object> findIfIloveListFromSession(String lovedIdList, List<String> listInSession) {
+        Map<String, Object> result = new HashMap<String, Object>();
+        result.put("success", true);
+        result.put("obj", null);
+        result.put("attributes", null);
+        result.put("msg", Constants.SUCCESS);
+        if(StringUtil.isBlank(lovedIdList)){
+            return result;
+        }
+        if(listInSession==null){
+            Map<String, String> fillZero = fillZero(lovedIdList);
+            result.put("obj", fillZero);
+            return result;
+        }else{
+            Map<String, String> stringStringMap = fillOneValueIfLikedInternal(lovedIdList, listInSession);
+            result.put("obj", stringStringMap);
+            return result;
+        }
     }
 }
