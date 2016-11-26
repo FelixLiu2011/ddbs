@@ -11,6 +11,7 @@ package com.ddas.sns.member.control;
 import com.ddas.common.result.Result;
 import com.ddas.sns.common.BaseController;
 import com.ddas.sns.member.service.MemberService;
+import com.ddas.sns.userinfo.dto.UserInfoDto;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -126,5 +127,21 @@ public class MemberController extends BaseController {
     @ResponseBody
     public Result getMemberId(String mid) {
         return memberService.getMemberId(mid);
+    }
+
+    /**
+     *
+     *@return org.springframework.web.servlet.ModelAndView
+     *@author shaojx
+     *@date 2016/7/9 21:23
+     *@version 1.0
+     *@since 1.6
+     */
+    @RequestMapping("/getMemberId")
+    @ResponseBody
+    public Result informationPerfect(UserInfoDto userInfoDto) {
+        memberService.updateUserInfo(userInfoDto);
+
+        return null;
     }
 }

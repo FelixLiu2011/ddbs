@@ -3225,7 +3225,7 @@
         }
         if(nicknamelength){
             layer.load(0, {shade: 0.1});
-            $.post("http://www.gagahi.com:80/Member/InformationPerfect",{
+            $.post(path + "/member/informationPerfect",{
                 nickname:membNickname,
                 birthday:membDate,
                 job:membJob,

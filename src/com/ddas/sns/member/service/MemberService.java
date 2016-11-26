@@ -4,6 +4,7 @@ import com.ddas.common.result.Result;
 import com.ddas.common.util.StringUtil;
 import com.ddas.sns.constants.Constants;
 import com.ddas.sns.userinfo.domain.UserInfo;
+import com.ddas.sns.userinfo.dto.UserInfoDto;
 import com.ddas.sns.userinfo.mapper.UserInfoMapper;
 import com.ddas.sns.userinfo.service.UserInfoService;
 import org.springframework.stereotype.Service;
@@ -61,5 +62,17 @@ public class MemberService {
             result.setObj(object);
             return result;
         }
+    }
+
+    /**
+    *更新用户信息
+    *@author lc
+    *@date 2016/11/26 0026 16:04
+    *@version 1.0
+    *@since 1.6
+    */
+    public Result updateUserInfomation(UserInfoDto userInfoDto){
+
+        return null;
     }
 }

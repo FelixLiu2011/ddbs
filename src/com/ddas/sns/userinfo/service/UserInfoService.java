@@ -8,23 +8,18 @@
  */
 package com.ddas.sns.userinfo.service;
 
-import com.ddas.common.page.Page;
 import com.ddas.common.util.StringUtil;
 import com.ddas.common.util.date.DateUtil;
 import com.ddas.common.util.uuid.UUIDUtil;
 import com.ddas.sns.userinfo.domain.UserInfo;
 import com.ddas.sns.userinfo.domain.UserInfoCriteria;
-import com.ddas.sns.userinfo.dto.UserInfoDto;
 import com.ddas.sns.userinfo.mapper.UserInfoMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * ClassName:	UserInfoService
