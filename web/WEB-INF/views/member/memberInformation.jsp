@@ -1484,7 +1484,7 @@
                                         <span class="set-content-title">年龄：</span>
                                         <div class="form-field set-content-con" style="width: 60%;">
                                             <div class="reg_form_sel mr10" style="z-index: 105;">
-                                                <p id="reg_year"></p>
+                                                <p id="reg_year"> </p>
                                                 <ul class="option year1" id="selYear" style="display: none;">
                                                 </ul>
                                             </div>
@@ -1515,7 +1515,7 @@
                                     <li>
                                         <span class="set-content-title">职业：</span>
                                         <div class="inlineblock occupation  h30 bdra30" style="z-index: 102">
-                                            <span class="xld inlineblock" data-tongyong="" id="membJob"></span>
+                                            <span class="xld inlineblock" data-tongyong="${userInfo.membJob}" id="membJob"></span>
                                             <ul class="xld-select occupationList" style="display: none; top: 33px;height: 184px;overflow: auto;">
 
                                                 <li style="margin:0px;" class="" data-chuandi="1">文案</li>
@@ -1623,45 +1623,45 @@
                                         <span class="set-content-title">国家：</span>
                                         <div class="inlineblock occupation  h30 bdra30">
                                             <span class=" inlineblock country-sle" data-country="" style="z-index: 1" id="countryshow"></span>
-                                            <input type="hidden" id="country" value=""><input type="hidden" id="countrycode" value="">
+                                            <input type="hidden" id="country" value=""><input type="hidden" id="countrycode" value="${membCountryCode}">
                                         </div>
                                     </li>
                                     <li>
                                         <span class="set-content-title">语言：</span>
                                         <div class="inlineblock occupation  h30 bdra30" style="z-index: 100">
-                                            <span class="xld inlineblock" data-tongyong="en-us" id="membLanguage">English</span>
+                                            <span class="xld inlineblock" data-tongyong="${membLanguage}" id="membLanguage">English</span>
                                             <ul class="xld-select" style="display: none; top: 33px;">
 
-                                                <li class="" data-chuandi="en-us">English</li>
+                                                <li class="" data-chuandi="en_us">English</li>
 
-                                                <li class="" data-chuandi="ja-jp">日本語</li>
+                                                <li class="" data-chuandi="ja_jp">日本語</li>
 
-                                                <li class="" data-chuandi="ru-ru">русский</li>
+                                                <li class="" data-chuandi="ru_ru">русский</li>
 
-                                                <li class="" data-chuandi="es-es">Español</li>
+                                                <li class="" data-chuandi="es_es">Español</li>
 
-                                                <li class="" data-chuandi="zh-cn">简体中文</li>
+                                                <li class="" data-chuandi="zh_cn">简体中文</li>
 
-                                                <li class="" data-chuandi="zh-tw">繁體中文</li>
+                                                <li class="" data-chuandi="zh_tw">繁體中文</li>
 
-                                                <li class="" data-chuandi="ko-kr">한국어</li>
+                                                <li class="" data-chuandi="ko_kr">한국어</li>
 
-                                                <li class="" data-chuandi="de-de">Deutsch</li>
+                                                <li class="" data-chuandi="de_de">Deutsch</li>
 
                                             </ul>
                                         </div>
                                     </li>
                                     <li>
                                         <span class="set-content-title">身高（cm）：</span>
-                                        <span class="set-content-con" style="z-index: 1"> <input class="inp-edit bdra15 h30 pl15" id="membHeight" maxlength="3" value=""></span>
+                                        <span class="set-content-con" style="z-index: 1"> <input class="inp-edit bdra15 h30 pl15" id="membHeight" maxlength="3" value="${membHeight}"></span>
                                     </li>
                                     <li>
                                         <span class="set-content-title">体重（kg）：</span>
-                                        <span class="set-content-con" style="z-index: 1"> <input class="inp-edit bdra15 h30 pl15" id="membWeight" maxlength="3" value=""></span>
+                                        <span class="set-content-con" style="z-index: 1"> <input class="inp-edit bdra15 h30 pl15" id="membWeight" maxlength="3" value="${membWeight}"></span>
                                     </li>
                                     <li>
                                         <span class="set-content-title">个性签名：</span>
-                                        <span class="set-content-con"> <textarea class="text-edit bdra15" maxlength="25" id="membSignature"></textarea></span>
+                                        <span class="set-content-con"> <textarea class="text-edit bdra15" maxlength="25" id="membSignature">${membSignature}</textarea></span>
                                     </li>
                                     <li>
                                         <span class="set-content-title">兴趣：</span>
@@ -3261,12 +3261,12 @@
                     }else{
                         layer.msg('保存成功');
                         setTimeout(function(){
-                            window.location.href =path + "/member/memberinformation"
+                            window.location.href = "<%=path%>/member/memberInformation"
                         },500);
                     }
 
                 }
-            });
+            }, "json");
         }
     }
 

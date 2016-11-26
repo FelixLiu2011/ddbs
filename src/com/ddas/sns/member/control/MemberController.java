@@ -11,6 +11,7 @@ package com.ddas.sns.member.control;
 import com.ddas.common.result.Result;
 import com.ddas.sns.common.BaseController;
 import com.ddas.sns.member.service.MemberService;
+import com.ddas.sns.userinfo.domain.UserInfo;
 import com.ddas.sns.userinfo.dto.UserInfoDto;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -143,9 +144,10 @@ public class MemberController extends BaseController {
         Result result = new Result();
         result.setSuccess(false);
 
-        memberService.updateUserInfomation(userInfoDto, getLoginUser(request));
+        UserInfo userInfo = memberService.updateUserInfomation(userInfoDto, getLoginUser(request));
         result.setSuccess(true);
 
+        setLoginUserToSession(userInfo, request);
         return result;
     }
 }
