@@ -137,11 +137,15 @@ public class MemberController extends BaseController {
      *@version 1.0
      *@since 1.6
      */
-    @RequestMapping("/getMemberId")
+    @RequestMapping("/informationPerfect")
     @ResponseBody
-    public Result informationPerfect(UserInfoDto userInfoDto) {
-        memberService.updateUserInfo(userInfoDto);
+    public Result informationPerfect(UserInfoDto userInfoDto, HttpServletRequest request) {
+        Result result = new Result();
+        result.setSuccess(false);
 
-        return null;
+        memberService.updateUserInfomation(userInfoDto, getLoginUser(request));
+        result.setSuccess(true);
+
+        return result;
     }
 }

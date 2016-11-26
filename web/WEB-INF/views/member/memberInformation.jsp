@@ -3261,7 +3261,7 @@
                     }else{
                         layer.msg('保存成功');
                         setTimeout(function(){
-                            window.location.href ="http://www.gagahi.com:80/Member/memberinformation"
+                            window.location.href =path + "/member/memberinformation"
                         },500);
                     }
 

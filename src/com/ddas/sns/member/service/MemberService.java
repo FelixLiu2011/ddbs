@@ -71,8 +71,20 @@ public class MemberService {
     *@version 1.0
     *@since 1.6
     */
-    public Result updateUserInfomation(UserInfoDto userInfoDto){
+    public UserInfo updateUserInfomation(UserInfoDto userInfoDto, UserInfo userInfo){
+        UserInfo userinfo = userInfoService.fetchUserInfoByUserId(userInfo.getMembGagaid());
+        userinfo.setMembNickname(userInfoDto.getNickName());
+        userinfo.setMembLanguage(userInfoDto.getLanguage());
+        userinfo.setMembCountry(userInfoDto.getCountry());
+        userinfo.setMembCountryCode(userInfoDto.getCountrycode());
+        userinfo.setMembBirth(userInfoDto.getBirthday());
+        userinfo.setMembJob(userInfoDto.getJob());
+        userinfo.setMembHeight(userInfoDto.getHeight());
+        userinfo.setMembWeight(userInfoDto.getWeight());
+        userinfo.setMembSignature(userInfoDto.getSignature());
+        userinfo.setMembLable(userInfoDto.getLables());
 
-        return null;
+        userInfoService.saveUserInfo(userinfo);
+        return userinfo;
     }
 }
