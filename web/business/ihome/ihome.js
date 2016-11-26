@@ -219,7 +219,7 @@ function parseList(list){
             //var ageStr= 0==list[i].membAge?"":list[i].membAge+",";
 
             htmlstr=htmlstr+"<br> <span class='ari hui '>"+ageStr+"</span> </div>"+
-                "<div class='jbxx1'><a onclick='javascript:doLikeSb("+list[i].membGagaid+",this)'><span class=' inlineblock dz'><img src='"+path+"/common/images/hart.png'></span></a>"+
+                "<div class='jbxx1'><a onclick='javascript:doLikeSb(\""+list[i].membGagaid+"\",this)'><span class=' inlineblock dz'><img src='"+path+"/common/images/hart.png'></span></a>"+
                 "<a onclick='javascript:doSendMsg(\""+list[i].membGagaid+";"+list[i].membNickname+"\")'><span class=' eml inlineblock'></span></a></div>";
             if(list[i].ifOnline==1){
                 htmlstr=htmlstr+ "<div class='zx bdra15'></div>";
@@ -236,18 +236,16 @@ function parseList(list){
         function(data,textStatus){
             if(data.success){
                 jsonObj=data.obj;
-                console.log(jsonObj)
                 //显示点赞和私信
                 $("#datalists li").each(
                     function  () {
-
                         $(this).hover(function  () {
                                 $(this).children(".jbxx").css("display","none").next().css("display","block");
                                 //查看是否是我点过赞的用户
                                 var that=this;
-                                console.log(jsonObj[$(this).attr("dataid")]==1);
-                                if( typeof(jsonObj[$(this).attr("dataid")])!="undefined" && jsonObj[$(this).attr("dataid")]==1){
-
+                                var dataid=$(this).attr("dataid");
+                                var key="data_"+dataid;
+                                if( typeof(jsonObj[key])!="undefined" && jsonObj[key]=="1"){
                                     $($(that).children(".jbxx1").find("a")[0]).find("span").css("background-position","0 -41px");
                                 }
                             },function  () {
@@ -259,39 +257,38 @@ function parseList(list){
             }
 
         })
-
-
-
-
 }
 
 //喜欢某人
 function doLikeSb(id,that){
     var data={};
     data["mid"]=id;
-    if(jsonObj[id]==1){//如果为1，则说明为取消关注
+    var deleteSbFlag=false;
+    if(jsonObj["data_"+id]=="1"){//如果为1，则说明为取消关注
         data["flag"]="del";
+        deleteSbFlag=true;
     }else{//为关注
 
     }
     $.post(path+"/like/iliketoonly",
         data,
         function(data,textStatus){
-            // alert(data.success);
-            if(data.success){
+            if(data.success&&!deleteSbFlag){//关注别人
                 var ab=$(that).find("span");
                 var dc=$(that).find("img");
                 $(dc).css({"top":0,opacity:"1"})
                 $(dc).css("display","block").stop(false,true).animate({top:"-70px",opacity:"0",width:"16px",height:"14px"},1000);
                 $(ab).css("background-position","0 -41px");
-                jsonObj[id]=1
+                var key="data_"+id;
+                jsonObj[key]="1";
                 //layer.msg(data.msg);
-            }else{
+            }else{//取消关注
                 var ab=$(that).find("span");
                 var dc=$(that).find("img");
                 $(dc).css("display","none");
                 $(ab).css("background-position","0 0")
-                jsonObj[id]=0;
+                var key="data_"+id;
+                jsonObj[key]="0";
             }
         })
 }
