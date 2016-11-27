@@ -150,4 +150,48 @@ public class MemberController extends BaseController {
         setLoginUserToSession(userInfo, request);
         return result;
     }
+
+    /**
+     *
+     *@return org.springframework.web.servlet.ModelAndView
+     *@author shaojx
+     *@date 2016/7/9 21:23
+     *@version 1.0
+     *@since 1.6
+     */
+    @RequestMapping("/accountPerfect")
+    @ResponseBody
+    public Result accountPerfect(UserInfoDto userInfoDto, HttpServletRequest request) {
+        Result result = new Result();
+        result.setSuccess(false);
+
+        UserInfo userInfo = memberService.updateUserAcount(userInfoDto, getLoginUser(request));
+        result.setSuccess(true);
+
+        setLoginUserToSession(userInfo, request);
+        return result;
+    }
+
+    /**
+     *
+     *@return org.springframework.web.servlet.ModelAndView
+     *@author shaojx
+     *@date 2016/7/9 21:23
+     *@version 1.0
+     *@since 1.6
+     */
+    @RequestMapping("/config/saveConfig")
+    @ResponseBody
+    public Result saveConfig(UserInfoDto userInfoDto, HttpServletRequest request) {
+        Result result = new Result();
+        result.setSuccess(false);
+
+        UserInfo userInfo = memberService.updateUserConfig(userInfoDto, getLoginUser(request));
+        result.setSuccess(true);
+
+        setLoginUserToSession(userInfo, request);
+        return result;
+    }
+
+
 }

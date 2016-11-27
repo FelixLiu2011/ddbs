@@ -1474,7 +1474,7 @@
                                     </li>
                                     <li>
                                         <span class="set-content-title">昵称：</span>
-                                        <span class="set-content-con"><input class="inp-edit bdra15 h30 pl15" id="membNickname" maxlength="20" value="aa"><span class="f12 bir-Infor-Tip  nicknamelength " id="nicknamelength" style="display: none;">昵称长度限制为3-20位字符</span></span>
+                                        <span class="set-content-con"><input class="inp-edit bdra15 h30 pl15" id="membNickname" maxlength="20" value="${userInfo.membNickname}"><span class="f12 bir-Infor-Tip  nicknamelength " id="nicknamelength" style="display: none;">昵称长度限制为3-20位字符</span></span>
                                     </li>
                                     <li>
                                         <span class="set-content-title">GaGa 号：</span>
@@ -1728,25 +1728,11 @@
                                 <li><span class="set-content-title">性别：</span><span class="set-content-con">男</span></li>
                                 <li><span class="set-content-title">职业：</span><span class="set-content-con"></span></li>
                                 <li><span class="set-content-title">国家：</span><span class="set-content-con"></span></li>
-                                <li><span class="set-content-title">语言：</span><span class="set-content-con">
-
-
-
-
-							English
-
-
-
-
-
-
-
-
-				</span>
+                                <li><span class="set-content-title">语言：</span><span class="set-content-con">English</span>
                                 </li>
-                                <li><span class="set-content-title">身高（cm）：</span><span class="set-content-con"></span></li>
-                                <li><span class="set-content-title">体重（kg）：</span><span class="set-content-con"></span></li>
-                                <li><span class="set-content-title" id="showinfo">个性签名：</span><span class="set-content-con"></span></li>
+                                <li><span class="set-content-title">身高（cm）：</span><span class="set-content-con">${userInfo.membHeight}</span></li>
+                                <li><span class="set-content-title">体重（kg）：</span><span class="set-content-con">${userInfo.membWeight}</span></li>
+                                <li><span class="set-content-title" id="showinfo">个性签名：</span><span class="set-content-con">${userInfo.membSignature}</span></li>
                                 <li><span class="set-content-title" >兴趣：</span><span class="set-content-con" >
 
                 </span></li>
@@ -1758,16 +1744,8 @@
                         <div class="set-content">
                             <div  id="personalinformationWin" class="set-hidden" style="display:none;">
                                 <ul>
-                                    <li><span class="set-content-title">金币：</span><span class="set-content-con">0.00<a href="<%=path%>/pay/recharge"><span class="set-recharge c-2d57a1">充值</span></a> </span></li>
-                                    <li><span class="set-content-title">会员级别：</span><span class="set-content-con">
-
-
-							普通会员
-
-
-
-
-
+                                    <li><span class="set-content-title">金币：</span><span class="set-content-con">${userInfo.membCoin}<a href="<%=path%>/pay/recharge"><span class="set-recharge c-2d57a1">充值</span></a> </span></li>
+                                    <li><span class="set-content-title">会员级别：</span><span class="set-content-con">普通会员
 				<a href="<%=path%>/pay/upgradeMember"><span class="set-member c-2d57a1" style=" margin-left:30px;">升级</span></a></span></li>
                                     <li><span class="set-content-title">翻译包字符数：</span><span class="set-content-con" ><span id="myTotalTranslateNum">0</span></span></li>
 
@@ -1775,18 +1753,14 @@
                                         <div class="form-field set-content-con" style="width: 60%;">
                                             <div style="display:inline-block;width:auto">
                   <span class="set-content-con">
-
-
-
+felixliu2011@outlook.com
                   		<input class="inp-edit bdra15 h30 pl15" value="" id="mememail">
-
-
                   </span></div>
                                             <span class="f12 bir-Infor-Tip emailcheck" style="display: none;">邮箱已被占用</span>
                                             <span class="f12 bir-Infor-Tip emailerror" style="display: none;">邮箱格式不正确</span></div>
                                     </li>
 
-                                    <li><span class="set-content-title">手机号码：</span><span class="set-content-con">
+                                    <li><span class="set-content-title">手机号码：</span><span class="set-content-con">${membPhoneNo}
                     <div style="display: inline;">
                         <span class="f12 ts ts1 memphone" style="display: none;">号码不正确</span>
                     </div>
@@ -1817,26 +1791,17 @@
                             </div>
                             <!--账号展示开始-->
                             <ul class="set-show">
-                                <li><span class="set-content-title">金币：</span><span class="set-content-con">0.00</span></li>
-                                <li><span class="set-content-title">会员级别：</span><span class="set-content-con">
-
-
-							普通会员
-
-
-
-
-
-                </span></li>
+                                <li><span class="set-content-title">金币：</span><span class="set-content-con">${userInfo.membCoin}</span></li>
+                                <li><span class="set-content-title">会员级别：</span><span class="set-content-con">普通会员</span></li>
                                 <li><span class="set-content-title">翻译包字符数：</span><span class="set-content-con meminfo-fnayi-num" id="mymefiTranslate">0</span></li>
 
-                                <li><span class="set-content-title">邮箱：</span><span class="set-content-con"></span></li>
-                                <li><span class="set-content-title">手机号码：</span><span class="set-content-con"></span></li>
+                                <li><span class="set-content-title">邮箱：</span><span class="set-content-con">${userInfo.membEmail}</span></li>
+                                <li><span class="set-content-title">手机号码：</span><span class="set-content-con">${userInfo.membPhoneNo}</span></li>
                                 <li><span class="set-content-title" id="membercard">密码：</span><span class="set-content-con">******</span></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="set-dom">
+                    <div class="set-dom" style="display:none;">
                         <h1 class="set-dom-title pb5 f18" >信用卡管理<span class="set-dom-edit ml5"></span></h1>
                         <div>
                             <div class="set-content set-hidden" style="display:none;">
@@ -3423,7 +3388,7 @@
             /* $.post("http://www.gagahi.com:80/Platform/emailIsExistence",{email:username},function(result){
 
              }); */
-            $.post("http://www.gagahi.com:80/Member/accountPerfect",{
+            $.post(path + "/member/accountPerfect",{
                 newpwd:newpwd,
                 ispaypalloop:mempay,
                 ismasapayloop:massapay,
@@ -3432,9 +3397,9 @@
             },function(result){
                 if(result.success){
                     layer.msg('保存成功');
-                    window.location.href ="http://www.gagahi.com:80/Member/memberinformation"
+                    window.location.href ="<%=path%>/member/memberInformation"
                 }
-            });
+            }, "json");
         }
     }
     function sendemail(){
@@ -3707,7 +3672,7 @@
             var mecoIsbuy = $("#mecoIsbuy").is(':checked')?1:2;
             var mecoIssound = $("#mecoIssound").is(':checked')?1:2;
             var mecoId = $("#mecoId").val();
-            $.post("http://www.gagahi.com:80/Member/config/saveConfig",{
+            $.post(path + "member/config/saveConfig",{
                 mecoId:mecoId,
                 mecoIsopenperson:mecoIsopenperson,
                 mecoIsonline:mecoIsonline,
@@ -3722,7 +3687,7 @@
                 mecoIssound:mecoIssound
             },function(result){
                 if(result.success){
-                    window.location.href ="http://www.gagahi.com:80/Member/memberinformation"
+                    window.location.href ="<%=path%>member/memberInformation"
                 }
             });
             /* $(this).parents(".set-hidden").css("display","none").siblings(".set-show").css("display","block");  */

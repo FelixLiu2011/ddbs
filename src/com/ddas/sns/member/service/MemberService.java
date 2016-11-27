@@ -87,4 +87,47 @@ public class MemberService {
         userInfoService.saveUserInfo(userinfo);
         return userinfo;
     }
+
+    /**
+     *更新用户Account信息
+     *@author lc
+     *@date 2016/11/26 0026 16:04
+     *@version 1.0
+     *@since 1.6
+     */
+    public UserInfo updateUserAcount(UserInfoDto userInfoDto, UserInfo userInfo){
+        UserInfo userinfo = userInfoService.fetchUserInfoByUserId(userInfo.getMembGagaid());
+        userinfo.setMembPwd(userInfoDto.getNewpwd());
+        userinfo.setMembPhoneNo(userInfoDto.getPhone());
+        userinfo.setMembEmail(userInfoDto.getMememail());
+
+        userInfoService.saveUserInfo(userinfo);
+        return userinfo;
+    }
+
+    /**
+     *更新用户Account信息
+     *@author lc
+     *@date 2016/11/26 0026 16:04
+     *@version 1.0
+     *@since 1.6
+     */
+    public UserInfo updateUserConfig(UserInfoDto userInfoDto, UserInfo userInfo){
+        UserInfo userinfo = userInfoService.fetchUserInfoByUserId(userInfo.getMembGagaid());
+
+        userinfo.setMecoIsacceptgift(userInfoDto.getMecoIsacceptgift());
+        userinfo.setMecoIsaddfriend(userInfoDto.getMecoIsaddfriend());
+        userinfo.setMecoIsallowaddfriend(userInfoDto.getMecoIsallowaddfriend());
+        userinfo.setMecoIsletter(userInfoDto.getMecoIsletter());
+        userinfo.setMecoIsvisito(userInfoDto.getMecoIsvisito());
+        userinfo.setMecoIsopenperson(userInfoDto.getMecoIsopenperson());
+        userinfo.setMecoIsbuy(userInfoDto.getMecoIsbuy());
+        userinfo.setMecoIsonline(userInfoDto.getMecoIsonline());
+        userinfo.setMecoIslike(userInfoDto.getMecoIslike());
+        userinfo.setMecoIszone(userInfoDto.getMecoIszone());
+
+        userInfoService.saveUserInfo(userinfo);
+        return userinfo;
+    }
+
 }
