@@ -185,7 +185,6 @@ public class MemberController extends BaseController {
     public Result saveConfig(UserInfoDto userInfoDto, HttpServletRequest request) {
         Result result = new Result();
         result.setSuccess(false);
-
         UserInfo userInfo = memberService.updateUserConfig(userInfoDto, getLoginUser(request));
         result.setSuccess(true);
 

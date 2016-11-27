@@ -1753,18 +1753,17 @@
                                         <div class="form-field set-content-con" style="width: 60%;">
                                             <div style="display:inline-block;width:auto">
                   <span class="set-content-con">
-felixliu2011@outlook.com
-                  		<input class="inp-edit bdra15 h30 pl15" value="" id="mememail">
+                  		<input class="inp-edit bdra15 h30 pl15" value="${userInfo.membEmail}" id="mememail">
                   </span></div>
                                             <span class="f12 bir-Infor-Tip emailcheck" style="display: none;">邮箱已被占用</span>
                                             <span class="f12 bir-Infor-Tip emailerror" style="display: none;">邮箱格式不正确</span></div>
                                     </li>
 
-                                    <li><span class="set-content-title">手机号码：</span><span class="set-content-con">${membPhoneNo}
+                                    <li><span class="set-content-title">手机号码：</span><span class="set-content-con">
                     <div style="display: inline;">
                         <span class="f12 ts ts1 memphone" style="display: none;">号码不正确</span>
                     </div>
-                  <input class="inp-edit bdra15 h30 pl15" value="" id="memphone">
+                  <input class="inp-edit bdra15 h30 pl15" value="${userInfo.membPhoneNo}" id="memphone">
                   </span></li>
                                     <input type="hidden" id="membPassword" value=""/>
                                     <input type="hidden" id="membEmail" value=""/>
@@ -1828,7 +1827,7 @@ felixliu2011@outlook.com
                                 <p style="margin-left:25%;display:none;" class="red" id="tostshow">邮箱格式不正确</p>
                                 <ul>
                                     <li><span class="set-content-title">认证邮箱：</span> <span class="set-email">
-                  <input type="text" value="" id="rzemail">
+                  <input type="text" value="${userInfo.membEmail}" id="rzemail">
                   <button onclick = "sendemail()" class="meminfo-send-email">发送邮件</button>
                   <br>
                   <span class="pl15 inlineblock pt10">1、在忘记登陆密码时可以通过此邮箱来重置密码，让您的账号更加安全！<br>
@@ -1910,12 +1909,7 @@ felixliu2011@outlook.com
 
 				</span></li>
                                 <li><span class="set-content-title">加好友申请：</span><span class="set-content-con">
-
-
-
-
 						 允许任何人把我加为好友
-
 				</span></li>
                             </ul>
                         </div>
@@ -3672,7 +3666,7 @@ felixliu2011@outlook.com
             var mecoIsbuy = $("#mecoIsbuy").is(':checked')?1:2;
             var mecoIssound = $("#mecoIssound").is(':checked')?1:2;
             var mecoId = $("#mecoId").val();
-            $.post(path + "member/config/saveConfig",{
+            $.post(path + "/member/config/saveConfig",{
                 mecoId:mecoId,
                 mecoIsopenperson:mecoIsopenperson,
                 mecoIsonline:mecoIsonline,
@@ -3687,9 +3681,9 @@ felixliu2011@outlook.com
                 mecoIssound:mecoIssound
             },function(result){
                 if(result.success){
-                    window.location.href ="<%=path%>member/memberInformation"
+                    window.location.href ="<%=path%>/member/memberInformation"
                 }
-            });
+            }, "json");
             /* $(this).parents(".set-hidden").css("display","none").siblings(".set-show").css("display","block");  */
 
         });
