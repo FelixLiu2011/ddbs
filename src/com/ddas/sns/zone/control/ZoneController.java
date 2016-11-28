@@ -6,7 +6,7 @@
  * 创建日期:	2016/6/27
  * Copyright (c) 2016, All Rights Reserved.
  */
-package com.ddas.sns.member.control;
+package com.ddas.sns.zone.control;
 
 import com.ddas.sns.common.BaseController;
 import org.springframework.stereotype.Controller;

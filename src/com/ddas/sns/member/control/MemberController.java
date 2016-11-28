@@ -11,6 +11,8 @@ package com.ddas.sns.member.control;
 import com.ddas.common.result.Result;
 import com.ddas.sns.common.BaseController;
 import com.ddas.sns.member.service.MemberService;
+import com.ddas.sns.userinfo.domain.UserInfo;
+import com.ddas.sns.userinfo.dto.UserInfoDto;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -127,4 +129,68 @@ public class MemberController extends BaseController {
     public Result getMemberId(String mid) {
         return memberService.getMemberId(mid);
     }
+
+    /**
+     *
+     *@return org.springframework.web.servlet.ModelAndView
+     *@author shaojx
+     *@date 2016/7/9 21:23
+     *@version 1.0
+     *@since 1.6
+     */
+    @RequestMapping("/informationPerfect")
+    @ResponseBody
+    public Result informationPerfect(UserInfoDto userInfoDto, HttpServletRequest request) {
+        Result result = new Result();
+        result.setSuccess(false);
+
+        UserInfo userInfo = memberService.updateUserInfomation(userInfoDto, getLoginUser(request));
+        result.setSuccess(true);
+
+        setLoginUserToSession(userInfo, request);
+        return result;
+    }
+
+    /**
+     *
+     *@return org.springframework.web.servlet.ModelAndView
+     *@author shaojx
+     *@date 2016/7/9 21:23
+     *@version 1.0
+     *@since 1.6
+     */
+    @RequestMapping("/accountPerfect")
+    @ResponseBody
+    public Result accountPerfect(UserInfoDto userInfoDto, HttpServletRequest request) {
+        Result result = new Result();
+        result.setSuccess(false);
+
+        UserInfo userInfo = memberService.updateUserAcount(userInfoDto, getLoginUser(request));
+        result.setSuccess(true);
+
+        setLoginUserToSession(userInfo, request);
+        return result;
+    }
+
+    /**
+     *
+     *@return org.springframework.web.servlet.ModelAndView
+     *@author shaojx
+     *@date 2016/7/9 21:23
+     *@version 1.0
+     *@since 1.6
+     */
+    @RequestMapping("/config/saveConfig")
+    @ResponseBody
+    public Result saveConfig(UserInfoDto userInfoDto, HttpServletRequest request) {
+        Result result = new Result();
+        result.setSuccess(false);
+        UserInfo userInfo = memberService.updateUserConfig(userInfoDto, getLoginUser(request));
+        result.setSuccess(true);
+
+        setLoginUserToSession(userInfo, request);
+        return result;
+    }
+
+
 }

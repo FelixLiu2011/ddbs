@@ -703,7 +703,7 @@
     var token="e712cc82a9c04bb6a8305ebe4e992326";
     var sendGender = "1";//1男2女
     var sendHeadImgUrl = "images/default/male.png";//小头像
-    var myNickname = "Quintion";//自己昵称
+    var myNickname = $("#membNickname").val();//自己昵称
     var myLanguage = "zh-cn";
     var myId = "2935185";//我的ID
     //1：普通会员，2：高级会员，3：VIP会员
@@ -1474,7 +1474,7 @@
                                     </li>
                                     <li>
                                         <span class="set-content-title">昵称：</span>
-                                        <span class="set-content-con"><input class="inp-edit bdra15 h30 pl15" id="membNickname" maxlength="20" value="Quintion"><span class="f12 bir-Infor-Tip  nicknamelength " id="nicknamelength" style="display: none;">昵称长度限制为3-20位字符</span></span>
+                                        <span class="set-content-con"><input class="inp-edit bdra15 h30 pl15" id="membNickname" maxlength="20" value="${userInfo.membNickname}"><span class="f12 bir-Infor-Tip  nicknamelength " id="nicknamelength" style="display: none;">昵称长度限制为3-20位字符</span></span>
                                     </li>
                                     <li>
                                         <span class="set-content-title">GaGa 号：</span>
@@ -1484,7 +1484,7 @@
                                         <span class="set-content-title">年龄：</span>
                                         <div class="form-field set-content-con" style="width: 60%;">
                                             <div class="reg_form_sel mr10" style="z-index: 105;">
-                                                <p id="reg_year"></p>
+                                                <p id="reg_year"> </p>
                                                 <ul class="option year1" id="selYear" style="display: none;">
                                                 </ul>
                                             </div>
@@ -1515,7 +1515,7 @@
                                     <li>
                                         <span class="set-content-title">职业：</span>
                                         <div class="inlineblock occupation  h30 bdra30" style="z-index: 102">
-                                            <span class="xld inlineblock" data-tongyong="" id="membJob"></span>
+                                            <span class="xld inlineblock" data-tongyong="${userInfo.membJob}" id="membJob"></span>
                                             <ul class="xld-select occupationList" style="display: none; top: 33px;height: 184px;overflow: auto;">
 
                                                 <li style="margin:0px;" class="" data-chuandi="1">文案</li>
@@ -1623,45 +1623,45 @@
                                         <span class="set-content-title">国家：</span>
                                         <div class="inlineblock occupation  h30 bdra30">
                                             <span class=" inlineblock country-sle" data-country="" style="z-index: 1" id="countryshow"></span>
-                                            <input type="hidden" id="country" value=""><input type="hidden" id="countrycode" value="">
+                                            <input type="hidden" id="country" value=""><input type="hidden" id="countrycode" value="${membCountryCode}">
                                         </div>
                                     </li>
                                     <li>
                                         <span class="set-content-title">语言：</span>
                                         <div class="inlineblock occupation  h30 bdra30" style="z-index: 100">
-                                            <span class="xld inlineblock" data-tongyong="en-us" id="membLanguage">English</span>
+                                            <span class="xld inlineblock" data-tongyong="${membLanguage}" id="membLanguage">English</span>
                                             <ul class="xld-select" style="display: none; top: 33px;">
 
-                                                <li class="" data-chuandi="en-us">English</li>
+                                                <li class="" data-chuandi="en_us">English</li>
 
-                                                <li class="" data-chuandi="ja-jp">日本語</li>
+                                                <li class="" data-chuandi="ja_jp">日本語</li>
 
-                                                <li class="" data-chuandi="ru-ru">русский</li>
+                                                <li class="" data-chuandi="ru_ru">русский</li>
 
-                                                <li class="" data-chuandi="es-es">Español</li>
+                                                <li class="" data-chuandi="es_es">Español</li>
 
-                                                <li class="" data-chuandi="zh-cn">简体中文</li>
+                                                <li class="" data-chuandi="zh_cn">简体中文</li>
 
-                                                <li class="" data-chuandi="zh-tw">繁體中文</li>
+                                                <li class="" data-chuandi="zh_tw">繁體中文</li>
 
-                                                <li class="" data-chuandi="ko-kr">한국어</li>
+                                                <li class="" data-chuandi="ko_kr">한국어</li>
 
-                                                <li class="" data-chuandi="de-de">Deutsch</li>
+                                                <li class="" data-chuandi="de_de">Deutsch</li>
 
                                             </ul>
                                         </div>
                                     </li>
                                     <li>
                                         <span class="set-content-title">身高（cm）：</span>
-                                        <span class="set-content-con" style="z-index: 1"> <input class="inp-edit bdra15 h30 pl15" id="membHeight" maxlength="3" value=""></span>
+                                        <span class="set-content-con" style="z-index: 1"> <input class="inp-edit bdra15 h30 pl15" id="membHeight" maxlength="3" value="${membHeight}"></span>
                                     </li>
                                     <li>
                                         <span class="set-content-title">体重（kg）：</span>
-                                        <span class="set-content-con" style="z-index: 1"> <input class="inp-edit bdra15 h30 pl15" id="membWeight" maxlength="3" value=""></span>
+                                        <span class="set-content-con" style="z-index: 1"> <input class="inp-edit bdra15 h30 pl15" id="membWeight" maxlength="3" value="${membWeight}"></span>
                                     </li>
                                     <li>
                                         <span class="set-content-title">个性签名：</span>
-                                        <span class="set-content-con"> <textarea class="text-edit bdra15" maxlength="25" id="membSignature"></textarea></span>
+                                        <span class="set-content-con"> <textarea class="text-edit bdra15" maxlength="25" id="membSignature">${membSignature}</textarea></span>
                                     </li>
                                     <li>
                                         <span class="set-content-title">兴趣：</span>
@@ -1720,31 +1720,19 @@
                                 <li>
                                     <div class="set-content-title"><div class="yhtx tr inlineblock"><img src="http://images.gagahi.com//images/default/male.png"></div></div>
                                 </li>
-                                <li><span class="set-content-title">昵称：</span><span class="set-content-con">Quintion</span></li>
+                                <li><span class="set-content-title">昵称：</span><span class="set-content-con">${userInfo.membNickname}</span></li>
                                 <li><span class="set-content-title">GaGa 号：</span><span class="set-content-con">30039931</span></li>
-                                <li><span class="set-content-title">年龄：</span><span class="set-content-con">0</span></li>
+                                <li><span class="set-content-title">年龄：</span><span class="set-content-con">
+                                ${userInfo.membAge}
+                                </span></li>
                                 <li><span class="set-content-title">性别：</span><span class="set-content-con">男</span></li>
                                 <li><span class="set-content-title">职业：</span><span class="set-content-con"></span></li>
                                 <li><span class="set-content-title">国家：</span><span class="set-content-con"></span></li>
-                                <li><span class="set-content-title">语言：</span><span class="set-content-con">
-
-
-
-
-							English
-
-
-
-
-
-
-
-
-				</span>
+                                <li><span class="set-content-title">语言：</span><span class="set-content-con">English</span>
                                 </li>
-                                <li><span class="set-content-title">身高（cm）：</span><span class="set-content-con"></span></li>
-                                <li><span class="set-content-title">体重（kg）：</span><span class="set-content-con"></span></li>
-                                <li><span class="set-content-title" id="showinfo">个性签名：</span><span class="set-content-con"></span></li>
+                                <li><span class="set-content-title">身高（cm）：</span><span class="set-content-con">${userInfo.membHeight}</span></li>
+                                <li><span class="set-content-title">体重（kg）：</span><span class="set-content-con">${userInfo.membWeight}</span></li>
+                                <li><span class="set-content-title" id="showinfo">个性签名：</span><span class="set-content-con">${userInfo.membSignature}</span></li>
                                 <li><span class="set-content-title" >兴趣：</span><span class="set-content-con" >
 
                 </span></li>
@@ -1756,16 +1744,8 @@
                         <div class="set-content">
                             <div  id="personalinformationWin" class="set-hidden" style="display:none;">
                                 <ul>
-                                    <li><span class="set-content-title">金币：</span><span class="set-content-con">0.00<a href="<%=path%>/pay/recharge"><span class="set-recharge c-2d57a1">充值</span></a> </span></li>
-                                    <li><span class="set-content-title">会员级别：</span><span class="set-content-con">
-
-
-							普通会员
-
-
-
-
-
+                                    <li><span class="set-content-title">金币：</span><span class="set-content-con">${userInfo.membCoin}<a href="<%=path%>/pay/recharge"><span class="set-recharge c-2d57a1">充值</span></a> </span></li>
+                                    <li><span class="set-content-title">会员级别：</span><span class="set-content-con">普通会员
 				<a href="<%=path%>/pay/upgradeMember"><span class="set-member c-2d57a1" style=" margin-left:30px;">升级</span></a></span></li>
                                     <li><span class="set-content-title">翻译包字符数：</span><span class="set-content-con" ><span id="myTotalTranslateNum">0</span></span></li>
 
@@ -1773,12 +1753,7 @@
                                         <div class="form-field set-content-con" style="width: 60%;">
                                             <div style="display:inline-block;width:auto">
                   <span class="set-content-con">
-
-
-
-                  		<input class="inp-edit bdra15 h30 pl15" value="" id="mememail">
-
-
+                  		<input class="inp-edit bdra15 h30 pl15" value="${userInfo.membEmail}" id="mememail">
                   </span></div>
                                             <span class="f12 bir-Infor-Tip emailcheck" style="display: none;">邮箱已被占用</span>
                                             <span class="f12 bir-Infor-Tip emailerror" style="display: none;">邮箱格式不正确</span></div>
@@ -1788,7 +1763,7 @@
                     <div style="display: inline;">
                         <span class="f12 ts ts1 memphone" style="display: none;">号码不正确</span>
                     </div>
-                  <input class="inp-edit bdra15 h30 pl15" value="" id="memphone">
+                  <input class="inp-edit bdra15 h30 pl15" value="${userInfo.membPhoneNo}" id="memphone">
                   </span></li>
                                     <input type="hidden" id="membPassword" value=""/>
                                     <input type="hidden" id="membEmail" value=""/>
@@ -1815,26 +1790,17 @@
                             </div>
                             <!--账号展示开始-->
                             <ul class="set-show">
-                                <li><span class="set-content-title">金币：</span><span class="set-content-con">0.00</span></li>
-                                <li><span class="set-content-title">会员级别：</span><span class="set-content-con">
-
-
-							普通会员
-
-
-
-
-
-                </span></li>
+                                <li><span class="set-content-title">金币：</span><span class="set-content-con">${userInfo.membCoin}</span></li>
+                                <li><span class="set-content-title">会员级别：</span><span class="set-content-con">普通会员</span></li>
                                 <li><span class="set-content-title">翻译包字符数：</span><span class="set-content-con meminfo-fnayi-num" id="mymefiTranslate">0</span></li>
 
-                                <li><span class="set-content-title">邮箱：</span><span class="set-content-con"></span></li>
-                                <li><span class="set-content-title">手机号码：</span><span class="set-content-con"></span></li>
+                                <li><span class="set-content-title">邮箱：</span><span class="set-content-con">${userInfo.membEmail}</span></li>
+                                <li><span class="set-content-title">手机号码：</span><span class="set-content-con">${userInfo.membPhoneNo}</span></li>
                                 <li><span class="set-content-title" id="membercard">密码：</span><span class="set-content-con">******</span></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="set-dom">
+                    <div class="set-dom" style="display:none;">
                         <h1 class="set-dom-title pb5 f18" >信用卡管理<span class="set-dom-edit ml5"></span></h1>
                         <div>
                             <div class="set-content set-hidden" style="display:none;">
@@ -1861,7 +1827,7 @@
                                 <p style="margin-left:25%;display:none;" class="red" id="tostshow">邮箱格式不正确</p>
                                 <ul>
                                     <li><span class="set-content-title">认证邮箱：</span> <span class="set-email">
-                  <input type="text" value="" id="rzemail">
+                  <input type="text" value="${userInfo.membEmail}" id="rzemail">
                   <button onclick = "sendemail()" class="meminfo-send-email">发送邮件</button>
                   <br>
                   <span class="pl15 inlineblock pt10">1、在忘记登陆密码时可以通过此邮箱来重置密码，让您的账号更加安全！<br>
@@ -1943,12 +1909,7 @@
 
 				</span></li>
                                 <li><span class="set-content-title">加好友申请：</span><span class="set-content-con">
-
-
-
-
 						 允许任何人把我加为好友
-
 				</span></li>
                             </ul>
                         </div>
@@ -3223,7 +3184,7 @@
         }
         if(nicknamelength){
             layer.load(0, {shade: 0.1});
-            $.post("http://www.gagahi.com:80/Member/InformationPerfect",{
+            $.post(path + "/member/informationPerfect",{
                 nickname:membNickname,
                 birthday:membDate,
                 job:membJob,
@@ -3259,12 +3220,12 @@
                     }else{
                         layer.msg('保存成功');
                         setTimeout(function(){
-                            window.location.href ="http://www.gagahi.com:80/Member/memberinformation"
+                            window.location.href = "<%=path%>/member/memberInformation"
                         },500);
                     }
 
                 }
-            });
+            }, "json");
         }
     }
 
@@ -3421,7 +3382,7 @@
             /* $.post("http://www.gagahi.com:80/Platform/emailIsExistence",{email:username},function(result){
 
              }); */
-            $.post("http://www.gagahi.com:80/Member/accountPerfect",{
+            $.post(path + "/member/accountPerfect",{
                 newpwd:newpwd,
                 ispaypalloop:mempay,
                 ismasapayloop:massapay,
@@ -3430,9 +3391,9 @@
             },function(result){
                 if(result.success){
                     layer.msg('保存成功');
-                    window.location.href ="http://www.gagahi.com:80/Member/memberinformation"
+                    window.location.href ="<%=path%>/member/memberInformation"
                 }
-            });
+            }, "json");
         }
     }
     function sendemail(){
@@ -3705,7 +3666,7 @@
             var mecoIsbuy = $("#mecoIsbuy").is(':checked')?1:2;
             var mecoIssound = $("#mecoIssound").is(':checked')?1:2;
             var mecoId = $("#mecoId").val();
-            $.post("http://www.gagahi.com:80/Member/config/saveConfig",{
+            $.post(path + "/member/config/saveConfig",{
                 mecoId:mecoId,
                 mecoIsopenperson:mecoIsopenperson,
                 mecoIsonline:mecoIsonline,
@@ -3720,9 +3681,9 @@
                 mecoIssound:mecoIssound
             },function(result){
                 if(result.success){
-                    window.location.href ="http://www.gagahi.com:80/Member/memberinformation"
+                    window.location.href ="<%=path%>/member/memberInformation"
                 }
-            });
+            }, "json");
             /* $(this).parents(".set-hidden").css("display","none").siblings(".set-show").css("display","block");  */
 
         });
