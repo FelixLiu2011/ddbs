@@ -39,6 +39,7 @@
     <script  src="<%=path%>/common/js/laytpl.js"       type="text/javascript"></script>
     <script  src="<%=path%>/common/js/core.js"    type="text/javascript"></script>
     <script  src="<%=path%>/common/js/i18next-1.11.2.min.js" type="text/javascript"></script>
+    <script  src="<%=path%>/common/js/lang/zh_CN.js" type="text/javascript"></script>
     <script type="text/javascript">
         var ctx = 'http://www.gagahi.com:80';
         var staticPath = "http://static.gagahi.com";
@@ -1726,7 +1727,7 @@
                                 ${userInfo.membAge}
                                 </span></li>
                                 <li><span class="set-content-title">性别：</span><span class="set-content-con">男</span></li>
-                                <li><span class="set-content-title">职业：</span><span class="set-content-con"></span></li>
+                                <li><span class="set-content-title">职业：</span><span class="set-content-con" id="conJob"></span></li>
                                 <li><span class="set-content-title">国家：</span><span class="set-content-con"></span></li>
                                 <li><span class="set-content-title">语言：</span><span class="set-content-con">English</span>
                                 </li>
@@ -3687,6 +3688,11 @@
             /* $(this).parents(".set-hidden").css("display","none").siblings(".set-show").css("display","block");  */
 
         });
+
+        var membJob=$("#membJob").data("tongyong");
+        if(membJob != ""){
+            $("#conJob").html(memberInfo.job[membJob]);
+        }
     });
     /*兴趣选择*/
 
