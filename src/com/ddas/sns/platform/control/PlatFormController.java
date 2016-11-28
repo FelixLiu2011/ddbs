@@ -9,6 +9,7 @@
 package com.ddas.sns.platform.control;
 
 import com.ddas.common.Msg;
+import com.ddas.common.util.StringUtil;
 import com.ddas.common.util.springutil.SpringContextUtil;
 import com.ddas.sns.common.BaseController;
 import com.ddas.sns.userinfo.domain.UserInfo;
@@ -24,7 +25,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * ClassName:	PlatFormController
@@ -131,9 +134,10 @@ public class PlatFormController extends BaseController {
     @ResponseBody
     public Msg regMember(String sex, String language, String uuid) {
         UserInfo userInfo = userInfoService.fetchUserInfoByUserId(uuid);
-        userInfo.setUserSex(sex);
+        userInfo.setMembSex(sex);
+        userInfo.setMembLanguage(language);
         // TODO: 2016/11/7 设置语言
-        userInfoService.save(userInfo);
+        userInfoService.saveUserInfo(userInfo);
         Msg msg = new Msg();
         msg.setSuccessful(true);
 
@@ -156,28 +160,13 @@ public class PlatFormController extends BaseController {
 
     @RequestMapping("/register")
     @ResponseBody
-    public Msg register(@RequestBody UserInfo userInfo, HttpServletRequest request) {
+    public Msg register(UserInfo userInfo, HttpServletRequest request) {
         boolean save = false;
 
-        try {
-            String ip = "";
-            String address = "";
-            AddressUtils addressUtils = new AddressUtils();
-            ip = addressUtils.getIpAddr(request);
-            address = addressUtils.getAddresses(ip, "utf-8");
-            userInfo.setLoginIp(ip);
-            userInfo.setLoginAddress(address);
-            if (address.contains("中国")) {
-                userInfo.setUserStatus("0");//用0表示中国用户，前台会拦截掉，后台会进行登录审核，审核通过的
-            }
-        }catch (Exception e){
-            LOGGER.error(e.getMessage(), e);
-        }
-
-        save = userInfoService.save(userInfo);
+        save = userInfoService.saveUserInfo(userInfo);
         if (save) {
             Msg msg = new Msg();
-            msg.setMsg(SpringContextUtil.getMsgByKey("register.success", getLocalObject(request)));
+            msg.setMsg(userInfo.getMembGagaid());
             msg.setSuccessful(true);
             return msg;
         } else {
@@ -187,5 +176,89 @@ public class PlatFormController extends BaseController {
             return msg;
         }
     }
+
+    /**
+     * 验证用户输入的验证码
+     *
+     * @return java.lang.String
+     * @Author shaojunxiang
+     * @Date 2016/7/8 16:34
+     * @since JDK1.6
+     */
+    @RequestMapping("/reg/codeCheck")
+    @ResponseBody
+    public Msg codeCheck(HttpServletRequest request, String imageCode) {
+        String code = (String) request.getSession(true).getAttribute("validateCode");
+        Msg msg = new Msg();
+        msg.setSuccessful(false);
+        if (StringUtil.isNotEmpty(imageCode) && StringUtil.isNotEmpty(code)) {
+            if (imageCode.equals(code)) {
+                msg.setSuccessful(true);
+            }
+        }
+
+        return msg;
+    }
+
+    /**
+     * 邮箱唯一性的验证码
+     *
+     * @return java.lang.String
+     * @Author shaojunxiang
+     * @Date 2016/7/8 16:34
+     * @since JDK1.6
+     */
+    @RequestMapping("/checkEmail")
+    @ResponseBody
+    public Msg emailCheck(HttpServletRequest request, String email) {
+        Msg msg = new Msg();
+        boolean success = false;
+        if (StringUtil.isNotEmpty(email)) {
+            success = userInfoService.findUserByEmail(email);
+        }
+        msg.setSuccessful(success);
+
+        return msg;
+    }
+
+    @RequestMapping("/login")
+    @ResponseBody
+    public Msg login(String userName, String userPwd, HttpServletRequest request, HttpServletResponse response) {
+        UserInfo userInfoFromDb = null;
+        try {
+            userInfoFromDb = userInfoService.loginInProxy(userName, userPwd);
+        } catch (Exception e) {
+            LOGGER.error("系统出现错误!",e);
+            Msg msg = new Msg();
+            msg.setSuccessful(false);
+            String msgByKey = SpringContextUtil.getMsgByKey("login.sysError", getLocalObject(request));
+            msg.setMsg(msgByKey);
+            return msg;
+        }
+
+        boolean loginInResult = userInfoFromDb != null;
+        if (loginInResult) {
+            Cookie userNameCookie = new Cookie("userName", userName);
+            Cookie userPwdCookie = new Cookie("userPwd", userPwd);
+            //set cookie for expire 7days
+            userNameCookie.setMaxAge(60*60*24*7);
+            userPwdCookie.setMaxAge(60*60*24*7);
+
+            response.addCookie(userNameCookie);
+            response.addCookie(userPwdCookie);
+
+            setLoginUserToSession(userInfoFromDb, request);
+            Msg msg = new Msg();
+            msg.setMsg("success");
+            msg.setSuccessful(true);
+            return msg;
+        } else {
+            Msg msg = new Msg();
+            msg.setSuccessful(false);
+            msg.setMsg(SpringContextUtil.getMsgByKey("login.errorUserNameOrPwd", getLocalObject(request)));
+            return msg;
+        }
+    }
+
 
 }

@@ -18,11 +18,13 @@ public class Page {
     /**当前分页(index)*/
     private int currentPage;
     /**总共的分页数*/
-    private  int totalPages;
+    private  int totalPage;
     /**总共的记录数**/
     private int totalCount;
     /**当前分页的数据*/
     private List<?> dataList;
+    /**当前页，这个属性与currentPage相同，为了与页面上的内容兼容增加此属性*/
+    private int pageNo;
     /**分页的一些查询条件*/
     private Map<String, Object> condition;
 
@@ -45,12 +47,12 @@ public class Page {
         this.currentPage = currentPage;
     }
 
-    public int getTotalPages() {
-        return totalPages;
+    public int getTotalPage() {
+        return totalPage;
     }
 
-    public void setTotalPages(int totalPages) {
-        this.totalPages = totalPages;
+    public void setTotalPage(int totalPage) {
+        this.totalPage = totalPage;
     }
 
     public int getTotalCount() {
@@ -62,7 +64,7 @@ public class Page {
         //设置总页数
         int left=this.totalCount%this.pageSize;
         int divid=this.totalCount/this.pageSize;
-        setTotalPages(left==0?divid:(divid+1));
+        setTotalPage(left==0?divid:(divid+1));
     }
 
     public List<?> getDataList() {
@@ -99,5 +101,14 @@ public class Page {
 
     public void setExtra(Map<String, Object> extra) {
         this.extra = extra;
+    }
+
+    public int getPageNo() {
+        return pageNo;
+    }
+
+    public void setPageNo(int pageNo) {
+        this.pageNo = pageNo;
+        this.currentPage=pageNo;
     }
 }

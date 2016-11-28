@@ -19,6 +19,16 @@
     <url-pattern>/</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>getAuthCode</servlet-name>
+    <servlet-class>com.ddas.common.servlet.GetAuthCodeServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getAuthCode</servlet-name>
+    <url-pattern>/getAuthCode</url-pattern>
+  </servlet-mapping>
+
   <!--Spring内存泄露-->
   <listener>
     <listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
@@ -44,7 +54,7 @@
   </filter-mapping>
 
     <!--XSS攻击-->
-    <filter>
+   <filter>
         <filter-name>XssSqlFilter</filter-name>
         <filter-class>com.ddas.common.filter.XssFilter</filter-class>
     </filter>

@@ -8,11 +8,15 @@
  */
 package com.ddas.sns.member.control;
 
+import com.ddas.common.result.Result;
 import com.ddas.sns.common.BaseController;
+import com.ddas.sns.member.service.MemberService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
 /**
@@ -26,6 +30,8 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 @RequestMapping("/member")
 public class MemberController extends BaseController {
+    @Resource
+    private MemberService memberService;
 
     /**
      *
@@ -116,5 +122,9 @@ public class MemberController extends BaseController {
         ModelAndView modelAndView= withLocal(request,"member/myInformation");
         return modelAndView;
     }
-
+    @RequestMapping("/getMemberId")
+    @ResponseBody
+    public Result getMemberId(String mid) {
+        return memberService.getMemberId(mid);
+    }
 }

@@ -1,6 +1,3 @@
-/**
- * Created by 李鑫海 on 2016/3/25.
- */
 var popPrivate=popPrivate||{};
 (function(pv){
     var private= function () {
@@ -343,7 +340,7 @@ var popPrivate=popPrivate||{};
             id: 'facebox',
             assign: 'sendContent',
 
-            path: staticPath + '/IM/img/qqFace/' //表情存放的路径
+            path: staticPath + '/common/IM/img/qqFace/' //表情存放的路径
         });
         $("#chatConBottom .sendContent").keydown(function (e) {
             if (e.keyCode == "13") {//keyCode=13是回车键
@@ -392,9 +389,7 @@ $(function(){
 		   var gettpl = Zoneyet.template($('#temp_home_popPrivate').html()).render({});
 		   var mid = $(".thumbWrap").find(".cur").find("img:first").attr("lmid");
 		   
-		   $.post(ctx+"/Member/getMemberId",{"gagaid":mid},function(reg){
-				  console.log(reg);
-				  console.log("dd");
+		   $.post(ctx+"/memeber/getMemberId",{"mid":mid},function(reg){
 				  var receiveLanguage = reg.obj.membLanguage;
 				  
 			       var popPriIns=layer.open({

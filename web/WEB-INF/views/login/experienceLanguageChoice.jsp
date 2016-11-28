@@ -3,6 +3,7 @@
 <%
     String path = request.getContextPath();
 %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <script type="text/javascript">
     var path = "<%=path%>";
 </script>
@@ -15,9 +16,6 @@
 <!-- 二级导航选中状态 -->
 
 <!-- 头像尺寸 -->
-
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
     <meta name="renderer" content="webkit">
@@ -400,35 +398,35 @@
         <ul class="lan-bk mb45">
 
             <li>English
-                <div class="selected" language="en-us"></div>
+                <div class="selected" language="en_us"></div>
             </li>
 
             <li>日本語
-                <div class="" language="ja-jp"></div>
+                <div class="" language="ja_jp"></div>
             </li>
 
             <li>русский
-                <div class="" language="ru-ru"></div>
+                <div class="" language="ru_ru"></div>
             </li>
 
             <li>Español
-                <div class="" language="es-es"></div>
+                <div class="" language="es_es"></div>
             </li>
 
             <li>简体中文
-                <div class="" language="zh-cn"></div>
+                <div class="" language="zh_cn"></div>
             </li>
 
             <li>繁體中文
-                <div class="" language="zh-tw"></div>
+                <div class="" language="zh_tw"></div>
             </li>
 
             <li>한국어
-                <div class="" language="ko-kr"></div>
+                <div class="" language="ko_kr"></div>
             </li>
 
             <li>Deutsch
-                <div class="" language="de-de"></div>
+                <div class="" language="de_de"></div>
             </li>
 
         </ul>

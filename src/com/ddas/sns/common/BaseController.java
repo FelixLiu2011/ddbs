@@ -2,9 +2,6 @@ package com.ddas.sns.common;
 
 import com.ddas.common.util.springutil.SpringContextUtil;
 import com.ddas.sns.userinfo.domain.UserInfo;
-import com.ddas.sns.userinfo.service.UserInfoService;
-import com.ddas.sns.vip.domain.UserVipInfo;
-import org.codehaus.janino.Mod;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -93,25 +90,7 @@ public class BaseController {
      *@since 1.6
      */
     public UserInfo getLoginUser(HttpServletRequest request){
-        LOGGER.error("CurrentLoginUserName:" + ((UserInfo) request.getSession(true).getAttribute("userInfo")).getUserName());
         return (UserInfo) request.getSession(true).getAttribute("userInfo");
-    }
-
-    /**
-     *把当前登陆的用户信息放到session，调用此方法会重置session中的用户信息，除掉如密码隐私信息
-     * 适用于当更新了用户的某些信息的时候重置session中的用户信息
-     * @param request
-     *@return com.ddas.sns.userinfo.domain.UserInfo
-     *@author shaojx
-     *@date 2016/7/10 11:19
-     *@version 1.0
-     *@since 1.6
-     */
-    public void setLoginUserToSession(UserInfo userInfo, HttpServletRequest request){
-        userInfo.setUserPwd(null);
-        String userCoin = userInfo.getUserCoin();
-        userInfo.setUserCoin((userCoin ==null||"".equals(userCoin))?"0":userCoin);//reset userCoin
-        request.getSession(true).setAttribute("userInfo", userInfo);
     }
 
     /**
@@ -184,6 +163,21 @@ public class BaseController {
     public void exceptionHandler(HttpServletRequest request, Exception e) {
         // TODO: 2016/8/7 可以根据e的类型去转向不同的错误页面
         LOGGER.error(e.getMessage(), e);
+    }
+
+    /**
+     *把当前登陆的用户信息放到session，调用此方法会重置session中的用户信息，除掉如密码隐私信息
+     * 适用于当更新了用户的某些信息的时候重置session中的用户信息
+     * @param request
+     *@return com.ddas.sns.userinfo.domain.UserInfo
+     *@author shaojx
+     *@date 2016/7/10 11:19
+     *@version 1.0
+     *@since 1.6
+     */
+    public void setLoginUserToSession(UserInfo userInfo, HttpServletRequest request){
+        userInfo.setMembPwd(null);
+        request.getSession(true).setAttribute("userInfo", userInfo);
     }
 
 }

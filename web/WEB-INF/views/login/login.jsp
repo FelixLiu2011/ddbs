@@ -3,6 +3,7 @@
 <%
     String path = request.getContextPath();
 %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <script type="text/javascript">
     var path = "<%=path%>";
 </script>
@@ -15,7 +16,6 @@
 <!-- 二级导航选中状态 -->
 
 <!-- 头像尺寸 -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
     <meta name="renderer" content="webkit">
@@ -483,7 +483,7 @@
                                 <input id="txt-code" class=" w100 yzm" type="text"
                                        autocomplete="off" placeholder='验证码' maxlength="4"
                                        minlength="4" data-type="required|minlength" name="code"
-                                       err="required"> <span class="yzt"><img title='点击更换' onclick="javascript:refresh(this);" src="http://www.gagahi.com:80/imageServlet"/></span><!-- <span class="sx"></span> -->
+                                       err="required"> <span class="yzt"><img title='点击更换' onclick="javascript:refresh(this);" src="<%=path%>/getAuthCode"/></span><!-- <span class="sx"></span> -->
                             </div>
                             <p class="f13">
                                 点击注册，即表示您阅读并同意我们的<a href="http://www.gagahi.com:80/Platform/privacyclause" class="ls"  target="_blank">《隐私条款》</a>
@@ -501,13 +501,13 @@
                                 <input id="txt-name" autocomplete="off" class="inp txt-name"
                                        type="text" name="name" data-type="required|diy-regex"
                                        data-type-diy-regex="^(1\d{10})|(([0-9a-zA-Z]+[-._+&])*[0-9a-zA-Z]+@([-0-9a-zA-Z]+[.])+[a-zA-Z]{2,6})$"
-                                       placeholder='邮箱/Gaga号'>
+                                       placeholder='邮箱/Gaga号' value='123@qq.com'>
                             </div>
                             <div class="form-control">
                                 <div style="display: inline;">
                                     <span class="f12 ts mkd " style="display: none;">请输入密码！</span>
                                 </div>
-                                <input type="password" autocomplete="off" placeholder='密码'
+                                <input type="password" autocomplete="off" value="123456" placeholder='密码'
                                        class="inp txt-pwd" id="txt-pwd" maxlength="20"
                                        data-type-diy-regex="^[\da-zA-Z]{6,20}$"
                                        data-type="required|diy-regex" name="pwd" err="required">
@@ -649,11 +649,11 @@
         if(username != '' && pwd != ''){
             $("#log-bnt").text($.t("global.logining"));
             LOGGING=true;
-            $.post("http://www.gagahi.com:80/Platform/login",{username:username,password:pwd},function(result){
+            $.post(path + "/platform/login",{userName:username,userPwd:pwd},function(result){
                 //$("span").html(result);
-                if(result.success){
+                if(result.successful){
                     LOGGING=true;
-                    window.location.href = 'http://www.gagahi.com:80' + result.attributes["redirectUrl"];
+                    window.location.href = path + "/index/iHome";
                 }else{
                     LOGGING=false;
                     $("#log-bnt").text($.t("global.login"));
@@ -681,9 +681,8 @@
             $(".zc-txt-name").css("border-color", "#ff9c00");
             emailflag = false;
         }else {
-            /*$.post("http://www.gagahi.com:80/Platform/checkEmail",{email:zcusername},function(result){
-                //$("span").html(result);
-                if(!result.success){
+            $.post(path + "/platform/checkEmail",{email:zcusername},function(result){
+                if(!result.successful){
                     $('.yy').css('display', 'block').siblings().css('display', 'none');
                     $(".zc-txt-name").css("border-color", "#ff9c00");
                     emailflag = false;
@@ -692,7 +691,7 @@
                     $(".zc-txt-name").css("border-color", "#fff");
                     emailflag = true;
                 }
-            });*/
+            });
             emailflag = true;
         }
 
@@ -726,9 +725,9 @@
             $(".yzm").css("border-color", "#ff9c00");
             codeflag = false;
         }else{
-/*            $.post("http://www.gagahi.com:80/Platform/reg/codeCheck",{imageCode:txtCode},function(result){
+            $.post(path + "/platform/reg/codeCheck",{imageCode:txtCode},function(result){
                 //$("span").html(result);
-                if(!result.success){
+                if(!result.successful){
                     $('.yzmbzq').css('display', 'block').siblings().css('display', 'none');
                     $(".yzm").css("border-color", "#ff9c00");
                     codeflag = false;
@@ -740,8 +739,7 @@
                         callback();
                     }
                 }
-            });*/
-            codeflag = true;
+            });
             //验证码是否正确
         }
     }
@@ -802,36 +800,17 @@
                 var birthday = selYear+"-"+selMonth+"-"+selDay;
                 if (codeflag) {
                     var data = {
-                        userEmail:email,
-                        userPwd:pwd,
-                        userBirth:birthday,
-                        userName:nickName
+                        membEmail:email,
+                        membPwd:pwd,
+                        membBirth:birthday,
+                        membNickname:nickName
                     }
                     $.post(path + "/platform/register",data,function(result){
-                        if(result){
-                            console.log(result);
-                            window.location.href =path +  '/platform/setSex?uuid'+result.obj;
+                        if(result.successful){
+                            window.location.href = path +  '/platform/setSex?uuid='+result.msg;
                         }
-                    });
-                } else {
-                    txtcodeCheck(function() {
-                        $.post("http://www.gagahi.com:80/Platform/checkblackip",function(reg){
-                            if(reg.success){
-                                var data = {name:email,pwd:pwd,birthday:birthday,source:source,inviter:inviter,sysid:sysid,ispromoter:ispromoter,inviteEmail:inviteEmail,nickname:nickName}
-                                $.post("http://www.gagahi.com:80/Platform/platformReg",data,function(result){
-
-                                    if(result){
-                                        window.location.href = 'http://www.gagahi.com:80/Platform/setSex/'+result.obj;
-                                        //$('html').html(result);
-                                    }
-                                });
-                            }else{
-                                layer.msg(reg.msg);
-                            }
-                        })
-                    });
+                    }, "json");
                 }
-
             }
         }
 
@@ -922,7 +901,7 @@
         }
     });
     function refresh(obj) {
-        obj.src = "http://www.gagahi.com:80/imageServlet?"+Math.random();
+        obj.src = path + "getAuthCode?"+Math.random();
     }
 </script>
 

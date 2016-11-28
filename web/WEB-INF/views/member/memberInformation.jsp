@@ -3,6 +3,7 @@
 <%
     String path = request.getContextPath();
 %>
+<!DOCTYPE html>
 <script type="text/javascript">
     var path = "<%=path%>";
 </script>
@@ -15,8 +16,6 @@
 <!-- 二级导航选中状态 -->
 
 <!-- 头像尺寸 -->
-
-<!DOCTYPE html>
 <html>
 <head>
     <meta name="renderer" content="webkit">
@@ -1335,7 +1334,7 @@
                 </div>
                 <div class="yhxx fr">
                     <p class="ari">
-                        <a class="ellipsis-name" href="<%=path%>/member/myInformation"  title="Quintion">Quintion</a>
+                        <a class="ellipsis-name" href="<%=path%>/member/myInformation"  title="${userInfo.membNickname}">${userInfo.membNickname}</a>
 
                     </p>
                     <p class="ari hui f12" style="margin: 8px 0">GaGaID:30039931</p>

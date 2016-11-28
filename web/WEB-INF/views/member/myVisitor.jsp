@@ -3,6 +3,7 @@
 <%
     String path = request.getContextPath();
 %>
+<!DOCTYPE html>
 <script type="text/javascript">
     var path = "<%=path%>";
 </script>
@@ -15,8 +16,6 @@
 <!-- 二级导航选中状态 -->
 
 <!-- 头像尺寸 -->
-
-<!DOCTYPE html>
 <html>
 <head>
     <meta name="renderer" content="webkit">
