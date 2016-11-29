@@ -132,12 +132,13 @@ public class PlatFormController extends BaseController {
      */
     @RequestMapping("/regMember")
     @ResponseBody
-    public Msg regMember(String sex, String language, String uuid) {
+    public Msg regMember(String sex, String language, String uuid, HttpServletRequest request) {
         UserInfo userInfo = userInfoService.fetchUserInfoByUserId(uuid);
         userInfo.setMembSex(sex);
         userInfo.setMembLanguage(language);
         // TODO: 2016/11/7 设置语言
         userInfoService.saveUserInfo(userInfo);
+        setLoginUserToSession(userInfo, request);
         Msg msg = new Msg();
         msg.setSuccessful(true);
 

@@ -6,7 +6,7 @@ import java.io.Serializable;
  * Created by Administrator on 2016/10/10.
  */
 public class UserInfoDto implements Serializable {
-    private String nickName;
+    private String nickname;
     private String birthday;
     private String job;
     private String height;
@@ -35,12 +35,12 @@ public class UserInfoDto implements Serializable {
     private String mecoIsbuy;
     private String mecoIssound;
 
-    public String getNickName() {
-        return nickName;
+    public String getNickname() {
+        return nickname;
     }
 
-    public void setNickName(String nickName) {
-        this.nickName = nickName;
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
     }
 
     public String getBirthday() {

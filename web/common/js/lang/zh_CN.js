@@ -51,59 +51,7 @@ memberInfo.job={
     50 : "自由职业"
 };
 
-memberInfo.job={
-    1 : "文案",
-    2 : "文员",
-    3 : "程序员",
-    4 : "设计",
-    5 : "销售",
-    6 : "客户经理",
-    7 : "工程师",
-    8 : "CEO",
-    9 : "会计",
-    10 : "出纳",
-    11 : "公务员",
-    12 : "农民",
-    13 : "渔民",
-    14 : "医生",
-    15 : "护士",
-    16 : "清洁工",
-    17 : "保安",
-    18 : "警察",
-    19 : "教练",
-    20 : "运动员",
-    21 : "司机",
-    22 : "快递员",
-    23 : "服务员",
-    24 : "空姐",
-    25 : "机长",
-    26 : "维修工",
-    27 : "采购",
-    28 : "厨师",
-    29 : "美食家",
-    30 : "导游",
-    31 : "老师",
-    32 : "学生",
-    33 : "校工",
-    34 : "营业员",
-    36 : "律师",
-    37 : "理发师",
-    38 : "美容师",
-    39 : "牧师",
-    40 : "演员",
-    41 : "歌手",
-    42 : "经纪人",
-    43 : "摄影师",
-    44 : "导演",
-    45 : "舞蹈家",
-    46 : "画家",
-    47 : "作家",
-    48 : "个体店老板",
-    49 : "家庭主妇",
-    50 : "自由职业"
-};
-
-var platformZHCountryGroupMap = {
+memberInfo.platformZHCountryGroupMap = {
     "T-Z": [{
         "dicoId": 55,
         "dicoCountryid": "AM",
@@ -2852,4 +2800,17 @@ var platformZHCountryGroupMap = {
             "dicoDescription": "",
             "dicoIsdel": 1
         }]
+};
+
+memberInfo.getCountryInfoByCode = function(countryCode){
+    if(countryCode != ""){
+        for(var obj in memberInfo.platformZHCountryGroupMap) {
+            var countryInfo = memberInfo.platformZHCountryGroupMap[obj];
+            for(var obj in countryInfo){
+                if(countryCode == countryInfo[obj].dicoId) {
+                    return countryInfo[obj];
+                }
+            }
+        }
+    }
 };

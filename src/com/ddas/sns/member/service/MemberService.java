@@ -73,7 +73,7 @@ public class MemberService {
     */
     public UserInfo updateUserInfomation(UserInfoDto userInfoDto, UserInfo userInfo){
         UserInfo userinfo = userInfoService.fetchUserInfoByUserId(userInfo.getMembGagaid());
-        userinfo.setMembNickname(userInfoDto.getNickName());
+        userinfo.setMembNickname(userInfoDto.getNickname());
         userinfo.setMembLanguage(userInfoDto.getLanguage());
         userinfo.setMembCountry(userInfoDto.getCountry());
         userinfo.setMembCountryCode(userInfoDto.getCountrycode());
