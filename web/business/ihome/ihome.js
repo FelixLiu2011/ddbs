@@ -12,13 +12,14 @@ var buyshowflag=0;   //是否购买展示
 var lovedListStr="";  //偶遇列表id
 var jsonObj=[];  //一次或取当前点赞信息
 $(function(){
-    searchTypeData(1,2);
+    searchTypeData(1,2);//查询第一页以及 推荐 的数据
 });
 
 
 /*模糊搜索*/
 function searchData(pageNo) {
     if($("#keywords").val().length<=0)  return;
+    searchType=2;
     $("#datalists").empty();
     $("#datacover").partialLoader();
     $.post("http://www.gagahi.com:80/ihome/getDatas",
@@ -30,7 +31,6 @@ function searchData(pageNo) {
         },
         function(data,textStatus){
             $("#datacover").partialLoader("close");
-            searchType=2;
             var obj = eval(data);
             //parseselfbean(obj.attributes.selfbean);
             parsePage(obj.attributes.page);
@@ -44,6 +44,8 @@ function searchData(pageNo) {
 function searchTypeData(pageNo,quickSearchTypeval) {
     $("#datalists").empty();
     $("#datacover").partialLoader();
+    searchType=3;
+    quickSearchType=quickSearchTypeval;
     $.post(path+"/ihome/getTypeData",
         {
             "pageNo":pageNo,
@@ -62,9 +64,10 @@ function searchTypeData(pageNo,quickSearchTypeval) {
 }
 /*条件搜索*/
 function searchSelectionData(pageNo) {
+    searchType=1;
     $("#datalists").empty();
     $("#datacover").partialLoader();
-    $.post("http://www.gagahi.com:80/ihome/getSelectionsData",
+    $.post(path+"/getSelectionsData",
         {
             "country":$('#countrydiv input[name="country"]:checked ').val(),
             "sex":$('#sexdiv input[name="sex"]:checked ').val(),
@@ -95,7 +98,7 @@ function parseselfbean(selfbean){
         //剪切nickname
         var nickname=bean.membNickname;
         selfhtmlstr="<li class='bdra15'> <a href='http://www.gagahi.com:80/Member/otherHome?gagaid="+bean.membGagaid+"' ><div class='pic tc'>"+
-            "<span><img src='http://images.gagahi.com//"+showBigImage(bean.membBigimg)+"'></span></div></a>"+
+            "<span><img src='"+staticPath+showBigImage(bean.membBigimg)+"'></span></div></a>"+
             "<div class='jbxx'>"+
             "<span class='ari c-2d57a1 nickfullname name-width'>"+nickname+"</span> <span class='idh'>("+bean.membGagano+")</span>";
         if(bean.memberfinance.mefiLevel==2){
@@ -147,7 +150,10 @@ function parseList(list){
             //首页展示
             if(pageNo==1 && '1'<2){
                 if(buyshowflag==0 && i==0){
-                    if(searchType==3) $("#datalists").append("<li class='bdra5'><div class='sw'><img src='"+path+"/common/images/sw.jpg'></div><div class='wz'><p class=' f12 mb10'>I want to be here to win the attention of millions of people.</p><button class='bdra15 ban f12' onclick='checkBuyShowFirst()'>Learn more</button></div></li>");
+                    if(searchType==3) {
+                        $("#datalists").append("<li class='bdra5'><div class='sw'><img src='"+path+"/common/images/sw.jpg'></div><div class='wz'><p class=' f12 mb10'>"
+                            +$.t("global.adInfo")+"</p><button class='bdra15 ban f12' onclick='checkBuyShowFirst()'>"+$.t("global.learnMore")+"</button></div></li>");
+                    }
                 }else if(buyshowflag==1 && num==i){
                     if(searchType==3) $("#datalists").append(selfhtmlstr);
                 }
@@ -187,7 +193,7 @@ function parseList(list){
                 }
             }
             var htmlstr="<li class='bdra5 " + handStr + "' dataid='"+list[i].membGagaid+"'>"+(list[i].isHand==1?"<span class='crown'></span><span class='s-trangle'></span><span class='s-trangle rt'></span><span class='s-trangle lb'></span><span class='s-trangle rb'></span>":"")+" <a href='http://www.gagahi.com:80/Member/otherHome/"+list[i].membGagaid+"' ><div class='pic tc'>"+
-                "<span><img src='http://images.gagahi.com//"+showBigImage(list[i].membBigimg)+"'></span></div></a>"+
+                "<span><img src='"+staticCtx+showBigImage(list[i].membBigimg)+"'></span></div></a>"+
                 "<div class='jbxx'>";
 
 //		   	       if(list[i].membLightNickname==null){
@@ -370,8 +376,8 @@ function parsePage(pageUtil){
             pageCount=pageUtil.totalPage;
         }
         pageNo=pageUtil.pageNo;
-        searchType=pageUtil.searchType;
-        quickSearchType=pageUtil.quickSearchType;
+      //  searchType=pageUtil.searchType;
+        //quickSearchType=pageUtil.quickSearchType;
         createPage();
     }
 }
@@ -393,5 +399,26 @@ function  createPage(){
             }
         }
     });
+}
+
+
+//头像显示
+function showBigImage(imgCode){
+    if(imgCode==1){
+        return 'images/default/male.png';
+    }else if(imgCode==2){
+        return 'images/default/female.png';
+    }else{
+        return imgCode;
+    }
+};
+
+
+
+//获取随机数
+function GetRandomNum(Min,Max){
+    var Range = Max - Min;
+    var Rand = Math.random();
+    return(Min + Math.round(Rand * Range));
 }
 

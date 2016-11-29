@@ -600,16 +600,6 @@
     function selectItem(){
         $("input[name$='language'][value$='en-us']").attr("checked","true");
     }
-    //头像显示
-    function showBigImage(imgCode){
-        if(imgCode==1){
-            return 'images/default/male.png';
-        }else if(imgCode==2){
-            return 'images/default/female.png';
-        }else{
-            return imgCode;
-        }
-    };
 
     function i18nSucess() {
         $('#keywords').attr('placeholder', $.t('home.searchKey'));
@@ -1922,15 +1912,6 @@
             if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
         return fmt;
     }
-
-
-    //获取随机数
-    function GetRandomNum(Min,Max){
-        var Range = Max - Min;
-        var Rand = Math.random();
-        return(Min + Math.round(Rand * Range));
-    }
-
     //中秋弹窗 1.34
     /*
      if (!$.cookie('ztip')) {

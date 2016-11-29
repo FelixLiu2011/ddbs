@@ -64,27 +64,7 @@
             "ru-ru":"ru_ru"
         };
         var language = Zoneyet.Global.language;
-        //åå§åå½éå
-        /* 	if(Zoneyet.Browser.isIE9||Zoneyet.Browser.isIE8){
-         //æ¯æie9
-         $.i18n.init({
-         lng:lan2fileLan[language],//åç«¯å½éåæä»¶
-         useCookie: false,
-         fallbackLng: false,
-         resStore:Zoneyet.Global.langresource,
-         // resGetPath: staticPath+'/js/lang/__lng__.json'
-         },function(err,t) {
-         });
-         }else{
-         $.i18n.init({
-         lng:lan2fileLan[language],//åç«¯å½éåæä»¶
-         useCookie: false,
-         fallbackLng: false,
-         //resStore:Zoneyet.Global.langresource,
-         resGetPath: staticPath+'/js/lang/__lng__.json'
-         },function(err,t) {
-         });
-         } */
+
         $.i18n.init({
             lng:lan2fileLan[language]||"en",//åç«¯å½éåæä»¶
             useCookie: false,
