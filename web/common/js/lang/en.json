@@ -65,7 +65,9 @@
         "mall":"Mall",
         "peopleNums":"We have 25,320,233 users from all over the world.",
         "invite_friend":"Invite friends",
-        "recommend":"Recommend"
+        "recommend":"Recommend",
+        "adInfo":"I want to be here to win the attention of millions of people.",
+        "learnMore":"Learn more"
     },
     "im": {
         "searchContacts": "Search contacts",
