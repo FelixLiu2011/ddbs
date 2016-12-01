@@ -58,10 +58,12 @@ $(function(){
         $("#leftIlike").text("");
 
     });
-
+    initMemberInfo();
     //选中状态样式
     selectionStyle();
+});
 
+function initMemberInfo() {
     //初始化个人信息开始
     var job = $("#conJob").val();
     if(job != ""){
@@ -76,7 +78,42 @@ $(function(){
         $("#countryshow").html(countryName);
     }
 
-});
+    var birth = $("#conBirth").val();
+    if(birth != "") {
+        var age = dateUtil.getAgeByBirthDay(birth);
+        var birthArray = birth.split("-");
+        $("#iAge").html(age);
+
+        $("#reg_year").text(birthArray[0]);
+        $("#reg_month").text(birthArray[1]);
+        $("#reg_day").text(birthArray[2]);
+    }
+
+    var sex = $("#conSex").val();
+    if(sex != "") {
+        $("#iConSex").html(memberInfo.sex[sex]);
+        $("#sex").html(memberInfo.sex[sex]);
+    }else {
+        $("#iConSex").html(memberInfo.sex[1]);//默认为男
+        $("#sex").html(memberInfo.sex[1]);
+    }
+
+
+    var conLable = $("#conLable").val();
+    if(conLable != "") {
+        var labelsArray = conLable.split(",");
+        var html = "";
+        var htmlSpan = "";
+        for(var i=0; i< labelsArray.length; i++) {
+            var label = labelsArray[i].split("_");
+            html += '<i>' + label[1] + '</i>';
+            htmlSpan += '<span class =' + label[0] + '>' + label[1] + '</span>';
+        }
+        $("#iConLabel").html(html);
+        $("#lableselected").html(htmlSpan);
+    }
+}
+
 //头部滚动
 (function($){
     $(window).load(function() {

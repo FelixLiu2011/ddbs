@@ -16,7 +16,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>ddas</servlet-name>
-    <url-pattern>/</url-pattern>
+    <url-pattern>/*</url-pattern>
   </servlet-mapping>
 
   <servlet>
@@ -50,7 +50,7 @@
 
   <filter-mapping>
     <filter-name>encodingFilter</filter-name>
-    <url-pattern>/</url-pattern>
+    <url-pattern>/*</url-pattern>
   </filter-mapping>
 
     <!--XSS攻击-->

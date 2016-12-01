@@ -51,6 +51,11 @@ memberInfo.job={
     50 : "自由职业"
 };
 
+memberInfo.sex={
+    1 : "男",
+    2 : "女"
+};
+
 memberInfo.platformZHCountryGroupMap = {
     "T-Z": [{
         "dicoId": 55,
@@ -2807,7 +2812,7 @@ memberInfo.getCountryInfoByCode = function(countryCode){
         for(var obj in memberInfo.platformZHCountryGroupMap) {
             var countryInfo = memberInfo.platformZHCountryGroupMap[obj];
             for(var obj in countryInfo){
-                if(countryCode == countryInfo[obj].dicoId) {
+                if(countryCode == countryInfo[obj].dicoLocationcode) {
                     return countryInfo[obj];
                 }
             }

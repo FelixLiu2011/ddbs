@@ -39,6 +39,7 @@
     <script  src="<%=path%>/common/js/laytpl.js"       type="text/javascript"></script>
     <script  src="<%=path%>/common/js/core.js"    type="text/javascript"></script>
     <script  src="<%=path%>/common/js/i18next-1.11.2.min.js" type="text/javascript"></script>
+    <script  src="<%=path%>/common/js/util/dateUtil.js" type="text/javascript"></script>
     <script  src="<%=path%>/common/js/lang/zh_CN.js" type="text/javascript"></script>
     <script type="text/javascript">
         var ctx = 'http://www.gagahi.com:80';
@@ -1010,9 +1011,12 @@
 
 
 
-                                <input type="hidden" id="language" value="zh-cn">
+                                <input type="hidden" id="language" value="${userInfo.membLanguage}">
                                 <input type="hidden" id="conJob" value="${userInfo.membJob}">
                                 <input type="hidden" id="conCountryCode" value="${userInfo.membCountryCode}">
+                                <input type="hidden" id="conBirth" value="${userInfo.membBirth}">
+                                <input type="hidden" id="conLable" value="${userInfo.membLable}">
+                                <input type="hidden" id="conSex" value="${userInfo.membSex}">
                                 <ul>
                                     <li>
                                         <div class="set-content-title"><div class="yhtx tr inlineblock"><img id="headimgshow" src="http://images.gagahi.com//images/default/male.png" class="mr10"></div></div>
@@ -1054,7 +1058,7 @@
 
 
 									<input id="b" class="radio" type="radio" checked="checked" value="y" name="sex">
-									<label class="radio" for="b">男</label>
+									<label class="radio" for="b" id="sex">男</label>
 
 								</span>
                                     </li>
@@ -1268,10 +1272,10 @@
                                 </li>
                                 <li><span class="set-content-title">昵称：</span><span class="set-content-con">${userInfo.membNickname}</span></li>
                                 <li><span class="set-content-title">GaGa 号：</span><span class="set-content-con">30039931</span></li>
-                                <li><span class="set-content-title">年龄：</span><span class="set-content-con">
-                                ${userInfo.membAge}
+                                <li><span class="set-content-title">年龄：</span><span class="set-content-con" id="iAge">
+
                                 </span></li>
-                                <li><span class="set-content-title">性别：</span><span class="set-content-con">男</span></li>
+                                <li><span class="set-content-title">性别：</span><span class="set-content-con" id="iConSex"></span></li>
                                 <li><span class="set-content-title">职业：</span><span class="set-content-con" id="iConJob"></span></li>
                                 <li><span class="set-content-title">国家：</span><span class="set-content-con" id="iConCountry"></span></li>
                                 <li><span class="set-content-title">语言：</span><span class="set-content-con">English</span>
@@ -1279,9 +1283,7 @@
                                 <li><span class="set-content-title">身高（cm）：</span><span class="set-content-con">${userInfo.membHeight}</span></li>
                                 <li><span class="set-content-title">体重（kg）：</span><span class="set-content-con">${userInfo.membWeight}</span></li>
                                 <li><span class="set-content-title" id="showinfo">个性签名：</span><span class="set-content-con">${userInfo.membSignature}</span></li>
-                                <li><span class="set-content-title" >兴趣：</span><span class="set-content-con" >
-                    <i>单身</i>
-                                     <i>奔驰</i>
+                                <li><span class="set-content-title" >兴趣：</span><span class="set-content-con" id="iConLabel">
                 </span></li>
                             </ul>
                         </div>
@@ -2729,6 +2731,7 @@
             $("#bir-Infor-Tip").show();
             return;
         }
+
         if(nicknamelength){
             layer.load(0, {shade: 0.1});
             $.post(path + "/member/informationPerfect",{
@@ -2773,6 +2776,7 @@
 
                 }
             }, "json");
+
         }
     }
 
