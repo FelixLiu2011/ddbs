@@ -47,6 +47,23 @@ public class UserInfoService {
     }
 
     /**
+     * 根据用户有邮箱找到用户
+     * @author liuchen
+     * @date 2016/7/9 14:05
+     * @version 1.0
+     * @since 1.6
+     */
+    public List<UserInfo> fetchUserInfosByEmail(String email) {
+        UserInfoCriteria example = new UserInfoCriteria();
+        UserInfoCriteria.Criteria criteria = example.createCriteria();
+        criteria.andMembEmailEqualTo(email);
+
+        List<UserInfo> userInfos = userInfoMapper.selectByExample(example);
+
+        return userInfos;
+    }
+
+    /**
      * 若用户ID为空，则新增，保存，若不为空，则直接保存
      * @author liuchen
      * @date 2016/7/9 14:05

@@ -9,9 +9,11 @@
 package com.ddas.sns.platform.control;
 
 import com.ddas.common.Msg;
+import com.ddas.common.result.Result;
 import com.ddas.common.util.StringUtil;
 import com.ddas.common.util.springutil.SpringContextUtil;
 import com.ddas.sns.common.BaseController;
+import com.ddas.sns.member.service.MemberService;
 import com.ddas.sns.userinfo.domain.UserInfo;
 import com.ddas.sns.userinfo.service.UserInfoService;
 import com.ddas.sns.util.AddressUtils;
@@ -43,6 +45,9 @@ public class PlatFormController extends BaseController {
     private static final Logger LOGGER = LoggerFactory.getLogger(PlatFormController.class);
     @Resource
     private UserInfoService userInfoService;
+
+    @Resource
+    private MemberService memberService;
 
     /**
      * 跳转体验选择性别的页面
@@ -103,6 +108,13 @@ public class PlatFormController extends BaseController {
         modelAndView.addObject("uuid", uuid);
 
         return modelAndView;
+    }
+
+
+    @RequestMapping("/emailIsExistence")
+    @ResponseBody
+    public Result emailIsExistence(String email, HttpServletRequest httpServletRequest) {
+        return memberService.emailIsExistence(email, getLoginUser(httpServletRequest));
     }
 
     /**

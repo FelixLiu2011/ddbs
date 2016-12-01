@@ -112,6 +112,103 @@ function initMemberInfo() {
         $("#iConLabel").html(html);
         $("#lableselected").html(htmlSpan);
     }
+
+    //会员等级
+    var conVipLevel = $("#conVipLevel").val();
+    conVipLevel = (conVipLevel == "" ? 1 : conVipLevel);
+    $("#iConVipLevel").html(memberInfo.vipLevel[conVipLevel] +  $("#iConVipLevel").html());
+
+    //隐私设置和通知设置
+    var conIsopenperson = $("#conIsopenperson").val();
+    var conIsonline = $("#conIsonline").val();
+    var conIsallowaddfriend = $("#conIsallowaddfriend").val();
+    var conIsletter = $("#conIsletter").val();
+    var conIslike = $("#conIslike").val();
+    var conIsvisito = $("#conIsvisito").val();
+    var conIsacceptgift = $("#conIsacceptgift").val();
+
+    if(conIsopenperson != "") {
+        if(conIsopenperson == "1") {//公开
+            $("#e").attr("checked","checked");
+        }else if (conIsopenperson == "2") {//好友可见
+            $("#f").attr("checked","checked");
+        }else if (conIsopenperson == "3") {//仅限自己
+            $("#g").attr("checked","checked");
+        }
+        $("#iconIsopenperson").html(memberInfo.isopenperson[conIsopenperson]);
+    }else{
+        $("#e").attr("checked","checked");
+        $("#iconIsopenperson").html(memberInfo.isopenperson[1]);
+    }
+
+    if(conIsonline != "") {
+        if(conIsonline == "1") {//是
+            $("#h").attr("checked","checked");
+        }else if (conIsonline == "2") {//否
+            $("#i").attr("checked","checked");
+        }
+        $("#iConIsonline").html(memberInfo.yesOrNot[conIsonline]);
+    }else{
+        $("#h").attr("checked","checked");
+        $("#iConIsonline").html(memberInfo.yesOrNot[1]);
+    }
+
+    if(conIsallowaddfriend != "") {
+        if(conIsallowaddfriend == "1") {//允许
+            $("#j").attr("checked","checked");
+        }else if (conIsallowaddfriend == "2") {//需要验证
+            $("#k").attr("checked","checked");
+        }
+        $("#iConIsallowaddfriend").html(memberInfo.isallowaddfriend[conIsallowaddfriend]);
+    }else{
+        $("#j").attr("checked","checked");
+        $("#iConIsallowaddfriend").html(memberInfo.isallowaddfriend[1]);
+    }
+
+    if(conIsallowaddfriend != "") {
+        if(conIsallowaddfriend == "1") {//允许
+            $("#j").attr("checked","checked");
+        }else if (conIsallowaddfriend == "2") {//需要验证
+            $("#k").attr("checked","checked");
+        }
+        $("#iConIsallowaddfriend").html(memberInfo.isallowaddfriend[conIsallowaddfriend]);
+    }else{
+        $("#j").attr("checked","checked");
+        $("#iConIsallowaddfriend").html(memberInfo.isallowaddfriend[1]);
+    }
+
+    if(conIsletter == "2") {
+        $("#mecoIsletter").attr("checked", false);
+        $("#iconIsletter").html(memberInfo.yesOrNot[2]);
+    }else {
+        $("#mecoIsletter").attr("checked", true);
+        $("#iconIsletter").html(memberInfo.yesOrNot[1]);
+    }
+
+    if(conIslike == "2") {
+        $("#mecoIslike").attr("checked", false);
+        $("#iconIslike").html(memberInfo.yesOrNot[2]);
+    }else {
+        $("#mecoIslike").attr("checked", true);
+        $("#iconIslike").html(memberInfo.yesOrNot[1]);
+    }
+
+    if(conIsvisito == "2") {
+        $("#mecoIsvisito").attr("checked", false);
+        $("#iconIsvisito").html(memberInfo.yesOrNot[2]);
+    }else {
+        $("#mecoIsvisito").attr("checked", true);
+        $("#iconIsvisito").html(memberInfo.yesOrNot[1]);
+    }
+
+    if(conIsacceptgift == "2") {
+        $("#mecoIsacceptgift").attr("checked", false);
+        $("#iconIsacceptgift").html(memberInfo.yesOrNot[2]);
+    }else {
+        $("#mecoIsacceptgift").attr("checked", true);
+        $("#iconIsacceptgift").html(memberInfo.yesOrNot[1]);
+    }
+
 }
 
 //头部滚动

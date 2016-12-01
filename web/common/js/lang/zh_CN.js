@@ -56,6 +56,18 @@ memberInfo.sex={
     2 : "女"
 };
 
+memberInfo.vipLevel={
+    1 : "普通会员",
+    2 : "高级会员",
+    3 : "vip会员"
+};
+
+memberInfo.isopenperson={
+    1 : "公开",
+    2 : "好友",
+    3 : "仅限自己"
+};
+
 memberInfo.platformZHCountryGroupMap = {
     "T-Z": [{
         "dicoId": 55,
@@ -2805,6 +2817,16 @@ memberInfo.platformZHCountryGroupMap = {
             "dicoDescription": "",
             "dicoIsdel": 1
         }]
+};
+
+memberInfo.yesOrNot={
+    1 : "是",
+    2 : "否"
+};
+
+memberInfo.isallowaddfriend={
+    1 : "允许任何人把我加为好友",
+    2 : "需要验证才能把我加为好友"
 };
 
 memberInfo.getCountryInfoByCode = function(countryCode){

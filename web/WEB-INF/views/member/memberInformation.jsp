@@ -1017,6 +1017,15 @@
                                 <input type="hidden" id="conBirth" value="${userInfo.membBirth}">
                                 <input type="hidden" id="conLable" value="${userInfo.membLable}">
                                 <input type="hidden" id="conSex" value="${userInfo.membSex}">
+                                <input type="hidden" id="conVipLevel" value="${userInfo.mefiLevel}">
+
+                                <input type="hidden" id="conIsopenperson" value="${userInfo.mecoIsopenperson}">
+                                <input type="hidden" id="conIsonline" value="${userInfo.mecoIsonline}">
+                                <input type="hidden" id="conIsallowaddfriend" value="${userInfo.mecoIsallowaddfriend}">
+                                <input type="hidden" id="conIsletter" value="${userInfo.mecoIsletter}">
+                                <input type="hidden" id="conIslike" value="${userInfo.mecoIslike}">
+                                <input type="hidden" id="conIsvisito" value="${userInfo.mecoIsvisito}">
+                                <input type="hidden" id="conIsacceptgift" value="${userInfo.mecoIsacceptgift}">
                                 <ul>
                                     <li>
                                         <div class="set-content-title"><div class="yhtx tr inlineblock"><img id="headimgshow" src="http://images.gagahi.com//images/default/male.png" class="mr10"></div></div>
@@ -1293,8 +1302,8 @@
                         <div class="set-content">
                             <div  id="personalinformationWin" class="set-hidden" style="display:none;">
                                 <ul>
-                                    <li><span class="set-content-title">金币：</span><span class="set-content-con">${userInfo.membCoin}<a href="<%=path%>/pay/recharge"><span class="set-recharge c-2d57a1">充值</span></a> </span></li>
-                                    <li><span class="set-content-title">会员级别：</span><span class="set-content-con">普通会员
+                                    <li><span class="set-content-title">金币：</span><span class="set-content-con">${empty userInfo.membCoin ? "0" : userInfo.membCoin}<a href="<%=path%>/pay/recharge"><span class="set-recharge c-2d57a1">充值</span></a> </span></li>
+                                    <li><span class="set-content-title">会员级别：</span><span class="set-content-con" id="iConVipLevel">
 				<a href="<%=path%>/pay/upgradeMember"><span class="set-member c-2d57a1" style=" margin-left:30px;">升级</span></a></span></li>
                                     <li><span class="set-content-title">翻译包字符数：</span><span class="set-content-con" ><span id="myTotalTranslateNum">0</span></span></li>
 
@@ -1339,9 +1348,9 @@
                             </div>
                             <!--账号展示开始-->
                             <ul class="set-show">
-                                <li><span class="set-content-title">金币：</span><span class="set-content-con">${userInfo.membCoin}</span></li>
+                                <li><span class="set-content-title">金币：</span><span class="set-content-con">${empty userInfo.membCoin ? "0" : userInfo.membCoin}</span></li>
                                 <li><span class="set-content-title">会员级别：</span><span class="set-content-con">普通会员</span></li>
-                                <li><span class="set-content-title">翻译包字符数：</span><span class="set-content-con meminfo-fnayi-num" id="mymefiTranslate">0</span></li>
+                                <%--<li><span class="set-content-title">翻译包字符数：</span><span class="set-content-con meminfo-fnayi-num" id="mymefiTranslate">0</span></li>--%>
 
                                 <li><span class="set-content-title">邮箱：</span><span class="set-content-con">${userInfo.membEmail}</span></li>
                                 <li><span class="set-content-title">手机号码：</span><span class="set-content-con">${userInfo.membPhoneNo}</span></li>
@@ -1439,26 +1448,11 @@
                             </div>
                             <!--隐私展示部分开始-->
                             <ul class="set-show">
-                                <li><span class="set-content-title">是否公开我的个人档案？ ：</span><span class="set-content-con">
-
-
-
-
-
-						 公开
-
-
+                                <li><span class="set-content-title">是否公开我的个人档案？ ：</span><span class="set-content-con" id="iconIsopenperson">
               	</span></li>
-                                <li><span class="set-content-title">显示我的在线状态：</span><span class="set-content-con">
-
-
-
-
-						是
-
+                                <li><span class="set-content-title">显示我的在线状态：</span><span class="set-content-con" id="iConIsonline">
 				</span></li>
-                                <li><span class="set-content-title">加好友申请：</span><span class="set-content-con">
-						 允许任何人把我加为好友
+                                <li><span class="set-content-title">加好友申请：</span><span class="set-content-con" id="iConIsallowaddfriend">
 				</span></li>
                             </ul>
                         </div>
@@ -1497,38 +1491,13 @@
                                 </div>
                             </div>
                             <ul class="set-show" id="confignotice">
-                                <li><span class="set-content-title">信息：</span><span class="set-content-con">
-
-
-
-
-						是
-
+                                <li><span class="set-content-title">信息：</span><span class="set-content-con" id="iconIsletter">
 				</span></li>
-                                <li><span class="set-content-title">当有人喜欢你：</span><span class="set-content-con">
-
-
-
-
-						 是
-
+                                <li><span class="set-content-title">当有人喜欢你：</span><span class="set-content-con" id="iconIslike">
 				</span></li>
-                                <li><span class="set-content-title">当有访客：</span><span class="set-content-con">
-
-
-
-
-						是
-
+                                <li><span class="set-content-title">当有访客：</span><span class="set-content-con" id="iconIsvisito">
 				</span></li>
-
-                                <li><span class="set-content-title">收到礼物：</span><span class="set-content-con">
-
-
-
-
-						 是
-
+                                <li><span class="set-content-title">收到礼物：</span><span class="set-content-con" id="iconIsacceptgift">
 				 </span></li>
 
 
@@ -2897,7 +2866,7 @@
                 return false;
             }else{
                 $('.emailerror').css('display', 'none');
-                $.post("http://www.gagahi.com:80/Platform/emailIsExistence",{email:mememail},function(result){
+                $.post(path + "/platform/emailIsExistence",{email:mememail},function(result){
                     if(result.success){
                         //邮箱存在不通过
 
