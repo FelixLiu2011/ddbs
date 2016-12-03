@@ -152,7 +152,7 @@ public class SpringContextUtil implements ApplicationContextAware {
 		return applicationContext.getAutowireCapableBeanFactory();
 	}
 
-	public <T> T getBean(Class<T> arg0) throws BeansException {
+	public static  <T> T getBean(Class<T> arg0) throws BeansException {
 		return applicationContext.getBean(arg0);
 	}
 

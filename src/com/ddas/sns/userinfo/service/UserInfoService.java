@@ -135,4 +135,20 @@ public class UserInfoService {
         List<UserInfo> userInfos = userInfoMapper.selectByExample(userInfoCriteria);
         return userInfos.size() <= 0;
     }
+
+    /**
+     *更新用户的在线状态信息:1表示在线，0表示不在线
+     *  Note:
+     *      会根据用户的信息进行 selective update
+     *@param userInfo 待更新的用户信息
+     *@Author shaojunxiang
+     *@Date 2016/12/3 15:31
+     *@return int 更新的记录数
+     *@since JDK1.6
+     */
+    public int updateUserOnlineStatus(UserInfo userInfo){
+        int updateCount = userInfoMapper.updateByPrimaryKeySelective(userInfo);
+        return updateCount;
+
+    }
 }
