@@ -168,11 +168,6 @@
 
 </div>
 <%--IM fixme--%>
-<script type="text/javascript">
-    var f = 1;
-    var isConta =-1;
-</script>
-
 <div class="mid">
     <div class="w1100 jz">
         <div class="lft fl">

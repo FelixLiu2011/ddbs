@@ -1,0 +1,56 @@
+{
+  "success": true,
+  "msg": "操作成功",
+  "obj": [
+    {
+      "id": "583da2269a75432299fc0dd4",
+      "gid": "2948802_2933036",
+      "frid": "2933036",
+      "toid": "2948802",
+      "nm": 1,
+      "pb": 0,
+      "ut": 1480519485607,
+      "dl": 0,
+      "isStick": 0,
+      "membGagaid": 2933036,
+      "membGagano": null,
+      "membNickname": "sunlyang",
+      "ymembNickname": null,
+      "membBigimg": "A-fdfeeea70e0447f5966deca65dc298e6?imageMogr2/thumbnail/410x300/thumbnail/400x400/crop/!273x273a0a3",
+      "type": 0,
+      "online": 0,
+      "membLanguage": "zh",
+      "membCountry": "CN",
+      "age": 24,
+      "isFriend": 1,
+      "sex": 0
+    },
+    {
+      "id": "583ee15b9a75432299fc3bbf",
+      "gid": "2948802_2743797",
+      "frid": "2743797",
+      "toid": "2948802",
+      "nm": 0,
+      "pb": 0,
+      "ut": 1480516399092,
+      "dl": 0,
+      "isStick": 0,
+      "membGagaid": 2743797,
+      "membGagano": null,
+      "membNickname": "❀lingfei01",
+      "ymembNickname": null,
+      "membBigimg": "A-5744d6366d1d449480838502a91d09ac?imageMogr2/thumbnail/410x300/thumbnail/400x400/crop/!226x226a0a22",
+      "type": 0,
+      "online": 0,
+      "membLanguage": "en",
+      "membCountry": "KR",
+      "age": 27,
+      "isFriend": 0,
+      "sex": 0
+    }
+  ],
+  "attributes": {
+    "recentlyNum": 2,
+    "currDate": 1480605434356
+  }
+}

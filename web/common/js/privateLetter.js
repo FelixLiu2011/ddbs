@@ -1,3 +1,5 @@
+var f = 1;
+var isConta =-1;
 $(function () {
     $.Letter.init();
     /*-----刷新时向后台发请求------*/

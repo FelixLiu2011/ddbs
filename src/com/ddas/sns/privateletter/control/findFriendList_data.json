@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "msg": "success",
+  "obj": [
+    {
+      "frieId": 43449721,
+      "frieGagaid": 2948802,
+      "frieFriendgagaid": 2933036,
+      "frieNickname": "sunlyang",
+      "frieIsdel": 1,
+      "frieAddtime": "Nov 30, 2016 2:24:59 PM",
+      "frieSource": "2",
+      "member": {
+        "membGagano": "30037781",
+        "membGagaid": 2933036,
+        "membNickname": "sunlyang",
+        "membDate": "Dec 7, 1992 12:00:00 AM",
+        "membSex": 2,
+        "membCountry": "CN",
+        "membLanguage": "zh",
+        "membCountrycode": "86",
+        "membBigimg": "A-fdfeeea70e0447f5966deca65dc298e6?imageMogr2/thumbnail/410x300/thumbnail/400x400/crop/!273x273a0a3",
+        "membImgischeck": 1,
+        "memberconfig": {
+          "mecoIsonline": 1
+        },
+        "online": 0,
+        "showyear": "1992",
+        "showmonth": "12",
+        "showday": "07",
+        "showweight": 0,
+        "showheight": 0,
+        "isagainlogin": 0,
+        "age": 0
+      },
+      "frieIsshield": 0,
+      "online": 0
+    }
+  ],
+  "attributes": {
+    "tolNum": 1,
+    "onlineNum": 0
+  }
+}
