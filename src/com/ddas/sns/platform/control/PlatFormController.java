@@ -9,9 +9,11 @@
 package com.ddas.sns.platform.control;
 
 import com.ddas.common.Msg;
+import com.ddas.common.result.Result;
 import com.ddas.common.util.StringUtil;
 import com.ddas.common.util.springutil.SpringContextUtil;
 import com.ddas.sns.common.BaseController;
+import com.ddas.sns.member.service.MemberService;
 import com.ddas.sns.userinfo.domain.UserInfo;
 import com.ddas.sns.userinfo.service.UserInfoService;
 import com.ddas.sns.util.AddressUtils;
@@ -43,6 +45,9 @@ public class PlatFormController extends BaseController {
     private static final Logger LOGGER = LoggerFactory.getLogger(PlatFormController.class);
     @Resource
     private UserInfoService userInfoService;
+
+    @Resource
+    private MemberService memberService;
 
     /**
      * 跳转体验选择性别的页面
@@ -105,6 +110,13 @@ public class PlatFormController extends BaseController {
         return modelAndView;
     }
 
+
+    @RequestMapping("/emailIsExistence")
+    @ResponseBody
+    public Result emailIsExistence(String email, HttpServletRequest httpServletRequest) {
+        return memberService.emailIsExistence(email, getLoginUser(httpServletRequest));
+    }
+
     /**
      * 体验信息完成，返回redirect的Url
      *
@@ -132,12 +144,13 @@ public class PlatFormController extends BaseController {
      */
     @RequestMapping("/regMember")
     @ResponseBody
-    public Msg regMember(String sex, String language, String uuid) {
+    public Msg regMember(String sex, String language, String uuid, HttpServletRequest request) {
         UserInfo userInfo = userInfoService.fetchUserInfoByUserId(uuid);
         userInfo.setMembSex(sex);
         userInfo.setMembLanguage(language);
         // TODO: 2016/11/7 设置语言
         userInfoService.saveUserInfo(userInfo);
+        setLoginUserToSession(userInfo, request);
         Msg msg = new Msg();
         msg.setSuccessful(true);
 

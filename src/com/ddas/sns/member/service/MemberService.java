@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -65,6 +66,41 @@ public class MemberService {
     }
 
     /**
+     *根据用户的id来获取相应用户的language,默认值 为en-us
+     *@param mid 用户id
+     *@return com.ddas.common.result.Result
+     *@author shaojx
+     *@date 2016/11/13 16:17
+     *@version 1.0
+     *@since 1.6
+     */
+    public Result emailIsExistence(String email, UserInfo userInfo) {
+        Result result = new Result();
+        result.setSuccess(false);
+
+        if(StringUtil.isEmpty(email)) {
+            result.setMsg(Constants.FAILED);
+            return result;
+        }
+
+        List<UserInfo> list = userInfoService.fetchUserInfosByEmail(email);
+        if(list != null && list.size() > 0) {
+            if(list.size() > 1) {
+                result.setSuccess(true);
+            }else{
+                if(userInfo.getMembGagaid().equals(list.get(0).getMembGagaid())) {
+                    result.setSuccess(false);
+                }else{
+                    result.setSuccess(true);
+                }
+            }
+            return result;
+        }
+
+        return result;
+    }
+
+    /**
     *更新用户信息
     *@author lc
     *@date 2016/11/26 0026 16:04
@@ -73,7 +109,7 @@ public class MemberService {
     */
     public UserInfo updateUserInfomation(UserInfoDto userInfoDto, UserInfo userInfo){
         UserInfo userinfo = userInfoService.fetchUserInfoByUserId(userInfo.getMembGagaid());
-        userinfo.setMembNickname(userInfoDto.getNickName());
+        userinfo.setMembNickname(userInfoDto.getNickname());
         userinfo.setMembLanguage(userInfoDto.getLanguage());
         userinfo.setMembCountry(userInfoDto.getCountry());
         userinfo.setMembCountryCode(userInfoDto.getCountrycode());
@@ -97,7 +133,9 @@ public class MemberService {
      */
     public UserInfo updateUserAcount(UserInfoDto userInfoDto, UserInfo userInfo){
         UserInfo userinfo = userInfoService.fetchUserInfoByUserId(userInfo.getMembGagaid());
-        userinfo.setMembPwd(userInfoDto.getNewpwd());
+        if(StringUtil.isNotEmpty(userInfoDto.getNewpwd())) {
+            userinfo.setMembPwd(userInfoDto.getNewpwd());
+        }
         userinfo.setMembPhoneNo(userInfoDto.getPhone());
         userinfo.setMembEmail(userInfoDto.getMememail());
 

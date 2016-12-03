@@ -39,6 +39,8 @@
     <script  src="<%=path%>/common/js/laytpl.js"       type="text/javascript"></script>
     <script  src="<%=path%>/common/js/core.js"    type="text/javascript"></script>
     <script  src="<%=path%>/common/js/i18next-1.11.2.min.js" type="text/javascript"></script>
+    <script  src="<%=path%>/common/js/util/dateUtil.js" type="text/javascript"></script>
+    <script  src="<%=path%>/common/js/lang/zh_CN.js" type="text/javascript"></script>
     <script type="text/javascript">
         var ctx = 'http://www.gagahi.com:80';
         var staticPath = "http://static.gagahi.com";
@@ -112,386 +114,7 @@
     <script src="<%=path%>/common/js/terminator2.2.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="<%=path%>/common/IM/js/processingTime.js"></script>
     <script type="text/javascript" src="<%=path%>/common/js/gift.js"></script>
-    <script type="text/javascript">
-        $(function(){
-
-            $.post("http://www.gagahi.com:80/Member/Notice/getNoticeCountMap",{ },function(data,textStatus){
-                var obj = eval(data);
-                //右侧小铃铛
-                if(obj.attributes.rightNotice == 0){
-                    $("#rightNotice").text("");
-                }else{
-                    $("#rightNotice").attr("class", obj.attributes.rightNotice > 99 ? 'gs newsNumDouble' : 'gs newsNumSingle');
-                    $("#rightNotice").text(obj.attributes.rightNotice > 99 ? '99+' : obj.attributes.rightNotice);
-                }
-                //右侧好友申请
-                if(0==obj.attributes.rightApplyCount){
-                    $("#rightApplyCount").text("");
-                }else if(obj.attributes.rightApplyCount > 99){
-                    $("#rightApplyCount").addClass("gs newsNumDouble");
-                    $("#rightApplyCount").text("99+");
-                }else{
-                    $("#rightApplyCount").addClass("gs newsNumSingle");
-                    $("#rightApplyCount").text(obj.attributes.rightApplyCount);
-                }
-                if(0==obj.attributes.leftLikeMeNotice){
-                    $("#leftLikeMeNotice").text("");
-                }else if(obj.attributes.leftLikeMeNotice > 99){
-                    $("#leftLikeMeNotice").addClass("newsNumDouble");
-                    $("#leftLikeMeNotice").text("99+");
-                }else{
-                    $("#leftLikeMeNotice").addClass("newsNumSingle");
-                    $("#leftLikeMeNotice").text(obj.attributes.leftLikeMeNotice);
-                }
-                if(0==obj.attributes.leftVisitorNotice){
-                    $("#leftVisitorNotice").text("");
-                }else if(obj.attributes.leftVisitorNotice > 99){
-                    $("#leftVisitorNotice").addClass("newsNumDouble");
-                    $("#leftVisitorNotice").text("99+");
-                }else{
-                    $("#leftVisitorNotice").addClass("newsNumSingle");
-                    $("#leftVisitorNotice").text(obj.attributes.leftVisitorNotice);
-                }
-                //  	  if(0==obj.attributes.leftFriendNotice){
-                // 		  $("#leftFriendNotice").text("");
-                //   	  }else{
-                //		  $("#leftFriendNotice").attr("class","gs1 inlineblock");
-                //		  $("#leftFriendNotice").text(obj.attributes.leftFriendNotice);
-                // 	  }
-                if(0==obj.attributes.leftSixinNotice){
-                    $("#leftSixinNotice").text("");
-                }else if(obj.attributes.leftSixinNotice > 99){
-                    $("#leftSixinNotice").addClass("newsNumDouble");
-                    $("#leftSixinNotice").text("99+");
-                }else{
-                    $("#leftSixinNotice").addClass("newsNumSingle");
-                    $("#leftSixinNotice").text(obj.attributes.leftSixinNotice);
-                }
-
-                $("#leftIlike").attr("class","inlineblock");
-                $("#leftIlike").text("");
-
-            });
-
-            //选中状态样式
-            selectionStyle();
-        });
-        //头部滚动
-        (function($){
-            $(window).load(function() {
-                $(".xltip .nr").mCustomScrollbar();
-                $(".frd .nr").mCustomScrollbar();
-
-                /**阻止子元素触发事件*/
-                $(".xlfrd,.xltip").on("mouseover",function(event){
-                    event.stopPropagation();
-                });
-            });
-        })(jQuery);
-        //选中状态样式
-        function  selectionStyle(){
-            clearnSelectionStyle();
-            if('encounterIndex'=='leftVisitorIndex'){
-                $("#encounterIndex").attr("class","on");
-            }
-            if('zoneIndex'=='leftVisitorIndex'){
-                $("#zoneIndex").attr("class","on");
-            }
-            if('gameIndex'=='leftVisitorIndex'){
-                $("#gameIndex").attr("class","on");
-            }
-            if('shopIndex'=='leftVisitorIndex'){
-                $("#shopIndex").attr("class","on");
-            }
-
-            //左侧导航
-            if('leftSixinIndex'=='leftVisitorIndex'){
-                $("#leftSixinIndexImg").attr("class","on");
-                $("#leftSixinIndexText").attr("class","on");
-            }
-            if('leftLikeMeIndex'=='leftVisitorIndex'){
-                $("#leftLikeMeIndexImg").attr("class","lkm on");
-                $("#leftLikeMeIndexText").attr("class","on");
-            }
-            if('leftIlikeIndex'=='leftVisitorIndex'){
-                $("#leftIlikeIndexImg").attr("class","mlk on");
-                $("#leftIlikeIndexText").attr("class","on");
-            }
-            if('leftFriendIndex'=='leftVisitorIndex'){
-                $("#leftFriendIndexImg").attr("class","each-lk on");
-                $("#leftFriendIndexText").attr("class","on");
-            }
-            if('leftVisitorIndex'=='leftVisitorIndex'){
-                $("#leftVisitorIndexImg").attr("class","visitor on");
-                $("#leftVisitorIndexText").attr("class","on");
-            }
-        }
-
-        //清除选中样式
-        function  clearnSelectionStyle(){
-            $("#encounterIndex").attr("class","");
-            $("#zoneIndex").attr("class","");
-            $("#gameIndex").attr("class","");
-            $("#shopIndex").attr("class","");
-
-            //左侧导航
-            $("#leftSixinIndexImg").attr("class","");
-            $("#leftSixinIndexText").attr("class","");
-
-            $("#leftLikeMeIndexImg").attr("class","lkm");
-            $("#leftLikeMeIndexText").attr("class","");
-
-            $("#leftIlikeIndexImg").attr("class","mlk");
-            $("#leftIlikeIndexText").attr("class","");
-
-            $("#leftFriendIndexImg").attr("class","each-lk");
-            $("#leftFriendIndexText").attr("class","");
-
-            $("#leftVisitorIndexImg").attr("class","visitor");
-            $("#leftVisitorIndexText").attr("class","");
-
-
-        }
-
-
-        /***
-         * 跳转至指定页面
-         */
-        function gotopage(obj){
-            var url = $(obj).find(".gotourl").val();
-            if (url.indexOf('www.gagahi.com') != -1) {
-                var newHost = location.host;
-                url = url.replace('//www.gagahi.com', ('//' + newHost));
-            }
-            var id = $(obj).find(".hide").val();
-            window.location.href = url + "&nid="+id;
-        }
-
-        /**
-         * 鼠标移动到通知异步加载
-         */
-        function onmoseovernotice(){
-            var $nr = $(".ihome_top_notice_ul").closest(".nr");
-            $nr.partialLoader();
-            $.ajax({
-                type : "post",
-                url : "http://www.gagahi.com:80/Member/Notice/ajaxnotice",
-                contentType : "application/x-www-form-urlencoded",
-                success: function(data){
-                    $nr.partialLoader('close');
-                    if(data.success){
-                        var str = "";
-                        for(var i = 0; i < data.obj.length;i++){
-                            str += "<li class='f13 curPor' onclick='gotopage(this)'><input type='hidden' value='"+ data.obj[i].notiId +"' class='hide'/>";
-                            if (data.obj[i].notiContent.indexOf('<span class="tim') == -1) {
-                                /*
-                                 str += data.obj[i].notiContent + "<br><p><span class=\"tim f12\">"+ TimeDifference2($.fn.returnTime(data.obj[i].notiTime,'full','YYYY-MM-DD hh:mm'),'',$.fn.returnTime(new Date().getTime(),'full','YYYY-MM-DD hh:mm')) +"</span></p>" + "</li>";*/
-                                str += data.obj[i].notiContent.replace('</p>', ('<span class="tim f12">' + TimeDifference2($.fn.returnTime(data.obj[i].notiTime,'full','YYYY-MM-DD hh:mm'),'',$.fn.returnTime(new Date().getTime(),'full','YYYY-MM-DD hh:mm')) + '</span></p>'));
-                            } else {
-                                str += data.obj[i].notiContent;
-                            }
-                        }
-
-                        var count = $(".ihome_top_notice_ul").find("li").length;
-                        if(data.obj.length != 0 && data.obj.length == count){
-                            return;
-                        }
-                        if (data.obj.length == 0) {
-                            str = '<li class="notipli">' + $.t('global.nomoremsg') + '</li>';
-                        }
-                        $(".ihome_top_notice_ul").empty();
-                        $(".ihome_top_notice_ul").append(str);
-                        if (data.obj.length) {
-                            $nr.parent().removeClass('notips');
-                        } else {
-                            $nr.parent().addClass('notips');
-                        }
-                    }else{
-                        layer.msg(data.msg);
-                    }
-                }
-            });
-        }
-
-        /**好友申请*/
-        function onmoseoverfriend(){
-            $(".ihome_top_apply_friend_ul").closest(".nr").partialLoader();
-            $.ajax({
-                type : "post",
-                url : "http://www.gagahi.com:80/Member/Friend/ajaxfriend",
-                contentType : "application/x-www-form-urlencoded",
-                //dataType: "text",//数据类型text xml json  script  jsonp
-                success: function(data){
-                    $(".ihome_top_apply_friend_ul").closest(".nr").partialLoader('close');
-                    if(data.success){
-                        var count = $(".ihome_top_apply_friend_ul").find(".agree_bt").length;
-                        if(data.obj.list.length + data.obj.mList.length == count && count != 0){
-                            return;
-                        }
-
-                        var str = "";
-                        str +="<h3 id='h31'>加好友申请</h3>";
-                        if(null != data.obj.list && data.obj.list.length > 0){
-                            for(var i = 0; i < data.obj.list.length;i++){//好友申请
-                                str +="<li class='addfriend'><span class='tx'>"
-                                        +"<a href='"+ctx+"/Member/otherHome/"+data.obj.list[i].frapGagaid+"'><img src='http://images.gagahi.com//"+ data.obj.list[i].member.membBigimg +"'></a>"
-                                        +"</span><span class='nm' title='"+ data.obj.list[i].member.membNickname +"'><a href='"+ctx+"/Member/otherHome/"+data.obj.list[i].frapGagaid+"'>"+ data.obj.list[i].member.membNickname + "</a></span>"
-                                        +"<p class='fr'><button onclick='friendApplyHandle(this,3,"+ data.obj.list[i].frapId +")' title='同意'>"
-                                        +"同意</button>"
-                                        +"<button onclick='friendApplyHandle(this,2,"+ data.obj.list[i].frapId +")' title='忽略'>"
-                                        +"忽略</button></p></li>";
-                            }
-                        }else{
-                            str += "<li style=\"color:#696969; text-align:center;\">没有新好友请求！</li>";
-                        }
-
-                        //可能认识的人
-                        str += "<h3 id='h32'>" + $.t('global.addFirendWord1') + "</h3>";
-                        if(null != data.obj.mList && data.obj.mList.length > 0){
-                            for(var i = 0; i < data.obj.mList.length;i++){//好友申请
-                                str +="<li><span class='tx'>"
-                                        +"<a href='"+ctx+"/Member/otherHome/"+data.obj.mList[i].membGagaid+"'><img src='http://images.gagahi.com//"+ data.obj.mList[i].membBigimg +"'></a>"
-                                        +"</span><span class='nm' title='"+ data.obj.mList[i].membNickname +"'><a href='"+ctx+"/Member/otherHome/"+data.obj.mList[i].membGagaid+"'>"+ data.obj.mList[i].membNickname + "</a></span>"
-                                        +"<p class='fr'><button onclick='applyFriend(this,"+ data.obj.mList[i].membGagaid +")' class='agree_bt' title='加好友'>"
-                                        +"加好友</button>"
-                                        +"<button onclick='friendApplyHandle(this,2,"+ data.obj.mList[i].membGagaid +")' title='忽略'>"
-                                        +"忽略</button></p></li>";
-                            }
-                            str += "<h3 id='h33' style='display:none;'></h3>";
-                        }else{
-                            str += "<li style=\"color:#696969; text-align:center;\">暂无可推荐的人</li>";
-                        }
-
-                        $(".ihome_top_apply_friend_ul").empty();
-                        $(".ihome_top_apply_friend_ul").append(str);
-                    }else{
-                        layer.msg(data.msg);
-                    }
-                }
-            });
-        }
-
-
-
-        /**好友申请操作*/
-        function friendApplyHandle(obj,state,applyid){
-            $.ajax({
-                type : "post",
-                url : "http://www.gagahi.com:80/Member/Friend/friendApplyHandle",
-                contentType : "application/x-www-form-urlencoded",
-                data: {"result":state,"state":null,"applyid":applyid},
-                success: function(data){
-                    if(data.success){
-                        //jquery 操作jsp删除该条数据
-                        $(obj).parent().parent().remove();
-
-                        var obj3 = $("#rightApplyCount");
-                        var count3 = $(obj3).text();
-                        if(null == count3 || $.trim(count3).length <= 0){
-                            count3 = 0;
-                        }
-                        $(obj3).text(parseInt(count3)-1);
-                        if(parseInt(count3)-1 <= 0){
-                            if($(obj3).hasClass("gs")){
-                                $(obj3).removeClass("gs");
-                            }
-                        }
-
-                        //数据空时show 标签
-                        $('#h31').nextUntil('#h32').addClass('liclazz');
-                        var count1 = $(".ihome_top_apply_friend_ul").find('.liclazz').length;
-                        if(count1 <= 0){
-                            $('#h31').after("<li style=\"color:#696969; text-align:center;\">没有新好友请求！</li>");
-                        }
-
-                        $('#h32').nextUntil('#h33').addClass('liclazz2');
-                        var count1 = $(".ihome_top_apply_friend_ul").find('.liclazz2').length;
-                        if(count1 <= 0){
-                            $('#h32').after("<li style=\"color:#696969; text-align:center;\">暂无可推荐的人</li>");
-                        }
-                    }else{
-                        layer.msg(data.msg);
-                    }
-                }
-            });
-        }
-
-        /**好友申请操作*/
-        function applyFriend(obj,friGagaid){
-            $.ajax({
-                type : "post",
-                url : "http://www.gagahi.com:80/Member/Friend/applyFriend",
-                contentType : "application/x-www-form-urlencoded",
-                data: {"friGagaid":friGagaid,"source":"1"},
-                success: function(data){
-                    if(data.success){
-                        //jquery 操作jsp删除该条数据
-                        $(obj).parent().parent().remove();
-
-                        //数据空时show 标签
-                        $('#h31').nextUntil('#h32').addClass('liclazz');
-                        var count1 = $(".ihome_top_apply_friend_ul").find('.liclazz').length;
-                        if(count1 <= 0){
-                            $('#h31').after("<li style=\"color:#696969; text-align:center;\">没有新好友请求！</li>");
-                        }
-
-                        $('#h32').nextUntil('#h33').addClass('liclazz2');
-                        var count1 = $(".ihome_top_apply_friend_ul").find('.liclazz2').length;
-                        if(count1 <= 0){
-                            $('#h32').after("<li style=\"color:#696969; text-align:center;\">暂无可推荐的人</li>");
-                        }
-                    }else{
-                        layer.msg(data.msg);
-                    }
-                }
-            });
-        }
-
-
-        /*全局退出 */
-        function loginout(){
-            //alert(''.length +"_______" +''.length);
-            if(''.length<=0 ||''.length<=0){
-                layer.open({
-                    area: ['364px',''],
-                    title: $.t('global.guestOutTitle'),
-                    content: "<p class='tc'>  " + $.t('global.guestOutWords') + "       </p>",
-                    btn: $.t('global.guestOutBtn'),
-                    yes: function (index, layero) {
-                        layer.close(index)
-                        window.location.href = 'http://www.gagahi.com:80/Member/memberinformation?srcurl=xiaobai#showinfo';
-                    },
-                    cancel: function (index) {},
-                });
-            }else{
-                //$.cookie("membGahano",null);
-                delCookie("membGahano");
-                //暂时屏蔽 debugger;
-                var abc=getCookie("membGahano");
-                window.location.href = ' http://www.gagahi.com:80/Global/loginout';
-            }
-        }
-        function delCookie(name)
-        {
-            var exp = new Date();
-            exp.setTime(exp.getTime() - 1);
-            var cval=getCookie(name);
-            if(cval!=null)
-                document.cookie= name + "="+cval+";expires="+exp.toGMTString();
-        }
-        /*读取cookies*/
-        function getCookie(name)
-        {
-            var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
-            if(arr=document.cookie.match(reg))
-                return unescape(arr[2]);
-            else
-                return null;
-        }
-        function closeSm(){
-
-        }
-    </script>
+    <script type="text/javascript" src="<%=path%>/business/member/memberInformation.js"></script>
 </head>
 
 <body style="position:relative;" class='zh-cn'>
@@ -611,84 +234,6 @@
   </div> -->
 
 </div>
-<script type="text/javascript">
-
-    function closeUp(){
-        //$(".statement").css("display","none");
-        //$(".mid").css("margin-top","66px");
-        //$(".mid").css("top","65px");
-        //$(".searchTip div.step1").css("top","100px");
-        //$(".searchTip div.step2").css("top","200px");
-        //$(".searchTip div.step3").css("top","78px");
-        //$.cookie('close_flag','1',{ path: '/' });
-    }
-    $(function(){
-        //$(".statement").slideDown();
-        //$(".mid").css("margin-top","171px");
-        //$(".mid").css("top","65px");
-        //$(".searchTip div.step1").css("top","205px");
-        //$(".searchTip div.step2").css("top","505px");
-        //$(".searchTip div.step3").css("top","183px");
-        //关闭
-        /*
-         var close_flag=$.cookie('close_flag');
-         if(close_flag==1){
-         closeUp();
-         }*/
-        //closeUp();
-        //<a class="btn btn6 sayout">'+$.t("tucao.tc")+'</a><br/><a class="btn btn7" href="https://old.gagahi.com" >'+$.t("tucao.back")+'</a>
-        $.cookie('close_flag','1',{ path: '/' });
-        $(".fhlb").click(function(){
-            layer.open({
-                skin: 'demo-tc',
-                type: 1,
-                title: false,
-                area: ['521px','580px'],
-                success: function(layero, index){
-                    $(".sayout").click(function(){
-                        $("#hiddenIM").find("[data-gagaID=-1]").click();
-                        layer.close(index)
-                    })
-                },
-                content: '<h4 class="back-old-title">' + $.t('ggnr.title') + '</h4><p>' + $.t('fhlb.nr1') + '</p><p>' + $.t('fhlb.nr2') + '</p><a href="http://old.gagahi.com/" class="back-old-btn">' + $.t('fhlb.nr') + '</a>',
-                yes: function(index, layero) {
-                    //console.log(index+'||'+layero)
-
-                    layer.close(index)
-                },
-                cancel: function(index) {}
-            });
-        });
-        /*新版说明*/
-        $(".xbsm").click(function(){
-            $(".coverall1").css("display","block");
-        });
-        $(".xbtc .close").click(function(){
-            $(".coverall1").css("display","none");
-        })
-        Qfast.add('widgets', { path: "<%=path%>/common/js/terminator2.2.min.js", type: "js", requires: ['fx'] });
-        Qfast(false, 'widgets', function () {
-            K.tabs({
-                id: 'fsD1',   //焦点图包裹id
-                conId: "D1pic1",  //** 大图域包裹id
-                tabId:"D1fBt",
-                tabTn:"a",
-                conCn: '.fcon', //** 大图域配置class
-                auto: 0,   //自动播放 1或0
-                effect: 'fade',   //效果配置
-                eType: 'click', //** 鼠标事件
-                pageBt:true,//是否有按钮切换页码
-                bns: ['.prev', '.next'],//** 前后按钮配置class
-                interval: 3000  //** 停顿时间
-            })
-        }) ;
-        $(".xbtc").css("left",($(window).width()-$(".xbtc").width())/2+'px');
-    })
-</script>
-
-
-
-
 <link type="text/css" href="<%=path%>/common/IM/css/im.css" rel="stylesheet" />
 <link type="text/css" href="<%=path%>/common/IM/css/qqFace.css"
       rel="stylesheet" />
@@ -1466,7 +1011,21 @@
 
 
 
-                                <input type="hidden" id="language" value="zh-cn">
+                                <input type="hidden" id="language" value="${userInfo.membLanguage}">
+                                <input type="hidden" id="conJob" value="${userInfo.membJob}">
+                                <input type="hidden" id="conCountryCode" value="${userInfo.membCountryCode}">
+                                <input type="hidden" id="conBirth" value="${userInfo.membBirth}">
+                                <input type="hidden" id="conLable" value="${userInfo.membLable}">
+                                <input type="hidden" id="conSex" value="${userInfo.membSex}">
+                                <input type="hidden" id="conVipLevel" value="${userInfo.mefiLevel}">
+
+                                <input type="hidden" id="conIsopenperson" value="${userInfo.mecoIsopenperson}">
+                                <input type="hidden" id="conIsonline" value="${userInfo.mecoIsonline}">
+                                <input type="hidden" id="conIsallowaddfriend" value="${userInfo.mecoIsallowaddfriend}">
+                                <input type="hidden" id="conIsletter" value="${userInfo.mecoIsletter}">
+                                <input type="hidden" id="conIslike" value="${userInfo.mecoIslike}">
+                                <input type="hidden" id="conIsvisito" value="${userInfo.mecoIsvisito}">
+                                <input type="hidden" id="conIsacceptgift" value="${userInfo.mecoIsacceptgift}">
                                 <ul>
                                     <li>
                                         <div class="set-content-title"><div class="yhtx tr inlineblock"><img id="headimgshow" src="http://images.gagahi.com//images/default/male.png" class="mr10"></div></div>
@@ -1508,7 +1067,7 @@
 
 
 									<input id="b" class="radio" type="radio" checked="checked" value="y" name="sex">
-									<label class="radio" for="b">男</label>
+									<label class="radio" for="b" id="sex">男</label>
 
 								</span>
                                     </li>
@@ -1622,14 +1181,14 @@
                                     <li>
                                         <span class="set-content-title">国家：</span>
                                         <div class="inlineblock occupation  h30 bdra30">
-                                            <span class=" inlineblock country-sle" data-country="" style="z-index: 1" id="countryshow"></span>
-                                            <input type="hidden" id="country" value=""><input type="hidden" id="countrycode" value="${membCountryCode}">
+                                            <span class=" inlineblock country-sle" data-country="${userInfo.membCountry}" style="z-index: 1" id="countryshow"></span>
+                                            <input type="hidden" id="country" value=""><input type="hidden" id="countrycode" value="${userInfo.membCountryCode}">
                                         </div>
                                     </li>
                                     <li>
                                         <span class="set-content-title">语言：</span>
                                         <div class="inlineblock occupation  h30 bdra30" style="z-index: 100">
-                                            <span class="xld inlineblock" data-tongyong="${membLanguage}" id="membLanguage">English</span>
+                                            <span class="xld inlineblock" data-tongyong="" id="membLanguage">English</span>
                                             <ul class="xld-select" style="display: none; top: 33px;">
 
                                                 <li class="" data-chuandi="en_us">English</li>
@@ -1653,15 +1212,15 @@
                                     </li>
                                     <li>
                                         <span class="set-content-title">身高（cm）：</span>
-                                        <span class="set-content-con" style="z-index: 1"> <input class="inp-edit bdra15 h30 pl15" id="membHeight" maxlength="3" value="${membHeight}"></span>
+                                        <span class="set-content-con" style="z-index: 1"> <input class="inp-edit bdra15 h30 pl15" id="membHeight" maxlength="3" value="${userInfo.membHeight}"></span>
                                     </li>
                                     <li>
                                         <span class="set-content-title">体重（kg）：</span>
-                                        <span class="set-content-con" style="z-index: 1"> <input class="inp-edit bdra15 h30 pl15" id="membWeight" maxlength="3" value="${membWeight}"></span>
+                                        <span class="set-content-con" style="z-index: 1"> <input class="inp-edit bdra15 h30 pl15" id="membWeight" maxlength="3" value="${userInfo.membWeight}"></span>
                                     </li>
                                     <li>
                                         <span class="set-content-title">个性签名：</span>
-                                        <span class="set-content-con"> <textarea class="text-edit bdra15" maxlength="25" id="membSignature">${membSignature}</textarea></span>
+                                        <span class="set-content-con"> <textarea class="text-edit bdra15" maxlength="25" id="membSignature">${userInfo.membSignature}</textarea></span>
                                     </li>
                                     <li>
                                         <span class="set-content-title">兴趣：</span>
@@ -1722,19 +1281,18 @@
                                 </li>
                                 <li><span class="set-content-title">昵称：</span><span class="set-content-con">${userInfo.membNickname}</span></li>
                                 <li><span class="set-content-title">GaGa 号：</span><span class="set-content-con">30039931</span></li>
-                                <li><span class="set-content-title">年龄：</span><span class="set-content-con">
-                                ${userInfo.membAge}
+                                <li><span class="set-content-title">年龄：</span><span class="set-content-con" id="iAge">
+
                                 </span></li>
-                                <li><span class="set-content-title">性别：</span><span class="set-content-con">男</span></li>
-                                <li><span class="set-content-title">职业：</span><span class="set-content-con"></span></li>
-                                <li><span class="set-content-title">国家：</span><span class="set-content-con"></span></li>
+                                <li><span class="set-content-title">性别：</span><span class="set-content-con" id="iConSex"></span></li>
+                                <li><span class="set-content-title">职业：</span><span class="set-content-con" id="iConJob"></span></li>
+                                <li><span class="set-content-title">国家：</span><span class="set-content-con" id="iConCountry"></span></li>
                                 <li><span class="set-content-title">语言：</span><span class="set-content-con">English</span>
                                 </li>
                                 <li><span class="set-content-title">身高（cm）：</span><span class="set-content-con">${userInfo.membHeight}</span></li>
                                 <li><span class="set-content-title">体重（kg）：</span><span class="set-content-con">${userInfo.membWeight}</span></li>
                                 <li><span class="set-content-title" id="showinfo">个性签名：</span><span class="set-content-con">${userInfo.membSignature}</span></li>
-                                <li><span class="set-content-title" >兴趣：</span><span class="set-content-con" >
-
+                                <li><span class="set-content-title" >兴趣：</span><span class="set-content-con" id="iConLabel">
                 </span></li>
                             </ul>
                         </div>
@@ -1744,8 +1302,8 @@
                         <div class="set-content">
                             <div  id="personalinformationWin" class="set-hidden" style="display:none;">
                                 <ul>
-                                    <li><span class="set-content-title">金币：</span><span class="set-content-con">${userInfo.membCoin}<a href="<%=path%>/pay/recharge"><span class="set-recharge c-2d57a1">充值</span></a> </span></li>
-                                    <li><span class="set-content-title">会员级别：</span><span class="set-content-con">普通会员
+                                    <li><span class="set-content-title">金币：</span><span class="set-content-con">${empty userInfo.membCoin ? "0" : userInfo.membCoin}<a href="<%=path%>/pay/recharge"><span class="set-recharge c-2d57a1">充值</span></a> </span></li>
+                                    <li><span class="set-content-title">会员级别：</span><span class="set-content-con" id="iConVipLevel">
 				<a href="<%=path%>/pay/upgradeMember"><span class="set-member c-2d57a1" style=" margin-left:30px;">升级</span></a></span></li>
                                     <li><span class="set-content-title">翻译包字符数：</span><span class="set-content-con" ><span id="myTotalTranslateNum">0</span></span></li>
 
@@ -1790,9 +1348,9 @@
                             </div>
                             <!--账号展示开始-->
                             <ul class="set-show">
-                                <li><span class="set-content-title">金币：</span><span class="set-content-con">${userInfo.membCoin}</span></li>
+                                <li><span class="set-content-title">金币：</span><span class="set-content-con">${empty userInfo.membCoin ? "0" : userInfo.membCoin}</span></li>
                                 <li><span class="set-content-title">会员级别：</span><span class="set-content-con">普通会员</span></li>
-                                <li><span class="set-content-title">翻译包字符数：</span><span class="set-content-con meminfo-fnayi-num" id="mymefiTranslate">0</span></li>
+                                <%--<li><span class="set-content-title">翻译包字符数：</span><span class="set-content-con meminfo-fnayi-num" id="mymefiTranslate">0</span></li>--%>
 
                                 <li><span class="set-content-title">邮箱：</span><span class="set-content-con">${userInfo.membEmail}</span></li>
                                 <li><span class="set-content-title">手机号码：</span><span class="set-content-con">${userInfo.membPhoneNo}</span></li>
@@ -1890,26 +1448,11 @@
                             </div>
                             <!--隐私展示部分开始-->
                             <ul class="set-show">
-                                <li><span class="set-content-title">是否公开我的个人档案？ ：</span><span class="set-content-con">
-
-
-
-
-
-						 公开
-
-
+                                <li><span class="set-content-title">是否公开我的个人档案？ ：</span><span class="set-content-con" id="iconIsopenperson">
               	</span></li>
-                                <li><span class="set-content-title">显示我的在线状态：</span><span class="set-content-con">
-
-
-
-
-						是
-
+                                <li><span class="set-content-title">显示我的在线状态：</span><span class="set-content-con" id="iConIsonline">
 				</span></li>
-                                <li><span class="set-content-title">加好友申请：</span><span class="set-content-con">
-						 允许任何人把我加为好友
+                                <li><span class="set-content-title">加好友申请：</span><span class="set-content-con" id="iConIsallowaddfriend">
 				</span></li>
                             </ul>
                         </div>
@@ -1948,38 +1491,13 @@
                                 </div>
                             </div>
                             <ul class="set-show" id="confignotice">
-                                <li><span class="set-content-title">信息：</span><span class="set-content-con">
-
-
-
-
-						是
-
+                                <li><span class="set-content-title">信息：</span><span class="set-content-con" id="iconIsletter">
 				</span></li>
-                                <li><span class="set-content-title">当有人喜欢你：</span><span class="set-content-con">
-
-
-
-
-						 是
-
+                                <li><span class="set-content-title">当有人喜欢你：</span><span class="set-content-con" id="iconIslike">
 				</span></li>
-                                <li><span class="set-content-title">当有访客：</span><span class="set-content-con">
-
-
-
-
-						是
-
+                                <li><span class="set-content-title">当有访客：</span><span class="set-content-con" id="iconIsvisito">
 				</span></li>
-
-                                <li><span class="set-content-title">收到礼物：</span><span class="set-content-con">
-
-
-
-
-						 是
-
+                                <li><span class="set-content-title">收到礼物：</span><span class="set-content-con" id="iconIsacceptgift">
 				 </span></li>
 
 
@@ -3182,6 +2700,7 @@
             $("#bir-Infor-Tip").show();
             return;
         }
+
         if(nicknamelength){
             layer.load(0, {shade: 0.1});
             $.post(path + "/member/informationPerfect",{
@@ -3226,6 +2745,7 @@
 
                 }
             }, "json");
+
         }
     }
 
@@ -3346,7 +2866,7 @@
                 return false;
             }else{
                 $('.emailerror').css('display', 'none');
-                $.post("http://www.gagahi.com:80/Platform/emailIsExistence",{email:mememail},function(result){
+                $.post(path + "/platform/emailIsExistence",{email:mememail},function(result){
                     if(result.success){
                         //邮箱存在不通过
 
@@ -3793,3 +3313,8 @@
         }
     });
 </script>
+
+
+
+
+
