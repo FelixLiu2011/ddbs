@@ -41,7 +41,7 @@ var uploader = WebUploader.create({
 
 function photo_init(){
 	$.ajax({
-        url: ctx+'/Image/uploadInit',
+        url: path + '/Image/uploadInit',
 		data: {type:'A', imgNum:1},
         datatype: "json",
         type: 'post',

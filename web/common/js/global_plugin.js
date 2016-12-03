@@ -1455,10 +1455,8 @@ var facePath = staticUrl + '/IM/img/qqFace/';
                     s = null;
                     return r;
                 })(),
-
                 // WebUploader实例
                 uploader;
-
             if (!WebUploader.Uploader.support()) {
                 alert('Web Uploader 不支持您的浏览器！如果你使用的是IE浏览器，请尝试升级 flash 播放器');
                 throw new Error('WebUploader does not support the browser you are using.');
@@ -1485,7 +1483,7 @@ var facePath = staticUrl + '/IM/img/qqFace/';
                 },
 
                 // swf文件路径
-                swf: staticPath + 'js/Uploader.swf',
+                swf: path + '/common/js/Uploader.swf',
 
                 disableGlobalDnd: true,
 

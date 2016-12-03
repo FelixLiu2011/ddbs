@@ -74,7 +74,7 @@ function publishZone() {
             //有图 有没有内容均可
             isPushComplate = false;
             //请求toKen
-            $._post(ctx + "/Image/uploadInit", {
+            $._post(path + "/Image/uploadInit", {
                 "type": "Z",
                 "imgNum": imgNum
             }, function(z) {

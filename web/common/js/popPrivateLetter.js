@@ -70,7 +70,7 @@ var popPrivate=popPrivate||{};
             var LetterupLoadImgContainer ="";
             var urlIMGPath="";
             uploader.on('beforeFileQueued', function (file) {
-                $.post(ctx+"/Image/uploadInit",{"type":"M","imgNum":1},function(regImg){
+                $.post(path+"/Image/uploadInit",{"type":"M","imgNum":1},function(regImg){
                     if(regImg.success){
                         //$("#Im_data").attr({"data-token":regImg.obj.upToken,"data-imgname":regImg.obj.img[0]});
                         $("#chatConBottom .imgBtn").attr({"data-token":regImg.obj.upToken,"data-imgname":regImg.obj.img[0]});

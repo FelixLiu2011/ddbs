@@ -514,22 +514,22 @@
         <div id="fsD1" class="focus">
             <div id="D1pic1" class="fPic">
                 <div class="fcon" style="display: none;">
-                    <a><img src="http://static.gagahi.com/images/zh-cn-xb01.jpg" style="opacity: 1; "></a>
+                    <a><img src="<%=path%>/common/images/zh-cn-xb01.jpg" style="opacity: 1; "></a>
                     <span class="shadow" data-i18n="sm1.tu1"></span>
                 </div>
 
                 <div class="fcon" style="display: none;">
-                    <a><img src="http://static.gagahi.com/images/zh-cn-xb02.jpg" style="opacity: 1; "></a>
+                    <a><img src="<%=path%>/common/images/zh-cn-xb02.jpg" style="opacity: 1; "></a>
                     <span class="shadow" data-i18n="sm1.tu2"></span>
                 </div>
 
                 <div class="fcon" style="display: none;">
-                    <a><img src="http://static.gagahi.com/images/zh-cn-xb03.jpg" style="opacity: 1; "></a>
+                    <a><img src="<%=path%>/common/images/zh-cn-xb03.jpg" style="opacity: 1; "></a>
                     <span class="shadow" data-i18n="sm1.tu3"></span>
                 </div>
 
                 <div class="fcon" style="display: none;">
-                    <a><img src="http://static.gagahi.com/images/zh-cn-xb04.jpg" style="opacity: 1; "></a>
+                    <a><img src="<%=path%>/common/images/zh-cn-xb04.jpg" style="opacity: 1; "></a>
                     <span class="shadow" data-i18n="sm1.tu4"></span>
                 </div>
             </div>
@@ -550,7 +550,7 @@
 <div class="head"  gagaid="2935185">
     <div class="w1100 jz">
         <div class="fl">
-            <a href="<%=path%>/index/iHome" class="logo"><img src="http://static.gagahi.com/images/logo.png" alt="gagahi"/></a>
+            <a href="<%=path%>/index/iHome" class="logo"><img src="<%=path%>/common/images/logo.png" alt="gagahi"/></a>
             <a href="<%=path%>/index/iHome" id="encounterIndex"  >偶遇</a>
             <a href="<%=path%>/zone/myZone"  id="zoneIndex" >动态</a>
             <!--<a href="http://game.gagahi.com/" target="blank"  id="gameIndex" >游戏</a>-->
@@ -666,7 +666,7 @@
         $(".xbtc .close").click(function(){
             $(".coverall1").css("display","none");
         })
-        Qfast.add('widgets', { path: "http://static.gagahi.com/js/terminator2.2.min.js", type: "js", requires: ['fx'] });
+        Qfast.add('widgets', { path: "<%=path%>/common/js/terminator2.2.min.js", type: "js", requires: ['fx'] });
         Qfast(false, 'widgets', function () {
             K.tabs({
                 id: 'fsD1',   //焦点图包裹id
@@ -689,10 +689,10 @@
 
 
 
-<link type="text/css" href="http://static.gagahi.com/IM/css/im.css" rel="stylesheet" />
-<link type="text/css" href="http://static.gagahi.com/IM/css/qqFace.css"
+<link type="text/css" href="<%=path%>/common/IM/css/im.css" rel="stylesheet" />
+<link type="text/css" href="<%=path%>/common/IM/css/qqFace.css"
       rel="stylesheet" />
-<link type="text/css" href="http://static.gagahi.com/IM/css/webuploader.css"
+<link type="text/css" href="<%=path%>/common/IM/css/webuploader.css"
       rel="stylesheet" />
 <script type="text/javascript">
     var staticCtx="http://static.gagahi.com/IM/";
@@ -732,8 +732,8 @@
             <ul class="hiddenContactsCon">
                 <li class="content singleNum" data-signid="people" data-gagaid="-1" data-remarkname="嘎嘎客服" data-nickname="嘎嘎客服" data-shield="0" data-online="2" data-language="zh">
                     <div class="headDiv">
-                        <img class="headImg" src="http://static.gagahi.com/images/gagaService.png">
-                        <img class="headLine" src="http://static.gagahi.com/IM/img/On-line.png" style="display:none">
+                        <img class="headImg" src="<%=path%>/common/images/gagaService.png">
+                        <img class="headLine" src="<%=path%>/common/IM/img/On-line.png" style="display:none">
                     </div>
                 </li>
             </ul>
@@ -772,8 +772,8 @@
                     <ul class="recentlyContainer FoldContainer">
                         <li class="showContent" data-signid="people" data-gagaid="-1" data-remarkname="嘎嘎客服" data-nickname="嘎嘎客服" data-shield="0" data-online="2" data-language="zh">
                             <div class="showHead">
-                                <img class="headImg" src="http://static.gagahi.com/images/gagaService.png">
-                                <img class="headLine" src="http://static.gagahi.com/IM/img/On-line.png" style="display:none">
+                                <img class="headImg" src="<%=path%>/common/images/gagaService.png">
+                                <img class="headLine" src="<%=path%>/common/IM/img/On-line.png" style="display:none">
                             </div>
                             <span class="showRemarkName">嘎嘎客服</span>
                             <span class="newsNum newsNumSingle" style="display:none">0</span></li>
@@ -803,8 +803,8 @@
                     <ul class="friendContainer FoldContainer">
                         <li class="showContent" data-signid="people" data-gagaid="-1" data-remarkname="嘎嘎客服" data-nickname="嘎嘎客服" data-shield="0" data-online="2" data-language="zh">
                             <div class="showHead">
-                                <img class="headImg" src="http://static.gagahi.com/images/gagaService.png">
-                                <img class="headLine" src="http://static.gagahi.com/IM/img/On-line.png" style="display:none">
+                                <img class="headImg" src="<%=path%>/common/images/gagaService.png">
+                                <img class="headLine" src="<%=path%>/common/IM/img/On-line.png" style="display:none">
                             </div>
                             <span class="showRemarkName">嘎嘎客服</span>
                             <span class="newsNum newsNumSingle" style="display:none">0</span>
@@ -880,7 +880,7 @@
 
     </div>
     <div id="IMgagaService">
-        <img src="http://static.gagahi.com/IM/img/gagaService.png">
+        <img src="<%=path%>/common/IM/img/gagaService.png">
         <div class="gagaServiceTXT">嘎嘎客服<!-- 嘎嘎客服 --></div>
         <span class="close-gagaservice"></span>
     </div>
@@ -896,7 +896,7 @@
         </div>
         <div class="upperRight">
             <i class="chatHeadimgIng"> <img class="chatHeadHeadIng"
-                                            src="http://static.gagahi.com/IM/img/head.png" />
+                                            src="<%=path%>/common/IM/img/head.png" />
             </i>
             <div class=" modifyContent">
                 <p class="chatRemarkNameIng"></p>
@@ -1283,21 +1283,21 @@
 
 
 
-<script type="text/javascript" src="http://static.gagahi.com/IM/js/ImUploadIMG.js"></script>
-<script type="text/javascript" src="http://static.gagahi.com/IM/js/jquery.qqFace.js"></script>
-<script type="text/javascript" src="http://static.gagahi.com/IM/js/IMAjax.js"></script>
-<script type="text/javascript" src="http://static.gagahi.com/IM/js/chatBox.js"></script>
+<script type="text/javascript" src="<%=path%>/common/IM/js/ImUploadIMG.js"></script>
+<script type="text/javascript" src="<%=path%>/common/IM/js/jquery.qqFace.js"></script>
+<script type="text/javascript" src="<%=path%>/common/IM/js/IMAjax.js"></script>
+<script type="text/javascript" src="<%=path%>/common/IM/js/chatBox.js"></script>
 
 
 
 
-<script src="http://static.gagahi.com/js/slides-1.1.1-min.js" type="text/javascript"></script>
-<script src="http://static.gagahi.com/js/slide.js" type="text/javascript"></script>
-<script src="http://static.gagahi.com/js/imgupload.js"></script>
-<script src="http://static.gagahi.com/js/platform/platformCountryElementMap.js"></script>
-<link href="http://static.gagahi.com/css/zfx.css" rel="stylesheet" type="text/css">
-<link href="http://static.gagahi.com/css/like.css" rel="stylesheet" type="text/css">
-<link href="http://static.gagahi.com/css/zone.css" rel="stylesheet" type="text/css">
+<script src="<%=path%>/common/js/slides-1.1.1-min.js" type="text/javascript"></script>
+<script src="<%=path%>/common/js/slide.js" type="text/javascript"></script>
+<script src="<%=path%>/common/js/imgupload.js"></script>
+<script src="<%=path%>/common/js/platformCountryElementMap.js"></script>
+<link href="<%=path%>/common/css/zfx.css" rel="stylesheet" type="text/css">
+<link href="<%=path%>/common/css/like.css" rel="stylesheet" type="text/css">
+<link href="<%=path%>/common/css/zone.css" rel="stylesheet" type="text/css">
 <style type="text/css">
     #gerendongtai .zoneimgs img { cursor: pointer; }
 </style>
@@ -1740,7 +1740,7 @@
 <div id="commontContentTemp" style="display: none;">
     <div class="commont-content-out">
         <div class="commont-content">
-            <div class="commont-contentl fl"><img src="http://static.gagahi.com/images/photo1.jpg" field="memb_bigimg"></div>
+            <div class="commont-contentl fl"><img src="<%=path%>/common/images/photo1.jpg" field="memb_bigimg"></div>
             <div class="commont-contentr fl ml10">
                 <p><span field="memb_nickname"></span><span class="hui ml10" field="zoco_time"></span></p>
                 <div class="commont-contentr-bottom">
@@ -1786,8 +1786,8 @@
     </div>
 </div>
 
-<script src="http://static.gagahi.com/js/jquery.page.js"></script>
-<script src="http://static.gagahi.com/js/zone/member_zonelist.js" type="text/javascript"></script>
+<script src="<%=path%>/common/js/jquery.page.js"></script>
+<script src="<%=path%>/common/js/zone/member_zonelist.js" type="text/javascript"></script>
 <script>
     /*----鼠标滑过提示-----*/
     $.IM.txtTipsFun($("#edit"));
@@ -1897,14 +1897,14 @@
     $(".xld").each(function(index, element) {
         $(this).click(function (e) {
             $(this).next("ul").css("display","block");
-            $(this).css("background-image","url(http://static.gagahi.com/images/xld1.png)");
+            $(this).css("background-image","url(<%=path%>/common/images/xld1.png)");
             $(".xld-select>li").each(function (e) {
                 var _selt = $(this);
                 $(this).hover(function (){
                     $(this).addClass("default").siblings().removeClass("default");
                 })
                 $(this).click(function (e) {
-                    $(_selt.parent(".xld-select").siblings("span")).text(_selt.children("a").text()).css("background-image","url(http://static.gagahi.com/images/xld.png)");
+                    $(_selt.parent(".xld-select").siblings("span")).text(_selt.children("a").text()).css("background-image","url(<%=path%>/common/images/xld.png)");
                     _selt.parent(".xld-select").css("display", "none");
                 });
             });
@@ -3013,9 +3013,9 @@
         var headImg = Zone.publishMem.membBigimg;//发布者头像
         if(null == headImg || $.trim(headImg).length <= 0){
             if(Zone.publishMem.membSex == 1){//男
-                headImg = "http://static.gagahi.com/images/default-male.png";
+                headImg = "<%=path%>/common/images/default-male.png";
             }else{
-                headImg = "http://static.gagahi.com/images/default-female.png";
+                headImg = "<%=path%>/common/images/default-female.png";
             }
         }else{
             headImg = "http://images.gagahi.com//"+headImg;
@@ -3132,9 +3132,9 @@
                     }
                     if(null == commHeadImg || $.trim(commHeadImg).length <= 0){
                         if(null != Zone && null != Zone.commList[i] && Zone.commList[i].memb_sex == 1){//男
-                            commHeadImg = "http://static.gagahi.com/images/default-male.png";
+                            commHeadImg = "<%=path%>/common/images/default-male.png";
                         }else{
-                            commHeadImg = "http://static.gagahi.com/images/default-female.png";
+                            commHeadImg = "<%=path%>/common/images/default-female.png";
                         }
                     }else{
                         commHeadImg = "http://images.gagahi.com//" + commHeadImg;
@@ -3358,7 +3358,7 @@
         else if(imgNum > 0 && isPushComplate){
             isPushComplate = false;
             //请求toKen
-            $.post("http://www.gagahi.com:80/Image/uploadInit",{"type":"Z","imgNum":imgNum},function(z){
+            $.post(path + "http://www.gagahi.com:80/Image/uploadInit",{"type":"Z","imgNum":imgNum},function(z){
                 img = z.obj.img;
                 // console.log(img);
                 if(z.success){
@@ -3458,9 +3458,9 @@
                         if(null == commentdivobj || commentdivobj.length <= 0){//直接评论
                             if( null == commHeadImg || $.trim(commHeadImg).length <= 0){//无头像
                                 if(msex == 1){//男
-                                    commHeadImg = "http://static.gagahi.com/images/default-male.png";
+                                    commHeadImg = "<%=path%>/common/images/default-male.png";
                                 }else{
-                                    commHeadImg = "http://static.gagahi.com/images/default-female.png";
+                                    commHeadImg = "<%=path%>/common/images/default-female.png";
                                 }
                             }else{
                                 commHeadImg = "http://images.gagahi.com//" + commHeadImg;
@@ -3824,9 +3824,9 @@
                             }
                             if(null == commHeadImg || $.trim(commHeadImg).length <= 0){
                                 if(null != data.obj[i] && data.obj[i].memb_sex == 1){//男
-                                    commHeadImg = "http://static.gagahi.com/images/default-male.png";
+                                    commHeadImg = "<%=path%>/common/images/default-male.png";
                                 }else{
-                                    commHeadImg = "http://static.gagahi.com/images/default-female.png";
+                                    commHeadImg = "<%=path%>/common/images/default-female.png";
                                 }
                             }else{
                                 commHeadImg = "http://images.gagahi.com//" + commHeadImg;
@@ -4277,14 +4277,14 @@
             /*下拉菜单*/
             $(document).on("click",".xld",function (e) {
                 $(this).next("ul").css("display","block");
-                $(this).css("background-image","url(http://static.gagahi.com/images/xld1.png)");
+                $(this).css("background-image","url(<%=path%>/common/images/xld1.png)");
                 $(".xld-select>li").each(function (e) {
                     var _selt = $(this);
                     $(this).hover(function (){
                         $(this).addClass("default").siblings().removeClass("default");
                     })
                     $(this).click(function (e) {
-                        $(_selt.parent(".xld-select").siblings("span")).text(_selt.children("a").text()).css("background-image","url(http://static.gagahi.com/images/xld.png)");
+                        $(_selt.parent(".xld-select").siblings("span")).text(_selt.children("a").text()).css("background-image","url(<%=path%>/common/images/xld.png)");
                         _selt.parent(".xld-select").css("display", "none");
                     });
                 });
@@ -4341,7 +4341,7 @@
 
 
 <!--登录弹出框开始-->
-<link href="http://static.gagahi.com/css/login-layer.css" rel="stylesheet" type="text/css"/>
+<link href="<%=path%>/common/css/login-layer.css" rel="stylesheet" type="text/css"/>
 
 <div class="creditcon"></div>
 <div class="logn-con">
@@ -4467,7 +4467,7 @@
         </p>
         <div class="fhdb">
             <div class="scroll_t">
-                <img src="http://static.gagahi.com/images/xs.png">
+                <img src="<%=path%>/common/images/xs.png">
             </div>
             <!-- <div class="fk">
 				<a href="#" class="f12">意见反馈意见反馈</a>
@@ -4493,8 +4493,8 @@
 
 
 </body>
-<script src="http://static.gagahi.com/IM/js/IM.js" type="text/javascript"></script>
-<script type="text/javascript" src="http://static.gagahi.com/js/laytpl.js"  ></script>
+<script src="<%=path%>/common/IM/js/IM.js" type="text/javascript"></script>
+<script type="text/javascript" src="<%=path%>/common/js/laytpl.js"  ></script>
 <script type="text/javascript">
     $(function(){
 
@@ -4557,7 +4557,7 @@
                     if(message.type==1){
                         var souce = message.content['notiSouce'];
                         var content = message.content['notiContent']
-                        var html = "<li class='f13'><span class='tx'><img src='http://static.gagahi.com/images/gg1.jpg'></span>";
+                        var html = "<li class='f13'><span class='tx'><img src='<%=path%>/common/images/gg1.jpg'></span>";
                         html+="<p>2<span class='nm'>"+souce+"</span>"+content+"<br><span class='tim f12'>2:40</span></p></li>";
                         $("#myCustomScrollbar").append(html);
 
@@ -4872,9 +4872,9 @@
                         if(null != message.content && null != message.content.mfstRelevel){
                             $(".lfttop").find(".ari:first").find("img").remove();//首先删除元素
                             if(message.content.mfstRelevel == "2"){//高级
-                                $(".lfttop").find(".ari:first").append("<img src=\"http://static.gagahi.com/images/hg.jpg\">");
+                                $(".lfttop").find(".ari:first").append("<img src=\"<%=path%>/common/images/hg.jpg\">");
                             }else if(message.content.mfstRelevel == "3"){//vip
-                                $(".lfttop").find(".ari:first").append("<img src=\"http://static.gagahi.com/images/vip-hg.jpg\">");
+                                $(".lfttop").find(".ari:first").append("<img src=\"<%=path%>/common/images/vip-hg.jpg\">");
                             }
 
                             //更新session

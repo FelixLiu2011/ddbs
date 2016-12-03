@@ -27,7 +27,7 @@
 		var urlIMGPath="";
         uploader.on('beforeFileQueued', function (file) {
 			//console.log("文件被加入队列之前触发："+file);
-			$.post(ctx+"/Image/uploadInit",{"type":"M","imgNum":1},function(regImg){
+			$.post(path+"/Image/uploadInit",{"type":"M","imgNum":1},function(regImg){
 				if(regImg.success){		
 					//console.log("七牛权限："+regImg);
 					//console.log("七牛权限："+JSON.stringify(regImg));

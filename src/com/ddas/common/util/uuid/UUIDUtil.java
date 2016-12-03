@@ -29,6 +29,17 @@ public class UUIDUtil {
 		return createUUID(16);
 	}
 
+	/**
+	 *a uuid string which length is 32
+	 *@Author shaojunxiang
+	 *@Date 2016/7/2 14:17
+	 *@return java.lang.String
+	 *@since JDK1.6
+	 */
+	public static String createUUID32(){
+		return createUUID(32);
+	}
+
     /**
      *get a uuid string which length depend on the parameter
      *@param length the uuid string length (0,32]
