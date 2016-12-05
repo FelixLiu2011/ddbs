@@ -367,8 +367,9 @@ Zoneyet.define("Zoneyet.nms.myInfor.imgupload",function(){
             		arr[i] = imgs[i];
             	}
                 alert(arr.length);
-            	$.post("http://localhost:8080/Ihome/Photo/upload",{"img" : arr},function(result){
+            	$.post("http://localhost:8080/ihome/photo/upload",{"img" : arr},function(result){
 
+                    alert(result.success);
             		 //刷新相册内容
 	              	$.ajax({
 	         			  type : "post",
@@ -390,7 +391,7 @@ Zoneyet.define("Zoneyet.nms.myInfor.imgupload",function(){
                         walledList();
                         zoneObj.reFresh(undefined, true);
                     }
- 				});
+ 				}, "json");
                 stats = uploader.getStats();
                 if ( stats.successNum ) {
                     setTimeout(function(){

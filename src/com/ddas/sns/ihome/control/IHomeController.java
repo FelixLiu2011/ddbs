@@ -1,7 +1,10 @@
 package com.ddas.sns.ihome.control;
 
 import com.ddas.common.result.Result;
+import com.ddas.common.util.StringUtil;
+import com.ddas.sns.common.BaseController;
 import com.ddas.sns.ihome.service.IHomeService;
+import com.ddas.sns.zone.service.ZoneService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -9,6 +12,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 /**
  * ClassName:	IHomeController
@@ -20,9 +25,12 @@ import javax.annotation.Resource;
  */
 @Controller
 @RequestMapping("/ihome")
-public class IHomeController {
+public class IHomeController extends BaseController{
     @Resource
     private IHomeService iHomeService;
+
+    @Resource
+    private ZoneService zoneService;
 
     /**
      * 获取`偶遇`页面中的用户数据
@@ -80,5 +88,27 @@ public class IHomeController {
     public Result getDatas(String keywords,String pageNo,String pageSize,String quickSearchType,String searchType){
         // FIXME: 2016/11/29 
         return null;
+    }
+
+    /**
+     * 在我的空间上传图片
+     * @param img 图片的数组字符串，用,隔开
+     * @return
+     */
+    @RequestMapping("/photo/upload")
+    @ResponseBody
+    public Result photoUpload(@RequestParam(value = "img[]") String[] img, HttpServletRequest request){
+        Result result = new Result();
+        boolean success = false;
+
+        if(img == null || img.length == 0) {
+            result.setSuccess(false);
+            return result;
+        }else{
+            success = zoneService.saveImageInfoAndZoneInfo(img, getLoginUser(request));
+        }
+        result.setSuccess(success);
+
+        return result;
     }
 }

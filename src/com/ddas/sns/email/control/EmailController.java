@@ -8,23 +8,11 @@
  */
 package com.ddas.sns.email.control;
 
-import com.ddas.common.Msg;
-import com.ddas.common.page.Page;
 import com.ddas.sns.common.BaseController;
-import com.ddas.sns.email.domain.UserEmail;
-import com.ddas.sns.email.service.EmailService;
-import com.ddas.sns.privilege.service.PrivilegeService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.ModelAndView;
-
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
 
 /**
  * ClassName:	EmailController
@@ -39,20 +27,20 @@ import javax.servlet.http.HttpServletRequest;
 public class EmailController extends BaseController{
     private static  final Logger LOGGER= LoggerFactory.getLogger(EmailController.class);
 
-    @Resource
+/*    @Resource
     private EmailService emailService;
 
     @Autowired
     private PrivilegeService privilegeService;
 
-    /**
+    *//**
      *升级会员页面
      *@return java.lang.String 升级会员的页面
      *@author shaojx
      *@date 2016/7/8 21:45
      *@version 1.0
      *@since 1.6
-     */
+     *//*
     @RequestMapping("/gotoIndex")
     public ModelAndView gotoEmail(HttpServletRequest httpServletRequest){
         ModelAndView mav = withLocal(httpServletRequest,"email/index");
@@ -89,7 +77,7 @@ public class EmailController extends BaseController{
         return page;
     }
 
-    /**
+    *//**
      *获取相应的回复列表
      * @param emailId 邮件的id
      * @param pageNo 当前的页码
@@ -100,7 +88,7 @@ public class EmailController extends BaseController{
      *@date 2016/8/10 21:35
      *@version 1.0
      *@since 1.6
-     */
+     *//*
     @RequestMapping("/fetchEmailDetailByEmailId")
     @ResponseBody
     public Page fetchEmailDetailByEmailId(String emailId,int pageNo,int pageSize,HttpServletRequest request){
@@ -108,7 +96,7 @@ public class EmailController extends BaseController{
         return page;
     }
 
-    /**
+    *//**
      *回复邮件
      * @param emailId 回复邮件的id
      * @param senderId 当前邮件的发送者
@@ -119,7 +107,7 @@ public class EmailController extends BaseController{
      *@date 2016/8/10 21:47
      *@version 1.0
      *@since 1.6
-     */
+     *//*
     @RequestMapping("/reply")
     @ResponseBody
     public Msg reply(String emailId,String senderId,String emailContent,HttpServletRequest request){
@@ -137,7 +125,7 @@ public class EmailController extends BaseController{
         return msg;
     }
 
-    /**
+    *//**
      *查询每天的限额值
      * @param request
      *@return com.ddas.common.Msg @see msg.setSuccessful==true表示超过
@@ -145,7 +133,7 @@ public class EmailController extends BaseController{
      *@date 2016/8/17 22:12
      *@version 1.0
      *@since 1.6
-     */
+     *//*
     @RequestMapping("/checkDailyEmailCount")
     @ResponseBody
     public Msg checkDailyEmailCount(HttpServletRequest request){
@@ -158,6 +146,6 @@ public class EmailController extends BaseController{
         }
         msg.setSuccessful(overFlow);
         return msg;
-    }
+    }*/
 
 }
