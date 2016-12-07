@@ -17,6 +17,8 @@ public class DesUtil {
     /*加密的key(固定)*/
     public static final String KEY="_salt!@#";
 
+    public static void main(String[] args) throws Exception {
+    }
     /**
      * Description 根据键值进行加密
      * @param data

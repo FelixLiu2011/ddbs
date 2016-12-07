@@ -49,7 +49,7 @@ public class SecurityPropertyPlaceholderConfigurer extends PropertyPlaceholderCo
             }
         }
         if(mailPassword!=null){
-            //解密mail.passwor属性值，并重新设置
+            //解密mail.password属性值，并重新设置
             try {
                 props.setProperty("mail.password", DesUtil.decrypt(mailPassword,DesUtil.KEY));
             } catch (Exception e) {
