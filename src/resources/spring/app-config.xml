@@ -19,7 +19,11 @@
 	<context:component-scan base-package="com.ddas.sns.*.impl" />
 	<context:component-scan base-package="com.ddas.sns.*.service" />
 
-	<context:property-placeholder location="classpath:resources/spring/property.properties"/>
+	<!--<context:property-placeholder location="classpath:resources/spring/property.properties"/>-->
+    <bean id="propertyConfig" class="com.ddas.common.placeholder.SecurityPropertyPlaceholderConfigurer">
+        <property name="location" value="classpath:resources/spring/property.properties">
+        </property>
+    </bean>
 
     <!--配置Mysql数据源-->
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" >
