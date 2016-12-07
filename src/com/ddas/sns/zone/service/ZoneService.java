@@ -67,7 +67,7 @@ public class ZoneService {
     }
 
     /**
-     * 保存图片，并且保存到一个动态
+     * 保存图片，并且将这些图片保存到一个动态
      * @author liuchen
      * @date 2016/7/9 14:05
      * @version 1.0
@@ -84,11 +84,15 @@ public class ZoneService {
         zoneInfo.setZoneContent("");
         saveZoneInfo(zoneInfo);
 
+        int count = 0;//排序
         for (String imgUrl : imgArray) {
             ImageInfo imageInfo = new ImageInfo();
             imageInfo.setZoimImgurl(imgUrl);
             imageInfo.setZoimGagaid(userInfo.getMembGagaid());
             imageInfo.setZoimZoneid(zoneInfo.getZoneId());
+            imageInfo.setZoimSort(count);
+
+            count++;
             imageService.saveImageInfo(imageInfo);
         }
 

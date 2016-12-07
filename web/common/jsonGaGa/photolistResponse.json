@@ -1,0 +1,31 @@
+{
+    "success": true,
+    "msg": "操作成功",
+    "obj": [
+        {
+            "zoim_imgurl": "P-f515db34a5534ca7852173c6df912a96",
+            "zoim_likecount": 0,
+            "zone_imgcount": 1,
+            "zoim_zoneid": 5710564,
+            "zoim_isrecommend": 1,
+            "zoim_sort": 0,
+            "zoim_id": 3078769,
+            "zoim_time": 1480254136000,
+            "zoim_state": 1,
+            "zone_istrueimg": 1
+        },
+        {
+            "zoim_imgurl": "P-28d2060a25b94fd4852073c6a8107d8b",
+            "zoim_likecount": 0,
+            "zone_imgcount": 1,
+            "zoim_zoneid": 5710563,
+            "zoim_isrecommend": 1,
+            "zoim_sort": 0,
+            "zoim_id": 3078768,
+            "zoim_time": 1480253431000,
+            "zoim_state": 1,
+            "zone_istrueimg": 1
+        }
+    ],
+    "attributes": null
+}

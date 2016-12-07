@@ -161,7 +161,7 @@ function parseList(list){
             //广告位
             if((pageNo==1 && i==1) || (listLen==1&&pageNo==1&&i==0)){
                 if (searchType==3) {
-                    $._post(apiUrl + '/ad/area/getContent', {
+                    $._post('www.gagahi.com:80/ad/area/getContent', {
                         areaCode: '1467084938622'
                     }, function(adData) {
                         if (adData.success && adData.obj) {

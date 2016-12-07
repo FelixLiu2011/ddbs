@@ -4,6 +4,7 @@ import com.ddas.common.result.Result;
 import com.ddas.common.util.StringUtil;
 import com.ddas.sns.common.BaseController;
 import com.ddas.sns.ihome.service.IHomeService;
+import com.ddas.sns.image.service.ImageService;
 import com.ddas.sns.zone.service.ZoneService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,6 +32,9 @@ public class IHomeController extends BaseController{
 
     @Resource
     private ZoneService zoneService;
+
+    @Resource
+    private ImageService imageService;
 
     /**
      * 获取`偶遇`页面中的用户数据
@@ -106,6 +110,54 @@ public class IHomeController extends BaseController{
             return result;
         }else{
             success = zoneService.saveImageInfoAndZoneInfo(img, getLoginUser(request));
+        }
+        result.setSuccess(success);
+
+        return result;
+    }
+
+    /**
+     * 在我的空间获取照片
+     * @param pageNum 页码,默认pagesize是6
+     * @return
+     */
+    @RequestMapping("/photo/list")
+    @ResponseBody
+    public Result photoList(int pageNum, HttpServletRequest request){
+        Result imageData = imageService.getPhotoPageList(pageNum, 6, getLoginUser(request));
+
+        return imageData;
+    }
+
+    /**
+     * 在我的空间获取照片
+     * @param request
+     * @return
+     */
+    @RequestMapping("/photo/walledList")
+    @ResponseBody
+    public Result photoList(HttpServletRequest request){
+        Result imageData = imageService.getPhotoPageList(1, 1000, getLoginUser(request));
+
+        return imageData;
+    }
+
+    /**
+     * 在我的空间批量删除图片
+     * @param request
+     * @return
+     */
+    @RequestMapping("/photo/batchDel")
+    @ResponseBody
+    public Result photoBatchDel(@RequestParam(value = "zoimId[]") List<String> zoimId, HttpServletRequest request){
+        Result result = new Result();
+        boolean success;
+
+        if(zoimId == null || zoimId.size() == 0) {
+            result.setSuccess(false);
+            return result;
+        }else{
+            success = imageService.deleteImageInfoBatch(zoimId);
         }
         result.setSuccess(success);
 

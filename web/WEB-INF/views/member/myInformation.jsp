@@ -1964,7 +1964,7 @@
     function walledList(){
         var gagaid = $("#gagaid").val();
         var gagalevel = $("#gagalevel").val();
-        var num=4
+        var num=6
         if(gagalevel==2){
             num=6;
         }
@@ -1973,7 +1973,7 @@
         }
         $.ajax({
             type : "post",
-            url : "http://www.gagahi.com:80/Ihome/Photo/walledList",
+            url : "http://localhost:8080/ihome/photo/walledList",
             dataType : "json",
             /* data : {
              "gagaId" : gagaid
@@ -1994,7 +1994,7 @@
                         var zoneId = item.zoimZoneid;
                         //http://www.gagahi.com:80/Zone/detail/"+zoneId+"
                         html+="<dl><dt><a href='javascript:void(0)'>"
-                                +"<img src='http://images.gagahi.com//"+zoimImgurl+"?imageView2/5/w/123/h/120' imgId='"+ item.zoimId +"' zid='"+ zoneId +"' zoimSort='"+ item.zoimSort +"' zimg-count='" + item.zoneimgcount + "' onclick='openImgDialog1(this)'></a></dt><div class='photowall-control'><div class='arrow'></div><div class='dels' title='" + $.t('zone.delimg') + "'><i></i>" + $.string.encodeFormatMore($.t('zone.delimg'), 16) + "</div><div class='cancel-wall' title='" + $.t('zone.cancelwall') + "'><i></i>" + $.string.encodeFormatMore($.t('zone.cancelwall'), 16) + "</div></div></dl>";
+                                +"<img src='http://ohm067iuu.bkt.clouddn.com//"+zoimImgurl+"?imageView2/5/w/123/h/120' imgId='"+ item.zoimId +"' zid='"+ zoneId +"' zoimSort='"+ item.zoimSort +"' zimg-count='" + item.zoneimgcount + "' onclick='openImgDialog1(this)'></a></dt><div class='photowall-control'><div class='arrow'></div><div class='dels' title='" + $.t('zone.delimg') + "'><i></i>" + $.string.encodeFormatMore($.t('zone.delimg'), 16) + "</div><div class='cancel-wall' title='" + $.t('zone.cancelwall') + "'><i></i>" + $.string.encodeFormatMore($.t('zone.cancelwall'), 16) + "</div></div></dl>";
                     }
                 });
 
@@ -2018,7 +2018,7 @@
                     btn:[$.t("global.ok"), $.t("global.cancel")],
                     title:$.t("Letter.prompt")
                 }, function(index){
-                    $._post('http://www.gagahi.com:80/Ihome/Photo/batchDel', {
+                    $._post('http://localhost:8080/ihome/photo/batchDel', {
                         zoimId: [imgId]
                     }, function(data) {
                         layer.close(index);
@@ -2080,7 +2080,7 @@
                         btn:[$.t("global.ok"), $.t("global.cancel")],
                         title:$.t("Letter.prompt")},
                     function(index){
-                        $.post("http://www.gagahi.com:80/Ihome/Photo/batchDel",{zoimId:arr},function(result){
+                        $.post("http://localhost:8080/ihome/photo/batchDel",{zoimId:arr},function(result){
                             //$("span").html(result);
                             if(result.success){
                                 /* for(var i=0;i<obj.length;i++){
@@ -2188,9 +2188,10 @@
                 backFn:function(p){
                     $.ajax({
                         type : "post",
-                        url : "http://www.gagahi.com:80/Ihome/Photo/list",
+                        url : "http://localhost:8080/ihome/photo/list",
                         contentType : "application/x-www-form-urlencoded",
                         data: {"pageNum":p||1},
+                        dataType:"json",
                         success: function(data){
                             if(data.success){
                                 var obj = $(".photo-all").find(".photo-bottom");
@@ -2199,11 +2200,11 @@
                                 var str = "";
                                 $.each(data.obj,function(index,item){
 
-                                    str+="<li><img src='http://images.gagahi.com/"+item.zoim_imgurl+"' zoimid=" + item.zoim_id + " zid="+item.zoim_zoneid+" zoimSort="+item.zoim_sort+" onclick='openImgDialog(this)'>"
+                                    str+="<li><img src='//ohm067iuu.bkt.clouddn.com/"+item.zoimImgurl+"' zoimid=" + item.zoimId + " zid="+item.zoimZoneid+" zoimSort="+item.zoimSort+" onclick='openImgDialog(this)'>"
                                     str+="<div class='photo-delete'>"
-                                    str+="<span class='fl'>"+formatDate(new Date(item.zoim_time),"yyyy-MM-dd")+"</span><span class='fr do-delete inlineblock' onclick='delpho("+item.zoim_id+","+item.zone_imgcount+",this)'></span>"
+                                    str+="<span class='fl'>"+formatDate(new Date(item.zoimTime),"yyyy-MM-dd")+"</span><span class='fr do-delete inlineblock' onclick='delpho("+item.zoimId+","+item.zone_imgcount+",this)'></span>"
                                     str+="</div>"
-                                    str+="<div class='photo-Administration' zoimid="+item.zoim_id+" imcount="+item.zone_imgcount+"></div>"
+                                    str+="<div class='photo-Administration' zoimid="+item.zoimId+" imcount="+item.zone_imgcount+"></div>"
                                     str+="</li>";
                                 });
                                 /* data.obj.forEach(function(item){
@@ -2698,7 +2699,7 @@
                     btn:[$.t("global.ok"), $.t("global.cancel")],
                     title:$.t("Letter.prompt")},
                 function(index){
-                    $.post("http://www.gagahi.com:80/Ihome/Photo/batchDel",{zoimId:[id]},function(result){
+                    $.post("http://localhost:8080/ihome/photo/batchDel",{zoimId:[id]},function(result){
                         //$("span").html(result);
                         if(result.success){
                             //$(obj).parent().parent().remove();
