@@ -30,6 +30,7 @@ function searchData(pageNo) {
             "searchType":"2"
         },
         function(data,textStatus){
+            staticPath = "http://ohm067iuu.bkt.clouddn.com/";
             $("#datacover").partialLoader("close");
             var obj = eval(data);
             //parseselfbean(obj.attributes.selfbean);
@@ -129,6 +130,7 @@ function parseselfbean(selfbean){
 
 //填充列表数据
 function parseList(list){
+    staticCtx = "http://ohm067iuu.bkt.clouddn.com/";
     //alert(list.length);
     if(null==list) return;
     if(list.length==0){

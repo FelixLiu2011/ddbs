@@ -44,7 +44,7 @@
     <script type="text/javascript">
         var ctx = 'http://www.gagahi.com:80';
         var staticPath = "http://static.gagahi.com";
-        var qiniuImgUrl = 'http://images.gagahi.com/';
+        var qiniuImgUrl = 'http://ohm067iuu.bkt.clouddn.com/';
         var myGagaId='';
         Zoneyet.Global.language = 'zh-cn';
         //ç§»å¨è®¾å¤å¤æ­æ¯æ
@@ -243,7 +243,7 @@
     var staticCtx="http://static.gagahi.com/IM/";
     var globalStaticCtx="http://static.gagahi.com/";
     var ctx="http://www.gagahi.com:80";
-    var qiniuImgURL="http://images.gagahi.com/";
+    var qiniuImgUrl = 'http://ohm067iuu.bkt.clouddn.com/';
     var imUrl="http://webim.gagahi.com/";
     var token="e712cc82a9c04bb6a8305ebe4e992326";
     var sendGender = "1";//1男2女
@@ -875,7 +875,7 @@
         <div class="lft fl">
             <div class="lfttop">
                 <div class="yhtx fl">
-                    <a href="<%=path%>/member/myInformation"><img src="http://images.gagahi.com//images/default/male.png"></a>
+                    <a href="<%=path%>/member/myInformation"><img id="iConBigImg" src="http://images.gagahi.com//images/default/male.png"></a>
                 </div>
                 <div class="yhxx fr">
                     <p class="ari">
@@ -1018,6 +1018,7 @@
                                 <input type="hidden" id="conLable" value="${userInfo.membLable}">
                                 <input type="hidden" id="conSex" value="${userInfo.membSex}">
                                 <input type="hidden" id="conVipLevel" value="${userInfo.mefiLevel}">
+                                <input type="hidden" id="conBigImg" value="${userInfo.membBigimg}">
 
                                 <input type="hidden" id="conIsopenperson" value="${userInfo.mecoIsopenperson}">
                                 <input type="hidden" id="conIsonline" value="${userInfo.mecoIsonline}">
@@ -1277,7 +1278,7 @@
 
 
                                 <li>
-                                    <div class="set-content-title"><div class="yhtx tr inlineblock"><img src="http://images.gagahi.com//images/default/male.png"></div></div>
+                                    <div class="set-content-title"><div class="yhtx tr inlineblock"><img id="membBigImg" src="http://images.gagahi.com//images/default/male.png"></div></div>
                                 </li>
                                 <li><span class="set-content-title">昵称：</span><span class="set-content-con">${userInfo.membNickname}</span></li>
                                 <li><span class="set-content-title">GaGa 号：</span><span class="set-content-con">30039931</span></li>
@@ -2423,7 +2424,7 @@
     function saveimgdata(){
         var cjimgurl = $("#cjimgurl").val();
         //alert(cjimgurl);
-        $.post("http://www.gagahi.com:80/Member/membphotoupload",{
+        $.post("http://localhost:8080/member/membphotoupload",{
             bigimg:cjimgurl
         },function(result){
             if(result.success){
@@ -2431,7 +2432,7 @@
                     layer.msg('提交成功，请等待审核');
                 }
 
-                $("#headimgshow").attr("src","http://images.gagahi.com//"+cjimgurl)
+                $("#headimgshow").attr("src","http://ohm067iuu.bkt.clouddn.com//"+cjimgurl)
                 $(".img-shear,.creditcon").css("display", "none")
                 if(result.obj==1){
                     layer.msg('提交成功，请等待审核<br/>保存成功',{time: 500},function(){
@@ -2454,7 +2455,7 @@
                     });
                 }
             }
-        });
+        }, "json");
     }
 
     //-----------------------------------上传调用结束----------------------------------------

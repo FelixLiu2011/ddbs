@@ -143,6 +143,26 @@ public class MemberService {
         return userinfo;
     }
 
+
+
+    /**
+     *更新用户头像
+     *@author lc
+     *@date 2016/11/26 0026 16:04
+     *@version 1.0
+     *@since 1.6
+     */
+    public UserInfo updateUserHeadPhoto(String img, UserInfo userInfo){
+        if(StringUtil.isEmpty(img) || userInfo == null) {
+            return null;
+        }
+        UserInfo userinfo = userInfoService.fetchUserInfoByUserId(userInfo.getMembGagaid());
+        userinfo.setMembBigimg(img);
+
+        userInfoService.saveUserInfo(userinfo);
+        return userinfo;
+    }
+
     /**
      *更新用户Account信息
      *@author lc

@@ -64,7 +64,14 @@ $(function(){
 });
 
 function initMemberInfo() {
+
     //初始化个人信息开始
+    var bigImg = $("#conBigImg").val();
+    if(bigImg != ""){
+        $("#headimgshow").attr('src',qiniuImgUrl + bigImg);
+        $("#membBigImg").attr('src',qiniuImgUrl + bigImg);
+        $("#iConBigImg").attr('src',qiniuImgUrl + bigImg);
+    }
     var job = $("#conJob").val();
     if(job != ""){
         $("#iConJob").html(memberInfo.job[job]);

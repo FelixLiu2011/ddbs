@@ -192,5 +192,31 @@ public class MemberController extends BaseController {
         return result;
     }
 
+    /**
+     * 保存头像
+     * @author liuchen
+     * @date 2016/7/9 14:05
+     * @version 1.0
+     * @since 1.6
+     */
+    @RequestMapping("/membphotoupload")
+    @ResponseBody
+    public Result membPhotoUpload(String bigimg, HttpServletRequest request) {
+        Result result = new Result();
+        result.setSuccess(false);
+        if(bigimg == null) {
+            return result;
+        }
+
+        bigimg = bigimg.substring(0, bigimg.indexOf("?"));//去掉后面的裁剪大小的参数，存下原图片
+        UserInfo userInfo = memberService.updateUserHeadPhoto(bigimg, getLoginUser(request));
+        result.setSuccess(true);
+        result.setObj("1");//1代表保存成功
+
+        setLoginUserToSession(userInfo, request);
+
+        return result;
+
+    }
 
 }
