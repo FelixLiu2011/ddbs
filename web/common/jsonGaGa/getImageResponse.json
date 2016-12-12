@@ -1,0 +1,98 @@
+{
+  "success": true,
+  "msg": "",
+  "obj": {
+    "zone": {
+      "zoneId": 5710563,
+      "zoneGagaid": 2939572,
+      "zoneContent": null,
+      "zoneLikecount": 1,
+      "zoneCommentcount": 1,
+      "zoneDatetime": 1480253431000,
+      "zoneIstrueimg": 1,
+      "zoneImgcount": 1,
+      "zoneState": 1
+    },
+    "commList": [
+      {
+        "zoco_id": 6008768,
+        "memb_sex": 2,
+        "zoco_gagaid": 2945064,
+        "memb_bigimg": "images/default/female.png",
+        "zoco_content": "not bad",
+        "zoco_zoneid": 5710563,
+        "zoco_state": 1,
+        "zoco_time": 1480382135000,
+        "memb_nickname": "Leila"
+      }
+    ],
+    "publishMem": {
+      "membGagano": "30044399",
+      "membGagaid": 2939572,
+      "membNickname": "felix",
+      "membPassword": "86e362148bb62c26155393aad97c7b99",
+      "membIsauth": 3,
+      "membEmail": "felixliu2011@outlook.com",
+      "membDate": 725414400000,
+      "membSex": 1,
+      "membJob": "5",
+      "membCountry": "MO",
+      "membLanguage": "zh-cn",
+      "membHeight": 179,
+      "membWeight": 60,
+      "membSignature": "u know what I want",
+      "membCountrycode": "853",
+      "membMobile": null,
+      "membDegree": 100,
+      "membBigimg": "A-2c496d727fb04408a100b3e9039531a2?imageMogr2/thumbnail/410x300/thumbnail/400x400/crop/!130x130a45a40",
+      "membRegistertime": 1478091381000,
+      "membIp": "219.82.203.53",
+      "membSource": "1",
+      "membChannel": null,
+      "membIsenable": 1,
+      "membRegistercountry": null,
+      "membImgischeck": 1,
+      "membShowtop": null,
+      "membShowtoptime": null,
+      "memberfinance": null,
+      "memberlog": null,
+      "tBmemberfinance": null,
+      "sysUser": null,
+      "recharge": null,
+      "consum": null,
+      "membNewimg": "A-2c496d727fb04408a100b3e9039531a2?imageMogr2/thumbnail/410x300/thumbnail/400x400/crop/!130x130a45a40",
+      "membImgtime": 1481211965000,
+      "memberconfig": null,
+      "online": 0,
+      "country": null,
+      "showyear": "1992",
+      "showmonth": "12",
+      "showday": "27",
+      "showlanguage": null,
+      "showweight": 60,
+      "showheight": 179,
+      "isagainlogin": 0,
+      "showsex": "男",
+      "dictCountry": null,
+      "age": 24
+    },
+    "isLove": 0,
+    "imgList": [
+      {
+        "zoimId": 3078768,
+        "zoimGagaid": 2939572,
+        "zoimZoneid": 5710563,
+        "zoimImgurl": "P-28d2060a25b94fd4852073c6a8107d8b",
+        "zoimSort": 0,
+        "zoimState": 1,
+        "zoimIsrecommend": 1,
+        "zoimLikecount": 0,
+        "zoimTime": 1480253431000,
+        "zoneimgcount": null
+      }
+    ]
+  },
+  "attributes": {
+    "imgUrlPre": "http://images.gagahi.com/"
+  }
+}

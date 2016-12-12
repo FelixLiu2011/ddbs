@@ -91,7 +91,7 @@ public class ZoneService {
             imageInfo.setZoimGagaid(userInfo.getMembGagaid());
             imageInfo.setZoimZoneid(zoneInfo.getZoneId());
             imageInfo.setZoimSort(count);
-
+            imageInfo.setZoneImgcount(imgArray.length);
             count++;
             imageService.saveImageInfo(imageInfo);
         }

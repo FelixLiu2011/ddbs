@@ -366,14 +366,12 @@ Zoneyet.define("Zoneyet.nms.myInfor.imgupload",function(){
             	for(var i=0;i<imgs.length;i++){
             		arr[i] = imgs[i];
             	}
-                alert(arr.length);
             	$.post("http://localhost:8080/ihome/photo/upload",{"img" : arr},function(result){
 
-                    alert(result.success);
             		 //刷新相册内容
 	              	$.ajax({
 	         			  type : "post",
-	           		      url:ctx+"/Member/imgcount",
+	           		      url:"http://localhost:8080/member/imgcount",
 	                      success: function(data){
 	    				  if(data.success){
 	    					  $("#imgcount").text(data.obj.imgcount);

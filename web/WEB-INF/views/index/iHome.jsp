@@ -53,6 +53,7 @@
     <script type="text/javascript" src="<%=path%>/common/js/popPrivateLetter.js"></script>
     <link type="text/css" href="<%=path%>/common/IM/css/qqFace.css" rel="stylesheet">
     <script type="text/javascript" src="<%=path%>/common/IM/js/jquery.qqFace.js"></script>
+    <script  src="<%=path%>/common/js/util/dateUtil.js" type="text/javascript"></script>
     <script type="text/javascript" src="<%=path%>/business/ihome/ihome.js"></script>
 </head>
 

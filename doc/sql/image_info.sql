@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50633
 File Encoding         : 65001
 
-Date: 2016-12-06 00:11:14
+Date: 2016-12-12 21:27:10
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -29,11 +29,12 @@ CREATE TABLE `image_info` (
   `zoim_isrecommend` varchar(8) DEFAULT NULL COMMENT '1代表xxxx',
   `zoim_likecount` int(16) DEFAULT NULL COMMENT '喜欢这张图片的数量',
   `zoim_time` varchar(32) DEFAULT NULL COMMENT '图片上传时间',
+  `zone_imgcount` int(32) DEFAULT NULL COMMENT '和这张图片一起的组的图片数量',
   PRIMARY KEY (`zoim_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of image_info
 -- ----------------------------
-INSERT INTO `image_info` VALUES ('43434ac8d41eca14', 'ff7da43749eb8b48', 'feb5ca4bdbae85a2', 'P_43b6ce646fd8e8e8', null, null, null, null, '2016-12-06 00:05:02');
-INSERT INTO `image_info` VALUES ('6041b99aca74bd8a', 'ff7da43749eb8b48', 'c1330c6a6b4b109f', 'P_2b641f4607bcca23', null, null, null, null, '2016-12-06 00:06:04');
+INSERT INTO `image_info` VALUES ('a00435a82f4354a9', 'ff7da43749eb8b48', '9178abec9c94525b', 'P_1745bd2f85b4a7da', '0', '1', '1', null, '2016-12-12 20:56:50', '1');
+INSERT INTO `image_info` VALUES ('bab3fa438da3c6eb', 'ff7da43749eb8b48', '48e0ae40af9d2432', 'P_f309471fbdd02e65', '0', null, null, null, '2016-12-06 22:43:06', '1');

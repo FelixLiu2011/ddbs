@@ -218,7 +218,13 @@ function parseList(list){
                 htmlstr=htmlstr+ "<span><img src='"+path+"/common/images/vip-hg.jpg'></span>";
             }
             var countryInfo = null!=list[i].membCountry?getMemberCountryInfo("en-us",list[i].membCountry):"";
-            var ageStr= 0==list[i].membAge?"":list[i].membAge;
+            if(list[i].membBirth != null) {
+                var ageStr= 0==list[i].membBirth?"":list[i].membBirth;
+                ageStr = dateUtil.getAgeByBirthDay(ageStr);
+            }else{
+                ageStr = "";
+            }
+
             if(ageStr != "" && countryInfo != ""){
                 ageStr += "," + countryInfo;
             }else if(ageStr == "" && countryInfo != ""){

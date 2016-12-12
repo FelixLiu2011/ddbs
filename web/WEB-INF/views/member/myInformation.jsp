@@ -2090,7 +2090,7 @@
                                 //刷新相册内容
                                 $.ajax({
                                     type : "post",
-                                    url:"http://www.gagahi.com:80/Member/imgcount",
+                                    url:"http://localhost:8080/member/imgcount",
                                     success: function(data){
                                         if(data.success){
                                             $("#imgcount").text(data.obj.imgcount);
@@ -2198,13 +2198,13 @@
                                 $(obj).find("li").remove();//清空ul
                                 $("#imgclear").remove();
                                 var str = "";
-                                $.each(data.obj,function(index,item){
 
+                                $.each(data.obj,function(index,item){
                                     str+="<li><img src='//ohm067iuu.bkt.clouddn.com/"+item.zoimImgurl+"' zoimid=" + item.zoimId + " zid="+item.zoimZoneid+" zoimSort="+item.zoimSort+" onclick='openImgDialog(this)'>"
                                     str+="<div class='photo-delete'>"
-                                    str+="<span class='fl'>"+formatDate(new Date(item.zoimTime),"yyyy-MM-dd")+"</span><span class='fr do-delete inlineblock' onclick='delpho("+item.zoimId+","+item.zone_imgcount+",this)'></span>"
+                                    str+="<span class='fl'>"+formatDate(new Date(item.zoimTime),"yyyy-MM-dd")+"</span><span class='fr do-delete inlineblock' onclick='delpho(\""+item.zoimId+"\","+item.zoneImgcount+",this)'></span>"
                                     str+="</div>"
-                                    str+="<div class='photo-Administration' zoimid="+item.zoimId+" imcount="+item.zone_imgcount+"></div>"
+                                    str+="<div class='photo-Administration' zoimid="+item.zoimId+" imcount="+item.zoneImgcount+"></div>"
                                     str+="</li>";
                                 });
                                 /* data.obj.forEach(function(item){
@@ -2706,7 +2706,7 @@
                             //刷新相册内容
                             $.ajax({
                                 type : "post",
-                                url:"http://www.gagahi.com:80/Member/imgcount",
+                                url:"http://localhost:8080/member/imgcount",
                                 success: function(data){
                                     if(data.success){
                                         $("#imgcount").text(data.obj.imgcount);
@@ -3260,7 +3260,7 @@
                 //刷新相册内容
                 $.ajax({
                     type : "post",
-                    url:"http://www.gagahi.com:80/Member/imgcount",
+                    url:"http://localhost:8080/member/imgcount",
                     success: function(data){
                         if(data.success){
                             $("#imgcount").text(data.obj.imgcount);

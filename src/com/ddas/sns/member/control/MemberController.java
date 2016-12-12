@@ -20,6 +20,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * ClassName:	MySpaceController
@@ -217,6 +219,21 @@ public class MemberController extends BaseController {
 
         return result;
 
+    }
+
+    /**
+     * 获取用户的照片数量
+     * @author liuchen
+     * @date 2016/7/9 14:05
+     * @version 1.0
+     * @since 1.6
+     */
+    @RequestMapping("/imgcount")
+    @ResponseBody
+    public Result membImgCount(HttpServletRequest request) {
+        Result result = memberService.getImgCount(getLoginUser(request).getMembGagaid());
+
+        return result;
     }
 
 }

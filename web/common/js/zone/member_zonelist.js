@@ -190,7 +190,7 @@ function loadMyZone(melaid, isOhter) {
                 //刷新相册内容
                 $.ajax({
                     type: "post",
-                    url: ctx + "/Member/imgcount",
+                    url: "http://localhost:8080/member/imgcount",
                     success: function(data) {
                         if (data.success) {
                             $("#imgcount").text(data.obj.imgcount);

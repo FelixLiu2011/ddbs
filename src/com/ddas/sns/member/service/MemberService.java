@@ -3,6 +3,8 @@ package com.ddas.sns.member.service;
 import com.ddas.common.result.Result;
 import com.ddas.common.util.StringUtil;
 import com.ddas.sns.constants.Constants;
+import com.ddas.sns.image.domain.ImageInfoCriteria;
+import com.ddas.sns.image.mapper.ImageInfoMapper;
 import com.ddas.sns.userinfo.domain.UserInfo;
 import com.ddas.sns.userinfo.dto.UserInfoDto;
 import com.ddas.sns.userinfo.mapper.UserInfoMapper;
@@ -28,6 +30,8 @@ public class MemberService {
     private final static String DEFALUT_LANGUAGE = "en-us";
     @Resource
     private UserInfoService userInfoService;
+    @Resource
+    private ImageInfoMapper imageInfoMapper;
 
     /**
      *根据用户的id来获取相应用户的language,默认值 为en-us
@@ -186,6 +190,31 @@ public class MemberService {
 
         userInfoService.saveUserInfo(userinfo);
         return userinfo;
+    }
+
+    /**
+     *获取用户图片数量
+     *@author lc
+     *@date 2016/11/26 0026 16:04
+     *@version 1.0
+     *@since 1.6
+     */
+    public Result getImgCount(String membId){
+        Result result = new Result();
+
+        ImageInfoCriteria example = new ImageInfoCriteria();
+        ImageInfoCriteria.Criteria criteria = example.createCriteria();
+        criteria.andZoimGagaidEqualTo(membId);
+        int count = imageInfoMapper.countByExample(example);
+        result.setSuccess(true);
+        Map<String, String> returnMap = new HashMap<String, String>();
+        returnMap.put("imgcount", String.valueOf(count));
+
+        returnMap.put("pageNum", String.valueOf(count/9 + 1));
+        result.setObj(returnMap);
+        result.setMsg(Constants.SUCCESS);
+
+        return result;
     }
 
 }
