@@ -8,9 +8,12 @@
  */
 package com.ddas.sns.zone.service;
 
+import com.ddas.common.result.Result;
+import com.ddas.common.result.ResultA;
 import com.ddas.common.util.StringUtil;
 import com.ddas.common.util.date.DateUtil;
 import com.ddas.common.util.uuid.UUIDUtil;
+import com.ddas.sns.constants.Constants;
 import com.ddas.sns.image.domain.ImageInfo;
 import com.ddas.sns.image.service.ImageService;
 import com.ddas.sns.userinfo.domain.UserInfo;
@@ -24,7 +27,9 @@ import org.springframework.stereotype.Service;
 import sun.plugin.javascript.navig.ImageArray;
 
 import javax.annotation.Resource;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * ClassName:	UserInfoService
@@ -99,6 +104,33 @@ public class ZoneService {
         return true;
     }
 
+    /**
+     * 根据zoneId查询到zone和image信息，还有相关的评论和like
+     * @author liuchen
+     * @date 2016/7/9 14:05
+     * @version 1.0
+     * @since 1.6
+     */
+    public ResultA getImageAndZoneInfoByZoneId(String zoneId, UserInfo userInfo) {
+        ZoneInfo zoneInfo = zoneInfoMapper.selectByPrimaryKey(zoneId);
+        List<ImageInfo> list = imageService.getRecommendImageByZone(zoneInfo);
+        ResultA result = new ResultA();
+        result.setSuccess(true);
+        result.setMsg(Constants.SUCCESS);
 
+        Map<String, Object> resultMap = new HashMap<String, Object>();
+        resultMap.put("zone", zoneInfo);
+        resultMap.put("publishMem", userInfo);
+        resultMap.put("isLove", 0);
+        resultMap.put("imgList", list);
+
+        Map<String, Object> attributesMap = new HashMap<String, Object>();
+        attributesMap.put("imgUrlPre", "http://ohm067iuu.bkt.clouddn.com/");
+
+        result.setObj(resultMap);
+        result.setAttributes(attributesMap);
+
+        return result;
+    }
 
 }

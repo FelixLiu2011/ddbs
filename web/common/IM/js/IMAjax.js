@@ -2,218 +2,218 @@ $.IM = { /*$.fn.returnTime(time,full)*/
     languageListStr: '<ul class="lanUl"><li langs-lang="en">English</li><li langs-lang="zh">简体中文</li> <li langs-lang="cht">繁體中文</li><li langs-lang="kor">한국어</li> <li langs-lang="ru">Pусский</li><li langs-lang="de">Deutsch</li><li langs-lang="spa">Español</li><li langs-lang="jp">日本語</li></ul>',
     qqOld:{
         emCn:{
-        '[微笑]':'0',
-        '[撇嘴]':'1',
-        '[色]':'2',
-        '[发呆]':'3',
-        '[得意]':'4',
-        '[流泪]':'5',
-        '[害羞]':'6',
-        '[闭嘴]':'7',
-        '[睡]':'8',
-        '[大哭]':'9',
-        '[尴尬]':'10',
-        '[发怒]':'11',
-        '[调皮]':'12',
-        '[龇牙]':'13',
-        '[惊讶]':'14',
-        '[难过]':'15',
-        '[酷]':'16',
-        '[冷汗]':'17',
-        '[抓狂]':'18',
-        '[吐]':'19',
-        '[偷笑]':'20',
-        '[可爱]':'21',
-        '[白眼]':'22',
-        '[傲慢]':'23',
-        '[饥饿]':'24',
-        '[困]':'25',
-        '[惊恐]':'26',
-        '[流汗]':'27',
-        '[憨笑]':'28',
-        '[大兵]':'29',
-        '[奋斗]':'30',
-        '[咒骂]':'31',
-        '[疑问]':'32',
-        '[嘘]':'33',
-        '[晕]':'34',
-        '[折磨]':'35',
-        '[衰]':'36',
-        '[骷髅]':'37',
-        '[敲打]':'38',
-        '[再见]':'39',
-        '[擦汗]':'40',
-        '[抠鼻]':'41',
-        '[鼓掌]':'42',
-        '[糗大了]':'43',
-        '[坏笑]':'44',
-        '[左哼哼]':'45',
-        '[右哼哼]':'46',
-        '[哈欠]':'47',
-        '[鄙视]':'48',
-        '[委屈]':'49',
-        '[快哭了]':'50',
-        '[阴险]':'51',
-        '[亲亲]':'52',
-        '[吓]':'53',
-        '[可怜]':'54',
-        '[菜刀]':'55',
-        '[西瓜]':'56',
-        '[啤酒]':'57',
-        '[篮球]':'58',
-        '[乒乓]':'59',
-        '[咖啡]':'60',
-        '[饭]':'61',
-        '[猪头]':'62',
-        '[玫瑰]':'63',
-        '[凋谢]':'64',
-        '[示爱]':'65',
-        '[爱心]':'66',
-        '[心碎]':'67',
-        '[蛋糕]':'68',
-        '[闪电]':'69',
-        '[炸弹]':'70',
-        '[刀]':'71',
-        '[足球]':'72',
-        '[瓢虫]':'73',
-        '[屎]':'74',
-        '[月亮]':'75',
-        '[太阳]':'76',
-        '[礼物]':'77',
-        '[抱抱]':'78',
-        '[强]':'79',
-        '[弱]':'80',
-        '[握手]':'81',
-        '[胜利]':'82',
-        '[抱拳]':'83',
-        '[勾引]':'84',
-        '[拳头]':'85',
-        '[差劲]':'86',
-        '[爱你]':'87',
-        '[NO]':'88',
-        '[OK]':'89',
-        '[爱情]':'90',
-        '[飞吻]':'91',
-        '[跳跳]':'92',
-        '[发抖]':'93',
-        '[怄火]':'94',
-        '[转圈]':'95',
-        '[磕头]':'96',
-        '[回头]':'97',
-        '[跳绳]':'98',
-        '[挥手]':'99',
-        '[激动]':'100',
-        '[街舞]':'101',
-        '[献吻]':'102',
-        '[左太极]':'103',
-        '[右太极]':'104'
+            '[微笑]':'0',
+            '[撇嘴]':'1',
+            '[色]':'2',
+            '[发呆]':'3',
+            '[得意]':'4',
+            '[流泪]':'5',
+            '[害羞]':'6',
+            '[闭嘴]':'7',
+            '[睡]':'8',
+            '[大哭]':'9',
+            '[尴尬]':'10',
+            '[发怒]':'11',
+            '[调皮]':'12',
+            '[龇牙]':'13',
+            '[惊讶]':'14',
+            '[难过]':'15',
+            '[酷]':'16',
+            '[冷汗]':'17',
+            '[抓狂]':'18',
+            '[吐]':'19',
+            '[偷笑]':'20',
+            '[可爱]':'21',
+            '[白眼]':'22',
+            '[傲慢]':'23',
+            '[饥饿]':'24',
+            '[困]':'25',
+            '[惊恐]':'26',
+            '[流汗]':'27',
+            '[憨笑]':'28',
+            '[大兵]':'29',
+            '[奋斗]':'30',
+            '[咒骂]':'31',
+            '[疑问]':'32',
+            '[嘘]':'33',
+            '[晕]':'34',
+            '[折磨]':'35',
+            '[衰]':'36',
+            '[骷髅]':'37',
+            '[敲打]':'38',
+            '[再见]':'39',
+            '[擦汗]':'40',
+            '[抠鼻]':'41',
+            '[鼓掌]':'42',
+            '[糗大了]':'43',
+            '[坏笑]':'44',
+            '[左哼哼]':'45',
+            '[右哼哼]':'46',
+            '[哈欠]':'47',
+            '[鄙视]':'48',
+            '[委屈]':'49',
+            '[快哭了]':'50',
+            '[阴险]':'51',
+            '[亲亲]':'52',
+            '[吓]':'53',
+            '[可怜]':'54',
+            '[菜刀]':'55',
+            '[西瓜]':'56',
+            '[啤酒]':'57',
+            '[篮球]':'58',
+            '[乒乓]':'59',
+            '[咖啡]':'60',
+            '[饭]':'61',
+            '[猪头]':'62',
+            '[玫瑰]':'63',
+            '[凋谢]':'64',
+            '[示爱]':'65',
+            '[爱心]':'66',
+            '[心碎]':'67',
+            '[蛋糕]':'68',
+            '[闪电]':'69',
+            '[炸弹]':'70',
+            '[刀]':'71',
+            '[足球]':'72',
+            '[瓢虫]':'73',
+            '[屎]':'74',
+            '[月亮]':'75',
+            '[太阳]':'76',
+            '[礼物]':'77',
+            '[抱抱]':'78',
+            '[强]':'79',
+            '[弱]':'80',
+            '[握手]':'81',
+            '[胜利]':'82',
+            '[抱拳]':'83',
+            '[勾引]':'84',
+            '[拳头]':'85',
+            '[差劲]':'86',
+            '[爱你]':'87',
+            '[NO]':'88',
+            '[OK]':'89',
+            '[爱情]':'90',
+            '[飞吻]':'91',
+            '[跳跳]':'92',
+            '[发抖]':'93',
+            '[怄火]':'94',
+            '[转圈]':'95',
+            '[磕头]':'96',
+            '[回头]':'97',
+            '[跳绳]':'98',
+            '[挥手]':'99',
+            '[激动]':'100',
+            '[街舞]':'101',
+            '[献吻]':'102',
+            '[左太极]':'103',
+            '[右太极]':'104'
         },
         emEn:{
-        '[Smile]':'0',
-        '[Grimace]':'1',
-        '[Drooling]':'2',
-        '[Scowl]':'3',
-        '[Chill]':'4',
-        '[Sob]':'5',
-        '[Shy]':'6',
-        '[Silence]':'7',
-        '[Sleep]':'8',
-        '[Cry]':'9',
-        '[Embarrassed]':'10',
-        '[On fire]':'11',
-        '[Wink]':'12',
-        '[Grin]':'13',
-        '[Surprised]':'14',
-        '[Sad]':'15',
-        '[Cool]':'16',
-        '[Frightened]':'17',
-        '[Scream]':'18',
-        '[Puke]':'19',
-        '[Chuckle]':'20',
-        '[Lovely]':'21',
-        '[Sneer]':'22',
-        '[Arrogant]':'23',
-        '[Hungry]':'24',
-        '[Drowsy]':'25',
-        '[Panic]':'26',
-        '[Sweating]':'27',
-        '[Laugh]':'28',
-        '[Soldier]':'29',
-        '[strive]':'30',
-        '[Scold]':'31',
-        '[Confused]':'32',
-        '[Shhh]':'33',
-        '[Hypnotized]':'34',
-        '[Torment]':'35',
-        '[Frustrated]':'36',
-        '[Skull]':'37',
-        '[Hammer]':'38',
-        '[Wave/Bye]':'39',
-        '[Relived/Wipe]':'40',
-        '[Pick nose]':'41',
-        '[Applause]':'42',
-        '[Flushed]':'43',
-        '[Hellooo]':'44',
-        '[Snub1]':'45',
-        '[Snub2]':'46',
-        '[Yawn]':'47',
-        '[Booo]':'48',
-        '[Distressed]':'49',
-        '[Sniffle]':'50',
-        '[Sly]':'51',
-        '[Pucker]':'52',
-        '[Scared]':'53',
-        '[Pathetic]':'54',
-        '[Cleaver]':'55',
-        '[Water Melon]':'56',
-        '[Beer]':'57',
-        '[Basketball]':'58',
-        '[Ping Pong]':'59',
-        '[Coffee]':'60',
-        '[Rice]':'61',
-        '[Pig]':'62',
-        '[Rose]':'63',
-        '[Fade]':'64',
-        '[Kisses]':'65',
-        '[Heart]':'66',
-        '[Broken Heart]':'67',
-        '[Cake]':'68',
-        '[Lightning]':'69',
-        '[Bomb]':'70',
-        '[Dagger]':'71',
-        '[Football]':'72',
-        '[Ladybug]':'73',
-        '[Shit]':'74',
-        '[Moon]':'75',
-        '[Sun]':'76',
-        '[Gift]':'77',
-        '[Hug]':'78',
-        '[Strong]':'79',
-        '[Weak]':'80',
-        '[Shake]':'81',
-        '[Victory]':'82',
-        '[Admire]':'83',
-        '[Beckon]':'84',
-        '[Fist]':'85',
-        '[Pinky]':'86',
-        '[ILoveU]':'87',
-        '[NO]':'88',
-        '[OK]':'89',
-        '[Love]':'90',
-        '[Flying Kiss]':'91',
-        '[Jump]':'92',
-        '[Tremble]':'93',
-        '[Aaagh]':'94',
-        '[Circle]':'95',
-        '[Kotow]':'96',
-        '[Turn]':'97',
-        '[Skip]':'98',
-        '[Surrnder]':'99',
-        '[Hooray]':'100',
-        '[Hippop]':'101',
-        '[Smooches]':'102',
-        '[Fighting Girl]':'103',
-        '[Fighting Boy]':'104'
+            '[Smile]':'0',
+            '[Grimace]':'1',
+            '[Drooling]':'2',
+            '[Scowl]':'3',
+            '[Chill]':'4',
+            '[Sob]':'5',
+            '[Shy]':'6',
+            '[Silence]':'7',
+            '[Sleep]':'8',
+            '[Cry]':'9',
+            '[Embarrassed]':'10',
+            '[On fire]':'11',
+            '[Wink]':'12',
+            '[Grin]':'13',
+            '[Surprised]':'14',
+            '[Sad]':'15',
+            '[Cool]':'16',
+            '[Frightened]':'17',
+            '[Scream]':'18',
+            '[Puke]':'19',
+            '[Chuckle]':'20',
+            '[Lovely]':'21',
+            '[Sneer]':'22',
+            '[Arrogant]':'23',
+            '[Hungry]':'24',
+            '[Drowsy]':'25',
+            '[Panic]':'26',
+            '[Sweating]':'27',
+            '[Laugh]':'28',
+            '[Soldier]':'29',
+            '[strive]':'30',
+            '[Scold]':'31',
+            '[Confused]':'32',
+            '[Shhh]':'33',
+            '[Hypnotized]':'34',
+            '[Torment]':'35',
+            '[Frustrated]':'36',
+            '[Skull]':'37',
+            '[Hammer]':'38',
+            '[Wave/Bye]':'39',
+            '[Relived/Wipe]':'40',
+            '[Pick nose]':'41',
+            '[Applause]':'42',
+            '[Flushed]':'43',
+            '[Hellooo]':'44',
+            '[Snub1]':'45',
+            '[Snub2]':'46',
+            '[Yawn]':'47',
+            '[Booo]':'48',
+            '[Distressed]':'49',
+            '[Sniffle]':'50',
+            '[Sly]':'51',
+            '[Pucker]':'52',
+            '[Scared]':'53',
+            '[Pathetic]':'54',
+            '[Cleaver]':'55',
+            '[Water Melon]':'56',
+            '[Beer]':'57',
+            '[Basketball]':'58',
+            '[Ping Pong]':'59',
+            '[Coffee]':'60',
+            '[Rice]':'61',
+            '[Pig]':'62',
+            '[Rose]':'63',
+            '[Fade]':'64',
+            '[Kisses]':'65',
+            '[Heart]':'66',
+            '[Broken Heart]':'67',
+            '[Cake]':'68',
+            '[Lightning]':'69',
+            '[Bomb]':'70',
+            '[Dagger]':'71',
+            '[Football]':'72',
+            '[Ladybug]':'73',
+            '[Shit]':'74',
+            '[Moon]':'75',
+            '[Sun]':'76',
+            '[Gift]':'77',
+            '[Hug]':'78',
+            '[Strong]':'79',
+            '[Weak]':'80',
+            '[Shake]':'81',
+            '[Victory]':'82',
+            '[Admire]':'83',
+            '[Beckon]':'84',
+            '[Fist]':'85',
+            '[Pinky]':'86',
+            '[ILoveU]':'87',
+            '[NO]':'88',
+            '[OK]':'89',
+            '[Love]':'90',
+            '[Flying Kiss]':'91',
+            '[Jump]':'92',
+            '[Tremble]':'93',
+            '[Aaagh]':'94',
+            '[Circle]':'95',
+            '[Kotow]':'96',
+            '[Turn]':'97',
+            '[Skip]':'98',
+            '[Surrnder]':'99',
+            '[Hooray]':'100',
+            '[Hippop]':'101',
+            '[Smooches]':'102',
+            '[Fighting Girl]':'103',
+            '[Fighting Boy]':'104'
         }
     },
     winH: "",
@@ -259,13 +259,13 @@ $.IM = { /*$.fn.returnTime(time,full)*/
                     var friendHideLi = "";
                     for (var i = 0; i < reg.obj.length; i++) {
                         friendShowLi += '<li class="showContent" data-signID="people" data-gagaID="' + reg.obj[i].frieFriendgagaid + '" data-remarkname="' + reg.obj[i].frieNickname + '" data-nickName="' + reg.obj[i].member.membNickname + '" data-shield="' + reg.obj[i].frieIsshield + '" data-onLine="' + reg.obj[i].online + '" data-Language="' + reg.obj[i].member.membLanguage + '">' +
-                            '<div class="showHead"> <img class="headImg" src="' + qiniuImgURL + reg.obj[i].member.membBigimg + '">';
+                            '<div class="showHead"> <img class="headImg" src="' + $.IM.ConverImg(reg.obj[i].member.membBigimg) + '">';
                         if (i % 2 == 1) {
                             friendHideLi += '<li class="content singleNum" data-signID="people" data-gagaID="' + reg.obj[i].frieFriendgagaid + '" data-remarkname="' + reg.obj[i].frieNickname + '" data-nickName="' + reg.obj[i].member.membNickname + '" data-shield="' + reg.obj[i].frieIsshield + '" data-onLine="' + reg.obj[i].online + '" data-Language="' + reg.obj[i].member.membLanguage + '">';
                         } else {
                             friendHideLi += '<li class="content bothNum" data-signID="people" data-gagaID="' + reg.obj[i].frieFriendgagaid + '" data-remarkname="' + reg.obj[i].frieNickname + '" data-nickName="' + reg.obj[i].member.membNickname + '"  data-shield="' + reg.obj[i].frieIsshield + '" data-onLine="' + reg.obj[i].online + '" data-Language="' + reg.obj[i].member.membLanguage + '">';
                         }
-                        friendHideLi += '<div class="headDiv"><img class="headImg" src="' + qiniuImgURL + reg.obj[i].member.membBigimg + '">';
+                        friendHideLi += '<div class="headDiv"><img class="headImg" src="' + $.IM.ConverImg(reg.obj[i].member.membBigimg) + '">';
                         //console.log("是否在线:"+reg.obj[i].online);
                         if (reg.obj[i].frieIsshield == 1) {
                             that.shieldArr.push("" + reg.obj[i].frieFriendgagaid);
@@ -288,13 +288,13 @@ $.IM = { /*$.fn.returnTime(time,full)*/
                     $("#hiddenIM .hiddenContactsCon").append(friendHideLi);
                     $("#js-contactsScrollBar").mCustomScrollbar("update");
                     $("#js-hiddenScrollBar").mCustomScrollbar("update");
-      
-                     $("#friendGroup .friendContainer .showContent").each(function(i){
-                          if($(this).attr("data-online")=="1"){
-                                 $("#onLineGroup .FoldContainer").prepend($(this).clone());
-                           }
-                           
-                      });       
+
+                    $("#friendGroup .friendContainer .showContent").each(function(i){
+                        if($(this).attr("data-online")=="1"){
+                            $("#onLineGroup .FoldContainer").prepend($(this).clone());
+                        }
+
+                    });
                 } else {};
             },
             error: function() {
@@ -319,7 +319,7 @@ $.IM = { /*$.fn.returnTime(time,full)*/
                     for (var i = 0; i < reg.obj.length; i++) {
                         if (reg.obj[i].type == "0") {
                             friendShowLi += '<li class="showContent" data-signID="people" data-gagaID="' + reg.obj[i].frid + '" data-remarkname="' + reg.obj[i].membNickname + '" data-nickName="' + reg.obj[i].ymembNickname + '" data-shield="' + reg.obj[i].pb + '" data-onLine="' + reg.obj[i].online + '" data-Language="' + reg.obj[i].membLanguage + '">' +
-                                '<div class="showHead"> <img class="headImg" src="' + qiniuImgURL + reg.obj[i].membBigimg + '">';
+                                '<div class="showHead"> <img class="headImg" src="' + $.IM.ConverImg(reg.obj[i].membBigimg) + '">';
                         } else {
                             friendShowLi += '<li class="showContent" data-signID="group" data-gagaID="' + reg.obj[i].frid + '" data-remarkname="' + reg.obj[i].membNickname + '" data-nickName="' + reg.obj[i].ymembNickname + '" data-shield="' + reg.obj[i].pb + '" data-onLine="' + reg.obj[i].online + '" data-Language="' + reg.obj[i].membLanguage + '">' +
                                 '<div class="showHead"> <img class="headImg" src="' + staticCtx + 'img/group.png">';
@@ -337,14 +337,14 @@ $.IM = { /*$.fn.returnTime(time,full)*/
                         if (reg.obj[i].pb == 0) {
                             if( reg.obj[i].nm > 99){
                                 showHide = "true";
-                                friendShowLi += '<span class="newsNum newsNumDouble">99+</span></li>'; 
+                                friendShowLi += '<span class="newsNum newsNumDouble">99+</span></li>';
                             }else if(reg.obj[i].nm > 0 && reg.obj[i].nm<100){
                                 showHide = "true";
-                               friendShowLi += '<span class="newsNum newsNumSingle">' + reg.obj[i].nm + '</span></li>';
+                                friendShowLi += '<span class="newsNum newsNumSingle">' + reg.obj[i].nm + '</span></li>';
                             }else{
-                               friendShowLi += '<span class="newsNum newsNumSingle" style="display:none">0</span></li>'; 
+                                friendShowLi += '<span class="newsNum newsNumSingle" style="display:none">0</span></li>';
                             }
-                            
+
                         } else {
                             friendShowLi += '<span class="newsNum newsNumSingle" style="display:none">0</span></li>';
                         }
@@ -407,7 +407,7 @@ $.IM = { /*$.fn.returnTime(time,full)*/
         var that = this;
         /**
          * 百度语言种类
-         * 
+         *
          * 中文		zh	英语		en
          * 日语		jp	韩语		kor
          * 西班牙语	spa	法语		fra
@@ -430,7 +430,7 @@ $.IM = { /*$.fn.returnTime(time,full)*/
         //console.log("发送内容:"+data)
         if (that.isSendComplate) {
             that.isSendComplate  = false;
-                    
+
             $.ajax({
                 type: "post",
                 url: ctx + "/im/sendMsg",
@@ -454,7 +454,7 @@ $.IM = { /*$.fn.returnTime(time,full)*/
                         if (reg.attributes.tranStatus == 1 && reg.obj.newsModel.cot.tl && reg.obj.newsModel.cot.tl.tr != null) {
                             TranslationContent = reg.obj.newsModel.cot.tl.tr;
                         }
-                       if(reg.obj.newsModel.cot.tl){
+                        if(reg.obj.newsModel.cot.tl){
                             tranStatus = "true";
                         }
                         that.addSendMessage(gagaID, content, inputBoxContent, imgUrl, tranStatus, signId, getSendTime, wordsId, sendState, read, TranslationContent);
@@ -509,7 +509,7 @@ $.IM = { /*$.fn.returnTime(time,full)*/
 
             });
         }
- 
+
     },
     /*------拼接----发送消息---------------*/
     addSendMessage: function(gagaID, inputBoxVal, inputBoxContent, imgUrl, tranStatus , signId, getSendTime, wordsId, sendState, read, TranslationContent) {
@@ -527,35 +527,35 @@ $.IM = { /*$.fn.returnTime(time,full)*/
         if (inputBoxContent && inputBoxContent != $.t("im.enterKeySend")) {
             sendMessageDiv += '<p class="sendOriginal originalLan">' + inputBoxContent + '</p>';
         }
-        
-        
-        
-        
-       /* 
-        if (targetLan !== "" && that.deleteQQFace(inputBoxVal).trim() && inputBoxVal != $.t("im.enterKeySend")) {
-            sendMessageDiv += '<div class="sendTranslationContainer translationContainer"><p class="sendTranslation translationLan">' + TranslationContent + '</p></div>';
-        } else {
-            sendMessageDiv += '<div class="sendTranslationContainer translationContainer" style="display:none"><p class="sendTranslation translationLan"></p></div>';
-        }*/
+
+
+
+
+        /*
+         if (targetLan !== "" && that.deleteQQFace(inputBoxVal).trim() && inputBoxVal != $.t("im.enterKeySend")) {
+         sendMessageDiv += '<div class="sendTranslationContainer translationContainer"><p class="sendTranslation translationLan">' + TranslationContent + '</p></div>';
+         } else {
+         sendMessageDiv += '<div class="sendTranslationContainer translationContainer" style="display:none"><p class="sendTranslation translationLan"></p></div>';
+         }*/
         /*---根据翻译内容判断是否翻译--*/
         if(TranslationContent){
-             sendMessageDiv += '<div class="sendTranslationContainer translationContainer"><p class="sendTranslation translationLan">' + TranslationContent + '</p></div>';
+            sendMessageDiv += '<div class="sendTranslationContainer translationContainer"><p class="sendTranslation translationLan">' + TranslationContent + '</p></div>';
         }else{
-             sendMessageDiv += '<div class="sendTranslationContainer translationContainer" style="display:none"><p class="sendTranslation translationLan"></p></div>';
+            sendMessageDiv += '<div class="sendTranslationContainer translationContainer" style="display:none"><p class="sendTranslation translationLan"></p></div>';
         }
-        
-        
+
+
         if (imgUrl) {
             sendMessageDiv += '<span class="bigImgBtn"><img class="sendImg" src="' + imgUrl + '"></span>';
         }
-       /* if (targetLan == "" && that.deleteQQFace(inputBoxVal).trim() != "" && inputBoxVal && inputBoxVal != $.t("im.enterKeySend")) {
-            sendMessageDiv += '<i class="sendTranslateBtn translateBtn"></i><div class="sendlanChoice lanChoice" style="display:none"><i class="lanI"></i>' + that.languageListStr + '<div class="clear"></div></div>';
-        }*/
+        /* if (targetLan == "" && that.deleteQQFace(inputBoxVal).trim() != "" && inputBoxVal && inputBoxVal != $.t("im.enterKeySend")) {
+         sendMessageDiv += '<i class="sendTranslateBtn translateBtn"></i><div class="sendlanChoice lanChoice" style="display:none"><i class="lanI"></i>' + that.languageListStr + '<div class="clear"></div></div>';
+         }*/
         if(!TranslationContent && that.deleteQQFace(inputBoxVal).trim() != ""){
             sendMessageDiv += '<i class="sendTranslateBtn translateBtn"></i><div class="sendlanChoice lanChoice" style="display:none"><i class="lanI"></i>' + that.languageListStr + '<div class="clear"></div></div>';
         }
-        
-        
+
+
         sendMessageDiv += '</div>';
         if (sendState) {
             if (read == 0) {
@@ -597,36 +597,36 @@ $.IM = { /*$.fn.returnTime(time,full)*/
     /*---------接收消息-----------*/
     receiveMessage: function(msg) {
         var that = this;
-       // console.log("receiveMessage:" + JSON.stringify(msg));
-       // console.log("receiveMessage:"+msg);
+        // console.log("receiveMessage:" + JSON.stringify(msg));
+        // console.log("receiveMessage:"+msg);
         /**
-	 * 是否为漂流瓶
-	 * 0	不是
-     
-	 * 1	新注册的
-	 * 2	刚刚更新头像的
-	 * 3	刚刚发布动态的
-	 * 4	一键50人
-	 * 5	男性用户,条数不够,推送给女方的提示
-	 * 6	女方5分钟没有点击链接,推送给男方的提示
-	 * 7	女方点击链接,推送给男方的提示
-	 * 8	男方充值后,给女方的提示
-     
-	 * 9	屏蔽对方提示
-	 * 10	取消屏蔽对方提示
-	 * 11	退出群提示
-	 * 12	邀请好友进入群提示
-     * 14   我们是彼此喜欢的人
-     * 15	群屏蔽对方提示
-	 * 16	群取消屏蔽对方提示
-	 */
-      //敏感信息跳出
+         * 是否为漂流瓶
+         * 0	不是
+
+         * 1	新注册的
+         * 2	刚刚更新头像的
+         * 3	刚刚发布动态的
+         * 4	一键50人
+         * 5	男性用户,条数不够,推送给女方的提示
+         * 6	女方5分钟没有点击链接,推送给男方的提示
+         * 7	女方点击链接,推送给男方的提示
+         * 8	男方充值后,给女方的提示
+
+         * 9	屏蔽对方提示
+         * 10	取消屏蔽对方提示
+         * 11	退出群提示
+         * 12	邀请好友进入群提示
+         * 14   我们是彼此喜欢的人
+         * 15	群屏蔽对方提示
+         * 16	群取消屏蔽对方提示
+         */
+        //敏感信息跳出
         if(msg.cot.status ==1){
             return;
         }
-        
-        
-        
+
+
+
         var chatPeopleUl = $(".chatBoxLower .lowerLeft");
         //that.shieldArr 屏蔽的好友ID数组  -1是不包含，不在屏蔽列表
         if ($.inArray(msg.sid, that.shieldArr) == -1) {
@@ -676,7 +676,7 @@ $.IM = { /*$.fn.returnTime(time,full)*/
                                 $(this).children(".newsNum").removeClass("newsNumSingle").addClass("newsNumDouble");
                                 th.children(".newsNum").text("99+").show();
                             }else if(num > 100){
-                               th.children(".newsNum").text("99+").show();
+                                th.children(".newsNum").text("99+").show();
                             }
                             $(this).children(".newsNum").text(num).show();
                         }
@@ -689,7 +689,7 @@ $.IM = { /*$.fn.returnTime(time,full)*/
                 }else{
                     MSGsendID = msg.sid;
                 }
-                
+
                 var receiveMessageDiv = '';
                 var getDate = $.fn.returnTime(msg.ct, "full", "YYYY-MM-DD hh:mm");
                 var tm = TimeDifference2(getDate, that.timeArr[msg.sid]);
@@ -711,13 +711,13 @@ $.IM = { /*$.fn.returnTime(time,full)*/
                     receiveMessageDiv += '"></i><div class="receiveContainer msgContent fl">  ';
 
                     if (msg.cot.hb) {
-                        receiveMessageDiv += '<div class="redPacket-main" data-msg="'+msg.cot.hb.msg+'" data-monye="'+msg.cot.hb.mn+'" data-open="'+msg.cot.hb.isop+'"><span class="RedEnvelopeImg"></span><span class="RedEnvelopeWord">'+$.t("Letter.nowOpenRed")+'</span></div>';
+                        receiveMessageDiv += '<div class="redPacket-main" data-msg="'+msg.cot.hb.msg+'" data-money="'+msg.cot.hb.mn+'" data-open="'+msg.cot.hb.isop+'"><span class="RedEnvelopeImg"></span><span class="RedEnvelopeWord">'+$.t("Letter.nowOpenRed")+'</span></div>';
                     } else {
                         if (msg.cot.msg.content != "" && msg.cot.msg.content != null) {
                             receiveMessageDiv += '<i class="receiveHorn"></i><p class="receiveOriginal originalLan">' + that.replace_em(msg.cot.msg.content) + '</p>';
-                        }                                                        
-                    }  
-            
+                        }
+                    }
+
                     //if (msg.cot.tl.tr != "" && msg.cot.msg.content != "" && msg.cot.msg.content != null) {
                     if (msg.cot.tl && ((msg.cot.msg && msg.cot.msg.content) || (msg.cot.hb && msg.cot.hb.msg)) ) {
                         receiveMessageDiv += '<div class="receiveTranslationContainer translationContainer"> <p class="receiveTranslation translationLan">' + that.replace_em(msg.cot.tl.tr) + '</p></div>';
@@ -738,11 +738,11 @@ $.IM = { /*$.fn.returnTime(time,full)*/
                     receiveMessageDiv += '</div><div class="clear"></div></div>';
                 }
                 /*else if(msg.cot.isPl==9){
-                                    receiveMessageDiv +='<div class="likeEachOther"><span class="likeEachOtherSpan">'+$.t("im.shieldEachOther")+'</span></div>';
-                                }*/
+                 receiveMessageDiv +='<div class="likeEachOther"><span class="likeEachOtherSpan">'+$.t("im.shieldEachOther")+'</span></div>';
+                 }*/
                 /*else if(msg.cot.isPl==10){
-                                    receiveMessageDiv +='<div class="likeEachOther"><span class="likeEachOtherSpan">'+$.t("im.cancelShieldEachOther")+'</span></div>'; 
-                                }*/
+                 receiveMessageDiv +='<div class="likeEachOther"><span class="likeEachOtherSpan">'+$.t("im.cancelShieldEachOther")+'</span></div>';
+                 }*/
                 else if (msg.cot.isPl == 11) {
                     receiveMessageDiv += '<div class="likeEachOther"><span class="likeEachOtherSpan">' + msg.cot.msg.content + $.t("im.backFromGroup") + '</span></div>';
                 } else if (msg.cot.isPl == 12) {
@@ -751,14 +751,14 @@ $.IM = { /*$.fn.returnTime(time,full)*/
                     receiveMessageDiv += '<div class="likeEachOther"><span class="likeEachOtherSpan">' + $.t("im.likeEachOther") + '</span></div>';
                 }
                 /*else if(msg.cot.isPl==15){
-                                    if(msg.sid==myId){
-                                         receiveMessageDiv +='<div class="likeEachOther"><span class="likeEachOtherSpan">'+$.t("im.shieldGroup")+'</span></div>'; 
-                                    }
-                                }else if(msg.cot.isPl==16){
-                                     if(msg.sid==myId){
-                                         receiveMessageDiv +='<div class="likeEachOther"><span class="likeEachOtherSpan">'+$.t("im.cancelShieldGroup")+'</span></div>'; 
-                                    }
-                                }*/
+                 if(msg.sid==myId){
+                 receiveMessageDiv +='<div class="likeEachOther"><span class="likeEachOtherSpan">'+$.t("im.shieldGroup")+'</span></div>';
+                 }
+                 }else if(msg.cot.isPl==16){
+                 if(msg.sid==myId){
+                 receiveMessageDiv +='<div class="likeEachOther"><span class="likeEachOtherSpan">'+$.t("im.cancelShieldGroup")+'</span></div>';
+                 }
+                 }*/
 
 
                 $(".lowerRight").children("[data-gagaID = " + msg.sid + "]").find(".chatCon").append(receiveMessageDiv);
@@ -817,11 +817,11 @@ $.IM = { /*$.fn.returnTime(time,full)*/
 
                     receiveMessageDiv += '"></i><div class="receiveContainer msgContent fl">';
                     if (msg.cot.hb) {
-                        receiveMessageDiv += '<div class="redPacket-main" data-msg="'+msg.cot.hb.msg+'" data-monye="'+msg.cot.hb.mn+'" data-open="'+msg.cot.hb.isop+'"><span class="RedEnvelopeImg"></span><span class="RedEnvelopeWord">'+$.t("Letter.nowOpenRed")+'</span></div>';
+                        receiveMessageDiv += '<div class="redPacket-main" data-msg="'+msg.cot.hb.msg+'" data-money="'+msg.cot.hb.mn+'" data-open="'+msg.cot.hb.isop+'"><span class="RedEnvelopeImg"></span><span class="RedEnvelopeWord">'+$.t("Letter.nowOpenRed")+'</span></div>';
                     } else {
                         if (msg.cot.msg.content != "" && msg.cot.msg.content != null) {
                             receiveMessageDiv += '<i class="receiveHorn"></i><p class="receiveOriginal originalLan">' + that.replace_em(msg.cot.msg.content) + '</p>';
-                        }                                                        
+                        }
                     }
                     if (msg.cot.tl.tr == "") {
                         receiveMessageDiv += '<div class="receiveTranslationContainer translationContainer" style="display:none"> <p class="receiveTranslation translationLan" ></p></div>';
@@ -842,11 +842,11 @@ $.IM = { /*$.fn.returnTime(time,full)*/
                     receiveMessageDiv += '</div><div class="clear"></div></div>';
                 }
                 /*else if(msg.cot.isPl==9){
-                                    receiveMessageDiv +='<div class="likeEachOther"><span class="likeEachOtherSpan">'+$.t("im.shieldEachOther")+'</span></div>';
-                                }*/
+                 receiveMessageDiv +='<div class="likeEachOther"><span class="likeEachOtherSpan">'+$.t("im.shieldEachOther")+'</span></div>';
+                 }*/
                 /*else if(msg.cot.isPl==10){
-                                    receiveMessageDiv +='<div class="likeEachOther"><span class="likeEachOtherSpan">'+$.t("im.cancelShieldEachOther")+'</span></div>'; 
-                                }*/
+                 receiveMessageDiv +='<div class="likeEachOther"><span class="likeEachOtherSpan">'+$.t("im.cancelShieldEachOther")+'</span></div>';
+                 }*/
                 else if (msg.cot.isPl == 11) {
                     receiveMessageDiv += '<div class="likeEachOther"><span class="likeEachOtherSpan">' + msg.cot.msg.content + $.t("im.backFromGroup") + '</span></div>';
                 } else if (msg.cot.isPl == 12) {
@@ -855,14 +855,14 @@ $.IM = { /*$.fn.returnTime(time,full)*/
                     receiveMessageDiv += '<div class="likeEachOther"><span class="likeEachOtherSpan">' + $.t("im.likeEachOther") + '</span></div>';
                 }
                 /*else if(msg.cot.isPl==15){
-                                    if(msg.sid==myId){
-                                         receiveMessageDiv +='<div class="likeEachOther"><span class="likeEachOtherSpan">'+$.t("im.shieldGroup")+'</span></div>'; 
-                                    }
-                                }else if(msg.cot.isPl==16){
-                                     if(msg.sid==myId){
-                                         receiveMessageDiv +='<div class="likeEachOther"><span class="likeEachOtherSpan">'+$.t("im.cancelShieldGroup")+'</span></div>'; 
-                                    }
-                                }*/
+                 if(msg.sid==myId){
+                 receiveMessageDiv +='<div class="likeEachOther"><span class="likeEachOtherSpan">'+$.t("im.shieldGroup")+'</span></div>';
+                 }
+                 }else if(msg.cot.isPl==16){
+                 if(msg.sid==myId){
+                 receiveMessageDiv +='<div class="likeEachOther"><span class="likeEachOtherSpan">'+$.t("im.cancelShieldGroup")+'</span></div>';
+                 }
+                 }*/
 
 
                 $(".lowerRight").children("[data-gagaID = " + msg.sid + "]").find(".chatCon").append(receiveMessageDiv);
@@ -912,7 +912,7 @@ $.IM = { /*$.fn.returnTime(time,full)*/
                 //console.log("最近10条:" + JSON.stringify(reg));
                 //console.log("最近10条:" + reg);
                 that.timeArr[gagaID] = "";
-            
+
                 var noReadNum = reg.obj.fwds;
                 var dataMSG = reg.obj.news;
                 var nowTime = $.fn.returnTime(reg.attributes.currDate, "full", "YYYY-MM-DD hh:mm");
@@ -922,31 +922,31 @@ $.IM = { /*$.fn.returnTime(time,full)*/
                 }
                 //for (var i = (dataMSG.length - 1); i > -1; i--) {
                 for (var i = 0; i < dataMSG.length; i++) {
-            
-                	//敏感信息跳出
+
+                    //敏感信息跳出
                     /*if(dataMSG[i].cot.status =="1"){
-                       continue;
-                    }*/
-                	
-                	
+                     continue;
+                     }*/
+
+
                     var chatContentDiv = '';
                     //var getDate = new Date(dataMSG[i].ct).Format("yyyy-MM-dd hh:mm");
                     var getDate = $.fn.returnTime(dataMSG[i].ct, "full", "YYYY-MM-DD hh:mm");
                     //console.log(getDate);
                     var tm = TimeDifference2(getDate, that.timeArr[gagaID],nowTime);
                     if (tm != "") {
-                       /* if(!((dataMSG[i].sid == myId && (dataMSG[i].cot.isPl == 11 || dataMSG[i].cot.isPl == 12)) || (dataMSG[i].sid != myId && (dataMSG[i].cot.isPl == 9 || dataMSG[i].cot.isPl == 10))) ){*/
+                        /* if(!((dataMSG[i].sid == myId && (dataMSG[i].cot.isPl == 11 || dataMSG[i].cot.isPl == 12)) || (dataMSG[i].sid != myId && (dataMSG[i].cot.isPl == 9 || dataMSG[i].cot.isPl == 10))) ){*/
                         if(dataMSG[i].cot.isPl == 0 || dataMSG[i].cot.isPl == 14 ||(dataMSG[i].sid == myId &&( dataMSG[i].cot.isPl == 15 || dataMSG[i].cot.isPl == 16))){
-                             that.timeArr[gagaID] = getDate;
-                             chatContentDiv += '<p class="chatTime">' + tm + '</p>';
+                            that.timeArr[gagaID] = getDate;
+                            chatContentDiv += '<p class="chatTime">' + tm + '</p>';
                         }
                         if((dataMSG[i].sid != myId && ( dataMSG[i].cot.isPl == 9 || dataMSG[i].cot.isPl == 10 || dataMSG[i].cot.isPl == 11 || dataMSG[i].cot.isPl == 12) ) && dataMSG[i].cot.status =="0"){
-                            
-                            
-                             that.timeArr[gagaID] = getDate;
-                             chatContentDiv += '<p class="chatTime">' + tm + '</p>';
+
+
+                            that.timeArr[gagaID] = getDate;
+                            chatContentDiv += '<p class="chatTime">' + tm + '</p>';
                         }
-                        
+
                     }
 
 
@@ -961,30 +961,30 @@ $.IM = { /*$.fn.returnTime(time,full)*/
                             } else {
                                 if (dataMSG[i].cot.msg.content) {
                                     chatContentDiv += '<i class="sendHorn"></i><p class="sendOriginal originalLan">' + that.replace_em(dataMSG[i].cot.msg.content) + '</p>';
-                                }                                                        
-                            }  
-                            if (dataMSG[i].cot.tl != "" && dataMSG[i].cot.tl != null && dataMSG[i].cot.tl.tr) {                                
+                                }
+                            }
+                            if (dataMSG[i].cot.tl != "" && dataMSG[i].cot.tl != null && dataMSG[i].cot.tl.tr) {
                                 chatContentDiv += '<div class="sendTranslationContainer translationContainer"><p class="sendTranslation translationLan">' + dataMSG[i].cot.tl.tr + '</p></div>';
                             } else {
                                 chatContentDiv += '<div class="sendTranslationContainer translationContainer" style="display:none"><p class="sendTranslation translationLan"></p></div>';
                             }
                             if (dataMSG[i].cot.msg.img) {
-                                    chatContentDiv += '<span class="bigImgBtn"><img class="sendImg" src="' + dataMSG[i].cot.msg.img + '"></span>';
+                                chatContentDiv += '<span class="bigImgBtn"><img class="sendImg" src="' + dataMSG[i].cot.msg.img + '"></span>';
                             }
                             if (!dataMSG[i].cot.tl  && dataMSG[i].cot.msg.content != "" && that.deleteQQFace(dataMSG[i].cot.msg.content).trim() != "") {
                                 chatContentDiv += '<i class="sendTranslateBtn translateBtn"></i><div class="sendlanChoice lanChoice" style="display:none"><i class="lanI"></i>' + that.languageListStr + '<div class="clear"></div></div>';
                             }
                             if (dataMSG[i].cot.hb && dataMSG[i].cot.hb.msg && !dataMSG[i].cot.tl) {
-                                chatContentDiv += '<i class="sendTranslateBtn translateBtn"></i><div class="sendlanChoice lanChoice" style="display:none"><i class="lanI"></i>' + that.languageListStr + '<div class="clear"></div></div>';                                                        
+                                chatContentDiv += '<i class="sendTranslateBtn translateBtn"></i><div class="sendlanChoice lanChoice" style="display:none"><i class="lanI"></i>' + that.languageListStr + '<div class="clear"></div></div>';
                             }
-                            chatContentDiv += '</div>';                          
+                            chatContentDiv += '</div>';
 
                             if (myMemberGrade == "3") {
-                            
+
                                 if((dataMSG.length - i )<= noReadNum){
-                               // if (noReadNum > 0) {
+                                    // if (noReadNum > 0) {
                                     chatContentDiv += '<div class="readContainer" style="display:block"><i class="readImg" style="display:none"></i><span class="read">' + $.t("im.noRead") + '</span></div>';
-                                   // noReadNum--;
+                                    // noReadNum--;
                                 } else {
                                     chatContentDiv += '<div class="readContainer" style="display:block"><i class="readImg"></i><span class="read">' + $.t("im.read") + '</span></div>';
                                 }
@@ -1009,9 +1009,9 @@ $.IM = { /*$.fn.returnTime(time,full)*/
                     } else {
                         //敏感信息跳出
                         if(dataMSG[i].cot.status =="1"){
-                           continue;
+                            continue;
                         }
-                        
+
                         /*--------聊天记录----系统提示-------*/
                         /* * 0	不是
                          * 9	屏蔽对方提示
@@ -1031,7 +1031,7 @@ $.IM = { /*$.fn.returnTime(time,full)*/
                             } else {
                                 if (dataMSG[i].cot.msg.content != "" && dataMSG[i].cot.msg.content != null) {
                                     chatContentDiv += ' <i class="receiveHorn"></i><p class="receiveOriginal originalLan">' + that.replace_em(dataMSG[i].cot.msg.content) + '</p>';
-                                }                                                
+                                }
                             }
 
                             //if (dataMSG[i].cot.tl.tr != "" && dataMSG[i].cot.msg.content != "" && dataMSG[i].cot.msg.content != null) {
@@ -1041,9 +1041,9 @@ $.IM = { /*$.fn.returnTime(time,full)*/
                                 chatContentDiv += '<div class="receiveTranslationContainer translationContainer" style="display:none"> <p class="receiveTranslation translationLan" ></p></div>';
                             }
 
-                           
+
                             if (dataMSG[i].cot.msg.img) {
-                                    chatContentDiv += '<span class="bigImgBtn"><img class="receiveImg" src="' + dataMSG[i].cot.msg.img + '"></span>';
+                                chatContentDiv += '<span class="bigImgBtn"><img class="receiveImg" src="' + dataMSG[i].cot.msg.img + '"></span>';
                             }
                             //if (dataMSG[i].cot.tl.tr == "" && dataMSG[i].cot.msg.content != "" && dataMSG[i].cot.msg.content != null && that.deleteQQFace(dataMSG[i].cot.msg.content).trim() != "") {
                             if (!dataMSG[i].cot.tl && dataMSG[i].cot.msg.content != "" && dataMSG[i].cot.msg.content != null && that.deleteQQFace(dataMSG[i].cot.msg.content).trim() != "") {
@@ -1099,8 +1099,8 @@ $.IM = { /*$.fn.returnTime(time,full)*/
             success: function(reg) {
                 that.PageCount = reg.obj.totalPage;
                 var dataMSG = reg.obj.news;
-               // console.log("lishi:" + that.PageCount);
-               // console.log("lishi:" + JSON.stringify(reg));
+                // console.log("lishi:" + that.PageCount);
+                // console.log("lishi:" + JSON.stringify(reg));
                 // console.log("lishi:" + reg);
                 /* * 0	不是
                  * 9	屏蔽对方提示
@@ -1112,12 +1112,12 @@ $.IM = { /*$.fn.returnTime(time,full)*/
                     $(".chatHistorical .IMnoChat").show();
                 }
                 for (var i = 0; i < dataMSG.length; i++) {
-                	
-                	if(dataMSG[i].cot.status ==1){
+
+                    if(dataMSG[i].cot.status ==1){
                         continue;
-                     }
-                	
-                	
+                    }
+
+
                     var historicalDiv = '';
                     if (dataMSG[i].sid == myId) {
                         historicalDiv = '<div class="historicalContent">';
@@ -1148,11 +1148,11 @@ $.IM = { /*$.fn.returnTime(time,full)*/
                         }
 
                     } else {
-                           //敏感词
-                            if(dataMSG[i].cot.status ==1){
-                                continue;
-                            }
-                        
+                        //敏感词
+                        if(dataMSG[i].cot.status ==1){
+                            continue;
+                        }
+
                         historicalDiv = '<div class="historicalContent">';
                         if (dataMSG[i].cot.isPl == 0) {
                             historicalDiv += '<p class="historicalTitle historicalReceive"><span class="historicalRemarkName">'
@@ -1277,7 +1277,7 @@ $.IM = { /*$.fn.returnTime(time,full)*/
                     var onLineNum = 0;
                     for (var i = 0; i < newPeopleArr.length; i++) {
                         GroupMembContentLi += ' <li class="GroupMembContent" data-gagaID="' + newPeopleArr[i].fid + '"><div class="GroupMembHead">' +
-                            '<img class="GroupMembHeadImg" src="' + qiniuImgURL + newPeopleArr[i].member.membBigimg + '">' +
+                            '<img class="GroupMembHeadImg" src="' + $.IM.ConverImg(newPeopleArr[i].member.membBigimg) + '">' +
                             '<img class="GroupMembHeadLine" src="' + staticCtx + 'img/On-line.png" style="display:' + newPeopleArr[i].member.online + '">' +
                             '</div><span class="GroupMembRemarkName">' + newPeopleArr[i].member.membNickname + '</span></li>';
                         onLineNum++;
@@ -1316,7 +1316,7 @@ $.IM = { /*$.fn.returnTime(time,full)*/
             dataType: "json",
             success: function(reg) {
                 //console.log("退群:"+JSON.stringify(reg));
-                //console.log("退群:"+reg);      	
+                //console.log("退群:"+reg);
 
                 that.closedChatPeople(th);
                 $("#recentlyGroup .showContent").each(function() {
@@ -1350,7 +1350,7 @@ $.IM = { /*$.fn.returnTime(time,full)*/
     /*---------退群通知----------------*/
     backGroupNotice: function(msg) {
         /*{"content":{"id":"bd1ecbe5ce81492b9d4cae7dda102613","message":{"type":6.0,"content":{"gid":"89b866501d2d401f90859d76705779b7"
-        	,"uid":"23"}},"type":"9"},"code":0,"msg":"success"}*/
+         ,"uid":"23"}},"type":"9"},"code":0,"msg":"success"}*/
         //console.log("退群通知:"+JSON.stringify(msg));
         //console.log("退群通知:"+msg);
         var chatPeopleUl = $(".chatBoxLower .lowerLeft");
@@ -1385,32 +1385,32 @@ $.IM = { /*$.fn.returnTime(time,full)*/
                 //console.log("邀请好友:" + reg);
                 if (reg.success) {
                     /*var MemberID = reg.attributes.uids;
-                    if(MemberID){
-                    	var arr = [];
-                    	var GroupMembContentLi='';
-                    	var onLineNum = 0;
-                    	arr =MemberID.split(",");
-                    	console.log(arr);
-                    	console.log(arr.length);
-                    	
-                    	for(var i=0;i<arr.length;i++){
-                    		GroupMembContentLi += '<li class="GroupMembContent" data-gagaid="'+arr[i]+'">'+
-                    		'<div class="GroupMembHead">'+
-                    		'<img class="GroupMembHeadImg" src="'+$("#friendGroup .friendContainer").children("[data-gagaid="+arr[i]+"]").find(".headImg").attr("src")+'">'+
-                    		'<img class="GroupMembHeadLine" src="'+staticCtx+'img/On-line.png" style="display:'+$("#friendGroup .friendContainer").children("[data-gagaid="+arr[i]+"]").find(".headLine").css("display")+'">'+
-                    		'</div><span class="GroupMembRemarkName">'+$("#friendGroup .friendContainer").children("[data-gagaid="+arr[i]+"]").attr("data-remarkname")+'</span>'+
-                    		'</li>';
-                    		if($("#friendGroup .friendContainer").children("[data-gagaid="+arr[i]+"]").find(".headLine").css("display")=="block"){
-                    			onLineNum++;
-                    		}
-                    	}
-                    	$("#chatBox .chatGroupMembers .GroupMembContainer").append(GroupMembContentLi);
-                    	var totalNum = parseInt($("#chatBox .chatGroupMembers .chatGroupTotalNum").text());
-                    	totalNum += arr.length;
-                    	$("#chatBox .chatGroupMembers .chatGroupTotalNum").text(totalNum);
-                    	onLineNum += parseInt($("#chatBox .chatGroupMembers .chatGroupNum").text());
-                    	$("#chatBox .chatGroupMembers .chatGroupNum").text(onLineNum);
-                    }*/
+                     if(MemberID){
+                     var arr = [];
+                     var GroupMembContentLi='';
+                     var onLineNum = 0;
+                     arr =MemberID.split(",");
+                     console.log(arr);
+                     console.log(arr.length);
+
+                     for(var i=0;i<arr.length;i++){
+                     GroupMembContentLi += '<li class="GroupMembContent" data-gagaid="'+arr[i]+'">'+
+                     '<div class="GroupMembHead">'+
+                     '<img class="GroupMembHeadImg" src="'+$("#friendGroup .friendContainer").children("[data-gagaid="+arr[i]+"]").find(".headImg").attr("src")+'">'+
+                     '<img class="GroupMembHeadLine" src="'+staticCtx+'img/On-line.png" style="display:'+$("#friendGroup .friendContainer").children("[data-gagaid="+arr[i]+"]").find(".headLine").css("display")+'">'+
+                     '</div><span class="GroupMembRemarkName">'+$("#friendGroup .friendContainer").children("[data-gagaid="+arr[i]+"]").attr("data-remarkname")+'</span>'+
+                     '</li>';
+                     if($("#friendGroup .friendContainer").children("[data-gagaid="+arr[i]+"]").find(".headLine").css("display")=="block"){
+                     onLineNum++;
+                     }
+                     }
+                     $("#chatBox .chatGroupMembers .GroupMembContainer").append(GroupMembContentLi);
+                     var totalNum = parseInt($("#chatBox .chatGroupMembers .chatGroupTotalNum").text());
+                     totalNum += arr.length;
+                     $("#chatBox .chatGroupMembers .chatGroupTotalNum").text(totalNum);
+                     onLineNum += parseInt($("#chatBox .chatGroupMembers .chatGroupNum").text());
+                     $("#chatBox .chatGroupMembers .chatGroupNum").text(onLineNum);
+                     }*/
                 } else {
                     if (reg.msg == -1) {
                         layer.msg($.t("im.memberReachUpLimit"), {
@@ -1445,7 +1445,7 @@ $.IM = { /*$.fn.returnTime(time,full)*/
                     for (var i = 0; i < reg.obj.length; i++) {
                         that.originalGroupsMember.push("" + reg.obj[i].member.membGagaid);
                         GroupMembLi += '<li class="GroupMembContent" data-gagaid="' + reg.obj[i].member.membGagaid + '"><div class="GroupMembHead">';
-                        GroupMembLi += '<img class="GroupMembHeadImg" src="' + qiniuImgURL + reg.obj[i].member.membBigimg + '">';
+                        GroupMembLi += '<img class="GroupMembHeadImg" src="' + $.IM.ConverImg(reg.obj[i].member.membBigimg) + '">';
                         if (reg.obj[i].online == 1) {
                             GroupMembLi += '<img class="GroupMembHeadLine" src="' + staticCtx + 'img/On-line.png">';
                         } else {
@@ -1477,10 +1477,10 @@ $.IM = { /*$.fn.returnTime(time,full)*/
             success: function(reg) {
                 if (reg.success) {
                     if(th){
-                     //个人主页删好友判断
-                      that.closedChatPeople(th);
+                        //个人主页删好友判断
+                        that.closedChatPeople(th);
                     }
-                   
+
                     $("#recentlyGroup .showContent").each(function() {
                         if ($(this).attr("data-gagaid") == gagaID) {
                             $(this).remove();
@@ -1629,54 +1629,54 @@ $.IM = { /*$.fn.returnTime(time,full)*/
     /*-------------加好友通知-----------*/
     addFriendNoticeFun: function(reg) {
         //console.log("添加好友："+JSON.stringify(reg));
-        
+
         if (!$("#friendGroup .FoldContainer").children("[data-gagaID = " + reg.frieFriendgagaid + "]").html()) {
             var that = this;
             var totalNum = $("#hiddenIM .hiddenContactsCon .content").length;
-           // var recentlyShowLi="";
+            // var recentlyShowLi="";
             var friendShowLi = "";
             var friendHideLi = "";
-            friendShowLi += '<li class="showContent" data-signID="people" data-gagaID="' + reg.frieFriendgagaid + '" data-remarkname="' + reg.frieNickname + '"  data-nickName="' + reg.frieNickname + '" data-shield="0" data-onLine="' + reg.online + '" data-Language="' + reg.member.membLanguage + '">' + '<div class="showHead"> <img class="headImg" src="' + qiniuImgURL + reg.member.membBigimg + '">';
-           // recentlyShowLi = friendShowLi;
+            friendShowLi += '<li class="showContent" data-signID="people" data-gagaID="' + reg.frieFriendgagaid + '" data-remarkname="' + reg.frieNickname + '"  data-nickName="' + reg.frieNickname + '" data-shield="0" data-onLine="' + reg.online + '" data-Language="' + reg.member.membLanguage + '">' + '<div class="showHead"> <img class="headImg" src="' + $.IM.ConverImg(reg.member.membBigimg) + '">';
+            // recentlyShowLi = friendShowLi;
             if (totalNum / 2 == 1) {
                 friendHideLi += '<li class="content singleNum" data-signID="people" data-gagaID="' + reg.frieFriendgagaid + '" data-remarkname="' + reg.frieNickname + '" data-nickName="' + reg.frieNickname + '" data-shield="0" data-onLine="' + reg.online + '" data-Language="' + reg.member.membLanguage + '">';
             } else {
                 friendHideLi += '<li class="content bothNum" data-signID="people" data-gagaID="' + reg.frieFriendgagaid + '" data-remarkname="' + reg.frieNickname + '" data-nickName="' + reg.frieNickname + '" data-shield="0" data-onLine="' + reg.online + '" data-Language="' + reg.member.membLanguage + '">';
             }
-            friendHideLi += '<div class="headDiv"><img class="headImg" src="' + qiniuImgURL + reg.member.membBigimg + '">';
+            friendHideLi += '<div class="headDiv"><img class="headImg" src="' + $.IM.ConverImg(reg.member.membBigimg) + '">';
             if (reg.frieIsshield == 1) {
                 that.shieldArr.push("" + reg.frieFriendgagaid);
                 friendShowLi += '<img class="headLine" src="' + staticCtx + 'img/shield.png" style="display:block">';
-               //  recentlyShowLi = friendShowLi;
+                //  recentlyShowLi = friendShowLi;
                 friendHideLi += '<img class="headLine" src="' + staticCtx + 'img/shield.png" style="display:block">';
             } else {
                 if (reg.online == "1") {
                     friendShowLi += '<img class="headLine" src="' + staticCtx + 'img/On-line.png" style="display:block">';
-                   // recentlyShowLi = friendShowLi;
+                    // recentlyShowLi = friendShowLi;
                     friendHideLi += '<img class="headLine" src="' + staticCtx + 'img/On-line.png" style="display:block">';
                 } else {
                     friendShowLi += '<img class="headLine" src="' + staticCtx + 'img/On-line.png" style="display:none">';
-                   // recentlyShowLi = friendShowLi;
+                    // recentlyShowLi = friendShowLi;
                     friendHideLi += '<img class="headLine" src="' + staticCtx + 'img/On-line.png" style="display:none">';
                 }
             }
-            
+
             friendShowLi += '</div><span class="showRemarkName">' + reg.frieNickname + '</span><span class="newsNum newsNumSingle" style="display:none">0</span></li>';
-          //  recentlyShowLi+= '</div><span class="showRemarkName">' + reg.frieNickname + '</span><span class="newsNum newsNumSingle" style="display:none">0</span></li>';
+            //  recentlyShowLi+= '</div><span class="showRemarkName">' + reg.frieNickname + '</span><span class="newsNum newsNumSingle" style="display:none">0</span></li>';
             friendHideLi += '</div></li>';
-           // $("#recentlyGroup .FoldContainer").prepend(recentlyShowLi);
+            // $("#recentlyGroup .FoldContainer").prepend(recentlyShowLi);
             $("#friendGroup .friendContainer").append(friendShowLi);
             $("#hiddenIM .hiddenContactsCon").append(friendHideLi);
             if(reg.online == 1){
                 $("#onLineGroup .onLineContainer").append(friendShowLi);
-                 var onLineNum = $("#onLineGroup .onLineNum").text();
+                var onLineNum = $("#onLineGroup .onLineNum").text();
                 onLineNum++;
                 $("#onLineGroup .onLineNum").text(onLineNum);
             }
-            
-           /* var recentlyNumTotal = $("#recentlyGroup .recentlyNum").text();
-            recentlyNumTotal++;
-            $("#recentlyGroup .recentlyNum").text(recentlyNumTotal);*/
+
+            /* var recentlyNumTotal = $("#recentlyGroup .recentlyNum").text();
+             recentlyNumTotal++;
+             $("#recentlyGroup .recentlyNum").text(recentlyNumTotal);*/
             /*---------------------*/
             var friendNumTotal = $("#friendGroup .friendNumTotal").text();
             friendNumTotal++;
@@ -1939,7 +1939,7 @@ $.IM = { /*$.fn.returnTime(time,full)*/
                         if ($(this).attr("data-shield") == 0) {
                             $(this).find(".headLine").attr("src", staticCtx + "img/On-line.png").show();
                         }
-                        
+
                         var onLineNum = $("#onLineGroup .onLineNum").text();
                         onLineNum++;
                         $("#onLineGroup .onLineNum").text(onLineNum);
@@ -2015,14 +2015,14 @@ $.IM = { /*$.fn.returnTime(time,full)*/
         });
         $("#onLineGroup .showContent").each(function(){
             var gagaID = $(this).attr("data-gagaid");
-             if ($.inArray(gagaID, userArr) > -1) {
-                 $(this).remove();
-                  var onLineNum = $("#onLineGroup .onLineNum").text();
-                    onLineNum--;
-                    $("#onLineGroup .onLineNum").text(onLineNum);
-             }
+            if ($.inArray(gagaID, userArr) > -1) {
+                $(this).remove();
+                var onLineNum = $("#onLineGroup .onLineNum").text();
+                onLineNum--;
+                $("#onLineGroup .onLineNum").text(onLineNum);
+            }
         });
-        
+
         $("#hiddenIM .hiddenContactsCon .content").each(function() {
             var gagaID = $(this).attr("data-gagaid");
             if ($.inArray(gagaID, userArr) > -1) {
@@ -2048,7 +2048,7 @@ $.IM = { /*$.fn.returnTime(time,full)*/
             dataType: 'json',
             success: function(reg) {
                 /* console.log("删除历史纪录" + JSON.stringify(reg));
-		         console.log("删除历史纪录" + reg);*/
+                 console.log("删除历史纪录" + reg);*/
                 if (reg.success) {
                     $.IM.timeArr[gagaID] = "";
                     $("#chatBox .chatHistorical .historicalCon").html("");
@@ -2238,7 +2238,7 @@ $.IM = { /*$.fn.returnTime(time,full)*/
                 $(document).unbind('mousemove');
                 $(document).unbind('mouseup');
             });
-           //return false;
+            //return false;
         });
     },
     /*-----查看大图------*/
@@ -2259,7 +2259,7 @@ $.IM = { /*$.fn.returnTime(time,full)*/
             if(th.children(".newsNum").hasClass("newsNumDouble")){
                 th.children(".newsNum").removeClass("newsNumDouble").addClass("newsNumSingle");
             }
-            
+
             th.children(".newsNum").hide().text("0");
         }
     },
@@ -2283,9 +2283,9 @@ $.IM = { /*$.fn.returnTime(time,full)*/
             if (gagaID == "-1") {
                 $(".chatBoxUpper .modifyBtn").hide();
                 $(".chatBoxUpper .functionBtn").hide();
-                $(".chatBoxUpper .createGroupBtn").hide();                
+                $(".chatBoxUpper .createGroupBtn").hide();
                 $('#chatBox .service').removeClass('hide');
-                $('#chatBox .normal').addClass('hide');     
+                $('#chatBox .normal').addClass('hide');
             } else {
                 $(".chatBoxUpper .modifyBtn").show();
                 $(".chatBoxUpper .functionBtn").show();
@@ -2328,39 +2328,39 @@ $.IM = { /*$.fn.returnTime(time,full)*/
         $(".chatHistorical").hide();
         $(".chatBoxUpper .modifyContent").show();
         $(".chatBoxUpper .modifyContainer").hide();
-        
+
         if(sendGender =="1" && signID == "people"){
-            switch(Language){ 
-                    case "en":
-                        $(".languageOptions .language").attr("langs-lang", "en").text("English");
-                        break;
-                    case "zh":
-                        $(".languageOptions .language").attr("langs-lang", "zh").text("简体中文");
-                        break;
-                    case "cht":
-                        $(".languageOptions .language").attr("langs-lang", "cht").text("繁體中文");
-                        break;
-                    case "kor":
-                        $(".languageOptions .language").attr("langs-lang", "kor").text("한국어");
-                        break;
-                    case "ru":
-                        $(".languageOptions .language").attr("langs-lang", "ru").text("Pусский");
-                        break;
-                    case "de":
-                        $(".languageOptions .language").attr("langs-lang", "de").text("Deutsch");
-                        break;
-                    case "spa":
-                        $(".languageOptions .language").attr("langs-lang", "spa").text("Español");
-                        break;
-                    case "jp":
-                        $(".languageOptions .language").attr("langs-lang", "jp").text("日本語");
-                        break;
-                    default:
-                        $(".languageOptions  .language").attr("langs-lang", "").text("不翻译");
-                        break;
-                }
+            switch(Language){
+                case "en":
+                    $(".languageOptions .language").attr("langs-lang", "en").text("English");
+                    break;
+                case "zh":
+                    $(".languageOptions .language").attr("langs-lang", "zh").text("简体中文");
+                    break;
+                case "cht":
+                    $(".languageOptions .language").attr("langs-lang", "cht").text("繁體中文");
+                    break;
+                case "kor":
+                    $(".languageOptions .language").attr("langs-lang", "kor").text("한국어");
+                    break;
+                case "ru":
+                    $(".languageOptions .language").attr("langs-lang", "ru").text("Pусский");
+                    break;
+                case "de":
+                    $(".languageOptions .language").attr("langs-lang", "de").text("Deutsch");
+                    break;
+                case "spa":
+                    $(".languageOptions .language").attr("langs-lang", "spa").text("Español");
+                    break;
+                case "jp":
+                    $(".languageOptions .language").attr("langs-lang", "jp").text("日本語");
+                    break;
+                default:
+                    $(".languageOptions  .language").attr("langs-lang", "").text("不翻译");
+                    break;
+            }
         }else{
-             $(".languageOptions .language").attr("langs-lang", "").text($.t("im.noTranslate"));
+            $(".languageOptions .language").attr("langs-lang", "").text($.t("im.noTranslate"));
         }
     },
     /*----------人物聊天切换时屏蔽显示---------------*/
@@ -2435,7 +2435,7 @@ $.IM = { /*$.fn.returnTime(time,full)*/
         $("#PopupCreateGroup .friendNum").text($("#friendGroup .friendNum").text());
         $("#PopupCreateGroup .friendNumTotal").text($("#friendGroup .friendNumTotal").text());
     },
-    /*---------点击人关闭对话框--------删除好友--退群----*/
+    /*---------点击关闭当前对话框--------删除好友--退群----*/
     closedChatPeople: function(th) {
         var chatPeopleNum = $(".chatBoxLower .lowerLeft").children("li").length;
         var count = th.parent("li").index();
@@ -2463,8 +2463,26 @@ $.IM = { /*$.fn.returnTime(time,full)*/
         th.parent("li").remove();
         $("#chatBox .lowerRight").children("[data-gagaID = " + closedgagaID + "]").remove();
         $("#chatBox .lowerRight").children("[data-gagaID = " + gagaID + "]").show();
+        $('#chatBoxUpper').find('.im-lel').remove();
         if (gagaID) {
             $("#chatBox .lowerRight").children("[data-gagaID=" + gagaID + "]").children(".chatContent").mCustomScrollbar("scrollTo", "bottom");
+            var newType = $(".chatBoxLower .lowerLeft").children("[data-gagaID = " + gagaID + "]").attr('data-signid');
+            if (gagaID != -1 && newType == 'people') {
+                $._post(ctx+'/Member/getMemberLevelById',{gagaid: gagaID}, function(res) {
+                    if (res.success && res.obj) {
+                        //console.log('用户等级', res.obj.mefiLevel);
+                        var levelImg = '';
+                        if (res.obj.mefiLevel==2) {
+                            levelImg = '/images/hg.jpg';
+                        } else if (res.obj.mefiLevel==3) {
+                            levelImg = '/images/vip-hg.jpg';
+                        }
+                        if (levelImg) {
+                            $('#chatBoxUpper .upperRight').append('<img src="'+staticPath+levelImg+'" class="im-lel" />');
+                        }
+                    }
+                });
+            }
         }
         var signID = $(".lowerLeft").children("[data-gagaID = " + gagaID + "]").attr("data-signid");
         /*-------是否已经屏蔽-----*/
@@ -2496,7 +2514,7 @@ $.IM = { /*$.fn.returnTime(time,full)*/
                 //console.log("金额:" + reg);
                 if (reg.success) {
                     that.myMoneyNum = reg.obj;
-                    
+
                     $("#totalMoney").text(reg.obj);
                     $("#totalMoney").parent().attr("data-explain",reg.obj+ ' ' + $("#totalMoney").parent().attr("data-suffix"));
                     if (callback) {
@@ -2522,8 +2540,8 @@ $.IM = { /*$.fn.returnTime(time,full)*/
                 //console.log("字符数:" + reg);
                 if (reg.success) {
                     that.myCharacterNum = reg.obj;
-                     $("#totalTranslate").text(reg.obj);
-                     $("#totalTranslate").parent().attr("data-explain",reg.obj + ' ' + $("#totalTranslate").parent().attr("data-suffix"));
+                    $("#totalTranslate").text(reg.obj);
+                    $("#totalTranslate").parent().attr("data-explain",reg.obj + ' ' + $("#totalTranslate").parent().attr("data-suffix"));
                     if (callback) {
                         callback(reg.obj);
                     }
@@ -2537,7 +2555,7 @@ $.IM = { /*$.fn.returnTime(time,full)*/
         if (str) {
             if (str.indexOf('&nbsp;') != -1) {
                 str = str.replace(/&nbsp;/g, ' ');
-            }  
+            }
             str = str.replace(/\</g, '&lt;');
             str = str.replace(/\>/g, '&gt;');
             str = str.replace(/\n/g, '<br/>');
@@ -2553,18 +2571,18 @@ $.IM = { /*$.fn.returnTime(time,full)*/
                             str = str.replace(n, '<img src="' + staticCtx + 'img/qqFace/' + $.IM.qqOld[nameType][n] + '.gif" border="0" />');
                         }
                     });
-                }                
+                }
             }
         }
         return str;
-        
+
     },
     /*---------删除表情-----------*/
     deleteQQFace: function(str) {
         if (str) {
             if (str.indexOf('&nbsp;') != -1) {
                 str = str.replace(/&nbsp;/g, ' ');
-            }  
+            }
             str = str.replace(/\</g, '&lt;');
             str = str.replace(/\>/g, '&gt;');
             str = str.replace(/\n/g, '<br/>');
@@ -2580,7 +2598,7 @@ $.IM = { /*$.fn.returnTime(time,full)*/
                             str = str.replace(n, '');
                         }
                     });
-                }                
+                }
             }
         }
         return str;
@@ -2608,7 +2626,7 @@ $.IM = { /*$.fn.returnTime(time,full)*/
             if (txt) {
                 texts = that.numQQFace(texts);
                 counter = texts.length;
-                $(txt).text(counter); 
+                $(txt).text(counter);
             }
             if (counter > num) {
                 var newtext = texts.substring(0, num);
@@ -2619,29 +2637,29 @@ $.IM = { /*$.fn.returnTime(time,full)*/
 
             }
         });
-    },    
-   /*---------鼠标滑过显示文字提示-----------*/
+    },
+    /*---------鼠标滑过显示文字提示-----------*/
     txtTipsFun:function(target){
-    	$(target).mouseenter(function(e){
-               var th = $(this);
-               var width = parseInt(th.width());
-               var height = parseInt(th.height());
-               var left = th.offset().left+width/2-5;
-               var top = th.offset().top - $(document).scrollTop() + height;
-               var div = '<div class="txtTips" style="top:'+top+'px;left:'+left+'px"><div class="triangle-top"></div><div class="triangle-bg"></div><div class="explainTXT">'+th.attr("data-Explain")+' </div></div>';
-               $("body").append(div);
-           // console.log(e.type);
+        $(target).mouseenter(function(e){
+            var th = $(this);
+            var width = parseInt(th.width());
+            var height = parseInt(th.height());
+            var left = th.offset().left+width/2-5;
+            var top = th.offset().top - $(document).scrollTop() + height;
+            var div = '<div class="txtTips" style="top:'+top+'px;left:'+left+'px"><div class="triangle-top"></div><div class="triangle-bg"></div><div class="explainTXT">'+th.attr("data-Explain")+' </div></div>';
+            $("body").append(div);
+            // console.log(e.type);
         });
         $(target).mouseleave(function(e){
-        	 //console.log(e.type);
+            //console.log(e.type);
             $(".txtTips").remove();
         });
-         
+
     },
     conversionLanguage: function(lan) {
         /**
          * 百度语言种类
-         * 
+         *
          * 中文		zh	英语		en
          * 日语		jp	韩语		kor
          * 西班牙语	spa	法语		fra
@@ -2651,7 +2669,7 @@ $.IM = { /*$.fn.returnTime(time,full)*/
          * 白话文		zh	自动检测	auto
          * 德语		de	意大利语	it
          * 荷兰语		nl	希腊语	el
-         * 
+         *
          * @author xingdongyang
          *
          */
@@ -2747,13 +2765,13 @@ $.IM = { /*$.fn.returnTime(time,full)*/
 
         //红包框
         sendMessageDiv += '<div class="redPacket-main" data-msg="'+content+'" data-money="'+moneyNum+'" data-open="0"><span class="RedEnvelopeImg"></span><span class="RedEnvelopeWord">'+$.t("Letter.checkred")+'</span></div>';
-        
+
         /*---翻译内容显示框--*/
         sendMessageDiv += '<div class="sendTranslationContainer translationContainer" style="display:none"><p class="sendTranslation translationLan"></p></div>';
-        
+
         //翻译按钮
         sendMessageDiv += '<i class="sendTranslateBtn translateBtn"></i><div class="sendlanChoice lanChoice" style="display:none"><i class="lanI"></i>' + that.languageListStr + '<div class="clear"></div></div>';
-        
+
         sendMessageDiv += '</div>';
 
         if (sendState) {
@@ -2795,13 +2813,14 @@ $.IM = { /*$.fn.returnTime(time,full)*/
         var moneyNum = th.attr("data-money");
         var content = th.attr("data-msg");
         var RedEnvelopeOpen = $(".RedEnvelopeOpen");
-        
-       
-        
+
+
+
         RedEnvelopeOpen.find(".name").text(myNickname);
         RedEnvelopeOpen.find(".MoneyCount").text(moneyNum);
         RedEnvelopeOpen.find(".headImg").attr("src", qiniuImgURL + sendHeadImgUrl);
         RedEnvelopeOpen.find(".RedEnvelopeContent").text(content);
+        //RedEnvelopeOpen.find('.RedEnvelopeContent').mCustomScrollbar();
         RedEnvelopeOpen.find(".getRedEnvelopeBtn").hide();
         if (open == "1") {
             RedEnvelopeOpen.find(".RedEnvelopeExplain").text($.t("Letter.redStateReceive"));
@@ -2809,7 +2828,7 @@ $.IM = { /*$.fn.returnTime(time,full)*/
             RedEnvelopeOpen.find(".RedEnvelopeExplain").text($.t("Letter.redStating"));
         }
         RedEnvelopeOpen.show();
-         var topH = ($.IM.winH - RedEnvelopeOpen.children(".RedEnvelopeOpenContainer").height())/2
+        var topH = ($.IM.winH - RedEnvelopeOpen.children(".RedEnvelopeOpenContainer").height())/2
         RedEnvelopeOpen.children(".RedEnvelopeOpenContainer").css("top",topH);
         //console.log("$.IM.winH:"+$.IM.winH+"{}"+"aa"+RedEnvelopeOpen.children(".RedEnvelopeOpenContainer").height())
     },
@@ -2830,11 +2849,12 @@ $.IM = { /*$.fn.returnTime(time,full)*/
         RedEnvelopeOpen.find(".MoneyCount").text(moneyNum);
         RedEnvelopeOpen.find(".headImg").attr("src", headimg);
         RedEnvelopeOpen.find(".RedEnvelopeContent").text(content);
+        //RedEnvelopeOpen.find('.RedEnvelopeContent').mCustomScrollbar();
         RedEnvelopeOpen.find(".RedEnvelopeExplain").text($.t("Letter.redExplain"));
         RedEnvelopeOpen.show();
         var topH = ($.IM.winH - RedEnvelopeOpen.children(".RedEnvelopeOpenContainer").height())/2
         RedEnvelopeOpen.children(".RedEnvelopeOpenContainer").css("top",topH);
-       // console.log("$.IM.winH:"+$.IM.winH+"{}"+"aa"+RedEnvelopeOpen.children(".RedEnvelopeOpenContainer").height())
+        // console.log("$.IM.winH:"+$.IM.winH+"{}"+"aa"+RedEnvelopeOpen.children(".RedEnvelopeOpenContainer").height())
 
         if (open == "1") {
             RedEnvelopeOpen.find(".getRedEnvelopeBtn").css("background-position", "0px -31px").text($.t("Letter.redreceived")).show();
@@ -2864,11 +2884,10 @@ $.IM = { /*$.fn.returnTime(time,full)*/
                 if (reg.success) {
                     $.IM.getMoneyNum();
                     if (position == "historyCon") {
-                        $("#chatBox .chatCon").children("[data-gagaID =" + gagaID + "]").find("[data-ranid =" + RedID + "]").attr("data-open", "1")
-                        $("#chatBox .chatCon").children("[data-gagaID =" + gagaID + "]").find("[data-ranid =" + RedID + "]").find(".RedEnvelopeWord").text($.t("Letter.redPacketsReceive"));
-                        th.attr("data-open", "1");
+                        $("#chatBox .lowerRight").find("[data-gagaID =" + gagaID + "]").find("[data-ranid =" + RedID + "]").find('.redPacket-main').attr("data-open", "1")
+                        $("#chatBox .lowerRight").find("[data-gagaID =" + gagaID + "]").find("[data-ranid =" + RedID + "]").find(".RedEnvelopeWord").text($.t("Letter.redPacketsReceive"));
                     }
-                    th.parent().attr("data-open", "1");
+                    th.attr("data-open", "1");
                     th.find(".RedEnvelopeWord").text($.t("Letter.redPacketsReceive"));
                     RedEnvelopeOpen.find(".getRedEnvelopeBtn").css("background-position", "0px -31px").text($.t("Letter.redreceived"));
                     RedEnvelopeOpen.find(".getRedEnvelopeBtn").removeClass("openRed");
@@ -2877,7 +2896,17 @@ $.IM = { /*$.fn.returnTime(time,full)*/
             },
             error: function() {}
         });
-
+    },
+    // app、pc兼容，全局头像判断方法
+    ConverImg: function(str) {
+        var _str = str;
+        if (!_str) {
+            _str = qiniuImgURL + '/images/default/male.png';
+        }
+        if (_str && _str.indexOf('http') == -1) {
+            _str = qiniuImgURL + _str;
+        }
+        return _str;
     }
 
 

@@ -8,11 +8,16 @@
  */
 package com.ddas.sns.zone.control;
 
+import com.ddas.common.result.Result;
+import com.ddas.common.result.ResultA;
 import com.ddas.sns.common.BaseController;
+import com.ddas.sns.zone.service.ZoneService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
 /**
@@ -26,8 +31,11 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 @RequestMapping("/zone")
 public class ZoneController extends BaseController {
+    @Resource
+    private ZoneService zoneService;
+
     /**
-     *
+     *跳转到我的空间页面
      * @param request
      *@return org.springframework.web.servlet.ModelAndView
      *@author shaojx
@@ -42,7 +50,7 @@ public class ZoneController extends BaseController {
     }
 
     /**
-     *
+     *跳转到好友动态的页面
      * @param request
      *@return org.springframework.web.servlet.ModelAndView
      *@author shaojx
@@ -57,7 +65,7 @@ public class ZoneController extends BaseController {
     }
 
     /**
-     *
+     *跳转到推荐的动态页面
      * @param request
      *@return org.springframework.web.servlet.ModelAndView
      *@author shaojx
@@ -69,6 +77,23 @@ public class ZoneController extends BaseController {
     public ModelAndView goToRecommendZone(HttpServletRequest request){
         ModelAndView modelAndView= withLocal(request,"zone/zoneRecommend");
         return modelAndView;
+    }
+
+    /**
+     *拿到图片详情
+     * @param request
+     *@return org.springframework.web.servlet.ModelAndView
+     *@author shaojx
+     *@date 2016/7/9 21:23
+     *@version 1.0
+     *@since 1.6
+     */
+    @RequestMapping("/get")
+    @ResponseBody
+    public ResultA getImage(String zoneId, HttpServletRequest request){
+        ResultA result = zoneService.getImageAndZoneInfoByZoneId(zoneId, getLoginUser(request));
+
+        return result;
     }
 
 }

@@ -608,7 +608,7 @@ var facePath = staticUrl + '/IM/img/qqFace/';
             function getDetail() {
                 if (isGetComplete) {
                     isGetComplete = false;
-                    $._post(apiUrl + '/Zone/get', {
+                    $._post("http://localhost:8080" + '/zone/get', {
                         "zoneId": zoneId
                     }, function(data) {
                         isGetComplete = true;

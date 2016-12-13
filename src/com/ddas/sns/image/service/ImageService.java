@@ -18,6 +18,8 @@ import com.ddas.sns.image.domain.ImageInfo;
 import com.ddas.sns.image.domain.ImageInfoCriteria;
 import com.ddas.sns.image.mapper.ImageInfoMapper;
 import com.ddas.sns.userinfo.domain.UserInfo;
+import com.ddas.sns.zone.domain.ZoneInfo;
+import com.ddas.sns.zone.domain.ZoneInfoCriteria;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -40,7 +42,7 @@ public class ImageService {
     private ImageInfoMapper imageInfoMapper;
 
     /**
-     * 若图片ID为空，则新增，保存，若不为空，则直接保存
+     * 根据用户拿到他的照片
      * @author liuchen
      * @date 2016/7/9 14:05
      * @version 1.0
@@ -131,6 +133,21 @@ public class ImageService {
         }
 
         return true;
+    }
+
+    /**
+     * 根据用户拿到他的照片
+     * @author liuchen
+     * @date 2016/7/9 14:05
+     * @version 1.0
+     * @since 1.6
+     */
+    public List<ImageInfo> getRecommendImageByZone(ZoneInfo zoneInfo) {
+        ImageInfoCriteria criteria = new ImageInfoCriteria();
+        ImageInfoCriteria.Criteria criteriaExample = criteria.createCriteria();
+        criteriaExample.andZoimZoneidEqualTo(zoneInfo.getZoneId());
+
+        return imageInfoMapper.selectByExample(criteria);
     }
 
 }
