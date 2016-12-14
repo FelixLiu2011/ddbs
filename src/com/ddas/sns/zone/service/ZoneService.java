@@ -21,6 +21,8 @@ import com.ddas.sns.userinfo.domain.UserInfoCriteria;
 import com.ddas.sns.userinfo.mapper.UserInfoMapper;
 import com.ddas.sns.zone.domain.ZoneInfo;
 import com.ddas.sns.zone.mapper.ZoneInfoMapper;
+import com.ddas.sns.zoneccomment.domain.ZoneComment;
+import com.ddas.sns.zoneccomment.service.ZoneCommentService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -47,6 +49,9 @@ public class ZoneService {
 
     @Resource
     private ImageService imageService;
+
+    @Resource
+    private ZoneCommentService zoneCommentService;
 
     /**
      * 若动态ID为空，则新增，保存，若不为空，则直接保存
@@ -123,6 +128,8 @@ public class ZoneService {
         resultMap.put("publishMem", userInfo);
         resultMap.put("isLove", 0);
         resultMap.put("imgList", list);
+        List<ZoneComment> zoneCommentsList = zoneCommentService.getZoneCommentListByZoneId(zoneId);
+        resultMap.put("commList", zoneCommentsList);
 
         Map<String, Object> attributesMap = new HashMap<String, Object>();
         attributesMap.put("imgUrlPre", "http://ohm067iuu.bkt.clouddn.com/");

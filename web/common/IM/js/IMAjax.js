@@ -2901,10 +2901,10 @@ $.IM = { /*$.fn.returnTime(time,full)*/
     ConverImg: function(str) {
         var _str = str;
         if (!_str) {
-            _str = qiniuImgURL + '/images/default/male.png';
+            _str = 'http://ohm067iuu.bkt.clouddn.com/' + '/images/default/male.png';
         }
         if (_str && _str.indexOf('http') == -1) {
-            _str = qiniuImgURL + _str;
+            _str = 'http://ohm067iuu.bkt.clouddn.com/' + _str;
         }
         return _str;
     }

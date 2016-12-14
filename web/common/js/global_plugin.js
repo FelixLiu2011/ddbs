@@ -596,7 +596,7 @@ var facePath = staticUrl + '/IM/img/qqFace/';
             if ($('#zoneDetailBox').length) {
                 getDetail();
             } else {
-                $.get(staticUrl + '/js/common_template.html', function(data) {
+                $.get("http://localhost:8080" + '/common/js/common_template.html', function(data) {
                     temp = data;
                     $('body').append(temp);
                     $('body').append('<div id="zoneDetailBox" class="hide"></div>');

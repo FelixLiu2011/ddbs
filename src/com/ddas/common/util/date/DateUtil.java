@@ -16,8 +16,8 @@ public class DateUtil {
 	 *@since JDK1.7
 	 */
 	public static String getCurrentDateString() {
-		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
-		String currentDateString = df.format(new Date());// new Date()为获取当前系统时间
+		//SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
+		String currentDateString = String.valueOf(new Date().getTime());// new Date()为获取当前系统时间
 
 		return currentDateString;
 	}

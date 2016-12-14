@@ -1,0 +1,219 @@
+<!-- saved from url=(0048)http://static.gagahi.com/js/common_template.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=GBK"><script type="x-templete" id="zone-tmpl">
+    <#if(data.datalist){ var imgUrl=data.datalist.attributes.imgUrlPre;var obj=data.datalist.obj; #>
+        <div class="dynamic_detail">
+            <div class="fl slide_img">
+                <div class="prev_btn z_dt_icon"></div>
+                <div class="next_btn z_dt_icon"></div>
+                <div class="bigger"><#=$.t('zone.detailBig')#></div>
+                <div class="normal hide"><#=$.t('zone.detailNormal')#></div>
+                <div class="bd slide_bd">
+                    <span class='detail-img-load'><img src="<#=staticPath#>/images/load3_black_broder.gif"/></span>
+                    <#if(obj.imgList.length){ for(var i=0;i<obj.imgList.length;i++){#>
+                    <div class="slide_item" imgid="<#=obj.imgList[i].zoimId#>">
+                        <div class="js_img_border"><img src="<#=imgUrl+obj.imgList[i].zoimImgurl+'?imageView2/2/w/560/h/630'#>" /></div>
+                    </div>
+                    <#}}#>
+                </div>
+            </div>
+            <div class="fr detail_right">
+                <div class="detail_box">
+                    <div class="detail-content-div">
+                        <div class="detail_info">
+                            <div class="inlineblock userInfo_pto">
+                                <a href=""><img src="<#=$.IM.ConverImg(obj.publishMem.membBigimg)#>" /></a>
+                            </div>
+                            <div class="inlineblock userInfo_names">
+                                <p><a href="<#=apiUrl+'/Member/otherHome/'+obj.publishMem.membGagaid#>" class="userInfo_home"><#=$.string.encodeFormatMore(obj.publishMem.membNickname, 14)#></a></p>
+                                <p class="time"><#=$.fn.convertUTC(obj.zone.zoneDatetime)#></p>
+                            </div>
+                            <div class="layer_detail_content">
+                            <div class="detail_txt"><#=obj.zone.zoneContent || ''#></div>
+                            <div class="detail_trans <#=obj.zoneTran && obj.zoneTran.zotrCompletime ? '':'hide'#>">
+                                <i class="z_dt_icon triangle"></i>
+                                <span class="text js_detail_trans">
+                                    <#=obj.zoneTran ? (obj.zoneTran.zotrTranslathigh || obj.zoneTran.zotrTranslat) : ''#>
+                                </span>
+                            </div>
+                            </div>
+                            <div class="f_detail">
+                                <div class="inlineblock detail_onlike">
+                                    <i class="z_dt_icon_r dt_like_btn <#=obj.isLove=='1'?'on':''#>"></i>
+                                    <span><#=obj.zone.zoneLikecount#></span>
+                                </div>
+                                <div class="inlineblock ml20 onreply" data-zoneid="<#=obj.zone.zoneId#>">
+                                    <i class="z_dt_icon_r dt_reply_btn"></i>
+                                    <span><#=obj.zone.zoneCommentcount#></span>
+                                </div>
+                                <#if (obj.zone.zoneContent && !!$.zone.filterZone(obj.zone.zoneContent) && (!obj.zoneTran || (obj.zoneTran && !obj.zoneTran.zotrCompletime))){ #>
+                                <div class="inlineblock ml20 dt_tranS">
+                                    <i class="z_dt_icon_r dt_tranS_btn js_tranZone detail <#=(obj.zoneTran && !obj.zoneTran.zotrCompletime) ? 'trans_londing':''#>" istrans="<#=(obj.zoneTran && obj.zoneTran.zotrTranslat)? '1':'0'#>" data-id="<#=obj.zone.zoneId#>" style="position: relative;">
+                                        <#if (!obj.zoneTran) {#>
+                                            <div class="language_obj_detail tops z">
+                                                <i class="lanI"></i>
+                                                <ul class="lanUl"><li langs-lang="en">English<li langs-lang="zh">简体中斦#65533;<li langs-lang="cht">繁體中文<li langs-lang="kor">한국얦#65533; <li langs-lang="ru">Pусский<li langs-lang="de">Deutsch<li langs-lang="spa">Español<li langs-lang="jp">日本誦#65533;</ul>
+                                                <div class="clear"></div>
+                                            </div>
+                                        <#}#>
+                                    </i>
+                                </div>
+                                <#}#>
+                                <div class="fr report"><a href="javascript:;" class="inlineblock z_dt_icon dt_report2" title="<#=$.t('global.report')#>"></a></div>
+                            </div>
+                        </div>
+                        <div class="detail_comment">
+                            <#if(obj.commList.length > 0){ for(var j=0;j<obj.commList.length;j++){ var comItem=obj.commList[j];#>
+                            <#if(!comItem.zoco_parentid){#>
+                                <div class="comment_item r" zoco-id="<#=comItem.zoco_id#>">
+                                    <div class="inlineblock user_pto">
+                                        <a href="<#=apiUrl+'/Member/otherHome/'+ comItem.zoco_gagaid#>"><img src="<#=$.IM.ConverImg(comItem.memb_bigimg)#>" /></a>
+                                    </div>
+                                    <div class="inlineblock right-content">
+                                        <p><a href="<#=apiUrl+'/Member/otherHome/'+comItem.zoco_gagaid#>" class="user_home" zoco-id="<#=comItem.zoco_id#>"><#=$.string.encodeFormatMore(comItem.memb_nickname, 10)#></a><span class="detail-com-date"><#=$.fn.convertUTC(comItem.zoco_time, 'full')#></span></p>
+                                        <div class="position_r comment_txt">
+                                            <span><#=comItem.zoco_content#></span>
+                                            <#if (!comItem.zmtr_submitime) {#>
+                                            <i class="inlineblock z_dt_icon ml5 dt_tranS_btn2 js_tranZone mt-5 detail" zoco-id="<#=comItem.zoco_id#>" istrans="<#=(comItem.zmtr_translathigh || comItem.zmtr_translat)?'1':'0'#>">
+                                                    <div class="language_obj_detail tops">
+                                                        <i class="lanI"></i>
+                                                        <ul class="lanUl"><li langs-lang="en">English<li langs-lang="zh">简体中斦#65533;<li langs-lang="cht">繁體中文<li langs-lang="kor">한국얦#65533; <li langs-lang="ru">Pусский<li langs-lang="de">Deutsch<li langs-lang="spa">Español<li langs-lang="jp">日本誦#65533;</ul>
+                                                        <div class="clear"></div>
+                                                    </div>
+                                            </i>
+                                            <#}else{if(!comItem.zmtr_completime){#>
+                                                <i class="inlineblock z_dt_icon ml5 dt_tranS_btn2 js_tranZone mt-5 detail sub_trans_londing" zoco-id="<#=comItem.zoco_id#>" istrans="<#=(comItem.zmtr_translathigh || comItem.zmtr_translat)?'1':'0'#>"></i>
+                                            <#}}#>
+                                            <i class="inlineblock z_dt_icon ml5 dt_reply_btn2 js_reply_1" reply-id="<#=comItem.zoco_id#>"></i>
+                                            <#if(comItem.zoco_gagaid == myGagaId){#>
+                                                <i class="del_comment z_dt_icon" del-id="<#=comItem.zoco_id#>"></i>
+                                            <#}#>
+                                        </div>
+                                        <p class="detail_trans bgwhite <#=comItem.zmtr_completime? '':'hide'#>"><#=comItem.zmtr_translathigh || comItem.zmtr_translat || ''#></p>
+                                    </div>
+                                </div>
+                            <#}}}#>
+                        </div>
+                    </div>
+                    <div class="comment-temp hide">
+                        <#if(obj.commList.length > 0){ for(var j=0;j<obj.commList.length;j++){ var comItem=obj.commList[j];#>
+                        <#if(comItem.zoco_parentid){#>
+                            <div class="comment_item sub" parent-id="<#=comItem.zoco_parentid#>" zoco-id="<#=comItem.zoco_id#>">
+
+                                <div class="inlineblock user_pto">
+                                    <a href="<#=apiUrl+'/Member/otherHome/'+ comItem.zoco_gagaid#>"><img src="<#=$.IM.ConverImg(comItem.memb_bigimg)#>" /></a>
+                                </div>
+                                <div class="inlineblock">
+                                    <p><a href="<#=apiUrl+'/Member/otherHome/'+comItem.zoco_gagaid#>" class="user_home" zoco-id="<#=comItem.zoco_id#>"><#=$.string.encodeFormatMore(comItem.memb_nickname, 10)#></a><span class="detail-com-date"><#=$.fn.convertUTC(comItem.zoco_time, 'full')#></span></p>
+                                    <div class="position_r comment_txt">
+                                        <span><#=comItem.zoco_content#></span>
+                                        <#if (!comItem.zmtr_submitime) {#>
+                                        <i class="inlineblock z_dt_icon ml5 dt_tranS_btn2 js_tranZone mt-5 detail" zoco-id="<#=comItem.zoco_id#>" istrans="<#=(comItem.zmtr_translathigh || comItem.zmtr_translat)?'1':'0'#>">
+                                                <div class="language_obj_detail tops">
+                                                    <i class="lanI"></i>
+                                                    <ul class="lanUl"><li langs-lang="en">English<li langs-lang="zh">简体中斦#65533;<li langs-lang="cht">繁體中文<li langs-lang="kor">한국얦#65533; <li langs-lang="ru">Pусский<li langs-lang="de">Deutsch<li langs-lang="spa">Español<li langs-lang="jp">日本誦#65533;</ul>
+                                                    <div class="clear"></div>
+                                                </div>
+                                        </i>
+                                        <#}else{if(!comItem.zmtr_completime){#>
+                                            <i class="inlineblock z_dt_icon ml5 dt_tranS_btn2 js_tranZone mt-5 detail sub_trans_londing" zoco-id="<#=comItem.zoco_id#>" istrans="<#=(comItem.zmtr_translathigh || comItem.zmtr_translat)?'1':'0'#>"></i>
+                                        <#}}#>
+                                        <i class="inlineblock z_dt_icon ml5 dt_reply_btn2 js_reply_1" reply-id="<#=comItem.zoco_id#>"></i>
+                                        <#if(comItem.zoco_gagaid == myGagaId){#>
+                                            <i class="del_comment z_dt_icon" del-id="<#=comItem.zoco_id#>"></i>
+                                        <#}#>
+                                    </div>
+                                    <p class="detail_trans bgwhite <#=comItem.zmtr_completime? '':'hide'#>"><#=comItem.zmtr_translathigh || comItem.zmtr_translat || ''#></p>
+                                </div>
+
+                            </div>
+                        <#}}}#>
+                    </div>
+                    <#if(obj.commList.length >= 10){#>
+                    <div style="position: relative; top: -4px; height: 16px;"><a href="javascript:void(0)" class="detail_more" data-zoneid="156"><#=$.t('global.loadmore')#></a></div>
+                    <#}else {#>
+                        <div style="height: 13px;"></div>
+                    <#}#>
+                    <div class="detail_comment_input" data-zoneid="156"><#=$.t('global.pushzone')#></div>
+                    <div class="reply_box hide">
+                        <div class="replyTextBox" style="opacity: 1;">
+                            <textarea name="" class="js_Reply_txt" placeholder=""></textarea>
+                        </div>
+                        <div class="reply_foot">
+                            <span class="reply-lens">0/240</span>
+                            <div class="reply_send send_btn pl15 pr15 pb5 fr">
+                                <i class="inlineblock mb-2 send_i z_dt_icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <#}else{#>
+        <div><#=$.t('global.nodata')#></div>
+    <#}#>
+
+</script>
+
+    <script type="x-templete" id="zoneDetail-commont-temp">
+    <#if(data.datalist){ var imgUrl=data.datalist.attributes.imgUrlPre, obj=data.datalist.obj;for(var i=0;i<obj.length;i++){var comItem=obj[i]; #>
+        <div class="comment_item r" zoco-id="<#=comItem.zoco_id#>">
+             <div class="inlineblock user_pto">
+                 <a href="<#=apiUrl+'/Member/otherHome/'+ comItem.zoco_gagaid#>"><img src="<#=$.IM.ConverImg(comItem.memb_bigimg)#>" /></a>
+             </div>
+             <div class="inlineblock right-content">
+                 <p><a href="<#=apiUrl+'/Member/otherHome/'+comItem.zoco_gagaid#>" class="user_home" zoco-id="<#=comItem.zoco_id#>"><#=$.string.encodeFormatMore(comItem.memb_nickname,10)#></a><span class="detail-com-date"><#=$.fn.convertUTC(comItem.zoco_time, 'full')#></span></p>
+                 <div class="position_r comment_txt">
+                                        <span><#=comItem.zoco_content#></span>
+                                        <#if (!comItem.zmtr_submitime) {#>
+                                        <i class="inlineblock z_dt_icon ml5 dt_tranS_btn2 js_tranZone mt-5 detail" zoco-id="<#=comItem.zoco_id#>" istrans="<#=(comItem.zmtr_translathigh || comItem.zmtr_translat)?'1':'0'#>">
+                                                <div class="language_obj_detail tops">
+                                                    <i class="lanI"></i>
+                                                    <ul class="lanUl"><li langs-lang="en">English<li langs-lang="zh">简体中斦#65533;<li langs-lang="cht">繁體中文<li langs-lang="kor">한국얦#65533; <li langs-lang="ru">Pусский<li langs-lang="de">Deutsch<li langs-lang="spa">Español<li langs-lang="jp">日本誦#65533;</ul>
+                                                    <div class="clear"></div>
+                                                </div>
+                                        </i>
+                                        <#}else{if(!comItem.zmtr_completime){#>
+                                            <i class="inlineblock z_dt_icon ml5 dt_tranS_btn2 js_tranZone mt-5 detail sub_trans_londing" zoco-id="<#=comItem.zoco_id#>" istrans="<#=(comItem.zmtr_translathigh || comItem.zmtr_translat)?'1':'0'#>"></i>
+                                        <#}}#>
+                                        <i class="inlineblock z_dt_icon ml5 dt_reply_btn2 js_reply_1" reply-id="<#=comItem.zoco_id#>"></i>
+                                        <#if(comItem.zoco_gagaid == myGagaId){#>
+                                            <i class="del_comment z_dt_icon" del-id="<#=comItem.zoco_id#>"></i>
+                                        <#}#>
+                                    </div>
+                                    <p class="detail_trans bgwhite <#=comItem.zmtr_completime? '':'hide'#>"><#=comItem.zmtr_translathigh || comItem.zmtr_translat || ''#></p>
+             </div>
+        </div>
+    <#}}#>
+</script>
+    <script type="x-templete" id="zoneDetail-reply-temp">
+    <#if(data.datalist){ var imgUrl=data.datalist.attributes.imgUrlPre, obj=data.datalist.obj;for(var i=0;i<obj.length;i++){var comItem=obj[i]; #>
+        <div class="comment_item sub" parent-id="<#=comItem.zoco_parentid#>" zoco-id="<#=comItem.zoco_id#>">
+            <div class="inlineblock user_pto">
+                 <a href="<#=apiUrl+'/Member/otherHome/'+ comItem.zoco_gagaid#>"><img src="<#=$.IM.ConverImg(comItem.memb_bigimg)#>" /></a>
+             </div>
+             <div class="inlineblock">
+                 <p><a href="<#=apiUrl+'/Member/otherHome/'+comItem.zoco_gagaid#>" class="user_home" zoco-id="<#=comItem.zoco_id#>"><#=$.string.encodeFormatMore(comItem.memb_nickname,10)#></a><span class="detail-com-date"><#=$.fn.convertUTC(comItem.zoco_time, 'full')#></span></p>
+                 <div class="position_r comment_txt">
+                                        <span><#=comItem.zoco_content#></span>
+                                        <#if (!comItem.zmtr_submitime) {#>
+                                        <i class="inlineblock z_dt_icon ml5 dt_tranS_btn2 js_tranZone mt-5 detail" zoco-id="<#=comItem.zoco_id#>" istrans="<#=(comItem.zmtr_translathigh || comItem.zmtr_translat)?'1':'0'#>">
+                                                <div class="language_obj_detail tops">
+                                                    <i class="lanI"></i>
+                                                    <ul class="lanUl"><li langs-lang="en">English<li langs-lang="zh">简体中斦#65533;<li langs-lang="cht">繁體中文<li langs-lang="kor">한국얦#65533; <li langs-lang="ru">Pусский<li langs-lang="de">Deutsch<li langs-lang="spa">Español<li langs-lang="jp">日本誦#65533;</ul>
+                                                    <div class="clear"></div>
+                                                </div>
+                                        </i>
+                                        <#}else{if(!comItem.zmtr_completime){#>
+                                            <i class="inlineblock z_dt_icon ml5 dt_tranS_btn2 js_tranZone mt-5 detail sub_trans_londing" zoco-id="<#=comItem.zoco_id#>" istrans="<#=(comItem.zmtr_translathigh || comItem.zmtr_translat)?'1':'0'#>"></i>
+                                        <#}}#>
+                                        <i class="inlineblock z_dt_icon ml5 dt_reply_btn2 js_reply_1" reply-id="<#=comItem.zoco_id#>"></i>
+                                        <#if(comItem.zoco_gagaid == myGagaId){#>
+                                            <i class="del_comment z_dt_icon" del-id="<#=comItem.zoco_id#>"></i>
+                                        <#}#>
+                                    </div>
+                                    <p class="detail_trans bgwhite <#=comItem.zmtr_completime? '':'hide'#>"><#=comItem.zmtr_translathigh || comItem.zmtr_translat || ''#></p>
+             </div>
+        </div>
+    <#}}#>
+</script>
+</head><body></body></html>
